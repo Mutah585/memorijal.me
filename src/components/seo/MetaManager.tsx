@@ -48,10 +48,12 @@ export const MetaManager: React.FC<MetaManagerProps> = ({ locale, route }) => {
     upsertMeta('name', 'robots', 'index, follow, max-image-preview:large');
 
     // 4. OpenGraph Meta Tags
+    const brandLogoUrl = 'https://memorijal.me/assets/branding/memorijal-logo.png';
     upsertMeta('property', 'og:title', pageData.metaTitle);
     upsertMeta('property', 'og:description', pageData.metaDescription);
     upsertMeta('property', 'og:url', canonicalUrl);
     upsertMeta('property', 'og:type', 'website');
+    upsertMeta('property', 'og:image', brandLogoUrl);
     upsertMeta(
       'property',
       'og:site_name',
@@ -67,6 +69,7 @@ export const MetaManager: React.FC<MetaManagerProps> = ({ locale, route }) => {
     upsertMeta('name', 'twitter:card', 'summary_large_image');
     upsertMeta('name', 'twitter:title', pageData.metaTitle);
     upsertMeta('name', 'twitter:description', pageData.metaDescription);
+    upsertMeta('name', 'twitter:image', brandLogoUrl);
 
     // 6. Self-Referencing Canonical Link
     let canonicalLink = document.head.querySelector(

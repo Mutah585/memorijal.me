@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Phone,
-  Shield,
   MapPin,
   FileCheck,
   MessageCircle,
@@ -57,23 +56,45 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
           {/* Col 1 (4 cols): Brand & Mission */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-sapphire flex items-center justify-center text-white border border-white/15">
-                <Shield className="w-5 h-5" />
+            <a
+              href={buildLocalizedPath(locale, '/')}
+              onClick={(e) => handleLink(e, buildLocalizedPath(locale, '/'))}
+              className="inline-flex items-center gap-3.5 group focus:outline-none"
+            >
+              <img
+                src="/assets/branding/memorijal-logo.webp"
+                alt="Memorijal d.o.o. Montenegro"
+                width={50}
+                height={45}
+                loading="lazy"
+                className="h-11 w-auto object-contain shrink-0 brightness-115 contrast-105 transition-opacity duration-200 group-hover:opacity-90"
+              />
+              <div className="flex flex-col justify-center leading-none">
+                <div className="flex items-baseline gap-1.5">
+                  <span className="font-serif text-[22px] font-semibold tracking-[0.20em] text-white leading-none">
+                    MEMORIJAL
+                  </span>
+                  <span className="text-[9.5px] font-sans font-normal tracking-[0.12em] text-slate-400 leading-none">
+                    d.o.o.
+                  </span>
+                </div>
+                <div className="flex flex-col mt-1.5 space-y-[2px]">
+                  <span className="text-[8.5px] font-sans font-medium uppercase tracking-[0.14em] text-slate-300 leading-none">
+                    CRNA GORA • MEĐUNARODNA REPATRIJACIJA I KREMACIJA
+                  </span>
+                  <span className="text-[7.5px] font-sans font-normal uppercase tracking-[0.15em] text-slate-400 leading-none">
+                    MONTENEGRO • INTERNATIONAL REPATRIATION &amp; CREMATION
+                  </span>
+                </div>
               </div>
-              <div>
-                <span className="font-serif text-2xl font-bold tracking-[0.08em] text-white block leading-none">
-                  MEMORIJAL
-                </span>
-                <span className="text-[11px] text-slate-300 block mt-1">
-                  {t.header.brandSubtitle}
-                </span>
-              </div>
-            </div>
+            </a>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
               {t.footer.description}
             </p>
-            <div className="pt-2 flex items-center gap-2 text-xs text-emerald-300 font-medium">
+            <div className="text-[11px] text-slate-400 font-mono tracking-wide">
+              Memorijal d.o.o. • PIB 03489217 • PDV 30/31-20948-4
+            </div>
+            <div className="pt-1 flex items-center gap-2 text-xs text-emerald-300 font-medium">
               <FileCheck className="w-4 h-4 shrink-0" />
               <span>
                 {lang === 'RU'

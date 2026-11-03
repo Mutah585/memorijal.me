@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Shield, Globe, MessageCircle, Menu, X, Check, Copy } from 'lucide-react';
+import { Phone, MessageCircle, Menu, X, Check, Copy } from 'lucide-react';
 import {
   Language,
   TranslationContent,
@@ -62,41 +62,89 @@ export const Navbar: React.FC<NavbarProps> = ({
       : 'Hello, I require assistance from a Memorijal d.o.o. coordinator regarding repatriation / cremation in Montenegro.'
   )}`;
 
-  const corridorsNavLabel =
-    lang === 'RU' ? 'Страны и Города' : lang === 'MNE' ? 'Države i Gradovi' : 'Corridors & Hubs';
+  // Top Bar Localized Copy
+  const topBarBadge =
+    lang === 'RU'
+      ? 'Дежурная линия 24/7'
+      : lang === 'MNE'
+      ? 'Dežurna linija 24/7'
+      : 'Dežurna linija 24/7';
+
+  const topBarLicense =
+    lang === 'RU'
+      ? 'Лицензированная служба репатриации и кремации • Черногория'
+      : lang === 'MNE'
+      ? 'Licencirana služba repatrijacije i kremacije • Crna Gora'
+      : 'Licensed Repatriation & Cremation Service • Montenegro';
+
+  const topBarCoordinatorLabel =
+    lang === 'RU'
+      ? 'Координатор 24/7 (Тиват и Подгорица):'
+      : lang === 'MNE'
+      ? 'Koordinator 24/7 (Tivat i Podgorica):'
+      : 'Coordinator 24/7 (Tivat & Podgorica):';
+
+  // Navigation Labels (Quiet Luxury / Swiss minimal alignment)
+  const navLabels = {
+    services: lang === 'RU' ? 'Услуги' : lang === 'MNE' ? 'Usluge' : 'Services',
+    calculator:
+      lang === 'RU'
+        ? 'Калькулятор маршрута'
+        : lang === 'MNE'
+        ? 'Kalkulator rute'
+        : 'Route Calculator',
+    corridors:
+      lang === 'RU'
+        ? 'Страны и Города'
+        : lang === 'MNE'
+        ? 'Zemlje i Gradovi'
+        : 'Countries & Cities',
+    rates: lang === 'RU' ? 'Тарифы' : lang === 'MNE' ? 'Tarife' : 'Rates',
+    instructions:
+      lang === 'RU' ? 'Инструкции' : lang === 'MNE' ? 'Instrukcije' : 'Instructions',
+    management:
+      lang === 'RU' ? 'Руководитель' : lang === 'MNE' ? 'Rukovoditelj' : 'Management',
+  };
+
+  const emergencyCtaLabel =
+    lang === 'RU'
+      ? 'Экстренная связь 24/7'
+      : lang === 'MNE'
+      ? 'Hitni kontakt 24/7'
+      : 'Emergency Contact 24/7';
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-stoneBorder shadow-sm">
-      {/* Top Emergency & Institutional Bar */}
-      <div className="bg-sapphire text-white text-xs sm:text-sm py-2 px-4 sm:px-6 lg:px-8 border-b border-sapphire-light/40">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-          {/* Left: Pulsing 24/7 Support Available Badge + Jurisdiction */}
-          <div className="flex items-center gap-3">
-            <span className="inline-flex items-center gap-2 bg-forest px-2.5 py-0.5 rounded-full text-xs font-semibold tracking-wide text-white shadow-sm">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-200 opacity-80"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+    <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-[#E5E7EB]">
+      {/* 1. Compact "Dežurna linija 24/7" Top Bar (Fixed 32px height on desktop, hidden on narrow mobile viewports) */}
+      <div className="hidden md:block h-8 bg-[#162B49] text-white border-b border-white/10">
+        <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-between text-[11px] leading-none">
+          {/* Left & Center-Left: Pulsing 24/7 Badge + Desaturated Silver-Blue Jurisdiction */}
+          <div className="flex items-center gap-3.5 min-w-0">
+            <span className="inline-flex items-center gap-1.5 font-medium tracking-wide text-white shrink-0">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-80"></span>
+                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#269E6B]"></span>
               </span>
-              {t.topBar.badge247}
+              <span>{topBarBadge}</span>
             </span>
-            <span className="hidden md:inline-block text-slate-200 font-normal">
-              {t.topBar.jurisdiction}
+            <span className="text-white/20 select-none">|</span>
+            <span className="text-[#B8C7D9] font-normal tracking-wide truncate">
+              {topBarLicense}
             </span>
           </div>
 
-          {/* Right: Direct Call (+382 __ _______) & Direct WhatsApp */}
-          <div className="flex items-center gap-3 sm:gap-5 ml-auto">
-            <span className="hidden lg:inline text-slate-200 text-xs">
-              {t.topBar.emergencyLine}
-            </span>
+          {/* Center-Right & Far Right: Coordinator 24/7 Phone + Copy + WhatsApp 24/7 Pill */}
+          <div className="flex items-center gap-3 shrink-0 ml-4">
             <div className="flex items-center gap-1.5">
+              <span className="hidden lg:inline text-[#B8C7D9] font-normal">
+                {topBarCoordinatorLabel}
+              </span>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center gap-1.5 font-semibold text-white hover:text-emerald-200 transition-colors"
+                className="font-medium text-white hover:text-emerald-200 transition-colors tracking-wide"
                 aria-label={`${t.topBar.callCta} ${PHONE_DISPLAY}`}
               >
-                <Phone className="w-3.5 h-3.5 text-emerald-300 shrink-0" />
-                <span className="tracking-wide">{PHONE_DISPLAY}</span>
+                {PHONE_DISPLAY}
               </a>
               <button
                 onClick={handleCopyPhone}
@@ -108,7 +156,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     ? 'Kopiraj broj telefona'
                     : 'Copy phone number'
                 }
-                className="p-1 rounded hover:bg-white/10 text-slate-300 hover:text-white transition-colors"
+                className="p-0.5 rounded hover:bg-white/10 text-[#B8C7D9] hover:text-white transition-colors"
                 aria-label={
                   lang === 'RU'
                     ? 'Скопировать экстренный номер телефона'
@@ -117,142 +165,160 @@ export const Navbar: React.FC<NavbarProps> = ({
                     : 'Copy emergency phone number'
                 }
               >
-                {copied ? <Check className="w-3.5 h-3.5 text-emerald-300" /> : <Copy className="w-3.5 h-3.5" />}
+                {copied ? (
+                  <Check className="w-3 h-3 text-emerald-300" />
+                ) : (
+                  <Copy className="w-3 h-3" />
+                )}
               </button>
             </div>
-
-            <span className="text-white/30 hidden sm:inline">|</span>
 
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 bg-forest hover:bg-forest-hover text-white font-semibold px-3 py-1 rounded text-xs transition-colors shadow-sm"
+              className="inline-flex items-center gap-1.5 bg-[#1E7B54] hover:bg-[#176343] text-white font-medium px-2.5 py-1 rounded-full text-[11px] leading-none transition-colors shadow-sm"
             >
-              <MessageCircle className="w-3.5 h-3.5" />
-              <span>{t.topBar.whatsappCta}</span>
+              <MessageCircle className="w-3 h-3 shrink-0" />
+              <span>WhatsApp 24/7</span>
             </a>
           </div>
         </div>
       </div>
 
-      {/* Main Navigation Header */}
+      {/* 2. Main Quiet Luxury / Swiss Minimal Navigation Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 gap-4">
-          {/* Left: Brand Logo & Subtitle */}
+        <div className="flex items-center justify-between h-16 md:h-[74px] gap-4">
+          {/* Left: Unified Brand Logo Block (36px mobile, 48px-52px desktop max height to prevent CLS) */}
           <a
             href={homePath}
             onClick={(e) => handleAnchorOrRoute(e, '#top')}
-            className="flex items-center gap-3.5 group focus:outline-none"
+            className="inline-flex items-center gap-2.5 md:gap-3.5 h-9 max-h-[36px] md:h-[50px] md:max-h-[52px] group focus:outline-none shrink-0"
           >
-            <div className="w-11 h-11 rounded-lg bg-sapphire flex items-center justify-center text-white shadow-sm border border-sapphire-light/20 group-hover:bg-sapphire-light transition-colors shrink-0">
-              <Shield className="w-5 h-5 text-stone-100 stroke-[1.75]" />
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-baseline gap-2">
-                <span className="font-serif text-2xl sm:text-[26px] font-bold tracking-[0.08em] text-slateDeep leading-none">
+            <img
+              src="/assets/branding/memorijal-logo.webp"
+              alt="Memorijal d.o.o. Montenegro"
+              width={54}
+              height={48}
+              loading="eager"
+              fetchPriority="high"
+              className="h-9 md:h-12 w-auto object-contain shrink-0 transition-opacity duration-200 group-hover:opacity-90"
+            />
+            <div className="flex flex-col justify-center leading-none">
+              <div className="flex items-baseline gap-1.5">
+                <span className="font-serif text-[19px] sm:text-[21px] md:text-[23px] font-semibold tracking-[0.20em] text-[#1A1D20] leading-none">
                   MEMORIJAL
                 </span>
-                <span className="text-[11px] font-semibold uppercase tracking-widest text-warmStone hidden sm:inline">
+                <span className="text-[9px] md:text-[9.5px] font-sans font-normal tracking-[0.12em] text-[#7A828C] leading-none">
                   d.o.o.
                 </span>
               </div>
-              <span className="text-[11px] sm:text-xs text-slateMuted font-medium tracking-tight mt-1">
-                {t.header.brandSubtitle}
-              </span>
+              <div className="hidden md:flex flex-col mt-1 space-y-[2px]">
+                <span className="text-[8.5px] font-sans font-medium uppercase tracking-[0.14em] text-[#5A626A] leading-none whitespace-nowrap">
+                  CRNA GORA • MEĐUNARODNA REPATRIJACIJA I KREMACIJA
+                </span>
+                <span className="text-[7.5px] font-sans font-normal uppercase tracking-[0.15em] text-[#8C949E] leading-none whitespace-nowrap">
+                  MONTENEGRO • INTERNATIONAL REPATRIATION &amp; CREMATION
+                </span>
+              </div>
             </div>
           </a>
 
-          {/* Center: Desktop Navigation Links */}
-          <nav className="hidden xl:flex items-center gap-6 text-sm font-medium text-slateDeep" aria-label="Main Navigation">
+          {/* Center: Airy Desktop Navigation Links (Plus Jakarta Sans 14px, 500 weight, #1A1D20) */}
+          <nav
+            className="hidden xl:flex items-center gap-6 2xl:gap-7 font-sans text-[14px] font-medium text-[#1A1D20]"
+            aria-label="Main Navigation"
+          >
             <a
               href={`${homePath}#services`}
               onClick={(e) => handleAnchorOrRoute(e, '#services')}
-              className="hover:text-sapphire transition-colors py-1"
+              className="hover:text-[#1E3A5F] transition-colors py-1 whitespace-nowrap"
             >
-              {t.header.navServices}
+              {navLabels.services}
             </a>
             <a
               href={`${homePath}#estimator`}
               onClick={(e) => handleAnchorOrRoute(e, '#estimator')}
-              className="hover:text-sapphire transition-colors py-1"
+              className="hover:text-[#1E3A5F] transition-colors py-1 whitespace-nowrap"
             >
-              {t.header.navEstimator}
+              {navLabels.calculator}
             </a>
             <a
               href={`${homePath}#seo-directory`}
               onClick={(e) => handleAnchorOrRoute(e, '#seo-directory')}
-              className="hover:text-sapphire transition-colors py-1"
+              className="hover:text-[#1E3A5F] transition-colors py-1 whitespace-nowrap"
             >
-              {corridorsNavLabel}
+              {navLabels.corridors}
             </a>
             <a
               href={buildLocalizedPath(currentLocale, '/pricing-breakdown/')}
               onClick={(e) => handleRouteClick(e, '/pricing-breakdown/')}
-              className="hover:text-sapphire transition-colors py-1"
+              className="hover:text-[#1E3A5F] transition-colors py-1 whitespace-nowrap"
             >
-              {lang === 'RU' ? 'Тарифы' : lang === 'MNE' ? 'Cjenovnik' : 'Pricing'}
+              {navLabels.rates}
             </a>
             <a
               href={buildLocalizedPath(currentLocale, '/step-by-step-guide/')}
               onClick={(e) => handleRouteClick(e, '/step-by-step-guide/')}
-              className="hover:text-sapphire transition-colors py-1"
+              className="hover:text-[#1E3A5F] transition-colors py-1 whitespace-nowrap"
             >
-              {lang === 'RU' ? 'Инструкция' : lang === 'MNE' ? 'Vodič' : 'Guide'}
+              {navLabels.instructions}
             </a>
             <a
               href={buildLocalizedPath(currentLocale, '/about/director/')}
               onClick={(e) => handleRouteClick(e, '/about/director/')}
-              className="hover:text-sapphire transition-colors py-1"
+              className="hover:text-[#1E3A5F] transition-colors py-1 whitespace-nowrap"
             >
-              {t.header.navContact}
+              {navLabels.management}
             </a>
           </nav>
 
-          {/* Right: Prominent Language Switcher (EN | RU | MNE) & Sticky Action */}
-          <div className="flex items-center gap-3">
-            {/* Language Switcher Pill */}
+          {/* Right: Clean Low-Border Language Switcher (EN | RU | MNE) & Solid Forest Green CTA */}
+          <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
             <div
-              className="inline-flex items-center bg-alabaster p-1 rounded-lg border border-stoneBorder"
+              className="inline-flex items-center bg-[#F9F9FB] p-0.5 rounded-md border border-[#E5E7EB]"
               role="group"
               aria-label="Language switcher"
             >
-              <Globe className="w-3.5 h-3.5 text-slateMuted ml-2 mr-1 hidden sm:inline" />
-              {languages.map((code) => {
+              {languages.map((code, idx) => {
                 const active = lang === code;
                 return (
-                  <button
-                    key={code}
-                    type="button"
-                    onClick={() => setLang(code)}
-                    className={`px-2.5 py-1 rounded-md text-xs font-semibold tracking-wider transition-all ${
-                      active
-                        ? 'bg-sapphire text-white shadow-sm'
-                        : 'text-slateMuted hover:text-slateDeep hover:bg-white/60'
-                    }`}
-                    aria-pressed={active}
-                  >
-                    {code}
-                  </button>
+                  <React.Fragment key={code}>
+                    {idx > 0 && !active && lang !== languages[idx - 1] && (
+                      <span className="text-[#D1D5DB] text-[10px] select-none">|</span>
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => setLang(code)}
+                      className={`px-2 py-1 rounded text-[11px] font-medium tracking-wider transition-all ${
+                        active
+                          ? 'bg-[#1A1D20] text-white shadow-xs'
+                          : 'text-[#5A626A] hover:text-[#1A1D20]'
+                      }`}
+                      aria-pressed={active}
+                    >
+                      {code}
+                    </button>
+                  </React.Fragment>
                 );
               })}
             </div>
 
-            {/* Emergency Coordinator Modal Trigger (Desktop/Tablet) */}
+            {/* Emergency Coordinator Modal Trigger (Forest Green #1E7B54 pill button) */}
             <button
               type="button"
               onClick={onOpenModal}
-              className="hidden sm:inline-flex items-center gap-2 bg-forest hover:bg-forest-hover text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-lg shadow-sm transition-all"
+              className="hidden sm:inline-flex items-center gap-2 bg-[#1E7B54] hover:bg-[#176343] text-white text-[13px] font-medium px-4 py-2 rounded-full shadow-xs transition-colors whitespace-nowrap"
             >
-              <Phone className="w-4 h-4 shrink-0" />
-              <span>{t.header.emergencyBtn}</span>
+              <Phone className="w-3.5 h-3.5 shrink-0" />
+              <span>{emergencyCtaLabel}</span>
             </button>
 
             {/* Mobile Hamburger Button */}
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="xl:hidden p-2 rounded-lg border border-stoneBorder text-slateDeep hover:bg-alabaster transition-colors"
+              className="xl:hidden p-2 rounded-md border border-[#E5E7EB] text-[#1A1D20] hover:bg-[#F9F9FB] transition-colors"
               aria-label="Toggle Menu"
               aria-expanded={mobileMenuOpen}
             >
@@ -264,56 +330,56 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Mobile Dropdown Navigation */}
       {mobileMenuOpen && (
-        <div className="xl:hidden bg-white border-t border-stoneBorder px-4 pt-3 pb-6 shadow-elevated">
-          <nav className="flex flex-col space-y-2 text-base font-medium text-slateDeep">
+        <div className="xl:hidden bg-white border-t border-[#E5E7EB] px-4 pt-3 pb-6 shadow-elevated">
+          <nav className="flex flex-col space-y-1.5 font-sans text-[15px] font-medium text-[#1A1D20]">
             <a
               href={`${homePath}#services`}
               onClick={(e) => handleAnchorOrRoute(e, '#services')}
-              className="px-3 py-2.5 rounded-lg hover:bg-alabaster transition-colors"
+              className="px-3 py-2.5 rounded-lg hover:bg-[#F9F9FB] transition-colors"
             >
-              {t.header.navServices}
+              {navLabels.services}
             </a>
             <a
               href={`${homePath}#estimator`}
               onClick={(e) => handleAnchorOrRoute(e, '#estimator')}
-              className="px-3 py-2.5 rounded-lg hover:bg-alabaster transition-colors"
+              className="px-3 py-2.5 rounded-lg hover:bg-[#F9F9FB] transition-colors"
             >
-              {t.header.navEstimator}
+              {navLabels.calculator}
             </a>
             <a
               href={`${homePath}#seo-directory`}
               onClick={(e) => handleAnchorOrRoute(e, '#seo-directory')}
-              className="px-3 py-2.5 rounded-lg hover:bg-alabaster transition-colors"
+              className="px-3 py-2.5 rounded-lg hover:bg-[#F9F9FB] transition-colors"
             >
-              {corridorsNavLabel}
+              {navLabels.corridors}
             </a>
             <a
               href={buildLocalizedPath(currentLocale, '/pricing-breakdown/')}
               onClick={(e) => handleRouteClick(e, '/pricing-breakdown/')}
-              className="px-3 py-2.5 rounded-lg hover:bg-alabaster transition-colors"
+              className="px-3 py-2.5 rounded-lg hover:bg-[#F9F9FB] transition-colors"
             >
-              {lang === 'RU' ? 'Тарифы и структура расходов' : lang === 'MNE' ? 'Cjenovnik i takse' : 'Pricing Breakdown'}
+              {navLabels.rates}
             </a>
             <a
               href={buildLocalizedPath(currentLocale, '/step-by-step-guide/')}
               onClick={(e) => handleRouteClick(e, '/step-by-step-guide/')}
-              className="px-3 py-2.5 rounded-lg hover:bg-alabaster transition-colors"
+              className="px-3 py-2.5 rounded-lg hover:bg-[#F9F9FB] transition-colors"
             >
-              {lang === 'RU' ? 'Пошаговая инструкция' : lang === 'MNE' ? 'Vodič korak po korak' : 'Step-by-Step Guide'}
+              {navLabels.instructions}
             </a>
             <a
               href={buildLocalizedPath(currentLocale, '/about/director/')}
               onClick={(e) => handleRouteClick(e, '/about/director/')}
-              className="px-3 py-2.5 rounded-lg hover:bg-alabaster transition-colors"
+              className="px-3 py-2.5 rounded-lg hover:bg-[#F9F9FB] transition-colors"
             >
-              {t.header.navContact}
+              {navLabels.management}
             </a>
           </nav>
 
-          <div className="mt-4 pt-4 border-t border-stoneBorder grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div className="mt-4 pt-4 border-t border-[#E5E7EB] grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             <a
               href={PHONE_HREF}
-              className="flex items-center justify-center gap-2 bg-sapphire text-white font-semibold py-3 px-4 rounded-lg text-sm"
+              className="flex items-center justify-center gap-2 bg-[#162B49] text-white font-medium py-2.5 px-4 rounded-full text-sm"
             >
               <Phone className="w-4 h-4" />
               <span>{PHONE_DISPLAY}</span>
@@ -324,10 +390,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
                 onOpenModal();
               }}
-              className="flex items-center justify-center gap-2 bg-forest text-white font-semibold py-3 px-4 rounded-lg text-sm"
+              className="flex items-center justify-center gap-2 bg-[#1E7B54] text-white font-medium py-2.5 px-4 rounded-full text-sm"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>{t.hero.primaryCta}</span>
+              <span>{emergencyCtaLabel}</span>
             </button>
           </div>
         </div>

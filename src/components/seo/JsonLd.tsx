@@ -76,6 +76,8 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
     name: 'Memorijal d.o.o. — International Repatriation & Cremation Montenegro',
     legalName: 'Memorijal d.o.o.',
     url: canonicalUrl,
+    logo: 'https://memorijal.me/assets/branding/memorijal-logo.png',
+    image: 'https://memorijal.me/assets/branding/memorijal-logo.png',
     telephone: '+38268914816',
     email: 'dispatch@memorijal.me',
     priceRange: '€€€',
