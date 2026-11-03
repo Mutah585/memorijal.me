@@ -6,6 +6,7 @@ import {
   FileCheck,
   MessageCircle,
   Mail,
+  Globe,
 } from 'lucide-react';
 import {
   Language,
@@ -16,15 +17,39 @@ import {
   WHATSAPP_NUMBER,
   OFFICIAL_EMAIL,
 } from '../i18n/translations';
+import {
+  langToLocaleSlug,
+  buildLocalizedPath,
+  ALL_SEO_ROUTES,
+} from '../data/seo-routes';
 
 interface FooterProps {
   lang: Language;
   t: TranslationContent;
   onOpenModal: () => void;
+  onNavigate?: (localizedPath: string) => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ lang, t, onOpenModal }) => {
+export const Footer: React.FC<FooterProps> = ({
+  lang,
+  t,
+  onOpenModal,
+  onNavigate,
+}) => {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}`;
+  const locale = langToLocaleSlug(lang);
+
+  const serviceLinks = ALL_SEO_ROUTES.filter((r) => r.category === 'service');
+  const resourceLinks = ALL_SEO_ROUTES.filter((r) => r.category === 'resource');
+  const corridorLinks = ALL_SEO_ROUTES.filter((r) => r.category === 'corridor');
+  const locationLinks = ALL_SEO_ROUTES.filter((r) => r.category === 'location');
+
+  const handleLink = (e: React.MouseEvent, path: string) => {
+    if (onNavigate) {
+      e.preventDefault();
+      onNavigate(path);
+    }
+  };
 
   return (
     <footer className="bg-slateDeep text-slate-200 border-t border-stoneBorder">
@@ -54,37 +79,40 @@ export const Footer: React.FC<FooterProps> = ({ lang, t, onOpenModal }) => {
             </div>
           </div>
 
-          {/* Col 2 (2 cols): Fast Links */}
+          {/* Col 2 (2 cols): Specialized Services & Resources */}
           <div className="lg:col-span-2 space-y-3">
             <h3 className="text-xs font-bold uppercase tracking-wider text-white">
               {t.footer.quickLinksTitle}
             </h3>
-            <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300">
-              <li>
-                <a href="#services" className="hover:text-white transition-colors">
-                  {t.header.navServices}
-                </a>
-              </li>
-              <li>
-                <a href="#estimator" className="hover:text-white transition-colors">
-                  {t.header.navEstimator}
-                </a>
-              </li>
-              <li>
-                <a href="#process" className="hover:text-white transition-colors">
-                  {t.header.navProcess}
-                </a>
-              </li>
-              <li>
-                <a href="#credentials" className="hover:text-white transition-colors">
-                  {t.header.navCredentials}
-                </a>
-              </li>
-              <li>
-                <a href="#director" className="hover:text-white transition-colors">
-                  {t.header.navContact}
-                </a>
-              </li>
+            <ul className="space-y-2 text-xs text-slate-300">
+              {serviceLinks.map((item) => {
+                const path = buildLocalizedPath(locale, item.path);
+                return (
+                  <li key={item.id}>
+                    <a
+                      href={path}
+                      onClick={(e) => handleLink(e, path)}
+                      className="hover:text-white transition-colors"
+                    >
+                      {item.locales[locale].breadcrumbLabel}
+                    </a>
+                  </li>
+                );
+              })}
+              {resourceLinks.map((item) => {
+                const path = buildLocalizedPath(locale, item.path);
+                return (
+                  <li key={item.id}>
+                    <a
+                      href={path}
+                      onClick={(e) => handleLink(e, path)}
+                      className="hover:text-white transition-colors"
+                    >
+                      {item.locales[locale].breadcrumbLabel}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -155,22 +183,72 @@ export const Footer: React.FC<FooterProps> = ({ lang, t, onOpenModal }) => {
           </div>
         </div>
 
-          {/* Bottom Copyright, Privacy & Studio Credit Bar */}
-          <div className="pt-8 flex flex-col lg:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
-              <p>{t.footer.copyright}</p>
-              <span className="hidden sm:inline text-white/20">•</span>
-              <p>{t.footer.privacyNote}</p>
-            </div>
-            <p className="text-slate-400">
-              {t.footer.creditPrefix}{' '}
-              <span className="font-semibold text-white tracking-wide">
-                {t.footer.creditStudio}
-              </span>
-            </p>
+        {/* SEO Sitemap Links Bar: 9 Corridors & 6 Montenegro Locations */}
+        <div className="py-6 border-b border-white/10 space-y-3 text-[11px] text-slate-400">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
+            <span className="font-semibold text-slate-200 inline-flex items-center gap-1">
+              <Globe className="w-3.5 h-3.5 text-emerald-400" />
+              {lang === 'RU'
+                ? 'Коридоры:'
+                : lang === 'MNE'
+                ? 'Koridori:'
+                : 'Corridors:'}
+            </span>
+            {corridorLinks.map((c) => {
+              const path = buildLocalizedPath(locale, c.path);
+              return (
+                <a
+                  key={c.id}
+                  href={path}
+                  onClick={(e) => handleLink(e, path)}
+                  className="hover:text-white transition-colors"
+                >
+                  {c.locales[locale].breadcrumbLabel}
+                </a>
+              );
+            })}
+          </div>
+
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
+            <span className="font-semibold text-slate-200 inline-flex items-center gap-1">
+              <MapPin className="w-3.5 h-3.5 text-emerald-400" />
+              {lang === 'RU'
+                ? 'Города ЧГ:'
+                : lang === 'MNE'
+                ? 'Opštine CG:'
+                : 'Montenegro Hubs:'}
+            </span>
+            {locationLinks.map((l) => {
+              const path = buildLocalizedPath(locale, l.path);
+              return (
+                <a
+                  key={l.id}
+                  href={path}
+                  onClick={(e) => handleLink(e, path)}
+                  className="hover:text-white transition-colors"
+                >
+                  {l.locales[locale].breadcrumbLabel}
+                </a>
+              );
+            })}
           </div>
         </div>
+
+        {/* Bottom Copyright, Privacy & Studio Credit Bar */}
+        <div className="pt-8 flex flex-col lg:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+            <p>{t.footer.copyright}</p>
+            <span className="hidden sm:inline text-white/20">•</span>
+            <p>{t.footer.privacyNote}</p>
+          </div>
+          <p className="text-slate-400">
+            {t.footer.creditPrefix}{' '}
+            <span className="font-semibold text-white tracking-wide">
+              {t.footer.creditStudio}
+            </span>
+          </p>
+        </div>
+      </div>
     </footer>
   );
 };
-

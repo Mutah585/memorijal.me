@@ -1,0 +1,14 @@
+# Memorijal d.o.o. Montenegro — Technical SEO Robots Policy
+User-agent: *
+Allow: /en/
+Allow: /ru/
+Allow: /mne/
+
+# Disallow non-indexable modal, admin, and raw query parameter states
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*?modal=*
+Disallow: /*?checkout=*
+Disallow: /*?session=*
+
+Sitemap: https://memorijal.me/sitemap.xml

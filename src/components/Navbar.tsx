@@ -7,25 +7,51 @@ import {
   PHONE_HREF,
   WHATSAPP_NUMBER,
 } from '../i18n/translations';
+import { langToLocaleSlug, buildLocalizedPath } from '../data/seo-routes';
 
 interface NavbarProps {
   lang: Language;
   setLang: (lang: Language) => void;
   t: TranslationContent;
   onOpenModal: () => void;
+  onNavigate?: (localizedPath: string, hash?: string) => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onOpenModal }) => {
+export const Navbar: React.FC<NavbarProps> = ({
+  lang,
+  setLang,
+  t,
+  onOpenModal,
+  onNavigate,
+}) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
   const languages: Language[] = ['EN', 'RU', 'MNE'];
+  const currentLocale = langToLocaleSlug(lang);
+  const homePath = buildLocalizedPath(currentLocale, '/');
 
   const handleCopyPhone = (e: React.MouseEvent) => {
     e.preventDefault();
     navigator.clipboard.writeText(PHONE_DISPLAY);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleAnchorOrRoute = (e: React.MouseEvent, hash: string) => {
+    if (onNavigate) {
+      e.preventDefault();
+      onNavigate(homePath, hash);
+      setMobileMenuOpen(false);
+    }
+  };
+
+  const handleRouteClick = (e: React.MouseEvent, routeSlug: string) => {
+    if (onNavigate) {
+      e.preventDefault();
+      onNavigate(buildLocalizedPath(currentLocale, routeSlug));
+      setMobileMenuOpen(false);
+    }
   };
 
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
@@ -35,6 +61,9 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onOpenModal })
       ? 'Poštovani, potrebna mi je konsultacija koordinatora Memorijal d.o.o. povodom međunarodne repatrijacije / kremacije.'
       : 'Hello, I require assistance from a Memorijal d.o.o. coordinator regarding repatriation / cremation in Montenegro.'
   )}`;
+
+  const corridorsNavLabel =
+    lang === 'RU' ? 'Страны и Города' : lang === 'MNE' ? 'Države i Gradovi' : 'Corridors & Hubs';
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-stoneBorder shadow-sm">
@@ -100,7 +129,8 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onOpenModal })
         <div className="flex items-center justify-between h-20 gap-4">
           {/* Left: Brand Logo & Subtitle */}
           <a
-            href="#top"
+            href={homePath}
+            onClick={(e) => handleAnchorOrRoute(e, '#top')}
             className="flex items-center gap-3.5 group focus:outline-none"
           >
             <div className="w-11 h-11 rounded-lg bg-sapphire flex items-center justify-center text-white shadow-sm border border-sapphire-light/20 group-hover:bg-sapphire-light transition-colors shrink-0">
@@ -122,33 +152,45 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onOpenModal })
           </a>
 
           {/* Center: Desktop Navigation Links */}
-          <nav className="hidden xl:flex items-center gap-7 text-sm font-medium text-slateDeep" aria-label="Main Navigation">
+          <nav className="hidden xl:flex items-center gap-6 text-sm font-medium text-slateDeep" aria-label="Main Navigation">
             <a
-              href="#services"
+              href={`${homePath}#services`}
+              onClick={(e) => handleAnchorOrRoute(e, '#services')}
               className="hover:text-sapphire transition-colors py-1"
             >
               {t.header.navServices}
             </a>
             <a
-              href="#estimator"
+              href={`${homePath}#estimator`}
+              onClick={(e) => handleAnchorOrRoute(e, '#estimator')}
               className="hover:text-sapphire transition-colors py-1"
             >
               {t.header.navEstimator}
             </a>
             <a
-              href="#process"
+              href={`${homePath}#seo-directory`}
+              onClick={(e) => handleAnchorOrRoute(e, '#seo-directory')}
               className="hover:text-sapphire transition-colors py-1"
             >
-              {t.header.navProcess}
+              {corridorsNavLabel}
             </a>
             <a
-              href="#credentials"
+              href={buildLocalizedPath(currentLocale, '/pricing-breakdown/')}
+              onClick={(e) => handleRouteClick(e, '/pricing-breakdown/')}
               className="hover:text-sapphire transition-colors py-1"
             >
-              {t.header.navCredentials}
+              {lang === 'RU' ? 'Тарифы' : lang === 'MNE' ? 'Cjenovnik' : 'Pricing'}
             </a>
             <a
-              href="#director"
+              href={buildLocalizedPath(currentLocale, '/step-by-step-guide/')}
+              onClick={(e) => handleRouteClick(e, '/step-by-step-guide/')}
+              className="hover:text-sapphire transition-colors py-1"
+            >
+              {lang === 'RU' ? 'Инструкция' : lang === 'MNE' ? 'Vodič' : 'Guide'}
+            </a>
+            <a
+              href={buildLocalizedPath(currentLocale, '/about/director/')}
+              onClick={(e) => handleRouteClick(e, '/about/director/')}
               className="hover:text-sapphire transition-colors py-1"
             >
               {t.header.navContact}
@@ -213,36 +255,43 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onOpenModal })
         <div className="xl:hidden bg-white border-t border-stoneBorder px-4 pt-3 pb-6 shadow-elevated">
           <nav className="flex flex-col space-y-2 text-base font-medium text-slateDeep">
             <a
-              href="#services"
-              onClick={() => setMobileMenuOpen(false)}
+              href={`${homePath}#services`}
+              onClick={(e) => handleAnchorOrRoute(e, '#services')}
               className="px-3 py-2.5 rounded-lg hover:bg-alabaster transition-colors"
             >
               {t.header.navServices}
             </a>
             <a
-              href="#estimator"
-              onClick={() => setMobileMenuOpen(false)}
+              href={`${homePath}#estimator`}
+              onClick={(e) => handleAnchorOrRoute(e, '#estimator')}
               className="px-3 py-2.5 rounded-lg hover:bg-alabaster transition-colors"
             >
               {t.header.navEstimator}
             </a>
             <a
-              href="#process"
-              onClick={() => setMobileMenuOpen(false)}
+              href={`${homePath}#seo-directory`}
+              onClick={(e) => handleAnchorOrRoute(e, '#seo-directory')}
               className="px-3 py-2.5 rounded-lg hover:bg-alabaster transition-colors"
             >
-              {t.header.navProcess}
+              {corridorsNavLabel}
             </a>
             <a
-              href="#credentials"
-              onClick={() => setMobileMenuOpen(false)}
+              href={buildLocalizedPath(currentLocale, '/pricing-breakdown/')}
+              onClick={(e) => handleRouteClick(e, '/pricing-breakdown/')}
               className="px-3 py-2.5 rounded-lg hover:bg-alabaster transition-colors"
             >
-              {t.header.navCredentials}
+              {lang === 'RU' ? 'Тарифы и структура расходов' : lang === 'MNE' ? 'Cjenovnik i takse' : 'Pricing Breakdown'}
             </a>
             <a
-              href="#director"
-              onClick={() => setMobileMenuOpen(false)}
+              href={buildLocalizedPath(currentLocale, '/step-by-step-guide/')}
+              onClick={(e) => handleRouteClick(e, '/step-by-step-guide/')}
+              className="px-3 py-2.5 rounded-lg hover:bg-alabaster transition-colors"
+            >
+              {lang === 'RU' ? 'Пошаговая инструкция' : lang === 'MNE' ? 'Vodič korak po korak' : 'Step-by-Step Guide'}
+            </a>
+            <a
+              href={buildLocalizedPath(currentLocale, '/about/director/')}
+              onClick={(e) => handleRouteClick(e, '/about/director/')}
               className="px-3 py-2.5 rounded-lg hover:bg-alabaster transition-colors"
             >
               {t.header.navContact}
@@ -274,4 +323,3 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onOpenModal })
     </header>
   );
 };
-

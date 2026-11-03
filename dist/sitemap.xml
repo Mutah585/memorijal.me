@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://memorijal.me/en/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/services/repatriation-air-cargo/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/repatriation-air-cargo/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/repatriation-air-cargo/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/repatriation-air-cargo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/repatriation-air-cargo/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/services/repatriation-air-cargo/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/repatriation-air-cargo/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/repatriation-air-cargo/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/repatriation-air-cargo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/repatriation-air-cargo/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/services/repatriation-air-cargo/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/repatriation-air-cargo/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/repatriation-air-cargo/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/repatriation-air-cargo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/repatriation-air-cargo/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/services/repatriation-road/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/repatriation-road/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/repatriation-road/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/repatriation-road/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/repatriation-road/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/services/repatriation-road/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/repatriation-road/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/repatriation-road/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/repatriation-road/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/repatriation-road/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/services/repatriation-road/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/repatriation-road/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/repatriation-road/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/repatriation-road/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/repatriation-road/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/services/cremation-serbia/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/cremation-serbia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/cremation-serbia/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/cremation-serbia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/cremation-serbia/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/services/cremation-serbia/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/cremation-serbia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/cremation-serbia/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/cremation-serbia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/cremation-serbia/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/services/cremation-serbia/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/cremation-serbia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/cremation-serbia/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/cremation-serbia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/cremation-serbia/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/services/legal-consular/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/legal-consular/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/legal-consular/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/legal-consular/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/legal-consular/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/services/legal-consular/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/legal-consular/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/legal-consular/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/legal-consular/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/legal-consular/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/services/legal-consular/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/legal-consular/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/legal-consular/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/legal-consular/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/legal-consular/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/repatriation/to-united-kingdom/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-united-kingdom/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/repatriation/to-united-kingdom/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-united-kingdom/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/repatriation/to-united-kingdom/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-united-kingdom/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/repatriation/to-germany/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-germany/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-germany/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-germany/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-germany/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/repatriation/to-germany/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-germany/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-germany/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-germany/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-germany/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/repatriation/to-germany/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-germany/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-germany/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-germany/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-germany/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/repatriation/to-russia/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-russia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-russia/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-russia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-russia/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/repatriation/to-russia/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-russia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-russia/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-russia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-russia/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/repatriation/to-russia/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-russia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-russia/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-russia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-russia/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/repatriation/to-ukraine/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-ukraine/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-ukraine/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-ukraine/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-ukraine/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/repatriation/to-ukraine/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-ukraine/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-ukraine/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-ukraine/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-ukraine/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/repatriation/to-ukraine/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-ukraine/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-ukraine/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-ukraine/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-ukraine/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/repatriation/to-serbia/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-serbia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-serbia/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-serbia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-serbia/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/repatriation/to-serbia/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-serbia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-serbia/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-serbia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-serbia/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/repatriation/to-serbia/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-serbia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-serbia/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-serbia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-serbia/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/repatriation/to-poland/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-poland/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-poland/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-poland/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-poland/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/repatriation/to-poland/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-poland/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-poland/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-poland/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-poland/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/repatriation/to-poland/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-poland/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-poland/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-poland/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-poland/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/repatriation/to-france/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-france/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-france/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-france/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-france/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/repatriation/to-france/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-france/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-france/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-france/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-france/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/repatriation/to-france/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-france/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-france/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-france/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-france/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/repatriation/to-turkey/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-turkey/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-turkey/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-turkey/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-turkey/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/repatriation/to-turkey/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-turkey/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-turkey/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-turkey/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-turkey/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/repatriation/to-turkey/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-turkey/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-turkey/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-turkey/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-turkey/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/repatriation/to-italy/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-italy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-italy/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-italy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-italy/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/repatriation/to-italy/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-italy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-italy/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-italy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-italy/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/repatriation/to-italy/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-italy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-italy/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-italy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-italy/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/location/tivat/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/tivat/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/tivat/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/tivat/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/tivat/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/location/tivat/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/tivat/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/tivat/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/tivat/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/tivat/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/location/tivat/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/tivat/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/tivat/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/tivat/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/tivat/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/location/kotor/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/kotor/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/kotor/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/kotor/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/kotor/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/location/kotor/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/kotor/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/kotor/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/kotor/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/kotor/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/location/kotor/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/kotor/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/kotor/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/kotor/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/kotor/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/location/budva/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/budva/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/budva/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/budva/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/budva/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/location/budva/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/budva/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/budva/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/budva/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/budva/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/location/budva/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/budva/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/budva/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/budva/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/budva/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/location/podgorica/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/podgorica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/podgorica/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/podgorica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/podgorica/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/location/podgorica/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/podgorica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/podgorica/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/podgorica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/podgorica/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/location/podgorica/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/podgorica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/podgorica/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/podgorica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/podgorica/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/location/herceg-novi/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/herceg-novi/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/location/herceg-novi/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/herceg-novi/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/location/herceg-novi/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/herceg-novi/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/location/bar/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/bar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/bar/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/bar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/bar/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/location/bar/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/bar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/bar/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/bar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/bar/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/location/bar/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/bar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/bar/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/bar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/bar/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/pricing-breakdown/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/pricing-breakdown/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/pricing-breakdown/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/pricing-breakdown/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/pricing-breakdown/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/pricing-breakdown/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/pricing-breakdown/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/pricing-breakdown/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/pricing-breakdown/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/pricing-breakdown/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/pricing-breakdown/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/pricing-breakdown/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/pricing-breakdown/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/pricing-breakdown/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/pricing-breakdown/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/step-by-step-guide/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/step-by-step-guide/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/step-by-step-guide/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/step-by-step-guide/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/step-by-step-guide/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/step-by-step-guide/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/step-by-step-guide/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/step-by-step-guide/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/step-by-step-guide/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/step-by-step-guide/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/step-by-step-guide/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/step-by-step-guide/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/step-by-step-guide/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/step-by-step-guide/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/step-by-step-guide/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/about/director/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/about/director/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/about/director/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/about/director/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/about/director/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/about/director/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/about/director/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/about/director/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/about/director/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/about/director/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/about/director/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/about/director/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/about/director/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/about/director/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/about/director/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/contact/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/contact/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/contact/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/contact/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/contact/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/contact/" />
+  </url>
+</urlset>
