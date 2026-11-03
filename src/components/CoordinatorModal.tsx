@@ -29,6 +29,8 @@ interface CoordinatorModalProps {
   initialLocation: LocationType;
 }
 
+type RelationType = 'family' | 'insurance' | 'embassy' | 'legal';
+
 export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
   isOpen,
   onClose,
@@ -40,7 +42,7 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
 }) => {
   const [name, setName] = useState('');
   const [contact, setContact] = useState('');
-  const [relation, setRelation] = useState<'family' | 'insurance' | 'embassy' | 'legal'>('family');
+  const [relation, setRelation] = useState<RelationType>('family');
   const [service, setService] = useState<ServiceType>(initialService);
   const [region, setRegion] = useState<RegionType>(initialRegion);
   const [location, setLocation] = useState<LocationType>(initialLocation);
@@ -186,10 +188,14 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5">
+                  <label
+                    htmlFor="modal-name"
+                    className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5"
+                  >
                     {t.modal.nameLabel} *
                   </label>
                   <input
+                    id="modal-name"
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -200,10 +206,14 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5">
+                  <label
+                    htmlFor="modal-contact"
+                    className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5"
+                  >
                     {t.modal.contactLabel} *
                   </label>
                   <input
+                    id="modal-contact"
                     type="text"
                     value={contact}
                     onChange={(e) => setContact(e.target.value)}
@@ -216,12 +226,16 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5">
+                  <label
+                    htmlFor="modal-relation"
+                    className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5"
+                  >
                     {t.modal.relationLabel}
                   </label>
                   <select
+                    id="modal-relation"
                     value={relation}
-                    onChange={(e) => setRelation(e.target.value as any)}
+                    onChange={(e) => setRelation(e.target.value as RelationType)}
                     className="w-full px-3.5 py-2.5 rounded-xl border border-stoneBorder bg-porcelain text-sm text-slateDeep focus:bg-white focus:border-sapphire outline-none"
                   >
                     <option value="family">{t.modal.relations.family}</option>
@@ -232,10 +246,14 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5">
+                  <label
+                    htmlFor="modal-location"
+                    className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5"
+                  >
                     {t.modal.locationLabel}
                   </label>
                   <select
+                    id="modal-location"
                     value={location}
                     onChange={(e) => setLocation(e.target.value as LocationType)}
                     className="w-full px-3.5 py-2.5 rounded-xl border border-stoneBorder bg-porcelain text-sm text-slateDeep focus:bg-white focus:border-sapphire outline-none"
@@ -250,10 +268,14 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5">
+                  <label
+                    htmlFor="modal-service"
+                    className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5"
+                  >
                     {t.modal.serviceLabel}
                   </label>
                   <select
+                    id="modal-service"
                     value={service}
                     onChange={(e) => setService(e.target.value as ServiceType)}
                     className="w-full px-3.5 py-2.5 rounded-xl border border-stoneBorder bg-porcelain text-sm text-slateDeep focus:bg-white focus:border-sapphire outline-none"
@@ -265,10 +287,14 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5">
+                  <label
+                    htmlFor="modal-region"
+                    className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5"
+                  >
                     {t.modal.regionLabel}
                   </label>
                   <select
+                    id="modal-region"
                     value={region}
                     onChange={(e) => setRegion(e.target.value as RegionType)}
                     className="w-full px-3.5 py-2.5 rounded-xl border border-stoneBorder bg-porcelain text-sm text-slateDeep focus:bg-white focus:border-sapphire outline-none"
@@ -281,10 +307,14 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
               </div>
 
               <div>
-                <label className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5">
+                <label
+                  htmlFor="modal-notes"
+                  className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5"
+                >
                   {t.modal.notesLabel}
                 </label>
                 <textarea
+                  id="modal-notes"
                   rows={3}
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}

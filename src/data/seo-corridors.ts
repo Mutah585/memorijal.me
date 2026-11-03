@@ -1,4 +1,4 @@
-import { SeoRouteEntry, LocaleSlug, WalkthroughStep, CostBreakdownItem } from './seo-routes';
+import type { SeoRouteEntry, LocaleSlug, WalkthroughStep, CostBreakdownItem } from './seo-routes.ts';
 
 interface CorridorSeed {
   id: string;
@@ -64,7 +64,7 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     en: {
       country: 'the United Kingdom',
       metaTitle: 'Repatriation of Remains from Montenegro to UK 24/7',
-      metaDesc: '24/7 repatriation of human remains from Montenegro to the UK (London LHR, Manchester, Edinburgh). British Embassy clearance & Cargo HUM. +382 68 880 420.',
+      metaDesc: '24/7 repatriation of human remains from Montenegro to the UK (London LHR, Manchester, Edinburgh). British Embassy clearance & Cargo HUM. +382 68 914 816.',
       keywords: [
         'Repatriation of remains from Montenegro to UK',
         'British Embassy Podgorica repatriation',
@@ -87,7 +87,7 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
       countryGenitive: 'Великобритании',
       countryAccusative: 'Великобританию',
       metaTitle: 'Репатриация из Черногории в Великобританию (UK) 24/7',
-      metaDesc: 'Официальная авиарепатриация (Cargo HUM) и отправка урн из Черногории в Великобританию (Лондон, Манчестер, Эдинбург). Посольство UK. +382 68 880 420.',
+      metaDesc: 'Официальная авиарепатриация (Cargo HUM) и отправка урн из Черногории в Великобританию (Лондон, Манчестер, Эдинбург). Посольство UK. +382 68 914 816.',
       keywords: ['Репатриация из Черногории в Великобританию', 'Груз 200 Черногория Лондон', 'Перевозка тела в Англию из Черногории'],
       h1: 'Международная репатриация из Черногории в Великобританию (UK)',
       subtitle: 'Полное сопровождение в Посольстве Великобритании в Подгорице, судебный перевод для коронера (HM Coroner), опайка цинка и авиадоставка Cargo HUM в Лондон (LHR/LGW), Манчестер и Эдинбург.',
@@ -103,8 +103,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     },
     mne: {
       countryAccusative: 'Veliku Britaniju (UK)',
-      metaTitle: 'Repatrijacija preminulih iz Crne Gore u Veliku Britaniju 24/7',
-      metaDesc: 'IATA Cargo HUM avio prevoz pokojnika iz Crne Gore za Veliku Britaniju (London, Mančester, Edinburg). Britanska ambasada Podgorica. +382 68 880 420.',
+      metaTitle: 'Repatrijacija iz Crne Gore u Veliku Britaniju (UK) 24/7',
+      metaDesc: 'IATA Cargo HUM avio prevoz pokojnika iz Crne Gore za Veliku Britaniju (London, Mančester, Edinburg). Britanska ambasada Podgorica. +382 68 914 816.',
       keywords: ['Prevoz pokojnika u Veliku Britaniju', 'Repatrijacija Crna Gora London', 'Britanska ambasada Podgorica sprovodnica'],
       h1: 'Međunarodna repatrijacija iz Crne Gore u Veliku Britaniju (UK)',
       subtitle: 'Kompletna koordinacija sa Britanskom ambasadom u Podgorici, ovjereni prevodi za HM Coroner službu, hermetičko lemljenje cinka i Cargo HUM let za London (LHR), Mančester i Edinburg.',
@@ -125,7 +125,7 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     en: {
       country: 'Germany',
       metaTitle: 'Repatriation from Montenegro to Germany 24/7 | Air & Road',
-      metaDesc: '24/7 repatriation of remains from Montenegro to Germany (Frankfurt, Munich, Berlin). German Embassy Leichenpass, Sprovodnica & transport. +382 68 880 420.',
+      metaDesc: '24/7 repatriation of remains from Montenegro to Germany (Frankfurt, Munich, Berlin). German Embassy Leichenpass, Sprovodnica & transport. +382 68 914 816.',
       keywords: [
         'Repatriation from Montenegro to Germany',
         'Leichenpass German Embassy Podgorica',
@@ -148,7 +148,7 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
       countryGenitive: 'Германии',
       countryAccusative: 'Германию',
       metaTitle: 'Репатриация из Черногории в Германию 24/7 | Авиа и Авто',
-      metaDesc: 'Перевозка умерших (Груз 200) из Черногории в Германию (Франкфурт, Мюнхен, Берлин). Оформление Leichenpass в посольстве ФРГ. +382 68 880 420.',
+      metaDesc: 'Перевозка умерших (Груз 200) из Черногории в Германию (Франкфурт, Мюнхен, Берлин). Оформление Leichenpass в посольстве ФРГ. +382 68 914 816.',
       keywords: ['Репатриация из Черногории в Германию', 'Перевозка тела Черногория Германия', 'Leichenpass Посольство Германии Подгорица'],
       h1: 'Международная репатриация из Черногории в Германию (Авиа и Авто)',
       subtitle: 'Оформление консульского паспорта Leichenpass в Посольстве ФРГ в Подгорице, присяжный перевод на немецкий язык, герметичная опайка цинка и доставка во Франкфурт, Мюнхен, Берлин, Гамбург или Штутгарт.',
@@ -164,8 +164,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     },
     mne: {
       countryAccusative: 'Njemačku',
-      metaTitle: 'Prevoz pokojnika iz Crne Gore za Njemačku 24/7 | Avio i Auto',
-      metaDesc: 'Međunarodna repatrijacija i prevoz preminulih iz Crne Gore za Njemačku (Frankfurt, Minhen, Berlin). Leichenpass i Sprovodnica. +382 68 880 420.',
+      metaTitle: 'Prevoz pokojnika iz Crne Gore za Njemačku 24/7 | Memorijal',
+      metaDesc: 'Međunarodna repatrijacija i prevoz preminulih iz Crne Gore za Njemačku (Frankfurt, Minhen, Berlin). Leichenpass i Sprovodnica. +382 68 914 816.',
       keywords: ['Prevoz pokojnika iz Crne Gore za Njemačku', 'Repatrijacija Crna Gora Njemačka', 'Ambasada Njemačke Podgorica sprovodnica'],
       h1: 'Međunarodna repatrijacija i prevoz pokojnika iz Crne Gore za Njemačku',
       subtitle: 'Kompletna procedura u Ambasadi SR Njemačke u Podgorici (Leichenpass), prevod sudskog tumača za njemački jezik, lemljenje cinka i transport za Frankfurt, Minhen, Berlin, Štutgart, Keln i Hamburg.',
@@ -186,7 +186,7 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     en: {
       country: 'Russia',
       metaTitle: 'Repatriation from Montenegro to Russia (Cargo 200) 24/7',
-      metaDesc: '24/7 repatriation of remains (Cargo 200) & urns from Montenegro to Russia (Moscow, St. Petersburg) via Belgrade/Istanbul hubs. +382 68 880 420.',
+      metaDesc: '24/7 repatriation of remains (Cargo 200) & urns from Montenegro to Russia (Moscow, St. Petersburg) via Belgrade/Istanbul hubs. +382 68 914 816.',
       keywords: [
         'Repatriation from Montenegro to Russia',
         'Cargo 200 Montenegro to Moscow',
@@ -208,8 +208,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     ru: {
       countryGenitive: 'России',
       countryAccusative: 'Россию',
-      metaTitle: 'Груз 200 из Черногории в Россию самолетом 24/7 | Репатриация',
-      metaDesc: 'Отправка Груза 200 и урн с прахом из Черногории в Россию (Москва, СПб и регионы) через Белград/Стамбул. Консульство РФ в Подгорице. +382 68 880 420.',
+      metaTitle: 'Груз 200 из Черногории в Россию самолетом 24/7',
+      metaDesc: 'Отправка Груза 200 и урн с прахом из Черногории в Россию (Москва, СПб и регионы) через Белград/Стамбул. Консульство РФ в Подгорице. +382 68 914 816.',
       keywords: [
         'Груз 200 Черногория Россия самолетом',
         'Репатриация умерших из Черногории в Россию',
@@ -231,7 +231,7 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     mne: {
       countryAccusative: 'Rusiju',
       metaTitle: 'Repatrijacija i prevoz pokojnika iz Crne Gore u Rusiju 24/7',
-      metaDesc: 'Avio prevoz posmrtnih ostataka (Cargo HUM / Gruz 200) i urni iz Crne Gore za Rusiju (Moskva, Sankt Peterburg). Ambasada RF Podgorica. +382 68 880 420.',
+      metaDesc: 'Avio prevoz posmrtnih ostataka (Cargo HUM / Gruz 200) i urni iz Crne Gore za Rusiju (Moskva, Sankt Peterburg). Ambasada RF Podgorica. +382 68 914 816.',
       keywords: ['Repatrijacija iz Crne Gore u Rusiju', 'Cargo HUM Podgorica Moskva', 'Kremacija u Beogradu za državljane Rusije'],
       h1: 'Međunarodna repatrijacija (Cargo HUM) i prenos urni iz Crne Gore u Rusiju',
       subtitle: 'Kompletna konzularna legalizacija u Ambasadi Ruske Federacije u Podgorici, ovjereni prevodi sudskog tumača na ruski jezik, lemljenje cinka i avio-otprema preko Beograda ili Istanbula za Moskvu i Sankt Peterburg.',
@@ -252,7 +252,7 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     en: {
       country: 'Ukraine',
       metaTitle: 'Repatriation of Remains from Montenegro to Ukraine 24/7',
-      metaDesc: '24/7 road repatriation & cremation urn delivery from Montenegro to Ukraine (Kyiv, Lviv, Odesa, Dnipro). Embassy of Ukraine Podgorica. +382 68 880 420.',
+      metaDesc: '24/7 road repatriation & cremation urn delivery from Montenegro to Ukraine (Kyiv, Lviv, Odesa, Dnipro). Embassy of Ukraine Podgorica. +382 68 914 816.',
       keywords: [
         'Repatriation from Montenegro to Ukraine',
         'Embassy of Ukraine Podgorica repatriation',
@@ -274,8 +274,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     ru: {
       countryGenitive: 'Украины',
       countryAccusative: 'Украину',
-      metaTitle: 'Репатриация умерших из Черногории в Украину 24/7 | Авто и Урна',
-      metaDesc: 'Прямая перевозка умерших спецкатафалком и доставка урн после кремации из Черногории в Украину (Киев, Львов, Одесса, Днепр). Посольство Украины. +382 68 880 420.',
+      metaTitle: 'Репатриация умерших из Черногории в Украину 24/7',
+      metaDesc: 'Прямая перевозка умерших спецкатафалком и доставка урн из Черногории в Украину (Киев, Львов, Одесса, Днепр). Посольство Украины. +382 68 914 816.',
       keywords: [
         'Репатриация из Черногории в Украину',
         'Перевозка тела из Черногории в Украину',
@@ -296,8 +296,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     },
     mne: {
       countryAccusative: 'Ukrajinu',
-      metaTitle: 'Repatrijacija i prevoz preminulih iz Crne Gore u Ukrajinu 24/7',
-      metaDesc: 'Direktan drumski prevoz pokojnika i dostava urni iz Crne Gore u Ukrajinu (Kijev, Lavov, Odesa). Ambasada Ukrajine u Podgorici. +382 68 880 420.',
+      metaTitle: 'Repatrijacija preminulih iz Crne Gore u Ukrajinu 24/7',
+      metaDesc: 'Direktan drumski prevoz pokojnika i dostava urni iz Crne Gore u Ukrajinu (Kijev, Lavov, Odesa). Ambasada Ukrajine u Podgorici. +382 68 914 816.',
       keywords: ['Repatrijacija iz Crne Gore u Ukrajinu', 'Prevoz pokojnika Crna Gora Ukrajina', 'Ambasada Ukrajine Podgorica sprovodnica'],
       h1: 'Međunarodna repatrijacija i prevoz pokojnika iz Crne Gore u Ukrajinu',
       subtitle: 'Kompletna konzularna procedura u Ambasadi Ukrajine u Podgorici, ovjereni prevodi na ukrajinski jezik, hermetičko lemljenje cinka i direktan prevoz specijalnim vozilom preko Mađarske ili Rumunije u sve gradove Ukrajine.',
@@ -318,7 +318,7 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     en: {
       country: 'Serbia',
       metaTitle: 'Repatriation & Cremation Transfer Montenegro to Serbia 24/7',
-      metaDesc: '24/7 road repatriation & cremation transfer from Montenegro to Serbia (Belgrade, Novi Sad, Niš). Bilateral Sprovodnica in 24h. +382 68 880 420.',
+      metaDesc: '24/7 road repatriation & cremation transfer from Montenegro to Serbia (Belgrade, Novi Sad, Niš). Bilateral Sprovodnica in 24h. +382 68 914 816.',
       keywords: [
         'Repatriation from Montenegro to Serbia',
         'Cremation services Montenegro Belgrade transfer',
@@ -340,8 +340,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     ru: {
       countryGenitive: 'Сербии',
       countryAccusative: 'Сербию',
-      metaTitle: 'Репатриация и кремация: из Черногории в Сербию (Белград) 24/7',
-      metaDesc: 'Срочная перевозка умерших и трансфер на кремацию из Черногории в Сербию (Белград, Нови-Сад, Ниш) за 24–36 часов. Оформление Sprovodnica. +382 68 880 420.',
+      metaTitle: 'Репатриация и кремация: Черногория — Сербия 24/7',
+      metaDesc: 'Срочная перевозка умерших и трансфер на кремацию из Черногории в Сербию (Белград, Нови-Сад, Ниш) за 24–36 часов. Оформление Sprovodnica. +382 68 914 816.',
       keywords: [
         'Перевозка умершего из Черногории в Сербию',
         'Кремация в Белграде из Черногории',
@@ -361,8 +361,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     },
     mne: {
       countryAccusative: 'Srbiju',
-      metaTitle: 'Prevoz pokojnika i kremacija: Crna Gora — Srbija (Beograd) 24/7',
-      metaDesc: 'Licencirani prevoz preminulih iz Crne Gore za Srbiju (Beograd, Novi Sad, Niš) i organizacija kremacije za 24–36h. Sprovodnica i konzulat. +382 68 880 420.',
+      metaTitle: 'Prevoz pokojnika i kremacija: Crna Gora — Srbija 24/7',
+      metaDesc: 'Licencirani prevoz preminulih iz Crne Gore za Srbiju (Beograd, Novi Sad, Niš) i organizacija kremacije za 24–36h. Sprovodnica i konzulat. +382 68 914 816.',
       keywords: [
         'Prevoz pokojnika iz Crne Gore u Srbiju',
         'Kremacija u Beogradu prevoz iz Crne Gore',
@@ -388,7 +388,7 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     en: {
       country: 'Poland',
       metaTitle: 'Repatriation of Remains from Montenegro to Poland 24/7',
-      metaDesc: '24/7 repatriation of remains from Montenegro to Poland (Warsaw, Kraków, Gdańsk, Wrocław) by LOT Cargo HUM or hearse. Polish Embassy. +382 68 880 420.',
+      metaDesc: '24/7 repatriation of remains from Montenegro to Poland (Warsaw, Kraków, Gdańsk, Wrocław) by LOT Cargo HUM or hearse. Polish Embassy. +382 68 914 816.',
       keywords: [
         'Repatriation from Montenegro to Poland',
         'Polish Embassy Podgorica repatriation',
@@ -410,8 +410,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     ru: {
       countryGenitive: 'Польши',
       countryAccusative: 'Польшу',
-      metaTitle: 'Репатриация из Черногории в Польшу 24/7 | Авиа и Спецкатафалк',
-      metaDesc: 'Официальная перевозка умерших и урн из Черногории в Польшу (Варшава, Краков, Вроцлав, Гданьск). Посольство Польши в Подгорице. +382 68 880 420.',
+      metaTitle: 'Репатриация из Черногории в Польшу 24/7 | Авиа и Авто',
+      metaDesc: 'Официальная перевозка умерших и урн из Черногории в Польшу (Варшава, Краков, Вроцлав, Гданьск). Посольство Польши в Подгорице. +382 68 914 816.',
       keywords: ['Репатриация из Черногории в Польшу', 'Перевозка тела Черногория Варшава', 'Посольство Польши в Подгорице репатриация'],
       h1: 'Международная репатриация из Черногории в Польшу (Авиа и Авто)',
       subtitle: 'Оформление консульского разрешения в Посольстве Республики Польша в Подгорице, присяжный перевод на польский язык, опайка цинка и доставка рейсами LOT в Варшаву (WAW) или прямым спецкатафалком.',
@@ -427,8 +427,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     },
     mne: {
       countryAccusative: 'Poljsku',
-      metaTitle: 'Repatrijacija i prevoz pokojnika iz Crne Gore za Poljsku 24/7',
-      metaDesc: 'Međunarodni avio i drumski prevoz preminulih iz Crne Gore za Poljsku (Varšava, Krakov, Vroclav, Gdanjsk). Ambasada Poljske Podgorica. +382 68 880 420.',
+      metaTitle: 'Repatrijacija preminulih iz Crne Gore za Poljsku 24/7',
+      metaDesc: 'Međunarodni avio i drumski prevoz preminulih iz Crne Gore za Poljsku (Varšava, Krakov, Vroclav, Gdanjsk). Ambasada Poljske Podgorica. +382 68 914 816.',
       keywords: ['Prevoz pokojnika iz Crne Gore za Poljsku', 'Repatrijacija Crna Gora Poljska', 'Ambasada Poljske Podgorica sprovodnica'],
       h1: 'Međunarodna repatrijacija iz Crne Gore u Poljsku (Avio i Drumski prevoz)',
       subtitle: 'Kompletna procedura u Ambasadi Republike Poljske u Podgorici, ovjereni prevodi na poljski jezik, hermetičko lemljenje cinka i transport putem LOT Cargo HUM za Varšavu (WAW) ili specijalnim vozilom.',
@@ -449,7 +449,7 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     en: {
       country: 'France',
       metaTitle: 'Repatriation of Remains from Montenegro to France 24/7',
-      metaDesc: '24/7 repatriation of remains from Montenegro to France (Paris CDG, Lyon, Nice, Marseille). French Embassy Laissez-Passer Mortuaire. +382 68 880 420.',
+      metaDesc: '24/7 repatriation of remains from Montenegro to France (Paris CDG, Lyon, Nice, Marseille). French Embassy Laissez-Passer Mortuaire. +382 68 914 816.',
       keywords: [
         'Repatriation from Montenegro to France',
         'Rapatriement de corps Monténégro France',
@@ -471,8 +471,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     ru: {
       countryGenitive: 'Франции',
       countryAccusative: 'Францию',
-      metaTitle: 'Репатриация из Черногории во Францию 24/7 | Париж, Ницца, Лион',
-      metaDesc: 'Официальная репатриация умерших и урн из Черногории во Францию (Париж, Ницца, Лион, Марсель). Оформление Laissez-Passer в Посольстве Франции. +382 68 880 420.',
+      metaTitle: 'Репатриация из Черногории во Францию (Париж, Ницца) 24/7',
+      metaDesc: 'Официальная репатриация умерших и урн из Черногории во Францию (Париж, Ницца, Лион). Laissez-Passer в Посольстве Франции. +382 68 914 816.',
       keywords: ['Репатриация из Черногории во Францию', 'Перевозка тела Черногория Париж Ницца', 'Посольство Франции в Подгорице репатриация'],
       h1: 'Международная репатриация из Черногории во Францию',
       subtitle: 'Оформление французского консульского паспорта Laissez-Passer Mortuaire в Посольстве Франции в Подгорице, судебные переводы на французский язык, танатопраксия, опайка цинка и доставка в Париж, Лион, Ниццу и Марсель.',
@@ -488,8 +488,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     },
     mne: {
       countryAccusative: 'Francusku',
-      metaTitle: 'Repatrijacija i prevoz pokojnika iz Crne Gore u Francusku 24/7',
-      metaDesc: 'Međunarodna avio i drumska repatrijacija preminulih iz Crne Gore u Francusku (Pariz, Lion, Nica, Marsej). Ambasada Francuske Podgorica. +382 68 880 420.',
+      metaTitle: 'Repatrijacija preminulih iz Crne Gore u Francusku 24/7',
+      metaDesc: 'Međunarodna avio i drumska repatrijacija preminulih iz Crne Gore u Francusku (Pariz, Lion, Nica, Marsej). Ambasada Francuske Podgorica. +382 68 914 816.',
       keywords: ['Prevoz pokojnika iz Crne Gore u Francusku', 'Repatrijacija Crna Gora Pariz', 'Ambasada Francuske Podgorica Laissez-Passer'],
       h1: 'Međunarodna repatrijacija iz Crne Gore u Francusku',
       subtitle: 'Pribavljanje Laissez-Passer Mortuaire dokumenta u Ambasadi Francuske u Podgorici, ovjereni prevodi na francuski jezik, sertifikat o tanatopraksiji, lemljenje cinka i transport za Pariz (CDG), Lion, Nicu i Marsej.',
@@ -509,8 +509,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     slug: '/repatriation/to-turkey/',
     en: {
       country: 'Turkey',
-      metaTitle: 'Repatriation of Remains from Montenegro to Turkey 24/7 | TGD–IST',
-      metaDesc: 'Rapid 24–48h air repatriation from Podgorica (TGD) to Istanbul (IST), Ankara, Izmir & Antalya via Turkish Airlines Cargo HUM. +382 68 880 420.',
+      metaTitle: 'Repatriation from Montenegro to Turkey 24/7 | TGD–IST',
+      metaDesc: 'Rapid 24–48h air repatriation from Podgorica (TGD) to Istanbul (IST), Ankara, Izmir & Antalya via Turkish Airlines Cargo HUM. +382 68 914 816.',
       keywords: [
         'Repatriation from Montenegro to Turkey',
         'Turkish Embassy Podgorica repatriation',
@@ -533,7 +533,7 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
       countryGenitive: 'Турции',
       countryAccusative: 'Турцию',
       metaTitle: 'Репатриация из Черногории в Турцию (Стамбул, Анталья) 24/7',
-      metaDesc: 'Срочная авиарепатриация (Cargo HUM) из Подгорицы (TGD) прямыми рейсами Turkish Airlines в Стамбул, Анкару, Измир, Анталью за 24–48ч. +382 68 880 420.',
+      metaDesc: 'Срочная авиарепатриация (Cargo HUM) из Подгорицы (TGD) прямыми рейсами Turkish Airlines в Стамбул, Анкару, Измир, Анталью за 24–48ч. +382 68 914 816.',
       keywords: ['Репатриация из Черногории в Турцию', 'Груз 200 Подгорица Стамбул', 'Посольство Турции в Подгорице репатриация'],
       h1: 'Ускоренная авиарепатриация из Черногории в Турцию (Turkish Cargo HUM)',
       subtitle: 'Оперативное оформление в Посольстве Турецкой Республики в Подгорице за 24 часа, соблюдение конфессиональных традиций (при необходимости), опайка цинка и ежедневный прямой вылет Turkish Airlines из Подгорицы (TGD) в Стамбул (IST) и все провинции Турции.',
@@ -549,8 +549,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     },
     mne: {
       countryAccusative: 'Tursku',
-      metaTitle: 'Repatrijacija i prevoz preminulih iz Crne Gore u Tursku 24/7',
-      metaDesc: 'Hitna avio repatrijacija (Turkish Airlines Cargo HUM) iz Podgorice (TGD) za Istanbul, Ankaru, Izmir i Antaliju u roku od 24–48h. +382 68 880 420.',
+      metaTitle: 'Repatrijacija preminulih iz Crne Gore u Tursku 24/7',
+      metaDesc: 'Hitna avio repatrijacija (Turkish Airlines Cargo HUM) iz Podgorice (TGD) za Istanbul, Ankaru, Izmir i Antaliju u roku od 24–48h. +382 68 914 816.',
       keywords: ['Repatrijacija iz Crne Gore u Tursku', 'Cargo HUM Podgorica Istanbul', 'Ambasada Turske Podgorica sprovodnica'],
       h1: 'Hitna avio repatrijacija iz Crne Gore u Republiku Tursku (TGD – IST)',
       subtitle: 'Prioritetna konzularna procedura u Ambasadi Republike Turske u Podgorici, poštovanje vjerskih običaja (gasul i ćefini u saradnji sa Islamskom zajednicom), hermetičko lemljenje i direktni dnevni letovi Turkish Airlines Cargo HUM za Istanbul i sve gradove u Turskoj.',
@@ -571,7 +571,7 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     en: {
       country: 'Italy',
       metaTitle: 'Repatriation of Remains from Montenegro to Italy 24/7',
-      metaDesc: '24/7 repatriation of remains from Montenegro to Italy (Rome, Milan, Bari, Venice, Naples) by air or road. Italian Embassy Podgorica. +382 68 880 420.',
+      metaDesc: '24/7 repatriation of remains from Montenegro to Italy (Rome, Milan, Bari, Venice, Naples) by air or road. Italian Embassy Podgorica. +382 68 914 816.',
       keywords: [
         'Repatriation from Montenegro to Italy',
         'Rimpatrio salma dal Montenegro in Italia',
@@ -593,8 +593,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     ru: {
       countryGenitive: 'Италии',
       countryAccusative: 'Италию',
-      metaTitle: 'Репатриация из Черногории в Италию 24/7 | Рим, Милан, Венеция',
-      metaDesc: 'Официальная перевозка умерших (авиа и авто) из Черногории в Италию (Рим, Милан, Венеция, Бари). Passaporto Mortuario в Посольстве Италии. +382 68 880 420.',
+      metaTitle: 'Репатриация из Черногории в Италию (Рим, Милан) 24/7',
+      metaDesc: 'Официальная перевозка умерших (авиа и авто) из Черногории в Италию (Рим, Милан, Венеция, Бари). Passaporto Mortuario в Посольстве Италии. +382 68 914 816.',
       keywords: ['Репатриация из Черногории в Италию', 'Перевозка тела Черногория Италия', 'Посольство Италии в Подгорице репатриация'],
       h1: 'Международная репатриация из Черногории в Италию (Авиа и Авто)',
       subtitle: 'Оформление итальянского похоронного паспорта (Passaporto Mortuario) в Посольстве Италии в Подгорице, заверенный перевод на итальянский язык, опайка цинка и быстрая доставка в Рим, Милан, Венецию, Триест, Болонью или Неаполь.',
@@ -610,8 +610,8 @@ const CORRIDOR_SEEDS: CorridorSeed[] = [
     },
     mne: {
       countryAccusative: 'Italiju',
-      metaTitle: 'Repatrijacija i prevoz pokojnika iz Crne Gore u Italiju 24/7',
-      metaDesc: 'Međunarodni avio i drumski prevoz preminulih iz Crne Gore za Italiju (Rim, Milano, Venecija, Trst, Bari). Ambasada Italije Podgorica. +382 68 880 420.',
+      metaTitle: 'Repatrijacija preminulih iz Crne Gore u Italiju 24/7',
+      metaDesc: 'Međunarodni avio i drumski prevoz preminulih iz Crne Gore za Italiju (Rim, Milano, Venecija, Trst, Bari). Ambasada Italije Podgorica. +382 68 914 816.',
       keywords: ['Prevoz pokojnika iz Crne Gore u Italiju', 'Repatrijacija Crna Gora Italija', 'Ambasada Italije Podgorica Passaporto Mortuario'],
       h1: 'Međunarodna repatrijacija iz Crne Gore u Italiju (Avio i Drumski prevoz)',
       subtitle: 'Kompletna procedura u Ambasadi Italije u Podgorici za izdavanje Passaporto Mortuario dokumenta, ovjereni prevodi sudskog tumača za italijanski jezik, lemljenje cinka i transport za Rim, Milano, Veneciju, Trst, Bolonju ili Bari.',

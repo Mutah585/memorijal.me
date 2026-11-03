@@ -75,7 +75,13 @@ export const Footer: React.FC<FooterProps> = ({
             </p>
             <div className="pt-2 flex items-center gap-2 text-xs text-emerald-300 font-medium">
               <FileCheck className="w-4 h-4 shrink-0" />
-              <span>IATA Cargo HUM • Sprovodnica • Consular PoA</span>
+              <span>
+                {lang === 'RU'
+                  ? 'IATA Cargo HUM • Sprovodnica • По доверенности'
+                  : lang === 'MNE'
+                  ? 'IATA Cargo HUM • Sprovodnica • Po punomoćju'
+                  : 'IATA Cargo HUM • Sprovodnica • Consular PoA'}
+              </span>
             </div>
           </div>
 
@@ -127,11 +133,25 @@ export const Footer: React.FC<FooterProps> = ({
                 className="flex items-center gap-2.5 text-white font-semibold hover:text-emerald-300 transition-colors"
               >
                 <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>{PHONE_DISPLAY} (24/7 Duty)</span>
+                <span>
+                  {PHONE_DISPLAY}{' '}
+                  {lang === 'RU'
+                    ? '(Дежурный 24/7)'
+                    : lang === 'MNE'
+                    ? '(Dežurni 24/7)'
+                    : '(24/7 Duty)'}
+                </span>
               </a>
               <div className="flex items-center gap-2.5 text-slate-300">
                 <Phone className="w-4 h-4 text-slate-400 shrink-0" />
-                <span>{SECONDARY_PHONE_DISPLAY} (Podgorica Desk)</span>
+                <span>
+                  {SECONDARY_PHONE_DISPLAY}{' '}
+                  {lang === 'RU'
+                    ? '(Офис Подгорица)'
+                    : lang === 'MNE'
+                    ? '(Kancelarija Podgorica)'
+                    : '(Podgorica Desk)'}
+                </span>
               </div>
               <a
                 href={whatsappUrl}
@@ -140,7 +160,13 @@ export const Footer: React.FC<FooterProps> = ({
                 className="flex items-center gap-2.5 text-emerald-300 hover:text-emerald-200 font-medium transition-colors"
               >
                 <MessageCircle className="w-4 h-4 shrink-0" />
-                <span>WhatsApp Dispatch ({PHONE_DISPLAY})</span>
+                <span>
+                  {lang === 'RU'
+                    ? `WhatsApp 24/7 (${PHONE_DISPLAY})`
+                    : lang === 'MNE'
+                    ? `WhatsApp 24/7 (${PHONE_DISPLAY})`
+                    : `WhatsApp Dispatch (${PHONE_DISPLAY})`}
+                </span>
               </a>
               <a
                 href={`mailto:${OFFICIAL_EMAIL}`}

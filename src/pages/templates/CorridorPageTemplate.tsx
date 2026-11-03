@@ -78,6 +78,8 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           eeatRole: 'Исполнительный координатор • Memorijal d.o.o. Montenegro',
           eeatText:
             'Каждое международное дело проверяется и контролируется лично от момента поступления тела в морг Котора или KCCG Подгорицы до пересечения границы или выдачи урны. Мы работаем строго по государственному фискальному счету (EFI QR) и принимаем оплату SEPA/SWIFT или гарантии страховых компаний (GOP).',
+          specBadge: 'ОФИЦИАЛЬНАЯ ЛОГИСТИЧЕСКАЯ И КОНСУЛЬСКАЯ СПЕЦИФИКАЦИЯ',
+          efiBadge: 'Фискализация EFI QR',
           relatedCorridors: 'Другие международные коридоры репатриации',
           relatedLocations: 'Муниципальные и больничные хабы в Черногории',
         }
@@ -109,6 +111,8 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           eeatRole: 'Izvršni koordinator • Memorijal d.o.o. Crna Gora',
           eeatText:
             'Svaki međunarodni slučaj nadzire se lično od prijema u Opštu bolnicu Kotor ili KCCG Podgorica do konačnog dolaska u zemlju odredišta. Poslujemo kao registrovani DOO u Crnoj Gori (PIB: 03489217) uz zvaničnu EFI fiskalizaciju i SEPA/SWIFT IBAN plaćanja.',
+          specBadge: 'ZVANIČNA LOGISTIČKA I KONZULARNA SPECIFIKACIJA',
+          efiBadge: 'EFI QR Fiskalizacija',
           relatedCorridors: 'Drugi međunarodni koridori repatrijacije',
           relatedLocations: 'Opštinski i bolnički centri u Crnoj Gori',
         }
@@ -139,6 +143,8 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           eeatRole: 'Executive Coordinator • Memorijal d.o.o. Montenegro',
           eeatText:
             'Every cross-border repatriation and Belgrade cremation case is personally supervised from hospital mortuary release in Kotor or KCCG Podgorica through final handover. Memorijal d.o.o. is a licensed Montenegrin corporate entity (PIB: 03489217) issuing official EFI QR fiscal invoices for insurance and SEPA/SWIFT settlement.',
+          specBadge: 'OFFICIAL LOGISTICS & CONSULAR SPECIFICATION',
+          efiBadge: 'EFI QR Fiscalization',
           relatedCorridors: 'Other International Repatriation Corridors',
           relatedLocations: 'Montenegro Municipal & Hospital Hubs',
         };
@@ -148,6 +154,18 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
       ? uiLabels.categoryCorridor
       : route.category === 'service'
       ? uiLabels.categoryService
+      : route.category === 'transit'
+      ? locale === 'ru'
+        ? 'Пограничные переходы и карго-терминалы'
+        : locale === 'mne'
+        ? 'Granični prelazi i kargo terminali'
+        : 'Border Crossings & Cargo Hubs'
+      : route.category === 'assistance'
+      ? locale === 'ru'
+        ? 'Страховые и ассистанс-компании (GOP)'
+        : locale === 'mne'
+        ? 'Osiguravajuće i asistentske kuće (GOP)'
+        : 'Travel Insurance & Assistance Partners'
       : uiLabels.categoryResource;
 
   const corridorLinks = ALL_SEO_ROUTES.filter(
@@ -304,7 +322,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-sapphire mb-3">
             <Plane className="w-4 h-4" />
-            <span>OFFICIAL LOGISTICS & CONSULAR SPECIFICATION</span>
+            <span>{uiLabels.specBadge}</span>
           </div>
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-slateDeep">
             {page.matrixHeading}
@@ -574,7 +592,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
               <div className="pt-2 flex flex-wrap gap-2 text-[11px] font-mono text-emerald-200">
                 <span className="bg-white/10 px-3 py-1 rounded">PIB: 03489217</span>
                 <span className="bg-white/10 px-3 py-1 rounded">PDV: 30/31-20948-4</span>
-                <span className="bg-white/10 px-3 py-1 rounded">EFI QR Fiscalization</span>
+                <span className="bg-white/10 px-3 py-1 rounded">{uiLabels.efiBadge}</span>
                 <span className="bg-white/10 px-3 py-1 rounded">SWIFT / SEPA IBAN</span>
               </div>
             </div>

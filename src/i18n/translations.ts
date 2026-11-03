@@ -194,10 +194,10 @@ export interface TranslationContent {
   };
 }
 
-export const PHONE_DISPLAY = '+382 68 880 420';
-export const PHONE_HREF = 'tel:+38268880420';
+export const PHONE_DISPLAY = '+382 68 914 816';
+export const PHONE_HREF = 'tel:+38268914816';
 export const SECONDARY_PHONE_DISPLAY = '+382 20 664 112';
-export const WHATSAPP_NUMBER = '38268880420';
+export const WHATSAPP_NUMBER = '38268914816';
 export const OFFICIAL_EMAIL = 'dispatch@memorijal.me';
 
 export const translations: Record<Language, TranslationContent> = {
@@ -650,7 +650,7 @@ export const translations: Record<Language, TranslationContent> = {
       title: '24/7 Coordinator Dispatch & Case Consultation',
       subtitle:
         'Provide the initial details below. Our duty coordinator in Montenegro will respond immediately via phone or WhatsApp with a clear action plan and exact written estimate.',
-      urgentNotice: 'For immediate voice assistance, call +382 68 880 420 at any hour.',
+      urgentNotice: 'For immediate voice assistance, call +382 68 914 816 at any hour.',
       nameLabel: 'Your Full Name / Officer Name',
       namePlaceholder: 'e.g., Anna Lindqvist / EuroCross Assistance',
       contactLabel: 'Phone Number (WhatsApp) or Official Email',
@@ -1140,7 +1140,7 @@ export const translations: Record<Language, TranslationContent> = {
       title: 'Круглосуточная связь с координатором и расчет процедуры',
       subtitle:
         'Оставьте контактные данные ниже. Дежурный координатор в Черногории свяжется с вами в течение 10–15 минут по телефону или WhatsApp с четким планом действий и письменной сметой.',
-      urgentNotice: 'Для немедленной голосовой консультации звоните +382 68 880 420 в любое время суток.',
+      urgentNotice: 'Для немедленной голосовой консультации звоните +382 68 914 816 в любое время суток.',
       nameLabel: 'Ваше имя / название организации',
       namePlaceholder: 'Например: Александр Иванов / Ассистанс-служба',
       contactLabel: 'Номер телефона (WhatsApp) или Email',
@@ -1630,7 +1630,7 @@ export const translations: Record<Language, TranslationContent> = {
       title: '24/7 Kontakt sa koordinatorom i prijava slučaja',
       subtitle:
         'Unesite osnovne podatke ispod. Naš dežurni koordinator u Crnoj Gori će vas kontaktirati u roku od 10–15 minuta putem telefona ili WhatsApp-a sa jasnim planom i pisanom specifikacijom.',
-      urgentNotice: 'Za trenutnu telefonsku asistenciju pozovite +382 68 880 420 u bilo koje doba dana ili noći.',
+      urgentNotice: 'Za trenutnu telefonsku asistenciju pozovite +382 68 914 816 u bilo koje doba dana ili noći.',
       nameLabel: 'Vaše ime i prezime / Naziv institucije',
       namePlaceholder: 'npr. Marko Petrović / Assistance Partner',
       contactLabel: 'Broj telefona (WhatsApp) ili zvanični E-mail',

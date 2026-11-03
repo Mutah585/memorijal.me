@@ -8,11 +8,14 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'lucide-react'],
-          seoData: [
+          seoCore: [
             './src/data/seo-routes.ts',
             './src/data/seo-corridors.ts',
             './src/data/seo-locations-resources.ts',
           ],
+          seoClustersAB: ['./src/data/seo-clusters.ts'],
+          seoClustersCE: ['./src/data/seo-clusters-c.ts'],
+          seoClustersD: ['./src/data/seo-clusters-d.ts'],
         },
       },
     },

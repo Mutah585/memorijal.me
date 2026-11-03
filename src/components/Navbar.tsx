@@ -101,9 +101,21 @@ export const Navbar: React.FC<NavbarProps> = ({
               <button
                 onClick={handleCopyPhone}
                 type="button"
-                title="Copy phone number"
+                title={
+                  lang === 'RU'
+                    ? 'Скопировать номер телефона'
+                    : lang === 'MNE'
+                    ? 'Kopiraj broj telefona'
+                    : 'Copy phone number'
+                }
                 className="p-1 rounded hover:bg-white/10 text-slate-300 hover:text-white transition-colors"
-                aria-label="Copy emergency phone number"
+                aria-label={
+                  lang === 'RU'
+                    ? 'Скопировать экстренный номер телефона'
+                    : lang === 'MNE'
+                    ? 'Kopiraj hitni broj telefona'
+                    : 'Copy emergency phone number'
+                }
               >
                 {copied ? <Check className="w-3.5 h-3.5 text-emerald-300" /> : <Copy className="w-3.5 h-3.5" />}
               </button>

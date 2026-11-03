@@ -139,8 +139,23 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
           corridorsTitle: 'International Repatriation Corridors from This Location',
         };
 
+  const categoryText =
+    route.category === 'mortuary'
+      ? locale === 'ru'
+        ? 'Больничные морги и судебная медицина'
+        : locale === 'mne'
+        ? 'Bolničke mrtvačnice i sudska medicina'
+        : 'Hospital Mortuaries & Forensic Centers'
+      : route.category === 'cemetery'
+      ? locale === 'ru'
+        ? 'Городские кладбища и капеллы (Groblja)'
+        : locale === 'mne'
+        ? 'Gradska groblja i kapele'
+        : 'Municipal Cemeteries & Chapels'
+      : ui.categoryLocations;
+
   const otherLocations = ALL_SEO_ROUTES.filter(
-    (r) => r.category === 'location' && r.id !== route.id
+    (r) => r.category === route.category && r.id !== route.id
   );
   const corridors = ALL_SEO_ROUTES.filter((r) => r.category === 'corridor');
 
@@ -182,7 +197,7 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
               itemType="https://schema.org/ListItem"
               className="text-slateMuted"
             >
-              <span itemProp="name">{ui.categoryLocations}</span>
+              <span itemProp="name">{categoryText}</span>
               <meta itemProp="position" content="2" />
             </span>
 
@@ -558,7 +573,13 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
               <div className="pt-2 flex flex-wrap gap-2 text-[11px] font-mono text-emerald-200">
                 <span className="bg-white/10 px-3 py-1 rounded">PIB: 03489217</span>
                 <span className="bg-white/10 px-3 py-1 rounded">PDV: 30/31-20948-4</span>
-                <span className="bg-white/10 px-3 py-1 rounded">EFI QR Fiscalization</span>
+                <span className="bg-white/10 px-3 py-1 rounded">
+                  {locale === 'ru'
+                    ? 'Фискализация EFI QR'
+                    : locale === 'mne'
+                    ? 'EFI QR Fiskalizacija'
+                    : 'EFI QR Fiscalization'}
+                </span>
                 <span className="bg-white/10 px-3 py-1 rounded">SWIFT / SEPA IBAN</span>
               </div>
             </div>

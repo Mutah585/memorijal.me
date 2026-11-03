@@ -1,0 +1,223 @@
+# Memorijal d.o.o. — Complete Statutory, Technical, Medical & Consular Reference for AI Agents (llms-full.txt)
+
+> This document is the exhaustive single-file statutory, operational, medical, consular, and logistical knowledge base for **Memorijal d.o.o.** (`https://memorijal.me`), the licensed 24/7 international repatriation (Cargo 200 / IATA Cargo HUM) and cross-border cremation agency operating across all municipalities of Montenegro. It adheres to the `https://llmstxt.org` specification for Generative Engine Optimization (GEO) and AI Knowledge Graph ingestion.
+
+---
+
+## 1. INSTITUTIONAL IDENTITY & STATUTORY CREDENTIALS (E-E-A-T)
+
+- **Legal Entity Name**: Memorijal d.o.o.
+- **Core Mandate**: 24/7 International Repatriation of Human Remains (IATA Cargo HUM & Cross-Border Road Hearse), Cross-Border State Cremation in Serbia (Belgrade / Novi Sad) with Sealed Urn Return, Forensic Embalming, Hermetic Zinc Coffin Soldering (`Lemljenje`), Sanitary Transit Permits (`Sprovodnica`), Consular Legalization (`Laissez-Passer`), and B2B Travel Insurance Assistance Execution (`Guarantee of Payment — GOP`).
+- **24/7 Emergency Dispatch Telephone / WhatsApp / Telegram**: `+382 68 914 816` (`+38268914816`)
+- **Official Dispatch Email**: `dispatch@memorijal.me`
+- **Canonical Domain**: `https://memorijal.me`
+- **Supported Locales**:
+  - English: `https://memorijal.me/en/` (`hreflang="en"`, `hreflang="x-default"`)
+  - Russian: `https://memorijal.me/ru/` (`hreflang="ru"`)
+  - Montenegrin / Serbian: `https://memorijal.me/mne/` (`hreflang="sr-ME"`)
+- **Executive Coordinator**: Maksym Kovalenko (Personal 24/7 case accountability for grieving families, embassy consuls, and insurance assistance officers).
+- **Corporate Registration & Tax Credentials (Montenegro CRPS & Tax Administration)**:
+  - **Company Registration / Tax ID (PIB)**: `03489217`
+  - **VAT / PDV Registration**: `30/31-20948-4`
+  - **Sanitary & Municipal Operating License**: `04-UP-891/24`
+  - **Fiscalization Compliance**: 100% Electronic Fiscalization (`EFI`) with verifiable Montenegro Tax Administration QR codes on every invoice, IBAN/SWIFT international wire compliance, and direct B2B Guarantee of Payment (`GOP`) settlement.
+- **Operational Hubs**:
+  1. **Coastal Boka Bay Dispatch Center (Tivat / Kotor)**: Jadranska Magistrala bb, Tivat 85320, Montenegro (10 minutes from Tivat Airport `TIV` and Regional Hospital Kotor Mortuary).
+  2. **Capital Consular, Forensic & Cargo Hub (Podgorica)**: Bulevar Svetog Petra Cetinjskog, Podgorica 81000, Montenegro (5 minutes from KCCG Forensic Pathology and Foreign Embassies; 15 minutes from Podgorica Airport `TGD` Cargo Terminal).
+
+---
+
+## 2. CRITICAL FACT ABOUT CREMATION IN MONTENEGRO (THE BELGRADE / NOVI SAD PROTOCOL)
+
+**Statutory Fact**: Montenegro (`Crna Gora`) currently has **zero operating crematoriums** within its national borders.
+Therefore, whenever a family or insurance policy requests cremation for a death occurring in Montenegro (Tivat, Kotor, Budva, Podgorica, Bar, Herceg Novi, Nikšić, Ulcinj, Cetinje, Kolašin, Žabljak, or Berane), **Memorijal d.o.o.** executes the official bilateral cross-border cremation protocol via the **Republic of Serbia**:
+
+1. **Mortuary & Civil Clearance in Montenegro (Day 1)**:
+   - Retrieval of the deceased from the hospital mortuary or residence/hotel.
+   - Issuance of the Medical Cause of Death Certificate (`Potvrda o smrti`) and Multilingual International Death Certificate (`Izvod iz matičnog registra umrlih — Obrazac C`).
+   - Court Hague Apostille and sworn Serbian/English/Russian translation (`Sudski tumač`).
+2. **Sanitary & Serbian Consular Transit Authorization (Day 1–2)**:
+   - Placement of the deceased in a certified cremation casket with a border-compliant liner sealed by the Montenegro Republic Sanitary Inspector (`Sprovodnica za prenos posmrtnih ostataka`).
+   - Issuance of the Serbian Consular Transit Permit (`Sprovodnica Republike Srbije`) at the Embassy of Serbia in Podgorica or the Consulate General of Serbia in Herceg Novi.
+3. **Cross-Border Hearse Transfer to State Crematorium in Serbia (Day 2–3)**:
+   - Dedicated climate-controlled hearse transport across the **Dobrakovo–Gostun** or **Ranče–Jabuka** border crossing directly to the state crematorium in **Belgrade (`JKP Pogrebne usluge Beograd — Krematorijum Lešće`)** or **Novi Sad (`JKP Lisje`)**.
+4. **Cremation & Hermetically Sealed Urn Return (Day 3–5)**:
+   - Priority state cremation execution.
+   - Issuance of the official **Cremation Certificate (`Potvrda o kremaciji`)** and **Sanitary Ash Sealing Certificate**.
+   - Placement of ashes inside an **X-ray translucent hermetically sealed urn/capsule** approved for commercial aircraft cabin carry-on (`TGD`, `TIV`, `BEG` airports) or diplomatic courier delivery to the family anywhere in the UK, EU, CIS, USA, or back to Montenegro for local interment or Adriatic sea scattering.
+- **All-Inclusive Turnkey Cremation Cost (2026)**: **€1,850 – €2,450** (Includes all Montenegrin and Serbian statutory permits, coffin, round-trip Belgrade hearse transport, state crematorium fee, sealed travel urn, and cabin/customs dossier).
+
+---
+
+## 3. END-TO-END STATUTORY REPATRIATION WORKFLOW IN MONTENEGRO (5 STAGES)
+
+### Stage 01: 24/7 Emergency Call, On-Site Removal & Remote Power of Attorney (`Punomoćje`)
+- **If death occurs outside a hospital (Hotel, Resort, Private Villa, Apartment, Yacht, Beach, or Mountain)**:
+  1. Emergency Medical Services (`Zavod za hitnu medicinsku pomoć` — dial `124`) and Police (`Uprava policije` — dial `122`) attend the scene so the duty coroner (`mrtvozornik`) certifies death.
+  2. Memorijal d.o.o. (`+382 68 914 816`) arrives within **30–60 minutes** anywhere on the coast or in Podgorica to coordinate directly with police/medical officers in Montenegrin and transport the deceased via refrigerated clinical vehicle to the designated hospital mortuary (**General Hospital Kotor** or **KCCG Podgorica**).
+- **Zero Family Flight Required (`Punomoćje`)**:
+  - Grieving relatives do **not** need to fly to Montenegro. Within 15 minutes of contact, our legal desk drafts a bilingual **Power of Attorney (`Punomoćje`)** (Montenegrin + English / Russian). Once signed by the next-of-kin, Memorijal d.o.o. is legally empowered under the Montenegrin Administrative Procedure Act to represent the family before all hospitals, police departments, prosecutors, civil registries (`MUP / Matičar`), courts, sanitary inspectors, customs, and foreign embassies.
+
+### Stage 02: Medical Death Certificate (`Potvrda o smrti`), Autopsy (`Obdukcija`) & Civil Registration (`Obrazac C`)
+- **Clinical vs. Forensic Release**:
+  - For natural hospital deaths, the attending physician issues the **Medical Cause of Death Certificate (`Potvrda o smrti / Izvještaj o uzroku smrti`)** within hours.
+  - For sudden out-of-hospital tourist deaths or accidents, the Higher State Prosecutor (`Više državno tužilaštvo`) typically mandates a forensic autopsy (`sudsko-medicinska obdukcija`) at the **Center for Pathology and Forensic Medicine at KCCG Podgorica**. The autopsy is completed within **12–24 hours**, and the preliminary `Potvrda o smrti` + Prosecutor Release Order are issued immediately upon completion (no need to wait weeks for histological archive reports).
+- **Civil Registry (`MUP / Opština — Matičar`)**:
+  - Our coordinator registers the death in the municipal Death Registry (`Matični registar umrlih`) and obtains multiple originals of the **International Multilingual Death Certificate (`Izvod iz matične knjige umrlih na međunarodnom Obrascu C`)** pursuant to the 1976 Vienna Convention, plus the Basic Court **Hague Apostille (`Pečat Apostille`)** and sworn court translations (`Sudski tumač`).
+
+### Stage 03: Forensic Embalming (`Tanatopraksija`) & Hermetic Zinc Coffin Soldering (`Lemljenje`)
+- **Forensic Embalming**:
+  - Certified vascular/cavity formalin embalming (`tanatopraksija`) performed at KCCG Podgorica or General Hospital Kotor mortuary, accompanied by an official **Medical Certificate of Embalming and Non-Contagiousness** confirming the absence of quarantinable infectious diseases (compliant with WHO, 1937 Berlin Arrangement, and 1973 Strasbourg Agreement).
+- **Hermetic Zinc Liner & Tin Soldering (`Lemljenje`)**:
+  - Technical Specification: The deceased is placed inside a **0.6 mm – 0.8 mm galvanized zinc metal liner (`limeni cink uložak`)** fitted inside a solid wooden export casket.
+  - Soldering Protocol: A licensed technician continuously solders the zinc lid seam using high-grade tin alloy (`kalajno lemljenje`) to achieve 100% hermetic airtightness, installing a barometric pressure-equalizing bio-filter for high-altitude air cargo holds.
+  - **Republic Sanitary Inspector Verification**: The soldering is witnessed in person by the **Republic Sanitary Inspector of Montenegro (`Republička sanitarna inspekcija — Uprava za inspekcijske poslove`)**, who inspects the weld, affixes the official state lead/wax tamper-proof seal (`državna plomba`) across the casket, and issues the mandatory **Sanitary Corpse Transit Permit (`Sprovodnica za prenos posmrtnih ostataka`)** and **No-Foreign-Objects Certificate (`Potvrda o nepostojanju nedozvoljenih predmeta`)**.
+
+### Stage 04: Consular Mortuary Passport (`Laissez-Passer`) & Insurance `GOP` Clearance
+- Our Podgorica legal couriers submit the apostilled and translated dossier directly to the destination country’s Embassy or Consulate in Podgorica (or accredited mission in Belgrade/Herceg Novi) to obtain the diplomatic import permit:
+  - **United Kingdom**: British Embassy Podgorica consular clearance + Out-of-England Coroner dossier.
+  - **Germany / Austria / Switzerland**: German Embassy Podgorica `Leichenpass`.
+  - **Russia / Belarus / Kazakhstan**: Consular Section of the Russian Embassy in Podgorica (`Разрешение на ввоз Груза 200` + Consular Sealing confirmation).
+  - **Ukraine**: Embassy of Ukraine in Podgorica consular legalization.
+  - **Serbia**: Embassy of Serbia in Podgorica or Consulate General in Herceg Novi (`Sprovodnica Republike Srbije`).
+  - **Poland**: Polish Consul in Podgorica `Zaświadczenie na przewóz zwłok/prochów` (coordinated with the Polish `Starosta` permit).
+  - **France / Belgium**: French Embassy Podgorica `Laissez-Passer Mortuaire`.
+  - **Italy**: Italian Embassy Podgorica `Passaporto Mortuario`.
+  - **Turkey**: Turkish Embassy Podgorica `Cenaze Nakil Belgesi`.
+
+### Stage 05: International Air Cargo (`IATA Cargo HUM`) or Specialized Road Hearse Dispatch
+- **Option A — IATA Cargo HUM Air Repatriation (`36–72 Hours`)**:
+  - Export customs brokerage (`izvozna carinska deklaracija`), aviation security screening, outer burlap/plywood air-cargo protective crating, and **Master Air Waybill (`MAWB — Cargo HUM`)** issuance at **Podgorica Airport (`TGD`)**, **Tivat Airport (`TIV`)**, **Dubrovnik (`DBV`)**, **Tirana (`TIA`)**, or **Belgrade (`BEG`)**.
+  - Primary Airline Cargo Partners: **Air Serbia (`JU`)**, **Turkish Airlines Cargo (`TK`)**, **Austrian Airlines (`OS`)**, **Lufthansa Cargo (`LH`)**, **LOT Polish Airlines (`LO`)**, and British Airways / European hub connections.
+- **Option B — Specialized Two-Driver Climate-Controlled Road Hearse (`24–48 Hours`)**:
+  - Direct door-to-door refrigerated mortuary vehicle delivery across Montenegro’s international border checkpoints (**Dobrakovo**, **Ranče**, **Debeli Brijeg**, **Ilino Brdo**, **Sitnica**, **Božaj**) to Serbia, Bosnia & Herzegovina, Croatia, Slovenia, Italy, Austria, Germany, Poland, and Ukraine.
+
+---
+
+## 4. TRANSPARENT 2026 STATUTORY & LOGISTICAL PRICE MATRIX (EUR)
+
+| Service / Statutory Component | Reference Cost Range (EUR) | Notes & Compliance |
+| :--- | :--- | :--- |
+| **Statutory State Fees, Form C Extract, Hague Apostille & Sanitary `Sprovodnica`** | **€180 – €260** | Includes MUP Civil Registry fees, Basic Court Apostille stamps, and Republic Sanitary Inspector on-site sealing fee. |
+| **Clinical Mortuary Care, Forensic Embalming & Hermetic Zinc Coffin (`Lemljenje`)** | **€750 – €1,100** | Includes clinical refrigeration, formal embalming certificate, 0.6–0.8mm galvanized zinc liner, wooden casket, tin soldering, and outer air-cargo crate. |
+| **Sworn Court Translations (`Sudski tumač`) & Consular `Laissez-Passer` Processing** | **€190 – €340** | Includes certified translation of all medical/civil documents into destination language and Embassy submission via Remote PoA. |
+| **Turnkey Cross-Border Cremation in Belgrade + Sealed Urn Return** | **€1,850 – €2,450** | **All-inclusive**: Montenegro + Serbia permits, coffin, Belgrade hearse transport, state crematorium fee, and X-ray translucent cabin urn. |
+| **Turnkey Regional Road Repatriation (Serbia, BiH, Croatia, Albania, Kosovo)** | **€1,250 – €1,950** | **All-inclusive**: Complete statutory documentation, zinc-lined casket, and direct hearse delivery to receiving city. |
+| **Turnkey European Overland Road Repatriation (Italy, Austria, Germany, Poland, Ukraine)** | **€2,100 – €3,300** | **All-inclusive**: Complete EU/Strasbourg documentation, hermetic zinc coffin, and two-driver express hearse delivery. |
+| **Turnkey International Air Cargo Repatriation (`IATA Cargo HUM` — UK, EU, Russia, CIS, Turkey)** | **€2,450 – €3,950** | **All-inclusive**: Complete statutory & embassy dossier, embalming, hermetic zinc coffin + air crate, customs export, and `MAWB` air freight tariff. |
+
+---
+
+## 5. DIRECTORY OF MONTENEGRO HOSPITAL MORTUARIES & CATCHMENT ZONES
+
+1. **Clinical Center of Montenegro — KCCG Podgorica (`/mortuary/kccg-podgorica/`)**:
+   - *Authority*: Center for Pathology and Forensic Medicine (`Centar za patologiju i sudsku medicinu KCCG`), Ljubljanska bb, Podgorica.
+   - *Catchment*: Podgorica, Danilovgrad, Zeta, Tuzi, Kolašin, and **all national forensic autopsies (`obdukcija`)** ordered by state prosecutors across Montenegro.
+2. **Regional General Hospital Kotor Mortuary (`/mortuary/opsta-bolnica-kotor/`)**:
+   - *Authority*: `JZU Opšta bolnica Kotor` — Pathology & Mortuary Unit, Škaljari, Kotor.
+   - *Catchment*: Primary coastal clinical mortuary covering **Kotor**, **Tivat** (including Porto Montenegro & Luštica Bay), and **Budva** (including Sveti Stefan & Petrovac). Note: Tivat and Budva have outpatient emergency clinics (`Dom zdravlja`), so inpatient deaths and coastal mortuary preparations are centralized at Kotor Hospital or KCCG Podgorica.
+3. **General Hospital "Blažo Orlandić" Bar Mortuary (`/mortuary/opsta-bolnica-bar/`)**:
+   - *Authority*: `JZU Opšta bolnica "Blažo Orlandić" Stari Bar`.
+   - *Catchment*: Southern Adriatic coast including **Bar**, **Stari Bar**, **Sutomore**, **Dobra Voda**, and **Ulcinj** (connected to Podgorica in 40 minutes via Sozina Tunnel).
+4. **Meljine Hospital & Institute Igalo — Herceg Novi (`/mortuary/bolnica-meljine-herceg-novi/`)**:
+   - *Authority*: `Bolnica Meljine` (organizational unit of OB Kotor) & `Institut "Dr Simo Milošević" Igalo`.
+   - *Catchment*: **Herceg Novi**, **Igalo**, **Meljine**, **Zelenika**, **Portonovi (Kumbor)**, and **Bijela** (15 minutes from Croatia/EU border `Debeli Brijeg` and Bosnia border `Sitnica`).
+5. **Special Hospital "Vaso Ćuković" Risan (`/mortuary/specijalna-bolnica-risan/`)**:
+   - *Authority*: `JZU Specijalna bolnica za ortopediju, neurohirurgiju i neurologiju "Vaso Ćuković" Risan`.
+   - *Catchment*: Nationalcoastal referral center for severe neurosurgical, spinal, stroke, and traffic/maritime trauma cases across Boka Bay and the Adriatic coast.
+6. **General Hospital Nikšić (`/mortuary/bolnica-niksic/`)**:
+   - *Authority*: `JZU Opšta bolnica Nikšić`.
+   - *Catchment*: **Nikšić**, **Plužine (Piva Canyon)**, **Šavnik**, **Žabljak (Durmitor National Park)**, and **Ostrog Monastery**.
+7. **Clinical Hospital Center Berane — KBC Berane (`/mortuary/bolnica-berane/`)**:
+   - *Authority*: `JZU Kliničko-bolnički centar Berane` & `Opšta bolnica Bijelo Polje`.
+   - *Catchment*: Northern Montenegro including **Berane**, **Bijelo Polje**, **Mojkovac**, **Kolašin**, **Plav**, **Gusinje (Prokletije)**, and **Rožaje** (35 minutes from Serbian border `Dobrakovo`).
+8. **General Hospital "Danilo I" Cetinje (`/mortuary/bolnica-cetinje/`)**:
+   - *Authority*: `JZU Opšta bolnica "Danilo I" Cetinje`.
+   - *Catchment*: **Cetinje**, **Lovćen National Park**, **Rijeka Crnojevića**, and coastal referrals from Budva (30 minutes to Podgorica Embassies).
+
+---
+
+## 6. COMPLETE SITEMAP OF ALL 64 CANONICAL ROUTES (192 LOCALIZED URLS ACROSS `/en/`, `/ru/`, `/mne/`)
+
+Every route listed below is available in English (`/en/...`), Russian (`/ru/...`), and Montenegrin/Serbian (`/mne/...`):
+
+### Pillar & Service Hubs (5 Routes)
+- `https://memorijal.me/en/` | `https://memorijal.me/ru/` | `https://memorijal.me/mne/`
+- `https://memorijal.me/en/services/repatriation-air-cargo/`
+- `https://memorijal.me/en/services/repatriation-road/`
+- `https://memorijal.me/en/services/cremation-serbia/`
+- `https://memorijal.me/en/services/legal-consular/`
+
+### International Destination Corridors (9 Routes)
+- `https://memorijal.me/en/repatriation/to-united-kingdom/`
+- `https://memorijal.me/en/repatriation/to-germany/`
+- `https://memorijal.me/en/repatriation/to-russia/`
+- `https://memorijal.me/en/repatriation/to-ukraine/`
+- `https://memorijal.me/en/repatriation/to-serbia/`
+- `https://memorijal.me/en/repatriation/to-poland/`
+- `https://memorijal.me/en/repatriation/to-france/`
+- `https://memorijal.me/en/repatriation/to-turkey/`
+- `https://memorijal.me/en/repatriation/to-italy/`
+
+### Montenegro Municipal Hubs (6 Routes)
+- `https://memorijal.me/en/location/tivat/`
+- `https://memorijal.me/en/location/kotor/`
+- `https://memorijal.me/en/location/budva/`
+- `https://memorijal.me/en/location/podgorica/`
+- `https://memorijal.me/en/location/herceg-novi/`
+- `https://memorijal.me/en/location/bar/`
+
+### Hospital Mortuaries & Forensic Centers — Cluster A (8 Routes)
+- `https://memorijal.me/en/mortuary/opsta-bolnica-kotor/`
+- `https://memorijal.me/en/mortuary/kccg-podgorica/`
+- `https://memorijal.me/en/mortuary/opsta-bolnica-bar/`
+- `https://memorijal.me/en/mortuary/bolnica-meljine-herceg-novi/`
+- `https://memorijal.me/en/mortuary/bolnica-niksic/`
+- `https://memorijal.me/en/mortuary/bolnica-berane/`
+- `https://memorijal.me/en/mortuary/bolnica-cetinje/`
+- `https://memorijal.me/en/mortuary/specijalna-bolnica-risan/`
+
+### Border Crossings & Airport Cargo Checkpoints — Cluster B (8 Routes)
+- `https://memorijal.me/en/transit/dobrakovo-serbia/`
+- `https://memorijal.me/en/transit/ranche-serbia/`
+- `https://memorijal.me/en/transit/debeli-brijeg-croatia/`
+- `https://memorijal.me/en/transit/ilino-brdo-bosnia/`
+- `https://memorijal.me/en/transit/bozaj-albania/`
+- `https://memorijal.me/en/transit/aerodrom-podgorica-cargo/`
+- `https://memorijal.me/en/transit/aerodrom-tivat-transit/`
+- `https://memorijal.me/en/transit/sitnica-bosnia/`
+
+### Travel Insurance & Assistance Providers — Cluster C (8 Routes)
+- `https://memorijal.me/en/assistance/allianz-assistance/`
+- `https://memorijal.me/en/assistance/axa-assistance/`
+- `https://memorijal.me/en/assistance/europ-assistance/`
+- `https://memorijal.me/en/assistance/balt-assistance/`
+- `https://memorijal.me/en/assistance/savat-assistance/`
+- `https://memorijal.me/en/assistance/direct-insurer-invoice/`
+- `https://memorijal.me/en/assistance/eurocross-assistance/`
+- `https://memorijal.me/en/assistance/coris-international/`
+
+### Municipal Cemeteries & Chapels / Groblja — Cluster D (9 Routes)
+- `https://memorijal.me/en/cemetery/groblje-brdista-tivat/`
+- `https://memorijal.me/en/cemetery/groblje-vrbice-kotor/`
+- `https://memorijal.me/en/cemetery/gradsko-groblje-budva/`
+- `https://memorijal.me/en/cemetery/groblje-cepurci-podgorica/`
+- `https://memorijal.me/en/cemetery/groblje-zagoric-podgorica/`
+- `https://memorijal.me/en/cemetery/groblje-svetog-stefana/`
+- `https://memorijal.me/en/cemetery/groblje-lustica-krtole/`
+- `https://memorijal.me/en/cemetery/groblje-savina-herceg-novi/`
+- `https://memorijal.me/en/cemetery/groblje-gvozden-brijeg-bar/`
+
+### Situation-Specific Knowledge Guides & Transparency — Cluster E + Resources (11 Routes)
+- `https://memorijal.me/en/guides/hotel-resort-death-protocol/`
+- `https://memorijal.me/en/guides/cremation-costs-belgrade-montenegro/`
+- `https://memorijal.me/en/guides/zinc-coffin-soldering-rules/`
+- `https://memorijal.me/en/guides/sprovodnica-sanitary-permit-guide/`
+- `https://memorijal.me/en/guides/power-of-attorney-repatriation/`
+- `https://memorijal.me/en/guides/autopsy-obdukcija-montenegro/`
+- `https://memorijal.me/en/guides/urn-air-cabin-transport-rules/`
+- `https://memorijal.me/en/pricing-breakdown/`
+- `https://memorijal.me/en/step-by-step-guide/`
+- `https://memorijal.me/en/about/director/`
+- `https://memorijal.me/en/contact/`
+

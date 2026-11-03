@@ -1,8 +1,12 @@
-# Memorijal d.o.o. Montenegro — Technical SEO Robots Policy
+# Memorijal d.o.o. Montenegro — Technical SEO & GEO (llms.txt) Robots Policy
 User-agent: *
+Allow: /
+Allow: /assets/
 Allow: /en/
 Allow: /ru/
 Allow: /mne/
+Allow: /llms.txt
+Allow: /llms-full.txt
 
 # Disallow non-indexable modal, admin, and raw query parameter states
 Disallow: /admin/

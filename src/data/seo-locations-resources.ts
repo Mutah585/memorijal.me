@@ -1,4 +1,4 @@
-import { SeoRouteEntry, LocaleSlug, WalkthroughStep, CostBreakdownItem } from './seo-routes';
+import type { SeoRouteEntry, LocaleSlug, WalkthroughStep, CostBreakdownItem } from './seo-routes.ts';
 
 interface LocationSeed {
   id: string;
@@ -52,7 +52,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Tivat Municipality, Porto Montenegro, Luštica Bay, Donja Lastva, Krašići, Radovići & Tivat Airport (TIV)',
       hospitalMorgue: 'General Hospital Kotor Regional Morgue & Tivat Emergency Medical Unit (Hitna pomoć Tivat)',
       metaTitle: 'Repatriation & Funeral Assistance Tivat Montenegro 24/7',
-      metaDesc: '24/7 international repatriation & cremation assistance in Tivat (Porto Montenegro, Luštica Bay, TIV Airport). On-site in 30 mins. +382 68 880 420.',
+      metaDesc: '24/7 international repatriation & cremation assistance in Tivat (Porto Montenegro, Luštica Bay, TIV Airport). On-site in 30 mins. +382 68 914 816.',
       keywords: [
         'Funeral assistance Tivat Montenegro',
         'Repatriation of remains Tivat Porto Montenegro',
@@ -70,7 +70,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Тиват, Порто Монтенегро (Porto Montenegro), Луштица Бэй (Luštica Bay), Донья Ластва, Крашичи, аэропорт Тиват (TIV)',
       hospitalMorgue: 'Региональный морг Общей больницы г. Котор и скорая помощь г. Тиват (Dom zdravlja Tivat)',
       metaTitle: 'Ритуальная служба и репатриация в Тивате (Черногория) 24/7',
-      metaDesc: 'Круглосуточная помощь при смерти в Тивате (Porto Montenegro, Luštica Bay). Выезд за 30 мин, морг Котора, Груз 200 и кремация. +382 68 880 420.',
+      metaDesc: 'Круглосуточная помощь при смерти в Тивате (Porto Montenegro, Luštica Bay). Выезд за 30 мин, морг Котора, Груз 200 и кремация. +382 68 914 816.',
       keywords: [
         'Умер человек в Тивате что делать',
         'Ритуальные услуги Тиват Черногория',
@@ -88,7 +88,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Opština Tivat, Porto Montenegro, Luštica Bay, Donja Lastva, Krašići, Radovići i Aerodrom Tivat (TIV)',
       hospitalMorgue: 'Regionalna mrtvačnica Opšte bolnice Kotor i Dom zdravlja / Hitna pomoć Tivat',
       metaTitle: 'Pogrebne usluge i međunarodna repatrijacija Tivat 24/7',
-      metaDesc: 'Dežurna služba 24/7 za međunarodni prevoz pokojnika i kremaciju u Tivtu (Porto Montenegro, Luštica Bay). Izlazak za 30 min. +382 68 880 420.',
+      metaDesc: 'Dežurna služba 24/7 za međunarodni prevoz pokojnika i kremaciju u Tivtu (Porto Montenegro, Luštica Bay). Izlazak za 30 min. +382 68 914 816.',
       keywords: [
         'Pogrebne usluge Tivat Budva međunarodni prevoz',
         'Prevoz pokojnika Tivat inostranstvo',
@@ -109,7 +109,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Kotor Old Town, Dobrota, Perast, Risan, Prčanj, Morinj, Stoliv & Cruise Port Kotor',
       hospitalMorgue: 'General Hospital Kotor (Opšta bolnica Kotor) & Special Hospital Risan (Specijalna bolnica Risan)',
       metaTitle: 'Kotor Hospital Mortuary Body Repatriation & Cremation 24/7',
-      metaDesc: 'Direct 24/7 repatriation from General Hospital Kotor (Opšta bolnica Kotor) & Risan Hospital. Zinc sealing, Sprovodnica & air/road transit. +382 68 880 420.',
+      metaDesc: 'Direct 24/7 repatriation from General Hospital Kotor (Opšta bolnica Kotor) & Risan Hospital. Zinc sealing, Sprovodnica & air/road transit. +382 68 914 816.',
       keywords: [
         'What to do if someone dies in Kotor Montenegro',
         'Kotor hospital mortuary body repatriation',
@@ -119,15 +119,15 @@ const LOCATION_SEEDS: LocationSeed[] = [
       h1: 'Kotor Hospital Mortuary (Opšta Bolnica Kotor) Repatriation & Cremation Hub',
       subtitle: 'Direct institutional protocol with General Hospital Kotor (Opšta bolnica Kotor) and Special Hospital Risan. We handle immediate mortuary release, forensic embalming, Republic Sanitary Inspector zinc sealing, and repatriation for tourists, cruise passengers, and expats.',
       specificFaqQ: 'What to do if someone dies at General Hospital Kotor (Opšta bolnica Kotor) or on a cruise ship in Kotor?',
-      specificFaqA: 'Call our 24/7 Kotor duty coordinator immediately (+382 68 880 420). We work directly with the pathology department at Opšta bolnica Kotor and port authorities to retrieve the Medical Death Certificate (Potvrda o smrti), register the death at Opština Kotor, and execute air or road repatriation.',
+      specificFaqA: 'Call our 24/7 Kotor duty coordinator immediately (+382 68 914 816). We work directly with the pathology department at Opšta bolnica Kotor and port authorities to retrieve the Medical Death Certificate (Potvrda o smrti), register the death at Opština Kotor, and execute air or road repatriation.',
     },
     ru: {
       cityNom: 'Котор',
       cityPrep: 'Которе',
       catchmentAreas: 'Котор, Доброта, Пераст, Рисан, Прчань, Столив, Моринь и Круизный порт Котора',
       hospitalMorgue: 'Морг Общей больницы г. Котор (Opšta bolnica Kotor) и Специальной больницы г. Рисан',
-      metaTitle: 'Морг больницы Котора: репатриация и кремация 24/7 | Груз 200',
-      metaDesc: 'Оформление документов и отправка тела (Груз 200 / кремация) из морга Общей больницы Котора (Opšta bolnica Kotor) и больницы Рисана. +382 68 880 420.',
+      metaTitle: 'Морг больницы Котора: репатриация и Груз 200 (24/7)',
+      metaDesc: 'Оформление документов и отправка тела (Груз 200 / кремация) из морга Общей больницы Котора (Opšta bolnica Kotor) и больницы Рисана. +382 68 914 816.',
       keywords: [
         'Морг Которской больницы отправка тела',
         'Умер человек в Которе что делать',
@@ -145,7 +145,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Opština Kotor, Dobrota, Perast, Risan, Prčanj, Stoliv, Morinj i Luka Kotor',
       hospitalMorgue: 'Opšta bolnica Kotor (Bolnička mrtvačnica) i Specijalna bolnica „Vaso Ćuković“ Risan',
       metaTitle: 'Opšta bolnica Kotor: Međunarodni prevoz pokojnika 24/7',
-      metaDesc: 'Preuzimanje iz kapele Opšte bolnice Kotor i bolnice u Risnu, lemljenje cinka, Sprovodnica i međunarodna repatrijacija ili kremacija. +382 68 880 420.',
+      metaDesc: 'Preuzimanje iz kapele Opšte bolnice Kotor i bolnice u Risnu, lemljenje cinka, Sprovodnica i međunarodna repatrijacija ili kremacija. +382 68 914 816.',
       keywords: [
         'Opšta bolnica Kotor prevoz pokojnika',
         'Limeni uložak lemljenje Kotor Podgorica',
@@ -166,7 +166,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Budva Riviera, Bečići, Rafailovići, Sveti Stefan, Pržno, Petrovac & Jaz',
       hospitalMorgue: 'Budva Emergency Medical Center (Dom zdravlja Budva) → General Hospital Kotor / Cetinje / KCCG Morgue',
       metaTitle: 'Repatriation & Funeral Assistance Budva Montenegro 24/7',
-      metaDesc: '24/7 emergency repatriation & cremation assistance in Budva, Bečići, Sveti Stefan & Petrovac. Tourist & expat specialists. Call +382 68 880 420.',
+      metaDesc: '24/7 emergency repatriation & cremation assistance in Budva, Bečići, Sveti Stefan & Petrovac. Tourist & expat specialists. Call +382 68 914 816.',
       keywords: [
         'What to do if someone dies in Budva Montenegro',
         'Repatriation of remains Budva Montenegro',
@@ -183,8 +183,8 @@ const LOCATION_SEEDS: LocationSeed[] = [
       cityPrep: 'Будве',
       catchmentAreas: 'Будва, Бечичи, Рафаиловичи, Свети-Стефан, Пржно, Петровац, Ластва Грбальска',
       hospitalMorgue: 'Скорая помощь Будвы (Dom zdravlja Budva) → Региональный морг Котора или KCCG Подгорица',
-      metaTitle: 'Умер человек в Будве: что делать? Репатриация и кремация 24/7',
-      metaDesc: 'Круглосуточная помощь при смерти в Будве, Бечичи, Петроваце. Выезд за 45 минут, оформление в ЗАГСе Будвы, Груз 200 и кремация в Сербии. +382 68 880 420.',
+      metaTitle: 'Умер человек в Будве: репатриация и кремация 24/7',
+      metaDesc: 'Круглосуточная помощь при смерти в Будве, Бечичи, Петроваце. Выезд за 45 минут, оформление в ЗАГСе Будвы, Груз 200 и кремация в Сербии. +382 68 914 816.',
       keywords: [
         'Умер человек в Будве Тивате что делать',
         'Ритуальные услуги Будва Черногория',
@@ -194,7 +194,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       h1: 'Экстренная помощь при смерти близкого и международная репатриация в Будве (24/7)',
       subtitle: 'Выезд дежурного координатора в Будву, Бечичи, Рафаиловичи, Свети-Стефан и Петровац в течение 45 минут. Берем на себя взаимодействие с полицией и врачами Будвы, перевозку в клинический морг Котора/Подгорицы, регистрацию в Opština Budva и отправку на родину.',
       specificFaqQ: 'Что делать в первые часы, если человек умер в квартире или отеле в Будве?',
-      specificFaqA: 'Позвоните на нашу круглосуточную линию +382 68 880 420. Мы координируем выезд бригады скорой помощи Будвы (Hitna pomoć) и дежурного инспектора для выдачи первичного акта осмотра, после чего перевозим усопшего в клинический морг Котора и оформляем все документы по доверенности.',
+      specificFaqA: 'Позвоните на нашу круглосуточную линию +382 68 914 816. Мы координируем выезд бригады скорой помощи Будвы (Hitna pomoć) и дежурного инспектора для выдачи первичного акта осмотра, после чего перевозим усопшего в клинический морг Котора и оформляем все документы по доверенности.',
     },
     mne: {
       cityNom: 'Budva',
@@ -202,7 +202,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Opština Budva, Bečići, Rafailovići, Sveti Stefan, Pržno, Petrovac',
       hospitalMorgue: 'Dom zdravlja / Hitna pomoć Budva → Regionalna mrtvačnica Opšte bolnice Kotor ili KCCG',
       metaTitle: 'Međunarodni prevoz pokojnika i pogrebne usluge Budva 24/7',
-      metaDesc: 'Hitna asistencija 24/7 u Budvi, Bečićima i Petrovcu: preuzimanje preminulih, Sprovodnica, međunarodna repatrijacija i kremacija. +382 68 880 420.',
+      metaDesc: 'Hitna asistencija 24/7 u Budvi, Bečićima i Petrovcu: preuzimanje preminulih, Sprovodnica, međunarodna repatrijacija i kremacija. +382 68 914 816.',
       keywords: [
         'Pogrebne usluge Tivat Budva međunarodni prevoz',
         'Prevoz pokojnika Budva inostranstvo',
@@ -223,7 +223,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Podgorica Capital City, Clinical Center of Montenegro (KCCG), Diplomatic Quarter, Podgorica Airport (TGD), Danilovgrad & Cetinje',
       hospitalMorgue: 'Clinical Center of Montenegro (KCCG — Center for Pathology & Forensic Medicine)',
       metaTitle: 'KCCG Podgorica Repatriation, Consular & Cargo HUM Hub 24/7',
-      metaDesc: '24/7 repatriation from Clinical Center of Montenegro (KCCG Podgorica). Direct forensic clearance, Embassy permits & TGD Airport Cargo HUM. +382 68 880 420.',
+      metaDesc: '24/7 repatriation from Clinical Center of Montenegro (KCCG Podgorica). Direct forensic clearance, Embassy permits & TGD Airport Cargo HUM. +382 68 914 816.',
       keywords: [
         'KCCG Podgorica repatriation of remains',
         'Podgorica airport Cargo HUM repatriation',
@@ -240,8 +240,8 @@ const LOCATION_SEEDS: LocationSeed[] = [
       cityPrep: 'Подгорице',
       catchmentAreas: 'Подгорица, Клинический центр Черногории (KCCG), Посольский квартал, Аэропорт Подгорица (TGD), Цетинье, Даниловград',
       hospitalMorgue: 'Клинический центр Черногории (KCCG Podgorica — Отделение патологии и судебной медицины)',
-      metaTitle: 'Репатриация из KCCG Подгорица и аэропорта TGD 24/7 | Груз 200',
-      metaDesc: 'Оформление в морге Клинического центра (KCCG Подгорица), судебно-медицинская экспертиза, все посольства и отправка Груза 200 из аэропорта TGD. +382 68 880 420.',
+      metaTitle: 'Репатриация из KCCG Подгорица и аэропорта TGD 24/7',
+      metaDesc: 'Оформление в морге KCCG Подгорица, судебно-медицинская экспертиза, все посольства и отправка Груза 200 из аэропорта TGD. +382 68 914 816.',
       keywords: [
         'Морг KCCG Подгорица репатриация',
         'Отправка Груза 200 аэропорт Подгорица',
@@ -259,7 +259,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Glavni grad Podgorica, Klinički centar Crne Gore (KCCG), Aerodrom Podgorica (TGD), Cetinje i Danilovgrad',
       hospitalMorgue: 'Klinički centar Crne Gore (KCCG — Centar za patologiju i sudsku medicinu)',
       metaTitle: 'KCCG Podgorica: Međunarodna repatrijacija i Cargo HUM 24/7',
-      metaDesc: 'Preuzimanje iz KCCG Podgorica (Sudska medicina i patologija), Apostille, sve ambasade, Sprovodnica i Cargo HUM sa aerodroma Podgorica. +382 68 880 420.',
+      metaDesc: 'Preuzimanje iz KCCG Podgorica (Sudska medicina i patologija), Apostille, sve ambasade, Sprovodnica i Cargo HUM sa aerodroma Podgorica. +382 68 914 816.',
       keywords: [
         'KCCG Podgorica prevoz pokojnika',
         'Sudska medicina Podgorica preuzimanje',
@@ -280,7 +280,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Herceg Novi, Igalo (Institute Dr. Simo Milošević), Meljine, Zelenika, Kumbor, Portonovi, Bijela & Kamenari',
       hospitalMorgue: 'Meljine Hospital / Igalo Institute & General Hospital Kotor Regional Morgue',
       metaTitle: 'Repatriation & Funeral Services Herceg Novi & Igalo 24/7',
-      metaDesc: '24/7 international repatriation from Herceg Novi, Igalo, Portonovi & Meljine. Close to Dubrovnik Airport (DBV) & Croatia/Serbia borders. +382 68 880 420.',
+      metaDesc: '24/7 international repatriation from Herceg Novi, Igalo, Portonovi & Meljine. Close to Dubrovnik Airport (DBV) & Croatia/Serbia borders. +382 68 914 816.',
       keywords: [
         'Repatriation Herceg Novi Montenegro',
         'Funeral assistance Herceg Novi Igalo Portonovi',
@@ -298,7 +298,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Херцег-Нови, Игало (Институт Симо Милошевича), Мелине, Зеленика, Кумбор, Портонови (Portonovi), Биела',
       hospitalMorgue: 'Госпиталь Мелине (Bolnica Meljine), Институт Игало и региональный морг г. Котор',
       metaTitle: 'Репатриация и ритуальные услуги в Херцег-Нови и Игало 24/7',
-      metaDesc: 'Круглосуточная помощь при смерти в Херцег-Нови, Игало, Портонови. Оформление в Генконсульстве Сербии, Груз 200 и кремация в Белграде. +382 68 880 420.',
+      metaDesc: 'Круглосуточная помощь при смерти в Херцег-Нови, Игало, Портонови. Оформление в Генконсульстве Сербии, Груз 200 и кремация в Белграде. +382 68 914 816.',
       keywords: [
         'Репатриация из Херцег-Нови Черногория',
         'Умер человек в Херцег-Нови Игало что делать',
@@ -316,7 +316,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Opština Herceg Novi, Igalo (Institut Dr Simo Milošević), Meljine, Zelenika, Kumbor, Portonovi i Bijela',
       hospitalMorgue: 'Bolnica Meljine, Institut Igalo i Regionalna mrtvačnica Opšte bolnice Kotor',
       metaTitle: 'Međunarodni prevoz pokojnika i kremacija Herceg Novi 24/7',
-      metaDesc: 'Dežurna služba 24/7 za međunarodnu repatrijaciju i prevoz za Srbiju, BiH, Hrvatsku i EU iz Herceg Novog, Igala i Meljina. +382 68 880 420.',
+      metaDesc: 'Dežurna služba 24/7 za međunarodnu repatrijaciju i prevoz za Srbiju, BiH, Hrvatsku i EU iz Herceg Novog, Igala i Meljina. +382 68 914 816.',
       keywords: [
         'Prevoz pokojnika Herceg Novi inostranstvo',
         'Generalni konzulat Srbije Herceg Novi sprovodnica',
@@ -337,7 +337,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Bar Municipality, Stari Bar, Šušanj, Sutomore, Dobra Voda, Čanj, Petrovac & Ulcinj',
       hospitalMorgue: 'General Hospital "Blažo Orlandić" Stari Bar (Opšta bolnica Bar)',
       metaTitle: 'General Hospital Bar Repatriation & Cremation Services 24/7',
-      metaDesc: '24/7 repatriation of remains from General Hospital Bar (Opšta bolnica Bar), Sutomore & Ulcinj. Sprovodnica, zinc sealing & air/road transit. +382 68 880 420.',
+      metaDesc: '24/7 repatriation of remains from General Hospital Bar, Sutomore & Ulcinj. Sprovodnica, zinc sealing & air/road transit. +382 68 914 816.',
       keywords: [
         'General Hospital Bar Montenegro repatriation',
         'Opšta bolnica Bar mortuary repatriation',
@@ -355,7 +355,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Бар, Стари-Бар, Шушань, Сутоморе, Добра-Вода, Утеха, Чань и Улцинь',
       hospitalMorgue: 'Общая больница «Блажо Орландич» г. Бар (Opšta bolnica Stari Bar)',
       metaTitle: 'Больница г. Бар (Черногория): репатриация и кремация 24/7',
-      metaDesc: 'Круглосуточная помощь при смерти в Баре, Сутоморе и Улцине. Оформление в морге больницы Стари-Бар (Opšta bolnica Bar), Груз 200 и кремация. +382 68 880 420.',
+      metaDesc: 'Круглосуточная помощь при смерти в Баре, Сутоморе и Улцине. Оформление в морге больницы Стари-Бар, Груз 200 и кремация. +382 68 914 816.',
       keywords: [
         'Больница Стари Бар морг репатриация',
         'Умер человек в Баре Сутоморе что делать',
@@ -373,7 +373,7 @@ const LOCATION_SEEDS: LocationSeed[] = [
       catchmentAreas: 'Opština Bar, Stari Bar, Šušanj, Sutomore, Dobra Voda, Čanj i Opština Ulcinj',
       hospitalMorgue: 'Opšta bolnica „Blažo Orlandić“ Stari Bar',
       metaTitle: 'Opšta bolnica Bar: Međunarodna repatrijacija i prevoz 24/7',
-      metaDesc: 'Preuzimanje iz Opšte bolnice Stari Bar, Sutomora i Ulcinja. Sanitarna Sprovodnica, lemljenje cinka, avio Cargo HUM i kremacija u Beogradu. +382 68 880 420.',
+      metaDesc: 'Preuzimanje iz Opšte bolnice Stari Bar, Sutomora i Ulcinja. Sanitarna Sprovodnica, lemljenje cinka, avio Cargo HUM i kremacija u Beogradu. +382 68 914 816.',
       keywords: [
         'Opšta bolnica Bar prevoz pokojnika',
         'Pogrebne usluge Bar Ulcinj međunarodni prevoz',
@@ -782,7 +782,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
     locales: {
       en: {
         metaTitle: 'Repatriation & Cremation Cost Breakdown Montenegro 24/7',
-        metaDescription: 'Transparent itemized pricing for repatriation & cremation in Montenegro: Sprovodnica fees, zinc coffin sealing, translations & Cargo HUM. +382 68 880 420.',
+        metaDescription: 'Transparent itemized pricing for repatriation & cremation in Montenegro: Sprovodnica fees, zinc coffin sealing, translations & Cargo HUM. +382 68 914 816.',
         keywords: ['Repatriation cost Montenegro', 'Cremation cost Montenegro Belgrade', 'Zinc coffin price Montenegro', 'Funeral invoice EFI Montenegro'],
         breadcrumbLabel: 'Pricing & Statutory Fee Breakdown',
         eyebrow: '100% FINANCIAL TRANSPARENCY • EFI FISCAL INVOICING',
@@ -854,7 +854,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
       },
       ru: {
         metaTitle: 'Цены на репатриацию (Груз 200) и кремацию в Черногории 24/7',
-        metaDescription: 'Прозрачный прайс-лист на репатриацию и кремацию из Черногории: госпошлины, цинковый гроб, переводы, авиатариф Cargo HUM и счета EFI. +382 68 880 420.',
+        metaDescription: 'Прозрачный прайс-лист на репатриацию и кремацию из Черногории: госпошлины, цинковый гроб, переводы, авиатариф Cargo HUM и счета EFI. +382 68 914 816.',
         keywords: ['Стоимость репатриации из Черногории', 'Цена Груз 200 Черногория', 'Стоимость кремации в Сербии из Черногории', 'Цинковый гроб цена Черногория'],
         breadcrumbLabel: 'Цены и структура расходов',
         eyebrow: '100% ФИНАНСОВАЯ ПРОЗРАЧНОСТЬ • ФИСКАЛЬНЫЕ СЧЕТА EFI QR',
@@ -926,7 +926,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
       },
       mne: {
         metaTitle: 'Cijene međunarodnog prevoza pokojnika i kremacije Crna Gora',
-        metaDescription: 'Transparentan cjenovnik za međunarodnu repatrijaciju i kremaciju u Beogradu: državne takse, cink uložak, prevodi i Cargo HUM. +382 68 880 420.',
+        metaDescription: 'Transparentan cjenovnik za međunarodnu repatrijaciju i kremaciju u Beogradu: državne takse, cink uložak, prevodi i Cargo HUM. +382 68 914 816.',
         keywords: ['Cijena prevoza pokojnika Crna Gora', 'Kremacija u Beogradu cijena iz Crne Gore', 'Limeni sanduk cijena Crna Gora', 'Fiskalni račun pogrebne usluge'],
         breadcrumbLabel: 'Cjenovnik i struktura troškova',
         eyebrow: '100% FINANSIJSKA TRANSPARENTNOST • ZVANIČNI EFI FISKALNI RAČUNI',
@@ -1007,8 +1007,8 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
     lastmod: '2026-11-03',
     locales: {
       en: {
-        metaTitle: 'What to Do When a Foreigner Dies in Montenegro | Step Guide',
-        metaDescription: 'Complete legal & practical step-by-step guide on what to do when a foreign citizen, tourist, or expat passes away in Montenegro. 24/7 help: +382 68 880 420.',
+        metaTitle: 'What to Do When a Foreigner Dies in Montenegro | Guide',
+        metaDescription: 'Complete legal & practical step-by-step guide on what to do when a foreign citizen or tourist passes away in Montenegro. 24/7 help: +382 68 914 816.',
         keywords: [
           'What to do if someone dies in Kotor Montenegro',
           'Foreigner dies in Montenegro procedure',
@@ -1020,7 +1020,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         h1: 'What to Do When a Foreign Citizen Passes Away in Montenegro — Complete 4-Step Guide',
         heroSubtitle: 'A clear, calm, step-by-step manual explaining exact legal procedures when a death occurs in a hospital, hotel, residence, or yacht in Montenegro—and how our team executes everything remotely on your behalf.',
         whatsappPrefill: 'Hello Memorijal d.o.o., a death has occurred in Montenegro and we need immediate step-by-step guidance.',
-        emergencyBannerText: 'Step 1 Starts With One Call (+382 68 880 420) • Do Not Book Unnecessary Flights to Montenegro',
+        emergencyBannerText: 'Step 1 Starts With One Call (+382 68 914 816) • Do Not Book Unnecessary Flights to Montenegro',
         explainerHeading: 'Chronological Action Plan (From Hour 0 to Final Arrival)',
         explainerIntro: 'Follow these five verified steps. Our duty coordinator guides your family or insurance desk through each milestone in English, Russian, or Montenegrin.',
         walkthroughSteps: buildLocationWalkthrough('en', LOCATION_SEEDS[1]),
@@ -1059,8 +1059,8 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         ],
       },
       ru: {
-        metaTitle: 'Что делать, если умер человек в Черногории | Инструкция 24/7',
-        metaDescription: 'Пошаговая инструкция: что делать, если родственник или турист умер в Черногории (Будва, Тиват, Котор, Подгорица). Оформление без приезда. +382 68 880 420.',
+        metaTitle: 'Что делать, если умер человек в Черногории | Гид 24/7',
+        metaDescription: 'Пошаговая инструкция: что делать, если родственник или турист умер в Черногории (Будва, Тиват, Котор, Подгорица). Оформление без приезда. +382 68 914 816.',
         keywords: [
           'Умер человек в Будве Тивате что делать',
           'Что делать если умер родственник в Черногории',
@@ -1072,7 +1072,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         h1: 'Что делать, если близкий человек умер в Черногории — пошаговая инструкция',
         heroSubtitle: 'Четкий и понятный алгоритм действий при наступлении смерти в больнице, отеле или апартаментах в Черногории — и как наша служба оформляет 100% документов дистанционно без вашего прилета.',
         whatsappPrefill: 'Здравствуйте, у нас умер близкий человек в Черногории, нужна срочная консультация по дальнейшим шагам.',
-        emergencyBannerText: 'Шаг 1 начинается с одного звонка (+382 68 880 420) • Прилетать в Черногорию не требуется',
+        emergencyBannerText: 'Шаг 1 начинается с одного звонка (+382 68 914 816) • Прилетать в Черногорию не требуется',
         explainerHeading: 'Хронологический план действий (от первых минут до завершения)',
         explainerIntro: 'Следуйте этим пяти проверенным шагам. Наш дежурный координатор возьмет на себя общение с врачами, полицией, судом и консульством.',
         walkthroughSteps: buildLocationWalkthrough('ru', LOCATION_SEEDS[1]),
@@ -1111,8 +1111,8 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         ],
       },
       mne: {
-        metaTitle: 'Šta uraditi kada strani državljanin premine u Crnoj Gori | Vodič',
-        metaDescription: 'Detaljan vodič korak po korak: procedura kada strani državljanin ili turista premine u Crnoj Gori. Bolnica, MUP, Sprovodnica i konzulat. +382 68 880 420.',
+        metaTitle: 'Šta uraditi kada stranac premine u Crnoj Gori | Vodič 24/7',
+        metaDescription: 'Detaljan vodič korak po korak: procedura kada strani državljanin ili turista premine u Crnoj Gori. Bolnica, MUP, Sprovodnica i konzulat. +382 68 914 816.',
         keywords: [
           'Smrt stranog državljanina u Crnoj Gori procedura',
           'Šta raditi kada neko umre u Kotoru Budvi Tivtu',
@@ -1124,7 +1124,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         h1: 'Šta uraditi kada strani državljanin premine u Crnoj Gori — Kompletan vodič u 4 koraka',
         heroSubtitle: 'Jasan pregled svih zakonskih koraka kada smrt nastupi u bolnici, hotelu ili apartmanu u Crnoj Gori — i kako naš licencirani tim završava 100% procedure po punomoćju.',
         whatsappPrefill: 'Poštovani, potreban nam je hitan savjet i preuzimanje procedure za preminulo lice u Crnoj Gori.',
-        emergencyBannerText: 'Korak 1 počinje jednim pozivom (+382 68 880 420) • Bez potrebe dolaska porodice u Crnu Goru',
+        emergencyBannerText: 'Korak 1 počinje jednim pozivom (+382 68 914 816) • Bez potrebe dolaska porodice u Crnu Goru',
         explainerHeading: 'Hronološki plan aktivnosti (od prvog sata do konačne primopredaje)',
         explainerIntro: 'Naš dežurni koordinator vodi cjelokupan postupak pred bolnicama, MUP-om, sudovima, Sanitarnom inspekcijom i ambasadama.',
         walkthroughSteps: buildLocationWalkthrough('mne', LOCATION_SEEDS[1]),
@@ -1174,7 +1174,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
     locales: {
       en: {
         metaTitle: 'Maksym Kovalenko | Executive Coordinator Memorijal d.o.o.',
-        metaDescription: 'Personal accountability & E-E-A-T credentials of Maksym Kovalenko, Executive Coordinator at Memorijal d.o.o. Montenegro. CRPS licensed DOO. +382 68 880 420.',
+        metaDescription: 'Personal accountability & E-E-A-T credentials of Maksym Kovalenko, Executive Coordinator at Memorijal d.o.o. Montenegro. Call 24/7: +382 68 914 816.',
         keywords: ['Maksym Kovalenko Memorijal Montenegro', 'Licensed repatriation agency Montenegro DOO', 'Memorijal doo Tivat Podgorica', 'Consular repatriation specialist Montenegro'],
         breadcrumbLabel: 'About & Executive Supervision (Maksym Kovalenko)',
         eyebrow: 'E-E-A-T INSTITUTIONAL CREDENTIALS & PERSONAL ACCOUNTABILITY',
@@ -1187,7 +1187,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         walkthroughSteps: buildLocationWalkthrough('en', LOCATION_SEEDS[0]),
         matrixHeading: 'Corporate & Regulatory Verification Record',
         specs: {
-          transitTime: '24/7 Direct Executive Availability (+382 68 880 420)',
+          transitTime: '24/7 Direct Executive Availability (+382 68 914 816)',
           transportMode: 'Licensed International Mortuary Fleet & IATA Cargo HUM Forwarding',
           consularTimeframe: 'Direct Working Protocols with 20+ Diplomatic Missions in Podgorica & Belgrade',
           embassyJurisdiction: 'Registered in the Central Registry of Business Entities of Montenegro (CRPS)',
@@ -1221,7 +1221,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
       },
       ru: {
         metaTitle: 'Максим Коваленко | Руководитель Memorijal d.o.o. Черногория',
-        metaDescription: 'Личный контроль и официальные лицензии: Максим Коваленко, исполнительный координатор Memorijal d.o.o. в Черногории (Тиват / Подгорица). +382 68 880 420.',
+        metaDescription: 'Личный контроль и официальные лицензии: Максим Коваленко, исполнительный координатор Memorijal d.o.o. в Черногории (Тиват / Подгорица). +382 68 914 816.',
         keywords: ['Максим Коваленко Memorijal Черногория', 'Memorijal doo Tivat Podgorica', 'Лицензированная ритуальная служба Черногория'],
         breadcrumbLabel: 'О компании и руководителе (Максим Коваленко)',
         eyebrow: 'ЛИЧНАЯ ОТВЕТСТВЕННОСТЬ И ОФИЦИАЛЬНАЯ ГОСУДАРСТВЕННАЯ ЛИЦЕНЗИЯ',
@@ -1234,7 +1234,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         walkthroughSteps: buildLocationWalkthrough('ru', LOCATION_SEEDS[0]),
         matrixHeading: 'Регистрационные и правовые реквизиты компании',
         specs: {
-          transitTime: 'Прямая связь с руководителем 24/7 (+382 68 880 420)',
+          transitTime: 'Прямая связь с руководителем 24/7 (+382 68 914 816)',
           transportMode: 'Собственный спецтранспорт и аккредитация по стандарту IATA Cargo HUM',
           consularTimeframe: 'Прямой рабочий протокол с более чем 20 посольствами в Подгорице и Белграде',
           embassyJurisdiction: 'Зарегистрировано в Центральном реестре субъектов хозяйствования Черногории (CRPS)',
@@ -1268,7 +1268,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
       },
       mne: {
         metaTitle: 'Maksym Kovalenko | Izvršni koordinator Memorijal d.o.o. CG',
-        metaDescription: 'Lična odgovornost i zvanične licence: Maksym Kovalenko, izvršni koordinator agencije Memorijal d.o.o. Crna Gora (Tivat / Podgorica). +382 68 880 420.',
+        metaDescription: 'Lična odgovornost i zvanične licence: Maksym Kovalenko, izvršni koordinator agencije Memorijal d.o.o. Crna Gora (Tivat / Podgorica). +382 68 914 816.',
         keywords: ['Maksym Kovalenko Memorijal Crna Gora', 'Memorijal doo Tivat Podgorica', 'Licencirana pogrebna agencija Crna Gora'],
         breadcrumbLabel: 'O nama i nadzor (Maksym Kovalenko)',
         eyebrow: 'LIČNA ODGOVORNOST I INSTITUCIONALNI KREDIBILITET',
@@ -1281,7 +1281,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         walkthroughSteps: buildLocationWalkthrough('mne', LOCATION_SEEDS[0]),
         matrixHeading: 'Korporativni i registarski podaci',
         specs: {
-          transitTime: 'Direktna dostupnost koordinatora 24/7 (+382 68 880 420)',
+          transitTime: 'Direktna dostupnost koordinatora 24/7 (+382 68 914 816)',
           transportMode: 'Licencirana flota pogrebnih vozila i IATA Cargo HUM špedicija',
           consularTimeframe: 'Direktna saradnja sa preko 20 ambasada i konzulata u Podgorici i Beogradu',
           embassyJurisdiction: 'Upisano u Centralni registar privrednih subjekata Crne Gore (CRPS)',
@@ -1325,14 +1325,14 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
     locales: {
       en: {
         metaTitle: '24/7 Emergency Repatriation Contact Montenegro | Memorijal',
-        metaDescription: 'Contact Memorijal d.o.o. 24/7 Duty Coordinator in Tivat & Podgorica, Montenegro. Direct Call & WhatsApp +382 68 880 420. Hospital & Embassy dispatch.',
+        metaDescription: 'Contact Memorijal d.o.o. 24/7 Duty Coordinator in Tivat & Podgorica, Montenegro. Direct Call & WhatsApp +382 68 914 816. Hospital & Embassy dispatch.',
         keywords: ['Memorijal Montenegro phone number', 'Emergency repatriation hotline Montenegro', 'Funeral director Tivat Podgorica contact'],
         breadcrumbLabel: '24/7 Emergency Contact & Dispatch',
         eyebrow: '24/7 DUTY DESK • TIVAT (BOKA BAY) & PODGORICA (KCCG)',
         h1: '24/7 Emergency Repatriation & Cremation Dispatch — Contact Our Coordinator',
         heroSubtitle: 'Immediate voice and WhatsApp consultation in English, Russian, or Montenegrin at any hour of the day or night. Our duty teams in Tivat/Kotor and Podgorica respond within 15 minutes.',
         whatsappPrefill: 'Hello Memorijal d.o.o. 24/7 Duty Desk, I require immediate coordinator assistance.',
-        emergencyBannerText: '24/7 Emergency Hotline: +382 68 880 420 • Podgorica Desk: +382 20 664 112 • dispatch@memorijal.me',
+        emergencyBannerText: '24/7 Emergency Hotline: +382 68 914 816 • Podgorica Desk: +382 20 664 112 • dispatch@memorijal.me',
         explainerHeading: 'How Our 24/7 Dispatch Desk Responds to Your Call',
         explainerIntro: 'Whether you are a grieving relative abroad or an assistance officer on night shift, your call connects directly to a senior coordinator.',
         walkthroughSteps: buildLocationWalkthrough('en', LOCATION_SEEDS[0]),
@@ -1344,7 +1344,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
           embassyJurisdiction: 'Podgorica Diplomatic Hub & Herceg Novi Consulate Coordination',
           morgueCatchment: 'All Hospitals & Municipalities Across Montenegro',
           requiredDocuments: ['Initial Call Requires Only Deceased Name, Current Location & Citizenship'],
-          receivingRequirements: ['Official Email: dispatch@memorijal.me • WhatsApp: +382 68 880 420'],
+          receivingRequirements: ['Official Email: dispatch@memorijal.me • WhatsApp: +382 68 914 816'],
           estimatedTotalRange: 'Free Initial Consultation & Written Cost Specification',
         },
         costHeading: 'Information to Have Ready When Contacting Us (If Available)',
@@ -1353,7 +1353,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         faqHeading: 'FAQ — Contacting Memorijal d.o.o. 24/7 Duty Desk',
         faqs: [
           {
-            question: 'Can we call +382 68 880 420 during the night, on weekends, or on public holidays?',
+            question: 'Can we call +382 68 914 816 during the night, on weekends, or on public holidays?',
             answer: 'Yes. Our emergency line and WhatsApp dispatch operate 24 hours a day, 365 days a year, including nights, weekends, and state holidays.',
           },
           {
@@ -1362,7 +1362,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
           },
           {
             question: 'How do international insurance and assistance companies send Guarantees of Payment (GOP)?',
-            answer: 'Assistance desks can email GOP documents directly to dispatch@memorijal.me and notify our duty officer via WhatsApp at +382 68 880 420 for instant case activation.',
+            answer: 'Assistance desks can email GOP documents directly to dispatch@memorijal.me and notify our duty officer via WhatsApp at +382 68 914 816 for instant case activation.',
           },
           {
             question: 'Where are your operational centers located in Montenegro?',
@@ -1371,15 +1371,15 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         ],
       },
       ru: {
-        metaTitle: 'Круглосуточный контакт 24/7 | Репатриация Memorijal Черногория',
-        metaDescription: 'Дежурная линия Memorijal d.o.o. 24/7 в Тивате и Подгорице (Черногория). Телефон и WhatsApp: +382 68 880 420. Экстренный выезд во все госпитали.',
+        metaTitle: 'Контакты 24/7 | Репатриация Memorijal d.o.o. Черногория',
+        metaDescription: 'Дежурная линия Memorijal d.o.o. 24/7 в Тивате и Подгорице (Черногория). Телефон и WhatsApp: +382 68 914 816. Экстренный выезд во все госпитали.',
         keywords: ['Контакты ритуальной службы Черногория', 'Телефон репатриация Черногория', 'Memorijal doo контакты Тиват Подгорица'],
         breadcrumbLabel: 'Контакты и дежурная линия 24/7',
         eyebrow: 'КРУГЛОСУТОЧНАЯ ДИСПЕТЧЕРСКАЯ СЛУЖБА • ТИВАТ И ПОДГОРИЦА',
         h1: 'Круглосуточная связь с координатором (24/7) — Тиват, Котор, Будва и Подгорица',
         heroSubtitle: 'Немедленная консультация на русском, английском, украинском или черногорском языке в любое время дня и ночи. Письменный план действий и расчет стоимости в течение 15–30 минут.',
         whatsappPrefill: 'Здравствуйте, обращаюсь на круглосуточную дежурную линию Memorijal d.o.o.',
-        emergencyBannerText: 'Дежурная линия 24/7: +382 68 880 420 • Офис в Подгорице: +382 20 664 112 • dispatch@memorijal.me',
+        emergencyBannerText: 'Дежурная линия 24/7: +382 68 914 816 • Офис в Подгорице: +382 20 664 112 • dispatch@memorijal.me',
         explainerHeading: 'Как работает наша экстренная служба при обращении',
         explainerIntro: 'Ваш звонок или сообщение в WhatsApp принимает непосредственно дежурный координатор без автоответчиков и посредников.',
         walkthroughSteps: buildLocationWalkthrough('ru', LOCATION_SEEDS[0]),
@@ -1391,7 +1391,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
           embassyJurisdiction: 'Прямая работа с посольствами в Подгорице и Генконсульством в Херцег-Нови',
           morgueCatchment: 'Все больницы, морги и муниципалитеты Черногории',
           requiredDocuments: ['Для первого звонка достаточно знать имя усопшего, город в ЧГ и гражданство'],
-          receivingRequirements: ['Email: dispatch@memorijal.me • WhatsApp / Тел.: +382 68 880 420'],
+          receivingRequirements: ['Email: dispatch@memorijal.me • WhatsApp / Тел.: +382 68 914 816'],
           estimatedTotalRange: 'Бесплатная первичная консультация и составление официальной сметы',
         },
         costHeading: 'Что желательно сообщить при первом обращении',
@@ -1400,7 +1400,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         faqHeading: 'Частые вопросы — Связь с дежурным координатором',
         faqs: [
           {
-            question: 'Можно ли звонить на номер +382 68 880 420 ночью или в выходные дни?',
+            question: 'Можно ли звонить на номер +382 68 914 816 ночью или в выходные дни?',
             answer: 'Да, дежурная телефонная линия и WhatsApp работают круглосуточно (24/7/365) без выходных и праздничных перерывов.',
           },
           {
@@ -1409,7 +1409,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
           },
           {
             question: 'Куда страховые компании могут направить гарантийное письмо (GOP)?',
-            answer: 'Гарантийные письма от страховых и ассистанс-компаний принимаются на официальный адрес dispatch@memorijal.me с дублированием уведомления в WhatsApp +382 68 880 420.',
+            answer: 'Гарантийные письма от страховых и ассистанс-компаний принимаются на официальный адрес dispatch@memorijal.me с дублированием уведомления в WhatsApp +382 68 914 816.',
           },
           {
             question: 'Где расположены ваши офисы в Черногории?',
@@ -1419,14 +1419,14 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
       },
       mne: {
         metaTitle: '24/7 Kontakt i dežurna služba | Memorijal d.o.o. Crna Gora',
-        metaDescription: 'Kontaktirajte dežurnog koordinatora Memorijal d.o.o. 24/7 u Tivtu i Podgorici. Telefon i WhatsApp: +382 68 880 420. Hitna bolnička i konzularna podrška.',
+        metaDescription: 'Kontaktirajte dežurnog koordinatora Memorijal d.o.o. 24/7 u Tivtu i Podgorici. Telefon i WhatsApp: +382 68 914 816. Hitna bolnička i konzularna podrška.',
         keywords: ['Memorijal Crna Gora kontakt', 'Dežurna pogrebna služba Tivat Podgorica', 'Hitni prevoz pokojnika telefon Crna Gora'],
         breadcrumbLabel: 'Kontakt i dežurni centar 24/7',
         eyebrow: 'DEŽURNI OPERATIVNI CENTAR 24/7 • TIVAT I PODGORICA',
         h1: '24/7 Hitni kontakt i prijava slučaja — Dežurni koordinator u Crnoj Gori',
         heroSubtitle: 'Trenutna telefonska i WhatsApp konsultacija na crnogorskom/srpskom, engleskom ili ruskom jeziku u bilo koje doba dana ili noći. Naši timovi u Tivtu/Kotoru i Podgorici reaguju odmah po pozivu.',
         whatsappPrefill: 'Poštovani, kontaktiram dežurni centar Memorijal d.o.o. radi hitne asistencije.',
-        emergencyBannerText: 'Dežurna linija 24/7: +382 68 880 420 • Podgorica: +382 20 664 112 • dispatch@memorijal.me',
+        emergencyBannerText: 'Dežurna linija 24/7: +382 68 914 816 • Podgorica: +382 20 664 112 • dispatch@memorijal.me',
         explainerHeading: 'Kako naš dežurni centar postupa po vašem pozivu',
         explainerIntro: 'Bilo da nas pozivate kao član porodice ili kao koordinator međunarodnog osiguranja, dobijate direktnu vezu sa odgovornim licem.',
         walkthroughSteps: buildLocationWalkthrough('mne', LOCATION_SEEDS[0]),
@@ -1438,7 +1438,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
           embassyJurisdiction: 'Direktna koordinacija sa ambasadama u Podgorici i konzulatom u Herceg Novom',
           morgueCatchment: 'Sve bolnice, mrtvačnice i opštine u Crnoj Gori',
           requiredDocuments: ['Za prvi poziv dovoljno je navesti ime, lokaciju u CG i državljanstvo'],
-          receivingRequirements: ['E-mail: dispatch@memorijal.me • WhatsApp / Tel: +382 68 880 420'],
+          receivingRequirements: ['E-mail: dispatch@memorijal.me • WhatsApp / Tel: +382 68 914 816'],
           estimatedTotalRange: 'Besplatna konsultacija i izrada zvanične pisane specifikacije',
         },
         costHeading: 'Osnovni podaci za brzu aktivaciju postupka',
@@ -1447,7 +1447,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         faqHeading: 'Česta pitanja — Kontakt sa dežurnom službom 24/7',
         faqs: [
           {
-            question: 'Da li je broj +382 68 880 420 dostupan noću, vikendom i praznicima?',
+            question: 'Da li je broj +382 68 914 816 dostupan noću, vikendom i praznicima?',
             answer: 'Da, naša dežurna linija i WhatsApp su aktivni 24 sata dnevno, 365 dana u godini.',
           },
           {
@@ -1456,7 +1456,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
           },
           {
             question: 'Na koju adresu osiguravajuće kuće šalju garanciju plaćanja (GOP)?',
-            answer: 'Garancije plaćanja (GOP) šalju se na zvanični e-mail dispatch@memorijal.me uz obavještenje na WhatsApp +382 68 880 420.',
+            answer: 'Garancije plaćanja (GOP) šalju se na zvanični e-mail dispatch@memorijal.me uz obavještenje na WhatsApp +382 68 914 816.',
           },
           {
             question: 'Gdje se nalaze vaši operativni centri u Crnoj Gori?',

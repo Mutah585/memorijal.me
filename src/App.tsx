@@ -1,10 +1,12 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, lazy, Suspense } from 'react';
 import {
   Language,
   ServiceType,
   RegionType,
   LocationType,
   translations,
+  PHONE_DISPLAY,
+  PHONE_HREF,
 } from './i18n/translations';
 import {
   resolveRouteAndLocale,
@@ -15,8 +17,6 @@ import {
 import { MetaManager } from './components/seo/MetaManager';
 import { JsonLd } from './components/seo/JsonLd';
 import { SeoHubNavigator } from './components/seo/SeoHubNavigator';
-import { CorridorPageTemplate } from './pages/templates/CorridorPageTemplate';
-import { LocationPageTemplate } from './pages/templates/LocationPageTemplate';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { CoreServices } from './components/CoreServices';
@@ -26,15 +26,30 @@ import { TrustAndDirector } from './components/TrustAndDirector';
 import { Footer } from './components/Footer';
 import { CoordinatorModal } from './components/CoordinatorModal';
 
+const CorridorPageTemplate = lazy(() =>
+  import('./pages/templates/CorridorPageTemplate').then((m) => ({
+    default: m.CorridorPageTemplate,
+  }))
+);
+
+const LocationPageTemplate = lazy(() =>
+  import('./pages/templates/LocationPageTemplate').then((m) => ({
+    default: m.LocationPageTemplate,
+  }))
+);
+
 export function App() {
-  const initialResolved = resolveRouteAndLocale(
-    typeof window !== 'undefined' ? window.location.pathname : '/en/'
-  );
+  const initialPathname =
+    typeof window !== 'undefined' ? window.location.pathname : '/en/';
+  const initialResolved = resolveRouteAndLocale(initialPathname);
 
   const [lang, setLangState] = useState<Language>(
     localeSlugToLang(initialResolved.locale)
   );
   const [currentRoute, setCurrentRoute] = useState(initialResolved.route);
+  const [isNotFound, setIsNotFound] = useState(
+    initialPathname !== '/' && initialResolved.isNotFound
+  );
   const [selectedService, setSelectedService] = useState<ServiceType>('cremation');
   const [selectedRegion, setSelectedRegion] = useState<RegionType>('eu_uk');
   const [selectedLocation, setSelectedLocation] = useState<LocationType>('boka');
@@ -46,9 +61,11 @@ export function App() {
   // Sync browser back/forward navigation
   useEffect(() => {
     const handlePopState = () => {
-      const resolved = resolveRouteAndLocale(window.location.pathname);
+      const path = window.location.pathname;
+      const resolved = resolveRouteAndLocale(path);
       setLangState(localeSlugToLang(resolved.locale));
       setCurrentRoute(resolved.route);
+      setIsNotFound(path !== '/' && resolved.isNotFound);
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
@@ -60,6 +77,7 @@ export function App() {
       const resolved = resolveRouteAndLocale(localizedPath);
       setLangState(localeSlugToLang(resolved.locale));
       setCurrentRoute(resolved.route);
+      setIsNotFound(localizedPath !== '/' && resolved.isNotFound);
 
       const nextUrl = hash ? `${localizedPath}${hash}` : localizedPath;
       if (window.location.pathname + window.location.hash !== nextUrl) {
@@ -89,6 +107,7 @@ export function App() {
       setLangState(newLang);
       const newLocaleSlug = langToLocaleSlug(newLang);
       const nextPath = buildLocalizedPath(newLocaleSlug, currentRoute.path);
+      setIsNotFound(false);
       if (window.location.pathname !== nextPath) {
         window.history.pushState({}, '', nextPath + window.location.hash);
       }
@@ -118,6 +137,41 @@ export function App() {
         onOpenModal={() => setModalOpen(true)}
         onNavigate={handleNavigate}
       />
+
+      {/* Safe 404 / Unknown Route Fallback Notice Banner */}
+      {isNotFound && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="bg-amber-50 border-b border-amber-200 px-4 py-3 text-xs sm:text-sm text-slateDeep"
+        >
+          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+            <span>
+              {currentLocale === 'ru'
+                ? 'Запрошенный адрес не найден (404). Вы перенаправлены в главный координационный центр Memorijal d.o.o. (24/7).'
+                : currentLocale === 'mne'
+                ? 'Tražena stranica nije pronađena (404). Prikazan je glavni koordinacioni centar Memorijal d.o.o. (24/7).'
+                : 'The requested URL path was not found (404). Showing the main Memorijal d.o.o. 24/7 Dispatch Hub.'}
+            </span>
+            <div className="flex items-center gap-4 font-semibold">
+              <a href={PHONE_HREF} className="text-sapphire hover:underline">
+                {PHONE_DISPLAY}
+              </a>
+              <button
+                type="button"
+                onClick={() => handleNavigate(buildLocalizedPath(currentLocale, '/'))}
+                className="text-forest hover:underline"
+              >
+                {currentLocale === 'ru'
+                  ? 'Перейти на /ru/'
+                  : currentLocale === 'mne'
+                  ? 'Pređi na /mne/'
+                  : 'Go to /en/'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Main Content Router */}
       <main className="flex-1">
@@ -152,7 +206,7 @@ export function App() {
             {/* 5. Step-by-Step Procedure Timeline */}
             <ProcedureTimeline t={t} />
 
-            {/* Programmatic SEO Hub Navigator (9 Corridors, 6 Locations, Services & Guides) */}
+            {/* Programmatic SEO Hub Navigator (All 64 Routes / 9 Categories) */}
             <SeoHubNavigator
               locale={currentLocale}
               onNavigate={handleNavigate}
@@ -164,20 +218,36 @@ export function App() {
               onOpenModal={() => setModalOpen(true)}
             />
           </>
-        ) : currentRoute.category === 'location' ? (
-          <LocationPageTemplate
-            locale={currentLocale}
-            route={currentRoute}
-            onNavigate={handleNavigate}
-            onOpenModal={() => setModalOpen(true)}
-          />
         ) : (
-          <CorridorPageTemplate
-            locale={currentLocale}
-            route={currentRoute}
-            onNavigate={handleNavigate}
-            onOpenModal={() => setModalOpen(true)}
-          />
+          <Suspense
+            fallback={
+              <div className="py-24 text-center text-sm text-slateMuted">
+                {currentLocale === 'ru'
+                  ? 'Загрузка регламента и спецификации…'
+                  : currentLocale === 'mne'
+                  ? 'Učitavanje zakonske specifikacije…'
+                  : 'Loading protocol specification…'}
+              </div>
+            }
+          >
+            {currentRoute.category === 'location' ||
+            currentRoute.category === 'mortuary' ||
+            currentRoute.category === 'cemetery' ? (
+              <LocationPageTemplate
+                locale={currentLocale}
+                route={currentRoute}
+                onNavigate={handleNavigate}
+                onOpenModal={() => setModalOpen(true)}
+              />
+            ) : (
+              <CorridorPageTemplate
+                locale={currentLocale}
+                route={currentRoute}
+                onNavigate={handleNavigate}
+                onOpenModal={() => setModalOpen(true)}
+              />
+            )}
+          </Suspense>
         )}
       </main>
 
