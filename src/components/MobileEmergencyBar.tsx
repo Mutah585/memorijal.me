@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageCircle, X } from 'lucide-react';
+import { Phone, MessageCircle, X, MessageSquare } from 'lucide-react';
 import {
   Language,
   PHONE_DISPLAY,
@@ -177,6 +177,29 @@ export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) 
                       : lang === 'MNE'
                       ? 'Preko interneta / bez rominga'
                       : 'Internet audio / no roaming charge'}
+                  </p>
+                </div>
+              </a>
+
+              {/* Option 3: SMS Dispatch Fallback (for low-connectivity zones / hospital basements) */}
+              <a
+                href="sms:+38268914816?body=SOS%20Memorijal%20Potrebna%20pomoc"
+                onClick={() => setSheetOpen(false)}
+                className="w-full flex items-center gap-3 p-3.5 rounded-xl bg-slate-800 text-white hover:bg-slate-700 transition-colors shadow-xs"
+              >
+                <div className="w-9 h-9 rounded-lg bg-white/15 flex items-center justify-center shrink-0">
+                  <MessageSquare className="w-4 h-4 text-amber-300" />
+                </div>
+                <div className="flex-1 text-left min-w-0">
+                  <p className="font-semibold text-xs leading-snug">
+                    {lang === 'RU'
+                      ? 'Отправить экстренное SMS (работает без мобильного интернета)'
+                      : lang === 'MNE'
+                      ? 'Pošaljite hitan SMS (radi bez interneta)'
+                      : 'Send Emergency SMS (works without mobile data)'}
+                  </p>
+                  <p className="text-[11px] text-slate-300 font-mono">
+                    SMS: +382 68 914 816
                   </p>
                 </div>
               </a>

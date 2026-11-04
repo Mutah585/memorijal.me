@@ -201,6 +201,79 @@ export const TrustAndDirector: React.FC<TrustAndDirectorProps> = ({
             </div>
           </div>
 
+          {/* Institutional Assistance & GOP Compliance Badge */}
+          <div className="mt-8 bg-white rounded-2xl border border-stoneBorder p-6 sm:p-8 shadow-card">
+            <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+              <div className="max-w-2xl">
+                <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-sapphire mb-2">
+                  <Shield className="w-4 h-4 text-emerald-600" />
+                  <span>
+                    {lang === 'RU'
+                      ? 'Институциональный протокол со страховыми компаниями'
+                      : lang === 'MNE'
+                      ? 'Institucionalni protokol sa osiguranjima'
+                      : 'Institutional Travel Assistance Protocol'}
+                  </span>
+                </div>
+                <h3 className="font-serif text-xl sm:text-2xl font-bold text-slateDeep">
+                  {lang === 'RU'
+                    ? 'Прямая работа по гарантийным письмам страховых компаний (GOP)'
+                    : lang === 'MNE'
+                    ? 'Direktna saradnja putem garantnih pisama osiguranja (GOP)'
+                    : 'Direct Settlement via Insurer Guarantee of Payment (GOP)'}
+                </h3>
+                <p className="mt-2 text-xs sm:text-sm text-slateMuted leading-relaxed">
+                  {lang === 'RU'
+                    ? 'Memorijal d.o.o. напрямую взаимодействует с европейскими и международными ассистанс-службами (Allianz, AXA, Europ Assistance и др.). Мы выставляем официальные счета с фискализацией Черногории (EFI QR) и принимаем банковские гарантии оплаты без привлечения личных средств семьи.'
+                    : lang === 'MNE'
+                    ? 'Memorijal d.o.o. direktno sarađuje sa međunarodnim asistentskim kućama. Izdajemo zvanične EFI QR fiskalne račune i prihvatamo garantna pisma osiguranja bez opterećenja budžeta ožalošćene porodice.'
+                    : 'Memorijal d.o.o. coordinates directly with global assistance underwriters. We issue official Montenegrin EFI QR fiscal invoices and accept direct Guarantees of Payment (GOP) without requiring upfront family funding.'}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full lg:w-auto shrink-0 text-xs">
+                <div className="p-3.5 rounded-xl bg-porcelain border border-stoneBorder">
+                  <span className="font-semibold text-sapphire block mb-1">
+                    SEPA / SWIFT & EFI QR
+                  </span>
+                  <span className="text-slateMuted text-[11px] block">
+                    {lang === 'RU'
+                      ? 'Фискальные счета с QR-кодом Poreske uprave'
+                      : lang === 'MNE'
+                      ? 'Fiskalni računi sa QR kodom Poreske uprave'
+                      : 'Official Montenegrin Tax EFI QR invoicing'}
+                  </span>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-porcelain border border-stoneBorder">
+                  <span className="font-semibold text-emerald-700 block mb-1">
+                    {lang === 'RU' ? '0 € из средств семьи' : lang === 'MNE' ? '0 € trošak porodice' : '0 € Family Burden'}
+                  </span>
+                  <span className="text-slateMuted text-[11px] block">
+                    {lang === 'RU'
+                      ? 'Прямое покрытие полисом репатриации'
+                      : lang === 'MNE'
+                      ? 'Direktno pokriće polisom osiguranja'
+                      : 'Direct claim settlement under valid policy'}
+                  </span>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-porcelain border border-stoneBorder">
+                  <span className="font-semibold text-sapphire block mb-1">
+                    Fluent English / RU / UA
+                  </span>
+                  <span className="text-slateMuted text-[11px] block">
+                    {lang === 'RU'
+                      ? 'Прямая связь с медицинскими аджастерами'
+                      : lang === 'MNE'
+                      ? 'Direktna veza sa dispečerima'
+                      : 'Direct coordination with claims adjusters'}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Bottom Institutional Legal Notice Banner */}
           <div className="mt-8 bg-sapphire text-white rounded-2xl p-6 sm:p-8 shadow-card flex flex-col lg:flex-row lg:items-center justify-between gap-6">
             <div className="max-w-2xl">

@@ -275,7 +275,7 @@ export function App() {
             />
 
             {/* 5. Step-by-Step Procedure Timeline */}
-            <ProcedureTimeline t={t} />
+            <ProcedureTimeline t={t} lang={lang} />
 
             {/* Programmatic SEO Hub Navigator (All 64 Routes / 9 Categories) */}
             <SeoHubNavigator

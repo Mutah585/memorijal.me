@@ -645,6 +645,86 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
               </div>
             ))}
           </div>
+
+          {/* Hotelier & Marina Host Crisis Protocol Callout (Included on Step-by-Step Guide) */}
+          {route.id === 'resource-guide' && (
+            <div className="mt-8 bg-white rounded-2xl border border-stoneBorder p-6 shadow-card no-print">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+                  <Building2 className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-amber-800 block">
+                    {locale === 'ru'
+                      ? 'Регламент для отельеров и марин'
+                      : locale === 'mne'
+                      ? 'Protokol za hotele i marine'
+                      : 'Hospitality & Marina Management Protocol'}
+                  </span>
+                  <h3 className="font-serif text-lg sm:text-xl font-bold text-slateDeep">
+                    {locale === 'ru'
+                      ? 'Информация для администраторов отелей, вилл и марин (Porto Montenegro / Luštica Bay)'
+                      : locale === 'mne'
+                      ? 'Informacije za administratore hotela, vila i marina (Porto Montenegro / Luštica Bay)'
+                      : 'Information for Hotel, Villa & Marina Managers (Porto Montenegro / Luštica Bay)'}
+                  </h3>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs pt-2">
+                <div className="p-4 rounded-xl bg-porcelain border border-stoneBorder">
+                  <span className="font-bold text-sapphire block mb-1">
+                    {locale === 'ru'
+                      ? '1. Вызов экстренных служб'
+                      : locale === 'mne'
+                      ? '1. Poziv hitnim službama'
+                      : '1. Immediate Emergency Dispatch'}
+                  </span>
+                  <p className="text-slateMuted leading-relaxed">
+                    {locale === 'ru'
+                      ? 'Вызов скорой помощи (Hitna pomoć 124) и полиции (Policija 122). Категорически запрещено перемещать тело, багаж и вещи умершего до прибытия дежурного следователя.'
+                      : locale === 'mne'
+                      ? 'Pozvati Hitnu pomoć (124) i Policiju (122). Strogo je zabranjeno pomjeranje tijela, prtljaga i ličnih stvari prije dolaska dežurnog istražitelja.'
+                      : 'Dial Emergency Medical (Hitna pomoć 124) and Police (Policija 122). Do not move the body, luggage, or personal effects prior to the attending investigator’s arrival.'}
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl bg-porcelain border border-stoneBorder">
+                  <span className="font-bold text-sapphire block mb-1">
+                    {locale === 'ru'
+                      ? '2. Опечатывание номера администрацией'
+                      : locale === 'mne'
+                      ? '2. Pečaćenje sobe / apartmana'
+                      : '2. Room & Belongings Sealing'}
+                  </span>
+                  <p className="text-slateMuted leading-relaxed">
+                    {locale === 'ru'
+                      ? 'Опечатывание номера или каюты ключом-картой администрацией до завершения следственного протокола и описи имущества уполномоченными органами.'
+                      : locale === 'mne'
+                      ? 'Privremeno zaključavanje i pečaćenje sobe/kabine od strane uprave objekta do sačinjavanja zvaničnog policijskog zapisnika o stvarima.'
+                      : 'Lock and seal room/berth access until the investigative officer and forensic examiner conclude the on-site evidence and inventory protocol.'}
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl bg-porcelain border border-stoneBorder">
+                  <span className="font-bold text-sapphire block mb-1">
+                    {locale === 'ru'
+                      ? '3. Вызов аккредитованного координатора'
+                      : locale === 'mne'
+                      ? '3. Poziv licenciranog koordinatora'
+                      : '3. Accredited Coordinator Dispatch'}
+                  </span>
+                  <p className="text-slateMuted leading-relaxed">
+                    {locale === 'ru'
+                      ? 'Свяжитесь с Memorijal d.o.o. (+382 68 914 816). Мы берем на себя взаимодействие с полицией, консульством и семьей, деликатно защищая приватность и репутацию вашего объекта.'
+                      : locale === 'mne'
+                      ? 'Kontaktirajte Memorijal d.o.o. (+382 68 914 816). Preuzimamo vezu sa policijom, kapelom, ambasadom i porodicom uz punu zaštitu reputacije objekta.'
+                      : 'Liaise directly with Memorijal d.o.o. (+382 68 914 816). We manage police, consular, and family communication, safeguarding guest privacy and your establishment’s standing.'}
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </section>
 

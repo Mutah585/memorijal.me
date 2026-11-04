@@ -135,6 +135,79 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ lang }) => {
           })}
         </div>
 
+        {/* Institutional Assistance & GOP Compliance Badge */}
+        <div className="mt-8 bg-white rounded-2xl border border-stoneBorder p-6 sm:p-8 shadow-card">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-sapphire mb-2">
+                <Shield className="w-4 h-4 text-emerald-600" />
+                <span>
+                  {locale === 'ru'
+                    ? 'Институциональный протокол со страховыми компаниями'
+                    : locale === 'mne'
+                    ? 'Institucionalni protokol sa osiguranjima'
+                    : 'Institutional Travel Assistance Protocol'}
+                </span>
+              </div>
+              <h3 className="font-serif text-xl sm:text-2xl font-bold text-slateDeep">
+                {locale === 'ru'
+                  ? 'Прямая работа по гарантийным письмам страховых компаний (GOP)'
+                  : locale === 'mne'
+                  ? 'Direktna saradnja putem garantnih pisama osiguranja (GOP)'
+                  : 'Direct Settlement via Insurer Guarantee of Payment (GOP)'}
+              </h3>
+              <p className="mt-2 text-xs sm:text-sm text-slateMuted leading-relaxed">
+                {locale === 'ru'
+                  ? 'Мы аккредитованы для прямого взаимодействия с международными ассистанс-службами Европы, Великобритании и СНГ. Семья полностью освобождена от предварительной оплаты при наличии действующего страхового полиса.'
+                  : locale === 'mne'
+                  ? 'Akreditovani smo za direktnu komunikaciju sa međunarodnim asistentskim kućama. Porodica je u potpunosti oslobođena plaćanja ukoliko preminulo lice posjeduje važeću polisu osiguranja.'
+                  : 'Fully accredited for direct case settlement with global travel insurers and assistance companies worldwide. Families incur zero out-of-pocket expenses under an approved Guarantee of Payment.'}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full lg:w-auto shrink-0 text-xs">
+              <div className="p-3.5 rounded-xl bg-porcelain border border-stoneBorder">
+                <span className="font-semibold text-sapphire block mb-1">
+                  SEPA / SWIFT & EFI QR
+                </span>
+                <span className="text-slateMuted text-[11px] block">
+                  {locale === 'ru'
+                    ? 'Фискальные счета с QR-кодом Poreske uprave'
+                    : locale === 'mne'
+                    ? 'Fiskalni računi sa QR kodom Poreske uprave'
+                    : 'Official Montenegrin Tax EFI QR invoicing'}
+                </span>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-porcelain border border-stoneBorder">
+                <span className="font-semibold text-emerald-700 block mb-1">
+                  {locale === 'ru' ? '0 € из средств семьи' : locale === 'mne' ? '0 € trošak porodice' : '0 € Family Burden'}
+                </span>
+                <span className="text-slateMuted text-[11px] block">
+                  {locale === 'ru'
+                    ? 'Прямое покрытие полисом репатриации'
+                    : locale === 'mne'
+                    ? 'Direktno pokriće polisom osiguranja'
+                    : 'Direct claim settlement under valid policy'}
+                </span>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-porcelain border border-stoneBorder">
+                <span className="font-semibold text-sapphire block mb-1">
+                  Fluent English / RU / UA
+                </span>
+                <span className="text-slateMuted text-[11px] block">
+                  {locale === 'ru'
+                    ? 'Прямая связь с медицинскими аджастерами'
+                    : locale === 'mne'
+                    ? 'Direktna veza sa medicinskim dispečerima'
+                    : 'Immediate coordination with claims adjusters'}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom Statutory Clarification Note */}
         <div className="mt-8 p-4 rounded-xl bg-white border border-stoneBorder flex flex-wrap items-center justify-between gap-3 text-xs text-slateMuted">
           <span className="font-medium text-slateDeep">
