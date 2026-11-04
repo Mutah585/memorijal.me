@@ -26,6 +26,10 @@ import {
   WHATSAPP_NUMBER,
   OFFICIAL_EMAIL,
 } from '../../i18n/translations';
+import {
+  PRICING_CLARIFICATION_NOTE,
+  PRICING_CTA_LABEL,
+} from '../../data/pricing';
 
 interface LocationPageTemplateProps {
   locale: LocaleSlug;
@@ -369,6 +373,9 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
               <p className="mt-2 font-serif text-xl font-bold text-white">
                 {page.specs.estimatedTotalRange}
               </p>
+              <p className="mt-1.5 text-[11px] text-slate-300 leading-snug">
+                {PRICING_CLARIFICATION_NOTE[locale]}
+              </p>
             </div>
           </div>
 
@@ -508,6 +515,21 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
                   ))}
                 </tbody>
               </table>
+            </div>
+            <div className="p-5 bg-porcelain border-t border-stoneBorder flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <p className="text-xs text-slateMuted flex items-center gap-2">
+                <FileCheck className="w-4 h-4 text-sapphire shrink-0" />
+                <span>{PRICING_CLARIFICATION_NOTE[locale]}</span>
+              </p>
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#1E7B54] hover:bg-[#176343] text-white text-xs sm:text-sm font-medium px-5 py-2.5 rounded-full shadow-xs transition-colors shrink-0"
+              >
+                <MessageCircle className="w-4 h-4 shrink-0" />
+                <span>{PRICING_CTA_LABEL[locale]}</span>
+              </a>
             </div>
           </div>
         </div>

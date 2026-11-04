@@ -243,19 +243,19 @@ function buildStandardCosts(locale: LocaleSlug, freightLabel: string, freightRan
       {
         item: 'Государственные пошлины, Matičar, Апостиль и Sprovodnica',
         includedStatus: 'Включено в смету',
-        referenceCost: '€180 – €260',
+        referenceCost: 'From €180',
         detail: 'Все сборы ЗАГСа, судебный Апостиль и выезд республиканского санитарного инспектора.',
       },
       {
         item: 'Клиническая подготовка, бальзамирование и цинковый гроб (Lemljenje)',
         includedStatus: 'Включено по стандарту IATA',
-        referenceCost: '€750 – €1,100',
+        referenceCost: 'From €750',
         detail: 'Сертифицированный цинковый вкладыш, деревянный гроб/короб, герметичная опайка и пломба.',
       },
       {
         item: 'Судебные переводы (Sudski tumač) и консульский сбор',
         includedStatus: 'Включено под ключ',
-        referenceCost: '€190 – €340',
+        referenceCost: 'From €190',
         detail: 'Заверенный перевод всех медицинских и ЗАГС документов + оформление в посольстве.',
       },
       {
@@ -272,19 +272,19 @@ function buildStandardCosts(locale: LocaleSlug, freightLabel: string, freightRan
       {
         item: 'Državne takse, Matičar, Apostille i Sanitarna Sprovodnica',
         includedStatus: 'Uključeno u obračun',
-        referenceCost: '€180 – €260',
+        referenceCost: 'From €180',
         detail: 'Sve administrativne takse opštine, suda i izlazak republičkog sanitarnog inspektora.',
       },
       {
         item: 'Higijenska priprema, balzamovanje i limeni uložak (Lemljenje)',
         includedStatus: 'Uključeno po IATA standardu',
-        referenceCost: '€750 – €1,100',
+        referenceCost: 'From €750',
         detail: 'Atestirani cink uložak, drveni sanduk, hermetičko lemljenje i državna plomba.',
       },
       {
         item: 'Ovjereni prevodi (Sudski tumač) i konzularna legalizacija',
         includedStatus: 'Uključeno po punomoćju',
-        referenceCost: '€190 – €340',
+        referenceCost: 'From €190',
         detail: 'Prevod medicinske dokumentacije i izvoda sa pečatom sudskog tumača i ambasade.',
       },
       {
@@ -300,19 +300,19 @@ function buildStandardCosts(locale: LocaleSlug, freightLabel: string, freightRan
     {
       item: 'Statutory State Fees, Civil Registry, Apostille & Sprovodnica',
       includedStatus: '100% Included',
-      referenceCost: '€180 – €260',
+      referenceCost: 'From €180',
       detail: 'Municipal death registration, court Hague Apostille stamps, and Republic Sanitary Inspector fee.',
     },
     {
       item: 'Forensic Embalming, Export Coffin & Hermetic Zinc Liner (Lemljenje)',
       includedStatus: 'IATA & Berlin Convention Compliant',
-      referenceCost: '€750 – €1,100',
+      referenceCost: 'From €750',
       detail: 'Certified zinc liner, solid export casket, hermetic soldering, and official sanitary wax/lead seal.',
     },
     {
       item: 'Sworn Court Translations (Sudski tumač) & Embassy Clearance',
       includedStatus: 'Executed via Remote PoA',
-      referenceCost: '€190 – €340',
+      referenceCost: 'From €190',
       detail: 'Certified legal translation of medical/civil records and diplomatic Laissez-Passer processing.',
     },
     {
@@ -363,11 +363,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'KCCG Podgorica, Opšta bolnica Kotor, Bar, Budva, Tivat, Herceg Novi',
           requiredDocuments: ['Passport of the deceased', 'Remote Power of Attorney (Punomoćje)', 'Next-of-kin ID copy'],
           receivingRequirements: ['Receiving funeral home details or Belgrade Crematorium slot confirmation'],
-          estimatedTotalRange: '€1,250 – €3,900 (Itemized EFI Fiscal Invoice)',
+          estimatedTotalRange: 'From €2,400',
         },
         costHeading: 'Transparent Statutory Cost Structure',
         costSubtitle: 'Official itemized EFI fiscal invoices accepted by European assistance insurers and state social funds.',
-        costItems: buildStandardCosts('en', 'International Air Cargo HUM or Cross-Border Hearse Logistics', '€650 – €2,200'),
+        costItems: buildStandardCosts('en', 'International Air Cargo HUM or Cross-Border Hearse Logistics', 'From €650'),
         faqHeading: 'Frequently Asked Questions — Repatriation in Montenegro',
         faqs: [
           {
@@ -415,11 +415,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'KCCG Подгорица, Больница Котора, Бар, Будва, Тиват, Херцег-Нови',
           requiredDocuments: ['Паспорт усопшего', 'Дистанционная доверенность (Punomoćje)', 'Копия документа родственника'],
           receivingRequirements: ['Данные принимающей ритуальной службы или бронь крематория в Белграде'],
-          estimatedTotalRange: '€1,250 – €3,900 (Официальный фискальный счет EFI)',
+          estimatedTotalRange: 'От 2 400 €',
         },
         costHeading: 'Прозрачная структура государственных и логистических расходов',
         costSubtitle: 'Официальные фискальные счета EFI с QR-кодом для страховых компаний и выплат.',
-        costItems: buildStandardCosts('ru', 'Международный авиатариф Cargo HUM или спецкатафалк', '€650 – €2,200'),
+        costItems: buildStandardCosts('ru', 'Международный авиатариф Cargo HUM или спецкатафалк', 'От 650 €'),
         faqHeading: 'Частые вопросы — Репатриация и кремация в Черногории',
         faqs: [
           {
@@ -467,11 +467,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'KCCG Podgorica, Opšta bolnica Kotor, Bar, Budva, Tivat, Herceg Novi',
           requiredDocuments: ['Pasoš preminulog lica', 'Ovjereno punomoćje porodice', 'Kopija identifikacionog dokumenta srodnika'],
           receivingRequirements: ['Podaci pogrebnog preduzeća u odredištu ili potvrda termina krematorijuma u Beogradu'],
-          estimatedTotalRange: '€1,250 – €3,900 (Zvanični EFI fiskalni račun)',
+          estimatedTotalRange: 'Od 2.400 €',
         },
         costHeading: 'Transparentna struktura zakonskih troškova',
         costSubtitle: 'Zvanični EFI fiskalni računi priznati od strane evropskih osiguranja i fondova PIO.',
-        costItems: buildStandardCosts('mne', 'Međunarodni Cargo HUM avio-transport ili drumski prevoz', '€650 – €2,200'),
+        costItems: buildStandardCosts('mne', 'Međunarodni Cargo HUM avio-transport ili drumski prevoz', 'Od 650 €'),
         faqHeading: 'Često postavljana pitanja — Repatrijacija iz Crne Gore',
         faqs: [
           {
@@ -528,11 +528,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'All Montenegro Municipalities → KCCG Podgorica / Kotor Morgue Preparation',
           requiredDocuments: ['Deceased Passport', 'Signed Remote Power of Attorney', 'Receiving Funeral Home Contact at Destination Airport'],
           receivingRequirements: ['Licensed funeral director or customs broker listed as Consignee on Master Air Waybill (MAWB)'],
-          estimatedTotalRange: '€2,400 – €3,950 (All Permits, Zinc Coffin & Air Freight Included)',
+          estimatedTotalRange: 'From €2,400',
         },
         costHeading: 'Itemized Air Cargo HUM Cost Transparency',
         costSubtitle: 'Complete breakdown of mandatory airport security, customs forwarding, and sanitary fees.',
-        costItems: buildStandardCosts('en', 'IATA Cargo HUM Air Freight, MAWB & Airport Terminal Handling', '€1,100 – €2,250'),
+        costItems: buildStandardCosts('en', 'IATA Cargo HUM Air Freight, MAWB & Airport Terminal Handling', 'From €1,100'),
         faqHeading: 'FAQ — Air Cargo Repatriation from Montenegro',
         faqs: [
           {
@@ -575,11 +575,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Все города Черногории → Морг KCCG Подгорица / Госпиталь Котора',
           requiredDocuments: ['Загранпаспорт усопшего', 'Дистанционная доверенность от семьи', 'Реквизиты встречающей ритуальной службы'],
           receivingRequirements: ['Указание получателя (ритуальной службы или родственника) в авианакладной MAWB'],
-          estimatedTotalRange: '€2,400 – €3,950 (Включая все пошлины, цинковый гроб и авиатариф)',
+          estimatedTotalRange: 'От 2 400 €',
         },
         costHeading: 'Прозрачная смета на авиарепатриацию (Груз 200)',
         costSubtitle: 'Фиксированная стоимость без скрытых аэропортовых или таможенных сборов.',
-        costItems: buildStandardCosts('ru', 'Авиатариф IATA Cargo HUM, выпуск MAWB и терминальная обработка', '€1,100 – €2,250'),
+        costItems: buildStandardCosts('ru', 'Авиатариф IATA Cargo HUM, выпуск MAWB и терминальная обработка', 'От 1 100 €'),
         faqHeading: 'Частые вопросы — Отправка Груза 200 самолетом из Черногории',
         faqs: [
           {
@@ -622,11 +622,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Sve opštine u Crnoj Gori → KCCG Podgorica / Opšta bolnica Kotor',
           requiredDocuments: ['Pasoš preminulog', 'Potpisano punomoćje', 'Podaci pogrebnog preduzeća na odredišnom aerodromu'],
           receivingRequirements: ['Ovlašćeno pogrebno preduzeće navedeno kao primalac (Consignee) na MAWB listu'],
-          estimatedTotalRange: '€2,400 – €3,950 (Sve takse, cink sanduk i avio-kargo uključeni)',
+          estimatedTotalRange: 'Od 2.400 €',
         },
         costHeading: 'Transparentna specifikacija troškova avio-repatrijacije',
         costSubtitle: 'Kompletan prikaz aerodromskih, špediterskih i sanitarnih troškova.',
-        costItems: buildStandardCosts('mne', 'IATA Cargo HUM avio-prevoz, MAWB i aerodromska manipulacija', '€1,100 – €2,250'),
+        costItems: buildStandardCosts('mne', 'IATA Cargo HUM avio-prevoz, MAWB i aerodromska manipulacija', 'Od 1.100 €'),
         faqHeading: 'Česta pitanja — Avio repatrijacija iz Crne Gore',
         faqs: [
           {
@@ -680,11 +680,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Direct Pickup from Kotor, Tivat, Budva, Bar, Herceg Novi & KCCG Podgorica',
           requiredDocuments: ['Deceased Passport', 'Remote Power of Attorney', 'Exact Cemetery or Receiving Chapel Address'],
           receivingRequirements: ['Local cemetery burial permit or receiving funeral home confirmation'],
-          estimatedTotalRange: '€1,250 (Balkans) – €3,500 (EU / Eastern Europe)',
+          estimatedTotalRange: 'From €2,400',
         },
         costHeading: 'Transparent Road Repatriation Cost Breakdown',
         costSubtitle: 'Fixed per-corridor pricing including highway tolls, border customs brokerage, and sanitary sealing.',
-        costItems: buildStandardCosts('en', 'Dedicated Climate-Controlled Hearse, Border Customs & Highway Tolls', '€600 – €1,950'),
+        costItems: buildStandardCosts('en', 'Dedicated Climate-Controlled Hearse, Border Customs & Highway Tolls', 'From €600'),
         faqHeading: 'FAQ — International Road Repatriation from Montenegro',
         faqs: [
           {
@@ -727,11 +727,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Прямой выезд из Котора, Тивата, Будвы, Бара, Херцег-Нови и KCCG Подгорица',
           requiredDocuments: ['Паспорт усопшего', 'Дистанционная доверенность', 'Точный адрес морга, храма или кладбища назначения'],
           receivingRequirements: ['Подтверждение принимающей стороны в городе назначения'],
-          estimatedTotalRange: '€1,250 (Балканы) – €3,500 (ЕС / Восточная Европа)',
+          estimatedTotalRange: 'От 2 400 €',
         },
         costHeading: 'Прозрачная стоимость авторепатриации под ключ',
         costSubtitle: 'Все дорожные сборы, таможенное оформление и санитарный пакет включены в договор.',
-        costItems: buildStandardCosts('ru', 'Рейс специализированного катафалка, таможенный транзит и дорожные сборы', '€600 – €1,950'),
+        costItems: buildStandardCosts('ru', 'Рейс специализированного катафалка, таможенный транзит и дорожные сборы', 'От 600 €'),
         faqHeading: 'Частые вопросы — Авторепатриация из Черногории',
         faqs: [
           {
@@ -774,11 +774,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Preuzimanje iz Kotora, Tivta, Budve, Bara, Herceg Novog i KCCG Podgorica',
           requiredDocuments: ['Pasoš preminulog', 'Ovjereno punomoćje', 'Tačna adresa groblja ili kapele u odredištu'],
           receivingRequirements: ['Potvrda lokalnog pogrebnog preduzeća ili uprave groblja'],
-          estimatedTotalRange: '€1,250 (Region) – €3,500 (EU / Istočna Evropa)',
+          estimatedTotalRange: 'Od 2.400 €',
         },
         costHeading: 'Transparentni troškovi međunarodnog drumskog prevoza',
         costSubtitle: 'Fiksna cijena po ruti uključujući putarine, graničnu špediciju i sanitarnu opremu.',
-        costItems: buildStandardCosts('mne', 'Međunarodni transport specijalnim vozilom, putarine i carina', '€600 – €1,950'),
+        costItems: buildStandardCosts('mne', 'Međunarodni transport specijalnim vozilom, putarine i carina', 'Od 600 €'),
         faqHeading: 'Česta pitanja — Drumski prevoz pokojnika iz Crne Gore',
         faqs: [
           {
@@ -832,11 +832,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Tivat, Kotor, Budva, Bar, Herceg Novi, Podgorica & Northern Municipalities',
           requiredDocuments: ['Deceased Passport', 'Notarized Cremation Authorization & PoA from Next of Kin', 'Medical Cause of Death Certificate'],
           receivingRequirements: ['Urn can be delivered anywhere in Montenegro, handed over in Belgrade, or cleared for airline carry-on'],
-          estimatedTotalRange: '€1,850 – €2,650 (All Permits, Transport, State Cremation & Urn Included)',
+          estimatedTotalRange: 'From €1,850',
         },
         costHeading: 'Complete Cremation Transfer Cost Breakdown',
         costSubtitle: 'Transparent all-inclusive package covering Montenegro permits, Serbia customs, and Belgrade Crematorium fees.',
-        costItems: buildStandardCosts('en', 'Cross-Border Hearse to Belgrade, State Crematorium Fee & Sealed Urn Return', '€850 – €1,250'),
+        costItems: buildStandardCosts('en', 'Cross-Border Hearse to Belgrade, State Crematorium Fee & Sealed Urn Return', 'From €850'),
         faqHeading: 'FAQ — Cremation Services for Montenegro',
         faqs: [
           {
@@ -879,11 +879,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Тиват, Котор, Будва, Бар, Херцег-Нови, Подгорица и север ЧГ',
           requiredDocuments: ['Паспорт усопшего', 'Заявление-доверенность на кремацию от близкого родственника', 'Документ, подтверждающий родство'],
           receivingRequirements: ['Передача урны в Черногории, в Белграде или отправка авиа в РФ/Украину/ЕС'],
-          estimatedTotalRange: '€1,850 – €2,650 (Все пошлины, транспорт, кремация и урна включены)',
+          estimatedTotalRange: 'От 1 850 €',
         },
         costHeading: 'Полная смета на кремацию в Белграде из Черногории',
         costSubtitle: 'Прозрачный фиксированный пакет без скрытых таможенных и пограничных доплат.',
-        costItems: buildStandardCosts('ru', 'Спецтранспорт Черногория–Белград, сбор гос. крематория и возврат урны', '€850 – €1,250'),
+        costItems: buildStandardCosts('ru', 'Спецтранспорт Черногория–Белград, сбор гос. крематория и возврат урны', 'От 850 €'),
         faqHeading: 'Частые вопросы — Кремация для умерших в Черногории',
         faqs: [
           {
@@ -926,11 +926,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Tivat, Kotor, Budva, Bar, Herceg Novi, Podgorica i sjeverne opštine',
           requiredDocuments: ['Pasoš preminulog', 'Ovjerena saglasnost najbližeg srodnika za kremaciju', 'Dokaz o srodstvu (izvod iz MKV ili MKR)'],
           receivingRequirements: ['Predaja urne u Crnoj Gori, u Beogradu ili priprema za unos u avion'],
-          estimatedTotalRange: '€1,850 – €2,650 (Sve dozvole, prevoz, taksa krematorijuma i urna uključeni)',
+          estimatedTotalRange: 'Od 1.850 €',
         },
         costHeading: 'Transparentni troškovi kremacije u Beogradu sa prevozom iz CG',
         costSubtitle: 'Kompletan paket bez skrivenih carinskih ili administrativnih troškova.',
-        costItems: buildStandardCosts('mne', 'Prevoz Crna Gora–Beograd, taksa državnog krematorijuma i povrat urne', '€850 – €1,250'),
+        costItems: buildStandardCosts('mne', 'Prevoz Crna Gora–Beograd, taksa državnog krematorijuma i povrat urne', 'Od 850 €'),
         faqHeading: 'Česta pitanja — Kremacija u Beogradu iz Crne Gore',
         faqs: [
           {
@@ -984,11 +984,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Physical Inspector Sealing at Kotor Morgue & KCCG Podgorica',
           requiredDocuments: ['Passport of the Deceased', 'Signed Bilingual Power of Attorney (Punomoćje)', 'Next-of-Kin Identification'],
           receivingRequirements: ['Compliance with Strasbourg Agreement (1973) & Berlin Convention'],
-          estimatedTotalRange: 'Included in Full Repatriation or €550 – €950 Standalone Legal Package',
+          estimatedTotalRange: 'Included in Full Repatriation or From €450 Standalone Legal Package',
         },
         costHeading: 'Statutory Legal, Sanitary & Translation Fee Schedule',
         costSubtitle: 'Every state fee and court translation receipt is itemized on your official EFI fiscal invoice.',
-        costItems: buildStandardCosts('en', 'Full Consular Representation & Republic Sanitary Inspector Sealing Protocol', '€350 – €650'),
+        costItems: buildStandardCosts('en', 'Full Consular Representation & Republic Sanitary Inspector Sealing Protocol', 'From €350'),
         faqHeading: 'FAQ — Sprovodnica, Zinc Sealing & Consular Permits in Montenegro',
         faqs: [
           {
@@ -1031,11 +1031,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Присутствие санитарного инспектора в моргах Котора и KCCG Подгорица',
           requiredDocuments: ['Паспорт усопшего', 'Двуязычная доверенность (Punomoćje)', 'Копия паспорта родственника'],
           receivingRequirements: ['Полное соответствие Страсбургскому соглашению и правилам таможни ЕАЭС/ЕС'],
-          estimatedTotalRange: 'Включено в пакет репатриации или €550 – €950 отдельно',
+          estimatedTotalRange: 'Включено в пакет репатриации или От 450 € отдельно',
         },
         costHeading: 'Тарифы на государственные пошлины, цинкование и переводы',
         costSubtitle: 'Каждая пошлина подтверждается официальными квитанциями и фискальным счетом EFI.',
-        costItems: buildStandardCosts('ru', 'Консульское сопровождение и протокол пломбирования санитарным инспектором', '€350 – €650'),
+        costItems: buildStandardCosts('ru', 'Консульское сопровождение и протокол пломбирования санитарным инспектором', 'От 350 €'),
         faqHeading: 'Частые вопросы — Спроводница и опайка цинка в Черногории',
         faqs: [
           {
@@ -1078,11 +1078,11 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Plombiranje u kapeli Opšte bolnice Kotor i KCCG Podgorica',
           requiredDocuments: ['Pasoš preminulog lica', 'Potpisano punomoćje', 'Kopija ličnog dokumenta srodnika'],
           receivingRequirements: ['Usklađenost sa Strazburškim sporazumom i carinskim propisima'],
-          estimatedTotalRange: 'Uključeno u repatrijaciju ili €550 – €950 samostalno',
+          estimatedTotalRange: 'Uključeno u repatrijaciju ili Od 450 € samostalno',
         },
         costHeading: 'Pregled administrativnih, sanitarnih i prevodilačkih troškova',
         costSubtitle: 'Sve takse su transparentno iskazane na zvaničnom EFI fiskalnom računu.',
-        costItems: buildStandardCosts('mne', 'Konzularno zastupanje i protokol plombiranja sa sanitarnim inspektorom', '€350 – €650'),
+        costItems: buildStandardCosts('mne', 'Konzularno zastupanje i protokol plombiranja sa sanitarnim inspektorom', 'Od 350 €'),
         faqHeading: 'Česta pitanja — Sprovodnica i lemljenje cinka u Crnoj Gori',
         faqs: [
           {

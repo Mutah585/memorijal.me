@@ -48,7 +48,7 @@ export const MetaManager: React.FC<MetaManagerProps> = ({ locale, route }) => {
     upsertMeta('name', 'robots', 'index, follow, max-image-preview:large');
 
     // 4. OpenGraph Meta Tags
-    const brandLogoUrl = 'https://memorijal.me/assets/branding/memorijal-logo.png';
+    const brandLogoUrl = 'https://memorijal.me/assets/branding/emblem-crest.png';
     upsertMeta('property', 'og:title', pageData.metaTitle);
     upsertMeta('property', 'og:description', pageData.metaDescription);
     upsertMeta('property', 'og:url', canonicalUrl);

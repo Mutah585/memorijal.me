@@ -20,6 +20,7 @@ import { SeoHubNavigator } from './components/seo/SeoHubNavigator';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { CoreServices } from './components/CoreServices';
+import { PricingSection } from './components/PricingSection';
 import { RouteEstimator } from './components/RouteEstimator';
 import { ProcedureTimeline } from './components/ProcedureTimeline';
 import { TrustAndDirector } from './components/TrustAndDirector';
@@ -189,6 +190,9 @@ export function App() {
               t={t}
               onSelectServiceForEstimator={handleSelectServiceFromPillar}
             />
+
+            {/* 3b. Official Starting Package Tiers (5 Standard Service Packages) */}
+            <PricingSection lang={lang} />
 
             {/* 4. Interactive Transparent Cost & Route Estimator */}
             <RouteEstimator

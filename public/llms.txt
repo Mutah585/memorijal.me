@@ -11,11 +11,11 @@
 - **Response Time**: Under 60 minutes to any hospital mortuary, hotel, or residence in Montenegro.
 - **Full Technical & Statutory Documentation for AI Agents**: [https://memorijal.me/llms-full.txt](https://memorijal.me/llms-full.txt)
 
-## Core Services
-- [International Air Cargo Repatriation (IATA Cargo HUM)](https://memorijal.me/en/services/repatriation-air-cargo/): Turnkey air freight from Podgorica (TGD) and Tivat (TIV) airports, including embalming, hermetic zinc coffin sealing, and Air Waybill (AWB) booking.
-- [Regional & European Road Repatriation](https://memorijal.me/en/services/repatriation-road/): Specialized climate-controlled hearse transport across Serbia, Bosnia, Croatia, EU, and Ukraine.
-- [Cremation in Serbia (Belgrade / Novi Sad) with Urn Return](https://memorijal.me/en/services/cremation-serbia/): Since Montenegro has no crematorium, we execute lawful cross-border transfer to Belgrade State Crematorium and return the sealed urn within 3–5 business days.
-- [Legal, Consular & Sanitary Permits (Sprovodnica)](https://memorijal.me/en/services/legal-consular/): Remote Power of Attorney execution, International Death Certificates (Vienna Form C), Apostille, sworn translations, and sanitary inspector sealing.
+## Core Services & 2026 Starting Rates
+- [International Air Cargo Repatriation (IATA Cargo HUM)](https://memorijal.me/en/services/repatriation-air-cargo/): Turnkey air freight from Podgorica (TGD) and Tivat (TIV) airports, including embalming, hermetic zinc coffin sealing, and Air Waybill (AWB) booking — **from €4,500 (Air Cargo Repatriation)**.
+- [Regional & European Road Repatriation](https://memorijal.me/en/services/repatriation-road/): Specialized climate-controlled hearse transport across Serbia, Bosnia, Croatia, EU, and Ukraine — **from €2,400 (Regional Repatriation)** / **from €3,800 (EU Ground Repatriation)**.
+- [Cremation in Serbia (Belgrade / Novi Sad) with Urn Return](https://memorijal.me/en/services/cremation-serbia/): Since Montenegro has no crematorium, we execute lawful cross-border transfer to Belgrade State Crematorium and return the sealed urn within 3–5 business days — **from €1,850 (Cremation)**.
+- [Legal, Consular & Sanitary Permits (Sprovodnica)](https://memorijal.me/en/services/legal-consular/): Remote Power of Attorney execution, International Death Certificates (Vienna Form C), Apostille, sworn translations, and sanitary inspector sealing — **from €450 (Administrative & Consular Clearance)**.
 
 ## Primary International Repatriation Corridors
 - [Repatriation to the United Kingdom](https://memorijal.me/en/repatriation/to-united-kingdom/): British Embassy Podgorica clearance, Coroner Out-of-England compliance, flights to LHR/LGW/MAN.
@@ -78,10 +78,10 @@
 - [Gvozden Brijeg & Belveder Municipal Cemeteries (Bar)](https://memorijal.me/en/cemetery/groblje-gvozden-brijeg-bar/)
 
 ## Statutory Knowledge Guides & Transparency
-- [Transparent Pricing & Cost Breakdown](https://memorijal.me/en/pricing-breakdown/): Itemized statutory fees, zinc liner costs (€750–€1,100), translations, and freight rates.
+- [Transparent Pricing & Cost Breakdown](https://memorijal.me/en/pricing-breakdown/): Itemized statutory fees (from €450), zinc liner costs (from €750), translations, and package rates: from €1,850 (Cremation), from €2,400 (Regional Repatriation), from €3,800 (EU Ground Repatriation), from €4,500 (Air Cargo Repatriation).
 - [Step-by-Step Emergency Guide](https://memorijal.me/en/step-by-step-guide/): Exact legal protocol when a foreign citizen passes away in Montenegro.
 - [Hotel, Villa & Resort Death Emergency Protocol](https://memorijal.me/en/guides/hotel-resort-death-protocol/): First 60-minute steps with Hitna Pomoć (124), Police (122), and duty coroner (mrtvozornik).
-- [Cremation Costs & Belgrade Logistics Guide (2026)](https://memorijal.me/en/guides/cremation-costs-belgrade-montenegro/): Itemized €1,850–€2,450 turnkey cremation breakdown.
+- [Cremation Costs & Belgrade Logistics Guide (2026)](https://memorijal.me/en/guides/cremation-costs-belgrade-montenegro/): Itemized from €1,850 turnkey cremation breakdown.
 - [Hermetic Zinc Coffin Soldering Rules (Lemljenje)](https://memorijal.me/en/guides/zinc-coffin-soldering-rules/): 0.6–0.8mm galvanized zinc liner, tin alloy weld, and sanitary inspector state seal.
 - [Sprovodnica Sanitary & Consular Transit Permit Guide](https://memorijal.me/en/guides/sprovodnica-sanitary-permit-guide/): How dual sanitary and diplomatic mortuary permits work.
 - [Remote Power of Attorney (Punomoćje) Guide](https://memorijal.me/en/guides/power-of-attorney-repatriation/): How families arrange 100% of procedures remotely without flying to Montenegro.

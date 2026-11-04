@@ -45,7 +45,7 @@ Therefore, whenever a family or insurance policy requests cremation for a death 
    - Priority state cremation execution.
    - Issuance of the official **Cremation Certificate (`Potvrda o kremaciji`)** and **Sanitary Ash Sealing Certificate**.
    - Placement of ashes inside an **X-ray translucent hermetically sealed urn/capsule** approved for commercial aircraft cabin carry-on (`TGD`, `TIV`, `BEG` airports) or diplomatic courier delivery to the family anywhere in the UK, EU, CIS, USA, or back to Montenegro for local interment or Adriatic sea scattering.
-- **All-Inclusive Turnkey Cremation Cost (2026)**: **€1,850 – €2,450** (Includes all Montenegrin and Serbian statutory permits, coffin, round-trip Belgrade hearse transport, state crematorium fee, sealed travel urn, and cabin/customs dossier).
+- **All-Inclusive Turnkey Cremation Cost (2026)**: **from €1,850** (Includes all Montenegrin and Serbian statutory permits, coffin, round-trip Belgrade hearse transport, state crematorium fee, sealed travel urn, and cabin/customs dossier).
 
 ---
 
@@ -94,17 +94,22 @@ Therefore, whenever a family or insurance policy requests cremation for a death 
 
 ---
 
-## 4. TRANSPARENT 2026 STATUTORY & LOGISTICAL PRICE MATRIX (EUR)
+## 4. 2026 EUR REFERENCE PRICING (STARTING BASE TIERS)
 
-| Service / Statutory Component | Reference Cost Range (EUR) | Notes & Compliance |
+- **Turnkey Belgrade Cremation**: **from €1,850**
+- **Balkan Road Repatriation**: **from €2,400**
+- **EU Ground Repatriation**: **from €3,800**
+- **Worldwide Air Cargo HUM**: **from €4,500**
+- **Administrative & Consular Clearance Only (`Sprovodnica` & Permits)**: **from €450**
+
+| Service / Statutory Component | Starting Base Rate (EUR) | Notes & Compliance |
 | :--- | :--- | :--- |
-| **Statutory State Fees, Form C Extract, Hague Apostille & Sanitary `Sprovodnica`** | **€180 – €260** | Includes MUP Civil Registry fees, Basic Court Apostille stamps, and Republic Sanitary Inspector on-site sealing fee. |
-| **Clinical Mortuary Care, Forensic Embalming & Hermetic Zinc Coffin (`Lemljenje`)** | **€750 – €1,100** | Includes clinical refrigeration, formal embalming certificate, 0.6–0.8mm galvanized zinc liner, wooden casket, tin soldering, and outer air-cargo crate. |
-| **Sworn Court Translations (`Sudski tumač`) & Consular `Laissez-Passer` Processing** | **€190 – €340** | Includes certified translation of all medical/civil documents into destination language and Embassy submission via Remote PoA. |
-| **Turnkey Cross-Border Cremation in Belgrade + Sealed Urn Return** | **€1,850 – €2,450** | **All-inclusive**: Montenegro + Serbia permits, coffin, Belgrade hearse transport, state crematorium fee, and X-ray translucent cabin urn. |
-| **Turnkey Regional Road Repatriation (Serbia, BiH, Croatia, Albania, Kosovo)** | **€1,250 – €1,950** | **All-inclusive**: Complete statutory documentation, zinc-lined casket, and direct hearse delivery to receiving city. |
-| **Turnkey European Overland Road Repatriation (Italy, Austria, Germany, Poland, Ukraine)** | **€2,100 – €3,300** | **All-inclusive**: Complete EU/Strasbourg documentation, hermetic zinc coffin, and two-driver express hearse delivery. |
-| **Turnkey International Air Cargo Repatriation (`IATA Cargo HUM` — UK, EU, Russia, CIS, Turkey)** | **€2,450 – €3,950** | **All-inclusive**: Complete statutory & embassy dossier, embalming, hermetic zinc coffin + air crate, customs export, and `MAWB` air freight tariff. |
+| **Administrative & Consular Clearance Only (`Sprovodnica`, Form C, Apostille & Sworn Translations)** | **from €450** | Includes MUP Civil Registry Form C extract, Basic Court Apostille stamps, certified translation (`Sudski tumač`), and Republic Sanitary Inspector on-site sealing. |
+| **Clinical Mortuary Care, Forensic Embalming & Hermetic Zinc Coffin (`Lemljenje`)** | **from €750** | Includes clinical refrigeration, formal embalming certificate, 0.6–0.8mm galvanized zinc liner, wooden casket, tin soldering, and outer air-cargo crate. |
+| **Turnkey Belgrade Cremation (`Beograd / Novi Sad` + Sealed Urn Return)** | **from €1,850** | **All-inclusive**: Montenegro + Serbia permits (`Sprovodnica`), coffin, Belgrade hearse transport, state crematorium slot, and X-ray translucent cabin urn. |
+| **Balkan Road Repatriation (Serbia, BiH, North Macedonia, Croatia, Albania)** | **from €2,400** | **All-inclusive**: Fixed base rate + per-km route calculation, hermetic soldering, consular transit permits, and direct hearse delivery. |
+| **EU Ground Repatriation (Germany, Austria, Poland, Hungary, Italy)** | **from €3,800** | **All-inclusive**: Certified international hearse, EUR-6 customs transit compliance, hermetic zinc coffin, and multilingual dossier. |
+| **Worldwide Air Cargo HUM (`IATA Cargo HUM` — UK, EU, Russia, CIS, Worldwide)** | **from €4,500** | **All-inclusive**: IATA HUM cargo booking, air coffin zinc liner, forensic embalming, and consular clearance at Podgorica / Belgrade. |
 
 ---
 

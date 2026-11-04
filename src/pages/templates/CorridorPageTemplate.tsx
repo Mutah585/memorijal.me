@@ -20,6 +20,7 @@ import {
   SeoRouteEntry,
   ALL_SEO_ROUTES,
   buildLocalizedPath,
+  localeSlugToLang,
 } from '../../data/seo-routes';
 import {
   PHONE_DISPLAY,
@@ -27,6 +28,11 @@ import {
   WHATSAPP_NUMBER,
   OFFICIAL_EMAIL,
 } from '../../i18n/translations';
+import {
+  PRICING_CLARIFICATION_NOTE,
+  PRICING_CTA_LABEL,
+} from '../../data/pricing';
+import { PricingSection } from '../../components/PricingSection';
 
 interface CorridorPageTemplateProps {
   locale: LocaleSlug;
@@ -67,12 +73,12 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           specConsular: 'Консульские сроки в Подгорице',
           specEmbassy: 'Дипломатическое ведомство',
           specMorgue: 'Охват моргов в Черногории',
-          specPrice: 'Ориентировочный бюджет под ключ',
+          specPrice: 'Стартовый тариф под ключ',
           reqDocsTitle: 'Необходимые документы от семьи (дистанционно)',
           recReqTitle: 'Условия приема в стране назначения',
           tableItem: 'Статья расходов / Государственная процедура',
           tableStatus: 'Статус включения',
-          tableCost: 'Базовый диапазон',
+          tableCost: 'Базовый тариф',
           eeatBadge: 'ПЕРСОНАЛЬНЫЙ КОНТРОЛЬ И ЛИЦЕНЗИЯ DOO (E-E-A-T)',
           eeatName: 'Максим Коваленко (Maksym Kovalenko)',
           eeatRole: 'Исполнительный координатор • Memorijal d.o.o. Montenegro',
@@ -100,12 +106,12 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           specConsular: 'Konzularni rok u Podgorici',
           specEmbassy: 'Nadležna ambasada / konzulat',
           specMorgue: 'Bolničke mrtvačnice u CG',
-          specPrice: 'Okvirni ukupni trošak',
+          specPrice: 'Početna cijena paketa',
           reqDocsTitle: 'Potrebna dokumentacija od porodice (po punomoćju)',
           recReqTitle: 'Uslovi prijema u državi odredišta',
           tableItem: 'Stavka troškova / Zakonska procedura',
           tableStatus: 'Status u obračunu',
-          tableCost: 'Okvirni iznos',
+          tableCost: 'Početni iznos',
           eeatBadge: 'LIČNA ODGOVORNOST I DOO LICENCA (E-E-A-T)',
           eeatName: 'Maksym Kovalenko',
           eeatRole: 'Izvršni koordinator • Memorijal d.o.o. Crna Gora',
@@ -132,12 +138,12 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           specConsular: 'Podgorica Consular Timeframe',
           specEmbassy: 'Diplomatic Mission',
           specMorgue: 'Montenegro Morgue Catchment',
-          specPrice: 'Reference Turnkey Cost Range',
+          specPrice: 'Starting Package Rate',
           reqDocsTitle: 'Required Family Documents (Executed Remotely)',
           recReqTitle: 'Destination Airport / Cemetery Receiving Protocol',
           tableItem: 'Statutory Procedure / Cost Component',
           tableStatus: 'Inclusion Status',
-          tableCost: 'Reference Range',
+          tableCost: 'Starting Rate',
           eeatBadge: 'E-E-A-T EXECUTIVE ASSURANCE & LICENSED DOO ENTITY',
           eeatName: 'Maksym Kovalenko',
           eeatRole: 'Executive Coordinator • Memorijal d.o.o. Montenegro',
@@ -387,6 +393,9 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
               <p className="mt-2 font-serif text-xl font-bold text-white">
                 {page.specs.estimatedTotalRange}
               </p>
+              <p className="mt-1.5 text-[11px] text-slate-300 leading-snug">
+                {PRICING_CLARIFICATION_NOTE[locale]}
+              </p>
             </div>
           </div>
 
@@ -528,9 +537,29 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
                 </tbody>
               </table>
             </div>
+            <div className="p-5 bg-porcelain border-t border-stoneBorder flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <p className="text-xs text-slateMuted flex items-center gap-2">
+                <FileCheck className="w-4 h-4 text-sapphire shrink-0" />
+                <span>{PRICING_CLARIFICATION_NOTE[locale]}</span>
+              </p>
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#1E7B54] hover:bg-[#176343] text-white text-xs sm:text-sm font-medium px-5 py-2.5 rounded-full shadow-xs transition-colors shrink-0"
+              >
+                <MessageCircle className="w-4 h-4 shrink-0" />
+                <span>{PRICING_CTA_LABEL[locale]}</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
+
+      {(route.id === 'pricing-breakdown' ||
+        route.id === 'guide-cremation-costs-belgrade') && (
+        <PricingSection lang={localeSlugToLang(locale)} />
+      )}
 
       {/* 7. DYNAMIC FAQ SECTION (H2 + Accordion UI) */}
       <section className="py-14 sm:py-20 bg-porcelain border-b border-stoneBorder">

@@ -56,11 +56,11 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
   const buildWhatsAppHref = () => {
     let text = '';
     if (lang === 'RU') {
-      text = `Здравствуйте, Memorijal d.o.o.\nЗапрос по расчету процедуры:\n• Услуга: ${serviceInfo.label}\n• Регион назначения: ${regionInfo.label}\n• Местонахождение в ЧГ: ${locationInfo.label}\n• Расчетный срок: ${currentMatrix.timeframe}\nПожалуйста, свяжитесь со мной для уточнения деталей.`;
+      text = `Здравствуйте, Memorijal d.o.o.! Меня интересует репатриация / процедура (${serviceInfo.label}) для направления ${regionInfo.label}, начальная оценка ${currentMatrix.priceRange.toLowerCase()}.\n• Местонахождение в ЧГ: ${locationInfo.label}\n• Расчетный срок: ${currentMatrix.timeframe}\nПрошу рассчитать точную смету.`;
     } else if (lang === 'MNE') {
-      text = `Poštovani, Memorijal d.o.o.\nUpit sa kalkulatora procedure:\n• Usluga: ${serviceInfo.label}\n• Region odredišta: ${regionInfo.label}\n• Lokacija u CG: ${locationInfo.label}\n• Okvirni rok: ${currentMatrix.timeframe}\nMolim vas za kontakt i detaljnu specifikaciju.`;
+      text = `Poštovani Memorijal d.o.o., interesuje me repatrijacija za ${regionInfo.label}, početna procjena ${currentMatrix.priceRange.toLowerCase()}.\n• Usluga: ${serviceInfo.label}\n• Lokacija u CG: ${locationInfo.label}\n• Okvirni rok: ${currentMatrix.timeframe}\nMolim za precizan proračun.`;
     } else {
-      text = `Hello Memorijal d.o.o. Coordinator,\nI am inquiring with the following route parameters:\n• Service: ${serviceInfo.label}\n• Destination Region: ${regionInfo.label}\n• Collection in Montenegro: ${locationInfo.label}\n• Estimated Timeframe: ${currentMatrix.timeframe}\nPlease advise on immediate next steps.`;
+      text = `Hello Memorijal d.o.o. Coordinator, I am inquiring about repatriation to ${regionInfo.label}, starting estimate ${currentMatrix.priceRange.toLowerCase()}.\n• Service: ${serviceInfo.label}\n• Collection in Montenegro: ${locationInfo.label}\n• Estimated Timeframe: ${currentMatrix.timeframe}\nPlease provide an exact estimate.`;
     }
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
   };
@@ -261,10 +261,21 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
 
                   <div className="bg-white/10 rounded-xl p-4">
                     <span className="text-[11px] uppercase tracking-wider text-slate-200 block">
-                      {t.estimator.output.costEstimateLabel}
+                      {lang === 'RU'
+                        ? 'Ориентировочные расходы:'
+                        : lang === 'MNE'
+                        ? 'Procijenjeni troškovi:'
+                        : 'Estimated cost:'}
                     </span>
                     <span className="font-serif text-xl sm:text-2xl font-bold text-emerald-300 mt-1 block">
                       {currentMatrix.priceRange}
+                    </span>
+                    <span className="text-[10px] text-slate-300 mt-1 block">
+                      {lang === 'RU'
+                        ? 'Окончательный расчет зависит от километража и консульских сборов'
+                        : lang === 'MNE'
+                        ? 'Konačna cijena zavisi od stvarne kilometraže i konzularnih taksi'
+                        : 'Exact quote depends on transit route and consular fees'}
                     </span>
                   </div>
                 </div>

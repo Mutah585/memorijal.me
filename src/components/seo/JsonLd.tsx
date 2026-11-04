@@ -5,6 +5,7 @@ import {
   SITE_ORIGIN,
   buildFullCanonicalUrl,
 } from '../../data/seo-routes';
+import { STANDARD_PRICING_PACKAGES } from '../../data/pricing';
 
 interface JsonLdProps {
   locale: LocaleSlug;
@@ -76,13 +77,30 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
     name: 'Memorijal d.o.o. — International Repatriation & Cremation Montenegro',
     legalName: 'Memorijal d.o.o.',
     url: canonicalUrl,
-    logo: 'https://memorijal.me/assets/branding/memorijal-logo.png',
-    image: 'https://memorijal.me/assets/branding/memorijal-logo.png',
+    logo: 'https://memorijal.me/assets/branding/emblem-crest.png',
+    image: 'https://memorijal.me/assets/branding/emblem-crest.png',
     telephone: '+38268914816',
     email: 'dispatch@memorijal.me',
-    priceRange: '€€€',
+    priceRange: 'from €450',
     taxID: '03489217',
     vatID: '30/31-20948-4',
+    makesOffer: STANDARD_PRICING_PACKAGES.map((pkg) => ({
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: pkg.schemaName,
+      },
+      price: String(pkg.basePriceEur),
+      priceCurrency: 'EUR',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        minPrice: String(pkg.basePriceEur),
+        priceCurrency: 'EUR',
+      },
+      availability: 'https://schema.org/InStock',
+      validFrom: '2026-01-01',
+      description: pkg.schemaDescription,
+    })),
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Tivat',

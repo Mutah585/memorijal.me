@@ -59,33 +59,30 @@ export const Footer: React.FC<FooterProps> = ({
             <a
               href={buildLocalizedPath(locale, '/')}
               onClick={(e) => handleLink(e, buildLocalizedPath(locale, '/'))}
-              className="inline-flex items-center gap-3.5 group focus:outline-none"
+              className="inline-flex items-center gap-3 md:gap-3.5 select-none group focus:outline-none"
             >
-              <img
-                src="/assets/branding/memorijal-logo.webp"
-                alt="Memorijal d.o.o. Montenegro"
-                width={50}
-                height={45}
-                loading="lazy"
-                className="h-11 w-auto object-contain shrink-0 brightness-115 contrast-105 transition-opacity duration-200 group-hover:opacity-90"
-              />
-              <div className="flex flex-col justify-center leading-none">
-                <div className="flex items-baseline gap-1.5">
-                  <span className="font-serif text-[22px] font-semibold tracking-[0.20em] text-white leading-none">
-                    MEMORIJAL
-                  </span>
-                  <span className="text-[9.5px] font-sans font-normal tracking-[0.12em] text-slate-400 leading-none">
-                    d.o.o.
-                  </span>
-                </div>
-                <div className="flex flex-col mt-1.5 space-y-[2px]">
-                  <span className="text-[8.5px] font-sans font-medium uppercase tracking-[0.14em] text-slate-300 leading-none">
-                    CRNA GORA • MEĐUNARODNA REPATRIJACIJA I KREMACIJA
-                  </span>
-                  <span className="text-[7.5px] font-sans font-normal uppercase tracking-[0.15em] text-slate-400 leading-none">
-                    MONTENEGRO • INTERNATIONAL REPATRIATION &amp; CREMATION
-                  </span>
-                </div>
+              <div className="relative flex items-center justify-center shrink-0 w-9 h-9 md:w-10 md:h-10">
+                <img
+                  src="/assets/branding/emblem-crest.svg"
+                  alt="Memorijal Grb"
+                  width={40}
+                  height={40}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-contain -translate-y-[1px] brightness-125 contrast-105 transition-opacity duration-200 group-hover:opacity-90"
+                />
+              </div>
+              <div className="flex flex-col justify-center">
+                <span className="text-slate-100 font-serif tracking-[0.14em] font-semibold text-lg leading-none">
+                  MEMORIJAL
+                </span>
+                <span className="text-slate-400 font-sans tracking-[0.2em] text-[10px] uppercase mt-1 leading-none">
+                  {lang === 'RU'
+                    ? 'ЧЕРНОГОРИЯ • РЕПАТРИАЦИЯ'
+                    : lang === 'MNE'
+                    ? 'CRNA GORA • REPATRIJACIJA'
+                    : 'CRNA GORA • REPATRIJACIJA'}
+                </span>
               </div>
             </a>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">

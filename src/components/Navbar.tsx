@@ -189,38 +189,35 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* 2. Main Quiet Luxury / Swiss Minimal Navigation Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-[74px] gap-4">
-          {/* Left: Unified Brand Logo Block (36px mobile, 48px-52px desktop max height to prevent CLS) */}
+          {/* Left: Optically Balanced 1:1 Brand Crest & Semantic DOM Typography */}
           <a
             href={homePath}
             onClick={(e) => handleAnchorOrRoute(e, '#top')}
-            className="inline-flex items-center gap-2.5 md:gap-3.5 h-9 max-h-[36px] md:h-[50px] md:max-h-[52px] group focus:outline-none shrink-0"
+            className="flex items-center gap-3 md:gap-3.5 select-none group focus:outline-none shrink-0"
           >
-            <img
-              src="/assets/branding/memorijal-logo.webp"
-              alt="Memorijal d.o.o. Montenegro"
-              width={54}
-              height={48}
-              loading="eager"
-              fetchPriority="high"
-              className="h-9 md:h-12 w-auto object-contain shrink-0 transition-opacity duration-200 group-hover:opacity-90"
-            />
-            <div className="flex flex-col justify-center leading-none">
-              <div className="flex items-baseline gap-1.5">
-                <span className="font-serif text-[19px] sm:text-[21px] md:text-[23px] font-semibold tracking-[0.20em] text-[#1A1D20] leading-none">
-                  MEMORIJAL
-                </span>
-                <span className="text-[9px] md:text-[9.5px] font-sans font-normal tracking-[0.12em] text-[#7A828C] leading-none">
-                  d.o.o.
-                </span>
-              </div>
-              <div className="hidden md:flex flex-col mt-1 space-y-[2px]">
-                <span className="text-[8.5px] font-sans font-medium uppercase tracking-[0.14em] text-[#5A626A] leading-none whitespace-nowrap">
-                  CRNA GORA • MEĐUNARODNA REPATRIJACIJA I KREMACIJA
-                </span>
-                <span className="text-[7.5px] font-sans font-normal uppercase tracking-[0.15em] text-[#8C949E] leading-none whitespace-nowrap">
-                  MONTENEGRO • INTERNATIONAL REPATRIATION &amp; CREMATION
-                </span>
-              </div>
+            <div className="relative flex items-center justify-center shrink-0 w-9 h-9 md:w-10 md:h-10">
+              <img
+                src="/assets/branding/emblem-crest.svg"
+                alt="Memorijal Grb"
+                width={40}
+                height={40}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                className="w-full h-full object-contain -translate-y-[1px] transition-opacity duration-200 group-hover:opacity-90"
+              />
+            </div>
+            <div className="flex flex-col justify-center">
+              <span className="font-serif text-[19px] md:text-[21px] tracking-[0.14em] font-semibold text-slate-900 leading-none">
+                MEMORIJAL
+              </span>
+              <span className="text-[9px] md:text-[10px] tracking-[0.22em] text-slate-500 uppercase font-sans font-medium mt-1 leading-none">
+                {lang === 'RU'
+                  ? 'ЧЕРНОГОРИЯ • РЕПАТРИАЦИЯ'
+                  : lang === 'MNE'
+                  ? 'CRNA GORA • REPATRIJACIJA'
+                  : 'CRNA GORA • REPATRIJACIJA'}
+              </span>
             </div>
           </a>
 

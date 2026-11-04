@@ -78,13 +78,14 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
     const regionLabel = t.estimator.regions[region].label;
     const locationLabel = t.estimator.locations[location].label;
     const relationLabel = t.modal.relations[relation];
+    const currentPrice = t.estimator.matrix[service][region].priceRange.toLowerCase();
 
     const summary =
       lang === 'RU'
-        ? `Здравствуйте, Memorijal d.o.o.\n• Имя: ${name || 'Не указано'}\n• Статус: ${relationLabel}\n• Контакт: ${contact || 'В чате'}\n• Услуга: ${serviceLabel}\n• Направление: ${regionLabel}\n• Город в ЧГ: ${locationLabel}\n• Примечание: ${notes || '-'}`
+        ? `Здравствуйте, Memorijal d.o.o.! Меня интересует репатриация (${regionLabel}), начальная оценка ${currentPrice}.\n• Имя: ${name || 'Не указано'}\n• Статус: ${relationLabel}\n• Контакт: ${contact || 'В чате'}\n• Услуга: ${serviceLabel}\n• Город в ЧГ: ${locationLabel}\n• Примечание: ${notes || '-'}`
         : lang === 'MNE'
-        ? `Poštovani, Memorijal d.o.o.\n• Ime: ${name || 'Nije navedeno'}\n• Svojstvo: ${relationLabel}\n• Kontakt: ${contact || 'WhatsApp'}\n• Usluga: ${serviceLabel}\n• Region: ${regionLabel}\n• Lokacija u CG: ${locationLabel}\n• Napomena: ${notes || '-'}`
-        : `Hello Memorijal d.o.o. Duty Coordinator,\n• Name: ${name || 'Not specified'}\n• Capacity: ${relationLabel}\n• Contact: ${contact || 'Via WhatsApp'}\n• Procedure: ${serviceLabel}\n• Destination: ${regionLabel}\n• Location in MNE: ${locationLabel}\n• Notes: ${notes || '-'}`;
+        ? `Poštovani Memorijal d.o.o., interesuje me repatrijacija za ${regionLabel}, početna procjena ${currentPrice}.\n• Ime: ${name || 'Nije navedeno'}\n• Svojstvo: ${relationLabel}\n• Kontakt: ${contact || 'WhatsApp'}\n• Usluga: ${serviceLabel}\n• Lokacija u CG: ${locationLabel}\n• Napomena: ${notes || '-'}`
+        : `Hello Memorijal d.o.o. Duty Coordinator, I am inquiring about repatriation to ${regionLabel}, starting estimate ${currentPrice}.\n• Name: ${name || 'Not specified'}\n• Capacity: ${relationLabel}\n• Contact: ${contact || 'Via WhatsApp'}\n• Procedure: ${serviceLabel}\n• Location in MNE: ${locationLabel}\n• Notes: ${notes || '-'}`;
 
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(summary)}`;
   };
