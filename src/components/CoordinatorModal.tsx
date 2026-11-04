@@ -57,6 +57,16 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
     setLocation(initialLocation);
   }, [initialService, initialRegion, initialLocation]);
 
+  useEffect(() => {
+    if (isOpen) {
+      const originalStyle = window.getComputedStyle(document.body).overflow;
+      document.body.style.overflow = 'hidden';
+      return () => {
+        document.body.style.overflow = originalStyle;
+      };
+    }
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   const validateAndSubmit = (e: React.FormEvent) => {
@@ -110,8 +120,12 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-title"
+      onClick={handleResetAndClose}
     >
-      <div className="bg-white rounded-2xl border border-stoneBorder shadow-elevated max-w-2xl w-full overflow-hidden my-8">
+      <div
+        className="bg-white rounded-2xl border border-stoneBorder shadow-elevated max-w-2xl w-full overflow-hidden my-8"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Top Modal Header */}
         <div className="bg-sapphire text-white px-6 py-5 flex items-start justify-between gap-4">
           <div>
