@@ -44,8 +44,26 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ heading, faqs, locale })
     );
   });
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <section className="py-14 sm:py-20 bg-porcelain border-b border-stoneBorder">
+      {/* Schema.org FAQPage structured data injection */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-slateDeep text-center">
           {heading}
@@ -74,7 +92,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ heading, faqs, locale })
               return (
                 <div
                   key={idx}
-                  className="bg-white rounded-xl border border-stoneBorder shadow-card overflow-hidden"
+                  className="faq-item bg-white rounded-xl border border-stoneBorder shadow-card overflow-hidden"
                 >
                   <button
                     type="button"

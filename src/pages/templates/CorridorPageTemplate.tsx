@@ -184,21 +184,21 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
   return (
     <article className="bg-porcelain text-slateDeep">
       {/* Official Print Letterhead (Hidden on screen, visible only on print) */}
-      <div className="hidden print:block print-header">
-        <div className="flex justify-between items-center text-xs text-slate-600">
+      <div className="hidden print:block print-letterhead print-header">
+        <div className="flex justify-between items-center text-xs text-slate-700">
           <div>
-            <strong className="text-sm text-slate-900 block tracking-wider">MEMORIJAL D.O.O.</strong>
-            <span>Licencirana služba međunarodne repatrijacije • Crna Gora</span>
+            <span className="font-serif font-bold text-sm text-slate-900 block tracking-wider">MEMORIJAL D.O.O.</span>
+            <span>Međunarodna repatrijacija i koordinacija • Crna Gora</span>
           </div>
-          <div className="text-right">
-            <span>PIB: 03489217 | Dežurna linija 24/7: {PHONE_DISPLAY}</span>
-            <span className="block">{OFFICIAL_EMAIL} | memorijal.me</span>
+          <div className="text-right text-[11px]">
+            <span className="block font-semibold">PIB: 03489217 | Tel: {PHONE_DISPLAY} (24/7)</span>
+            <span>{OFFICIAL_EMAIL} | memorijal.me</span>
           </div>
         </div>
       </div>
 
       {/* 1. SEMANTIC BREADCRUMBS WITH MICRODATA */}
-      <div className="bg-white border-b border-stoneBorder">
+      <div className="bg-white border-b border-stoneBorder breadcrumbs-nav no-print">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-3">
           <nav
             aria-label="Breadcrumb"
@@ -608,7 +608,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
             {page.walkthroughSteps.map((step) => (
               <div
                 key={step.stepNumber}
-                className="bg-white rounded-2xl border border-stoneBorder p-6 sm:p-7 shadow-card flex flex-col lg:flex-row lg:items-center justify-between gap-6"
+                className="step-item step-card bg-white rounded-2xl border border-stoneBorder p-6 sm:p-7 shadow-card flex flex-col lg:flex-row lg:items-center justify-between gap-6"
               >
                 <div className="flex items-start gap-4 max-w-3xl">
                   <div className="w-12 h-12 rounded-xl bg-sapphire text-white font-serif text-2xl font-bold flex items-center justify-center shrink-0">

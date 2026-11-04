@@ -54,12 +54,19 @@
 
 /* Institutional Print Stylesheet for PDF Generation */
 @media print {
-  html, body, #root, main {
+  /* 1. Fully unlock page flow and remove height boundaries */
+  html, body, #root, #root > div, main, article, section {
     height: auto !important;
     min-height: 0 !important;
+    max-height: none !important;
     overflow: visible !important;
+    display: block !important;
+    float: none !important;
+    position: static !important;
     background: #ffffff !important;
     color: #000000 !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
   }
 
   /* Prevent unnecessary blank page pushing */
@@ -68,42 +75,40 @@
     text-shadow: none !important;
   }
 
-  /* Hide all interactive, mobile navigation & floating chrome */
+  /* 2. Hide all non-printable chrome */
   header, 
   footer, 
   nav, 
   .no-print, 
-  [role="complementary"],
   #mobile-emergency-bar,
   [role="dialog"],
-  button {
+  button,
+  .breadcrumbs-nav {
     display: none !important;
   }
 
-  /* Clean printable header */
+  /* 3. Render clean, dignified letterhead at the very top of Page 1 */
+  .print-letterhead,
   .print-header {
     display: block !important;
     border-bottom: 2px solid #1A1D20;
-    padding-bottom: 12px;
-    margin-bottom: 20px;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
   }
 
-  /* Avoid awkward page break splits inside steps, cards and tables */
-  article,
-  section,
-  .step-card, 
-  .guide-section, 
-  .print-break-inside-avoid,
-  table, 
+  /* 4. Page break rules: only avoid breaking inside individual step items */
+  .step-item,
+  .step-card,
+  .faq-item,
   tr {
     break-inside: avoid !important;
     page-break-inside: avoid !important;
   }
 
-  /* Tidy typography scale for standard A4 */
-  h1 { font-size: 20pt !important; margin-bottom: 8pt !important; }
-  h2 { font-size: 15pt !important; margin-top: 14pt !important; margin-bottom: 6pt !important; }
-  p, li { font-size: 10pt !important; line-height: 1.4 !important; }
+  /* 5. Typography and density: fit guide into 3-4 neat pages */
+  h1 { font-size: 18pt !important; line-height: 1.2 !important; margin: 0 0 10pt 0 !important; }
+  h2 { font-size: 13pt !important; margin: 10pt 0 4pt 0 !important; }
+  p, li { font-size: 9.5pt !important; line-height: 1.35 !important; }
 
   a[href]:after {
     content: "" !important;

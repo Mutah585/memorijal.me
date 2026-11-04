@@ -1,10 +1,27 @@
 import React, { useState } from 'react';
-import { Building2, ChevronDown, ChevronUp, MapPin, Phone, ShieldCheck } from 'lucide-react';
+import {
+  Building2,
+  ChevronDown,
+  ChevronUp,
+  MapPin,
+  Phone,
+  ShieldCheck,
+  Copy,
+  Check,
+  AlertCircle,
+  X,
+} from 'lucide-react';
 import { LocaleSlug } from '../data/seo-routes';
 
 interface EmbassyItem {
   id: string;
+  countryKey: 'uk' | 'de' | 'rs' | 'ua' | 'ru';
   name: {
+    ru: string;
+    en: string;
+    mne: string;
+  };
+  countryName: {
     ru: string;
     en: string;
     mne: string;
@@ -22,10 +39,16 @@ interface EmbassyItem {
 const EMBASSIES: EmbassyItem[] = [
   {
     id: 'uk',
+    countryKey: 'uk',
     name: {
       ru: 'Посольство Великобритании в Подгорице (British Embassy)',
       en: 'British Embassy Podgorica',
       mne: 'Britanska ambasada u Podgorici',
+    },
+    countryName: {
+      ru: 'Великобритании',
+      en: 'United Kingdom',
+      mne: 'Velike Britanije',
     },
     address: 'Ul. Džordža Vašingtona 44',
     city: '81000 Podgorica',
@@ -38,10 +61,16 @@ const EMBASSIES: EmbassyItem[] = [
   },
   {
     id: 'de',
+    countryKey: 'de',
     name: {
       ru: 'Посольство Федеративной Республики Германия (Deutsche Botschaft)',
       en: 'Embassy of the Federal Republic of Germany',
       mne: 'Ambasada Savezne Republike Njemačke',
+    },
+    countryName: {
+      ru: 'Германии',
+      en: 'Germany',
+      mne: 'Njemačke',
     },
     address: 'Hercegovačka 10',
     city: '81000 Podgorica',
@@ -54,14 +83,20 @@ const EMBASSIES: EmbassyItem[] = [
   },
   {
     id: 'rs',
+    countryKey: 'rs',
     name: {
       ru: 'Посольство Республики Сербия & Генеральное консульство',
       en: 'Embassy of the Republic of Serbia & Consulate General',
       mne: 'Ambasada Republike Srbije & Generalni konzulat',
     },
+    countryName: {
+      ru: 'Сербии',
+      en: 'Serbia',
+      mne: 'Srbije',
+    },
     address: 'Bulevar Ivana Crnojevića 10, Podgorica | Trg Hercega Stjepana 15, Herceg Novi',
     city: 'Podgorica / Herceg Novi',
-    phone: '+382 20 667 300 / +382 31 350 320',
+    phone: '+382 20 667 300',
     notes: {
       ru: 'Выдача sprovodnica za prenos posmrtnih ostataka u Srbiju (Подгорица и Герцег-Нови).',
       en: 'Issuance of cross-border consular transit permits (Sprovodnica) in Podgorica and Herceg Novi.',
@@ -70,10 +105,16 @@ const EMBASSIES: EmbassyItem[] = [
   },
   {
     id: 'ua',
+    countryKey: 'ua',
     name: {
       ru: 'Посольство Украины в Черногории (Посольство України)',
       en: 'Embassy of Ukraine in Montenegro',
       mne: 'Ambasada Ukrajine u Crnoj Gori',
+    },
+    countryName: {
+      ru: 'Украины',
+      en: 'Ukraine',
+      mne: 'Ukrajine',
     },
     address: 'Serdara Jola Piletića 15',
     city: '81000 Podgorica',
@@ -86,10 +127,16 @@ const EMBASSIES: EmbassyItem[] = [
   },
   {
     id: 'ru',
+    countryKey: 'ru',
     name: {
       ru: 'Консульский отдел Посольства Российской Федерации',
       en: 'Consular Department of the Russian Federation',
       mne: 'Konzularno odjeljenje Ambasade Ruske Federacije',
+    },
+    countryName: {
+      ru: 'РФ',
+      en: 'Russian Federation',
+      mne: 'Ruske Federacije',
     },
     address: 'Veliše Mugoše 1',
     city: '81000 Podgorica',
@@ -107,10 +154,72 @@ interface ConsularDirectoryProps {
 }
 
 export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) => {
+  const [selectedFilter, setSelectedFilter] = useState<string>('all');
   const [openId, setOpenId] = useState<string | null>(null);
+  const [copiedPhone, setCopiedPhone] = useState<string | null>(null);
+  const [confirmCallModal, setConfirmCallModal] = useState<{
+    phone: string;
+    countryName: string;
+  } | null>(null);
+
+  const filterOptions = [
+    {
+      id: 'all',
+      labels: { ru: 'Все', en: 'All', mne: 'Sve' },
+    },
+    {
+      id: 'uk',
+      labels: { ru: 'UK 🇬🇧', en: 'UK 🇬🇧', mne: 'UK 🇬🇧' },
+    },
+    {
+      id: 'de',
+      labels: { ru: 'Германия 🇩🇪', en: 'Germany 🇩🇪', mne: 'Njemačka 🇩🇪' },
+    },
+    {
+      id: 'rs',
+      labels: { ru: 'Сербия 🇷🇸', en: 'Serbia 🇷🇸', mne: 'Srbija 🇷🇸' },
+    },
+    {
+      id: 'ua',
+      labels: { ru: 'Украина 🇺🇦', en: 'Ukraine 🇺🇦', mne: 'Ukrajina 🇺🇦' },
+    },
+    {
+      id: 'ru',
+      labels: { ru: 'РФ 🇷🇺', en: 'Russia 🇷🇺', mne: 'Rusija 🇷🇺' },
+    },
+  ];
+
+  const handleSelectFilter = (filterId: string) => {
+    setSelectedFilter(filterId);
+    if (filterId !== 'all') {
+      setOpenId(filterId);
+      const el = document.getElementById(`embassy-${filterId}`);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+  };
 
   const toggle = (id: string) => {
     setOpenId((prev) => (prev === id ? null : id));
+  };
+
+  const handleCopyPhone = (e: React.MouseEvent, phone: string) => {
+    e.stopPropagation();
+    navigator.clipboard.writeText(phone);
+    setCopiedPhone(phone);
+    setTimeout(() => {
+      setCopiedPhone((curr) => (curr === phone ? null : curr));
+    }, 2000);
+  };
+
+  const handleTriggerCallModal = (e: React.MouseEvent, item: EmbassyItem) => {
+    e.stopPropagation();
+    if (!item.phone) return;
+    setConfirmCallModal({
+      phone: item.phone,
+      countryName: item.countryName[locale],
+    });
   };
 
   const copy = {
@@ -121,8 +230,13 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
       reassuranceTitle: 'Подача документов без присутствия семьи',
       reassuranceText:
         'Memorijal d.o.o. подает документы во все дипломатические представительства в Подгорице по доверенности без участия семьи. Мы берем на себя консульские пошлины, перевод судебными переводчиками и получение санитарной справки (Sprovodnica).',
-      toggleOpen: 'Подробнее о консульском оформлении',
-      toggleClose: 'Свернуть',
+      copySuccess: 'Номер скопирован',
+      copyTitle: 'Скопировать номер телефона',
+      confirmCallTitle: 'Подтверждение вызова',
+      confirmCallText: (country: string) =>
+        `Позвонить в дежурную службу консульства ${country}?`,
+      callBtn: 'Вызов',
+      cancelBtn: 'Отмена',
     },
     en: {
       title: 'Embassies & Consular Directory in Montenegro',
@@ -131,8 +245,13 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
       reassuranceTitle: 'Direct Consular Submission by Power of Attorney',
       reassuranceText:
         'Memorijal d.o.o. files all required statutory documentation directly with embassies in Podgorica under official power of attorney without requiring family attendance. We handle certified translations, statutory fees, and the international mortuary passport (Sprovodnica).',
-      toggleOpen: 'Consular clearance details',
-      toggleClose: 'Close',
+      copySuccess: 'Number copied',
+      copyTitle: 'Copy phone number',
+      confirmCallTitle: 'Confirm Consular Call',
+      confirmCallText: (country: string) =>
+        `Place a call to the consular duty desk of ${country}?`,
+      callBtn: 'Call',
+      cancelBtn: 'Cancel',
     },
     mne: {
       title: 'Diplomatska predstavništva i konzularna odjeljenja u Crnoj Gori',
@@ -141,10 +260,20 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
       reassuranceTitle: 'Podnošenje dokumentacije bez prisustva porodice',
       reassuranceText:
         'Memorijal d.o.o. predaje kompletnu dokumentaciju svim diplomatskim predstavništvima u Podgorici po ovlašćenju, bez ličnog prisustva ožalošćene porodice. Preuzimamo sudske prevode, konzularne takse i izdavanje sprovodnice.',
-      toggleOpen: 'Detalji konzularnog postupka',
-      toggleClose: 'Zatvori',
+      copySuccess: 'Broj kopiran',
+      copyTitle: 'Kopirajte broj telefona',
+      confirmCallTitle: 'Potvrda poziva',
+      confirmCallText: (country: string) =>
+        `Pozvati dežurnu službu konzulata ${country}?`,
+      callBtn: 'Pozovi',
+      cancelBtn: 'Otkaži',
     },
   }[locale];
+
+  const displayedEmbassies =
+    selectedFilter === 'all'
+      ? EMBASSIES
+      : EMBASSIES.filter((e) => e.countryKey === selectedFilter);
 
   return (
     <section className="mt-12 bg-white rounded-2xl border border-stoneBorder p-6 sm:p-8 shadow-card print:border-none print:shadow-none print:p-0">
@@ -175,12 +304,41 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
         </div>
       </div>
 
-      {/* Accordion list */}
-      <div className="mt-6 divide-y divide-stoneBorder border-y border-stoneBorder">
-        {EMBASSIES.map((item) => {
-          const isOpen = openId === item.id;
+      {/* Interactive Country Filter Pills */}
+      <div className="mt-6 flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none no-print">
+        {filterOptions.map((filter) => {
+          const isActive = selectedFilter === filter.id;
           return (
-            <div key={item.id} className="py-3.5">
+            <button
+              key={filter.id}
+              type="button"
+              onClick={() => handleSelectFilter(filter.id)}
+              className={`px-3.5 py-1.5 rounded-full text-xs font-semibold shrink-0 transition-colors ${
+                isActive
+                  ? 'bg-sapphire text-white shadow-xs'
+                  : 'bg-porcelain text-slate-700 hover:bg-stone-200 border border-stoneBorder'
+              }`}
+            >
+              {filter.labels[locale]}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Accordion list */}
+      <div className="mt-4 divide-y divide-stoneBorder border-y border-stoneBorder">
+        {displayedEmbassies.map((item) => {
+          const isOpen = openId === item.id || selectedFilter === item.countryKey;
+          const isCopied = copiedPhone === item.phone;
+
+          return (
+            <div
+              key={item.id}
+              id={`embassy-${item.id}`}
+              className={`py-3.5 transition-colors ${
+                selectedFilter === item.countryKey ? 'bg-sapphire/5 -mx-4 px-4 rounded-xl' : ''
+              }`}
+            >
               <button
                 type="button"
                 onClick={() => toggle(item.id)}
@@ -206,20 +364,46 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
               </button>
 
               {isOpen && (
-                <div className="mt-3 pl-6 pr-2 text-xs sm:text-sm text-slate-600 space-y-2 animate-in fade-in duration-150">
-                  <div className="flex flex-wrap gap-x-6 gap-y-1 text-xs text-slate-700">
+                <div className="mt-3 pl-6 pr-2 text-xs sm:text-sm text-slate-600 space-y-2.5 animate-in fade-in duration-150">
+                  <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-slate-700">
                     <span className="inline-flex items-center gap-1.5 font-medium">
                       <span className="text-slate-400">Адрес / Adresa:</span> {item.address}, {item.city}
                     </span>
+
                     {item.phone && (
-                      <span className="inline-flex items-center gap-1.5 font-medium">
-                        <Phone className="w-3.5 h-3.5 text-slate-400" />
-                        <a href={`tel:${item.phone.replace(/[^+\d]/g, '')}`} className="hover:text-sapphire hover:underline">
-                          {item.phone}
-                        </a>
-                      </span>
+                      <div className="inline-flex items-center gap-2">
+                        {/* Tap Shield Phone Button (Triggers Confirmation Dialog instead of immediate tel:) */}
+                        <button
+                          type="button"
+                          onClick={(e) => handleTriggerCallModal(e, item)}
+                          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-800 hover:bg-emerald-100 border border-emerald-200/80 font-medium transition-colors cursor-pointer"
+                          title="Позвонить в консульство"
+                        >
+                          <Phone className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                          <span>{item.phone}</span>
+                        </button>
+
+                        {/* Direct Copy Button */}
+                        <button
+                          type="button"
+                          onClick={(e) => handleCopyPhone(e, item.phone!)}
+                          className="p-1 rounded-md text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition-colors"
+                          title={copy.copyTitle}
+                          aria-label={copy.copyTitle}
+                        >
+                          {isCopied ? (
+                            <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-600">
+                              <Check className="w-3.5 h-3.5" />
+                              <span>{copy.copySuccess}</span>
+                            </span>
+                          ) : (
+                            <Copy className="w-3.5 h-3.5" />
+                          )}
+                        </button>
+                      </div>
                     )}
                   </div>
+
                   {item.notes && (
                     <p className="text-xs text-slate-500 bg-slate-50 p-2.5 rounded-lg border border-slate-200/60 leading-relaxed">
                       {item.notes[locale]}
@@ -231,6 +415,60 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
           );
         })}
       </div>
+
+      {/* Feature 2: Confirmation Dialog / Tap Shield Modal */}
+      {confirmCallModal && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-xs no-print"
+        >
+          <div className="bg-white rounded-2xl max-w-sm w-full p-6 shadow-2xl border border-stoneBorder animate-in fade-in zoom-in-95 duration-150">
+            <div className="flex items-start justify-between gap-3">
+              <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                <AlertCircle className="w-5 h-5" />
+              </div>
+              <button
+                type="button"
+                onClick={() => setConfirmCallModal(null)}
+                className="text-slate-400 hover:text-slate-600 p-1 rounded-lg"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="mt-4">
+              <h4 className="font-serif text-lg font-bold text-slateDeep">
+                {copy.confirmCallTitle}
+              </h4>
+              <p className="mt-2 text-xs sm:text-sm text-slateMuted leading-relaxed">
+                {copy.confirmCallText(confirmCallModal.countryName)}
+              </p>
+              <p className="mt-2 text-xs font-mono font-bold text-sapphire bg-slate-50 p-2 rounded-lg border border-slate-200">
+                {confirmCallModal.phone}
+              </p>
+            </div>
+
+            <div className="mt-6 flex items-center justify-end gap-3">
+              <button
+                type="button"
+                onClick={() => setConfirmCallModal(null)}
+                className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:bg-slate-100 transition-colors"
+              >
+                {copy.cancelBtn}
+              </button>
+              <a
+                href={`tel:${confirmCallModal.phone.replace(/[^+\d]/g, '')}`}
+                onClick={() => setConfirmCallModal(null)}
+                className="inline-flex items-center gap-1.5 px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-forest hover:bg-forest-hover text-white shadow-xs transition-colors"
+              >
+                <Phone className="w-3.5 h-3.5" />
+                <span>{copy.callBtn}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

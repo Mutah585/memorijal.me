@@ -1041,12 +1041,20 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         faqHeading: 'FAQ — Practical Questions When a Death Occurs in Montenegro',
         faqs: [
           {
-            question: 'What if the death occurred suddenly outside a hospital (in a hotel, apartment, or at sea)?',
-            answer: 'In any out-of-hospital death of a foreign national, Montenegrin police and the emergency medical examiner attend the scene. In many cases, the prosecutor orders a routine forensic autopsy at KCCG Podgorica. Our coordinator attends immediately, coordinates the transfer to KCCG, and obtains the forensic release.',
+            question: 'What happens to personal belongings, luggage, and the passport in the hospital or hotel?',
+            answer: 'Under an official Power of Attorney (Punomoćje), our coordinator liaises with the police, hotel management, and hospital administration to inventory and seal all personal belongings, electronic devices, valuables, and the original passport. The passport is required for death registration with the local Registry Office (Matičar) and embassy clearance, after which all items and documents are safely handed over or dispatched to the next-of-kin.',
           },
           {
-            question: 'How do we retrieve the deceased’s personal belongings, luggage, or passport from the hospital or hotel?',
-            answer: 'Under your Power of Attorney, our coordinator collects the official passport, personal effects, jewelry, and luggage under a signed inventory protocol and returns them safely with the repatriation or via courier.',
+            question: 'How many days can the body remain in the hospital mortuary (Kotor / KCCG Podgorica)?',
+            answer: 'Hospital morgues in Kotor and KCCG Podgorica typically allow retention for 3 to 7 days. Commercial daily holding tariffs apply if unmanaged; however, as soon as Memorijal d.o.o. officially takes over the case under Power of Attorney, administrative holding periods are frozen, cold-storage custody is coordinated directly under our institutional protocol, and unnecessary hospital fees are halted.',
+          },
+          {
+            question: 'Does the family need to travel to Montenegro in person for formal identification?',
+            answer: 'No. Family members do not need to travel to Montenegro. Formal identification can be legally established remotely through verified photographic/biometric protocols, medical records, passport scans, or via an authorized legal representative under remote Power of Attorney, sparing the family from unnecessary emotional trauma and urgent travel costs.',
+          },
+          {
+            question: 'What if the death occurred suddenly outside a hospital (in a hotel, apartment, or at sea)?',
+            answer: 'In any out-of-hospital death of a foreign national, Montenegrin police and the emergency medical examiner attend the scene. In many cases, the prosecutor orders a routine forensic autopsy at KCCG Podgorica. Our coordinator attends immediately, coordinates the transfer to KCCG, and obtains the forensic release.',
           },
           {
             question: 'Should family members immediately buy plane tickets to Montenegro?',
@@ -1093,12 +1101,20 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         faqHeading: 'Частые вопросы — Первые действия при смерти в Черногории',
         faqs: [
           {
-            question: 'Что происходит, если смерть наступила вне больницы (в апартаментах, отеле или на море)?',
-            answer: 'При смерти иностранного гражданина вне стационара на место выезжает врач скорой помощи (Hitna pomoć) и полиция. По закону прокурор часто назначает судебно-медицинскую экспертизу в KCCG Подгорица. Наш координатор выезжает на место, организует перевозку в KCCG и получает документы сразу после вскрытия.',
+            question: 'Что происходит с личными вещами, багажом и паспортом в больнице или отеле?',
+            answer: 'При оформлении доверенности (Punomoćje) наш координатор официально взаимодействует с полицией, администрацией больницы или управляющим отеля. Все личные вещи, гаджеты, ценности и оригинал загранпаспорта принимаются по официальной описи под протокол. Загранпаспорт передается в ЗАГС (Matičar) и консульство для аннулирования и получения гербовых свидетельств, после чего все вещи бережно передаются семье или отправляются спецдоставкой.',
           },
           {
-            question: 'Как забрать паспорт, личные вещи или багаж усопшего из больницы или отеля?',
-            answer: 'По вашей доверенности наш координатор по описи забирает загранпаспорт (необходимый для ЗАГСа и консульства), а также личные вещи усопшего из больницы, полиции или отеля и передает их семье.',
+            question: 'Сколько дней тело может находиться в морге больницы (Котор / KCCG Подгорица)?',
+            answer: 'Стандартный регламентный срок нахождения в моргах больниц Котора и KCCG Подгорицы составляет от 3 до 7 дней. При затягивании родственниками процесса могут начисляться коммерческие суточные сборы. Однако с момента официального вступления Memorijal d.o.o. в дело по доверенности, хранение переводится под наш прямой институциональный контроль, коммерческий счетчик останавливается, а тело помещается в надлежащую холодильную камеру без штрафных начислений.',
+          },
+          {
+            question: 'Нужно ли семье лично приезжать в Черногорию на опознание?',
+            answer: 'Нет, личный приезд родственников в Черногорию не требуется. Идентификация личности может быть юридически зафиксирована дистанционно: через сопоставление фото- и биометрических данных в полицейском протоколе, медицинские карты, копии документов, либо доверенным представителем нашей службы по доверенности (Punomoćje). Это полностью освобождает семью от глубокой психологической травмы и экстренных перелетов.',
+          },
+          {
+            question: 'Что происходит, если смерть наступила вне больницы (в апартаментах, отеле или на море)?',
+            answer: 'При смерти иностранного гражданина вне стационара на место выезжает врач скорой помощи (Hitna pomoć) и полиция. По закону прокурор часто назначает судебно-медицинскую экспертизу в KCCG Подгорица. Наш координатор выезжает на место, организует перевозку в KCCG и получает документы сразу после вскрытия.',
           },
           {
             question: 'Нужно ли родственникам срочно покупать билеты и лететь в Черногорию?',
@@ -1145,12 +1161,20 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         faqHeading: 'Česta pitanja — Procedura u slučaju smrti u Crnoj Gori',
         faqs: [
           {
-            question: 'Koja je procedura ako je smrt nastupila van bolnice (u hotelu, stanu ili na plaži)?',
-            answer: 'Kod smrti stranog državljanina van zdravstvene ustanove izlaze Hitna pomoć, mrtvozornik i policija, a nadležni tužilac često nalaže sudsko-medicinsku obdukciju u KCCG Podgorica. Naš tim odmah preuzima koordinaciju prevoza i podizanja dokumentacije iz KCCG-a.',
+            question: 'Šta se dešava sa ličnim stvarima, prtljagom i pasošem u bolnici ili hotelu?',
+            answer: 'Na osnovu zvaničnog punomoćja, naš koordinator u saradnji sa policijom, osobljem bolnice ili upravom hotela vrši popis i preuzimanje ličnih stvari, tehničkih uređaja, dragocjenosti i originalnog pasoša. Pasoš se koristi za prijavu u Matičnoj službi i ambasadi, nakon čega se svi predmeti i dokumenti bezbjedno predaju porodici.',
           },
           {
-            question: 'Kako preuzeti pasoš i lične stvari preminulog iz bolnice ili hotela?',
-            answer: 'Na osnovu Vašeg punomoćja, naš koordinator zapisnički preuzima pasoš (neophodan za prijavu smrti i ambasadu) i lične stvari preminulog i bezbjedno ih dostavlja porodici.',
+            question: 'Koliko dana tijelo može ostati u kapeli / bolničkoj mrtvačnici (Kotor / KCCG Podgorica)?',
+            answer: 'Uobičajeni rok boravka u bolničkim kapelama u Kotoru i KCCG Podgorica iznosi 3 do 7 dana. U slučaju odugovlačenja mogu se obračunavati komercijalne dnevne ležarine. Međutim, onog trenutka kada Memorijal d.o.o. stupi u postupak po punomoćju, tijelo se stavlja pod naš direktan nadzor u odgovarajuću rashladnu komoru, a komercijalne naplate se zaustavljaju.',
+          },
+          {
+            question: 'Da li porodica mora lično doputovati u Crnu Goru radi identifikacije?',
+            answer: 'Ne, dolazak porodice nije neophodan. Identifikacija se zakonski može izvršiti na daljinu putem upoređivanja fotografija, medicinske dokumentacije ili preko ovlašćenog predstavnika naše agencije na osnovu punomoćja, čime se porodica štiti od nepotrebnog stresa i troškova.',
+          },
+          {
+            question: 'Koja je procedura ako je smrt nastupila van bolnice (u hotelu, stanu ili na plaži)?',
+            answer: 'Kod smrti stranog državljanina van zdravstvene ustanove izlaze Hitna pomoć, mrtvozornik i policija, a nadležni tužilac često nalaže sudsko-medicinsku obdukciju u KCCG Podgorica. Naš tim odmah preuzima koordinaciju prevoza i podizanja dokumentacije iz KCCG-a.',
           },
           {
             question: 'Da li članovi porodice moraju odmah putovati za Crnu Goru?',
