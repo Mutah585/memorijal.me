@@ -18,7 +18,7 @@ export default {
           subtle: '#EFF4F9',
         },
         stoneBorder: '#E5E7EB',
-        warmStone: '#8C8275',
+        warmStone: '#63594D',
         forest: {
           DEFAULT: '#1E7B54',
           hover: '#176343',
