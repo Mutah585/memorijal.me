@@ -45,7 +45,8 @@ export const MetaManager: React.FC<MetaManagerProps> = ({ locale, route }) => {
     // 3. Standard SEO Meta Tags
     upsertMeta('name', 'description', pageData.metaDescription);
     upsertMeta('name', 'keywords', pageData.keywords.join(', '));
-    upsertMeta('name', 'robots', 'index, follow, max-image-preview:large');
+    // Temporary indexing block until CRPS registration is finalized
+    upsertMeta('name', 'robots', 'noindex, nofollow, noarchive');
 
     // 4. OpenGraph Meta Tags
     const brandLogoUrl = 'https://memorijal.me/assets/branding/emblem-crest.png';
