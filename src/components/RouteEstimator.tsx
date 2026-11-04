@@ -11,6 +11,8 @@ import {
   Building2,
   Send,
   Zap,
+  Share2,
+  Check,
 } from 'lucide-react';
 import {
   Language,
@@ -18,6 +20,7 @@ import {
   RegionType,
   LocationType,
   TranslationContent,
+  PHONE_DISPLAY,
   WHATSAPP_NUMBER,
 } from '../i18n/translations';
 import { getDispatchStatus } from '../utils/dispatchStatus';
@@ -55,6 +58,7 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
   const locationKeys: LocationType[] = ['boka', 'podgorica', 'coast_south', 'north'];
   const [isUrgentMode, setIsUrgentMode] = useState(false);
   const [selectedCurrency, setSelectedCurrency] = useState<'EUR' | 'GBP' | 'USD'>('EUR');
+  const [copiedShare, setCopiedShare] = useState(false);
   const [rates, setRates] = useState<CurrencyRates>({
     GBP: 0.85,
     USD: 1.08,
@@ -74,7 +78,46 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
   const regionInfo = t.estimator.regions[selectedRegion];
   const locationInfo = t.estimator.locations[selectedLocation];
 
-  // Build prefilled WhatsApp message with selected parameters and urgency mode
+  // Handle Native Sharing (Web Share API) or Clipboard Fallback
+  const handleShareEstimate = async () => {
+    const formattedPrice = convertPriceString(currentMatrix.priceRange, selectedCurrency, rates);
+    const routeTitle = `${serviceInfo.label} (${locationInfo.label} → ${regionInfo.label})`;
+    const shareTitle = 'Memorijal d.o.o. • Расчет маршрута';
+    const shareText = `Маршрут: ${routeTitle} | Срок: ${currentMatrix.timeframe} | Стоимость: ${formattedPrice} | Дежурный координатор 24/7: ${PHONE_DISPLAY}`;
+    const shareUrl = typeof window !== 'undefined' ? window.location.href : 'https://memorijal.me';
+
+    if (typeof navigator !== 'undefined' && navigator.share) {
+      try {
+        await navigator.share({
+          title: shareTitle,
+          text: shareText,
+          url: shareUrl,
+        });
+        return;
+      } catch {
+        // User cancelled or share failed, fallback to clipboard
+      }
+    }
+
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(`${shareText}\n${shareUrl}`);
+      } else {
+        const textarea = document.createElement('textarea');
+        textarea.value = `${shareText}\n${shareUrl}`;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+      }
+      setCopiedShare(true);
+      setTimeout(() => setCopiedShare(false), 2500);
+    } catch {
+      // Silent failure fallback
+    }
+  };
   const buildWhatsAppHref = () => {
     if (isUrgentMode) {
       if (lang === 'RU') {
@@ -397,7 +440,7 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
                       </div>
                     </div>
 
-                    <span className="font-serif text-xl sm:text-2xl font-bold text-emerald-300 mt-1 block">
+                    <span className="font-serif text-xl sm:text-2xl font-bold text-emerald-300 mt-1 inline-block min-w-[7.5rem] tabular-nums [font-variant-numeric:tabular-nums]">
                       {convertPriceString(currentMatrix.priceRange, selectedCurrency, rates)}
                     </span>
 
@@ -489,6 +532,34 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
                   >
                     <Send className="w-4 h-4 shrink-0" />
                     <span>{t.estimator.output.modalBtn}</span>
+                  </button>
+                </div>
+
+                {/* Share Estimate Action Button */}
+                <div className="pt-2 flex items-center justify-between">
+                  <button
+                    type="button"
+                    onClick={handleShareEstimate}
+                    className="inline-flex items-center gap-2 text-xs font-semibold text-sapphire hover:text-sapphire-light p-1 rounded transition-colors group cursor-pointer"
+                  >
+                    {copiedShare ? (
+                      <Check className="w-4 h-4 text-emerald-600" />
+                    ) : (
+                      <Share2 className="w-4 h-4 text-sapphire group-hover:scale-105 transition-transform" />
+                    )}
+                    <span>
+                      {copiedShare
+                        ? lang === 'RU'
+                          ? 'Параметры расчета скопированы для отправки'
+                          : lang === 'MNE'
+                          ? 'Detalji procjene kopirani'
+                          : 'Estimate details copied to clipboard'
+                        : lang === 'RU'
+                        ? 'Отправить расчет семье / страховой'
+                        : lang === 'MNE'
+                        ? 'Pošalji procjenu porodici / osiguranju'
+                        : 'Share estimate with family / insurer'}
+                    </span>
                   </button>
                 </div>
 

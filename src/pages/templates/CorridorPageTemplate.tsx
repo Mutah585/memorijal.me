@@ -34,6 +34,8 @@ import {
 } from '../../data/pricing';
 import { PricingSection } from '../../components/PricingSection';
 import { FaqSection } from '../../components/FaqSection';
+import { DocumentChecklist } from '../../components/DocumentChecklist';
+import { ConsularDirectory } from '../../components/ConsularDirectory';
 
 interface CorridorPageTemplateProps {
   locale: LocaleSlug;
@@ -181,6 +183,20 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
 
   return (
     <article className="bg-porcelain text-slateDeep">
+      {/* Official Print Letterhead (Hidden on screen, visible only on print) */}
+      <div className="hidden print:block print-header">
+        <div className="flex justify-between items-center text-xs text-slate-600">
+          <div>
+            <strong className="text-sm text-slate-900 block tracking-wider">MEMORIJAL D.O.O.</strong>
+            <span>Licencirana služba međunarodne repatrijacije • Crna Gora</span>
+          </div>
+          <div className="text-right">
+            <span>PIB: 03489217 | Dežurna linija 24/7: {PHONE_DISPLAY}</span>
+            <span className="block">{OFFICIAL_EMAIL} | memorijal.me</span>
+          </div>
+        </div>
+      </div>
+
       {/* 1. SEMANTIC BREADCRUMBS WITH MICRODATA */}
       <div className="bg-white border-b border-stoneBorder">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-3">
@@ -458,6 +474,11 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
             </div>
           </div>
 
+          {/* Interactive Crisis Document Checklist */}
+          <div className="mt-6">
+            <DocumentChecklist locale={locale} />
+          </div>
+
           {/* IATA Airport Cabin Urn Security Notice Card */}
           <div className="mt-6 p-6 rounded-2xl bg-white border border-stoneBorder shadow-card">
             <div className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-wider text-sapphire mb-3">
@@ -529,6 +550,51 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
       {/* 5. STRUCTURED EXPLAINER SECTION (H2 — 5-Step Statutory Walkthrough) */}
       <section className="py-14 sm:py-20 bg-porcelain border-b border-stoneBorder">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Crisis Reassurance Callout on Step-by-Step Guide */}
+          {route.id === 'resource-guide' && (
+            <div className="mb-10 p-6 sm:p-7 rounded-2xl bg-amber-50 border-2 border-amber-300 shadow-sm print:hidden">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div className="max-w-3xl space-y-2">
+                  <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-800">
+                    <span className="w-2 h-2 rounded-full bg-amber-600 animate-pulse"></span>
+                    <span>
+                      {locale === 'ru'
+                        ? 'Экстренная помощь координатора'
+                        : locale === 'mne'
+                        ? 'Hitna pomoć koordinatora'
+                        : 'Immediate Crisis Assistance'}
+                    </span>
+                  </div>
+                  <p className="text-sm sm:text-base font-medium text-amber-950 leading-relaxed">
+                    {locale === 'ru'
+                      ? 'Если утрата произошла прямо сейчас — не тратьте время на чтение регламентов. Позвоните дежурному координатору +382 68 914 816 или напишите в WhatsApp. Мы немедленно подключимся к моргу и полиции.'
+                      : locale === 'mne'
+                      ? 'Ako se smrtni slučaj dogodio upravo sada — nemojte gubiti vrijeme na čitanje procedura. Pozovite dežurnog koordinatora na +382 68 914 816 ili pišite na WhatsApp. Odmah ćemo preuzeti komunikaciju sa kapelom i policijom.'
+                      : 'If a bereavement has occurred right now — do not spend time reading through regulations. Call our 24/7 duty coordinator at +382 68 914 816 or message on WhatsApp. We will immediately liaise with the mortuary and police on your behalf.'}
+                  </p>
+                </div>
+                <div className="flex flex-wrap sm:flex-nowrap items-center gap-3 shrink-0 no-print">
+                  <a
+                    href={PHONE_HREF}
+                    className="inline-flex items-center gap-2 bg-forest hover:bg-forest-hover text-white font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-xs transition-colors"
+                  >
+                    <Phone className="w-4 h-4" />
+                    <span>{PHONE_DISPLAY}</span>
+                  </a>
+                  <a
+                    href={whatsappHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#1E7B54] hover:bg-[#176343] text-white font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-xs transition-colors"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    <span>WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          )}
+
           <div className="max-w-3xl">
             <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-slateDeep">
               {page.explainerHeading}
@@ -679,6 +745,15 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
       {(route.id === 'pricing-breakdown' ||
         route.id === 'guide-cremation-costs-belgrade') && (
         <PricingSection lang={localeSlugToLang(locale)} />
+      )}
+
+      {/* 6.1 EMBASSIES & CONSULAR DIRECTORY (on Step-by-Step Guide) */}
+      {route.id === 'resource-guide' && (
+        <section className="py-6 sm:py-10 bg-porcelain">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ConsularDirectory locale={locale} />
+          </div>
+        </section>
       )}
 
       {/* 7. DYNAMIC FAQ SECTION (H2 + Accordion UI + Real-Time Filter) */}

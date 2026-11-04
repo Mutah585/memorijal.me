@@ -165,6 +165,20 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
 
   return (
     <article className="bg-porcelain text-slateDeep">
+      {/* Official Print Letterhead (Hidden on screen, visible only on print) */}
+      <div className="hidden print:block print-header">
+        <div className="flex justify-between items-center text-xs text-slate-600">
+          <div>
+            <strong className="text-sm text-slate-900 block tracking-wider">MEMORIJAL D.O.O.</strong>
+            <span>Licencirana služba međunarodne repatrijacije • Crna Gora</span>
+          </div>
+          <div className="text-right">
+            <span>PIB: 03489217 | Dežurna linija 24/7: {PHONE_DISPLAY}</span>
+            <span className="block">{OFFICIAL_EMAIL} | memorijal.me</span>
+          </div>
+        </div>
+      </div>
+
       {/* 1. SEMANTIC BREADCRUMBS */}
       <div className="bg-white border-b border-stoneBorder">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-3">

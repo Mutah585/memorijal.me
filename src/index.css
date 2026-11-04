@@ -54,32 +54,56 @@
 
 /* Institutional Print Stylesheet for PDF Generation */
 @media print {
-  header,
-  footer,
+  html, body, #root, main {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Prevent unnecessary blank page pushing */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Hide all interactive, mobile navigation & floating chrome */
+  header, 
+  footer, 
+  nav, 
+  .no-print, 
   [role="complementary"],
-  button,
-  .no-print {
+  #mobile-emergency-bar,
+  [role="dialog"],
+  button {
     display: none !important;
   }
 
-  body {
-    background-color: #FFFFFF !important;
-    color: #000000 !important;
-    font-size: 11pt;
-    line-height: 1.5;
-  }
-
-  article,
-  section,
-  table,
-  .print-break-inside-avoid {
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-
+  /* Clean printable header */
   .print-header {
     display: block !important;
+    border-bottom: 2px solid #1A1D20;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
   }
+
+  /* Avoid awkward page break splits inside steps, cards and tables */
+  article,
+  section,
+  .step-card, 
+  .guide-section, 
+  .print-break-inside-avoid,
+  table, 
+  tr {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Tidy typography scale for standard A4 */
+  h1 { font-size: 20pt !important; margin-bottom: 8pt !important; }
+  h2 { font-size: 15pt !important; margin-top: 14pt !important; margin-bottom: 6pt !important; }
+  p, li { font-size: 10pt !important; line-height: 1.4 !important; }
 
   a[href]:after {
     content: "" !important;
