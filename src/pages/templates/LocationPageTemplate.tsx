@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Phone,
   Shield,
@@ -8,7 +8,6 @@ import {
   Globe,
   MessageCircle,
   ChevronRight,
-  ChevronDown,
   CheckCircle2,
   Award,
   ArrowLeft,
@@ -30,6 +29,7 @@ import {
   PRICING_CLARIFICATION_NOTE,
   PRICING_CTA_LABEL,
 } from '../../data/pricing';
+import { FaqSection } from '../../components/FaqSection';
 
 interface LocationPageTemplateProps {
   locale: LocaleSlug;
@@ -44,7 +44,6 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
   onNavigate,
   onOpenModal,
 }) => {
-  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const page = route.locales[locale];
 
   const homePath = buildLocalizedPath(locale, '/');
@@ -535,47 +534,12 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
         </div>
       </section>
 
-      {/* 7. DYNAMIC FAQ ACCORDION */}
-      <section className="py-14 sm:py-20 bg-porcelain border-b border-stoneBorder">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-slateDeep text-center">
-            {page.faqHeading}
-          </h2>
-
-          <div className="mt-8 space-y-3.5">
-            {page.faqs.map((faq, idx) => {
-              const isOpen = openFaqIndex === idx;
-              return (
-                <div
-                  key={idx}
-                  className="bg-white rounded-xl border border-stoneBorder shadow-card overflow-hidden"
-                >
-                  <button
-                    type="button"
-                    onClick={() => setOpenFaqIndex(isOpen ? null : idx)}
-                    className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 hover:bg-alabaster/50 transition-colors"
-                    aria-expanded={isOpen}
-                  >
-                    <span className="font-serif text-lg sm:text-xl font-semibold text-slateDeep">
-                      {faq.question}
-                    </span>
-                    <ChevronDown
-                      className={`w-5 h-5 text-sapphire shrink-0 transition-transform ${
-                        isOpen ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </button>
-                  {isOpen && (
-                    <div className="px-6 pb-5 pt-1 text-xs sm:text-sm text-slateMuted leading-relaxed border-t border-stoneBorder/60">
-                      {faq.answer}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+      {/* 7. DYNAMIC FAQ ACCORDION + REAL-TIME SEARCH */}
+      <FaqSection
+        heading={page.faqHeading}
+        faqs={page.faqs}
+        locale={locale}
+      />
 
       {/* 8. E-E-A-T DIRECTOR ASSURANCE */}
       <section className="py-14 sm:py-16 bg-white border-b border-stoneBorder">

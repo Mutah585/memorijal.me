@@ -8,6 +8,7 @@ import {
   ArrowRight,
   CheckCircle2,
   MessageCircle,
+  AlertCircle,
 } from 'lucide-react';
 import {
   Language,
@@ -162,6 +163,70 @@ export const Hero: React.FC<HeroProps> = ({ lang, t, onOpenModal }) => {
                 <MessageCircle className="w-4 h-4 text-forest shrink-0" />
                 <span>{t.hero.whatsappDirect}</span>
               </a>
+            </div>
+
+            {/* FIRST-15-MINUTES CRISIS PROTOCOL */}
+            <div className="mt-4 p-4 sm:p-5 rounded-2xl bg-white/95 border border-amber-200/80 shadow-xs">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-900 mb-3">
+                <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
+                <span>
+                  {lang === 'RU'
+                    ? 'Если утрата произошла только что — 3 первых действия:'
+                    : lang === 'MNE'
+                    ? 'Ako je smrt upravo nastupila — 3 prva koraka:'
+                    : 'If a loss just occurred — 3 immediate steps:'}
+                </span>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs leading-relaxed text-slate-700">
+                <div className="p-3 rounded-xl bg-amber-50/50 border border-amber-100/80">
+                  <span className="font-bold text-slate-900 block mb-1">
+                    {lang === 'RU'
+                      ? '1. Не подписывайте чужие бумаги'
+                      : lang === 'MNE'
+                      ? '1. Ne potpisujte ugovore u šoku'
+                      : '1. Do not sign third-party forms'}
+                  </span>
+                  <span>
+                    {lang === 'RU'
+                      ? 'Сохраняйте загранпаспорт умершего и медицинскую справку о смерти (Potvrda o smrti). Не передавайте оригиналы случайным посредникам.'
+                      : lang === 'MNE'
+                      ? 'Zadržite pasoš preminulog i ljekarsku potvrdu o smrti (Potvrda o smrti). Ne prepuštajte dokumenta neovlašćenim licima.'
+                      : 'Retain the deceased passport and official medical certificate (Potvrda o smrti). Never hand originals to unauthorized agents.'}
+                  </span>
+                </div>
+                <div className="p-3 rounded-xl bg-amber-50/50 border border-amber-100/80">
+                  <span className="font-bold text-slate-900 block mb-1">
+                    {lang === 'RU'
+                      ? '2. Заморозка тарифов морга'
+                      : lang === 'MNE'
+                      ? '2. Zaustavljanje troškova kapele'
+                      : '2. Commercial Mortuary Freeze'}
+                  </span>
+                  <span>
+                    {lang === 'RU'
+                      ? 'Свяжитесь с аккредитованным координатором, чтобы остановить начисление коммерческих сборов морга и исключить навязывание местного захоронения.'
+                      : lang === 'MNE'
+                      ? 'Pozovite ovlašćenog međunarodnog koordinatora da zamrzne komercijalne takse kapele i zaštiti proceduru od lokalnog nametanja.'
+                      : 'Contact an accredited coordinator immediately to freeze commercial mortuary daily charges and protect against forced local burial.'}
+                  </span>
+                </div>
+                <div className="p-3 rounded-xl bg-amber-50/50 border border-amber-100/80">
+                  <span className="font-bold text-slate-900 block mb-1">
+                    {lang === 'RU'
+                      ? '3. 100% дистанционный транзит'
+                      : lang === 'MNE'
+                      ? '3. 100% daljinski tranzit'
+                      : '3. 100% Remote Consular Transit'}
+                  </span>
+                  <span>
+                    {lang === 'RU'
+                      ? 'Санитарный паспорт (Спроводница), цинковая опайка и разрешения консульств оформляются по доверенности. Приезд семьи в Черногорию не требуется.'
+                      : lang === 'MNE'
+                      ? 'Sanitarni pasoš (Sprovodnica), lemljenje cinka i dozvole ambasada rješavaju se po punomoćju bez potrebe za dolaskom porodice.'
+                      : 'Sanitary permits (Sprovodnica), zinc soldering, and embassy dossiers are handled under consular PoA without family travel to Montenegro.'}
+                  </span>
+                </div>
+              </div>
             </div>
 
             {/* Key Reassurance Metrics Bar */}

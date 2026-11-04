@@ -146,10 +146,12 @@ export interface TranslationContent {
     name: string;
     role: string;
     credentials: string;
+    languagesNotice: string;
     quote: string;
     secondaryParagraph: string;
     directContactLabel: string;
     guaranteeItems: string[];
+    primaryCtaOverride?: string;
   };
   modal: {
     title: string;
@@ -633,12 +635,14 @@ export const translations: Record<Language, TranslationContent> = {
     director: {
       eyebrow: 'PERSONAL ACCOUNTABILITY & SUPERVISION',
       name: 'Maksym Kovalenko',
-      role: 'Executive Coordinator • Memorijal d.o.o. Montenegro',
+      role: 'Executive International Coordinator • Memorijal d.o.o. Montenegro',
       credentials: 'International Repatriation, Consular Protocol & Cross-Border Logistics',
+      languagesNotice:
+        'Working Languages: English, Ukrainian, Russian (24/7 voice dispatch). Written Montenegrin / Balkan support via WhatsApp.',
       quote:
         '“When a loss occurs far from home, families should never have to navigate foreign ministries, hospital morgues, or customs borders alone. Every case entrusted to Memorijal is supervised personally from the first phone call until final arrival—with quiet dignity, absolute legal precision, and complete financial transparency.”',
       secondaryParagraph:
-        'Our duty team speaks fluent English, Russian, Ukrainian, and Montenegrin/Serbian. Whether you are a family member calling at night or an international assistance officer coordinating an urgent Cargo HUM dispatch, you speak directly with a decision-maker who knows Montenegrin health regulations inside out.',
+        'Our coordinator team conducts 24/7 direct voice consultations in English, Ukrainian, and Russian, providing immediate and reliable guidance. For Montenegrin / regional language cases, we provide full real-time written coordination via WhatsApp to ensure zero misunderstandings in documentation and legal clearances.',
       directContactLabel: 'Direct Executive Line (24/7):',
       guaranteeItems: [
         'Personal oversight of hospital, forensic & sanitary inspection protocols',
@@ -1123,13 +1127,15 @@ export const translations: Record<Language, TranslationContent> = {
     director: {
       eyebrow: 'ЛИЧНАЯ ОТВЕТСТВЕННОСТЬ И КОНТРОЛЬ',
       name: 'Максим Коваленко (Maksym Kovalenko)',
-      role: 'Исполнительный координатор • Memorijal d.o.o. Montenegro',
+      role: 'Оперативный международный координатор • Memorijal d.o.o. Montenegro',
       credentials: 'Международная репатриация, консульский протокол и трансграничная логистика',
+      languagesNotice:
+        'Языки координации: Русский, English, Українська (голосовая связь 24/7). Черногорский язык — письменное сопровождение в WhatsApp.',
       quote:
         '«Когда беда случается вдали от дома, близкие не должны оставаться один на один с иностранными ведомствами, больничными моргами и таможенными правилами. Каждое обращение в Memorijal находится под моим личным контролем с первой минуты звонка и до достойного завершения процедуры — с максимальным тактом, юридической точностью и полной финансовой прозрачностью».',
       secondaryParagraph:
-        'Наша дежурная служба свободно владеет русским, английским, украинским и черногорским/сербским языками. Звоните ли вы как член семьи в ночное время или как координатор международной страховой компании — вы общаетесь напрямую со специалистом, досконально знающим регламент Минздрава и консульств Черногории.',
-      directContactLabel: 'Прямая линия руководителя (24/7):',
+        'Наша дежурная служба ведет круглосуточную голосовую координацию на русском, английском и украинском языках. Для черногорского языка мы предоставляем полное оперативное письменное сопровождение в WhatsApp, что гарантирует абсолютную точность в документах и исключает любые языковые барьеры при оформлении.',
+      directContactLabel: 'Прямая линия координатора (24/7):',
       guaranteeItems: [
         'Личный контроль судебно-медицинских, санитарных и консульских процедур',
         'Фиксированная письменная смета до начала выполнения работ',
@@ -1613,18 +1619,21 @@ export const translations: Record<Language, TranslationContent> = {
     director: {
       eyebrow: 'LIČNA ODGOVORNOST I NADZOR',
       name: 'Maksym Kovalenko',
-      role: 'Izvršni koordinator • Memorijal d.o.o. Crna Gora',
+      role: 'Operativni međunarodni koordinator • Memorijal d.o.o. Crna Gora',
       credentials: 'Međunarodna repatrijacija, konzularni protokol i prekogranična logistika',
+      languagesNotice:
+        'Operativna koordinacija: Engleski, Ukrajinski, Ruski (direktni pozivi 24/7). Crnogorski / regionalni jezik — pisana podrška putem WhatsApp-a.',
       quote:
         '„Kada se gubitak dogodi daleko od doma, porodica nikada ne smije biti prepuštena sama sebi pred stranim institucijama, bolničkim procedurama i carinskim granicama. Svaki slučaj povjeren agenciji Memorijal nadzirem lično od prvog poziva do konačnog dolaska — uz puno dostojanstvo, pravnu preciznost i apsolutnu finansijsku transparentnost.“',
       secondaryParagraph:
-        'Naš dežurni tim tečno govori crnogorski/srpski, engleski, ruski i ukrajinski jezik. Bilo da nas pozivate kao član porodice u kasnim satima ili kao koordinator međunarodnog osiguranja radi hitne Cargo HUM otpreme, razgovarate direktno sa odgovornim licem koje u potpunosti poznaje propise Crne Gore.',
+        'Naš tim pruža 24/7 direktnu telefonsku koordinaciju na engleskom, ukrajinskom i ruskom jeziku. Za predmete na crnogorskom / regionalnom jeziku obezbjeđujemo kompletnu pisanu podršku u realnom vremenu putem WhatsApp-a radi precizne razmjene dokumenata i eliminacije bilo kakvih nesporazuma.',
       directContactLabel: 'Direktna linija koordinatora (24/7):',
       guaranteeItems: [
         'Lični nadzor nad bolničkim, sudsko-medicinskim i sanitarnim procedurama',
         'Pisana fiksna ponuda prije preuzimanja bilo kakve obaveze',
         'Direktno izvještavanje putem WhatsApp-a, telefona ili e-maila u svakom koraku',
       ],
+      primaryCtaOverride: 'Pišite nam na WhatsApp 24/7',
     },
     modal: {
       title: '24/7 Kontakt sa koordinatorom i prijava slučaja',

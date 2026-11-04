@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Clock,
   MapPin,
@@ -10,6 +10,7 @@ import {
   Globe,
   Building2,
   Send,
+  Zap,
 } from 'lucide-react';
 import {
   Language,
@@ -46,14 +47,31 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
   const serviceKeys: ServiceType[] = ['cremation', 'air_cargo', 'road_transport'];
   const regionKeys: RegionType[] = ['balkans', 'eu_uk', 'cis_east'];
   const locationKeys: LocationType[] = ['boka', 'podgorica', 'coast_south', 'north'];
+  const [isUrgentMode, setIsUrgentMode] = useState(false);
 
   const currentMatrix = t.estimator.matrix[selectedService][selectedRegion];
   const serviceInfo = t.estimator.services[selectedService];
   const regionInfo = t.estimator.regions[selectedRegion];
   const locationInfo = t.estimator.locations[selectedLocation];
 
-  // Build prefilled WhatsApp message with selected parameters
+  // Build prefilled WhatsApp message with selected parameters and urgency mode
   const buildWhatsAppHref = () => {
+    if (isUrgentMode) {
+      if (lang === 'RU') {
+        return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+          'Здравствуйте! Срочный вызов: тело находится в морге/отеле в Черногории. Требуется репатриация.'
+        )}`;
+      } else if (lang === 'MNE') {
+        return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+          'Hitan slučaj: potrebna međunarodna repatrijacija iz Crne Gore.'
+        )}`;
+      } else {
+        return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+          'Urgent assistance: human remains in Montenegro. Need immediate repatriation coordination.'
+        )}`;
+      }
+    }
+
     let text = '';
     if (lang === 'RU') {
       text = `Здравствуйте, Memorijal d.o.o.! Меня интересует репатриация / процедура (${serviceInfo.label}) для направления ${regionInfo.label}, начальная оценка ${currentMatrix.priceRange.toLowerCase()}.\n• Местонахождение в ЧГ: ${locationInfo.label}\n• Расчетный срок: ${currentMatrix.timeframe}\nПрошу рассчитать точную смету.`;
@@ -86,7 +104,70 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
         </div>
 
         {/* Main Interactive Grid */}
-        <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className="mt-8 mb-6 flex flex-wrap items-center justify-between gap-4 p-4 rounded-2xl bg-white border border-stoneBorder shadow-xs">
+          <div className="flex items-center gap-2.5">
+            <span className="text-xs sm:text-sm font-semibold text-slateDeep">
+              {lang === 'RU'
+                ? 'Режим обращения:'
+                : lang === 'MNE'
+                ? 'Režim prijave slučaja:'
+                : 'Urgency Protocol:'}
+            </span>
+            <div className="inline-flex rounded-xl p-1 bg-porcelain border border-stoneBorder">
+              <button
+                type="button"
+                onClick={() => setIsUrgentMode(false)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+                  !isUrgentMode
+                    ? 'bg-sapphire text-white shadow-xs'
+                    : 'text-slateMuted hover:text-slateDeep'
+                }`}
+              >
+                {lang === 'RU'
+                  ? 'Плановый расчет'
+                  : lang === 'MNE'
+                  ? 'Standardni proračun'
+                  : 'Standard Planning'}
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsUrgentMode(true)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all ${
+                  isUrgentMode
+                    ? 'bg-amber-600 text-white shadow-xs'
+                    : 'text-amber-800 hover:text-amber-900'
+                }`}
+              >
+                <Zap className="w-3.5 h-3.5 fill-current" />
+                <span>
+                  {lang === 'RU'
+                    ? 'Экстренный случай (тело в морге / отеле)'
+                    : lang === 'MNE'
+                    ? 'Hitan slučaj (tijelo u kapeli / hotelu)'
+                    : 'Urgent Case (Body in morgue / hotel)'}
+                </span>
+              </button>
+            </div>
+          </div>
+
+          {isUrgentMode && (
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-300 text-emerald-800 text-xs font-medium">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
+              </span>
+              <span>
+                {lang === 'RU'
+                  ? 'Координатор готов выехать на оформление в течение 45 минут'
+                  : lang === 'MNE'
+                  ? 'Koordinator spreman za polazak na teren u roku od 45 minuta'
+                  : 'Coordinator dispatches on-site within 45 minutes'}
+              </span>
+            </div>
+          )}
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column (6 cols): Interactive Step Selectors */}
           <div className="lg:col-span-6 space-y-6">
             {/* STEP 1: Select Service */}

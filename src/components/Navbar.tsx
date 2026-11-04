@@ -103,7 +103,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     instructions:
       lang === 'RU' ? 'Инструкции' : lang === 'MNE' ? 'Instrukcije' : 'Instructions',
     management:
-      lang === 'RU' ? 'Руководитель' : lang === 'MNE' ? 'Rukovoditelj' : 'Management',
+      lang === 'RU' ? 'О компании' : lang === 'MNE' ? 'O nama' : 'About Us',
   };
 
   const emergencyCtaLabel =
@@ -134,8 +134,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           {/* Center-Right & Far Right: Coordinator 24/7 Phone + Copy + WhatsApp 24/7 Pill */}
-          <div className="flex items-center gap-3 shrink-0 ml-4">
-            <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-3 shrink-0 ml-4 relative">
+            <div className="flex items-center gap-1.5 relative">
               <span className="hidden lg:inline text-[#B8C7D9] font-normal">
                 {topBarCoordinatorLabel}
               </span>
@@ -171,6 +171,21 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <Copy className="w-3 h-3" />
                 )}
               </button>
+
+              {/* Floating Copy Feedback Toast */}
+              {copied && (
+                <div
+                  role="status"
+                  aria-live="polite"
+                  className="absolute left-1/2 -translate-x-1/2 top-full mt-1.5 z-50 bg-slate-900/95 text-emerald-300 border border-emerald-500/30 text-[10px] font-medium px-2.5 py-1 rounded-md shadow-lg whitespace-nowrap backdrop-blur-sm pointer-events-none transition-all animate-in fade-in slide-in-from-top-1"
+                >
+                  {lang === 'RU'
+                    ? 'Номер скопирован в буфер'
+                    : lang === 'MNE'
+                    ? 'Broj kopiran'
+                    : 'Phone number copied'}
+                </div>
+              )}
             </div>
 
             <a

@@ -170,6 +170,12 @@ export const TrustAndDirector: React.FC<TrustAndDirectorProps> = ({
                   <p className="mt-3 text-xs text-slate-300 leading-relaxed pt-3 border-t border-white/15">
                     {t.director.credentials}
                   </p>
+                  <div className="mt-3 pt-3 border-t border-white/15">
+                    <span className="inline-flex items-start gap-1.5 text-[11px] text-emerald-200 leading-snug">
+                      <Globe className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                      <span>{t.director.languagesNotice}</span>
+                    </span>
+                  </div>
                 </div>
 
                 <div className="mt-8 pt-6 border-t border-white/15">
@@ -231,7 +237,7 @@ export const TrustAndDirector: React.FC<TrustAndDirectorProps> = ({
                       className="inline-flex items-center justify-center gap-2.5 bg-forest hover:bg-forest-hover text-white text-sm font-semibold px-5 py-3 rounded-xl shadow-sm transition-colors"
                     >
                       <Phone className="w-4 h-4" />
-                      <span>{t.hero.primaryCta}</span>
+                      <span>{t.director.primaryCtaOverride || t.hero.primaryCta}</span>
                     </button>
                   </div>
                 </div>

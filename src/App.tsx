@@ -27,6 +27,7 @@ import { ProcedureTimeline } from './components/ProcedureTimeline';
 import { TrustAndDirector } from './components/TrustAndDirector';
 import { Footer } from './components/Footer';
 import { CoordinatorModal } from './components/CoordinatorModal';
+import { MobileEmergencyBar } from './components/MobileEmergencyBar';
 import { sanitizeInternalPath } from './utils/security';
 
 const CorridorPageTemplate = lazy(() =>
@@ -358,6 +359,9 @@ export function App() {
         onOpenModal={() => setModalOpen(true)}
         onNavigate={handleNavigate}
       />
+
+      {/* Persistent Mobile 24/7 Emergency Bar (< 768px past hero) */}
+      <MobileEmergencyBar lang={lang} />
 
       {/* Interactive Coordinator Case Dispatch Modal */}
       <CoordinatorModal

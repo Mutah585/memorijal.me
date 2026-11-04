@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Phone,
   MapPin,
@@ -6,6 +6,8 @@ import {
   MessageCircle,
   Mail,
   Globe,
+  Copy,
+  Check,
 } from 'lucide-react';
 import {
   Language,
@@ -35,8 +37,37 @@ export const Footer: React.FC<FooterProps> = ({
   onOpenModal,
   onNavigate,
 }) => {
+  const [copied, setCopied] = useState(false);
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}`;
   const locale = langToLocaleSlug(lang);
+
+  const handleCopyCredentials = async () => {
+    const textToCopy = `Entity: Memorijal d.o.o.
+Country: Montenegro (Tivat / Podgorica)
+PIB: 03489217 | PDV: 30/31-20948-4
+Dispatch Line 24/7: ${PHONE_DISPLAY}
+Official Email: ${OFFICIAL_EMAIL}
+Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
+
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(textToCopy);
+      } else {
+        const textarea = document.createElement('textarea');
+        textarea.value = textToCopy;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+      }
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Fallback silent failure
+    }
+  };
 
   const serviceLinks = ALL_SEO_ROUTES.filter((r) => r.category === 'service');
   const resourceLinks = ALL_SEO_ROUTES.filter((r) => r.category === 'resource');
@@ -226,8 +257,34 @@ export const Footer: React.FC<FooterProps> = ({
                 <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                 <span>{t.footer.officePodgorica}</span>
               </div>
-              <div className="p-3 rounded-lg bg-white/5 border border-white/10 text-[11px] text-slate-300 font-mono">
-                {t.footer.fiscalNotice}
+              <div className="p-3 rounded-lg bg-white/5 border border-white/10 text-[11px] text-slate-300 font-mono space-y-2">
+                <div>{t.footer.fiscalNotice}</div>
+                <div className="pt-1 border-t border-white/10">
+                  <button
+                    type="button"
+                    onClick={handleCopyCredentials}
+                    className="inline-flex items-center gap-1.5 text-[11px] text-emerald-300 hover:text-emerald-200 font-sans font-medium transition-colors cursor-pointer group"
+                  >
+                    {copied ? (
+                      <Check className="w-3.5 h-3.5 text-emerald-400" />
+                    ) : (
+                      <Copy className="w-3.5 h-3.5 text-emerald-400 group-hover:scale-110 transition-transform" />
+                    )}
+                    <span>
+                      {copied
+                        ? lang === 'RU'
+                          ? 'Реквизиты скопированы!'
+                          : lang === 'MNE'
+                          ? 'Podaci kopirani!'
+                          : 'Dossier copied to clipboard!'
+                        : lang === 'RU'
+                        ? 'Скопировать досье для страховой / консульства'
+                        : lang === 'MNE'
+                        ? 'Kopiraj podatke za osiguranje / konzulat'
+                        : 'Copy company dossier for insurer / embassy'}
+                    </span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

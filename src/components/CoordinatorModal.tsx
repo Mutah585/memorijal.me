@@ -7,6 +7,7 @@ import {
   CheckCircle2,
   AlertCircle,
   Send,
+  RotateCcw,
 } from 'lucide-react';
 import {
   Language,
@@ -32,6 +33,18 @@ interface CoordinatorModalProps {
 
 type RelationType = 'family' | 'insurance' | 'embassy' | 'legal';
 
+const SESSION_STORAGE_KEY = 'memorijal_modal_draft';
+
+interface FormDraft {
+  name: string;
+  contact: string;
+  relation: RelationType;
+  service: ServiceType;
+  region: RegionType;
+  location: LocationType;
+  notes: string;
+}
+
 export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
   isOpen,
   onClose,
@@ -51,11 +64,70 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
   const [error, setError] = useState('');
   const [submittedRef, setSubmittedRef] = useState<string | null>(null);
 
+  // Restore draft from sessionStorage on initial mount
   useEffect(() => {
+    try {
+      const saved = sessionStorage.getItem(SESSION_STORAGE_KEY);
+      if (saved) {
+        const parsed: Partial<FormDraft> = JSON.parse(saved);
+        if (parsed.name) setName(parsed.name);
+        if (parsed.contact) setContact(parsed.contact);
+        if (parsed.relation) setRelation(parsed.relation);
+        if (parsed.service) setService(parsed.service);
+        if (parsed.region) setRegion(parsed.region);
+        if (parsed.location) setLocation(parsed.location);
+        if (parsed.notes) setNotes(parsed.notes);
+      }
+    } catch {
+      // Ignore sessionStorage parsing errors
+    }
+  }, []);
+
+  // Update selection when initial props change, unless draft exists
+  useEffect(() => {
+    const saved = sessionStorage.getItem(SESSION_STORAGE_KEY);
+    if (!saved) {
+      setService(initialService);
+      setRegion(initialRegion);
+      setLocation(initialLocation);
+    }
+  }, [initialService, initialRegion, initialLocation]);
+
+  // Persist draft changes to sessionStorage
+  useEffect(() => {
+    try {
+      const draft: FormDraft = {
+        name,
+        contact,
+        relation,
+        service,
+        region,
+        location,
+        notes,
+      };
+      sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(draft));
+    } catch {
+      // Ignore quota errors
+    }
+  }, [name, contact, relation, service, region, location, notes]);
+
+  const hasDraft = Boolean(name.trim() || contact.trim() || notes.trim());
+
+  const handleClearDraft = () => {
+    setName('');
+    setContact('');
+    setNotes('');
+    setRelation('family');
     setService(initialService);
     setRegion(initialRegion);
     setLocation(initialLocation);
-  }, [initialService, initialRegion, initialLocation]);
+    setError('');
+    try {
+      sessionStorage.removeItem(SESSION_STORAGE_KEY);
+    } catch {
+      // Ignore
+    }
+  };
 
   useEffect(() => {
     if (isOpen) {
@@ -85,6 +157,12 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
     setError('');
     const randomCode = `MNE-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`;
     setSubmittedRef(randomCode);
+
+    try {
+      sessionStorage.removeItem(SESSION_STORAGE_KEY);
+    } catch {
+      // Ignore
+    }
   };
 
   const buildDirectWhatsAppUrl = () => {
@@ -114,13 +192,19 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
     onClose();
   };
 
+  const handleBackdropClick = () => {
+    // If the user has started filling out the form, do not accidentally dismiss via backdrop
+    if (hasDraft) return;
+    handleResetAndClose();
+  };
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slateDeep/60 backdrop-blur-sm overflow-y-auto"
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-title"
-      onClick={handleResetAndClose}
+      onClick={handleBackdropClick}
     >
       <div
         className="bg-white rounded-2xl border border-stoneBorder shadow-elevated max-w-2xl w-full overflow-hidden my-8"
@@ -373,6 +457,30 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
                   <MessageCircle className="w-4 h-4" />
                   <span>{t.modal.whatsappRedirectBtn}</span>
                 </a>
+
+                {hasDraft && (
+                  <button
+                    type="button"
+                    onClick={handleClearDraft}
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 text-xs text-slate-500 hover:text-rose-600 px-3 py-2 transition-colors border border-transparent hover:border-rose-200 rounded-lg"
+                    title={
+                      lang === 'RU'
+                        ? 'Очистить черновик формы'
+                        : lang === 'MNE'
+                        ? 'Obriši nacrt forme'
+                        : 'Clear form draft'
+                    }
+                  >
+                    <RotateCcw className="w-3.5 h-3.5" />
+                    <span>
+                      {lang === 'RU'
+                        ? 'Очистить форму'
+                        : lang === 'MNE'
+                        ? 'Obriši formu'
+                        : 'Clear draft'}
+                    </span>
+                  </button>
+                )}
               </div>
             </form>
           )}
