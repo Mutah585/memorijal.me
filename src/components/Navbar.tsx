@@ -68,7 +68,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       ? 'Дежурная линия 24/7'
       : lang === 'MNE'
       ? 'Dežurna linija 24/7'
-      : 'Dežurna linija 24/7';
+      : '24/7 Dispatch Line';
 
   const topBarLicense =
     lang === 'RU'
@@ -198,7 +198,13 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="relative flex items-center justify-center shrink-0 w-9 h-9 md:w-10 md:h-10">
               <img
                 src="/assets/branding/emblem-crest.svg"
-                alt="Memorijal Grb"
+                alt={
+                  lang === 'RU'
+                    ? 'Герб Memorijal d.o.o.'
+                    : lang === 'MNE'
+                    ? 'Memorijal Grb'
+                    : 'Memorijal d.o.o. Crest'
+                }
                 width={40}
                 height={40}
                 loading="eager"
@@ -216,7 +222,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   ? 'ЧЕРНОГОРИЯ • РЕПАТРИАЦИЯ'
                   : lang === 'MNE'
                   ? 'CRNA GORA • REPATRIJACIJA'
-                  : 'CRNA GORA • REPATRIJACIJA'}
+                  : 'MONTENEGRO • REPATRIATION'}
               </span>
             </div>
           </a>
@@ -224,7 +230,13 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Center: Airy Desktop Navigation Links (Plus Jakarta Sans 14px, 500 weight, #1A1D20) */}
           <nav
             className="hidden xl:flex items-center gap-6 2xl:gap-7 font-sans text-[14px] font-medium text-[#1A1D20]"
-            aria-label="Main Navigation"
+            aria-label={
+              lang === 'RU'
+                ? 'Основная навигация'
+                : lang === 'MNE'
+                ? 'Glavna navigacija'
+                : 'Main Navigation'
+            }
           >
             <a
               href={`${homePath}#services`}
@@ -275,7 +287,13 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div
               className="inline-flex items-center bg-[#F9F9FB] p-0.5 rounded-md border border-[#E5E7EB]"
               role="group"
-              aria-label="Language switcher"
+              aria-label={
+                lang === 'RU'
+                  ? 'Переключатель языка'
+                  : lang === 'MNE'
+                  ? 'Izbor jezika'
+                  : 'Language switcher'
+              }
             >
               {languages.map((code, idx) => {
                 const active = lang === code;
@@ -316,7 +334,13 @@ export const Navbar: React.FC<NavbarProps> = ({
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="xl:hidden p-2 rounded-md border border-[#E5E7EB] text-[#1A1D20] hover:bg-[#F9F9FB] transition-colors"
-              aria-label="Toggle Menu"
+              aria-label={
+                lang === 'RU'
+                  ? 'Открыть меню'
+                  : lang === 'MNE'
+                  ? 'Otvori meni'
+                  : 'Toggle Menu'
+              }
               aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

@@ -26,6 +26,7 @@ import { ProcedureTimeline } from './components/ProcedureTimeline';
 import { TrustAndDirector } from './components/TrustAndDirector';
 import { Footer } from './components/Footer';
 import { CoordinatorModal } from './components/CoordinatorModal';
+import { sanitizeInternalPath } from './utils/security';
 
 const CorridorPageTemplate = lazy(() =>
   import('./pages/templates/CorridorPageTemplate').then((m) => ({
@@ -75,19 +76,22 @@ export function App() {
   // Navigate to any localized path (e.g. '/en/repatriation/to-united-kingdom/')
   const handleNavigate = useCallback(
     (localizedPath: string, hash?: string) => {
-      const resolved = resolveRouteAndLocale(localizedPath);
+      const safePath = sanitizeInternalPath(localizedPath);
+      const resolved = resolveRouteAndLocale(safePath);
       setLangState(localeSlugToLang(resolved.locale));
       setCurrentRoute(resolved.route);
-      setIsNotFound(localizedPath !== '/' && resolved.isNotFound);
+      setIsNotFound(safePath !== '/' && resolved.isNotFound);
 
-      const nextUrl = hash ? `${localizedPath}${hash}` : localizedPath;
+      const safeHash =
+        hash && /^#[a-zA-Z0-9_-]+$/.test(hash) ? hash : undefined;
+      const nextUrl = safeHash ? `${safePath}${safeHash}` : safePath;
       if (window.location.pathname + window.location.hash !== nextUrl) {
         window.history.pushState({}, '', nextUrl);
       }
 
-      if (hash) {
+      if (safeHash) {
         setTimeout(() => {
-          const id = hash.replace('#', '');
+          const id = safeHash.replace('#', '');
           const el = document.getElementById(id);
           if (el) {
             el.scrollIntoView({ behavior: 'smooth' });

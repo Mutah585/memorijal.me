@@ -18,6 +18,7 @@ import {
   PHONE_HREF,
   WHATSAPP_NUMBER,
 } from '../i18n/translations';
+import { sanitizeUserText } from '../utils/security';
 
 interface CoordinatorModalProps {
   isOpen: boolean;
@@ -60,14 +61,17 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
 
   const validateAndSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const trimmedName = name.trim();
-    const trimmedContact = contact.trim();
+    const trimmedName = sanitizeUserText(name, 80).trim();
+    const trimmedContact = sanitizeUserText(contact, 80).trim();
 
     if (trimmedName.length < 2 || trimmedContact.length < 5) {
       setError(t.modal.validationError);
       return;
     }
 
+    setName(trimmedName);
+    setContact(trimmedContact);
+    setNotes((prev) => sanitizeUserText(prev, 500));
     setError('');
     const randomCode = `MNE-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`;
     setSubmittedRef(randomCode);
@@ -80,12 +84,16 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
     const relationLabel = t.modal.relations[relation];
     const currentPrice = t.estimator.matrix[service][region].priceRange.toLowerCase();
 
+    const safeName = sanitizeUserText(name, 80).trim();
+    const safeContact = sanitizeUserText(contact, 80).trim();
+    const safeNotes = sanitizeUserText(notes, 500).trim();
+
     const summary =
       lang === 'RU'
-        ? `Здравствуйте, Memorijal d.o.o.! Меня интересует репатриация (${regionLabel}), начальная оценка ${currentPrice}.\n• Имя: ${name || 'Не указано'}\n• Статус: ${relationLabel}\n• Контакт: ${contact || 'В чате'}\n• Услуга: ${serviceLabel}\n• Город в ЧГ: ${locationLabel}\n• Примечание: ${notes || '-'}`
+        ? `Здравствуйте, Memorijal d.o.o.! Меня интересует репатриация (${regionLabel}), начальная оценка ${currentPrice}.\n• Имя: ${safeName || 'Не указано'}\n• Статус: ${relationLabel}\n• Контакт: ${safeContact || 'В чате'}\n• Услуга: ${serviceLabel}\n• Город в ЧГ: ${locationLabel}\n• Примечание: ${safeNotes || '-'}`
         : lang === 'MNE'
-        ? `Poštovani Memorijal d.o.o., interesuje me repatrijacija za ${regionLabel}, početna procjena ${currentPrice}.\n• Ime: ${name || 'Nije navedeno'}\n• Svojstvo: ${relationLabel}\n• Kontakt: ${contact || 'WhatsApp'}\n• Usluga: ${serviceLabel}\n• Lokacija u CG: ${locationLabel}\n• Napomena: ${notes || '-'}`
-        : `Hello Memorijal d.o.o. Duty Coordinator, I am inquiring about repatriation to ${regionLabel}, starting estimate ${currentPrice}.\n• Name: ${name || 'Not specified'}\n• Capacity: ${relationLabel}\n• Contact: ${contact || 'Via WhatsApp'}\n• Procedure: ${serviceLabel}\n• Location in MNE: ${locationLabel}\n• Notes: ${notes || '-'}`;
+        ? `Poštovani Memorijal d.o.o., interesuje me repatrijacija za ${regionLabel}, početna procjena ${currentPrice}.\n• Ime: ${safeName || 'Nije navedeno'}\n• Svojstvo: ${relationLabel}\n• Kontakt: ${safeContact || 'WhatsApp'}\n• Usluga: ${serviceLabel}\n• Lokacija u CG: ${locationLabel}\n• Napomena: ${safeNotes || '-'}`
+        : `Hello Memorijal d.o.o. Duty Coordinator, I am inquiring about repatriation to ${regionLabel}, starting estimate ${currentPrice}.\n• Name: ${safeName || 'Not specified'}\n• Capacity: ${relationLabel}\n• Contact: ${safeContact || 'Via WhatsApp'}\n• Procedure: ${serviceLabel}\n• Location in MNE: ${locationLabel}\n• Notes: ${safeNotes || '-'}`;
 
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(summary)}`;
   };
@@ -109,7 +117,11 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
           <div>
             <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-300 mb-1">
               <Shield className="w-4 h-4" />
-              <span>MEMORIJAL d.o.o. • Tivat / Podgorica</span>
+              <span>
+                {lang === 'RU'
+                  ? 'MEMORIJAL d.o.o. • Тиват / Подгорица'
+                  : 'MEMORIJAL d.o.o. • Tivat / Podgorica'}
+              </span>
             </div>
             <h2 id="modal-title" className="font-serif text-2xl sm:text-3xl font-semibold text-white">
               {t.modal.title}
@@ -198,8 +210,10 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
                   <input
                     id="modal-name"
                     type="text"
+                    maxLength={80}
+                    autoComplete="name"
                     value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={(e) => setName(sanitizeUserText(e.target.value, 80))}
                     placeholder={t.modal.namePlaceholder}
                     className="w-full px-3.5 py-2.5 rounded-xl border border-stoneBorder bg-porcelain text-sm text-slateDeep focus:bg-white focus:border-sapphire outline-none"
                     required
@@ -216,8 +230,10 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
                   <input
                     id="modal-contact"
                     type="text"
+                    maxLength={80}
+                    autoComplete="tel"
                     value={contact}
-                    onChange={(e) => setContact(e.target.value)}
+                    onChange={(e) => setContact(sanitizeUserText(e.target.value, 80))}
                     placeholder={t.modal.contactPlaceholder}
                     className="w-full px-3.5 py-2.5 rounded-xl border border-stoneBorder bg-porcelain text-sm text-slateDeep focus:bg-white focus:border-sapphire outline-none"
                     required
@@ -317,8 +333,9 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
                 <textarea
                   id="modal-notes"
                   rows={3}
+                  maxLength={500}
                   value={notes}
-                  onChange={(e) => setNotes(e.target.value)}
+                  onChange={(e) => setNotes(sanitizeUserText(e.target.value, 500))}
                   placeholder={t.modal.notesPlaceholder}
                   className="w-full px-3.5 py-2.5 rounded-xl border border-stoneBorder bg-porcelain text-sm text-slateDeep focus:bg-white focus:border-sapphire outline-none resize-none"
                 />

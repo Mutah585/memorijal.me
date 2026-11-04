@@ -64,7 +64,13 @@ export const Footer: React.FC<FooterProps> = ({
               <div className="relative flex items-center justify-center shrink-0 w-9 h-9 md:w-10 md:h-10">
                 <img
                   src="/assets/branding/emblem-crest.svg"
-                  alt="Memorijal Grb"
+                  alt={
+                    lang === 'RU'
+                      ? 'Герб Memorijal d.o.o.'
+                      : lang === 'MNE'
+                      ? 'Memorijal Grb'
+                      : 'Memorijal d.o.o. Crest'
+                  }
                   width={40}
                   height={40}
                   loading="lazy"
@@ -81,7 +87,7 @@ export const Footer: React.FC<FooterProps> = ({
                     ? 'ЧЕРНОГОРИЯ • РЕПАТРИАЦИЯ'
                     : lang === 'MNE'
                     ? 'CRNA GORA • REPATRIJACIJA'
-                    : 'CRNA GORA • REPATRIJACIJA'}
+                    : 'MONTENEGRO • REPATRIATION'}
                 </span>
               </div>
             </a>

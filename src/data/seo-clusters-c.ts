@@ -194,7 +194,7 @@ export const CLUSTER_SEEDS_CE: ClusterTopicSeed[] = [
       eyebrow: 'EASTERN EUROPEAN, BALTIC & CIS ASSISTANCE PARTNER',
       metaTitle: 'Balt Assistance Repatriation Montenegro 24/7 | Cargo 200',
       metaDesc: '24/7 Montenegro repatriation execution for Balt Assistance policies. Direct GOP acceptance, Russian/Ukrainian/English desk & Cargo 200. +382 68 914 816.',
-      keywords: ['Balt Assistance Montenegro repatriation', 'Балт Ассистанс Черногория репатриация', 'Balt Assistance Cargo 200 Montenegro'],
+      keywords: ['Balt Assistance Montenegro repatriation', 'Balt Assistance CIS repatriation Montenegro', 'Balt Assistance Cargo 200 Montenegro'],
       h1: 'Balt Assistance — Authorized Repatriation & Cargo 200 Coordination in Montenegro',
       subtitle: 'Specialized bilingual (Russian / English / Montenegrin) repatriation execution for tourists and expats insured through Balt Assistance. Complete medical/police dossier handling, Belgrade/Istanbul transit routing, and direct B2B invoicing.',
       authority: 'Balt Assistance Medical & Repatriation Desk & Montenegro Authorities',

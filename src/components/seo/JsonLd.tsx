@@ -6,6 +6,7 @@ import {
   buildFullCanonicalUrl,
 } from '../../data/seo-routes';
 import { STANDARD_PRICING_PACKAGES } from '../../data/pricing';
+import { safeJsonLdSerialize } from '../../utils/security';
 
 interface JsonLdProps {
   locale: LocaleSlug;
@@ -215,25 +216,25 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(funeralServiceSchema),
+          __html: safeJsonLdSerialize(funeralServiceSchema),
         }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema),
+          __html: safeJsonLdSerialize(breadcrumbSchema),
         }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema),
+          __html: safeJsonLdSerialize(faqSchema),
         }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(howToSchema),
+          __html: safeJsonLdSerialize(howToSchema),
         }}
       />
     </>
