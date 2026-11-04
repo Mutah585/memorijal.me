@@ -125,7 +125,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, t, onOpenModal }) => {
             </div>
 
             {/* Dignified Serif Headline */}
-            <h1 className="font-serif text-3xl sm:text-5xl lg:text-[52px] font-semibold text-slateDeep leading-[1.14] tracking-tight">
+            <h1 className="font-serif text-3xl sm:text-5xl lg:text-[52px] font-semibold text-slateDeep leading-[1.14] tracking-tight break-words hyphens-auto max-w-full">
               {t.hero.headline}
             </h1>
 

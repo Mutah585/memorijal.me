@@ -50,7 +50,7 @@ export const ProcedureTimeline: React.FC<ProcedureTimelineProps> = ({ t }) => {
             >
               <div>
                 {/* Step Number & Timeframe Pill */}
-                <div className="flex items-center justify-between gap-2 mb-6">
+                <div className="flex items-start justify-between gap-2 mb-6">
                   <div className="flex items-center gap-2.5">
                     <span className="font-serif text-3xl font-bold text-sapphire leading-none">
                       {step.number}

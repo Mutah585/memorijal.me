@@ -66,55 +66,60 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ lang }) => {
           </p>
         </div>
 
-        {/* 5 Standard Service Package Cards */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/*
+          5 Standard Service Package Cards.
+          Each card is a subgrid spanning 5 shared rows (badge / title / price / scope / CTA), so
+          every row is sized to the tallest cell in the row of cards: titles, prices, scope text
+          and CTA buttons align identically no matter how the copy wraps per locale or breakpoint.
+        */}
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 items-stretch">
           {STANDARD_PRICING_PACKAGES.map((pkg, idx) => {
             const item = pkg.locales[locale];
             const isPrimary = idx === 0;
             return (
               <div
                 key={pkg.id}
-                className={`rounded-2xl border p-6 sm:p-7 flex flex-col justify-between transition-all bg-white shadow-card ${
+                className={`row-span-5 grid grid-rows-subgrid gap-y-0 h-full min-w-0 rounded-2xl border p-6 sm:p-7 transition-all bg-white shadow-card ${
                   isPrimary
                     ? 'border-sapphire/40 ring-1 ring-sapphire/15'
                     : 'border-stoneBorder'
                 }`}
               >
-                <div>
-                  {/* Package Badge */}
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-porcelain border border-stoneBorder text-[11px] font-semibold text-sapphire">
+                {/* Row 1: Package Badge */}
+                <div className="min-h-[28px]">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-porcelain border border-stoneBorder text-[11px] font-semibold text-sapphire max-w-full">
                     <CheckCircle2 className="w-3.5 h-3.5 text-forest shrink-0" />
-                    <span>{item.badge}</span>
+                    <span className="min-w-0 break-words">{item.badge}</span>
                   </div>
+                </div>
 
-                  {/* Package Title */}
-                  <h3 className="mt-4 font-serif text-xl sm:text-2xl font-semibold text-slateDeep leading-snug">
-                    {item.title}
-                  </h3>
+                {/* Row 2: Package Title */}
+                <h3 className="mt-4 font-serif text-xl sm:text-2xl font-semibold text-slateDeep leading-snug break-words">
+                  {item.title}
+                </h3>
 
-                  {/* Headline Starting Price Tag */}
-                  <div className="mt-5 pt-4 border-t border-stoneBorder">
-                    <span className="text-[11px] font-semibold uppercase tracking-wider text-warmStone block">
-                      {sectionCopy.startingLabel}
-                    </span>
-                    <p className="mt-1 font-serif text-3xl sm:text-4xl font-bold text-sapphire tracking-tight">
-                      {item.formattedPrice}
-                    </p>
-                    {/* Subtle Clarification Badge Under Price */}
-                    <p className="mt-2 inline-flex items-start gap-1.5 text-[11px] text-slateMuted bg-porcelain px-2.5 py-1.5 rounded-lg border border-stoneBorder/80 leading-snug">
-                      <FileCheck className="w-3.5 h-3.5 text-sapphire shrink-0 mt-0.5" />
-                      <span>{item.clarification}</span>
-                    </p>
-                  </div>
-
-                  {/* Included Subtext */}
-                  <p className="mt-4 text-xs sm:text-sm text-slateMuted leading-relaxed">
-                    {item.subtext}
+                {/* Row 3: Headline Starting Price Tag */}
+                <div className="mt-5 pt-4 border-t border-stoneBorder">
+                  <span className="text-[11px] font-semibold uppercase tracking-wider text-warmStone block">
+                    {sectionCopy.startingLabel}
+                  </span>
+                  <p className="mt-1 font-serif text-3xl sm:text-4xl font-bold text-sapphire tracking-tight">
+                    {item.formattedPrice}
+                  </p>
+                  {/* Subtle Clarification Badge Under Price */}
+                  <p className="mt-2 inline-flex items-start gap-1.5 text-[11px] text-slateMuted bg-porcelain px-2.5 py-1.5 rounded-lg border border-stoneBorder/80 leading-snug">
+                    <FileCheck className="w-3.5 h-3.5 text-sapphire shrink-0 mt-0.5" />
+                    <span>{item.clarification}</span>
                   </p>
                 </div>
 
-                {/* Direct WhatsApp Estimate CTA */}
-                <div className="mt-6 pt-4 border-t border-stoneBorder/70">
+                {/* Row 4: Included Subtext (absorbs spare height) */}
+                <p className="mt-4 text-xs sm:text-sm text-slateMuted leading-relaxed">
+                  {item.subtext}
+                </p>
+
+                {/* Row 5: Direct WhatsApp Estimate CTA, pinned to the card bottom */}
+                <div className="mt-6 pt-4 border-t border-stoneBorder/70 self-end">
                   <a
                     href={buildPackageWhatsAppHref(pkg, locale)}
                     target="_blank"

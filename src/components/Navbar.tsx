@@ -188,12 +188,12 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* 2. Main Quiet Luxury / Swiss Minimal Navigation Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-[74px] gap-4">
+        <div className="flex items-center justify-between h-16 md:h-[74px] gap-2 sm:gap-4 w-full min-w-0">
           {/* Left: Optically Balanced 1:1 Brand Crest & Semantic DOM Typography */}
           <a
             href={homePath}
             onClick={(e) => handleAnchorOrRoute(e, '#top')}
-            className="flex items-center gap-2.5 sm:gap-3 md:gap-3.5 select-none group focus:outline-none shrink-0"
+            className="flex items-center gap-2.5 sm:gap-3 md:gap-3.5 select-none group focus:outline-none shrink min-w-0"
           >
             <div className="relative flex items-center justify-center shrink-0 w-[34px] h-[34px] md:w-[38px] md:h-[38px]">
               <img
@@ -217,7 +217,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span className="font-serif text-[18px] sm:text-[19px] md:text-[21px] tracking-[0.14em] font-semibold text-slate-900 leading-none">
                 MEMORIJAL
               </span>
-              <span className="text-[9px] md:text-[10px] tracking-[0.22em] text-slate-500 uppercase font-sans font-medium mt-1 leading-none">
+              <span className="hidden min-[480px]:block text-[9px] md:text-[10px] tracking-[0.22em] text-slate-500 uppercase font-sans font-medium mt-1 leading-none whitespace-nowrap">
                 {lang === 'RU'
                   ? 'ЧЕРНОГОРИЯ • РЕПАТРИАЦИЯ'
                   : lang === 'MNE'
@@ -283,7 +283,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </nav>
 
           {/* Right: Clean Low-Border Language Switcher (EN | RU | MNE) & Solid Forest Green CTA */}
-          <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             <div
               className="inline-flex items-center bg-[#F9F9FB] p-0.5 rounded-md border border-[#E5E7EB]"
               role="group"
@@ -305,7 +305,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <button
                       type="button"
                       onClick={() => setLang(code)}
-                      className={`px-2 py-1 rounded text-[11px] font-medium tracking-wider transition-all ${
+                      className={`px-1.5 sm:px-2 py-1 rounded text-[11px] font-medium tracking-wider transition-all ${
                         active
                           ? 'bg-[#1A1D20] text-white shadow-xs'
                           : 'text-[#5A626A] hover:text-[#1A1D20]'
