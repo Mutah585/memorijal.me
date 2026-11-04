@@ -13,6 +13,7 @@ import {
   langToLocaleSlug,
   localeSlugToLang,
   buildLocalizedPath,
+  LocaleSlug,
 } from './data/seo-routes';
 import { MetaManager } from './components/seo/MetaManager';
 import { JsonLd } from './components/seo/JsonLd';
@@ -40,17 +41,90 @@ const LocationPageTemplate = lazy(() =>
   }))
 );
 
+const LANG_STORAGE_KEY = 'memorijal_lang';
+const SUPPORTED_LOCALES: LocaleSlug[] = ['en', 'ru', 'mne'];
+
+/**
+ * Detect client language based on:
+ * 1. Explicit user choice in localStorage ('ru' | 'en' | 'mne')
+ * 2. navigator.languages / navigator.language preferences
+ * 3. Fallback to 'en'
+ */
+function detectPreferredLocale(): LocaleSlug {
+  if (typeof window === 'undefined') return 'en';
+
+  try {
+    const saved = localStorage.getItem(LANG_STORAGE_KEY)?.toLowerCase() as LocaleSlug;
+    if (saved && SUPPORTED_LOCALES.includes(saved)) {
+      return saved;
+    }
+  } catch {
+    // Storage access may be blocked in strict private modes
+  }
+
+  const browserLangs =
+    typeof navigator !== 'undefined'
+      ? navigator.languages || [navigator.language || 'en']
+      : ['en'];
+
+  for (const rawLang of browserLangs) {
+    if (!rawLang) continue;
+    const code = rawLang.toLowerCase();
+
+    // Russian & CIS languages
+    if (
+      code.startsWith('ru') ||
+      code.startsWith('be') ||
+      code.startsWith('kk') ||
+      code.startsWith('uz') ||
+      code.startsWith('ky')
+    ) {
+      return 'ru';
+    }
+
+    // Balkan / South Slavic languages (Montenegrin, Serbian, Bosnian, Croatian)
+    if (
+      code.startsWith('sr') ||
+      code.startsWith('bs') ||
+      code.startsWith('hr') ||
+      code.startsWith('cnr') ||
+      code.startsWith('me')
+    ) {
+      return 'mne';
+    }
+
+    // Explicit English
+    if (code.startsWith('en')) {
+      return 'en';
+    }
+  }
+
+  // Universal international default
+  return 'en';
+}
+
 export function App() {
   const initialPathname =
     typeof window !== 'undefined' ? window.location.pathname : '/en/';
-  const initialResolved = resolveRouteAndLocale(initialPathname);
+  
+  // When hitting root path "/", determine preferred locale
+  const isRootLanding = initialPathname === '/' || initialPathname === '';
+  const effectiveInitialLocale: LocaleSlug = isRootLanding
+    ? detectPreferredLocale()
+    : resolveRouteAndLocale(initialPathname).locale;
+
+  const effectiveInitialPath = isRootLanding
+    ? `/${effectiveInitialLocale}/`
+    : initialPathname;
+
+  const initialResolved = resolveRouteAndLocale(effectiveInitialPath);
 
   const [lang, setLangState] = useState<Language>(
     localeSlugToLang(initialResolved.locale)
   );
   const [currentRoute, setCurrentRoute] = useState(initialResolved.route);
   const [isNotFound, setIsNotFound] = useState(
-    initialPathname !== '/' && initialResolved.isNotFound
+    !isRootLanding && initialResolved.isNotFound
   );
   const [selectedService, setSelectedService] = useState<ServiceType>('cremation');
   const [selectedRegion, setSelectedRegion] = useState<RegionType>('eu_uk');
@@ -59,6 +133,19 @@ export function App() {
 
   const currentLocale = langToLocaleSlug(lang);
   const t = translations[lang];
+
+  // Perform root path redirection if user hits "/" directly
+  useEffect(() => {
+    if (window.location.pathname === '/' || window.location.pathname === '') {
+      const targetLocale = detectPreferredLocale();
+      const targetPath = `/${targetLocale}/`;
+      window.history.replaceState({}, '', targetPath + window.location.hash);
+      const resolved = resolveRouteAndLocale(targetPath);
+      setLangState(localeSlugToLang(resolved.locale));
+      setCurrentRoute(resolved.route);
+      setIsNotFound(false);
+    }
+  }, []);
 
   // Sync browser back/forward navigation
   useEffect(() => {
@@ -111,6 +198,11 @@ export function App() {
     (newLang: Language) => {
       setLangState(newLang);
       const newLocaleSlug = langToLocaleSlug(newLang);
+      try {
+        localStorage.setItem(LANG_STORAGE_KEY, newLocaleSlug);
+      } catch {
+        // Fallback for private modes
+      }
       const nextPath = buildLocalizedPath(newLocaleSlug, currentRoute.path);
       setIsNotFound(false);
       if (window.location.pathname !== nextPath) {
