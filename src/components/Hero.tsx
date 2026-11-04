@@ -157,10 +157,10 @@ export const Hero: React.FC<HeroProps> = ({ lang, t, onOpenModal }) => {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 text-sm font-semibold text-sapphire hover:text-sapphire-light px-3 py-3 transition-colors"
+                className="inline-flex items-center justify-center gap-2 text-slate-700 hover:text-forest text-sm font-medium transition-colors px-3.5 py-3.5 rounded-xl hover:bg-slate-100/70 border border-transparent hover:border-stoneBorder no-underline"
               >
-                <MessageCircle className="w-4 h-4 text-forest" />
-                <span className="underline underline-offset-4">{t.hero.whatsappDirect}</span>
+                <MessageCircle className="w-4 h-4 text-forest shrink-0" />
+                <span>{t.hero.whatsappDirect}</span>
               </a>
             </div>
 
@@ -171,9 +171,9 @@ export const Hero: React.FC<HeroProps> = ({ lang, t, onOpenModal }) => {
                   <Clock className="w-4 h-4 text-sapphire shrink-0" />
                   <span>{t.hero.trustMetrics.timeLabel}</span>
                 </div>
-                <p className="mt-1.5 font-serif text-2xl font-bold text-slateDeep">
+                <div className="mt-2 font-sans font-semibold text-slate-900 text-lg sm:text-xl tracking-tight leading-tight">
                   {t.hero.trustMetrics.timeValue}
-                </p>
+                </div>
               </div>
 
               <div className="bg-white/90 backdrop-blur-sm p-4 rounded-xl border border-stoneBorder shadow-card">
@@ -181,9 +181,9 @@ export const Hero: React.FC<HeroProps> = ({ lang, t, onOpenModal }) => {
                   <FileCheck className="w-4 h-4 text-sapphire shrink-0" />
                   <span>{t.hero.trustMetrics.presenceLabel}</span>
                 </div>
-                <p className="mt-1.5 font-serif text-2xl font-bold text-slateDeep">
+                <div className="mt-2 font-sans font-semibold text-slate-900 text-lg sm:text-xl tracking-tight leading-tight">
                   {t.hero.trustMetrics.presenceValue}
-                </p>
+                </div>
               </div>
 
               <div className="bg-white/90 backdrop-blur-sm p-4 rounded-xl border border-stoneBorder shadow-card">
@@ -191,9 +191,9 @@ export const Hero: React.FC<HeroProps> = ({ lang, t, onOpenModal }) => {
                   <Shield className="w-4 h-4 text-sapphire shrink-0" />
                   <span>{t.hero.trustMetrics.complianceLabel}</span>
                 </div>
-                <p className="mt-1.5 font-serif text-2xl font-bold text-slateDeep">
+                <div className="mt-2 font-sans font-semibold text-slate-900 text-lg sm:text-xl tracking-tight leading-tight">
                   {t.hero.trustMetrics.complianceValue}
-                </p>
+                </div>
               </div>
             </div>
           </div>

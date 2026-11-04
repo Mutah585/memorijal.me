@@ -177,7 +177,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 bg-[#1E7B54] hover:bg-[#176343] text-white font-medium px-2.5 py-1 rounded-full text-[11px] leading-none transition-colors shadow-sm"
+              className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-[#D8E6F5] hover:text-white font-medium px-2.5 py-1 rounded-full text-[11px] leading-none transition-colors border border-white/10"
             >
               <MessageCircle className="w-3 h-3 shrink-0" />
               <span>WhatsApp 24/7</span>
@@ -193,9 +193,9 @@ export const Navbar: React.FC<NavbarProps> = ({
           <a
             href={homePath}
             onClick={(e) => handleAnchorOrRoute(e, '#top')}
-            className="flex items-center gap-3 md:gap-3.5 select-none group focus:outline-none shrink-0"
+            className="flex items-center gap-2.5 sm:gap-3 md:gap-3.5 select-none group focus:outline-none shrink-0"
           >
-            <div className="relative flex items-center justify-center shrink-0 w-9 h-9 md:w-10 md:h-10">
+            <div className="relative flex items-center justify-center shrink-0 w-[34px] h-[34px] md:w-[38px] md:h-[38px]">
               <img
                 src="/assets/branding/emblem-crest.svg"
                 alt={
@@ -205,16 +205,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                     ? 'Memorijal Grb'
                     : 'Memorijal d.o.o. Crest'
                 }
-                width={40}
-                height={40}
+                width={38}
+                height={38}
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
-                className="w-full h-full object-contain -translate-y-[1px] transition-opacity duration-200 group-hover:opacity-90"
+                className="w-full h-full object-contain translate-y-[0.5px] transition-opacity duration-200 group-hover:opacity-90"
               />
             </div>
             <div className="flex flex-col justify-center">
-              <span className="font-serif text-[19px] md:text-[21px] tracking-[0.14em] font-semibold text-slate-900 leading-none">
+              <span className="font-serif text-[18px] sm:text-[19px] md:text-[21px] tracking-[0.14em] font-semibold text-slate-900 leading-none">
                 MEMORIJAL
               </span>
               <span className="text-[9px] md:text-[10px] tracking-[0.22em] text-slate-500 uppercase font-sans font-medium mt-1 leading-none">
