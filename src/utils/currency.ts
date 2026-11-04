@@ -59,7 +59,7 @@ export async function fetchLiveRates(): Promise<CurrencyRates> {
 }
 
 /**
- * Converts price string like "From €1,850" or "От €4,500" to selected target currency.
+ * Converts price string like "From €1,850", "От 1 850 €", or "Od 1.850 €" to selected target currency.
  */
 export function convertPriceString(
   priceRange: string,
@@ -68,22 +68,25 @@ export function convertPriceString(
 ): string {
   if (currency === 'EUR') return priceRange;
 
-  // Extract numeric digits
-  const match = priceRange.match(/([0-9.,]+)/);
-  if (!match) return priceRange;
+  // Extract clean integer from string, removing all non-digits
+  const rawNumeric = parseInt(priceRange.replace(/\D/g, ''), 10) || 0;
+  if (!rawNumeric) return priceRange;
 
-  const rawNumStr = match[1].replace(/,/g, '').replace(/\./g, '');
-  const eurVal = parseInt(rawNumStr, 10);
-  if (isNaN(eurVal)) return priceRange;
+  const rate = currency === 'GBP' ? (rates.GBP || 0.85) : (rates.USD || 1.08);
+  const converted = Math.round(rawNumeric * rate);
+  const formattedNumber = converted.toLocaleString('ru-RU').replace(/\u00A0/g, ' ');
 
-  const rate = currency === 'GBP' ? rates.GBP : rates.USD;
   const symbol = currency === 'GBP' ? '£' : '$';
-  const converted = Math.round(eurVal * rate);
-  const formatted = converted.toLocaleString();
 
-  // Replace original euro figure with converted currency
-  return priceRange
-    .replace(/€\s*[0-9.,]+/, `${symbol}${formatted}`)
-    .replace(/[0-9.,]+\s*€/, `${symbol}${formatted}`);
+  // Check prefix or localized prefix (From / От / Od)
+  if (priceRange.startsWith('From')) {
+    return `From ${symbol}${formattedNumber}`;
+  }
+  if (priceRange.startsWith('От') || priceRange.startsWith('Od')) {
+    const prefix = priceRange.startsWith('От') ? 'От' : 'Od';
+    return `${prefix} ${formattedNumber} ${symbol}`;
+  }
+
+  return `${formattedNumber} ${symbol}`;
 }
 

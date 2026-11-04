@@ -210,6 +210,31 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
     handleResetAndClose();
   };
 
+  const [touchStartY, setTouchStartY] = useState<number | null>(null);
+  const [touchOffset, setTouchOffset] = useState<number>(0);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartY(e.touches[0].clientY);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (touchStartY === null) return;
+    const deltaY = e.touches[0].clientY - touchStartY;
+    if (deltaY > 0) {
+      setTouchOffset(deltaY);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    if (touchOffset > 100) {
+      if (!hasDraft) {
+        handleResetAndClose();
+      }
+    }
+    setTouchStartY(null);
+    setTouchOffset(0);
+  };
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slateDeep/60 backdrop-blur-sm overflow-y-auto"
@@ -219,9 +244,18 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
       onClick={handleBackdropClick}
     >
       <div
-        className="bg-white rounded-2xl border border-stoneBorder shadow-elevated max-w-2xl w-full overflow-hidden my-8"
+        className="bg-white rounded-2xl border border-stoneBorder shadow-elevated max-w-2xl w-full overflow-hidden my-8 transition-transform duration-100 ease-out"
+        style={touchOffset > 0 ? { transform: `translateY(${touchOffset}px)` } : undefined}
         onClick={(e) => e.stopPropagation()}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
+        {/* Mobile Swipe-to-Dismiss Handle */}
+        <div className="sm:hidden pt-3 pb-1 bg-sapphire flex justify-center">
+          <div className="w-12 h-1.5 bg-white/40 rounded-full" />
+        </div>
+
         {/* Top Modal Header */}
         <div className="bg-sapphire text-white px-6 py-5 flex items-start justify-between gap-4">
           <div>

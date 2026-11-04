@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import {
   Globe,
   MapPin,
@@ -23,12 +23,34 @@ interface SeoHubNavigatorProps {
   onNavigate: (localizedPath: string) => void;
 }
 
+type CorridorFilter = 'all' | 'eu_uk' | 'balkans' | 'cis_east';
+
 export const SeoHubNavigator: React.FC<SeoHubNavigatorProps> = ({
   locale,
   onNavigate,
 }) => {
+  const [corridorFilter, setCorridorFilter] = useState<CorridorFilter>('all');
+
   const serviceRoutes = ALL_SEO_ROUTES.filter((r) => r.category === 'service');
-  const corridorRoutes = ALL_SEO_ROUTES.filter((r) => r.category === 'corridor');
+  const allCorridorRoutes = ALL_SEO_ROUTES.filter((r) => r.category === 'corridor');
+
+  const filteredCorridorRoutes = useMemo(() => {
+    if (corridorFilter === 'all') return allCorridorRoutes;
+    if (corridorFilter === 'eu_uk') {
+      return allCorridorRoutes.filter((r) =>
+        ['corridor-uk', 'corridor-germany', 'corridor-poland', 'corridor-france', 'corridor-italy'].includes(r.id)
+      );
+    }
+    if (corridorFilter === 'balkans') {
+      return allCorridorRoutes.filter((r) => r.id === 'corridor-serbia');
+    }
+    if (corridorFilter === 'cis_east') {
+      return allCorridorRoutes.filter((r) =>
+        ['corridor-russia', 'corridor-ukraine', 'corridor-turkey'].includes(r.id)
+      );
+    }
+    return allCorridorRoutes;
+  }, [corridorFilter, allCorridorRoutes]);
   const locationRoutes = ALL_SEO_ROUTES.filter((r) => r.category === 'location');
   const resourceRoutes = ALL_SEO_ROUTES.filter((r) => r.category === 'resource');
   const mortuaryRoutes = ALL_SEO_ROUTES.filter((r) => r.category === 'mortuary');
@@ -108,12 +130,72 @@ export const SeoHubNavigator: React.FC<SeoHubNavigatorProps> = ({
 
         {/* 1. The 9 Primary Destination Corridors */}
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-wider text-sapphire mb-4 flex items-center gap-2">
-            <Plane className="w-4 h-4" />
-            <span>{labels.corridorsHeader}</span>
-          </h3>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-sapphire flex items-center gap-2">
+              <Plane className="w-4 h-4" />
+              <span>{labels.corridorsHeader}</span>
+            </h3>
+
+            {/* Horizontal Pill Filter */}
+            <div className="flex flex-wrap items-center gap-1.5 p-1 bg-surface rounded-xl border border-stoneBorder text-xs">
+              {(
+                [
+                  {
+                    id: 'all',
+                    label:
+                      locale === 'ru'
+                        ? 'Все направления'
+                        : locale === 'mne'
+                        ? 'Sve rute'
+                        : 'All Corridors',
+                  },
+                  {
+                    id: 'eu_uk',
+                    label:
+                      locale === 'ru'
+                        ? 'Евросоюз и UK'
+                        : locale === 'mne'
+                        ? 'Evropska unija i UK'
+                        : 'EU & UK',
+                  },
+                  {
+                    id: 'balkans',
+                    label:
+                      locale === 'ru'
+                        ? 'Сербия и Балканы'
+                        : locale === 'mne'
+                        ? 'Srbija i Balkan'
+                        : 'Serbia & Balkans',
+                  },
+                  {
+                    id: 'cis_east',
+                    label:
+                      locale === 'ru'
+                        ? 'СНГ и Восток'
+                        : locale === 'mne'
+                        ? 'Istočna Evropa'
+                        : 'Eastern Europe / CIS',
+                  },
+                ] as const
+              ).map((tab) => (
+                <button
+                  key={tab.id}
+                  type="button"
+                  onClick={() => setCorridorFilter(tab.id)}
+                  className={`px-3 py-1.5 rounded-lg font-medium transition-colors cursor-pointer ${
+                    corridorFilter === tab.id
+                      ? 'bg-sapphire text-white shadow-xs'
+                      : 'text-slate-600 hover:text-slateDeep hover:bg-porcelain'
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {corridorRoutes.map((route) => {
+            {filteredCorridorRoutes.map((route) => {
               const data = route.locales[locale];
               const href = buildLocalizedPath(locale, route.path);
               return (

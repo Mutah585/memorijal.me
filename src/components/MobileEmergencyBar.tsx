@@ -36,8 +36,13 @@ export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) 
     lang === 'RU'
       ? 'Позвонить 24/7'
       : lang === 'MNE'
-      ? 'Pozovite 24/7'
+      ? 'Poziv (EN/RU)'
       : 'Call 24/7';
+
+  const whatsappLabel =
+    lang === 'MNE'
+      ? 'Pišite na WhatsApp 24/7'
+      : 'WhatsApp 24/7';
 
   const whatsappHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
     lang === 'RU'
@@ -58,7 +63,7 @@ export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) 
         <button
           type="button"
           onClick={() => setSheetOpen(true)}
-          className="inline-flex items-center justify-center gap-2 border border-sapphire text-sapphire hover:bg-sapphire-subtle px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-colors shrink-0 shadow-xs cursor-pointer"
+          className="inline-flex items-center justify-center gap-1.5 border border-sapphire text-sapphire hover:bg-sapphire-subtle px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-colors shrink-0 shadow-xs cursor-pointer"
           aria-label={`${callLabel} - ${dispatchStatus.statusText}`}
           title={dispatchStatus.statusText}
         >
@@ -78,7 +83,7 @@ export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) 
           className="flex-1 inline-flex items-center justify-center gap-2 bg-[#1E7B54] hover:bg-[#176343] text-white py-2.5 px-3 rounded-xl text-xs sm:text-sm font-semibold shadow-xs transition-colors truncate"
         >
           <MessageCircle className="w-4 h-4 shrink-0" />
-          <span className="truncate">WhatsApp 24/7</span>
+          <span className="truncate">{whatsappLabel}</span>
         </a>
       </div>
 
@@ -139,6 +144,11 @@ export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) 
                   <p className="text-[11px] text-slate-300 font-mono tracking-wide">
                     {PHONE_DISPLAY}
                   </p>
+                  {lang === 'MNE' && (
+                    <p className="text-[10px] text-emerald-300 leading-tight mt-0.5">
+                      Pozivi na engleskom i ruskom jeziku / Written support in Montenegrin
+                    </p>
+                  )}
                 </div>
               </a>
 
