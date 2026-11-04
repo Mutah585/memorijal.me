@@ -23,6 +23,7 @@ import {
   buildLocalizedPath,
   ALL_SEO_ROUTES,
 } from '../data/seo-routes';
+import { GlossaryTerm } from './common/GlossaryTerm';
 
 interface FooterProps {
   lang: Language;
@@ -131,11 +132,13 @@ Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
             <div className="pt-1 flex items-center gap-2 text-xs text-emerald-300 font-medium">
               <FileCheck className="w-4 h-4 shrink-0" />
               <span>
+                <GlossaryTerm termKey="Cargo HUM" locale={locale}>IATA Cargo HUM</GlossaryTerm> •{' '}
+                <GlossaryTerm termKey="Sprovodnica" locale={locale}>Sprovodnica</GlossaryTerm> •{' '}
                 {lang === 'RU'
-                  ? 'IATA Cargo HUM • Sprovodnica • По доверенности'
+                  ? 'По доверенности'
                   : lang === 'MNE'
-                  ? 'IATA Cargo HUM • Sprovodnica • Po punomoćju'
-                  : 'IATA Cargo HUM • Sprovodnica • Consular PoA'}
+                  ? 'Po punomoćju'
+                  : 'Consular PoA'}
               </span>
             </div>
           </div>

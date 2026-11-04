@@ -13,6 +13,7 @@ import {
   Award,
   ArrowLeft,
   Building2,
+  Printer,
 } from 'lucide-react';
 import {
   LocaleSlug,
@@ -316,6 +317,28 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
               >
                 <FileCheck className="w-4 h-4 text-sapphire" />
                 <span>{uiLabels.requestQuote}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => window.print()}
+                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-alabaster text-slate-600 border border-stoneBorder font-medium px-4 py-4 rounded-xl shadow-sm transition-all text-sm no-print"
+                title={
+                  locale === 'ru'
+                    ? 'Распечатать досье маршрута (PDF)'
+                    : locale === 'mne'
+                    ? 'Štampaj dosije rute (PDF)'
+                    : 'Print Route Dossier (PDF)'
+                }
+              >
+                <Printer className="w-4 h-4 text-slate-500" />
+                <span>
+                  {locale === 'ru'
+                    ? 'Печать (PDF)'
+                    : locale === 'mne'
+                    ? 'Štampa (PDF)'
+                    : 'Print (PDF)'}
+                </span>
               </button>
             </div>
           </div>

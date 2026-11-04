@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Clock,
   MapPin,
@@ -21,6 +21,11 @@ import {
   WHATSAPP_NUMBER,
 } from '../i18n/translations';
 import { getDispatchStatus } from '../utils/dispatchStatus';
+import {
+  CurrencyRates,
+  fetchLiveRates,
+  convertPriceString,
+} from '../utils/currency';
 
 interface RouteEstimatorProps {
   lang: Language;
@@ -49,6 +54,18 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
   const regionKeys: RegionType[] = ['balkans', 'eu_uk', 'cis_east'];
   const locationKeys: LocationType[] = ['boka', 'podgorica', 'coast_south', 'north'];
   const [isUrgentMode, setIsUrgentMode] = useState(false);
+  const [selectedCurrency, setSelectedCurrency] = useState<'EUR' | 'GBP' | 'USD'>('EUR');
+  const [rates, setRates] = useState<CurrencyRates>({
+    GBP: 0.85,
+    USD: 1.08,
+    date: new Date().toISOString().split('T')[0],
+  });
+
+  useEffect(() => {
+    fetchLiveRates().then((liveRates) => {
+      setRates(liveRates);
+    });
+  }, []);
 
   const dispatchStatus = getDispatchStatus(lang);
 
@@ -353,22 +370,51 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
                   </div>
 
                   <div className="bg-white/10 rounded-xl p-4">
-                    <span className="text-[11px] uppercase tracking-wider text-slate-200 block">
-                      {lang === 'RU'
-                        ? 'Ориентировочные расходы:'
-                        : lang === 'MNE'
-                        ? 'Procijenjeni troškovi:'
-                        : 'Estimated cost:'}
-                    </span>
+                    <div className="flex items-center justify-between gap-1 mb-1">
+                      <span className="text-[11px] uppercase tracking-wider text-slate-200 block">
+                        {lang === 'RU'
+                          ? 'Ориентировочно:'
+                          : lang === 'MNE'
+                          ? 'Procijenjeni trošak:'
+                          : 'Estimated cost:'}
+                      </span>
+                      {/* Currency Toggle */}
+                      <div className="inline-flex rounded-lg bg-black/25 p-0.5 text-[10px] font-semibold">
+                        {(['EUR', 'GBP', 'USD'] as const).map((curr) => (
+                          <button
+                            key={curr}
+                            type="button"
+                            onClick={() => setSelectedCurrency(curr)}
+                            className={`px-1.5 py-0.5 rounded transition-colors ${
+                              selectedCurrency === curr
+                                ? 'bg-white text-slateDeep shadow-xs'
+                                : 'text-slate-200 hover:text-white'
+                            }`}
+                          >
+                            {curr === 'EUR' ? '€' : curr === 'GBP' ? '£' : '$'}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+
                     <span className="font-serif text-xl sm:text-2xl font-bold text-emerald-300 mt-1 block">
-                      {currentMatrix.priceRange}
+                      {convertPriceString(currentMatrix.priceRange, selectedCurrency, rates)}
                     </span>
-                    <span className="text-[10px] text-slate-300 mt-1 block">
-                      {lang === 'RU'
-                        ? 'Окончательный расчет зависит от километража и консульских сборов'
-                        : lang === 'MNE'
-                        ? 'Konačna cijena zavisi od stvarne kilometraže i konzularnih taksi'
-                        : 'Exact quote depends on transit route and consular fees'}
+
+                    <span className="text-[10px] text-slate-300 mt-1 block leading-tight">
+                      {selectedCurrency === 'EUR' ? (
+                        lang === 'RU'
+                          ? 'Окончательный расчет зависит от километража и консульских сборов'
+                          : lang === 'MNE'
+                          ? 'Konačna cijena zavisi od stvarne kilometraže i konzularnih taksi'
+                          : 'Exact quote depends on transit route and consular fees'
+                      ) : (
+                        lang === 'RU'
+                          ? 'Официальный расчет и инвойс формируются в EUR (€). Конвертация в GBP/USD рассчитана по курсу на день открытия страницы и носит справочный характер.'
+                          : lang === 'MNE'
+                          ? 'Zvanične fakture se izdaju u EUR (€). Preračun po današnjem kursu je informativnog karaktera.'
+                          : "Official statutory invoices are issued in EUR (€). GBP/USD conversion is calculated at today's rate and is for guidance only."
+                      )}
                     </span>
                   </div>
                 </div>

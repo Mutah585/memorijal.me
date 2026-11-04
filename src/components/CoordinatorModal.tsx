@@ -112,6 +112,16 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
   }, [name, contact, relation, service, region, location, notes]);
 
   const hasDraft = Boolean(name.trim() || contact.trim() || notes.trim());
+  const isLocalNumberWithoutCode = contact.trim().startsWith('0');
+
+  const contactHelperNote =
+    lang === 'RU'
+      ? 'Пожалуйста, укажите код страны (например, +44, +49, +382, +7)'
+      : lang === 'MNE'
+      ? 'Molimo navedite međunarodni pozivni broj (npr. +382, +381)'
+      : 'Please include international country code (e.g. +44, +49, +382)';
+
+  const contactPlaceholder = '+44 7911 123456 / +7 999 123-45-67';
 
   const handleClearDraft = () => {
     setName('');
@@ -334,10 +344,20 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
                     autoComplete="tel"
                     value={contact}
                     onChange={(e) => setContact(sanitizeUserText(e.target.value, 80))}
-                    placeholder={t.modal.contactPlaceholder}
-                    className="w-full px-3.5 py-2.5 rounded-xl border border-stoneBorder bg-porcelain text-sm text-slateDeep focus:bg-white focus:border-sapphire outline-none"
+                    placeholder={contactPlaceholder}
+                    className={`w-full px-3.5 py-2.5 rounded-xl border bg-porcelain text-sm text-slateDeep focus:bg-white outline-none transition-colors ${
+                      isLocalNumberWithoutCode
+                        ? 'border-amber-400 focus:border-amber-500'
+                        : 'border-stoneBorder focus:border-sapphire'
+                    }`}
                     required
                   />
+                  {isLocalNumberWithoutCode && (
+                    <p className="mt-1.5 text-[11px] text-amber-700 font-medium flex items-center gap-1">
+                      <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+                      <span>{contactHelperNote}</span>
+                    </p>
+                  )}
                 </div>
               </div>
 

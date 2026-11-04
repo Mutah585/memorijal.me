@@ -5,8 +5,6 @@ import {
   RegionType,
   LocationType,
   translations,
-  PHONE_DISPLAY,
-  PHONE_HREF,
 } from './i18n/translations';
 import {
   resolveRouteAndLocale,
@@ -28,6 +26,7 @@ import { TrustAndDirector } from './components/TrustAndDirector';
 import { Footer } from './components/Footer';
 import { CoordinatorModal } from './components/CoordinatorModal';
 import { MobileEmergencyBar } from './components/MobileEmergencyBar';
+import { NotFound } from './pages/NotFound';
 import { sanitizeInternalPath } from './utils/security';
 
 const CorridorPageTemplate = lazy(() =>
@@ -236,44 +235,15 @@ export function App() {
         onNavigate={handleNavigate}
       />
 
-      {/* Safe 404 / Unknown Route Fallback Notice Banner */}
-      {isNotFound && (
-        <div
-          role="status"
-          aria-live="polite"
-          className="bg-amber-50 border-b border-amber-200 px-4 py-3 text-xs sm:text-sm text-slateDeep"
-        >
-          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-            <span>
-              {currentLocale === 'ru'
-                ? 'Запрошенный адрес не найден (404). Вы перенаправлены в главный координационный центр Memorijal d.o.o. (24/7).'
-                : currentLocale === 'mne'
-                ? 'Tražena stranica nije pronađena (404). Prikazan je glavni koordinacioni centar Memorijal d.o.o. (24/7).'
-                : 'The requested URL path was not found (404). Showing the main Memorijal d.o.o. 24/7 Dispatch Hub.'}
-            </span>
-            <div className="flex items-center gap-4 font-semibold">
-              <a href={PHONE_HREF} className="text-sapphire hover:underline">
-                {PHONE_DISPLAY}
-              </a>
-              <button
-                type="button"
-                onClick={() => handleNavigate(buildLocalizedPath(currentLocale, '/'))}
-                className="text-forest hover:underline"
-              >
-                {currentLocale === 'ru'
-                  ? 'Перейти на /ru/'
-                  : currentLocale === 'mne'
-                  ? 'Pređi na /mne/'
-                  : 'Go to /en/'}
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* Main Content Router */}
       <main className="flex-1">
-        {currentRoute.category === 'home' ? (
+        {isNotFound ? (
+          <NotFound
+            lang={lang}
+            onNavigate={handleNavigate}
+            onOpenModal={() => setModalOpen(true)}
+          />
+        ) : currentRoute.category === 'home' ? (
           <>
             {/* 2. Hero Section */}
             <Hero
@@ -316,6 +286,7 @@ export function App() {
             {/* 6 & 7. Trust, Licences, Hospital Partnerships & Director Personal Accountability Block */}
             <TrustAndDirector
               t={t}
+              lang={lang}
               onOpenModal={() => setModalOpen(true)}
             />
           </>

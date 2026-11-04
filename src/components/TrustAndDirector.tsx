@@ -18,13 +18,66 @@ import {
 
 interface TrustAndDirectorProps {
   t: TranslationContent;
+  lang?: 'EN' | 'RU' | 'MNE';
   onOpenModal: () => void;
 }
 
 export const TrustAndDirector: React.FC<TrustAndDirectorProps> = ({
   t,
+  lang = 'EN',
   onOpenModal,
 }) => {
+  const zeroBurdenTitle =
+    lang === 'RU'
+      ? 'Что НЕ требуется от семьи умершего:'
+      : lang === 'MNE'
+      ? 'Šta porodica NE MORA sama obavljati:'
+      : 'What is NEVER required from the family:';
+
+  const zeroBurdenPillars = [
+    {
+      title:
+        lang === 'RU'
+          ? 'Без личного приезда в Черногорию'
+          : lang === 'MNE'
+          ? 'Bez dolaska u Crnu Goru'
+          : 'No Travel to Montenegro',
+      desc:
+        lang === 'RU'
+          ? '100% дистанционное ведение дела по доверенности (Punomoćje). Личное присутствие близких в моргах и судах не требуется.'
+          : lang === 'MNE'
+          ? '100% daljinsko zastupanje po punomoćju. Prisustvo porodice u kapelama i institucijama nije neophodno.'
+          : '100% remote representation via statutory Power of Attorney (Punomoćje). Family presence at morgues or courts is never required.',
+    },
+    {
+      title:
+        lang === 'RU'
+          ? 'Без поиска переводчиков и нотариусов'
+          : lang === 'MNE'
+          ? 'Bez traženja prevodilaca i notara'
+          : 'No Independent Translators or Notaries',
+      desc:
+        lang === 'RU'
+          ? 'Судебный перевод (Sudski tumač), апостилирование и консульская легализация выполняются централизованно координатором.'
+          : lang === 'MNE'
+          ? 'Sudski prevod, apostil i konzularna legalizacija obavljaju se centralizovano od strane koordinatora.'
+          : 'Complete court-certified translation, apostille, and consular clearances handled internally by our dispatch office.',
+    },
+    {
+      title:
+        lang === 'RU'
+          ? 'Без прямых наличных оплат моргам'
+          : lang === 'MNE'
+          ? 'Bez gotovinskog plaćanja kapelama'
+          : 'No Direct Cash Advances to Morgues',
+      desc:
+        lang === 'RU'
+          ? 'Все больничные сборы и пошлины морга урегулируются через прозрачный корпоративный счёт с фискальным чеком EFI QR.'
+          : lang === 'MNE'
+          ? 'Sve bolničke i komunalne takse izmiruju se preko transparentnog računa firme uz zvanični EFI QR račun.'
+          : 'All hospital and mortuary fees settled via transparent corporate invoicing with official EFI QR fiscal invoices.',
+    },
+  ];
   return (
     <>
       {/* SECTION 6: Trust, Licences & Institutional Partnerships */}
@@ -108,6 +161,43 @@ export const TrustAndDirector: React.FC<TrustAndDirectorProps> = ({
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Zero Family Burden Reassurance Card */}
+          <div className="mt-8 bg-white rounded-2xl border border-stoneBorder p-6 sm:p-8 shadow-card">
+            <div className="max-w-2xl mb-6">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-700 block mb-1">
+                {lang === 'RU'
+                  ? 'Правовая и операционная защита близких'
+                  : lang === 'MNE'
+                  ? 'Pravna i operativna zaštita porodice'
+                  : 'Statutory Family Protection'}
+              </span>
+              <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-slateDeep">
+                {zeroBurdenTitle}
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {zeroBurdenPillars.map((pillar, idx) => (
+                <div
+                  key={idx}
+                  className="p-5 rounded-xl bg-porcelain border border-stoneBorder flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="w-8 h-8 rounded-lg bg-emerald-100/80 text-emerald-800 flex items-center justify-center font-bold text-sm mb-3">
+                      0{idx + 1}
+                    </div>
+                    <h4 className="font-serif text-lg font-bold text-slateDeep mb-2">
+                      {pillar.title}
+                    </h4>
+                    <p className="text-xs sm:text-sm text-slateMuted leading-relaxed">
+                      {pillar.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 

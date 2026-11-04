@@ -52,3 +52,38 @@
   outline-offset: 2px;
 }
 
+/* Institutional Print Stylesheet for PDF Generation */
+@media print {
+  header,
+  footer,
+  [role="complementary"],
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  article,
+  section,
+  table,
+  .print-break-inside-avoid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .print-header {
+    display: block !important;
+  }
+
+  a[href]:after {
+    content: "" !important;
+  }
+}
+
+
