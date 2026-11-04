@@ -165,7 +165,7 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
     }
   };
 
-  const buildDirectWhatsAppUrl = () => {
+  const getWhatsAppMessageText = () => {
     const serviceLabel = t.estimator.services[service].label;
     const regionLabel = t.estimator.regions[region].label;
     const locationLabel = t.estimator.locations[location].label;
@@ -176,13 +176,15 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
     const safeContact = sanitizeUserText(contact, 80).trim();
     const safeNotes = sanitizeUserText(notes, 500).trim();
 
-    const summary =
-      lang === 'RU'
-        ? `Здравствуйте, Memorijal d.o.o.! Меня интересует репатриация (${regionLabel}), начальная оценка ${currentPrice}.\n• Имя: ${safeName || 'Не указано'}\n• Статус: ${relationLabel}\n• Контакт: ${safeContact || 'В чате'}\n• Услуга: ${serviceLabel}\n• Город в ЧГ: ${locationLabel}\n• Примечание: ${safeNotes || '-'}`
-        : lang === 'MNE'
-        ? `Poštovani Memorijal d.o.o., interesuje me repatrijacija za ${regionLabel}, početna procjena ${currentPrice}.\n• Ime: ${safeName || 'Nije navedeno'}\n• Svojstvo: ${relationLabel}\n• Kontakt: ${safeContact || 'WhatsApp'}\n• Usluga: ${serviceLabel}\n• Lokacija u CG: ${locationLabel}\n• Napomena: ${safeNotes || '-'}`
-        : `Hello Memorijal d.o.o. Duty Coordinator, I am inquiring about repatriation to ${regionLabel}, starting estimate ${currentPrice}.\n• Name: ${safeName || 'Not specified'}\n• Capacity: ${relationLabel}\n• Contact: ${safeContact || 'Via WhatsApp'}\n• Procedure: ${serviceLabel}\n• Location in MNE: ${locationLabel}\n• Notes: ${safeNotes || '-'}`;
+    return lang === 'RU'
+      ? `Здравствуйте, Memorijal d.o.o.! Меня интересует репатриация (${regionLabel}), начальная оценка ${currentPrice}.\n• Имя: ${safeName || 'Не указано'}\n• Статус: ${relationLabel}\n• Контакт: ${safeContact || 'В чате'}\n• Услуга: ${serviceLabel}\n• Город в ЧГ: ${locationLabel}\n• Примечание: ${safeNotes || '-'}`
+      : lang === 'MNE'
+      ? `Poštovani Memorijal d.o.o., interesuje me repatrijacija za ${regionLabel}, početna procjena ${currentPrice}.\n• Ime: ${safeName || 'Nije navedeno'}\n• Svojstvo: ${relationLabel}\n• Kontakt: ${safeContact || 'WhatsApp'}\n• Usluga: ${serviceLabel}\n• Lokacija u CG: ${locationLabel}\n• Napomena: ${safeNotes || '-'}`
+      : `Hello Memorijal d.o.o. Duty Coordinator, I am inquiring about repatriation to ${regionLabel}, starting estimate ${currentPrice}.\n• Name: ${safeName || 'Not specified'}\n• Capacity: ${relationLabel}\n• Contact: ${safeContact || 'Via WhatsApp'}\n• Procedure: ${serviceLabel}\n• Location in MNE: ${locationLabel}\n• Notes: ${safeNotes || '-'}`;
+  };
 
+  const buildDirectWhatsAppUrl = () => {
+    const summary = getWhatsAppMessageText();
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(summary)}`;
   };
 
@@ -437,6 +439,30 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
                   placeholder={t.modal.notesPlaceholder}
                   className="w-full px-3.5 py-2.5 rounded-xl border border-stoneBorder bg-porcelain text-sm text-slateDeep focus:bg-white focus:border-sapphire outline-none resize-none"
                 />
+              </div>
+
+              {/* WhatsApp Live Preview Container */}
+              <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-3 text-xs text-slate-600 space-y-1.5">
+                <div className="flex items-center gap-1.5 font-medium text-emerald-700">
+                  <MessageCircle className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                  <span>
+                    {lang === 'RU'
+                      ? 'Текст сообщения для WhatsApp (сформирован автоматически):'
+                      : lang === 'MNE'
+                      ? 'Pregled poruke za WhatsApp:'
+                      : 'Generated WhatsApp message preview:'}
+                  </span>
+                </div>
+                <div className="font-mono text-[11px] whitespace-pre-wrap bg-white/80 border border-slate-200/60 rounded-lg p-2.5 text-slate-700 leading-relaxed max-h-32 overflow-y-auto">
+                  {getWhatsAppMessageText()}
+                </div>
+                <p className="text-[11px] text-slate-400 italic">
+                  {lang === 'RU'
+                    ? 'Вы сможете отредактировать или дополнить этот текст в WhatsApp перед отправкой.'
+                    : lang === 'MNE'
+                    ? 'Tekst možete pregledati i izmijeniti u WhatsApp-u prije slanja.'
+                    : 'You will be able to review or edit this text directly in WhatsApp before sending.'}
+                </p>
               </div>
 
               <div className="pt-2 flex flex-col sm:flex-row items-center gap-3">

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, MessageCircle } from 'lucide-react';
 import { Language, PHONE_HREF, WHATSAPP_NUMBER } from '../i18n/translations';
+import { getDispatchStatus } from '../utils/dispatchStatus';
 
 interface MobileEmergencyBarProps {
   lang: Language;
@@ -8,6 +9,7 @@ interface MobileEmergencyBarProps {
 
 export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) => {
   const [visible, setVisible] = useState(false);
+  const dispatchStatus = getDispatchStatus(lang);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,10 +50,15 @@ export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) 
       {/* Call 24/7 Button */}
       <a
         href={PHONE_HREF}
-        className="inline-flex items-center justify-center gap-2 border border-sapphire text-sapphire hover:bg-sapphire-subtle px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-colors shrink-0 shadow-xs"
-        aria-label={callLabel}
+        className="inline-flex items-center justify-center gap-2 border border-sapphire text-sapphire hover:bg-sapphire-subtle px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-colors shrink-0 shadow-xs"
+        aria-label={`${callLabel} - ${dispatchStatus.statusText}`}
+        title={dispatchStatus.statusText}
       >
-        <Phone className="w-4 h-4 text-sapphire" />
+        <span className="relative flex h-2 w-2 shrink-0">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-80"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
+        <Phone className="w-3.5 h-3.5 text-sapphire shrink-0" />
         <span>{callLabel}</span>
       </a>
 

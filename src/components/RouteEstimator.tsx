@@ -20,6 +20,7 @@ import {
   TranslationContent,
   WHATSAPP_NUMBER,
 } from '../i18n/translations';
+import { getDispatchStatus } from '../utils/dispatchStatus';
 
 interface RouteEstimatorProps {
   lang: Language;
@@ -48,6 +49,8 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
   const regionKeys: RegionType[] = ['balkans', 'eu_uk', 'cis_east'];
   const locationKeys: LocationType[] = ['boka', 'podgorica', 'coast_south', 'north'];
   const [isUrgentMode, setIsUrgentMode] = useState(false);
+
+  const dispatchStatus = getDispatchStatus(lang);
 
   const currentMatrix = t.estimator.matrix[selectedService][selectedRegion];
   const serviceInfo = t.estimator.services[selectedService];
@@ -338,6 +341,15 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
                     <span className="font-serif text-xl sm:text-2xl font-bold text-white mt-1 block">
                       {currentMatrix.timeframe}
                     </span>
+                    {dispatchStatus.isNight && (
+                      <span className="text-[10px] text-emerald-300 mt-1.5 block leading-tight">
+                        {lang === 'RU'
+                          ? 'Ночное обращение: выезд координатора к 07:30 к открытию морга. Дело принимается в первую очередь.'
+                          : lang === 'MNE'
+                          ? 'Noćni prijem: izlazak koordinatora u 07:30 po otvaranju kapele. Prioritetno rješavanje.'
+                          : 'Night inquiry: on-site dispatch at 07:30 for mortuary opening. First-priority processing.'}
+                      </span>
+                    )}
                   </div>
 
                   <div className="bg-white/10 rounded-xl p-4">

@@ -70,10 +70,22 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
       ? 'Informacije i pravilnik'
       : 'Statutory Guides & Resources';
 
+  // Check if route belongs to mortuary category or path
+  const isMortuaryRoute =
+    route.category === 'mortuary' ||
+    route.path.startsWith('/mortuary/') ||
+    route.id.includes('mortuary') ||
+    route.id.includes('opsta-bolnica') ||
+    route.id.includes('kccg');
+
+  const orgTypes = isMortuaryRoute
+    ? ['FuneralService', 'EmergencyService', 'MedicalBusiness']
+    : ['FuneralService', 'EmergencyService'];
+
   // 1. Organization / FuneralService & EmergencyService Schema
-  const funeralServiceSchema = {
+  const funeralServiceSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
-    '@type': ['FuneralService', 'EmergencyService'],
+    '@type': orgTypes,
     '@id': `${SITE_ORIGIN}/#organization`,
     name: 'Memorijal d.o.o. — International Repatriation & Cremation Montenegro',
     legalName: 'Memorijal d.o.o.',
@@ -85,6 +97,16 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
     priceRange: 'from €450',
     taxID: '03489217',
     vatID: '30/31-20948-4',
+    ...(isMortuaryRoute
+      ? {
+          knowsAbout: [
+            'Sanitary Inspection',
+            'Hermetic Zinc Soldering',
+            'Forensic Autopsy Clearance',
+            'Air Cargo HUM Transport',
+          ],
+        }
+      : {}),
     makesOffer: STANDARD_PRICING_PACKAGES.map((pkg) => ({
       '@type': 'Offer',
       itemOffered: {

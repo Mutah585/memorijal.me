@@ -8,6 +8,7 @@ import {
   WHATSAPP_NUMBER,
 } from '../i18n/translations';
 import { langToLocaleSlug, buildLocalizedPath } from '../data/seo-routes';
+import { getDispatchStatus } from '../utils/dispatchStatus';
 
 interface NavbarProps {
   lang: Language;
@@ -63,13 +64,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   )}`;
 
   // Top Bar Localized Copy
-  const topBarBadge =
-    lang === 'RU'
-      ? 'Дежурная линия 24/7'
-      : lang === 'MNE'
-      ? 'Dežurna linija 24/7'
-      : '24/7 Dispatch Line';
-
   const topBarLicense =
     lang === 'RU'
       ? 'Лицензированная служба репатриации и кремации • Черногория'
@@ -83,6 +77,9 @@ export const Navbar: React.FC<NavbarProps> = ({
       : lang === 'MNE'
       ? 'Koordinator 24/7 (Tivat i Podgorica):'
       : 'Coordinator 24/7 (Tivat & Podgorica):';
+
+  // Dynamic Dispatch Status (Local Podgorica / Tivat Time)
+  const dispatchStatus = getDispatchStatus(lang);
 
   // Navigation Labels (Quiet Luxury / Swiss minimal alignment)
   const navLabels = {
@@ -120,12 +117,12 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-between text-[11px] leading-none">
           {/* Left & Center-Left: Pulsing 24/7 Badge + Desaturated Silver-Blue Jurisdiction */}
           <div className="flex items-center gap-3.5 min-w-0">
-            <span className="inline-flex items-center gap-1.5 font-medium tracking-wide text-white shrink-0">
-              <span className="relative flex h-1.5 w-1.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-80"></span>
-                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#269E6B]"></span>
+            <span className="inline-flex items-center gap-2 font-medium tracking-wide text-white shrink-0">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-80"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
-              <span>{topBarBadge}</span>
+              <span>{dispatchStatus.statusText}</span>
             </span>
             <span className="text-white/20 select-none">|</span>
             <span className="text-[#B8C7D9] font-normal tracking-wide truncate">
@@ -223,7 +220,6 @@ export const Navbar: React.FC<NavbarProps> = ({
                 width={38}
                 height={38}
                 loading="eager"
-                fetchPriority="high"
                 decoding="async"
                 className="w-full h-full object-contain translate-y-[0.5px] transition-opacity duration-200 group-hover:opacity-90"
               />
@@ -412,25 +408,43 @@ export const Navbar: React.FC<NavbarProps> = ({
             </a>
           </nav>
 
-          <div className="mt-4 pt-4 border-t border-[#E5E7EB] grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          {/* Crisis Contact Container inside Mobile Menu */}
+          <div className="mt-4 pt-4 border-t border-[#E5E7EB] flex flex-col gap-2.5">
             <a
               href={PHONE_HREF}
-              className="flex items-center justify-center gap-2 bg-[#162B49] text-white font-medium py-2.5 px-4 rounded-full text-sm"
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full inline-flex items-center justify-center gap-2 bg-[#1E7B54] hover:bg-[#176343] text-white font-semibold py-3 px-4 rounded-xl text-sm shadow-xs transition-colors"
             >
-              <Phone className="w-4 h-4" />
-              <span>{PHONE_DISPLAY}</span>
+              <span className="relative flex h-2 w-2 shrink-0">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-80"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <Phone className="w-4 h-4 shrink-0" />
+              <span>
+                {lang === 'RU'
+                  ? `Позвонить 24/7 (${PHONE_DISPLAY})`
+                  : lang === 'MNE'
+                  ? `Pozovite 24/7 (${PHONE_DISPLAY})`
+                  : `Call 24/7 (${PHONE_DISPLAY})`}
+              </span>
             </a>
-            <button
-              type="button"
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenModal();
-              }}
-              className="flex items-center justify-center gap-2 bg-[#1E7B54] text-white font-medium py-2.5 px-4 rounded-full text-sm"
+
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full inline-flex items-center justify-center gap-2 border border-[#162B49] text-[#162B49] hover:bg-[#F9F9FB] font-semibold py-3 px-4 rounded-xl text-sm transition-colors"
             >
-              <MessageCircle className="w-4 h-4" />
-              <span>{emergencyCtaLabel}</span>
-            </button>
+              <MessageCircle className="w-4 h-4 shrink-0 text-[#1E7B54]" />
+              <span>
+                {lang === 'RU'
+                  ? 'Написать в WhatsApp'
+                  : lang === 'MNE'
+                  ? 'Pišite na WhatsApp'
+                  : 'Message on WhatsApp'}
+              </span>
+            </a>
           </div>
         </div>
       )}

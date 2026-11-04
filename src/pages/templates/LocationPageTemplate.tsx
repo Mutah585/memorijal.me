@@ -171,7 +171,7 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
             aria-label="Breadcrumb"
             itemScope
             itemType="https://schema.org/BreadcrumbList"
-            className="flex flex-wrap items-center gap-1.5 text-xs sm:text-sm text-slateMuted"
+            className="text-xs text-slate-500 font-sans tracking-wide flex items-center gap-1.5 flex-wrap"
           >
             <span
               itemProp="itemListElement"
@@ -185,32 +185,32 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
                   e.preventDefault();
                   onNavigate(homePath);
                 }}
-                className="hover:text-sapphire font-medium"
+                className="hover:text-forest transition-colors font-medium"
               >
                 <span itemProp="name">{ui.home}</span>
               </a>
               <meta itemProp="position" content="1" />
             </span>
 
-            <ChevronRight className="w-3.5 h-3.5 text-warmStone shrink-0" />
+            <span className="text-slate-300 select-none">/</span>
 
             <span
               itemProp="itemListElement"
               itemScope
               itemType="https://schema.org/ListItem"
-              className="text-slateMuted"
+              className="inline-flex items-center text-slate-500"
             >
               <span itemProp="name">{categoryText}</span>
               <meta itemProp="position" content="2" />
             </span>
 
-            <ChevronRight className="w-3.5 h-3.5 text-warmStone shrink-0" />
+            <span className="text-slate-300 select-none">/</span>
 
             <span
               itemProp="itemListElement"
               itemScope
               itemType="https://schema.org/ListItem"
-              className="font-semibold text-sapphire"
+              className="inline-flex items-center font-semibold text-slate-900"
               aria-current="page"
             >
               <span itemProp="name">{page.breadcrumbLabel}</span>
@@ -221,7 +221,7 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
           <button
             type="button"
             onClick={() => onNavigate(homePath)}
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-sapphire hover:text-sapphire-light"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 hover:text-forest transition-colors"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             <span>{ui.backToHome}</span>
@@ -485,7 +485,8 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
           </div>
 
           <div className="mt-8 bg-white rounded-2xl border border-stoneBorder shadow-card overflow-hidden">
-            <div className="overflow-x-auto">
+            {/* Desktop Table View (≥ 768px) */}
+            <div className="hidden md:block overflow-x-auto">
               <table className="w-full text-left border-collapse">
                 <thead>
                   <tr className="bg-sapphire text-white text-xs uppercase tracking-wider">
@@ -515,6 +516,37 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
                 </tbody>
               </table>
             </div>
+
+            {/* Mobile Stacked Cards View (< 768px) */}
+            <div className="md:hidden divide-y divide-stoneBorder p-4 space-y-4">
+              {page.costItems.map((row, idx) => (
+                <div
+                  key={idx}
+                  className="flex flex-col gap-2.5 p-4 rounded-xl border border-stoneBorder bg-surface pt-4 first:pt-0 first:border-t-0"
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <p className="font-semibold text-slateDeep text-sm leading-snug">
+                      {row.item}
+                    </p>
+                    <span className="font-serif text-base font-bold text-sapphire shrink-0">
+                      {row.referenceCost}
+                    </span>
+                  </div>
+
+                  <p className="text-xs text-slateMuted leading-relaxed">
+                    {row.detail}
+                  </p>
+
+                  <div className="pt-1 flex items-center justify-between">
+                    <span className="inline-flex items-center gap-1.5 bg-forest-subtle text-forest font-semibold px-2.5 py-1 rounded-full text-[11px]">
+                      <CheckCircle2 className="w-3.5 h-3.5" />
+                      {row.includedStatus}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
             <div className="p-5 bg-porcelain border-t border-stoneBorder flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <p className="text-xs text-slateMuted flex items-center gap-2">
                 <FileCheck className="w-4 h-4 text-sapphire shrink-0" />
