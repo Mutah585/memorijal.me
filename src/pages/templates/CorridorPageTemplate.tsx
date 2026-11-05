@@ -397,10 +397,16 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
             </div>
 
             <div className="p-5 rounded-xl bg-porcelain border border-stoneBorder">
-              <span className="text-xs font-semibold uppercase tracking-wider text-warmStone flex items-center gap-1.5">
-                <FileCheck className="w-4 h-4 text-sapphire" />
-                {uiLabels.specConsular}
-              </span>
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-xs font-semibold uppercase tracking-wider text-warmStone flex items-center gap-1.5">
+                  <FileCheck className="w-4 h-4 text-sapphire" />
+                  {uiLabels.specConsular}
+                </span>
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-sapphire/10 text-sapphire border border-sapphire/20">
+                  <Clock className="w-3 h-3" />
+                  SLA
+                </span>
+              </div>
               <p className="mt-2 text-sm sm:text-base font-semibold text-slateDeep">
                 {page.specs.consularTimeframe}
               </p>
@@ -775,11 +781,31 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
         <PricingSection lang={localeSlugToLang(locale)} />
       )}
 
-      {/* 6.1 EMBASSIES & CONSULAR DIRECTORY (on Step-by-Step Guide) */}
-      {route.id === 'resource-guide' && (
+      {/* 6.1 EMBASSIES & CONSULAR DIRECTORY (on Step-by-Step Guide & Country Corridors) */}
+      {(route.id === 'resource-guide' ||
+        route.id === 'corridor-uk' ||
+        route.id === 'corridor-germany' ||
+        route.id === 'corridor-serbia' ||
+        route.id === 'corridor-ukraine' ||
+        route.id === 'corridor-russia') && (
         <section className="py-6 sm:py-10 bg-porcelain">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ConsularDirectory locale={locale} />
+            <ConsularDirectory
+              locale={locale}
+              initialFilter={
+                route.id === 'corridor-uk'
+                  ? 'uk'
+                  : route.id === 'corridor-germany'
+                  ? 'de'
+                  : route.id === 'corridor-serbia'
+                  ? 'rs'
+                  : route.id === 'corridor-ukraine'
+                  ? 'ua'
+                  : route.id === 'corridor-russia'
+                  ? 'ru'
+                  : 'all'
+              }
+            />
           </div>
         </section>
       )}

@@ -30,6 +30,7 @@ import { NotFound } from './pages/NotFound';
 import { sanitizeInternalPath } from './utils/security';
 import { CorridorPageTemplate } from './pages/templates/CorridorPageTemplate';
 import { LocationPageTemplate } from './pages/templates/LocationPageTemplate';
+import { DistressTriageView } from './components/DistressTriageView';
 
 const LANG_STORAGE_KEY = 'memorijal_lang';
 const SUPPORTED_LOCALES: LocaleSlug[] = ['en', 'ru', 'mne'];
@@ -120,6 +121,7 @@ export function App() {
   const [selectedRegion, setSelectedRegion] = useState<RegionType>('eu_uk');
   const [selectedLocation, setSelectedLocation] = useState<LocationType>('boka');
   const [modalOpen, setModalOpen] = useState(false);
+  const [isDistressMode, setIsDistressMode] = useState(false);
 
   const currentLocale = langToLocaleSlug(lang);
   const t = translations[lang];
@@ -223,11 +225,19 @@ export function App() {
         t={t}
         onOpenModal={() => setModalOpen(true)}
         onNavigate={handleNavigate}
+        isDistressMode={isDistressMode}
+        onToggleDistressMode={() => setIsDistressMode((prev) => !prev)}
       />
 
       {/* Main Content Router */}
       <main className="flex-1">
-        {isNotFound ? (
+        {isDistressMode ? (
+          <DistressTriageView
+            lang={lang}
+            onExit={() => setIsDistressMode(false)}
+            onOpenModal={() => setModalOpen(true)}
+          />
+        ) : isNotFound ? (
           <NotFound
             lang={lang}
             onNavigate={handleNavigate}
@@ -302,12 +312,14 @@ export function App() {
       </main>
 
       {/* 8. Footer */}
-      <Footer
-        lang={lang}
-        t={t}
-        onOpenModal={() => setModalOpen(true)}
-        onNavigate={handleNavigate}
-      />
+      {!isDistressMode && (
+        <Footer
+          lang={lang}
+          t={t}
+          onOpenModal={() => setModalOpen(true)}
+          onNavigate={handleNavigate}
+        />
+      )}
 
       {/* Persistent Mobile 24/7 Emergency Bar (< 768px past hero) */}
       <MobileEmergencyBar lang={lang} />

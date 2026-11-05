@@ -10,6 +10,8 @@ import {
   Check,
   AlertCircle,
   X,
+  Clock,
+  Calendar,
 } from 'lucide-react';
 import { LocaleSlug } from '../data/seo-routes';
 
@@ -29,6 +31,7 @@ interface EmbassyItem {
   address: string;
   city: string;
   phone?: string;
+  sla: Record<LocaleSlug, string>;
   notes?: {
     ru: string;
     en: string;
@@ -53,6 +56,11 @@ const EMBASSIES: EmbassyItem[] = [
     address: 'Ul. Džordža Vašingtona 44',
     city: '81000 Podgorica',
     phone: '+382 20 618 010',
+    sla: {
+      ru: 'Согласование с офисом Coroner — до 72 часов',
+      en: 'UK Coroner & Consular mortuary clearance (up to 72h)',
+      mne: 'Usklađivanje sa kancelarijom Koronera — do 72h',
+    },
     notes: {
       ru: 'Консульский отдел осуществляет выдачу справок о невмешательстве (Letter of No Objection / Repatriation note).',
       en: 'Consular section processes Letters of No Objection for repatriation of remains.',
@@ -75,6 +83,11 @@ const EMBASSIES: EmbassyItem[] = [
     address: 'Hercegovačka 10',
     city: '81000 Podgorica',
     phone: '+382 20 441 000',
+    sla: {
+      ru: 'Рассмотрение и консульское опечатывание — 24–48 часов',
+      en: '24–48h statutory review and consular Leichenpass sealing',
+      mne: 'Izdavanje Leichenpass i pečaćenje — 24–48 sati',
+    },
     notes: {
       ru: 'Оформление санитарного пропуска для урн и гробов (Leichenpass).',
       en: 'Issuance of consular transport clearance (Leichenpass).',
@@ -97,6 +110,11 @@ const EMBASSIES: EmbassyItem[] = [
     address: 'Bulevar Ivana Crnojevića 10, Podgorica | Trg Hercega Stjepana 15, Herceg Novi',
     city: 'Podgorica / Herceg Novi',
     phone: '+382 20 667 300',
+    sla: {
+      ru: 'Выдача Sprovodnica — 4–6 часов (в день обращения)',
+      en: 'Same-day transit permit clearance (4–6 hours)',
+      mne: 'Izdavanje Sprovodnice — 4–6 sati (istog dana)',
+    },
     notes: {
       ru: 'Выдача sprovodnica za prenos posmrtnih ostataka u Srbiju (Подгорица и Герцег-Нови).',
       en: 'Issuance of cross-border consular transit permits (Sprovodnica) in Podgorica and Herceg Novi.',
@@ -119,6 +137,11 @@ const EMBASSIES: EmbassyItem[] = [
     address: 'Serdara Jola Piletića 15',
     city: '81000 Podgorica',
     phone: '+382 20 320 400',
+    sla: {
+      ru: 'Консульское оформление — 24–36 часов',
+      en: '24–36h consular statutory clearance',
+      mne: 'Konzularna dozvola — 24–36 sati',
+    },
     notes: {
       ru: 'Оформление консульского разрешения на репатриацию и перевод свидетельств о смерти.',
       en: 'Consular certification for international repatriation, passport cancellation, and document verification.',
@@ -141,6 +164,11 @@ const EMBASSIES: EmbassyItem[] = [
     address: 'Veliše Mugoše 1',
     city: '81000 Podgorica',
     phone: '+382 20 272 460',
+    sla: {
+      ru: 'Оформление разрешения и опечатывание цинка — 24 часа',
+      en: '24h consular permit and zinc sealing',
+      mne: 'Izdavanje dozvole i pečaćenje cinka — 24 sata',
+    },
     notes: {
       ru: 'Выдача справки о невмешательстве, консульское опечатывание цинкового вкладыша/урны, аннулирование загранпаспорта.',
       en: 'Issuance of consular transport certificate, official sealing of zinc container/urn, cancellation of foreign passport.',
@@ -151,16 +179,19 @@ const EMBASSIES: EmbassyItem[] = [
 
 interface ConsularDirectoryProps {
   locale: LocaleSlug;
+  initialFilter?: 'all' | 'uk' | 'de' | 'rs' | 'ua' | 'ru';
 }
 
-export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) => {
-  const [selectedFilter, setSelectedFilter] = useState<string>('all');
-  const [openId, setOpenId] = useState<string | null>(null);
+export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale, initialFilter = 'all' }) => {
+  const [selectedFilter, setSelectedFilter] = useState<string>(initialFilter);
+  const [openId, setOpenId] = useState<string | null>(initialFilter !== 'all' ? initialFilter : null);
   const [copiedPhone, setCopiedPhone] = useState<string | null>(null);
   const [confirmCallModal, setConfirmCallModal] = useState<{
     phone: string;
     embassyName: string;
   } | null>(null);
+
+  const isWeekend = typeof window !== 'undefined' ? [0, 6].includes(new Date().getDay()) : false;
 
   const filterOptions = [
     {
@@ -230,6 +261,10 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
       reassuranceTitle: 'Подача документов без присутствия семьи',
       reassuranceText:
         'Memorijal d.o.o. подает документы во все дипломатические представительства в Подгорице по доверенности без участия семьи. Мы берем на себя консульские пошлины, перевод судебными переводчиками и получение санитарной справки (Sprovodnica).',
+      slaTitle: 'Сроки оформления:',
+      weekendTitle: 'Режим выходного дня (Сб–Вс)',
+      weekendText:
+        'Выходной день дипломатических миссий. Подготовка медицинских справок и запайка цинка ведутся дежурным координатором без потери времени.',
       copySuccess: 'Номер скопирован',
       copyTitle: 'Скопировать номер телефона',
       confirmCallTitle: 'Подтверждение вызова',
@@ -245,6 +280,10 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
       reassuranceTitle: 'Direct Consular Submission by Power of Attorney',
       reassuranceText:
         'Memorijal d.o.o. files all required statutory documentation directly with embassies in Podgorica under official power of attorney without requiring family attendance. We handle certified translations, statutory fees, and the international mortuary passport (Sprovodnica).',
+      slaTitle: 'Consular Clearance SLA:',
+      weekendTitle: 'Weekend Operations Mode (Sat–Sun)',
+      weekendText:
+        'Diplomatic missions are closed for the weekend. Medical clearance and certified zinc sealing are performed without delay by our on-duty coordinator.',
       copySuccess: 'Number copied',
       copyTitle: 'Copy phone number',
       confirmCallTitle: 'Confirm Consular Call',
@@ -260,6 +299,10 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
       reassuranceTitle: 'Podnošenje dokumentacije bez prisustva porodice',
       reassuranceText:
         'Memorijal d.o.o. predaje kompletnu dokumentaciju svim diplomatskim predstavništvima u Podgorici po ovlašćenju, bez ličnog prisustva ožalošćene porodice. Preuzimamo sudske prevode, konzularne takse i izdavanje sprovodnice.',
+      slaTitle: 'Rok konzularne obrade:',
+      weekendTitle: 'Režim rada vikendom (Sub–Ned)',
+      weekendText:
+        'Neradni dan diplomatskih misija. Priprema medicinske dokumentacije i lemljenje cinka obavlja dežurni koordinator bez odlaganja.',
       copySuccess: 'Broj kopiran',
       copyTitle: 'Kopirajte broj telefona',
       confirmCallTitle: 'Potvrda poziva',
@@ -304,6 +347,21 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
         </div>
       </div>
 
+      {/* Weekend alert banner */}
+      {isWeekend && (
+        <div className="mt-3 p-4 rounded-xl bg-amber-50 border border-amber-200/80 flex items-start gap-3 text-xs sm:text-sm text-amber-950 animate-in fade-in duration-150">
+          <Calendar className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
+          <div>
+            <strong className="block font-semibold text-amber-900">
+              {copy.weekendTitle}
+            </strong>
+            <p className="mt-0.5 text-amber-800 leading-relaxed text-xs">
+              {copy.weekendText}
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Interactive Country Filter Pills */}
       <div className="mt-6 flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none no-print">
         {filterOptions.map((filter) => {
@@ -343,16 +401,22 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
                 type="button"
                 onClick={() => toggle(item.id)}
                 aria-expanded={isOpen}
-                className="w-full flex items-center justify-between gap-4 text-left group"
+                className="w-full flex items-center justify-between gap-3 text-left group py-1"
               >
-                <div className="flex items-center gap-2.5">
-                  <MapPin className="w-4 h-4 text-sapphire shrink-0" />
-                  <span className="font-semibold text-sm sm:text-base text-slateDeep group-hover:text-sapphire transition-colors">
-                    {item.name[locale]}
+                <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-sapphire shrink-0" />
+                    <span className="font-semibold text-sm sm:text-base text-slateDeep group-hover:text-sapphire transition-colors truncate">
+                      {item.name[locale]}
+                    </span>
+                  </div>
+                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-sapphire/10 text-sapphire border border-sapphire/20 w-fit shrink-0">
+                    <Clock className="w-3 h-3 shrink-0" />
+                    <span>{item.sla[locale]}</span>
                   </span>
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
-                  <span className="text-xs text-slateMuted hidden sm:inline">
+                  <span className="text-xs text-slateMuted hidden md:inline">
                     {item.city}
                   </span>
                   {isOpen ? (
@@ -365,6 +429,15 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
 
               {isOpen && (
                 <div className="mt-3 pl-6 pr-2 text-xs sm:text-sm text-slate-600 space-y-2.5 animate-in fade-in duration-150">
+                  {/* Dynamic SLA badge in expanded row */}
+                  <div className="flex items-center gap-2 p-2.5 rounded-lg bg-sapphire/5 border border-sapphire/15 text-xs text-slateDeep">
+                    <Clock className="w-4 h-4 text-sapphire shrink-0" />
+                    <div>
+                      <span className="font-semibold text-sapphire mr-1.5">{copy.slaTitle}</span>
+                      <span className="font-medium text-slate-800">{item.sla[locale]}</span>
+                    </div>
+                  </div>
+
                   <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-slate-700">
                     <span className="inline-flex items-center gap-1.5 font-medium">
                       <span className="text-slate-400">Адрес / Adresa:</span> {item.address}, {item.city}

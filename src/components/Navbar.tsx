@@ -17,6 +17,8 @@ interface NavbarProps {
   t: TranslationContent;
   onOpenModal: () => void;
   onNavigate?: (localizedPath: string, hash?: string) => void;
+  isDistressMode?: boolean;
+  onToggleDistressMode?: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -25,6 +27,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   t,
   onOpenModal,
   onNavigate,
+  isDistressMode = false,
+  onToggleDistressMode,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -212,6 +216,48 @@ export const Navbar: React.FC<NavbarProps> = ({
               <Download className="w-3 h-3 shrink-0 text-emerald-300" />
               <span>{getVCardButtonLabel(lang)}</span>
             </button>
+
+            {/* Distress / Emergency Focus Mode Toggle */}
+            {onToggleDistressMode && (
+              <button
+                type="button"
+                onClick={onToggleDistressMode}
+                className={`inline-flex items-center gap-1.5 text-[11px] font-semibold px-2.5 py-1 rounded-full border transition-all cursor-pointer ${
+                  isDistressMode
+                    ? 'bg-amber-400 text-slate-950 border-amber-300 font-bold shadow-xs'
+                    : 'bg-white/10 hover:bg-white/20 text-[#D8E6F5] hover:text-white border-white/20'
+                }`}
+                title={
+                  lang === 'RU'
+                    ? 'Переключить режим экстренной помощи'
+                    : lang === 'MNE'
+                    ? 'Promijeni hitan režim'
+                    : 'Toggle emergency distress mode'
+                }
+              >
+                <span
+                  className={`w-1.5 h-1.5 rounded-full ${
+                    isDistressMode ? 'bg-slate-950 animate-pulse' : 'bg-amber-400'
+                  }`}
+                />
+                <span className="hidden sm:inline">
+                  {isDistressMode
+                    ? lang === 'RU'
+                      ? 'Полный вид сайта'
+                      : lang === 'MNE'
+                      ? 'Puni prikaz'
+                      : 'Full View'
+                    : lang === 'RU'
+                    ? 'Режим экстренной помощи'
+                    : lang === 'MNE'
+                    ? 'Hitan režim'
+                    : 'Distress View'}
+                </span>
+                <span className="sm:hidden">
+                  {isDistressMode ? 'Exit' : 'SOS'}
+                </span>
+              </button>
+            )}
           </div>
         </div>
       </div>
@@ -479,6 +525,37 @@ export const Navbar: React.FC<NavbarProps> = ({
               <Download className="w-4 h-4 shrink-0 text-sapphire" />
               <span>{getVCardButtonLabel(lang)}</span>
             </button>
+
+            {/* Mobile Distress Mode Toggle */}
+            {onToggleDistressMode && (
+              <button
+                type="button"
+                onClick={() => {
+                  onToggleDistressMode();
+                  setMobileMenuOpen(false);
+                }}
+                className={`w-full inline-flex items-center justify-center gap-2 font-semibold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition-colors border ${
+                  isDistressMode
+                    ? 'bg-slate-900 text-white border-slate-700'
+                    : 'bg-amber-50 text-amber-950 border-amber-300 hover:bg-amber-100'
+                }`}
+              >
+                <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                <span>
+                  {isDistressMode
+                    ? lang === 'RU'
+                      ? 'Вернуться к полному виду сайта'
+                      : lang === 'MNE'
+                      ? 'Povratak na puni prikaz sajta'
+                      : 'Switch back to Full Website'
+                    : lang === 'RU'
+                    ? 'Режим экстренной помощи'
+                    : lang === 'MNE'
+                    ? 'Hitan režim'
+                    : 'Distress / Emergency View'}
+                </span>
+              </button>
+            )}
           </div>
         </div>
       )}
