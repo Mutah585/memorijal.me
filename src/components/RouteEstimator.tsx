@@ -29,6 +29,8 @@ import {
   fetchLiveRates,
   convertPriceString,
 } from '../utils/currency';
+import { langToLocaleSlug } from '../data/seo-routes';
+import { CaseProgressStepper } from './CaseProgressStepper';
 
 interface RouteEstimatorProps {
   lang: Language;
@@ -81,42 +83,68 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
   // Handle Native Sharing (Web Share API) or Clipboard Fallback
   const handleShareEstimate = async () => {
     const formattedPrice = convertPriceString(currentMatrix.priceRange, selectedCurrency, rates);
-    const routeTitle = `${serviceInfo.label} (${locationInfo.label} → ${regionInfo.label})`;
+    const destination = regionInfo.label;
     const shareTitle = 'Memorijal d.o.o. • Расчет маршрута';
-    const shareText = `Маршрут: ${routeTitle} | Срок: ${currentMatrix.timeframe} | Стоимость: ${formattedPrice} | Дежурный координатор 24/7: ${PHONE_DISPLAY}`;
-    const shareUrl = typeof window !== 'undefined' ? window.location.href : 'https://memorijal.me';
+    const currentUrl = typeof window !== 'undefined' ? window.location.href : 'https://memorijal.me';
 
+    let shareText = '';
+    if (lang === 'RU') {
+      shareText = `Служба репатриации Memorijal (Черногория).\nПредварительный расчет по направлению ${destination}: от ${formattedPrice}.\nВключает: выезд координатора, санитарный пропуск (Sprovodnica), подготовку цинка и трансфер.\nДежурный координатор 24/7: ${PHONE_DISPLAY}.\nПодробнее: ${currentUrl}`;
+    } else if (lang === 'MNE') {
+      shareText = `Memorijal služba za repatrijaciju (Crna Gora).\nPreliminarna procjena za pravac ${destination}: od ${formattedPrice}.\nUključuje: izlazak koordinatora, sprovodnicu, pripremu cinka i transfer.\nDežurni koordinator 24/7: ${PHONE_DISPLAY}.\nDetaljnije: ${currentUrl}`;
+    } else {
+      shareText = `Memorijal Repatriation Service (Montenegro).\nPreliminary estimate for ${destination}: from ${formattedPrice}.\nIncludes: duty coordinator attendance, sanitary permit (Sprovodnica), zinc sealing and transfer.\n24/7 Duty Coordinator: ${PHONE_DISPLAY}.\nDetails: ${currentUrl}`;
+    }
+
+    let sharedSuccessfully = false;
     if (typeof navigator !== 'undefined' && navigator.share) {
       try {
-        await navigator.share({
-          title: shareTitle,
-          text: shareText,
-          url: shareUrl,
-        });
-        return;
+        await Promise.race([
+          navigator.share({
+            title: shareTitle,
+            text: shareText,
+            url: currentUrl,
+          }),
+          new Promise((_, reject) => setTimeout(() => reject(new Error('Share timeout')), 300)),
+        ]);
+        sharedSuccessfully = true;
       } catch {
-        // User cancelled or share failed, fallback to clipboard
+        // User cancelled, timed out or unsupported: fallback to clipboard
       }
     }
 
-    try {
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        await navigator.clipboard.writeText(`${shareText}\n${shareUrl}`);
-      } else {
-        const textarea = document.createElement('textarea');
-        textarea.value = `${shareText}\n${shareUrl}`;
-        textarea.style.position = 'fixed';
-        textarea.style.opacity = '0';
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
+    if (!sharedSuccessfully) {
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          try {
+            await navigator.clipboard.writeText(shareText);
+          } catch {
+            const textarea = document.createElement('textarea');
+            textarea.value = shareText;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+          }
+        } else {
+          const textarea = document.createElement('textarea');
+          textarea.value = shareText;
+          textarea.style.position = 'fixed';
+          textarea.style.opacity = '0';
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+        }
+      } catch {
+        // Silent fallback
       }
-      setCopiedShare(true);
-      setTimeout(() => setCopiedShare(false), 2500);
-    } catch {
-      // Silent failure fallback
     }
+
+    setCopiedShare(true);
+    setTimeout(() => setCopiedShare(false), 2500);
   };
   const buildWhatsAppHref = () => {
     if (isUrgentMode) {
@@ -540,6 +568,7 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
                 <div className="pt-2 flex items-center justify-between">
                   <button
                     type="button"
+                    data-testid="share-estimate-btn"
                     onClick={handleShareEstimate}
                     className="inline-flex items-center gap-2 text-xs font-semibold text-sapphire hover:text-sapphire-light p-1 rounded transition-colors group cursor-pointer"
                   >
@@ -556,10 +585,10 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
                           ? 'Detalji procjene kopirani'
                           : 'Estimate details copied to clipboard'
                         : lang === 'RU'
-                        ? 'Отправить расчет семье / страховой'
+                        ? 'Поделиться расчетом с семьей'
                         : lang === 'MNE'
-                        ? 'Pošalji procjenu porodici / osiguranju'
-                        : 'Share estimate with family / insurer'}
+                        ? 'Podijeli procjenu sa porodicom'
+                        : 'Share estimate with family'}
                     </span>
                   </button>
                 </div>
@@ -570,6 +599,11 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Transparent 4-Stage Case Progress Stepper Preview */}
+        <div className="mt-12">
+          <CaseProgressStepper locale={langToLocaleSlug(lang)} />
         </div>
       </div>
     </section>

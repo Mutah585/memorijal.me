@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Phone,
   Shield,
@@ -13,9 +13,6 @@ import {
   ArrowLeft,
   Building2,
   Printer,
-  ChevronDown,
-  ChevronUp,
-  AlertTriangle,
 } from 'lucide-react';
 import {
   LocaleSlug,
@@ -37,6 +34,7 @@ import { FaqSection } from '../../components/FaqSection';
 import { MortuaryTimeTracker } from '../../components/MortuaryTimeTracker';
 import { BelongingsCustodyProtocol } from '../../components/BelongingsCustodyProtocol';
 import { HomeDeathProtocol } from '../../components/HomeDeathProtocol';
+import { HotelIncidentProtocol } from '../../components/HotelIncidentProtocol';
 
 interface LocationPageTemplateProps {
   locale: LocaleSlug;
@@ -51,7 +49,6 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
   onNavigate,
   onOpenModal,
 }) => {
-  const [hotelProtocolOpen, setHotelProtocolOpen] = useState(false);
   const page = route.locales[locale];
 
   const homePath = buildLocalizedPath(locale, '/');
@@ -529,111 +526,9 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
             ))}
           </div>
 
-          {/* Hotelier & Marina Host Crisis Protocol Callout */}
-          <div className="mt-8 bg-white rounded-2xl border border-stoneBorder p-6 shadow-card">
-            <button
-              type="button"
-              onClick={() => setHotelProtocolOpen((prev) => !prev)}
-              aria-expanded={hotelProtocolOpen}
-              className="w-full flex items-center justify-between gap-4 text-left group"
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
-                  <Building2 className="w-5 h-5" />
-                </div>
-                <div>
-                  <div className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-amber-800">
-                    <AlertTriangle className="w-3.5 h-3.5" />
-                    <span>
-                      {locale === 'ru'
-                        ? 'Регламент для отельеров и марин'
-                        : locale === 'mne'
-                        ? 'Protokol za hotele i marine'
-                        : 'Hospitality & Marina Management Protocol'}
-                    </span>
-                  </div>
-                  <h3 className="font-serif text-lg sm:text-xl font-bold text-slateDeep group-hover:text-sapphire transition-colors mt-0.5">
-                    {locale === 'ru'
-                      ? 'Информация для администраторов отелей, вилл и марин (Porto Montenegro / Luštica Bay)'
-                      : locale === 'mne'
-                      ? 'Informacije za administratore hotela, vila i marina (Porto Montenegro / Luštica Bay)'
-                      : 'Information for Hotel, Villa & Marina Managers (Porto Montenegro / Luštica Bay)'}
-                  </h3>
-                </div>
-              </div>
-              <div className="shrink-0 p-1 rounded-lg text-slate-400 group-hover:text-slate-600">
-                {hotelProtocolOpen ? (
-                  <ChevronUp className="w-5 h-5" />
-                ) : (
-                  <ChevronDown className="w-5 h-5" />
-                )}
-              </div>
-            </button>
-
-            {hotelProtocolOpen && (
-              <div className="mt-6 pt-5 border-t border-stoneBorder space-y-4 animate-in fade-in duration-150">
-                <p className="text-xs sm:text-sm text-slateMuted leading-relaxed">
-                  {locale === 'ru'
-                    ? 'При наступлении внезапной кончины иностранного гостя на территории туристического комплекса критически важно соблюсти строгий процессуальный протокол:'
-                    : locale === 'mne'
-                    ? 'U slučaju iznenadne smrti stranog gosta u turističkom objektu, ključno je ispoštovati zakonsku proceduru:'
-                    : 'In the event of a sudden death of an international guest on hotel or marina premises, adherence to official protocol is critical:'}
-                </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-                  <div className="p-4 rounded-xl bg-porcelain border border-stoneBorder">
-                    <span className="font-bold text-sapphire block mb-1">
-                      {locale === 'ru'
-                        ? '1. Вызов экстренных служб'
-                        : locale === 'mne'
-                        ? '1. Poziv hitnim službama'
-                        : '1. Immediate Emergency Dispatch'}
-                    </span>
-                    <p className="text-slateMuted leading-relaxed">
-                      {locale === 'ru'
-                        ? 'Вызов скорой помощи (Hitna pomoć 124) и полиции (Policija 122). Категорически запрещено перемещать тело, багаж и вещи умершего до прибытия дежурного следователя.'
-                        : locale === 'mne'
-                        ? 'Pozvati Hitnu pomoć (124) i Policiju (122). Strogo je zabranjeno pomjeranje tijela, prtljaga i ličnih stvari prije dolaska dežurnog istražitelja.'
-                        : 'Dial Emergency Medical (Hitna pomoć 124) and Police (Policija 122). Do not move the body, luggage, or personal effects prior to the attending investigator’s arrival.'}
-                    </p>
-                  </div>
-
-                  <div className="p-4 rounded-xl bg-porcelain border border-stoneBorder">
-                    <span className="font-bold text-sapphire block mb-1">
-                      {locale === 'ru'
-                        ? '2. Опечатывание номера администрацией'
-                        : locale === 'mne'
-                        ? '2. Pečaćenje sobe / apartmana'
-                        : '2. Room & Belongings Sealing'}
-                    </span>
-                    <p className="text-slateMuted leading-relaxed">
-                      {locale === 'ru'
-                        ? 'Опечатывание номера или каюты ключом-картой администрацией до завершения следственного протокола и описи имущества уполномоченными органами.'
-                        : locale === 'mne'
-                        ? 'Privremeno zaključavanje i pečaćenje sobe/kabine od strane uprave objekta do sačinjavanja zvaničnog policijskog zapisnika o stvarima.'
-                        : 'Lock and seal room/berth access until the investigative officer and forensic examiner conclude the on-site evidence and inventory protocol.'}
-                    </p>
-                  </div>
-
-                  <div className="p-4 rounded-xl bg-porcelain border border-stoneBorder">
-                    <span className="font-bold text-sapphire block mb-1">
-                      {locale === 'ru'
-                        ? '3. Вызов аккредитованного координатора'
-                        : locale === 'mne'
-                        ? '3. Poziv licenciranog koordinatora'
-                        : '3. Accredited Coordinator Dispatch'}
-                    </span>
-                    <p className="text-slateMuted leading-relaxed">
-                      {locale === 'ru'
-                        ? 'Свяжитесь с Memorijal d.o.o. (+382 68 914 816). Мы берем на себя взаимодействие с полицией, консульством и семьей, деликатно защищая приватность и репутацию вашего объекта.'
-                        : locale === 'mne'
-                        ? 'Kontaktirajte Memorijal d.o.o. (+382 68 914 816). Preuzimamo vezu sa policijom, kapelom, ambasadom i porodicom uz punu zaštitu reputacije objekta.'
-                        : 'Liaise directly with Memorijal d.o.o. (+382 68 914 816). We manage police, consular, and family communication, safeguarding guest privacy and your establishment’s standing.'}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            )}
+          {/* Hotelier & Marina Host Crisis Protocol */}
+          <div className="mt-8">
+            <HotelIncidentProtocol locale={locale} />
           </div>
         </div>
       </section>

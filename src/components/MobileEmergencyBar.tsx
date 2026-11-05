@@ -18,6 +18,7 @@ export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) 
   const [visible, setVisible] = useState(false);
   const [sheetOpen, setSheetOpen] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
+  const [isIdlePulse, setIsIdlePulse] = useState(false);
   const dispatchStatus = getDispatchStatus(lang);
 
   useEffect(() => {
@@ -31,6 +32,29 @@ export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) 
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // 5-second idle trigger for gentle CTA reassurance pulse
+  useEffect(() => {
+    let idleTimer: ReturnType<typeof setTimeout>;
+
+    const resetIdle = () => {
+      setIsIdlePulse(false);
+      clearTimeout(idleTimer);
+      idleTimer = setTimeout(() => {
+        setIsIdlePulse(true);
+      }, 5000);
+    };
+
+    resetIdle();
+
+    const events = ['scroll', 'mousemove', 'touchstart', 'keydown'];
+    events.forEach((ev) => window.addEventListener(ev, resetIdle, { passive: true }));
+
+    return () => {
+      clearTimeout(idleTimer);
+      events.forEach((ev) => window.removeEventListener(ev, resetIdle));
+    };
   }, []);
 
   if (!visible) return null;
@@ -47,6 +71,13 @@ export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) 
       ? 'Pišite na WhatsApp 24/7'
       : 'WhatsApp 24/7';
 
+  const coordinatorReassurance =
+    lang === 'RU'
+      ? 'Круглосуточный русско- и англоязычный дежурный координатор'
+      : lang === 'MNE'
+      ? 'Dežurni koordinator 24/7 (engleski i ruski jezik)'
+      : '24/7 English & Russian-speaking duty coordinator';
+
   const whatsappHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
     lang === 'RU'
       ? 'Здравствуйте! Необходима экстренная консультация координатора Memorijal d.o.o. в Черногории.'
@@ -60,34 +91,45 @@ export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) 
       <div
         role="complementary"
         aria-label="Mobile Emergency Actions"
-        className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-stoneBorder px-4 py-2.5 flex items-center gap-3 pb-[max(0.625rem,env(safe-area-inset-bottom))] shadow-elevated transition-transform animate-in fade-in slide-in-from-bottom-2"
+        className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-stoneBorder px-3 py-2 flex flex-col gap-1 pb-[max(0.625rem,env(safe-area-inset-bottom))] shadow-elevated transition-transform animate-in fade-in slide-in-from-bottom-2"
       >
-        {/* Call 24/7 Button opens quick action sheet */}
-        <button
-          type="button"
-          onClick={() => setSheetOpen(true)}
-          className="inline-flex items-center justify-center gap-1.5 border border-sapphire text-sapphire hover:bg-sapphire-subtle px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-colors shrink-0 shadow-xs cursor-pointer"
-          aria-label={`${callLabel} - ${dispatchStatus.statusText}`}
-          title={dispatchStatus.statusText}
-        >
-          <span className="relative flex h-2 w-2 shrink-0">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-80"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-          </span>
-          <Phone className="w-3.5 h-3.5 text-sapphire shrink-0" />
-          <span>{callLabel}</span>
-        </button>
+        <div className="flex items-center gap-2.5">
+          {/* Call 24/7 Button opens quick action sheet */}
+          <button
+            type="button"
+            onClick={() => setSheetOpen(true)}
+            className={`inline-flex items-center justify-center gap-1.5 border border-sapphire text-sapphire hover:bg-sapphire-subtle px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 shadow-xs cursor-pointer ${
+              isIdlePulse
+                ? 'ring-2 ring-emerald-400 ring-offset-1 bg-emerald-50 text-slateDeep font-bold animate-pulse'
+                : ''
+            }`}
+            aria-label={`${callLabel} - ${dispatchStatus.statusText}`}
+            title={dispatchStatus.statusText}
+          >
+            <span className="relative flex h-2 w-2 shrink-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-80"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <Phone className="w-3.5 h-3.5 text-sapphire shrink-0" />
+            <span>{callLabel}</span>
+          </button>
 
-        {/* WhatsApp Button */}
-        <a
-          href={whatsappHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1 inline-flex items-center justify-center gap-2 bg-[#1E7B54] hover:bg-[#176343] text-white py-2.5 px-3 rounded-xl text-xs sm:text-sm font-semibold shadow-xs transition-colors truncate"
-        >
-          <MessageCircle className="w-4 h-4 shrink-0" />
-          <span className="truncate">{whatsappLabel}</span>
-        </a>
+          {/* WhatsApp Button */}
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 inline-flex items-center justify-center gap-2 bg-[#1E7B54] hover:bg-[#176343] text-white py-2.5 px-3 rounded-xl text-xs sm:text-sm font-semibold shadow-xs transition-colors truncate"
+          >
+            <MessageCircle className="w-4 h-4 shrink-0" />
+            <span className="truncate">{whatsappLabel}</span>
+          </a>
+        </div>
+
+        {/* Micro-caption reassurance */}
+        <p className="text-[10px] text-center text-slateMuted font-medium truncate px-1">
+          {coordinatorReassurance}
+        </p>
       </div>
 
       {/* Mobile Emergency Action Sheet */}

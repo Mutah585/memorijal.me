@@ -45,6 +45,8 @@ import { CabinUrnSelector } from '../../components/CabinUrnSelector';
 import { RemoteSavingsEstimator } from '../../components/RemoteSavingsEstimator';
 import { BelongingsCustodyProtocol } from '../../components/BelongingsCustodyProtocol';
 import { HomeDeathProtocol } from '../../components/HomeDeathProtocol';
+import { HotelIncidentProtocol } from '../../components/HotelIncidentProtocol';
+import { CaseProgressStepper } from '../../components/CaseProgressStepper';
 
 interface CorridorPageTemplateProps {
   locale: LocaleSlug;
@@ -556,6 +558,22 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           {(route.id === 'guide-hotel-death' || route.id === 'resource-guide') && (
             <div className="mt-6">
               <HomeDeathProtocol locale={locale} />
+            </div>
+          )}
+
+          {/* Hotel & Resort Emergency Incident Protocol */}
+          {(route.id === 'guide-hotel-death' || route.id === 'resource-guide') && (
+            <div className="mt-6">
+              <HotelIncidentProtocol locale={locale} />
+            </div>
+          )}
+
+          {/* Transparent 4-Stage Case Progress Stepper Preview */}
+          {(route.category === 'corridor' ||
+            route.id === 'resource-pricing' ||
+            route.id === 'pricing-breakdown') && (
+            <div className="mt-6">
+              <CaseProgressStepper locale={locale} />
             </div>
           )}
         </div>
