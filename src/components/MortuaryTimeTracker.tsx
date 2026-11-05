@@ -144,6 +144,13 @@ export const MortuaryTimeTracker: React.FC<MortuaryTimeTrackerProps> = ({
       eur: '€',
       reassurance:
         'При передаче кейса координатору Memorijal начисление коммерческих суток морга останавливается, а оформление выездных документов берется под контроль.',
+      nonDisposalTitle: 'Гарантия защиты от принудительного захоронения:',
+      nonDisposalGuarantee:
+        'Риск принудительного захоронения исключен. После регистрации кейса координатором Memorijal морг присваивает делу статус «Международная репатриация» и резервирует камеру до завершения консульских процедур.',
+      timelineTitle: 'Уставные этапы нахождения тела в морге больницы (Kotor / KCCG):',
+      timeline0_24: '0–24 ч: Льготный период (0 €)',
+      timeline24_7d: '24 ч – 7 дней: Оформление справок и запайка цинка',
+      timeline7_14d: '7–14 дней: Резерв камеры (статус «Международная репатриация»)',
       whatsappCta: 'Остановить начисления морга',
       whatsappPrefill: `Здравствуйте! Прошу помочь остановить коммерческие начисления морга в ${selectedHospital.name.ru}. Время поступления: ${selectedTimeRange}.`,
     },
@@ -168,6 +175,13 @@ export const MortuaryTimeTracker: React.FC<MortuaryTimeTrackerProps> = ({
       eur: '€',
       reassurance:
         'Upon authorizing Memorijal case dispatch, commercial mortuary surcharge accrual is frozen under official statutory requisition.',
+      nonDisposalTitle: 'Zero Municipal Disposal Guarantee:',
+      nonDisposalGuarantee:
+        'Zero risk of municipal disposal. Once Memorijal formally requisitions the case, clinical pathology assigns "International Repatriation" status, holding the body securely until diplomatic clearances finalize.',
+      timelineTitle: 'Statutory Mortuary Holding Bounds (Kotor / KCCG Podgorica):',
+      timeline0_24: '0–24h: Free statutory window (€0)',
+      timeline24_7d: '24h–7 days: Medical clearance & zinc hermetic sealing',
+      timeline7_14d: '7–14 days: Chamber reservation under International Repatriation status',
       whatsappCta: 'Freeze Mortuary Fees',
       whatsappPrefill: `Hello! Please assist in freezing commercial mortuary fees at ${selectedHospital.name.en}. Admission elapsed: ${selectedTimeRange}.`,
     },
@@ -192,6 +206,13 @@ export const MortuaryTimeTracker: React.FC<MortuaryTimeTrackerProps> = ({
       eur: '€',
       reassurance:
         'Angažovanjem koordinatora agencije Memorijal zaustavlja se obračun komercijalnih bolničkih troškova kapele.',
+      nonDisposalTitle: 'Garancija zaštite od prinudnog sahranjivanja:',
+      nonDisposalGuarantee:
+        'Isključen rizik prinudnog sahranjivanja. Nakon prijave slučaja od strane agencije Memorijal, kapela dodjeljuje status međunarodne repatrijacije.',
+      timelineTitle: 'Zakonski rokovi zadržavanja tijela u kapeli (Kotor / KCCG):',
+      timeline0_24: '0–24h: Zakonski besplatan boravak (0 €)',
+      timeline24_7d: '24h–7 dana: Priprema dokumentacije i lemljenje cinka',
+      timeline7_14d: '7–14 dana: Rezervacija komore pod statusom međunarodne repatrijacije',
       whatsappCta: 'Zaustavi obračun kapele',
       whatsappPrefill: `Dobar dan! Molim za pomoć oko zaustavljanja troškova ležarine u ${selectedHospital.name.mne}. Vrijeme prijema: ${selectedTimeRange}.`,
     },
@@ -316,8 +337,42 @@ export const MortuaryTimeTracker: React.FC<MortuaryTimeTrackerProps> = ({
         </div>
       </div>
 
+      {/* Institutional Statutory Timeline Bar */}
+      <div className="mt-6 p-4 rounded-xl bg-porcelain border border-stoneBorder space-y-2.5">
+        <span className="text-xs font-bold uppercase tracking-wider text-sapphire block">
+          {t.timelineTitle}
+        </span>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs">
+          <div className="p-3 rounded-lg bg-emerald-50 border border-emerald-200/80 text-emerald-950 font-medium">
+            <span className="block font-bold text-emerald-800 text-[11px] mb-0.5">0–24 ч</span>
+            <span>{t.timeline0_24}</span>
+          </div>
+          <div className="p-3 rounded-lg bg-sapphire/5 border border-sapphire/20 text-slate-800 font-medium">
+            <span className="block font-bold text-sapphire text-[11px] mb-0.5">24ч – 7 дней</span>
+            <span>{t.timeline24_7d}</span>
+          </div>
+          <div className="p-3 rounded-lg bg-slate-100 border border-slate-200 text-slate-800 font-medium">
+            <span className="block font-bold text-slate-700 text-[11px] mb-0.5">7–14 дней</span>
+            <span>{t.timeline7_14d}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Non-Disposal Reassurance Guarantee Banner */}
+      <div className="mt-4 p-4 rounded-xl bg-sapphire/10 border border-sapphire/30 flex items-start gap-3 text-xs sm:text-sm text-slateDeep">
+        <Shield className="w-5 h-5 text-sapphire shrink-0 mt-0.5" />
+        <div className="space-y-0.5">
+          <strong className="block font-bold text-sapphire">
+            {t.nonDisposalTitle}
+          </strong>
+          <p className="text-slate-700 leading-relaxed text-xs font-medium">
+            {t.nonDisposalGuarantee}
+          </p>
+        </div>
+      </div>
+
       {/* Reassurance Banner & WhatsApp Action Button */}
-      <div className="mt-6 pt-5 border-t border-stoneBorder/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-emerald-50/60 p-4 rounded-xl border border-emerald-200/60">
+      <div className="mt-4 pt-4 border-t border-stoneBorder/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-emerald-50/60 p-4 rounded-xl border border-emerald-200/60">
         <div className="flex items-start gap-3 max-w-2xl">
           <Shield className="w-5 h-5 text-emerald-700 shrink-0 mt-0.5" />
           <p className="text-xs text-emerald-900 leading-relaxed font-medium">

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageCircle, X, MessageSquare, Download, Check } from 'lucide-react';
+import { Phone, MessageCircle, X, MessageSquare, Download, Check, MapPin } from 'lucide-react';
 import {
   Language,
   PHONE_DISPLAY,
@@ -8,6 +8,7 @@ import {
 } from '../i18n/translations';
 import { getDispatchStatus } from '../utils/dispatchStatus';
 import { downloadVCard, getVCardButtonLabel } from '../utils/vcard';
+import { getWhatsAppGeolocationPrompt } from '../utils/whatsappHelpers';
 
 interface MobileEmergencyBarProps {
   lang: Language;
@@ -182,6 +183,12 @@ export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) 
                   </p>
                 </div>
               </a>
+
+              {/* Geolocation micro-caption */}
+              <div className="flex items-start gap-2 p-2.5 rounded-xl bg-emerald-50 border border-emerald-200/80 text-[11px] text-emerald-950 font-medium">
+                <MapPin className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
+                <p className="leading-snug">{getWhatsAppGeolocationPrompt(lang)}</p>
+              </div>
 
               {/* Option 3: SMS Dispatch Fallback (for low-connectivity zones / hospital basements) */}
               <a

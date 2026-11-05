@@ -33,6 +33,7 @@ interface CoordinatorModalProps {
 }
 
 type RelationType = 'family' | 'insurance' | 'embassy' | 'legal';
+type ClergyType = 'none' | 'orthodox' | 'catholic' | 'islamic' | 'other';
 
 const SESSION_STORAGE_KEY = 'memorijal_modal_draft';
 
@@ -43,6 +44,7 @@ interface FormDraft {
   service: ServiceType;
   region: RegionType;
   location: LocationType;
+  clergy?: ClergyType;
   notes: string;
 }
 
@@ -63,6 +65,7 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
   const [service, setService] = useState<ServiceType>(initialService);
   const [region, setRegion] = useState<RegionType>(initialRegion);
   const [location, setLocation] = useState<LocationType>(initialLocation);
+  const [clergy, setClergy] = useState<ClergyType>('none');
   const [notes, setNotes] = useState('');
   const [error, setError] = useState('');
   const [submittedRef, setSubmittedRef] = useState<string | null>(null);
@@ -90,6 +93,7 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
         if (parsed.service) setService(parsed.service);
         if (parsed.region) setRegion(parsed.region);
         if (parsed.location) setLocation(parsed.location);
+        if (parsed.clergy) setClergy(parsed.clergy);
         if (parsed.notes) setNotes(parsed.notes);
       }
     } catch {
@@ -117,15 +121,16 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
         service,
         region,
         location,
+        clergy,
         notes,
       };
       sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(draft));
     } catch {
       // Ignore quota errors
     }
-  }, [name, contact, relation, service, region, location, notes]);
+  }, [name, contact, relation, service, region, location, clergy, notes]);
 
-  const hasDraft = Boolean(name.trim() || contact.trim() || notes.trim());
+  const hasDraft = Boolean(name.trim() || contact.trim() || notes.trim() || clergy !== 'none');
   const isLocalNumberWithoutCode = contact.trim().startsWith('0');
 
   const contactHelperNote =
@@ -141,6 +146,7 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
     setName('');
     setContact('');
     setNotes('');
+    setClergy('none');
     setRelation('family');
     setService(initialService);
     setRegion(initialRegion);
@@ -200,11 +206,23 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
     const safeContact = sanitizeUserText(contact, 80).trim();
     const safeNotes = sanitizeUserText(notes, 500).trim();
 
+    const clergyLabel = {
+      none: '',
+      orthodox: lang === 'RU' ? 'Православное отпевание' : lang === 'MNE' ? 'Pravoslavno opijelo' : 'Eastern Orthodox Rites',
+      catholic: lang === 'RU' ? 'Католический обряд' : lang === 'MNE' ? 'Katolički obred' : 'Roman Catholic Rites',
+      islamic: lang === 'RU' ? 'Исламский регламент (Дженаза)' : lang === 'MNE' ? 'Islamski obred (Dženaza)' : 'Islamic Guidelines (Janazah)',
+      other: lang === 'RU' ? 'Другая конфессия / По запросу' : lang === 'MNE' ? 'Druga konfesija' : 'Other denomination / Custom',
+    }[clergy];
+
+    const clergySuffix = clergy !== 'none'
+      ? (lang === 'RU' ? `\n• Религиозный обряд: ${clergyLabel}` : lang === 'MNE' ? `\n• Vjerski obred: ${clergyLabel}` : `\n• Pastoral Care: ${clergyLabel}`)
+      : '';
+
     return lang === 'RU'
-      ? `Здравствуйте, Memorijal d.o.o.! Меня интересует репатриация (${regionLabel}), начальная оценка ${currentPrice}.\n• Имя: ${safeName || 'Не указано'}\n• Статус: ${relationLabel}\n• Контакт: ${safeContact || 'В чате'}\n• Услуга: ${serviceLabel}\n• Город в ЧГ: ${locationLabel}\n• Примечание: ${safeNotes || '-'}`
+      ? `Здравствуйте, Memorijal d.o.o.! Меня интересует репатриация (${regionLabel}), начальная оценка ${currentPrice}.\n• Имя: ${safeName || 'Не указано'}\n• Статус: ${relationLabel}\n• Контакт: ${safeContact || 'В чате'}\n• Услуга: ${serviceLabel}\n• Город в ЧГ: ${locationLabel}${clergySuffix}\n• Примечание: ${safeNotes || '-'}`
       : lang === 'MNE'
-      ? `Poštovani Memorijal d.o.o., interesuje me repatrijacija za ${regionLabel}, početna procjena ${currentPrice}.\n• Ime: ${safeName || 'Nije navedeno'}\n• Svojstvo: ${relationLabel}\n• Kontakt: ${safeContact || 'WhatsApp'}\n• Usluga: ${serviceLabel}\n• Lokacija u CG: ${locationLabel}\n• Napomena: ${safeNotes || '-'}`
-      : `Hello Memorijal d.o.o. Duty Coordinator, I am inquiring about repatriation to ${regionLabel}, starting estimate ${currentPrice}.\n• Name: ${safeName || 'Not specified'}\n• Capacity: ${relationLabel}\n• Contact: ${safeContact || 'Via WhatsApp'}\n• Procedure: ${serviceLabel}\n• Location in MNE: ${locationLabel}\n• Notes: ${safeNotes || '-'}`;
+      ? `Poštovani Memorijal d.o.o., interesuje me repatrijacija za ${regionLabel}, početna procjena ${currentPrice}.\n• Ime: ${safeName || 'Nije navedeno'}\n• Svojstvo: ${relationLabel}\n• Kontakt: ${safeContact || 'WhatsApp'}\n• Usluga: ${serviceLabel}\n• Lokacija u CG: ${locationLabel}${clergySuffix}\n• Napomena: ${safeNotes || '-'}`
+      : `Hello Memorijal d.o.o. Duty Coordinator, I am inquiring about repatriation to ${regionLabel}, starting estimate ${currentPrice}.\n• Name: ${safeName || 'Not specified'}\n• Capacity: ${relationLabel}\n• Contact: ${safeContact || 'Via WhatsApp'}\n• Procedure: ${serviceLabel}\n• Location in MNE: ${locationLabel}${clergySuffix}\n• Notes: ${safeNotes || '-'}`;
   };
 
   const buildDirectWhatsAppUrl = () => {
@@ -489,6 +507,62 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
                     <option value="cis_east">{t.estimator.regions.cis_east.label}</option>
                   </select>
                 </div>
+              </div>
+
+              {/* Multi-Faith Clergy & Pastoral Care Coordination Toggle */}
+              <div>
+                <label
+                  htmlFor="modal-clergy"
+                  className="block text-xs font-semibold uppercase tracking-wider text-slateDeep mb-1.5"
+                >
+                  {lang === 'RU'
+                    ? 'Требуется согласование религиозного обряда до транспортировки / кремации?'
+                    : lang === 'MNE'
+                    ? 'Da li je potreban vjerski obred prije transporta / kremacije?'
+                    : 'Require clergy coordination (religious rites / prayers) prior to transport/cremation?'}
+                </label>
+                <select
+                  id="modal-clergy"
+                  value={clergy}
+                  onChange={(e) => setClergy(e.target.value as ClergyType)}
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-stoneBorder bg-porcelain text-sm text-slateDeep focus:bg-white focus:border-sapphire outline-none cursor-pointer"
+                >
+                  <option value="none">
+                    {lang === 'RU'
+                      ? 'Не требуется / None'
+                      : lang === 'MNE'
+                      ? 'Nije potrebno / None'
+                      : 'None / Not required'}
+                  </option>
+                  <option value="orthodox">
+                    {lang === 'RU'
+                      ? 'Православное отпевание'
+                      : lang === 'MNE'
+                      ? 'Pravoslavno opijelo'
+                      : 'Eastern Orthodox Rites'}
+                  </option>
+                  <option value="catholic">
+                    {lang === 'RU'
+                      ? 'Католический обряд'
+                      : lang === 'MNE'
+                      ? 'Katolički obred'
+                      : 'Roman Catholic Rites'}
+                  </option>
+                  <option value="islamic">
+                    {lang === 'RU'
+                      ? 'Исламский регламент (Дженаза)'
+                      : lang === 'MNE'
+                      ? 'Islamski obred (Dženaza)'
+                      : 'Islamic Funeral Guidelines (Janazah)'}
+                  </option>
+                  <option value="other">
+                    {lang === 'RU'
+                      ? 'Другая конфессия / По согласованию'
+                      : lang === 'MNE'
+                      ? 'Druga konfesija'
+                      : 'Other denomination / Custom'}
+                  </option>
+                </select>
               </div>
 
               <div>
