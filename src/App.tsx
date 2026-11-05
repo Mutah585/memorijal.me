@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, lazy, Suspense } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import {
   Language,
   ServiceType,
@@ -28,18 +28,8 @@ import { CoordinatorModal } from './components/CoordinatorModal';
 import { MobileEmergencyBar } from './components/MobileEmergencyBar';
 import { NotFound } from './pages/NotFound';
 import { sanitizeInternalPath } from './utils/security';
-
-const CorridorPageTemplate = lazy(() =>
-  import('./pages/templates/CorridorPageTemplate').then((m) => ({
-    default: m.CorridorPageTemplate,
-  }))
-);
-
-const LocationPageTemplate = lazy(() =>
-  import('./pages/templates/LocationPageTemplate').then((m) => ({
-    default: m.LocationPageTemplate,
-  }))
-);
+import { CorridorPageTemplate } from './pages/templates/CorridorPageTemplate';
+import { LocationPageTemplate } from './pages/templates/LocationPageTemplate';
 
 const LANG_STORAGE_KEY = 'memorijal_lang';
 const SUPPORTED_LOCALES: LocaleSlug[] = ['en', 'ru', 'mne'];
@@ -291,35 +281,23 @@ export function App() {
             />
           </>
         ) : (
-          <Suspense
-            fallback={
-              <div className="py-24 text-center text-sm text-slateMuted">
-                {currentLocale === 'ru'
-                  ? 'Загрузка регламента и спецификации…'
-                  : currentLocale === 'mne'
-                  ? 'Učitavanje zakonske specifikacije…'
-                  : 'Loading protocol specification…'}
-              </div>
-            }
-          >
-            {currentRoute.category === 'location' ||
-            currentRoute.category === 'mortuary' ||
-            currentRoute.category === 'cemetery' ? (
-              <LocationPageTemplate
-                locale={currentLocale}
-                route={currentRoute}
-                onNavigate={handleNavigate}
-                onOpenModal={() => setModalOpen(true)}
-              />
-            ) : (
-              <CorridorPageTemplate
-                locale={currentLocale}
-                route={currentRoute}
-                onNavigate={handleNavigate}
-                onOpenModal={() => setModalOpen(true)}
-              />
-            )}
-          </Suspense>
+          currentRoute.category === 'location' ||
+          currentRoute.category === 'mortuary' ||
+          currentRoute.category === 'cemetery' ? (
+            <LocationPageTemplate
+              locale={currentLocale}
+              route={currentRoute}
+              onNavigate={handleNavigate}
+              onOpenModal={() => setModalOpen(true)}
+            />
+          ) : (
+            <CorridorPageTemplate
+              locale={currentLocale}
+              route={currentRoute}
+              onNavigate={handleNavigate}
+              onOpenModal={() => setModalOpen(true)}
+            />
+          )
         )}
       </main>
 

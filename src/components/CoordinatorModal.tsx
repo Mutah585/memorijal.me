@@ -54,6 +54,8 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
   initialRegion,
   initialLocation,
 }) => {
+  if (!isOpen) return null;
+
   const [name, setName] = useState('');
   const [contact, setContact] = useState('');
   const [relation, setRelation] = useState<RelationType>('family');
@@ -63,6 +65,17 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
   const [notes, setNotes] = useState('');
   const [error, setError] = useState('');
   const [submittedRef, setSubmittedRef] = useState<string | null>(null);
+
+  // Keyboard accessibility: Escape key handling
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [onClose]);
 
   // Restore draft from sessionStorage on initial mount
   useEffect(() => {

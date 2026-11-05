@@ -45,7 +45,7 @@ export const MetaManager: React.FC<MetaManagerProps> = ({ locale, route }) => {
     // 3. Standard SEO Meta Tags
     upsertMeta('name', 'description', pageData.metaDescription);
     upsertMeta('name', 'keywords', pageData.keywords.join(', '));
-    // Temporary indexing block until CRPS registration is finalized
+    // Indexing block until public launch
     upsertMeta('name', 'robots', 'noindex, nofollow, noarchive');
 
     // 4. OpenGraph Meta Tags

@@ -422,17 +422,18 @@ export const RouteEstimator: React.FC<RouteEstimatorProps> = ({
                           : 'Estimated cost:'}
                       </span>
                       {/* Currency Toggle */}
-                      <div className="inline-flex rounded-lg bg-black/25 p-0.5 text-[10px] font-semibold">
+                      <div className="inline-flex rounded-lg bg-black/25 p-0.5 text-xs font-semibold">
                         {(['EUR', 'GBP', 'USD'] as const).map((curr) => (
                           <button
                             key={curr}
                             type="button"
                             onClick={() => setSelectedCurrency(curr)}
-                            className={`px-1.5 py-0.5 rounded transition-colors ${
+                            className={`min-w-[28px] min-h-[28px] px-2 py-1 rounded-md transition-colors flex items-center justify-center ${
                               selectedCurrency === curr
                                 ? 'bg-white text-slateDeep shadow-xs'
                                 : 'text-slate-200 hover:text-white'
                             }`}
+                            aria-label={`Switch currency to ${curr}`}
                           >
                             {curr === 'EUR' ? '€' : curr === 'GBP' ? '£' : '$'}
                           </button>
