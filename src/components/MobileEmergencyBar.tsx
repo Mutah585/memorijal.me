@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageCircle, X, MessageSquare } from 'lucide-react';
+import { Phone, MessageCircle, X, MessageSquare, Download, Check } from 'lucide-react';
 import {
   Language,
   PHONE_DISPLAY,
@@ -7,6 +7,7 @@ import {
   WHATSAPP_NUMBER,
 } from '../i18n/translations';
 import { getDispatchStatus } from '../utils/dispatchStatus';
+import { downloadVCard, getVCardButtonLabel } from '../utils/vcard';
 
 interface MobileEmergencyBarProps {
   lang: Language;
@@ -15,6 +16,7 @@ interface MobileEmergencyBarProps {
 export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) => {
   const [visible, setVisible] = useState(false);
   const [sheetOpen, setSheetOpen] = useState(false);
+  const [toast, setToast] = useState<string | null>(null);
   const dispatchStatus = getDispatchStatus(lang);
 
   useEffect(() => {
@@ -204,11 +206,36 @@ export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) 
                 </div>
               </a>
 
-              {/* Option 3: Cancel */}
+              {/* Option 4: Save vCard Contact to phone */}
+              <button
+                type="button"
+                onClick={() => {
+                  downloadVCard(lang, (msg) => {
+                    setToast(msg);
+                    setTimeout(() => setToast(null), 3000);
+                  });
+                  setSheetOpen(false);
+                }}
+                className="w-full flex items-center gap-3 p-3.5 rounded-xl bg-porcelain border border-stoneBorder hover:bg-slate-100 transition-colors shadow-xs text-slateDeep cursor-pointer"
+              >
+                <div className="w-9 h-9 rounded-lg bg-sapphire/10 flex items-center justify-center shrink-0">
+                  <Download className="w-4 h-4 text-sapphire" />
+                </div>
+                <div className="flex-1 text-left min-w-0">
+                  <p className="font-semibold text-xs leading-snug">
+                    {getVCardButtonLabel(lang)}
+                  </p>
+                  <p className="text-[11px] text-slateMuted font-mono">
+                    .vcf • +382 68 914 816
+                  </p>
+                </div>
+              </button>
+
+              {/* Cancel Button */}
               <button
                 type="button"
                 onClick={() => setSheetOpen(false)}
-                className="w-full py-2.5 rounded-xl border border-stoneBorder text-slate-600 hover:bg-porcelain text-xs font-semibold transition-colors mt-1"
+                className="w-full py-2.5 rounded-xl border border-stoneBorder text-slate-600 hover:bg-porcelain text-xs font-semibold transition-colors mt-1 cursor-pointer"
               >
                 {lang === 'RU'
                   ? 'Отмена'
@@ -218,6 +245,18 @@ export const MobileEmergencyBar: React.FC<MobileEmergencyBarProps> = ({ lang }) 
               </button>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* Toast Alert for vCard download */}
+      {toast && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="fixed bottom-16 left-4 right-4 z-50 bg-slate-900/95 text-emerald-300 border border-emerald-500/40 text-xs font-semibold px-4 py-3 rounded-xl shadow-2xl backdrop-blur-sm animate-in fade-in slide-in-from-bottom-2 flex items-center justify-center gap-2"
+        >
+          <Check className="w-4 h-4 text-emerald-400 shrink-0" />
+          <span>{toast}</span>
         </div>
       )}
     </>

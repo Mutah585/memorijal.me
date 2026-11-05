@@ -34,6 +34,7 @@ import {
   PRICING_CTA_LABEL,
 } from '../../data/pricing';
 import { FaqSection } from '../../components/FaqSection';
+import { MortuaryTimeTracker } from '../../components/MortuaryTimeTracker';
 
 interface LocationPageTemplateProps {
   locale: LocaleSlug;
@@ -453,6 +454,11 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
                 ))}
               </ul>
             </div>
+          </div>
+
+          {/* Interactive Mortuary Free Time & Accrual Tracker */}
+          <div className="mt-8">
+            <MortuaryTimeTracker locale={locale} />
           </div>
         </div>
       </section>

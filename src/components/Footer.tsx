@@ -8,6 +8,7 @@ import {
   Globe,
   Copy,
   Check,
+  Download,
 } from 'lucide-react';
 import {
   Language,
@@ -24,6 +25,7 @@ import {
   ALL_SEO_ROUTES,
 } from '../data/seo-routes';
 import { GlossaryTerm } from './common/GlossaryTerm';
+import { downloadVCard, getVCardButtonLabel } from '../utils/vcard';
 
 interface FooterProps {
   lang: Language;
@@ -39,6 +41,7 @@ export const Footer: React.FC<FooterProps> = ({
   onNavigate,
 }) => {
   const [copied, setCopied] = useState(false);
+  const [vcardToast, setVcardToast] = useState<string | null>(null);
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}`;
   const locale = langToLocaleSlug(lang);
 
@@ -234,14 +237,29 @@ Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
                 <span>{OFFICIAL_EMAIL}</span>
               </a>
             </div>
-            <div className="pt-2">
+            <div className="pt-2 flex flex-col gap-2">
               <button
                 type="button"
                 onClick={onOpenModal}
-                className="inline-flex items-center gap-2 bg-forest hover:bg-forest-hover text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-forest hover:bg-forest-hover text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition-colors cursor-pointer"
               >
                 <Phone className="w-3.5 h-3.5" />
                 <span>{t.hero.primaryCta}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() =>
+                  downloadVCard(lang, (msg) => {
+                    setVcardToast(msg);
+                    setTimeout(() => setVcardToast(null), 3000);
+                  })
+                }
+                title={getVCardButtonLabel(lang)}
+                className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-slate-200 hover:text-white text-xs font-medium px-3.5 py-2 rounded-lg transition-colors border border-white/10 cursor-pointer"
+              >
+                <Download className="w-3.5 h-3.5 text-emerald-300" />
+                <span>{getVCardButtonLabel(lang)}</span>
               </button>
             </div>
           </div>
@@ -359,6 +377,18 @@ Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
           </p>
         </div>
       </div>
+
+      {/* Floating vCard Toast Alert */}
+      {vcardToast && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="fixed bottom-6 right-6 z-50 bg-slate-900/95 text-emerald-300 border border-emerald-500/40 text-xs font-semibold px-4 py-3 rounded-xl shadow-2xl backdrop-blur-sm animate-in fade-in slide-in-from-bottom-2 flex items-center gap-2"
+        >
+          <Check className="w-4 h-4 text-emerald-400 shrink-0" />
+          <span>{vcardToast}</span>
+        </div>
+      )}
     </footer>
   );
 };

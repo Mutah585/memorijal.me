@@ -245,23 +245,23 @@ export const ProcedureTimeline: React.FC<ProcedureTimelineProps> = ({ t, lang = 
         </div>
 
         {/* 4-Step Interactive Timeline Grid */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7 relative">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7 items-stretch">
           {STAGES.map((stage, index) => {
             const isExpanded = expandedIndex === index;
 
             return (
               <div
                 key={stage.number}
-                className={`bg-white rounded-2xl border transition-all duration-200 p-6 sm:p-7 shadow-card flex flex-col justify-between relative group cursor-pointer ${
+                className={`h-full flex flex-col justify-between bg-white rounded-2xl border transition-all duration-200 p-6 sm:p-7 shadow-card relative group cursor-pointer ${
                   isExpanded
-                    ? 'border-sapphire ring-2 ring-sapphire/10 shadow-elevated'
+                    ? 'border-sapphire ring-2 ring-sapphire/15 shadow-elevated bg-slate-50/50'
                     : 'border-stoneBorder hover:border-sapphire/40'
                 }`}
                 onClick={() => toggleStage(index)}
               >
-                <div>
+                <div className="flex-1 flex flex-col">
                   {/* Step Number & Timeframe Pill */}
-                  <div className="flex items-start justify-between gap-2 mb-5">
+                  <div className="flex items-start justify-between gap-2 mb-4">
                     <div className="flex items-center gap-2.5">
                       <span className="font-serif text-3xl font-bold text-sapphire leading-none">
                         {stage.number}
@@ -277,41 +277,21 @@ export const ProcedureTimeline: React.FC<ProcedureTimelineProps> = ({ t, lang = 
                   </div>
 
                   {/* Step Title & Subtitle */}
-                  <h3 className="font-serif text-lg sm:text-xl font-bold text-slateDeep leading-snug group-hover:text-sapphire transition-colors">
+                  <h3 className="font-serif text-lg font-bold text-slateDeep leading-snug group-hover:text-sapphire transition-colors">
                     {stage.title[loc]}
                   </h3>
                   <p className="mt-2 text-xs text-slateMuted leading-relaxed">
                     {stage.subtitle[loc]}
                   </p>
-
-                  {/* Expandable Checklist Details */}
-                  {isExpanded && (
-                    <div className="mt-4 pt-4 border-t border-stoneBorder/80 space-y-2.5 animate-in fade-in duration-150">
-                      <ul className="space-y-2 text-xs text-slateDeep">
-                        {stage.checklist[loc].map((item, idx) => (
-                          <li key={idx} className="flex items-start gap-2">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-forest shrink-0 mt-0.5" />
-                            <span className="leading-snug">{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-
-                      {/* Handled By Reassurance */}
-                      <div className="mt-3 p-2.5 rounded-lg bg-emerald-50 border border-emerald-200/80 flex items-start gap-2 text-[11px] text-emerald-900 font-medium">
-                        <UserCheck className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
-                        <span>{stage.handledBy[loc]}</span>
-                      </div>
-                    </div>
-                  )}
                 </div>
 
-                {/* Footer Toggle Cue */}
-                <div className="mt-5 pt-3 border-t border-stoneBorder/60 flex items-center justify-between text-xs text-slate-500">
+                {/* Footer Toggle Cue strictly fixed at the bottom with mt-auto */}
+                <div className="mt-auto pt-4 border-t border-stoneBorder/60 flex items-center justify-between text-xs text-slate-500">
                   <span className="text-[11px] font-semibold text-sapphire">
                     {isExpanded ? (
-                      loc === 'ru' ? 'Свернуть' : loc === 'mne' ? 'Zatvori' : 'Collapse'
+                      loc === 'ru' ? 'Скрыть детали' : loc === 'mne' ? 'Sakrij detalje' : 'Hide details'
                     ) : (
-                      loc === 'ru' ? 'Чек-лист этапа' : loc === 'mne' ? 'Lista detalja' : 'View checklist'
+                      loc === 'ru' ? 'Таймлайн и шаги' : loc === 'mne' ? 'Tajmlajn i koraci' : 'Timeline & steps'
                     )}
                   </span>
                   {isExpanded ? (
@@ -324,6 +304,78 @@ export const ProcedureTimeline: React.FC<ProcedureTimelineProps> = ({ t, lang = 
             );
           })}
         </div>
+
+        {/* Full-Width Expanded Stage Detail Drawer directly beneath the 4 cards */}
+        {expandedIndex !== null && (
+          <div className="mt-6 p-6 sm:p-8 rounded-2xl bg-white border border-sapphire/30 shadow-card animate-in fade-in duration-200">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-stoneBorder/80">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-sapphire-subtle flex items-center justify-center shrink-0">
+                  {stepIcons[expandedIndex]}
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="font-serif text-base sm:text-lg font-bold text-sapphire">
+                      {loc === 'ru'
+                        ? `Этап ${STAGES[expandedIndex].number}`
+                        : loc === 'mne'
+                        ? `Faza ${STAGES[expandedIndex].number}`
+                        : `Stage ${STAGES[expandedIndex].number}`}
+                    </span>
+                    <span className="text-xs text-slateMuted">•</span>
+                    <span className="inline-flex items-center gap-1 text-xs font-semibold text-warmStone bg-alabaster px-2.5 py-0.5 rounded-md border border-stoneBorder">
+                      <Clock className="w-3 h-3 text-sapphire" />
+                      {STAGES[expandedIndex].timeframe}
+                    </span>
+                  </div>
+                  <h4 className="font-serif text-lg sm:text-xl font-bold text-slateDeep mt-0.5">
+                    {STAGES[expandedIndex].title[loc]}
+                  </h4>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setExpandedIndex(null)}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors self-start sm:self-center cursor-pointer"
+              >
+                <ChevronUp className="w-4 h-4" />
+                <span>
+                  {loc === 'ru' ? 'Свернуть' : loc === 'mne' ? 'Zatvori' : 'Close'}
+                </span>
+              </button>
+            </div>
+
+            {/* 3 Checklist Items Grid */}
+            <div className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-4">
+              {STAGES[expandedIndex].checklist[loc].map((item, idx) => (
+                <div
+                  key={idx}
+                  className="p-4 rounded-xl bg-porcelain border border-stoneBorder flex items-start gap-3"
+                >
+                  <CheckCircle2 className="w-4 h-4 text-forest shrink-0 mt-0.5" />
+                  <span className="text-xs text-slateDeep font-medium leading-relaxed">
+                    {item}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Reassurance Banner */}
+            <div className="mt-5 p-3.5 rounded-xl bg-emerald-50 border border-emerald-200/80 flex items-center justify-between flex-wrap gap-3">
+              <div className="flex items-center gap-2.5 text-xs text-emerald-950 font-medium">
+                <UserCheck className="w-4 h-4 text-emerald-700 shrink-0" />
+                <span>{STAGES[expandedIndex].handledBy[loc]}</span>
+              </div>
+              <span className="text-[11px] font-semibold text-emerald-700 uppercase tracking-wider">
+                {loc === 'ru'
+                  ? 'Дистанционное оформление по доверенности'
+                  : loc === 'mne'
+                  ? 'Daljinsko ovlašćenje bez prisustva porodice'
+                  : 'Zero family travel required'}
+              </span>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, MessageCircle, Menu, X, Check, Copy } from 'lucide-react';
+import { Phone, MessageCircle, Menu, X, Check, Copy, Download } from 'lucide-react';
 import {
   Language,
   TranslationContent,
@@ -9,6 +9,7 @@ import {
 } from '../i18n/translations';
 import { langToLocaleSlug, buildLocalizedPath } from '../data/seo-routes';
 import { getDispatchStatus } from '../utils/dispatchStatus';
+import { downloadVCard, getVCardButtonLabel } from '../utils/vcard';
 
 interface NavbarProps {
   lang: Language;
@@ -27,6 +28,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [vcardToast, setVcardToast] = useState<string | null>(null);
 
   const languages: Language[] = ['EN', 'RU', 'MNE'];
   const currentLocale = langToLocaleSlug(lang);
@@ -194,6 +196,22 @@ export const Navbar: React.FC<NavbarProps> = ({
               <MessageCircle className="w-3 h-3 shrink-0" />
               <span>WhatsApp 24/7</span>
             </a>
+
+            {/* One-Click vCard Contact Download */}
+            <button
+              type="button"
+              onClick={() =>
+                downloadVCard(lang, (msg) => {
+                  setVcardToast(msg);
+                  setTimeout(() => setVcardToast(null), 3000);
+                })
+              }
+              title={getVCardButtonLabel(lang)}
+              className="hidden xl:inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-[#D8E6F5] hover:text-white font-medium px-2.5 py-1 rounded-full text-[11px] leading-none transition-colors border border-white/10 cursor-pointer"
+            >
+              <Download className="w-3 h-3 shrink-0 text-emerald-300" />
+              <span>{getVCardButtonLabel(lang)}</span>
+            </button>
           </div>
         </div>
       </div>
@@ -445,7 +463,35 @@ export const Navbar: React.FC<NavbarProps> = ({
                   : 'Message on WhatsApp'}
               </span>
             </a>
+
+            {/* Mobile vCard Download */}
+            <button
+              type="button"
+              onClick={() => {
+                downloadVCard(lang, (msg) => {
+                  setVcardToast(msg);
+                  setTimeout(() => setVcardToast(null), 3000);
+                });
+                setMobileMenuOpen(false);
+              }}
+              className="w-full inline-flex items-center justify-center gap-2 border border-stoneBorder bg-porcelain text-slateDeep hover:bg-stone-200 font-semibold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition-colors cursor-pointer"
+            >
+              <Download className="w-4 h-4 shrink-0 text-sapphire" />
+              <span>{getVCardButtonLabel(lang)}</span>
+            </button>
           </div>
+        </div>
+      )}
+
+      {/* Toast Alert for vCard download */}
+      {vcardToast && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="fixed bottom-6 right-6 z-50 bg-slate-900/95 text-emerald-300 border border-emerald-500/40 text-xs font-semibold px-4 py-3 rounded-xl shadow-2xl backdrop-blur-sm animate-in fade-in slide-in-from-bottom-2 flex items-center gap-2"
+        >
+          <Check className="w-4 h-4 text-emerald-400 shrink-0" />
+          <span>{vcardToast}</span>
         </div>
       )}
     </header>

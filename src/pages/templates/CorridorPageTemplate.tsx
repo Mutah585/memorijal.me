@@ -37,6 +37,8 @@ import { FaqSection } from '../../components/FaqSection';
 import { DocumentChecklist } from '../../components/DocumentChecklist';
 import { ConsularDirectory } from '../../components/ConsularDirectory';
 import { IataCabinUrnNotice } from '../../components/IataCabinUrnNotice';
+import { FlightRouteHelper } from '../../components/FlightRouteHelper';
+import { GopRequestBuilder } from '../../components/GopRequestBuilder';
 
 interface CorridorPageTemplateProps {
   locale: LocaleSlug;
@@ -482,6 +484,14 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
 
           {/* IATA Airport Cabin Urn Security Compliance Card */}
           <IataCabinUrnNotice locale={locale} className="mt-6" />
+
+          {/* Interactive IATA Direct Flight Hub Selector */}
+          <FlightRouteHelper locale={locale} className="mt-6" />
+
+          {/* B2B Guarantee of Payment (GOP) Request Form Generator for Insurers & Assistances */}
+          {route.category === 'assistance' && (
+            <GopRequestBuilder locale={locale} className="mt-6" />
+          )}
         </div>
       </section>
 
