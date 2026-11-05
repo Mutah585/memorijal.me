@@ -97,16 +97,24 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
     priceRange: 'from €450',
     taxID: '03489217',
     vatID: '30/31-20948-4',
-    ...(isMortuaryRoute
-      ? {
-          knowsAbout: [
-            'Sanitary Inspection',
-            'Hermetic Zinc Soldering',
-            'Forensic Autopsy Clearance',
-            'Air Cargo HUM Transport',
-          ],
-        }
-      : {}),
+    description:
+      'Authorized international repatriation coordination agency in Montenegro dispatching accredited licensed carriers, hermetic zinc soldering, consular clearances, and IATA Cargo HUM air bookings.',
+    knowsAbout: isMortuaryRoute
+      ? [
+          'International Repatriation Coordination',
+          'Dispatched Licensed Carrier Logistics',
+          'Sanitary Inspection',
+          'Hermetic Zinc Soldering',
+          'Forensic Autopsy Clearance',
+          'Air Cargo HUM Transport',
+        ]
+      : [
+          'International Repatriation Coordination',
+          'Dispatched Licensed Carrier Logistics',
+          'Sanitary Transit Permits (Sprovodnica)',
+          'Consular Laissez-Passer Mortuaire',
+          'IATA Cargo HUM Air Freight',
+        ],
     makesOffer: STANDARD_PRICING_PACKAGES.map((pkg) => ({
       '@type': 'Offer',
       itemOffered: {

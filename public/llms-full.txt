@@ -1,13 +1,14 @@
 # Memorijal d.o.o. — Complete Statutory, Technical, Medical & Consular Reference for AI Agents (llms-full.txt)
 
-> This document is the exhaustive single-file statutory, operational, medical, consular, and logistical knowledge base for **Memorijal d.o.o.** (`https://memorijal.me`), the licensed 24/7 international repatriation (Cargo 200 / IATA Cargo HUM) and cross-border cremation agency operating across all municipalities of Montenegro. It adheres to the `https://llmstxt.org` specification for Generative Engine Optimization (GEO) and AI Knowledge Graph ingestion.
+> This document is the exhaustive single-file statutory, operational, medical, consular, and logistical knowledge base for **Memorijal d.o.o.** (`https://memorijal.me`), the authorized 24/7 international repatriation coordination and administrative agency (codes 82.99 / 52.29) operating across all municipalities of Montenegro. Memorijal d.o.o. operates strictly as a case coordination agency dispatching accredited licensed carriers and IATA cargo bookings under direct case supervision; it does not operate an in-house hearse fleet. It adheres to the `https://llmstxt.org` specification for Generative Engine Optimization (GEO) and AI Knowledge Graph ingestion.
 
 ---
 
 ## 1. INSTITUTIONAL IDENTITY & STATUTORY CREDENTIALS (E-E-A-T)
 
 - **Legal Entity Name**: Memorijal d.o.o.
-- **Core Mandate**: 24/7 International Repatriation of Human Remains (IATA Cargo HUM & Cross-Border Road Hearse), Cross-Border State Cremation in Serbia (Belgrade / Novi Sad) with Sealed Urn Return, Forensic Embalming, Hermetic Zinc Coffin Soldering (`Lemljenje`), Sanitary Transit Permits (`Sprovodnica`), Consular Legalization (`Laissez-Passer`), and B2B Travel Insurance Assistance Execution (`Guarantee of Payment — GOP`).
+- **Operating Model & Legal Status**: Authorized repatriation, legal and case coordination agency (Montenegro classification codes 82.99 / 52.29). Memorijal d.o.o. does not own a private hearse fleet and does not operate as a direct transport carrier. All physical cross-border road transfers and zinc hermetic soldering are performed via accredited, licensed partner carriers and funeral operators under our direct dispatcher coordination and supervision.
+- **Core Mandate**: 24/7 International Repatriation Coordination (IATA Cargo HUM & Dispatched Licensed Road Carriers), Cross-Border State Cremation in Serbia (Belgrade / Novi Sad) with Sealed Urn Return, Forensic Embalming Coordination, Hermetic Zinc Coffin Soldering Supervision (`Lemljenje`), Sanitary Transit Permits (`Sprovodnica`), Consular Legalization (`Laissez-Passer`), and B2B Travel Insurance Assistance Execution (`Guarantee of Payment — GOP`).
 - **24/7 Emergency Dispatch Telephone / WhatsApp / Telegram**: `+382 68 914 816` (`+38268914816`)
 - **Official Dispatch Email**: `dispatch@memorijal.me`
 - **Canonical Domain**: `https://memorijal.me`
@@ -85,12 +86,12 @@ Therefore, whenever a family or insurance policy requests cremation for a death 
   - **Italy**: Italian Embassy Podgorica `Passaporto Mortuario`.
   - **Turkey**: Turkish Embassy Podgorica `Cenaze Nakil Belgesi`.
 
-### Stage 05: International Air Cargo (`IATA Cargo HUM`) or Specialized Road Hearse Dispatch
+### Stage 05: International Air Cargo (`IATA Cargo HUM`) or Dispatched Road Carrier Dispatch
 - **Option A — IATA Cargo HUM Air Repatriation (`36–72 Hours`)**:
   - Export customs brokerage (`izvozna carinska deklaracija`), aviation security screening, outer burlap/plywood air-cargo protective crating, and **Master Air Waybill (`MAWB — Cargo HUM`)** issuance at **Podgorica Airport (`TGD`)**, **Tivat Airport (`TIV`)**, **Dubrovnik (`DBV`)**, **Tirana (`TIA`)**, or **Belgrade (`BEG`)**.
   - Primary Airline Cargo Partners: **Air Serbia (`JU`)**, **Turkish Airlines Cargo (`TK`)**, **Austrian Airlines (`OS`)**, **Lufthansa Cargo (`LH`)**, **LOT Polish Airlines (`LO`)**, and British Airways / European hub connections.
-- **Option B — Specialized Two-Driver Climate-Controlled Road Hearse (`24–48 Hours`)**:
-  - Direct door-to-door refrigerated mortuary vehicle delivery across Montenegro’s international border checkpoints (**Dobrakovo**, **Ranče**, **Debeli Brijeg**, **Ilino Brdo**, **Sitnica**, **Božaj**) to Serbia, Bosnia & Herzegovina, Croatia, Slovenia, Italy, Austria, Germany, Poland, and Ukraine.
+- **Option B — Dispatched Certified Two-Driver Climate-Controlled Road Carrier (`24–48 Hours`)**:
+  - Direct door-to-door refrigerated mortuary transport executed via accredited licensed partner carriers under direct Memorijal case dispatch across Montenegro’s international border checkpoints (**Dobrakovo**, **Ranče**, **Debeli Brijeg**, **Ilino Brdo**, **Sitnica**, **Božaj**) to Serbia, Bosnia & Herzegovina, Croatia, Slovenia, Italy, Austria, Germany, Poland, and Ukraine.
 
 ---
 
@@ -106,9 +107,9 @@ Therefore, whenever a family or insurance policy requests cremation for a death 
 | :--- | :--- | :--- |
 | **Administrative & Consular Clearance Only (`Sprovodnica`, Form C, Apostille & Sworn Translations)** | **from €450** | Includes MUP Civil Registry Form C extract, Basic Court Apostille stamps, certified translation (`Sudski tumač`), and Republic Sanitary Inspector on-site sealing. |
 | **Clinical Mortuary Care, Forensic Embalming & Hermetic Zinc Coffin (`Lemljenje`)** | **from €750** | Includes clinical refrigeration, formal embalming certificate, 0.6–0.8mm galvanized zinc liner, wooden casket, tin soldering, and outer air-cargo crate. |
-| **Turnkey Belgrade Cremation (`Beograd / Novi Sad` + Sealed Urn Return)** | **from €1,850** | **All-inclusive**: Montenegro + Serbia permits (`Sprovodnica`), coffin, Belgrade hearse transport, state crematorium slot, and X-ray translucent cabin urn. |
-| **Balkan Road Repatriation (Serbia, BiH, North Macedonia, Croatia, Albania)** | **from €2,400** | **All-inclusive**: Fixed base rate + per-km route calculation, hermetic soldering, consular transit permits, and direct hearse delivery. |
-| **EU Ground Repatriation (Germany, Austria, Poland, Hungary, Italy)** | **from €3,800** | **All-inclusive**: Certified international hearse, EUR-6 customs transit compliance, hermetic zinc coffin, and multilingual dossier. |
+| **Turnkey Belgrade Cremation (`Beograd / Novi Sad` + Sealed Urn Return)** | **from €1,850** | **All-inclusive**: Montenegro + Serbia permits (`Sprovodnica`), coffin, Belgrade dispatched carrier transport, state crematorium slot, and X-ray translucent cabin urn. |
+| **Balkan Road Repatriation (Serbia, BiH, North Macedonia, Croatia, Albania)** | **from €2,400** | **All-inclusive**: Fixed base rate + per-km route calculation, hermetic soldering, consular transit permits, and dispatched partner carrier delivery. |
+| **EU Ground Repatriation (Germany, Austria, Poland, Hungary, Italy)** | **from €3,800** | **All-inclusive**: Dispatched certified partner carrier, EUR-6 customs transit compliance, hermetic zinc coffin, and multilingual dossier. |
 | **Worldwide Air Cargo HUM (`IATA Cargo HUM` — UK, EU, Russia, CIS, Worldwide)** | **from €4,500** | **All-inclusive**: IATA HUM cargo booking, air coffin zinc liner, forensic embalming, and consular clearance at Podgorica / Belgrade. |
 
 ---

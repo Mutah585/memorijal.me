@@ -150,15 +150,6 @@ export const SeoHubNavigator: React.FC<SeoHubNavigatorProps> = ({
                         : 'All Corridors',
                   },
                   {
-                    id: 'eu_uk',
-                    label:
-                      locale === 'ru'
-                        ? 'Евросоюз и UK'
-                        : locale === 'mne'
-                        ? 'Evropska unija i UK'
-                        : 'EU & UK',
-                  },
-                  {
                     id: 'balkans',
                     label:
                       locale === 'ru'
@@ -166,6 +157,15 @@ export const SeoHubNavigator: React.FC<SeoHubNavigatorProps> = ({
                         : locale === 'mne'
                         ? 'Srbija i Balkan'
                         : 'Serbia & Balkans',
+                  },
+                  {
+                    id: 'eu_uk',
+                    label:
+                      locale === 'ru'
+                        ? 'Евросоюз и UK'
+                        : locale === 'mne'
+                        ? 'Evropska unija i UK'
+                        : 'EU & UK',
                   },
                   {
                     id: 'cis_east',
@@ -194,7 +194,7 @@ export const SeoHubNavigator: React.FC<SeoHubNavigatorProps> = ({
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 min-h-[380px] content-start">
             {filteredCorridorRoutes.map((route) => {
               const data = route.locales[locale];
               const href = buildLocalizedPath(locale, route.path);

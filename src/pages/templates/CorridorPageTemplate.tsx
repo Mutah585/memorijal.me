@@ -36,6 +36,7 @@ import { PricingSection } from '../../components/PricingSection';
 import { FaqSection } from '../../components/FaqSection';
 import { DocumentChecklist } from '../../components/DocumentChecklist';
 import { ConsularDirectory } from '../../components/ConsularDirectory';
+import { IataCabinUrnNotice } from '../../components/IataCabinUrnNotice';
 
 interface CorridorPageTemplateProps {
   locale: LocaleSlug;
@@ -479,71 +480,8 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
             <DocumentChecklist locale={locale} />
           </div>
 
-          {/* IATA Airport Cabin Urn Security Notice Card */}
-          <div className="mt-6 p-6 rounded-2xl bg-white border border-stoneBorder shadow-card">
-            <div className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-wider text-sapphire mb-3">
-              <Shield className="w-4 h-4 text-emerald-600 shrink-0" />
-              <span>
-                {locale === 'ru'
-                  ? 'Регламент IATA: перевозка урны с прахом в ручной клади самолёта'
-                  : locale === 'mne'
-                  ? 'IATA protokol: prevoz urne sa pepelom u ručnom prtljagu aviona'
-                  : 'IATA Protocol: Carriage of Cremated Remains in Aircraft Cabin'}
-              </span>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-slateDeep">
-              <div className="p-3.5 rounded-xl bg-porcelain border border-stoneBorder">
-                <span className="font-semibold text-sapphire block mb-1">
-                  {locale === 'ru'
-                    ? '1. Рентгенопрозрачный материал'
-                    : locale === 'mne'
-                    ? '1. Rendgenski propustan materijal'
-                    : '1. Radiotransparent Material'}
-                </span>
-                <p className="text-slateMuted leading-relaxed">
-                  {locale === 'ru'
-                    ? 'Материал урны (дерево, камень, композит) обязан беспрепятственно просвечиваться на интроскопе безопасности в TGD, TIV, BEG.'
-                    : locale === 'mne'
-                    ? 'Urna od drveta, kamena ili kompozita mora biti provjerljiva na aerodromskom skeneru bez otvaranja (TGD, TIV, BEG).'
-                    : 'Urn material (wood, stone, composite) must allow clear X-ray screening at TGD, TIV, and BEG airport security checkpoints.'}
-                </p>
-              </div>
-
-              <div className="p-3.5 rounded-xl bg-porcelain border border-stoneBorder">
-                <span className="font-semibold text-sapphire block mb-1">
-                  {locale === 'ru'
-                    ? '2. Пломбировка и сертификат'
-                    : locale === 'mne'
-                    ? '2. Pečat i potvrda o kremaciji'
-                    : '2. Crematorium Seal & Certificate'}
-                </span>
-                <p className="text-slateMuted leading-relaxed">
-                  {locale === 'ru'
-                    ? 'Обязательно наличие заводской пломбы крематория и официального свидетельства (Potvrda o kremaciji) с апостилем.'
-                    : locale === 'mne'
-                    ? 'Obavezno postojanje fabričkog pečata krematorijuma i zvanične potvrde o kremaciji sa prevodom.'
-                    : 'Factory seal and official Certificate of Cremation (Potvrda o kremaciji) with consular translation are mandatory.'}
-                </p>
-              </div>
-
-              <div className="p-3.5 rounded-xl bg-porcelain border border-stoneBorder">
-                <span className="font-semibold text-sapphire block mb-1">
-                  {locale === 'ru'
-                    ? '3. Без грузовых наценок авиакомпаний'
-                    : locale === 'mne'
-                    ? '3. Bez teretnih doplata avio-kompanija'
-                    : '3. Zero Airline Cargo Surcharges'}
-                </span>
-                <p className="text-slateMuted leading-relaxed">
-                  {locale === 'ru'
-                    ? 'Урна перевозится пассажиром в салоне самолёта как ручная кладь без оформления дорогостоящего авиа-груза Cargo HUM.'
-                    : locale === 'mne'
-                    ? 'Urnu putnik nosi lično u putničku kabinu bez potrebe za plaćanjem skupog teretnog Cargo HUM transporta.'
-                    : 'Urn is safely transported as unchecked cabin baggage by the passenger without expensive Cargo HUM airway fees.'}
-                </p>
-              </div>
-            </div>
-          </div>
+          {/* IATA Airport Cabin Urn Security Compliance Card */}
+          <IataCabinUrnNotice locale={locale} className="mt-6" />
         </div>
       </section>
 

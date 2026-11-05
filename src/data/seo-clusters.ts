@@ -627,7 +627,7 @@ const CLUSTER_SEEDS: ClusterTopicSeed[] = [
       timeframe: 'Fast 15-Minute Border Transit',
       mode: 'Climate-Controlled Mortuary Hearse',
       priceRange: 'Included in Serbia & Belgrade Cremation Road Packages',
-      specificFaqQ: 'When do your hearses use Ranče–Jabuka instead of Dobrakovo?',
+      specificFaqQ: 'When do partner hearses dispatched by Memorijal use Ranče–Jabuka instead of Dobrakovo?',
       specificFaqA: 'Ranče–Jabuka is the fastest route when transporting from Žabljak, Pljevlja, Nikšić, or Boka Bay via the Nikšić–Šavnik–Žabljak corridor toward Western Serbia (Užice, Čačak) and Belgrade.',
       specificFaq2Q: 'Is full sanitary Sprovodnica clearance accepted at Ranče–Jabuka 24/7?',
       specificFaq2A: 'Yes, Ranče–Jabuka is a 24/7 international road checkpoint accepting bilateral Montenegro–Serbia Sprovodnica permits.',
@@ -990,7 +990,7 @@ const CLUSTER_SEEDS: ClusterTopicSeed[] = [
       specificFaqQ: 'How close is the Sitnica border checkpoint to Meljine Hospital and Igalo?',
       specificFaqA: 'Sitnica is located just 20 minutes above Herceg Novi and Igalo on the modern toll-free road to Trebinje.',
       specificFaq2Q: 'Are Sprovodnica permits verified at Sitnica–Zupci 24 hours a day?',
-      specificFaq2A: 'Yes, our hearses cross Sitnica–Zupci 24/7 with full bilateral customs and sanitary documentation.',
+      specificFaq2A: 'Yes, certified vehicles of our accredited partner carriers cross Sitnica–Zupci 24/7 under Memorijal dispatch with full bilateral customs and sanitary documentation.',
     },
     ru: {
       breadcrumb: 'КПП Ситница — Зупци (Херцег-Нови — Требинье)',

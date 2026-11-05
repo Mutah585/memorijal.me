@@ -161,7 +161,7 @@ export const STANDARD_PRICING_PACKAGES: PricingPackageItem[] = [
     schemaName:
       'EU Cross-Border Ground Repatriation (Germany, Austria, Poland, Hungary)',
     schemaDescription:
-      'Starting price for certified international hearse, EUR-6 customs transit compliance, and multilingual dossier',
+      'Starting price for dispatched certified partner carrier, EUR-6 customs transit compliance, and multilingual dossier',
     locales: {
       en: {
         title:
@@ -169,7 +169,7 @@ export const STANDARD_PRICING_PACKAGES: PricingPackageItem[] = [
         badge: 'Schengen & EU Overland Corridor',
         formattedPrice: `From${NBSP}€3,800`,
         subtext:
-          'Certified international hearse, EUR-6 customs transit compliance, multilingual dossier.',
+          'Certified international partner carrier, EUR-6 customs transit compliance, multilingual dossier.',
         clarification: PRICING_CLARIFICATION_NOTE.en,
         ctaLabel: PRICING_CTA_LABEL.en,
         whatsappMessage:
@@ -181,7 +181,7 @@ export const STANDARD_PRICING_PACKAGES: PricingPackageItem[] = [
         badge: 'Международный коридор ЕС / Шенген',
         formattedPrice: `От${NBSP}3${NBSP}800${NBSP}€`,
         subtext:
-          'Сертифицированный международный катафалк EUR-6, соблюдение таможенного транзита ЕС, многоязычное досье.',
+          'Сертифицированный спецтранспорт лицензированного партнера EUR-6, соблюдение таможенного транзита ЕС, многоязычное досье.',
         clarification: PRICING_CLARIFICATION_NOTE.ru,
         ctaLabel: PRICING_CTA_LABEL.ru,
         whatsappMessage:
@@ -193,7 +193,7 @@ export const STANDARD_PRICING_PACKAGES: PricingPackageItem[] = [
         badge: 'EU / Šengen kopneni koridor',
         formattedPrice: `Od${NBSP}3.800${NBSP}€`,
         subtext:
-          'Sertifikovano međunarodno pogrebno vozilo EUR-6, carinska usklađenost za tranzit kroz EU i višejezični dosije.',
+          'Sertifikovano međunarodno specijalno vozilo licenciranog partnera EUR-6, carinska usklađenost za tranzit kroz EU i višejezični dosije.',
         clarification: PRICING_CLARIFICATION_NOTE.mne,
         ctaLabel: PRICING_CTA_LABEL.mne,
         whatsappMessage:

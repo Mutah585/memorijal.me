@@ -696,8 +696,8 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
             answer: 'Diplomatic and sanitary mortuary transports holding an official Sprovodnica and Embassy Laissez-Passer receive priority customs clearance at border checkpoints.',
           },
           {
-            question: 'Are your hearses equipped with refrigeration for summer transit?',
-            answer: 'Yes. Every vehicle in our fleet features certified independent refrigeration maintaining statutory temperatures across long-distance European corridors.',
+            question: 'Are vehicles equipped with refrigeration for summer transit?',
+            answer: 'Transport is executed using certified, temperature-controlled specialized funeral vehicles of our accredited licensed partner carriers under direct Memorijal case dispatch and supervision.',
           },
           {
             question: 'Do you provide live GPS updates during the road journey?',
@@ -744,7 +744,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           },
           {
             question: 'Оборудованы ли автомобили холодильными установками?',
-            answer: 'Да, все катафалки оснащены сертифицированными рефрижераторными системами для поддержания температурного режима в любое время года.',
+            answer: 'Транспортировка осуществляется на сертифицированном спецтранспорте аккредитованных лицензированных партнеров-перевозчиков под нашим прямым диспетчерским контролем.',
           },
           {
             question: 'Как отслеживается движение автомобиля по маршруту?',
@@ -791,7 +791,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           },
           {
             question: 'Da li su vozila opremljena rashladnim komorama?',
-            answer: 'Da, sva naša vozila posjeduju sertifikovane rashladne sisteme po evropskim sanitarnim standardima.',
+            answer: 'Prevoz se obavlja sertifikovanim specijalnim pogrebnim vozilima licenciranih partnerskih prevoznika pod direktnim operativnim nadzorom agencije Memorijal.',
           },
           {
             question: 'Da li porodica dobija obavještenja tokom puta?',

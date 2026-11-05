@@ -159,7 +159,7 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
   const [copiedPhone, setCopiedPhone] = useState<string | null>(null);
   const [confirmCallModal, setConfirmCallModal] = useState<{
     phone: string;
-    countryName: string;
+    embassyName: string;
   } | null>(null);
 
   const filterOptions = [
@@ -218,7 +218,7 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
     if (!item.phone) return;
     setConfirmCallModal({
       phone: item.phone,
-      countryName: item.countryName[locale],
+      embassyName: item.name[locale],
     });
   };
 
@@ -233,8 +233,8 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
       copySuccess: 'Номер скопирован',
       copyTitle: 'Скопировать номер телефона',
       confirmCallTitle: 'Подтверждение вызова',
-      confirmCallText: (country: string) =>
-        `Позвонить в дежурную службу консульства ${country}?`,
+      confirmCallText: (name: string) =>
+        `Позвонить в дежурную службу консульства «${name}»?`,
       callBtn: 'Вызов',
       cancelBtn: 'Отмена',
     },
@@ -248,9 +248,9 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
       copySuccess: 'Number copied',
       copyTitle: 'Copy phone number',
       confirmCallTitle: 'Confirm Consular Call',
-      confirmCallText: (country: string) =>
-        `Place a call to the consular duty desk of ${country}?`,
-      callBtn: 'Call',
+      confirmCallText: (name: string) =>
+        `Call ${name} Consular Emergency Line?`,
+      callBtn: 'Dial',
       cancelBtn: 'Cancel',
     },
     mne: {
@@ -263,8 +263,8 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
       copySuccess: 'Broj kopiran',
       copyTitle: 'Kopirajte broj telefona',
       confirmCallTitle: 'Potvrda poziva',
-      confirmCallText: (country: string) =>
-        `Pozvati dežurnu službu konzulata ${country}?`,
+      confirmCallText: (name: string) =>
+        `Pozvati dežurnu konzularnu liniju «${name}»?`,
       callBtn: 'Pozovi',
       cancelBtn: 'Otkaži',
     },
@@ -442,11 +442,31 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale }) 
                 {copy.confirmCallTitle}
               </h4>
               <p className="mt-2 text-xs sm:text-sm text-slateMuted leading-relaxed">
-                {copy.confirmCallText(confirmCallModal.countryName)}
+                {copy.confirmCallText(confirmCallModal.embassyName)}
               </p>
-              <p className="mt-2 text-xs font-mono font-bold text-sapphire bg-slate-50 p-2 rounded-lg border border-slate-200">
-                {confirmCallModal.phone}
-              </p>
+              <div className="mt-3 flex items-center justify-between gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-200">
+                <span className="text-sm font-mono font-bold text-sapphire">
+                  {confirmCallModal.phone}
+                </span>
+                <button
+                  type="button"
+                  onClick={(e) => handleCopyPhone(e, confirmCallModal.phone)}
+                  className="inline-flex items-center gap-1 px-2 py-1 rounded-md text-xs font-semibold text-slate-600 hover:text-slateDeep hover:bg-slate-200 transition-colors"
+                  title={copy.copyTitle}
+                >
+                  {copiedPhone === confirmCallModal.phone ? (
+                    <span className="text-forest inline-flex items-center gap-1">
+                      <Check className="w-3.5 h-3.5" />
+                      <span>{copy.copySuccess}</span>
+                    </span>
+                  ) : (
+                    <>
+                      <Copy className="w-3.5 h-3.5" />
+                      <span>{copy.copyTitle}</span>
+                    </>
+                  )}
+                </button>
+              </div>
             </div>
 
             <div className="mt-6 flex items-center justify-end gap-3">
