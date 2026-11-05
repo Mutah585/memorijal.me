@@ -39,6 +39,9 @@ import { ConsularDirectory } from '../../components/ConsularDirectory';
 import { IataCabinUrnNotice } from '../../components/IataCabinUrnNotice';
 import { FlightRouteHelper } from '../../components/FlightRouteHelper';
 import { GopRequestBuilder } from '../../components/GopRequestBuilder';
+import { SanitaryCorridorMap } from '../../components/SanitaryCorridorMap';
+import { PoaDrafter } from '../../components/PoaDrafter';
+import { CabinUrnSelector } from '../../components/CabinUrnSelector';
 
 interface CorridorPageTemplateProps {
   locale: LocaleSlug;
@@ -497,6 +500,36 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           {/* B2B Guarantee of Payment (GOP) Request Form Generator for Insurers & Assistances */}
           {route.category === 'assistance' && (
             <GopRequestBuilder locale={locale} className="mt-6" />
+          )}
+
+          {/* Interactive SVG Sanitary Transit Map on transit checkpoints & road corridors */}
+          {(route.category === 'transit' ||
+            route.id === 'service-road' ||
+            route.id === 'corridor-serbia' ||
+            route.id === 'corridor-bosnia' ||
+            route.id === 'corridor-croatia') && (
+            <div className="mt-6">
+              <SanitaryCorridorMap locale={locale} />
+            </div>
+          )}
+
+          {/* Bilingual Power of Attorney (Punomoćje) Drafter */}
+          {(route.id === 'guide-poa' ||
+            route.id === 'service-legal-administrative' ||
+            route.id === 'resource-guide') && (
+            <div className="mt-6">
+              <PoaDrafter locale={locale} />
+            </div>
+          )}
+
+          {/* Cabin-Approved Urn Material & Dimension Selector */}
+          {(route.id === 'guide-urn-cabin' ||
+            route.id === 'service-cremation' ||
+            route.id === 'guide-cremation-costs' ||
+            route.id === 'guide-cremation-costs-belgrade') && (
+            <div className="mt-6">
+              <CabinUrnSelector locale={locale} />
+            </div>
           )}
         </div>
       </section>

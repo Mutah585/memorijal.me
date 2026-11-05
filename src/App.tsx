@@ -31,6 +31,7 @@ import { sanitizeInternalPath } from './utils/security';
 import { CorridorPageTemplate } from './pages/templates/CorridorPageTemplate';
 import { LocationPageTemplate } from './pages/templates/LocationPageTemplate';
 import { DistressTriageView } from './components/DistressTriageView';
+import { OfflineCallFallback } from './components/OfflineCallFallback';
 
 const LANG_STORAGE_KEY = 'memorijal_lang';
 const SUPPORTED_LOCALES: LocaleSlug[] = ['en', 'ru', 'mne'];
@@ -334,6 +335,9 @@ export function App() {
         initialRegion={selectedRegion}
         initialLocation={selectedLocation}
       />
+
+      {/* Network Offline / Mountain Blindspot Safeguard Banner */}
+      <OfflineCallFallback locale={currentLocale} />
     </div>
   );
 }
