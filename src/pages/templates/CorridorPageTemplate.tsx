@@ -42,6 +42,9 @@ import { GopRequestBuilder } from '../../components/GopRequestBuilder';
 import { SanitaryCorridorMap } from '../../components/SanitaryCorridorMap';
 import { PoaDrafter } from '../../components/PoaDrafter';
 import { CabinUrnSelector } from '../../components/CabinUrnSelector';
+import { RemoteSavingsEstimator } from '../../components/RemoteSavingsEstimator';
+import { BelongingsCustodyProtocol } from '../../components/BelongingsCustodyProtocol';
+import { HomeDeathProtocol } from '../../components/HomeDeathProtocol';
 
 interface CorridorPageTemplateProps {
   locale: LocaleSlug;
@@ -531,6 +534,30 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
               <CabinUrnSelector locale={locale} />
             </div>
           )}
+
+          {/* Remote Handling vs. Family Travel Savings Calculator */}
+          {(route.category === 'corridor' ||
+            route.id === 'resource-pricing' ||
+            route.id === 'pricing-breakdown' ||
+            route.id === 'resource-guide') && (
+            <div className="mt-6">
+              <RemoteSavingsEstimator locale={locale} />
+            </div>
+          )}
+
+          {/* Mortuary Belongings & Valuables Custody Protocol */}
+          {route.id === 'resource-guide' && (
+            <div className="mt-6">
+              <BelongingsCustodyProtocol locale={locale} />
+            </div>
+          )}
+
+          {/* Home & Private Rental Villa 30-Minute Rapid Action Protocol */}
+          {(route.id === 'guide-hotel-death' || route.id === 'resource-guide') && (
+            <div className="mt-6">
+              <HomeDeathProtocol locale={locale} />
+            </div>
+          )}
         </div>
       </section>
 
@@ -809,7 +836,8 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
         </div>
       </section>
 
-      {(route.id === 'pricing-breakdown' ||
+      {(route.id === 'resource-pricing' ||
+        route.id === 'pricing-breakdown' ||
         route.id === 'guide-cremation-costs-belgrade') && (
         <PricingSection lang={localeSlugToLang(locale)} />
       )}

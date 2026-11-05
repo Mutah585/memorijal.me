@@ -20,6 +20,7 @@ import {
   WHATSAPP_NUMBER,
 } from '../i18n/translations';
 import { sanitizeUserText } from '../utils/security';
+import { PrivacyDataWipe } from './PrivacyDataWipe';
 
 interface CoordinatorModalProps {
   isOpen: boolean;
@@ -574,6 +575,13 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
                     </span>
                   </button>
                 )}
+              </div>
+
+              <div className="mt-4 pt-3 border-t border-stoneBorder flex justify-center">
+                <PrivacyDataWipe
+                  locale={lang === 'RU' ? 'ru' : lang === 'MNE' ? 'mne' : 'en'}
+                  onWipe={handleClearDraft}
+                />
               </div>
             </form>
           )}

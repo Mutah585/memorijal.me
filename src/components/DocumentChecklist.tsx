@@ -365,6 +365,26 @@ export const DocumentChecklist: React.FC<DocumentChecklistProps> = ({ locale }) 
                 </div>
               </div>
 
+              {/* Valuables Custody Safeguard Protocol */}
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <h4 className="font-bold text-slateDeep uppercase tracking-wider text-[11px] mb-2 flex items-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-sapphire" />
+                  <span>
+                    {locale === 'ru'
+                      ? 'Опись ценностей и личных вещей из морга / отеля (Zapisnik o stvarima):'
+                      : locale === 'mne'
+                      ? 'Popis ličnih stvari i dragocjenosti (Zapisnik o primopredaji):'
+                      : 'Valuables & Personal Belongings Custody Protocol:'}
+                  </span>
+                </h4>
+                <div className="grid grid-cols-2 gap-2 text-slate-700 text-[11px]">
+                  <span>□ Загранпаспорт и документы (Passport / IDs)</span>
+                  <span>□ Смартфон / Планшет (Phone / Tablet)</span>
+                  <span>□ Обручальное кольцо / Украшения (Jewelry)</span>
+                  <span>□ Кошелек и банковские карты (Wallet / Cash)</span>
+                </div>
+              </div>
+
               {/* Statutory Reassurance */}
               <div className="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-950 flex items-start gap-2.5">
                 <ShieldCheck className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />

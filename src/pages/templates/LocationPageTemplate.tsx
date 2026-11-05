@@ -35,6 +35,8 @@ import {
 } from '../../data/pricing';
 import { FaqSection } from '../../components/FaqSection';
 import { MortuaryTimeTracker } from '../../components/MortuaryTimeTracker';
+import { BelongingsCustodyProtocol } from '../../components/BelongingsCustodyProtocol';
+import { HomeDeathProtocol } from '../../components/HomeDeathProtocol';
 
 interface LocationPageTemplateProps {
   locale: LocaleSlug;
@@ -459,6 +461,16 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
           {/* Interactive Mortuary Free Time & Accrual Tracker */}
           <div className="mt-8">
             <MortuaryTimeTracker locale={locale} />
+          </div>
+
+          {/* Mortuary Belongings & Valuables Custody Checklist */}
+          <div className="mt-8">
+            <BelongingsCustodyProtocol locale={locale} />
+          </div>
+
+          {/* Home & Private Rental Villa 30-Minute Rapid Action Protocol */}
+          <div className="mt-8">
+            <HomeDeathProtocol locale={locale} />
           </div>
         </div>
       </section>

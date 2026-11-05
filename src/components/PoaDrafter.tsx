@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { LocaleSlug } from '../data/seo-routes';
 import { OFFICIAL_EMAIL, PHONE_DISPLAY } from '../i18n/translations';
+import { PrivacyDataWipe } from './PrivacyDataWipe';
 
 export interface PoaDrafterProps {
   locale: LocaleSlug;
@@ -342,6 +343,15 @@ Principal: __________________________`;
         </div>
 
         <div className="flex items-center gap-3">
+          <PrivacyDataWipe
+            locale={locale}
+            onWipe={() => {
+              setDeceasedName('');
+              setPrincipalName('');
+              setRelationship('');
+            }}
+          />
+
           <button
             type="button"
             onClick={handleCopy}

@@ -26,6 +26,7 @@ import {
 } from '../data/seo-routes';
 import { GlossaryTerm } from './common/GlossaryTerm';
 import { downloadVCard, getVCardButtonLabel } from '../utils/vcard';
+import { PrivacyDataWipe } from './PrivacyDataWipe';
 
 interface FooterProps {
   lang: Language;
@@ -368,6 +369,8 @@ Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
             <p>{t.footer.copyright}</p>
             <span className="hidden sm:inline text-white/20">•</span>
             <p>{t.footer.privacyNote}</p>
+            <span className="hidden sm:inline text-white/20">•</span>
+            <PrivacyDataWipe locale={locale} />
           </div>
           <p className="text-slate-400">
             {t.footer.creditPrefix}{' '}
