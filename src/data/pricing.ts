@@ -365,9 +365,9 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
   {
     tierId: 'tier1',
     badge: {
-      en: 'Tier 1 • Core Repatriation & Memorial Services (7 Tariffs)',
-      ru: 'Уровень 1 • Основные ритуальные и мемориальные услуги (7 тарифов)',
-      mne: 'Nivo 1 • Osnovne usluge repatrijacije i sahrane (7 tarifa)',
+      en: 'CORE REPATRIATION & MEMORIAL SERVICES',
+      ru: 'ОСНОВНЫЕ УСЛУГИ РЕПАТРИАЦИИ И ЗАХОРОНЕНИЯ',
+      mne: 'OSNOVNE USLUGE REPATRIJACIJE I SAHRANE',
     },
     heading: {
       en: 'Core Repatriation, Turnkey Cremation & Municipal Memorials',
@@ -672,9 +672,9 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
   {
     tierId: 'tier2',
     badge: {
-      en: 'Tier 2 • Legal, Insurance B2B & Family Concierge (3 Tariffs)',
-      ru: 'Уровень 2 • Юридический, страховой и семейный консьерж (3 тарифа)',
-      mne: 'Nivo 2 • Pravni, osiguravajući B2B i porodični konsijerž (3 tarife)',
+      en: 'LEGAL, INSURANCE B2B & FAMILY CONCIERGE',
+      ru: 'ЮРИДИЧЕСКИЙ, СТРАХОВОЙ И СЕМЕЙНЫЙ КОНСЬЕРЖ',
+      mne: 'PRAVNI, OSIGURAVAJUĆI B2B I PORODIČNI KONSIJERŽ',
     },
     heading: {
       en: 'Apostille Legalization, Insurer GOP Billing & Family Support',
@@ -816,9 +816,9 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
   {
     tierId: 'tier3',
     badge: {
-      en: 'Tier 3 • Expat Estate, Vehicle, Pet & Digital Legacy Services (4 Tariffs)',
-      ru: 'Уровень 3 • Имущество экспатов, авто, питомцы и Цифровой сейф (4 тарифа)',
-      mne: 'Nivo 3 • Imovina stranaca, vozila, ljubimci i Digitalni sef (4 tarife)',
+      en: 'EXPAT ESTATE, VEHICLE, PET & DIGITAL LEGACY',
+      ru: 'ИМУЩЕСТВО ЭКСПАТОВ, АВТО, ПИТОМЦЫ И ЦИФРОВОЙ СЕЙФ',
+      mne: 'IMOVINA STRANACA, VOZILA, LJUBIMCI I DIGITALNI SEF',
     },
     heading: {
       en: 'Expat Property Handover, Vehicle Custody, Pets & Pre-Need Digital Safe',

@@ -82,10 +82,10 @@ export const PricingBreakdown: React.FC<PricingBreakdownProps> = ({
           callBtn: 'Позвонить 24/7',
           whatsappBtn: 'Запросить смету в WhatsApp',
           servicesBtn: 'Каталог всех 12 направлений',
-          catalogEyebrow: 'ПОЛНЫЙ ТАРИФНЫЙ РЕЕСТР АГЕНТСТВА (14 ПОЗИЦИЙ • 2026)',
-          catalogTitle: 'Стартовые тарифы «От ... €» по всем услугам Memorijal d.o.o.',
+          catalogEyebrow: 'СТОИМОСТЬ УСЛУГ И ПРОЗРАЧНАЯ СМЕТА',
+          catalogTitle: 'Прозрачная стоимость услуг и ориентиры цен',
           catalogSubtitle:
-            'Все цены указаны как открытые базовые ориентиры без скрытых наценок. Официальные фискальные счета Черногории (EFI QR) выставляются в евро (EUR €) с четким разделением агентского вознаграждения Memorijal d.o.o. (KD 82.99) и транзитных расходов третьих лиц (prolazne stavke: авиатариф MAWB, госпошлины, услуги крематория и DOO Komunalno).',
+            'Базовые ориентиры стоимости по всем направлениям помощи. Точная итоговая смета фиксируется в договоре до начала работ — без скрытых комиссий и неожиданных доплат.',
           currencyLabel: 'Валюта ориентировочного расчета:',
           currencyNotice:
             'Официальное выставление счетов (SEPA / SWIFT IBAN и фискализация EFI QR) производится строго в евро (EUR €). Конвертация в GBP (£) и USD ($) носит справочный характер.',
@@ -96,6 +96,8 @@ export const PricingBreakdown: React.FC<PricingBreakdownProps> = ({
           tableStatus: 'Статус включения',
           tableCost: 'Базовый тариф',
           fiscalFooter: `Memorijal d.o.o. (${LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT}) • ${getCrpsPibDisplay('ru')}`,
+          fiscalDisbursementNote:
+            'Официальные фискальные счета Черногории (EFI QR) выставляются в EUR (€) с разделением агентского вознаграждения (KD 82.99) и транзитных расходов третьих лиц (авиатариф MAWB, госпошлины, крематорий, DOO Komunalno).',
         }
       : locale === 'mne'
       ? {
@@ -104,10 +106,10 @@ export const PricingBreakdown: React.FC<PricingBreakdownProps> = ({
           callBtn: 'Pozovite 24/7',
           whatsappBtn: 'Zatražite proračun (WhatsApp)',
           servicesBtn: 'Pregled svih 12 usluga',
-          catalogEyebrow: 'KOMPLETAN CJENOVNIK AGENCIJE (14 STAVKI • 2026)',
-          catalogTitle: 'Početne cijene ("Od ... €") za sve usluge Memorijal d.o.o.',
+          catalogEyebrow: 'CIJENE USLUGA I TRANSPARENTAN OBRAČUN',
+          catalogTitle: 'Transparentne cijene usluga i orijentacioni obračun',
           catalogSubtitle:
-            'Sve cijene su iskazane kao početni iznosi bez skrivenih marži. Zvanični crnogorski EFI QR fiskalni računi izdaju se u eurima (EUR €), uz jasno razdvajanje agencijske naknade za koordinaciju (KD 82.99) i prolaznih stavki trećih lica (prefakturisanje: avio-kargo MAWB, državne takse, krematorijum i DOO Komunalno).',
+            'Osnovni orijentiri cijena za sve vrste pomoći. Tačan konačni obračun se fiksira u ugovoru prije početka rada — bez skrivenih naknada.',
           currencyLabel: 'Valuta informativnog prikaza:',
           currencyNotice:
             'Zvanično fakturisanje (SEPA / SWIFT IBAN i EFI QR fiskalizacija) vrši se isključivo u eurima (EUR €). Prikaz u GBP (£) i USD ($) je informativnog karaktera.',
@@ -118,6 +120,8 @@ export const PricingBreakdown: React.FC<PricingBreakdownProps> = ({
           tableStatus: 'Status u obračunu',
           tableCost: 'Početni iznos',
           fiscalFooter: `Memorijal d.o.o. (${LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT}) • ${getCrpsPibDisplay('mne')}`,
+          fiscalDisbursementNote:
+            'Zvanični EFI QR fiskalni računi izdaju se u EUR (€), uz razdvajanje agencijske naknade (KD 82.99) i prolaznih stavki trećih lica (avio-kargo MAWB, državne takse, krematorijum, DOO Komunalno).',
         }
       : {
           home: 'Home',
@@ -125,10 +129,10 @@ export const PricingBreakdown: React.FC<PricingBreakdownProps> = ({
           callBtn: 'Call 24/7',
           whatsappBtn: 'Request Quote on WhatsApp',
           servicesBtn: 'Explore All 12 Services',
-          catalogEyebrow: 'COMPLETE AGENCY TARIFF SCHEDULE (14 ITEMS • 2026)',
-          catalogTitle: 'Open-Ended "Starting From" Rates Across All Agency Services',
+          catalogEyebrow: 'SERVICE RATES & TRANSPARENT ESTIMATES',
+          catalogTitle: 'Transparent Service Rates & Cost Estimates',
           catalogSubtitle:
-            'All tariffs are structured as transparent starting benchmarks with zero hidden markups. Official Montenegrin EFI QR fiscal invoices are issued in Euros (EUR €), strictly separating Memorijal d.o.o. coordination fees (KD 82.99) from third-party pass-through disbursements (prolazne stavke: airline MAWB freight, state duties, crematorium fees, and municipal DOO Komunalno charges).',
+            'Base starting estimates across all areas of assistance. Your exact final quote is fixed in writing before any work begins — with zero hidden fees.',
           currencyLabel: 'Reference Display Currency:',
           currencyNotice:
             'Official SEPA / SWIFT IBAN invoices and Montenegro Tax Administration EFI QR fiscal receipts are issued strictly in Euros (EUR €). GBP (£) and USD ($) figures are indicative.',
@@ -139,6 +143,8 @@ export const PricingBreakdown: React.FC<PricingBreakdownProps> = ({
           tableStatus: 'Inclusion Status',
           tableCost: 'Starting Rate',
           fiscalFooter: `Memorijal d.o.o. (${LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT}) • ${getCrpsPibDisplay('en')}`,
+          fiscalDisbursementNote:
+            'Official Montenegrin EFI QR fiscal invoices are issued in EUR (€), separating Memorijal d.o.o. coordination fees (KD 82.99) from third-party pass-through disbursements (MAWB air freight, state duties, crematorium, DOO Komunalno).',
         };
 
   return (
@@ -415,11 +421,16 @@ export const PricingBreakdown: React.FC<PricingBreakdownProps> = ({
           ))}
 
           {/* Bottom Statutory Clarification Bar */}
-          <div className="p-4 rounded-xl bg-white border border-stoneBorder flex flex-wrap items-center justify-between gap-3 text-xs text-slateMuted">
-            <span className="font-medium text-slateDeep">
-              {ui.fiscalFooter}
-            </span>
-            <span>{PRICING_CLARIFICATION_NOTE[locale]}</span>
+          <div className="p-4 sm:p-5 rounded-xl bg-white border border-stoneBorder space-y-2 text-xs text-slateMuted">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <span className="font-medium text-slateDeep">
+                {ui.fiscalFooter}
+              </span>
+              <span>{PRICING_CLARIFICATION_NOTE[locale]}</span>
+            </div>
+            <p className="text-[11px] text-slateMuted leading-relaxed border-t border-stoneBorder/60 pt-2">
+              {ui.fiscalDisbursementNote}
+            </p>
           </div>
         </div>
       </section>
