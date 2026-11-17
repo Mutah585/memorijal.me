@@ -82,7 +82,7 @@ const SERVICE_TIERS: ServiceTier[] = [
           ru: 'Кремация в Сербии (Белград / Нови-Сад) под ключ',
           mne: 'Kremacija u Srbiji (Beograd / Novi Sad)',
         },
-        rate: { en: 'From €1,850', ru: 'От 1 850 €', mne: 'Od 1.850 €' },
+        rate: { en: 'From €2,200', ru: 'От 2 200 €', mne: 'Od 2.200 €' },
         desc: {
           en: 'Cross-border transfer to the state crematorium, bilateral Sprovodnica permits, priority cremation slot, and sealed urn return in 3–5 business days.',
           ru: 'Перевозка в госкрематорий Сербии, санитарная Спроводница, приоритетный слот кремации и возврат опломбированной урны за 3–5 дней.',
@@ -98,7 +98,7 @@ const SERVICE_TIERS: ServiceTier[] = [
           ru: 'Авиарепатриация (IATA Cargo HUM / Груз 200)',
           mne: 'Međunarodni avio-transport (IATA Cargo HUM)',
         },
-        rate: { en: 'From €4,500', ru: 'От 4 500 €', mne: 'Od 4.500 €' },
+        rate: { en: 'From €4,900', ru: 'От 4 900 €', mne: 'Od 4.900 €' },
         desc: {
           en: 'Priority MAWB air freight coordination from Podgorica (TGD) and Tivat (TIV), hermetic zinc sealing supervision, and destination customs handover.',
           ru: 'Приоритетная авиаотправка из Подгорицы (TGD) и Тивата (TIV), контроль опайки цинка, накладная MAWB и таможенное оформление.',
@@ -115,9 +115,9 @@ const SERVICE_TIERS: ServiceTier[] = [
           mne: 'Drumska repatrijacija (Region / EU)',
         },
         rate: {
-          en: 'From €2,400 (Region) / From €3,800 (EU)',
-          ru: 'От 2 400 € (Балканы) / От 3 800 € (ЕС)',
-          mne: 'Od 2.400 € (Region) / Od 3.800 € (EU)',
+          en: 'From €2,600 (Region) / From €4,200 (EU)',
+          ru: 'От 2 600 € (Балканы) / От 4 200 € (ЕС)',
+          mne: 'Od 2.600 € (Region) / Od 4.200 € (EU)',
         },
         desc: {
           en: 'Door-to-door refrigerated mortuary transport via accredited licensed partner carriers across Serbia, Croatia, Bosnia, Germany, Austria, Italy, and Ukraine.',
@@ -135,9 +135,9 @@ const SERVICE_TIERS: ServiceTier[] = [
           mne: 'Koordinacija lokalne sahrane u Crnoj Gori (DOO Komunalno)',
         },
         rate: {
-          en: 'From\u00A0€850',
-          ru: 'От\u00A0850\u00A0€',
-          mne: 'Od\u00A0850\u00A0€',
+          en: 'From\u00A0€950',
+          ru: 'От\u00A0950\u00A0€',
+          mne: 'Od\u00A0950\u00A0€',
         },
         desc: {
           en: 'Full representation with municipal DOO Komunalno utilities (Tivat, Kotor, Budva, Podgorica), Matičar registry, and Orthodox, Catholic, Islamic, or civil rites.',
@@ -155,9 +155,9 @@ const SERVICE_TIERS: ServiceTier[] = [
           mne: 'Ceremonija prosipanja pepela u Boki (najam jahte i eko-floristika)',
         },
         rate: {
-          en: 'From\u00A0€950',
-          ru: 'От\u00A0950\u00A0€',
-          mne: 'Od\u00A0950\u00A0€',
+          en: 'From\u00A0€1,200',
+          ru: 'От\u00A01\u00A0200\u00A0€',
+          mne: 'Od\u00A01.200\u00A0€',
         },
         desc: {
           en: 'Chartering an authorized yacht/vessel for memorial ash scattering in the Bay of Kotor, eco-floristry, and an official GPS Coordinates Memorial Certificate.',
@@ -277,9 +277,9 @@ const SERVICE_TIERS: ServiceTier[] = [
           mne: 'Od\u00A0490\u00A0€',
         },
         desc: {
-          en: 'Documented inventory of personal belongings in Tivat/Budva/Kotor residences, insured DHL/diplomatic dispatch of valuables, utility & lease closure.',
-          ru: 'Опись личных вещей в квартире, застрахованная отправка документов и ценностей наследникам через DHL, закрытие аренды и ЖКУ.',
-          mne: 'Detaljan popis stvari u stanu, bezbjedno DHL slanje dokumenata nasljednicima, raskid ugovora o zakupu i komunalija.',
+          en: 'Documented inventory of personal belongings in Tivat/Budva/Kotor residences, insured DHL/diplomatic dispatch of valuables, utility & lease closure. (Agency coordination fee; third-party carrier tariffs and official duties billed at cost).',
+          ru: 'Опись личных вещей в квартире, застрахованная отправка документов и ценностей наследникам через DHL, закрытие аренды и ЖКУ. (Стоимость координации агентства; пошлины и тарифы перевозчиков оплачиваются отдельно по чеку).',
+          mne: 'Detaljan popis stvari u stanu, bezbjedno DHL slanje dokumenata nasljednicima, raskid ugovora o zakupu i komunalija. (Naknada za koordinaciju agencije; takse i tarife prevoznika se obračunavaju po stvarnom računu).',
         },
       },
       {
@@ -296,9 +296,9 @@ const SERVICE_TIERS: ServiceTier[] = [
           mne: 'Od\u00A0390\u00A0€',
         },
         desc: {
-          en: 'Guarded parking or marina custody of the deceased’s vehicle/vessel in Montenegro and legal coordination for heir transfer or licensed driver return to the EU.',
-          ru: 'Размещение автомобиля или катера на охраняемой стоянке / в марине в Черногории и юридическая координация перегона в ЕС или оформления на наследников.',
-          mne: 'Smještaj vozila ili plovila na obezbijeđenom parkingu / marini i pravna koordinacija za prenos na nasljednike ili povratak u EU.',
+          en: 'Guarded parking or marina custody of the deceased’s vehicle/vessel in Montenegro and legal coordination for heir transfer or licensed driver return to the EU. (Agency coordination fee; third-party carrier tariffs and official duties billed at cost).',
+          ru: 'Размещение автомобиля или катера на охраняемой стоянке / в марине в Черногории и юридическая координация перегона в ЕС или оформления на наследников. (Стоимость координации агентства; пошлины и тарифы перевозчиков оплачиваются отдельно по чеку).',
+          mne: 'Smještaj vozila ili plovila na obezbijeđenom parkingu / marini i pravna koordinacija za prenos na nasljednike ili povratak u EU. (Naknada za koordinaciju agencije; takse i tarife prevoznika se obračunavaju po stvarnom računu).',
         },
       },
       {
@@ -315,9 +315,9 @@ const SERVICE_TIERS: ServiceTier[] = [
           mne: 'Od\u00A0650\u00A0€',
         },
         desc: {
-          en: 'Temporary boarding, microchip verification, EU/UK veterinary export passport & titer clearance to reunite pets safely with family members abroad.',
-          ru: 'Временная передержка, проверка чипа, оформление ветеринарного паспорта и титра антител для безопасного перелета питомца к родным.',
-          mne: 'Privremeni smještaj, provjera mikročipa i veterinarska dokumentacija za bezbjedan povratak ljubimca porodici.',
+          en: 'Temporary boarding, microchip verification, EU/UK veterinary export passport & titer clearance to reunite pets safely with family members abroad. (Agency coordination fee; third-party carrier tariffs and official duties billed at cost).',
+          ru: 'Временная передержка, проверка чипа, оформление ветеринарного паспорта и титра антител для безопасного перелета питомца к родным. (Стоимость координации агентства; пошлины и тарифы перевозчиков оплачиваются отдельно по чеку).',
+          mne: 'Privremeni smještaj, provjera mikročipa i veterinarska dokumentacija za bezbjedan povratak ljubimca porodici. (Naknada za koordinaciju agencije; takse i tarife prevoznika se obračunavaju po stvarnom računu).',
         },
       },
       {

@@ -45,7 +45,7 @@ export const ExpatEstateServices: React.FC<ExpatEstateServicesProps> = ({
         {
           id: 'boka-sea-pet-relocation',
           icon: Anchor,
-          rate: 'From\u00A0€950 (Sea) / From\u00A0€650 (Pets)',
+          rate: 'From\u00A0€1,200 (Sea) / From\u00A0€650 (Pets)',
           title: 'Boka Bay Sea Ash Scattering & International Pet Relocation',
           desc: 'Chartering an authorized yacht/vessel for dignified sea memorial ash scattering in the Bay of Kotor (with an official GPS Coordinates Memorial Certificate) and veterinary passport/microchip clearance to return pets safely to family members abroad.',
         },
@@ -86,7 +86,7 @@ export const ExpatEstateServices: React.FC<ExpatEstateServicesProps> = ({
         {
           id: 'boka-sea-pet-relocation',
           icon: Anchor,
-          rate: 'От\u00A0950\u00A0€ (Бока) / От\u00A0650\u00A0€ (Питомцы)',
+          rate: 'От\u00A01\u00A0200\u00A0€ (Бока) / От\u00A0650\u00A0€ (Питомцы)',
           title: 'Церемония развеивания праха в Боке и международная перевозка питомцев',
           desc: 'Фрахт яхты для церемонии развеивания праха в Боко-Которском заливе с выдачей официального сертификата с GPS-координатами, а также оформление ветеринарного паспорта и титров антител для возврата домашних животных семье.',
         },
@@ -127,7 +127,7 @@ export const ExpatEstateServices: React.FC<ExpatEstateServicesProps> = ({
         {
           id: 'boka-sea-pet-relocation',
           icon: Anchor,
-          rate: 'Od\u00A0950\u00A0€ (Boka) / Od\u00A0650\u00A0€ (Ljubimci)',
+          rate: 'Od\u00A01.200\u00A0€ (Boka) / Od\u00A0650\u00A0€ (Ljubimci)',
           title: 'Prosipanje pepela u Boki i međunarodni prevoz kućnih ljubimaca',
           desc: 'Najam jahte/plovila za dostojanstvenu ceremoniju u Bokokotorskom zalivu uz izdavanje sertifikata sa GPS koordinatama, kao i veterinarska koordinacija pasoša za bezbjedan povratak ljubimaca porodici.',
         },

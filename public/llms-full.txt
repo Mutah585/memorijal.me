@@ -46,7 +46,7 @@ Therefore, whenever a family or insurance policy requests cremation for a death 
    - Priority state cremation execution.
    - Issuance of the official **Cremation Certificate (`Potvrda o kremaciji`)** and **Sanitary Ash Sealing Certificate**.
    - Placement of ashes inside an **X-ray translucent hermetically sealed urn/capsule** approved for commercial aircraft cabin carry-on (`TGD`, `TIV`, `BEG` airports) or diplomatic courier delivery to the family anywhere in the UK, EU, CIS, USA, or back to Montenegro for local interment or Adriatic sea scattering.
-- **All-Inclusive Turnkey Cremation Cost (2026)**: **from €1,850** (Includes all Montenegrin and Serbian statutory permits, coffin, round-trip Belgrade hearse transport, state crematorium fee, sealed travel urn, and cabin/customs dossier).
+- **All-Inclusive Turnkey Cremation Cost (2026)**: **from €2,200** (Includes all Montenegrin and Serbian statutory permits, coffin, round-trip Belgrade hearse transport, state crematorium fee, sealed travel urn, and cabin/customs dossier).
 
 ---
 
@@ -103,11 +103,11 @@ All tariffs are open-ended starting rates (`From €...` / `От ... €` / `Od 
 | :--- | :--- | :--- | :--- |
 | **01** | **Consular & Sanitary Clearance Only (`Sprovodnica` & `Punomoćje`)** | **From €450** | Remote PoA (`Punomoćje`), Vienna Form C death extract, Republic Sanitary Inspector sealing, and `Sprovodnica` transit pass. |
 | **02** | **Local Municipal Burial Coordination in Montenegro (`DOO Komunalno`)** | **From €850** | Full representation with municipal `DOO Komunalno` (Tivat, Kotor, Budva, Podgorica, Bar), Matičar registry, and religious/civil rites. |
-| **03** | **Boka Bay Sea Ash Scattering Ceremony (Yacht Charter & Eco-Floristry)** | **From €950** | Private vessel charter in the Bay of Kotor, biodegradable urn/eco-floristry, and official GPS Coordinates Memorial Certificate. |
-| **04** | **Turnkey Cremation in Serbia (Belgrade / Novi Sad) with Urn Return** | **From €1,850** | Montenegro + Serbia `Sprovodnica` permits, coffin, licensed partner hearse to Belgrade/Novi Sad State Crematorium, and sealed cabin urn return in 3–5 days. |
-| **05** | **Regional Overland Repatriation (Serbia, BiH, Croatia, Albania)** | **From €2,400** | Sanitary preparation, hermetic zinc soldering (`lemljenje`), consular permits, and direct partner hearse delivery. |
-| **06** | **EU & Ukraine Cross-Border Ground Repatriation** | **From €3,800** | Dispatched EUR-6 two-driver partner carrier, Schengen/EU customs transit compliance, hermetic zinc coffin, and multilingual dossier. |
-| **07** | **International Air Cargo Repatriation (`IATA Cargo HUM` / Груз 200)** | **From €4,500** | Forensic embalming, IATA casket with 0.6–0.8 mm zinc liner & pressure valve, customs clearance, and priority MAWB air booking from TGD / BEG. |
+| **03** | **Boka Bay Sea Ash Scattering Ceremony (Yacht Charter & Eco-Floristry)** | **From €1,200** | Private vessel charter in the Bay of Kotor, biodegradable urn/eco-floristry, and official GPS Coordinates Memorial Certificate. |
+| **04** | **Turnkey Cremation in Serbia (Belgrade / Novi Sad) with Urn Return** | **From €2,200** | Montenegro + Serbia `Sprovodnica` permits, coffin, licensed partner hearse to Belgrade/Novi Sad State Crematorium, and sealed cabin urn return in 3–5 days. |
+| **05** | **Regional Overland Repatriation (Serbia, BiH, Croatia, Albania)** | **From €2,600** | Sanitary preparation, hermetic zinc soldering (`lemljenje`), consular permits, and direct partner hearse delivery. |
+| **06** | **EU & Ukraine Cross-Border Ground Repatriation** | **From €4,200** | Dispatched EUR-6 two-driver partner carrier, Schengen/EU customs transit compliance, hermetic zinc coffin, and multilingual dossier. |
+| **07** | **International Air Cargo Repatriation (`IATA Cargo HUM` / Груз 200)** | **From €4,900** | Forensic embalming, IATA casket with 0.6–0.8 mm zinc liner & pressure valve, customs clearance, and priority MAWB air booking from TGD / BEG. |
 | **08** | **Apostille, Court-Certified Translations (`Sudski tumač`) & Embassy Dossier** | **From €250** | Duplicate Form C death certificates, Basic Court Hague Apostille stamps, sworn translations, and DHL dispatch for probate/banking. |
 | **09** | **Insurer Guarantee of Payment (`GOP`) Direct Case Management** | **From €0 for family (Direct GOP Billing)** | Direct B2B SEPA/SWIFT EFI QR settlement with Allianz, AXA, Europ Assistance, Balt & Savitar with zero upfront cost to the family. |
 | **10** | **Family Travel Concierge, Live Farewell Stream & Memorial Catering** | **From €350** | Airport transfers, hotel booking, private chapel viewing, encrypted HD live video farewell stream, and reception catering. |

@@ -134,7 +134,7 @@ export const PRICING_CTA_LABEL: Record<LocaleSlug, string> = {
 export const STANDARD_PRICING_PACKAGES: PricingPackageItem[] = [
   {
     id: 'cremation_belgrade',
-    basePriceEur: 1850,
+    basePriceEur: 2200,
     schemaName: 'Turnkey Cremation in Belgrade',
     schemaDescription:
       'Starting price for cross-border transfer, cremation, and urn return',
@@ -142,41 +142,41 @@ export const STANDARD_PRICING_PACKAGES: PricingPackageItem[] = [
       en: {
         title: 'Belgrade / Novi Sad Cremation Package ("Turnkey")',
         badge: 'Most Requested • Official State Crematorium',
-        formattedPrice: `From${NBSP}€1,850`,
+        formattedPrice: `From${NBSP}€2,200`,
         subtext:
           'Includes morgue transfer, cross-border sanitary transit (Sprovodnica), cremation slot, and return of urn.',
         clarification: PRICING_CLARIFICATION_NOTE.en,
         ctaLabel: PRICING_CTA_LABEL.en,
         whatsappMessage:
-          'Hello Memorijal d.o.o., I would like to request an exact estimate for the Belgrade/Novi Sad Turnkey Cremation Package (starting from €1,850).',
+          'Hello Memorijal d.o.o., I would like to request an exact estimate for the Belgrade/Novi Sad Turnkey Cremation Package (starting from €2,200).',
       },
       ru: {
         title: 'Пакет кремации в Белграде / Нови-Саде («Под ключ»)',
         badge: 'Государственный крематорий • Возврат урны',
-        formattedPrice: `От${NBSP}1${NBSP}850${NBSP}€`,
+        formattedPrice: `От${NBSP}2${NBSP}200${NBSP}€`,
         subtext:
           'Включает трансфер из морга, санитарный пропуск через границу (Sprovodnica), кремацию и возврат опечатанной урны.',
         clarification: PRICING_CLARIFICATION_NOTE.ru,
         ctaLabel: PRICING_CTA_LABEL.ru,
         whatsappMessage:
-          'Здравствуйте, Memorijal d.o.o.! Прошу рассчитать точную смету по пакету кремации в Белграде «под ключ» (начальная оценка от 1 850 €).',
+          'Здравствуйте, Memorijal d.o.o.! Прошу рассчитать точную смету по пакету кремации в Белграде «под ключ» (начальная оценка от 2 200 €).',
       },
       mne: {
         title: 'Paket kremacije u Beogradu / Novom Sadu ("Ključ u ruke")',
         badge: 'Državni krematorijum • Povrat urne',
-        formattedPrice: `Od${NBSP}1.850${NBSP}€`,
+        formattedPrice: `Od${NBSP}2.200${NBSP}€`,
         subtext:
           'Uključuje preuzimanje iz mrtvačnice, prekogranični sanitarni tranzit (Sprovodnica), termin kremacije i povrat urne.',
         clarification: PRICING_CLARIFICATION_NOTE.mne,
         ctaLabel: PRICING_CTA_LABEL.mne,
         whatsappMessage:
-          'Poštovani Memorijal d.o.o., interesuje me paket kremacije u Beogradu "ključ u ruke" (početna procjena od 1.850 €). Molim za precizan proračun.',
+          'Poštovani Memorijal d.o.o., interesuje me paket kremacije u Beogradu "ključ u ruke" (početna procjena od 2.200 €). Molim za precizan proračun.',
       },
     },
   },
   {
     id: 'regional_road',
-    basePriceEur: 2400,
+    basePriceEur: 2600,
     schemaName: 'Regional Road Repatriation (Serbia, BiH, North Macedonia)',
     schemaDescription:
       'Starting price for regional Balkan road repatriation, hermetic soldering, and consular transit permits',
@@ -185,43 +185,43 @@ export const STANDARD_PRICING_PACKAGES: PricingPackageItem[] = [
         title:
           'Regional Road Repatriation (Serbia / Bosnia & Herzegovina / North Macedonia)',
         badge: 'Direct Door-to-Door Balkan Hearse',
-        formattedPrice: `From${NBSP}€2,400`,
+        formattedPrice: `From${NBSP}€2,600`,
         subtext:
           'Fixed rate base + per-km route calculation, hermetic soldering, consular transit permits.',
         clarification: PRICING_CLARIFICATION_NOTE.en,
         ctaLabel: PRICING_CTA_LABEL.en,
         whatsappMessage:
-          'Hello Memorijal d.o.o., I would like to request an exact estimate for Regional Road Repatriation (starting from €2,400).',
+          'Hello Memorijal d.o.o., I would like to request an exact estimate for Regional Road Repatriation (starting from €2,600).',
       },
       ru: {
         title:
           'Региональная авторепатриация (Сербия / Босния и Герцеговина / Северная Македония)',
         badge: 'Спецтранспорт «от двери до двери»',
-        formattedPrice: `От${NBSP}2${NBSP}400${NBSP}€`,
+        formattedPrice: `От${NBSP}2${NBSP}600${NBSP}€`,
         subtext:
           'Базовый фиксированный тариф + расчет за км маршрута, герметичная опайка цинка, транзитные консульские разрешения.',
         clarification: PRICING_CLARIFICATION_NOTE.ru,
         ctaLabel: PRICING_CTA_LABEL.ru,
         whatsappMessage:
-          'Здравствуйте, Memorijal d.o.o.! Интересует региональная авторепатриация по Балканам (начальная оценка от 2 400 €). Прошу рассчитать точную смету.',
+          'Здравствуйте, Memorijal d.o.o.! Интересует региональная авторепатриация по Балканам (начальная оценка от 2 600 €). Прошу рассчитать точную смету.',
       },
       mne: {
         title:
           'Regionalna drumska repatrijacija (Srbija / Bosna i Hercegovina / Sjeverna Makedonija)',
         badge: 'Direktni prevoz specijalnim vozilom',
-        formattedPrice: `Od${NBSP}2.400${NBSP}€`,
+        formattedPrice: `Od${NBSP}2.600${NBSP}€`,
         subtext:
           'Fiksna osnovica + obračun po kilometraži rute, hermetičko lemljenje sanduka i konzularne tranzitne dozvole.',
         clarification: PRICING_CLARIFICATION_NOTE.mne,
         ctaLabel: PRICING_CTA_LABEL.mne,
         whatsappMessage:
-          'Poštovani Memorijal d.o.o., interesuje me regionalna drumska repatrijacija (početna procjena od 2.400 €). Molim za precizan proračun.',
+          'Poštovani Memorijal d.o.o., interesuje me regionalna drumska repatrijacija (početna procjena od 2.600 €). Molim za precizan proračun.',
       },
     },
   },
   {
     id: 'eu_ground',
-    basePriceEur: 3800,
+    basePriceEur: 4200,
     schemaName:
       'EU Cross-Border Ground Repatriation (Germany, Austria, Poland, Hungary)',
     schemaDescription:
@@ -231,43 +231,43 @@ export const STANDARD_PRICING_PACKAGES: PricingPackageItem[] = [
         title:
           'EU Cross-Border Ground Repatriation (Germany, Austria, Poland, Hungary)',
         badge: 'Schengen & EU Overland Corridor',
-        formattedPrice: `From${NBSP}€3,800`,
+        formattedPrice: `From${NBSP}€4,200`,
         subtext:
           'Certified international partner carrier, EUR-6 customs transit compliance, multilingual dossier.',
         clarification: PRICING_CLARIFICATION_NOTE.en,
         ctaLabel: PRICING_CTA_LABEL.en,
         whatsappMessage:
-          'Hello Memorijal d.o.o., I would like to request an exact estimate for EU Cross-Border Ground Repatriation (starting from €3,800).',
+          'Hello Memorijal d.o.o., I would like to request an exact estimate for EU Cross-Border Ground Repatriation (starting from €4,200).',
       },
       ru: {
         title:
           'Наземная репатриация в страны ЕС (Германия, Австрия, Польша, Венгрия)',
         badge: 'Международный коридор ЕС / Шенген',
-        formattedPrice: `От${NBSP}3${NBSP}800${NBSP}€`,
+        formattedPrice: `От${NBSP}4${NBSP}200${NBSP}€`,
         subtext:
           'Сертифицированный спецтранспорт лицензированного партнера EUR-6, соблюдение таможенного транзита ЕС, многоязычное досье.',
         clarification: PRICING_CLARIFICATION_NOTE.ru,
         ctaLabel: PRICING_CTA_LABEL.ru,
         whatsappMessage:
-          'Здравствуйте, Memorijal d.o.o.! Интересует наземная репатриация в страны ЕС (начальная оценка от 3 800 €). Прошу рассчитать точную смету.',
+          'Здравствуйте, Memorijal d.o.o.! Интересует наземная репатриация в страны ЕС (начальная оценка от 4 200 €). Прошу рассчитать точную смету.',
       },
       mne: {
         title:
           'Međunarodna drumska repatrijacija u EU (Njemačka, Austrija, Poljska, Mađarska)',
         badge: 'EU / Šengen kopneni koridor',
-        formattedPrice: `Od${NBSP}3.800${NBSP}€`,
+        formattedPrice: `Od${NBSP}4.200${NBSP}€`,
         subtext:
           'Sertifikovano međunarodno specijalno vozilo licenciranog partnera EUR-6, carinska usklađenost za tranzit kroz EU i višejezični dosije.',
         clarification: PRICING_CLARIFICATION_NOTE.mne,
         ctaLabel: PRICING_CTA_LABEL.mne,
         whatsappMessage:
-          'Poštovani Memorijal d.o.o., interesuje me drumska repatrijacija u zemlje EU (početna procjena od 3.800 €). Molim za precizan proračun.',
+          'Poštovani Memorijal d.o.o., interesuje me drumska repatrijacija u zemlje EU (početna procjena od 4.200 €). Molim za precizan proračun.',
       },
     },
   },
   {
     id: 'air_cargo',
-    basePriceEur: 4500,
+    basePriceEur: 4900,
     schemaName: 'International Air Cargo Repatriation (UK, EU, CIS / Worldwide)',
     schemaDescription:
       'Starting price for IATA HUM cargo booking, air coffin zinc liner, and consular clearance at Podgorica or Belgrade',
@@ -276,37 +276,37 @@ export const STANDARD_PRICING_PACKAGES: PricingPackageItem[] = [
         title:
           'International Air Cargo Repatriation (UK, EU, CIS / Worldwide)',
         badge: 'IATA Cargo HUM • Priority Air Waybill',
-        formattedPrice: `From${NBSP}€4,500`,
+        formattedPrice: `From${NBSP}€4,900`,
         subtext:
           'IATA HUM cargo booking, air coffin zinc liner, consular clearance at Podgorica / Belgrade.',
         clarification: PRICING_CLARIFICATION_NOTE.en,
         ctaLabel: PRICING_CTA_LABEL.en,
         whatsappMessage:
-          'Hello Memorijal d.o.o., I would like to request an exact estimate for International Air Cargo HUM Repatriation (starting from €4,500).',
+          'Hello Memorijal d.o.o., I would like to request an exact estimate for International Air Cargo HUM Repatriation (starting from €4,900).',
       },
       ru: {
         title:
           'Международная авиарепатриация Cargo HUM (Великобритания, ЕС, СНГ / Весь мир)',
         badge: 'Авиакарго IATA HUM • Приоритетный вылет',
-        formattedPrice: `От${NBSP}4${NBSP}500${NBSP}€`,
+        formattedPrice: `От${NBSP}4${NBSP}900${NBSP}€`,
         subtext:
           'Бронирование авиакарго IATA HUM, авиационный гроб с цинковым вкладышем, консульское оформление в Подгорице / Белграде.',
         clarification: PRICING_CLARIFICATION_NOTE.ru,
         ctaLabel: PRICING_CTA_LABEL.ru,
         whatsappMessage:
-          'Здравствуйте, Memorijal d.o.o.! Интересует международная авиарепатриация Cargo HUM (начальная оценка от 4 500 €). Прошу рассчитать точную смету.',
+          'Здравствуйте, Memorijal d.o.o.! Интересует международная авиарепатриация Cargo HUM (начальная оценка от 4 900 €). Прошу рассчитать точную смету.',
       },
       mne: {
         title:
           'Međunarodna avio-kargo repatrijacija (UK, EU, ZND / Cijeli svijet)',
         badge: 'IATA Cargo HUM • Prioritetni let',
-        formattedPrice: `Od${NBSP}4.500${NBSP}€`,
+        formattedPrice: `Od${NBSP}4.900${NBSP}€`,
         subtext:
           'IATA HUM kargo rezervacija, avio-sanduk sa pocinkovanim uloškom, konzularna ovjera u Podgorici / Beogradu.',
         clarification: PRICING_CLARIFICATION_NOTE.mne,
         ctaLabel: PRICING_CTA_LABEL.mne,
         whatsappMessage:
-          'Poštovani Memorijal d.o.o., interesuje me međunarodna avio-kargo repatrijacija (početna procjena od 4.500 €). Molim za precizan proračun.',
+          'Poštovani Memorijal d.o.o., interesuje me međunarodna avio-kargo repatrijacija (početna procjena od 4.900 €). Molim za precizan proračun.',
       },
     },
   },
@@ -424,7 +424,7 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
       {
         id: 'local_municipal_burial',
         codeNum: '02',
-        basePriceEur: 850,
+        basePriceEur: 950,
         targetPath: '/services/local-burial-coordination/',
         schemaName: 'Local Municipal Burial Coordination in Montenegro (DOO Komunalno)',
         schemaDescription:
@@ -433,39 +433,39 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
           en: {
             title: 'Local Municipal Burial Coordination in Montenegro (DOO Komunalno)',
             badge: 'Municipal Cemetery Partner Model',
-            formattedPrice: `From${NBSP}€850`,
+            formattedPrice: `From${NBSP}€1,200`,
             scope:
               'Full representation with municipal DOO Komunalno (Tivat, Kotor, Budva, Podgorica, Bar), Matičar registry, coffin selection, and Orthodox, Catholic, Islamic, or civil rites.',
             disbursementNote: 'Municipal grave plot concession & Komunalno tariffs passed through at cost',
             whatsappMessage:
-              'Hello Memorijal d.o.o., I would like a quote for Local Municipal Burial Coordination in Montenegro (DOO Komunalno — From €850).',
+              'Hello Memorijal d.o.o., I would like a quote for Local Municipal Burial Coordination in Montenegro (DOO Komunalno — From €950).',
           },
           ru: {
             title: 'Координация местных похорон в Черногории (DOO Komunalno)',
             badge: 'Муниципальные кладбища Черногории',
-            formattedPrice: `От${NBSP}850${NBSP}€`,
+            formattedPrice: `От${NBSP}1${NBSP}200${NBSP}€`,
             scope:
               'Полное сопровождение в муниципальных службах DOO Komunalno (Тиват, Котор, Будва, Подгорица, Бар), ЗАГСе, подбор атрибутики и проведение религиозного или гражданского обряда.',
             disbursementNote: 'Тарифы кладбища Komunalno оплачиваются по официальному прейскуранту',
             whatsappMessage:
-              'Здравствуйте, Memorijal d.o.o.! Прошу рассчитать смету на координацию местных похорон в Черногории через DOO Komunalno (От 850 €).',
+              'Здравствуйте, Memorijal d.o.o.! Прошу рассчитать смету на координацию местных похорон в Черногории через DOO Komunalno (От 950 €).',
           },
           mne: {
             title: 'Koordinacija lokalne sahrane u Crnoj Gori (DOO Komunalno)',
             badge: 'Opštinska groblja • Komunalno',
-            formattedPrice: `Od${NBSP}850${NBSP}€`,
+            formattedPrice: `Od${NBSP}1.200${NBSP}€`,
             scope:
               'Kompletna koordinacija sa opštinskim DOO Komunalno (Tivat, Kotor, Budva, Podgorica, Bar), Matičarem, pogrebnom opremom i vjerskim ili građanskim obredom.',
             disbursementNote: 'Grobne takse Komunalnog preduzeća prenose se po zvaničnom cjenovniku',
             whatsappMessage:
-              'Poštovani Memorijal d.o.o., molim za ponudu za koordinaciju lokalne sahrane u Crnoj Gori — DOO Komunalno (Od 850 €).',
+              'Poštovani Memorijal d.o.o., molim za ponudu za koordinaciju lokalne sahrane u Crnoj Gori — DOO Komunalno (Od 950 €).',
           },
         },
       },
       {
         id: 'boka_bay_sea_scattering',
         codeNum: '03',
-        basePriceEur: 950,
+        basePriceEur: 1200,
         targetPath: '/services/local-burial-coordination/',
         schemaName: 'Boka Bay Sea Ash Scattering Ceremony (Yacht Charter & Eco-Floristry)',
         schemaDescription:
@@ -474,39 +474,39 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
           en: {
             title: 'Boka Bay Sea Ash Scattering Ceremony (Yacht Charter & Eco-Floristry)',
             badge: 'Adriatic Maritime Memorial • GPS Certificate',
-            formattedPrice: `From${NBSP}€950`,
+            formattedPrice: `From${NBSP}€1,200`,
             scope:
               'Private motor yacht or vessel charter in the Bay of Kotor / open Adriatic, biodegradable urn or eco-floristry, maritime protocol, and official GPS Coordinates Memorial Certificate.',
             disbursementNote: 'Custom vessel class & catering options available on request',
             whatsappMessage:
-              'Hello Memorijal d.o.o., I would like a quote for the Boka Bay Sea Ash Scattering Ceremony (From €950).',
+              'Hello Memorijal d.o.o., I would like a quote for the Boka Bay Sea Ash Scattering Ceremony (From €1,200).',
           },
           ru: {
             title: 'Морская церемония развеивания праха в Боке (фрахт яхты и эко-флористика)',
             badge: 'Морской мемориал • Сертификат GPS',
-            formattedPrice: `От${NBSP}950${NBSP}€`,
+            formattedPrice: `От${NBSP}1${NBSP}200${NBSP}€`,
             scope:
               'Индивидуальный фрахт яхты или катера в Боко-Которском заливе / открытой Адриатике, биоразлагаемая урна и эко-флористика, морской протокол и памятный сертификат с точными GPS-координатами.',
             disbursementNote: 'Класс судна и число гостей согласуются индивидуально',
             whatsappMessage:
-              'Здравствуйте, Memorijal d.o.o.! Интересует морская церемония развеивания праха в Боко-Которском заливе (От 950 €).',
+              'Здравствуйте, Memorijal d.o.o.! Интересует морская церемония развеивания праха в Боко-Которском заливе (От 1 200 €).',
           },
           mne: {
             title: 'Ceremonija prosipanja pepela u Boki (najam jahte i eko-floristika)',
             badge: 'Pomorski memorijal • GPS sertifikat',
-            formattedPrice: `Od${NBSP}950${NBSP}€`,
+            formattedPrice: `Od${NBSP}1.200${NBSP}€`,
             scope:
               'Najam plovila/jahte u Bokokotorskom zalivu ili otvorenom moru, biorazgradiva urna, eko-cvjetni aranžman i izdavanje zvaničnog sertifikata sa GPS koordinatama.',
             disbursementNote: 'Klasa plovila i broj članova porodice po izboru klijenta',
             whatsappMessage:
-              'Poštovani Memorijal d.o.o., molim za ponudu za ceremoniju prosipanja pepela u Bokokotorskom zalivu (Od 950 €).',
+              'Poštovani Memorijal d.o.o., molim za ponudu za ceremoniju prosipanja pepela u Bokokotorskom zalivu (Od 1.200 €).',
           },
         },
       },
       {
         id: 'turnkey_cremation_serbia',
         codeNum: '04',
-        basePriceEur: 1850,
+        basePriceEur: 2200,
         targetPath: '/services/cremation-serbia/',
         schemaName: 'Turnkey Cremation in Serbia (Belgrade / Novi Sad) with Urn Return',
         schemaDescription:
@@ -515,39 +515,39 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
           en: {
             title: 'Turnkey Cremation in Serbia (Belgrade / Novi Sad) with Urn Return',
             badge: 'Official State Crematorium • 3–5 Days',
-            formattedPrice: `From${NBSP}€1,850`,
+            formattedPrice: `From${NBSP}€2,200`,
             scope:
               'Hospital collection in Montenegro, bilateral Montenegro/Serbia Sprovodnica permits, licensed partner hearse transfer to Belgrade/Novi Sad State Crematorium, cremation slot, and sealed cabin-compliant urn return.',
             disbursementNote: 'Includes state crematorium tariff & border sanitary clearance',
             whatsappMessage:
-              'Hello Memorijal d.o.o., I would like an exact estimate for Turnkey Cremation in Serbia with Urn Return (From €1,850).',
+              'Hello Memorijal d.o.o., I would like an exact estimate for Turnkey Cremation in Serbia with Urn Return (From €2,200).',
           },
           ru: {
             title: 'Кремация в Сербии (Белград / Нови-Сад) «под ключ» с возвратом урны',
             badge: 'Государственный крематорий • 3–5 дней',
-            formattedPrice: `От${NBSP}1${NBSP}850${NBSP}€`,
+            formattedPrice: `От${NBSP}2${NBSP}200${NBSP}€`,
             scope:
               'Забор тела из морга в ЧГ, двусторонние санитарные пропуски Sprovodnica, доставка спецтранспортом партнера в госкрематорий Белграда/Нови-Сада, кремация и возврат опломбированной урны.',
             disbursementNote: 'Включает государственный тариф крематория и транзитные пошлины',
             whatsappMessage:
-              'Здравствуйте, Memorijal d.o.o.! Прошу рассчитать точную смету на кремацию в Сербии «под ключ» с возвратом урны (От 1 850 €).',
+              'Здравствуйте, Memorijal d.o.o.! Прошу рассчитать точную смету на кремацию в Сербии «под ключ» с возвратом урны (От 2 200 €).',
           },
           mne: {
             title: 'Kremacija u Srbiji (Beograd / Novi Sad) "ključ u ruke" sa povratom urne',
             badge: 'Državni krematorijum • 3–5 dana',
-            formattedPrice: `Od${NBSP}1.850${NBSP}€`,
+            formattedPrice: `Od${NBSP}2.200${NBSP}€`,
             scope:
               'Preuzimanje iz kapele u CG, bilateralne Sprovodnice, prevoz licenciranim vozilom do državnog krematorijuma u Beogradu/Novom Sadu, termin kremacije i povrat zapečaćene urne.',
             disbursementNote: 'Uključena taksa državnog krematorijuma i granična dokumentacija',
             whatsappMessage:
-              'Poštovani Memorijal d.o.o., molim za proračun za kremaciju u Srbiji "ključ u ruke" sa povratom urne (Od 1.850 €).',
+              'Poštovani Memorijal d.o.o., molim za proračun za kremaciju u Srbiji "ključ u ruke" sa povratom urne (Od 2.200 €).',
           },
         },
       },
       {
         id: 'regional_overland_repatriation',
         codeNum: '05',
-        basePriceEur: 2400,
+        basePriceEur: 2600,
         targetPath: '/services/repatriation-road/',
         schemaName: 'Regional Overland Repatriation (Serbia, BiH, Croatia, Albania)',
         schemaDescription:
@@ -556,39 +556,39 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
           en: {
             title: 'Regional Overland Repatriation (Serbia, BiH, Croatia, Albania)',
             badge: 'Direct Door-to-Door Balkan Corridor',
-            formattedPrice: `From${NBSP}€2,400`,
+            formattedPrice: `From${NBSP}€2,600`,
             scope:
               'Sanitary preparation, hermetic zinc coffin soldering (lemljenje), Republic Sanitary Inspector seal, bilateral consular Sprovodnica, and direct climate-controlled partner hearse delivery.',
             disbursementNote: 'Final distance calculated per exact destination municipality (km)',
             whatsappMessage:
-              'Hello Memorijal d.o.o., I would like an exact estimate for Regional Overland Repatriation (From €2,400).',
+              'Hello Memorijal d.o.o., I would like an exact estimate for Regional Overland Repatriation (From €2,600).',
           },
           ru: {
             title: 'Региональная авторепатриация (Сербия, Босния и Герцеговина, Хорватия, Албания)',
             badge: 'Спецтранспорт по Балканам «от двери до двери»',
-            formattedPrice: `От${NBSP}2${NBSP}400${NBSP}€`,
+            formattedPrice: `От${NBSP}2${NBSP}600${NBSP}€`,
             scope:
               'Санитарная подготовка, герметичная опайка цинкового вкладыша (lemljenje), пломба санитарного инспектора, консульская Sprovodnica и прямая доставка лицензированным спецкатафалком.',
             disbursementNote: 'Итоговый расчет зависит от точного километража до города назначения',
             whatsappMessage:
-              'Здравствуйте, Memorijal d.o.o.! Прошу рассчитать точную смету на региональную авторепатриацию по Балканам (От 2 400 €).',
+              'Здравствуйте, Memorijal d.o.o.! Прошу рассчитать точную смету на региональную авторепатриацию по Балканам (От 2 600 €).',
           },
           mne: {
             title: 'Regionalna drumska repatrijacija (Srbija, BiH, Hrvatska, Albanija)',
             badge: 'Direktan prevoz kroz region',
-            formattedPrice: `Od${NBSP}2.400${NBSP}€`,
+            formattedPrice: `Od${NBSP}2.600${NBSP}€`,
             scope:
               'Sanitarna priprema, hermetičko lemljenje cinka, državna plomba inspektora, konzularne Sprovodnice i direktan prevoz specijalnim vozilom licenciranog partnera.',
             disbursementNote: 'Konačni obračun zavisi od tačne kilometraže do grada odredišta',
             whatsappMessage:
-              'Poštovani Memorijal d.o.o., molim za proračun za regionalnu drumsku repatrijaciju (Od 2.400 €).',
+              'Poštovani Memorijal d.o.o., molim za proračun za regionalnu drumsku repatrijaciju (Od 2.600 €).',
           },
         },
       },
       {
         id: 'eu_ukraine_ground_repatriation',
         codeNum: '06',
-        basePriceEur: 3800,
+        basePriceEur: 4200,
         targetPath: '/services/repatriation-road/',
         schemaName: 'EU & Ukraine Cross-Border Ground Repatriation',
         schemaDescription:
@@ -597,39 +597,39 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
           en: {
             title: 'EU & Ukraine Cross-Border Ground Repatriation',
             badge: 'Schengen, EU & Ukraine Two-Driver Corridor',
-            formattedPrice: `From${NBSP}€3,800`,
+            formattedPrice: `From${NBSP}€4,200`,
             scope:
               'EUR-6 certified two-driver mortuary carrier, full Schengen/EU customs transit clearance (Debeli Brijeg / Horgos), hermetic zinc casket, Apostilled Form C dossier, and Embassy Laissez-Passer.',
             disbursementNote: 'Route-specific highway tolls, ferry & customs transit fees itemized',
             whatsappMessage:
-              'Hello Memorijal d.o.o., I would like an exact estimate for EU & Ukraine Cross-Border Ground Repatriation (From €3,800).',
+              'Hello Memorijal d.o.o., I would like an exact estimate for EU & Ukraine Cross-Border Ground Repatriation (From €4,200).',
           },
           ru: {
             title: 'Наземная репатриация в страны ЕС и Украину',
             badge: 'Международный коридор ЕС / Шенген / Украина',
-            formattedPrice: `От${NBSP}3${NBSP}800${NBSP}€`,
+            formattedPrice: `От${NBSP}4${NBSP}200${NBSP}€`,
             scope:
               'Спецтранспорт партнера стандарта EUR-6 с экипажем из двух водителей, таможенный транзит ЕС/Шенген, герметичный цинковый гроб, апостилированное досье Формы C и разрешение посольства.',
             disbursementNote: 'Расчет зависит от страны назначения и пограничного коридора',
             whatsappMessage:
-              'Здравствуйте, Memorijal d.o.o.! Прошу рассчитать точную смету на наземную репатриацию в ЕС / Украину (От 3 800 €).',
+              'Здравствуйте, Memorijal d.o.o.! Прошу рассчитать точную смету на наземную репатриацию в ЕС / Украину (От 4 200 €).',
           },
           mne: {
             title: 'Međunarodna drumska repatrijacija u zemlje EU i Ukrajinu',
             badge: 'EU / Šengen i Ukrajina kopneni koridor',
-            formattedPrice: `Od${NBSP}3.800${NBSP}€`,
+            formattedPrice: `Od${NBSP}4.200${NBSP}€`,
             scope:
               'Sertifikovano vozilo EUR-6 sa dva vozača, carinski tranzit kroz EU/Šengen, hermetički pocinkovani sanduk, Apostille dokumentacija i sprovodnica ambasade.',
             disbursementNote: 'Obračun prema državi odredišta i tranzitnoj ruti',
             whatsappMessage:
-              'Poštovani Memorijal d.o.o., molim za proračun za drumsku repatrijaciju u EU / Ukrajinu (Od 3.800 €).',
+              'Poštovani Memorijal d.o.o., molim za proračun za drumsku repatrijaciju u EU / Ukrajinu (Od 4.200 €).',
           },
         },
       },
       {
         id: 'international_air_cargo_hum',
         codeNum: '07',
-        basePriceEur: 4500,
+        basePriceEur: 4900,
         targetPath: '/services/repatriation-air-cargo/',
         schemaName: 'International Air Cargo Repatriation (IATA Cargo HUM / Груз 200)',
         schemaDescription:
@@ -638,32 +638,32 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
           en: {
             title: 'International Air Cargo Repatriation (IATA Cargo HUM / Груз 200)',
             badge: 'Priority MAWB Air Freight • Worldwide',
-            formattedPrice: `From${NBSP}€4,500`,
+            formattedPrice: `From${NBSP}€4,900`,
             scope:
               'Forensic formalin embalming (tanatopraksija), IATA-compliantwooden casket with 0.6–0.8 mm soldered zinc liner & pressure valve, export customs declaration, and priority MAWB booking from TGD / BEG.',
             disbursementNote: 'Airline Cargo HUM volumetric weight tariff billed per official MAWB',
             whatsappMessage:
-              'Hello Memorijal d.o.o., I would like an exact estimate for International Air Cargo Repatriation (IATA Cargo HUM — From €4,500).',
+              'Hello Memorijal d.o.o., I would like an exact estimate for International Air Cargo Repatriation (IATA Cargo HUM — From €4,900).',
           },
           ru: {
             title: 'Международная авиарепатриация (IATA Cargo HUM / Груз 200)',
             badge: 'Приоритетный вылет MAWB • Весь мир',
-            formattedPrice: `От${NBSP}4${NBSP}500${NBSP}€`,
+            formattedPrice: `От${NBSP}4${NBSP}900${NBSP}€`,
             scope:
               'Судебно-медицинское бальзамирование (tanatopraksija), авиационный гроб с оцинкованным вкладышем 0.6–0.8 мм и барометрическим клапаном, таможенная декларация и бронирование авианакладной MAWB из TGD / BEG.',
             disbursementNote: 'Авиатариф IATA HUM рассчитывается по весу и объему согласно MAWB',
             whatsappMessage:
-              'Здравствуйте, Memorijal d.o.o.! Прошу рассчитать точную смету на международную авиарепатриацию IATA Cargo HUM / Груз 200 (От 4 500 €).',
+              'Здравствуйте, Memorijal d.o.o.! Прошу рассчитать точную смету на международную авиарепатриацию IATA Cargo HUM / Груз 200 (От 4 900 €).',
           },
           mne: {
             title: 'Međunarodna avio-repatrijacija (IATA Cargo HUM / Gruz 200)',
             badge: 'Prioritetni avio-kargo MAWB • Cijeli svijet',
-            formattedPrice: `Od${NBSP}4.500${NBSP}€`,
+            formattedPrice: `Od${NBSP}4.900${NBSP}€`,
             scope:
               'Sudsko-medicinsko balzamovanje (tanatopraksija), avio-sanduk sa pocinkovanim uloškom 0.6–0.8 mm i ventilom, izvozna carinska deklaracija i MAWB rezervacija sa aerodroma TGD / BEG.',
             disbursementNote: 'Avio-tarifa IATA HUM obračunava se prema težini i zapremini po MAWB listu',
             whatsappMessage:
-              'Poštovani Memorijal d.o.o., molim za proračun za međunarodnu avio-repatrijaciju IATA Cargo HUM (Od 4.500 €).',
+              'Poštovani Memorijal d.o.o., molim za proračun za međunarodnu avio-repatrijaciju IATA Cargo HUM (Od 4.900 €).',
           },
         },
       },

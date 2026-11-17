@@ -395,7 +395,7 @@ export const translations: Record<Language, TranslationContent> = {
         cremation: {
           balkans: {
             timeframe: '48 – 72 Hours (Full Urn Return)',
-            priceRange: 'From €1,850',
+            priceRange: 'From €2,200',
             routeSummary: 'Montenegro Hospital → Border Dobrakovo/Gostun → Belgrade State Crematorium → Urn Return',
             procedures: [
               'Morgue collection, hygienic preparation & statutory transit coffin',
@@ -411,7 +411,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           eu_uk: {
             timeframe: '72 – 96 Hours (Cremation + EU/UK Urn Dispatch)',
-            priceRange: 'From €1,850',
+            priceRange: 'From €2,200',
             routeSummary: 'Montenegro → Belgrade Crematorium → Embassy Urn Clearance → EU/UK Handover or Air Cabin Permit',
             procedures: [
               'Full cross-border transport to Belgrade / Novi Sad Crematorium',
@@ -427,7 +427,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           cis_east: {
             timeframe: '72 – 96 Hours (Cremation + CIS/East Dispatch)',
-            priceRange: 'From €1,850',
+            priceRange: 'From €2,200',
             routeSummary: 'Montenegro → Belgrade State Crematorium → Consular Legalization → International Urn Transit',
             procedures: [
               'Remote Power of Attorney execution (no family travel to Montenegro required)',
@@ -445,7 +445,7 @@ export const translations: Record<Language, TranslationContent> = {
         air_cargo: {
           balkans: {
             timeframe: '24 – 48 Hours',
-            priceRange: 'From €4,500',
+            priceRange: 'From €4,900',
             routeSummary: 'Podgorica (TGD) / Tivat (TIV) Airport → Regional Hub Cargo HUM',
             procedures: [
               'Sanitary embalming & hermetic zinc container soldering (lemljenje)',
@@ -461,7 +461,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           eu_uk: {
             timeframe: '36 – 72 Hours',
-            priceRange: 'From €4,500',
+            priceRange: 'From €4,900',
             routeSummary: 'Podgorica (TGD) / Dubrovnik / Tirana → Frankfurt, London, Vienna, Zurich, Paris or EU Hub',
             procedures: [
               'Full regulatory embalming (thanatopraxy) & zinc liner soldering',
@@ -477,7 +477,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           cis_east: {
             timeframe: '48 – 72 Hours',
-            priceRange: 'From €4,500',
+            priceRange: 'From €4,900',
             routeSummary: 'Podgorica (TGD) / Belgrade (BEG) / Istanbul Hub → Destination Airport or Combined Transit',
             procedures: [
               'Consular registration of death & notary translation of all medical records',
@@ -495,7 +495,7 @@ export const translations: Record<Language, TranslationContent> = {
         road_transport: {
           balkans: {
             timeframe: '24 – 36 Hours',
-            priceRange: 'From €2,400',
+            priceRange: 'From €2,600',
             routeSummary: 'Direct Specialized Hearse from Montenegro to Serbia, Bosnia, Croatia, Slovenia or Albania',
             procedures: [
               'Collection from hospital morgue & hygienic dressing/preparation',
@@ -511,7 +511,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           eu_uk: {
             timeframe: '48 – 72 Hours',
-            priceRange: 'From €3,800',
+            priceRange: 'From €4,200',
             routeSummary: 'Montenegro → Croatia / Hungary Schengen Border → Germany, Austria, Italy, Switzerland, Poland',
             procedures: [
               'Hermetic zinc container soldering & sanitary inspector sealing',
@@ -527,7 +527,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           cis_east: {
             timeframe: '60 – 96 Hours',
-            priceRange: 'From €3,800',
+            priceRange: 'From €4,200',
             routeSummary: 'Montenegro → Serbia → Hungary / Romania / Poland Corridor → Ukraine, Baltics & Eastern Europe',
             procedures: [
               'Complete consular legalization & sworn translations (UA/RU/EN)',
@@ -887,7 +887,7 @@ export const translations: Record<Language, TranslationContent> = {
         cremation: {
           balkans: {
             timeframe: '48 – 72 часа (с возвратом урны)',
-            priceRange: 'От 1 850 €',
+            priceRange: 'От 2 200 €',
             routeSummary: 'Госпиталь в ЧГ → Таможня Добраково/Гостун → Гос. крематорий Белграда → Возврат урны',
             procedures: [
               'Забор из морга, санитарная подготовка и транспортировочный гроб',
@@ -903,7 +903,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           eu_uk: {
             timeframe: '72 – 96 часов (Кремация + отправка урны в ЕС/UK)',
-            priceRange: 'От 1 850 €',
+            priceRange: 'От 2 200 €',
             routeSummary: 'Черногория → Крематорий Белграда → Консульское разрешение → Передача урны в ЕС / Британии',
             procedures: [
               'Международная перевозка в государственный крематорий Белграда / Нови-Сада',
@@ -919,7 +919,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           cis_east: {
             timeframe: '72 – 96 часов (Кремация + документы для СНГ/Украины)',
-            priceRange: 'От 1 850 €',
+            priceRange: 'От 2 200 €',
             routeSummary: 'Черногория → Гос. крематорий Белграда → Консульская легализация → Возврат или отправка урны',
             procedures: [
               'Полное оформление по дистанционной доверенности без приезда родственников',
@@ -937,7 +937,7 @@ export const translations: Record<Language, TranslationContent> = {
         air_cargo: {
           balkans: {
             timeframe: '24 – 48 часов',
-            priceRange: 'От 4 500 €',
+            priceRange: 'От 4 900 €',
             routeSummary: 'Аэропорт Подгорица (TGD) / Тиват (TIV) → Региональный авиахаб Cargo HUM',
             procedures: [
               'Санитарное бальзамирование и герметичная опайка цинкового контейнера (lemljenje)',
@@ -953,7 +953,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           eu_uk: {
             timeframe: '36 – 72 часа',
-            priceRange: 'От 4 500 €',
+            priceRange: 'От 4 900 €',
             routeSummary: 'Подгорица (TGD) / Дубровник / Тирана → Франкфурт, Лондон, Вена, Цюрих, Париж и др.',
             procedures: [
               'Полная танатопраксия (бальзамирование) и герметичная опайка цинкового вкладыша',
@@ -969,7 +969,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           cis_east: {
             timeframe: '48 – 72 часа',
-            priceRange: 'От 4 500 €',
+            priceRange: 'От 4 900 €',
             routeSummary: 'Подгорица (TGD) / Белград (BEG) / Стамбул → Аэропорт назначения или комбинированный транзит',
             procedures: [
               'Консульская регистрация смерти и нотариальный перевод всех медицинских актов',
@@ -987,7 +987,7 @@ export const translations: Record<Language, TranslationContent> = {
         road_transport: {
           balkans: {
             timeframe: '24 – 36 часов',
-            priceRange: 'От 2 400 €',
+            priceRange: 'От 2 600 €',
             routeSummary: 'Прямой спецтранспорт из Черногории в Сербию, Боснию, Хорватию, Словению или Албанию',
             procedures: [
               'Забор из больничного морга, омовение, облачение и санитарная подготовка',
@@ -1003,7 +1003,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           eu_uk: {
             timeframe: '48 – 72 часа',
-            priceRange: 'От 3 800 €',
+            priceRange: 'От 4 200 €',
             routeSummary: 'Черногория → Граница Шенгена (Хорватия/Венгрия) → Германия, Австрия, Италия, Польша, Чехия',
             procedures: [
               'Герметичная опайка цинкового контейнера и пломбирование санитарным инспектором',
@@ -1019,7 +1019,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           cis_east: {
             timeframe: '60 – 96 часов',
-            priceRange: 'От 3 800 €',
+            priceRange: 'От 4 200 €',
             routeSummary: 'Черногория → Сербия → Коридор Венгрия / Румыния / Польша → Украина, страны Балтии и СНГ',
             procedures: [
               'Полная консульская легализация и заверенные переводы документов (UA/RU/EN)',
@@ -1379,7 +1379,7 @@ export const translations: Record<Language, TranslationContent> = {
         cremation: {
           balkans: {
             timeframe: '48 – 72 sata (sa povratom urne)',
-            priceRange: 'Od 1.850 €',
+            priceRange: 'Od 2.200 €',
             routeSummary: 'Bolnica u CG → Granični prelaz Dobrakovo/Gostun → Državni krematorijum Beograd → Povrat urne',
             procedures: [
               'Preuzimanje iz bolničke mrtvačnice, higijenska priprema i zakonski sanduk',
@@ -1395,7 +1395,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           eu_uk: {
             timeframe: '72 – 96 sati (Kremacija + otprema urne u EU/UK)',
-            priceRange: 'Od 1.850 €',
+            priceRange: 'Od 2.200 €',
             routeSummary: 'Crna Gora → Krematorijum Beograd → Konzularna dozvola → EU/UK predaja ili avio-sertifikat',
             procedures: [
               'Kompletan prekogranični transport do krematorijuma u Beogradu ili Novom Sadu',
@@ -1411,7 +1411,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           cis_east: {
             timeframe: '72 – 96 sati (Kremacija + dokumentacija za ZND/Ukrajinu)',
-            priceRange: 'Od 1.850 €',
+            priceRange: 'Od 2.200 €',
             routeSummary: 'Crna Gora → Državni krematorijum Beograd → Konzularna legalizacija → Međunarodni prenos urne',
             procedures: [
               'Kompletna procedura po daljinskom punomoćju bez dolaska porodice u CG',
@@ -1429,7 +1429,7 @@ export const translations: Record<Language, TranslationContent> = {
         air_cargo: {
           balkans: {
             timeframe: '24 – 48 sati',
-            priceRange: 'Od 4 500 €',
+            priceRange: 'Od 4 900 €',
             routeSummary: 'Aerodrom Podgorica (TGD) / Tivat (TIV) → Regionalni Cargo HUM hab',
             procedures: [
               'Sanitarno balzamovanje i hermetičko lemljenje limenog sanduka (cinka)',
@@ -1445,7 +1445,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           eu_uk: {
             timeframe: '36 – 72 sata',
-            priceRange: 'Od 4 500 €',
+            priceRange: 'Od 4 900 €',
             routeSummary: 'Podgorica (TGD) / Dubrovnik / Tirana → Frankfurt, London, Beč, Cirih, Pariz ili EU hab',
             procedures: [
               'Propisana tanatopraksija (balzamovanje) i lemljenje cink uloška',
@@ -1461,7 +1461,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           cis_east: {
             timeframe: '48 – 72 sata',
-            priceRange: 'Od 4 500 €',
+            priceRange: 'Od 4 900 €',
             routeSummary: 'Podgorica (TGD) / Beograd (BEG) / Istanbul hab → Odredišni aerodrom ili kombinovani tranzit',
             procedures: [
               'Konzularna prijava smrti i ovjereni prevod cjelokupne medicinske dokumentacije',
@@ -1479,7 +1479,7 @@ export const translations: Record<Language, TranslationContent> = {
         road_transport: {
           balkans: {
             timeframe: '24 – 36 sati',
-            priceRange: 'Od 2.400 €',
+            priceRange: 'Od 2.600 €',
             routeSummary: 'Direktan prevoz specijalnim pogrebnim vozilom iz CG za Srbiju, BiH, Hrvatsku, Sloveniju ili Albaniju',
             procedures: [
               'Preuzimanje iz bolničke kapele i kompletna higijenska priprema',
@@ -1495,7 +1495,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           eu_uk: {
             timeframe: '48 – 72 sata',
-            priceRange: 'Od 3.800 €',
+            priceRange: 'Od 4.200 €',
             routeSummary: 'Crna Gora → Šengen granica (Hrvatska / Mađarska) → Njemačka, Austrija, Italija, Švajcarska, Poljska',
             procedures: [
               'Hermetičko lemljenje cink sanduka i plombiranje od strane sanitarnog inspektora',
@@ -1511,7 +1511,7 @@ export const translations: Record<Language, TranslationContent> = {
           },
           cis_east: {
             timeframe: '60 – 96 sati',
-            priceRange: 'Od 3.800 €',
+            priceRange: 'Od 4.200 €',
             routeSummary: 'Crna Gora → Srbija → Koridor Mađarska / Rumunija / Poljska → Ukrajina, Baltik i Istočna Evropa',
             procedures: [
               'Kompletna konzularna legalizacija i prevodi sudskih tumača (UA/RU/EN)',
