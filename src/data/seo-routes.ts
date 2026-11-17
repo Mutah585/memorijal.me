@@ -191,7 +191,7 @@ function buildWalkthrough(
         authority: exitHub,
         timeframe: 'Po redu leta / vožnje',
         description:
-          'Prioritetna carinska špedicija na aerodromskom kargo terminalu (MAWB Cargo HUM) ili direktan prevoz specijalizovanim pogrebnim vozilom do odredišnog grada.',
+          'Prioritetna carinska procedura na aerodromskom kargo terminalu (MAWB Cargo HUM) i koordinacija direktnog prevoza putem licenciranog pogrebnog prevoznika do odredišnog grada.',
       },
     ];
   }
@@ -293,7 +293,7 @@ function buildStandardCosts(locale: LocaleSlug, freightLabel: string, freightRan
         item: freightLabel,
         includedStatus: 'Fiksno po specifikaciji',
         referenceCost: freightRange,
-        detail: 'Carinska špedicija, avio-tovarni list (AWB Cargo HUM) ili međunarodni drumski transport.',
+        detail: 'Carinska procedura, koordinacija avio-tovarnog lista (AWB Cargo HUM) ili međunarodni drumski prevoz licenciranog partnera.',
       },
     ];
   }
@@ -533,7 +533,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           estimatedTotalRange: 'From €2,400',
         },
         costHeading: 'Itemized Air Cargo HUM Cost Transparency',
-        costSubtitle: 'Complete breakdown of mandatory airport security, customs forwarding, and sanitary fees.',
+        costSubtitle: 'Complete breakdown of mandatory airport security, customs clearance, and sanitary fees.',
         costItems: buildStandardCosts('en', 'IATA Cargo HUM Air Freight, MAWB & Airport Terminal Handling', 'From €1,100'),
         faqHeading: 'FAQ — Air Cargo Repatriation from Montenegro',
         faqs: [
@@ -551,7 +551,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           },
           {
             question: 'How quickly do we receive the Air Waybill (AWB) tracking number?',
-            answer: 'As soon as the sanitary Sprovodnica is issued (typically within 24–36 hours), our licensed customs forwarder books the flight slot and sends you the live MAWB flight schedule.',
+            answer: 'As soon as the sanitary Sprovodnica is issued (typically within 24–36 hours), our coordinator arranges the Cargo HUM flight slot with licensed airline cargo agents and sends you the live MAWB flight schedule.',
           },
         ],
       },
@@ -609,9 +609,9 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
         breadcrumbLabel: 'Avio repatrijacija (Cargo HUM)',
         eyebrow: 'SERTIFIKOVANI IATA CARGO HUM PROTOKOL',
         h1: 'Međunarodna avio repatrijacija (Cargo HUM) iz Crne Gore',
-        heroSubtitle: 'Prioritetna rezervacija avio-tovarnog lista (MAWB), sudsko-medicinsko balzamovanje, hermetičko lemljenje cinka i carinska špedicija na aerodromu Podgorica (TGD) i Tivat (TIV).',
+        heroSubtitle: 'Koordinacija rezervacije avio-tovarnog lista (MAWB), sudsko-medicinsko balzamovanje, hermetičko lemljenje cinka i carinska procedura na aerodromu Podgorica (TGD) i Tivat (TIV).',
         whatsappPrefill: 'Poštovani, potreban mi je obračun za IATA Cargo HUM avio-repatrijaciju iz Crne Gore.',
-        emergencyBannerText: 'Koordinator u mrtvačnici Kotor / KCCG Podgorica u roku od 60 minuta • Aerodromska špedicija 24/7',
+        emergencyBannerText: 'Koordinator u mrtvačnici Kotor / KCCG Podgorica u roku od 60 minuta • Aerodromska koordinacija 24/7',
         explainerHeading: 'Zakonska procedura pripreme za IATA Cargo HUM let',
         explainerIntro: 'Međunarodne avio-kompanije zahtijevaju strogu usklađenost sa IATA HUM pravilima prije prijema kovčega na kargo terminal.',
         walkthroughSteps: buildWalkthrough('mne', 'IATA Cargo HUM Avio Transport', 'Ambasada u Podgorici', 'Kargo terminal Aerodroma Podgorica (TGD)'),
@@ -779,7 +779,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           estimatedTotalRange: 'Od 2.400 €',
         },
         costHeading: 'Transparentni troškovi međunarodnog drumskog prevoza',
-        costSubtitle: 'Fiksna cijena po ruti uključujući putarine, graničnu špediciju i sanitarnu opremu.',
+        costSubtitle: 'Fiksna cijena po ruti uključujući putarine, graničnu carinsku proceduru i sanitarnu opremu.',
         costItems: buildStandardCosts('mne', 'Međunarodni transport specijalnim vozilom, putarine i carina', 'Od 600 €'),
         faqHeading: 'Česta pitanja — Drumski prevoz pokojnika iz Crne Gore',
         faqs: [

@@ -379,10 +379,10 @@ Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
         {/* Concise 2-line Statutory Agency Disclaimer */}
         <div className="pt-6 text-[11px] text-slate-400 leading-relaxed max-w-5xl">
           {lang === 'RU'
-            ? 'Memorijal d.o.o. (Тиват, Черногория • KD 82.99 / 52.29) действует исключительно как агентство административно-правовой и логистической координации и не располагает собственным автопарком или розничным магазином. Физическая перевозка тел, герметичная пайка цинка и авиафрахт выполняются аккредитованными лицензированными партнерами-перевозчиками.'
+            ? 'Memorijal d.o.o. (Тиват, Черногория • KD 82.99) действует исключительно как агентство по административному, юридическому и организационному сопровождению по доверенности семьи и не располагает собственным автопарком или розничным магазином. Физическая перевозка тел, герметичная пайка цинка и авиафрахт выполняются аккредитованными лицензированными партнерами-перевозчиками.'
             : lang === 'MNE'
-            ? 'Memorijal d.o.o. (Tivat, Crna Gora • KD 82.99 / 52.29) posluje isključivo kao agencija za administrativnu, pravnu i logističku koordinaciju i ne posjeduje sopstveni vozni park niti maloprodajni objekat. Fizički transport, lemljenje cinka i avio-kargo prevoz obavljaju akreditovani licencirani prevoznici i operateri.'
-            : 'Memorijal d.o.o. (Tivat, Montenegro • KD 82.99 / 52.29) operates strictly as an administrative, legal, and forwarding coordination agency and does not own a vehicle fleet or retail store. Physical transport, hermetic zinc soldering, and air freight are executed by accredited licensed partner carriers.'}
+            ? 'Memorijal d.o.o. (Tivat, Crna Gora • KD 82.99) posluje isključivo kao agencija za administrativnu, pravnu i organizacionu podršku i zastupanje po punomoćju, i ne posjeduje sopstveni vozni park niti maloprodajni objekat. Fizički transport, lemljenje cinka i avio-kargo prevoz obavljaju akreditovani licencirani prevoznici i operateri.'
+            : 'Memorijal d.o.o. (Tivat, Montenegro • KD 82.99) operates strictly as an administrative, legal, and case coordination agency acting under client Power of Attorney and does not own a vehicle fleet or retail store. Physical transport, hermetic zinc soldering, and air freight are executed by accredited licensed partner carriers.'}
         </div>
 
         {/* Bottom Copyright, Privacy & Studio Credit Bar */}

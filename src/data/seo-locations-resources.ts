@@ -1212,11 +1212,11 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         matrixHeading: 'Corporate & Regulatory Verification Record',
         specs: {
           transitTime: '24/7 Direct Executive Availability (+382 68 934 904)',
-          transportMode: 'Licensed International Mortuary Fleet & IATA Cargo HUM Forwarding',
+          transportMode: 'Administrative & Case Coordination Agency (Dispatched Licensed Carriers & IATA Cargo HUM)',
           consularTimeframe: 'Direct Working Protocols with 20+ Diplomatic Missions in Podgorica & Belgrade',
           embassyJurisdiction: 'Registered in the Central Registry of Business Entities of Montenegro (CRPS)',
           morgueCatchment: 'Coastal Hub (Tivat / Kotor) & Capital Clinical Hub (Podgorica / KCCG)',
-          requiredDocuments: ['KD 2010: 82.99 & 52.29 • CRPS Podgorica registration in progress • Not a VAT (PDV) payer (Art. 42)'],
+          requiredDocuments: ['KD 2010: 82.99 • CRPS Podgorica registration in progress • Not a VAT (PDV) payer (Art. 42)'],
           receivingRequirements: ['Full GDPR & Montenegrin Personal Data Protection Compliance'],
           estimatedTotalRange: 'Written Mandate Contracts • SWIFT/SEPA Corporate IBAN & Insurance GOP',
         },
@@ -1235,7 +1235,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
           },
           {
             question: 'How can an assistance company or embassy verify your corporate registration in Montenegro?',
-            answer: 'Memorijal d.o.o. operates under Montenegrin Activity Codes KD 2010: 82.99 & 52.29 (Tivat, Crna Gora), with CRPS Podgorica registration in progress and non-VAT status pursuant to Art. 42 of the Law on VAT.',
+            answer: 'Memorijal d.o.o. operates under Montenegrin Activity Code KD 2010: 82.99 (Tivat, Crna Gora), with CRPS Podgorica registration in progress and non-VAT status pursuant to Art. 42 of the Law on VAT.',
           },
           {
             question: 'Do you adhere to strict ethical and non-commercial standards?',
@@ -1263,7 +1263,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
           consularTimeframe: 'Прямой рабочий протокол с более чем 20 посольствами в Подгорице и Белграде',
           embassyJurisdiction: 'Регистрация в Центральном реестре субъектов хозяйствования Черногории (CRPS Подгорица) в процессе',
           morgueCatchment: 'Головной офис в Тивате (выезд по всей Черногории: KCCG Подгорица, Котор, Бар, Беране)',
-          requiredDocuments: ['KD 2010: 82.99 и 52.29 • Не является плательщиком НДС/PDV (ст. 42 Закона об НДС ЧГ)'],
+          requiredDocuments: ['KD 2010: 82.99 • Не является плательщиком НДС/PDV (ст. 42 Закона об НДС ЧГ)'],
           receivingRequirements: ['Строгая конфиденциальность и защита персональных данных (GDPR / ZZPL)'],
           estimatedTotalRange: 'Официальный агентский договор поручения • Расчеты SEPA/SWIFT IBAN и страховые GOP',
         },
@@ -1282,7 +1282,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
           },
           {
             question: 'Как проверить официальный статус компании Memorijal d.o.o.?',
-            answer: 'Memorijal d.o.o. (Тиват, Черногория) осуществляет деятельность по кодам KD 2010: 82.99 и 52.29; регистрация в CRPS Подгорицы в процессе, не является плательщиком НДС (PDV) согласно ст. 42 Закона о НДС Черногории.',
+            answer: 'Memorijal d.o.o. (Тиват, Черногория) осуществляет деятельность по коду KD 2010: 82.99 (административное и организационное сопровождение по поручению семьи); регистрация в CRPS Подгорицы в процессе, не является плательщиком НДС (PDV) согласно ст. 42 Закона о НДС Черногории.',
           },
           {
             question: 'Предоставляете ли вы фото- и документальный отчет по этапам оформления?',
@@ -1306,11 +1306,11 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
         matrixHeading: 'Korporativni i registarski podaci',
         specs: {
           transitTime: 'Direktna dostupnost koordinatora 24/7 (+382 68 934 904)',
-          transportMode: 'Licencirana flota pogrebnih vozila i IATA Cargo HUM špedicija',
+          transportMode: 'Agencija za administrativnu, pravnu i organizacionu podršku po punomoćju (IATA Cargo HUM i licencirani prevoznici)',
           consularTimeframe: 'Direktna saradnja sa preko 20 ambasada i konzulata u Podgorici i Beogradu',
           embassyJurisdiction: 'Upisano u Centralni registar privrednih subjekata Crne Gore (CRPS)',
           morgueCatchment: 'Primorski centar (Tivat / Kotor) i Centralni centar (Podgorica / KCCG)',
-          requiredDocuments: ['KD 2010: 82.99 & 52.29 • Nije obveznik PDV-a (član 42 Zakona o PDV-u)'],
+          requiredDocuments: ['KD 2010: 82.99 • Nije obveznik PDV-a (član 42 Zakona o PDV-u)'],
           receivingRequirements: ['Potpuna usklađenost sa Zakonom o zaštiti podataka o ličnosti i GDPR-om'],
           estimatedTotalRange: 'Pisani ugovori o nalogu • SEPA/SWIFT IBAN i GOP osiguranja',
         },
@@ -1329,7 +1329,7 @@ export const RESOURCE_ROUTES: SeoRouteEntry[] = [
           },
           {
             question: 'Kako osiguravajuće kuće mogu provjeriti pravni status firme?',
-            answer: 'Memorijal d.o.o. (Tivat, Crna Gora) posluje pod šiframa KD 2010: 82.99 i 52.29; registracija kod CRPS Podgorica je u toku, nije obveznik PDV-a shodno članu 42 Zakona o PDV-u.',
+            answer: 'Memorijal d.o.o. (Tivat, Crna Gora) posluje pod šifrom djelatnosti KD 2010: 82.99 kao agencija za administrativnu i pravnu podršku po punomoćju; registracija kod CRPS Podgorica je u toku, nije obveznik PDV-a shodno članu 42 Zakona o PDV-u.',
           },
           {
             question: 'Da li porodica dobija izvještaje u svakoj fazi postupka?',

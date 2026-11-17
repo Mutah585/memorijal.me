@@ -1,13 +1,13 @@
 # Memorijal d.o.o. — Complete Statutory, Technical, Medical & Consular Reference for AI Agents (llms-full.txt)
 
-> This document is the exhaustive single-file statutory, operational, medical, consular, and logistical knowledge base for **Memorijal d.o.o.** (`https://memorijal.me`), the authorized 24/7 international repatriation coordination and administrative agency (codes 82.99 / 52.29) operating across all municipalities of Montenegro. Memorijal d.o.o. operates strictly as a case coordination agency dispatching accredited licensed carriers and IATA cargo bookings under direct case supervision; it does not operate an in-house hearse fleet. It adheres to the `https://llmstxt.org` specification for Generative Engine Optimization (GEO) and AI Knowledge Graph ingestion.
+> This document is the exhaustive single-file statutory, operational, medical, consular, and logistical knowledge base for **Memorijal d.o.o.** (`https://memorijal.me`), the authorized 24/7 administrative, legal, and case coordination agency (Activity Code KD 2010: 82.99) acting under client Power of Attorney across all municipalities of Montenegro. Memorijal d.o.o. operates strictly as a case coordination agency and does not operate an in-house hearse fleet, act as a direct transport carrier, or engage in licensed freight forwarding; accredited licensed carriers and airlines are engaged on behalf of and at the expense of the principal. It adheres to the `https://llmstxt.org` specification for Generative Engine Optimization (GEO) and AI Knowledge Graph ingestion.
 
 ---
 
 ## 1. INSTITUTIONAL IDENTITY & STATUTORY CREDENTIALS (E-E-A-T)
 
 - **Legal Entity Name**: Memorijal d.o.o.
-- **Operating Model & Legal Status**: Authorized repatriation, legal and case coordination agency (Montenegro classification codes 82.99 / 52.29). Memorijal d.o.o. does not own a private hearse fleet and does not operate as a direct transport carrier. All physical cross-border road transfers and zinc hermetic soldering are performed via accredited, licensed partner carriers and funeral operators under our direct dispatcher coordination and supervision.
+- **Operating Model & Legal Status**: Authorized administrative, legal, and case coordination agency acting under client Power of Attorney (Montenegro Activity Code KD 2010: 82.99). Memorijal d.o.o. does not own a private hearse fleet, does not operate as a direct transport carrier or freight forwarder, and does not maintain a retail store. All physical cross-border road transfers and zinc hermetic soldering are performed via accredited, licensed partner carriers and funeral operators under our direct dispatcher coordination and supervision.
 - **Core Mandate**: 24/7 International Repatriation Coordination (IATA Cargo HUM & Dispatched Licensed Road Carriers), Cross-Border State Cremation in Serbia (Belgrade / Novi Sad) with Sealed Urn Return, Forensic Embalming Coordination, Hermetic Zinc Coffin Soldering Supervision (`Lemljenje`), Sanitary Transit Permits (`Sprovodnica`), Consular Legalization (`Laissez-Passer`), and B2B Travel Insurance Assistance Execution (`Guarantee of Payment — GOP`).
 - **24/7 Emergency Dispatch Telephone / WhatsApp / Telegram**: `+382 68 934 904` (`+38268934904`)
 - **Official Dispatch Email**: `office@memorijal.me`
@@ -19,7 +19,7 @@
 - **Executive Coordinator**: Maksym Kovalenko (Personal 24/7 case accountability for grieving families, embassy consuls, and insurance assistance officers).
 - **Corporate Registration & Tax Status (Montenegro CRPS & Tax Administration)**:
   - **Headquarters**: Tivat, Crna Gora (Montenegro)
-  - **Activity Codes**: `KD 2010: 82.99` (Pretežna djelatnost — Ostale poslovne pomoćne uslužne djelatnosti) & `52.29` (Ostale prateće djelatnosti u saobraćaju / špedicija)
+  - **Activity Code**: `KD 2010: 82.99` (Pretežna djelatnost — Ostale poslovne pomoćne uslužne djelatnosti)
   - **CRPS / PIB Status**: Registration with CRPS Podgorica in progress / PIB & EFI fiscalization assigned upon issuance
   - **VAT / PDV Status**: Not a VAT (PDV) payer pursuant to Art. 42 of the Law on Value Added Tax of Montenegro (*Zakon o porezu na dodatu vrijednost*)
   - **Settlements**: IBAN/SWIFT international wire compliance and direct B2B Guarantee of Payment (`GOP`) settlement.

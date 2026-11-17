@@ -450,7 +450,7 @@ export const translations: Record<Language, TranslationContent> = {
             procedures: [
               'Sanitary embalming & hermetic zinc container soldering (lemljenje)',
               'Sanitary Inspector verification & lead seal placement',
-              'Airport customs forwarder processing & Cargo HUM Air Waybill',
+              'Airport customs clearance & Cargo HUM Air Waybill coordination',
               'Coordination with receiving funeral director at destination airport',
             ],
             documentsIssued: [
@@ -693,7 +693,7 @@ export const translations: Record<Language, TranslationContent> = {
       legalEntityTitle: 'Registered Legal Entity',
       officeTivat:
         'Headquarters: Tivat, Montenegro (nationwide dispatch across KCCG Podgorica, Kotor, Bar & Berane hospitals)',
-      fiscalNotice: 'MEMORIJAL d.o.o. (Tivat, Montenegro) • KD 82.99 / 52.29 • CRPS registration in progress • SWIFT/SEPA IBAN',
+      fiscalNotice: 'MEMORIJAL d.o.o. (Tivat, Montenegro) • KD 82.99 • CRPS registration in progress • SWIFT/SEPA IBAN',
       copyright: '© 2026 Memorijal d.o.o. Montenegro. All rights reserved.',
       privacyNote: 'Strict confidentiality & GDPR / Montenegrin Personal Data Protection compliance.',
       creditPrefix: 'Designed, engineered & maintained by',
@@ -1185,7 +1185,7 @@ export const translations: Record<Language, TranslationContent> = {
       legalEntityTitle: 'Юридические реквизиты',
       officeTivat:
         'Головной офис: Тиват, Черногория (оперативный выезд по всей стране: KCCG Подгорица, больницы Котора, Бара, Беране)',
-      fiscalNotice: 'MEMORIJAL d.o.o. (Тиват, Черногория) • KD 82.99 / 52.29 • Регистрация CRPS в процессе • SWIFT/SEPA IBAN',
+      fiscalNotice: 'MEMORIJAL d.o.o. (Тиват, Черногория) • KD 82.99 • Регистрация CRPS в процессе • SWIFT/SEPA IBAN',
       copyright: '© 2026 Memorijal d.o.o. Черногория. Все права защищены.',
       privacyNote: 'Строгая конфиденциальность и соблюдение законодательства о защите персональных данных.',
       creditPrefix: 'Сайт создан и поддерживается',
@@ -1373,7 +1373,7 @@ export const translations: Record<Language, TranslationContent> = {
         whatsappBtn: 'Pošaljite parametre na WhatsApp',
         modalBtn: 'Zatražite zvaničnu pisanu ponudu',
         disclaimer:
-          'Rokovi počinju teći od trenutka ovjere punomoćja. Sve državne takse, limeni uložak i carinska špedicija su transparentno iskazani bez skrivenih troškova.',
+          'Rokovi počinju teći od trenutka ovjere punomoćja. Sve državne takse, limeni uložak i carinska procedura su transparentno iskazani bez skrivenih troškova.',
       },
       matrix: {
         cremation: {
@@ -1434,7 +1434,7 @@ export const translations: Record<Language, TranslationContent> = {
             procedures: [
               'Sanitarno balzamovanje i hermetičko lemljenje limenog sanduka (cinka)',
               'Pregled republičkog sanitarnog inspektora i stavljanje državne plombe',
-              'Aerodromska carinska špedicija i izdavanje Cargo HUM avio-tovarnog lista',
+              'Aerodromska carinska procedura i koordinacija Cargo HUM avio-tovarnog lista',
               'Koordinacija sa pogrebnim preduzećem na odredišnom aerodromu',
             ],
             documentsIssued: [
@@ -1678,7 +1678,7 @@ export const translations: Record<Language, TranslationContent> = {
       legalEntityTitle: 'Registrovano pravno lice',
       officeTivat:
         'Sjedište agencije: Tivat, Crna Gora (operativni izlazak na teren širom zemlje: KCCG Podgorica, bolnice Kotor, Bar, Berane)',
-      fiscalNotice: 'MEMORIJAL d.o.o. (Tivat, Crna Gora) • KD 82.99 / 52.29 • Registracija CRPS u toku • SWIFT/SEPA IBAN',
+      fiscalNotice: 'MEMORIJAL d.o.o. (Tivat, Crna Gora) • KD 82.99 • Registracija CRPS u toku • SWIFT/SEPA IBAN',
       copyright: '© 2026 Memorijal d.o.o. Crna Gora. Sva prava zadržana.',
       privacyNote: 'Stroga povjerljivost i usklađenost sa Zakonom o zaštiti podataka o ličnosti i GDPR-om.',
       creditPrefix: 'Sajt kreirao i održava',

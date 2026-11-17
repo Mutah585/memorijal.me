@@ -19,7 +19,7 @@ function makeLegalPageData(
     heroSubtitle,
     whatsappPrefill:
       'Hello Memorijal d.o.o., I have a legal/compliance question regarding international repatriation coordination.',
-    emergencyBannerText: 'Memorijal d.o.o. • Tivat, Montenegro • KD 82.99 / 52.29',
+    emergencyBannerText: 'Memorijal d.o.o. • Tivat, Montenegro • KD 82.99',
     explainerHeading: h1,
     explainerIntro: heroSubtitle,
     walkthroughSteps: [],
@@ -42,7 +42,7 @@ function makeLegalPageData(
       {
         question: 'Does Memorijal d.o.o. operate its own hearses or retail funeral shop?',
         answer:
-          'No. Memorijal d.o.o. operates strictly as an administrative, legal, and forwarding coordination agency (KD 82.99 / 52.29). Physical transport and zinc soldering are performed by licensed partner carriers.',
+          'No. Memorijal d.o.o. operates strictly as an administrative, legal, and case coordination agency acting under client Power of Attorney (KD 82.99). Physical transport and zinc soldering are performed by licensed partner carriers.',
       },
       {
         question: 'What law governs the Mandate Agreement and privacy policy?',
@@ -138,28 +138,28 @@ export const LEGAL_ROUTES: SeoRouteEntry[] = [
     locales: {
       en: makeLegalPageData(
         'Statutory Agency Disclosure & Consumer Rights | Memorijal d.o.o.',
-        'Agency coordination model (KD 82.99 / 52.29), non-carrier, non-retail & non-medical disclaimer, subcontractor liability, and consumer rights notice.',
-        ['Memorijal Regulatory Disclosure', 'KD 82.99 52.29 Montenegro', 'Agency Model Disclosure'],
+        'Agency coordination model (KD 82.99), non-carrier, non-retail & non-medical disclaimer, subcontractor liability, and consumer rights notice.',
+        ['Memorijal Regulatory Disclosure', 'KD 82.99 Montenegro', 'Agency Model Disclosure'],
         'Regulatory & Agency Disclosure',
         'STATUTORY DISCLOSURE • NON-CARRIER • NON-RETAIL • NON-MEDICAL',
         'Statutory Agency Disclosure & Consumer Rights Notice',
-        'Pravno obavještenje o agencijskom modelu — Clarifying KD 82.99 / 52.29 agency status, non-VAT status (Art. 42), licensed partner execution, and consumer rights.'
+        'Pravno obavještenje o agencijskom modelu — Clarifying KD 82.99 agency status, non-VAT status (Art. 42), licensed partner execution, and consumer rights.'
       ),
       ru: makeLegalPageData(
         'Раскрытие агентской модели и прав потребителей | Memorijal d.o.o.',
-        'Официальное раскрытие агентской модели (KD 82.99 / 52.29), отсутствие автопарка, магазина и медлицензии, ответственность субподрядчиков.',
+        'Официальное раскрытие агентской модели (KD 82.99), отсутствие автопарка, магазина и медлицензии, ответственность субподрядчиков.',
         ['Правовое раскрытие Memorijal', 'Агентская модель KD 82.99', 'Права потребителей Черногория'],
         'Агентская модель и оговорки',
-        'РЕГУЛЯТОРНОЕ РАСКРЫТИЕ • KD 82.99 / 52.29 • БЕЗ АВТОПАРКА И МАГАЗИНА',
+        'РЕГУЛЯТОРНОЕ РАСКРЫТИЕ • KD 82.99 • БЕЗ АВТОПАРКА И МАГАЗИНА',
         'Официальное раскрытие агентской модели и прав потребителей',
         'Четкое разграничение статуса координационного агентства (без собственного автопарка, розничной торговли и медицинской практики) и лицензированных подрядчиков.'
       ),
       mne: makeLegalPageData(
         'Pravno obavještenje o agencijskom modelu | Memorijal d.o.o.',
-        'Zakonsko obavještenje o šiframa djelatnosti KD 82.99 / 52.29, odsustvu sopstvenog voznog parka i maloprodaje, odgovornosti podizvođača i pravima potrošača.',
+        'Zakonsko obavještenje o šifri djelatnosti KD 82.99, odsustvu sopstvenog voznog parka i maloprodaje, odgovornosti podizvođača i pravima potrošača.',
         ['Pravno obavještenje Memorijal', 'Agencijski model KD 82.99', 'Zaštita potrošača CG'],
         'Obavještenje o agencijskom modelu',
-        'ZAKONSKO OBAVJEŠTENJE • KD 82.99 / 52.29 • AGENCIJSKI MODEL',
+        'ZAKONSKO OBAVJEŠTENJE • KD 82.99 • AGENCIJSKI MODEL',
         'Zakonsko obavještenje o agencijskom modelu i ograničenju odgovornosti',
         'Pravno razgraničenje između koordinacione agencije Memorijal d.o.o. (bez sopstvenog voznog parka, prodavnice i medicine) i licenciranih prevoznika.'
       ),

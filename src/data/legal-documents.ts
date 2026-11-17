@@ -45,11 +45,11 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
             heading: '1. Агентский характер деятельности (Ugovor o nalogu)',
             statutes: [
               'Zakon o obligacionim odnosima Crne Gore (ст. 757–779 — Договор поручения)',
-              'KD 2010: 82.99 и 52.29',
+              'KD 2010: 82.99 (Ostale poslovne pomoćne uslužne djelatnosti)',
             ],
             paragraphs: [
-              `${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${LEGAL_CREDENTIALS.ACTIVITY_CODES}; ${crpsDisplay}; ${vatNotice}) действует исключительно как независимое административно-правовое и транспортно-экспедиционное координационное агентство (case manager).`,
-              'Все действия в больницах, моргах, муниципальных органах ЗАГС (Matični registar), Санитарной инспекции (Uprava za inspekcijske poslove), дипломатических представительствах и таможенных органах совершаются строго в качестве уполномоченного представителя от имени и за счет Заказчика на основании нотариальной доверенности (Punomoćje) либо официального поручения / гарантийного письма страховой компании (GOP).',
+              `${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${LEGAL_CREDENTIALS.ACTIVITY_CODES}; ${crpsDisplay}; ${vatNotice}) действует исключительно как независимое агентство по административному, юридическому и организационному сопровождению по поручению семьи (Punomoćnik / Nalogoprimac). Компания не осуществляет коммерческих автомобильных перевозок и не выступает лицензированным экспедитором (špedicija) или транспортным брокером.`,
+              'Все действия в больницах, моргах, муниципальных органах ЗАГС (Matični registar), Санитарной инспекции (Uprava za inspekcijske poslove), дипломатических представительствах и таможенных органах совершаются строго в качестве уполномоченного представителя от имени и за счет Заказчика на основании нотариальной доверенности (Punomoćje) и гражданско-правового договора поручения (Ugovor o nalogu, ст. 757 ZOO). Договоры физической перевозки и бронирования авиагруза AWB заключаются с лицензированными сторонними перевозчиками/авиакомпаниями от имени и за счет доверителя (prolazne stavke / prefakturisanje troškova).',
             ],
           },
           {
@@ -263,11 +263,11 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
             heading: '1. Agencijski karakter poslovanja (Ugovor o nalogu i posredovanju)',
             statutes: [
               'Zakon o obligacionim odnosima Crne Gore (čl. 757–779)',
-              'KD 2010: 82.99 i 52.29',
+              'KD 2010: 82.99 (Ostale poslovne pomoćne uslužne djelatnosti)',
             ],
             paragraphs: [
-              `${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${LEGAL_CREDENTIALS.ACTIVITY_CODES}; ${crpsDisplay}; ${vatNotice}) posluje isključivo kao nezavisna administrativna, pravna i špeditersko-koordinaciona agencija (case manager).`,
-              'Sve radnje pred bolnicama, kapelama, matičnim službama, Sanitarnom inspekcijom (Uprava za inspekcijske poslove), ambasadama i carinskim organima preduzimaju se isključivo u svojstvu ovlašćenog punomoćnika u ime i za račun Nalogodavca na osnovu ovjerenog Punomoćja ili pisanog naloga / garantnog pisma osiguranja (GOP).',
+              `${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${LEGAL_CREDENTIALS.ACTIVITY_CODES}; ${crpsDisplay}; ${vatNotice}) posluje isključivo kao agencija za administrativnu, pravnu i organizacionu podršku i zastupanje po punomoćju (Punomoćnik / Nalogoprimac). Društvo ne obavlja komercijalni drumski prevoz niti posluje kao licencirana špedicija ili transportni posrednik.`,
+              'Sve radnje pred bolnicama, kapelama, matičnim službama, Sanitarnom inspekcijom (Uprava za inspekcijske poslove), ambasadama i carinskim organima preduzimaju se isključivo u svojstvu ovlašćenog punomoćnika u ime i za račun Nalogodavca na osnovu ovjerenog Punomoćja i Ugovora o nalogu (čl. 757 ZOO). Ugovori o fizičkom prevozu i AWB avio-rezervacije zaključuju se sa licenciranim trećim prevoznicima/avio-kompanijama u ime i o trošku nalogodavca (prolazne stavke / prefakturisanje troškova).',
             ],
           },
           {
@@ -475,11 +475,11 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
           heading: '1. Nature of Business & Agency Mandate (Ugovor o nalogu i posredovanju)',
           statutes: [
             'Law on Obligations of Montenegro (Zakon o obligacionim odnosima, Art. 757–779)',
-            'Activity Codes KD 2010: 82.99 & 52.29',
+            'Activity Code KD 2010: 82.99 (Ostale poslovne pomoćne uslužne djelatnosti)',
           ],
           paragraphs: [
-            `${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${LEGAL_CREDENTIALS.ACTIVITY_CODES}; ${crpsDisplay}; ${vatNotice}) operates exclusively as an independent administrative, legal, and transport-forwarding coordination agency (case manager).`,
-            'All actions before hospitals, mortuaries, municipal civil registries (Matični registar), the Sanitary Inspection (Uprava za inspekcijske poslove), embassies, and customs authorities are executed strictly as an authorized representative acting on behalf of the Client/family under a notarized Power of Attorney (Punomoćje) or formal insurer instruction / Guarantee of Payment (GOP).',
+            `${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${LEGAL_CREDENTIALS.ACTIVITY_CODES}; ${crpsDisplay}; ${vatNotice}) operates exclusively as an administrative, legal, and case coordination agency acting under client Power of Attorney (Punomoćnik / Nalogoprimac). The company does NOT engage in commercial road transport or licensed freight forwarding (špedicija) and does not act as a carrier or transport broker.`,
+            'All actions before hospitals, mortuaries, municipal civil registries (Matični registar), the Sanitary Inspection (Uprava za inspekcijske poslove), embassies, and customs authorities are executed strictly as an authorized representative acting on behalf of the Client/family under a notarized Power of Attorney (Punomoćje) and Civil Mandate (Ugovor o nalogu, Art. 757 ZOO). Physical transport contracts and AWB air cargo bookings are concluded with licensed third-party carriers/airlines on behalf of and at the expense of the principal (prolazne stavke / prefakturisanje troškova).',
           ],
         },
         {

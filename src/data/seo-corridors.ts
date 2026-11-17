@@ -802,7 +802,7 @@ function buildCorridorCosts(locale: LocaleSlug, freightRange: string, countryLab
         item: `Međunarodni avio ili drumski transport (${countryLabel})`,
         includedStatus: 'Fiksno po obračunu',
         referenceCost: freightRange,
-        detail: 'Carinska špedicija, MAWB Cargo HUM let ili specijalno pogrebno vozilo.',
+        detail: 'Carinska procedura, MAWB Cargo HUM let ili specijalno vozilo licenciranog partnera.',
       },
     ];
   }

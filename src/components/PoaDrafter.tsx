@@ -121,7 +121,7 @@ Ja, dolje potpisani/a ${principalName || '[IME I PREZIME NALOGODAVCA]'}, u svojs
 
 O V L A Š Ć U J E M
 
-Preduzeće "MEMORIJAL D.O.O.", Tivat, Crna Gora (KD 82.99 / 52.29), odnosno njegove ovlašćene koordinatore, da u moje ime i za račun porodice preduzmu sve pravne, administrativne i sanitarne radnje u vezi sa preminulim:
+Preduzeće "MEMORIJAL D.O.O.", Tivat, Crna Gora (KD 82.99), odnosno njegove ovlašćene koordinatore, da u moje ime i za račun porodice preduzmu sve pravne, administrativne i sanitarne radnje u vezi sa preminulim:
 
 Ime i prezime preminulog: ${deceasedName || '[IME PREMINULOG LICA]'}
 
@@ -149,7 +149,7 @@ Davalac punomoćja: __________________________`;
 
 У П О Л Н О М О Ч И В А Ю
 
-Компанию "MEMORIJAL D.O.O.", Тиват, Черногория (KD 82.99 / 52.29), а также её уполномоченных координаторов, совершать от моего имени и в интересах семьи все юридические, административные и санитарные действия в отношении умершего:
+Компанию "MEMORIJAL D.O.O.", Тиват, Черногория (KD 82.99), а также её уполномоченных координаторов, совершать от моего имени и в интересах семьи все юридические, административные и санитарные действия в отношении умершего:
 
 ФИО умершего: ${deceasedName || '[ФИО УМЕРШЕГО ЛАТИНИЦЕЙ]'}
 
@@ -172,7 +172,7 @@ I, the undersigned ${principalName || '[FULL NAME OF PRINCIPAL]'}, acting in the
 
 A P P O I N T  A N D  A U T H O R I Z E
 
-"MEMORIJAL D.O.O.", Tivat, Montenegro (Activity Codes KD 82.99 / 52.29), and its statutory case coordinators, to perform on my behalf and on behalf of the bereaved family all legal, administrative, and sanitary proceedings regarding the deceased:
+"MEMORIJAL D.O.O.", Tivat, Montenegro (Activity Code KD 82.99), and its statutory case coordinators, to perform on my behalf and on behalf of the bereaved family all legal, administrative, and sanitary proceedings regarding the deceased:
 
 Full Name of Deceased: ${deceasedName || '[DECEASED FULL NAME]'}
 
