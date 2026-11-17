@@ -396,9 +396,14 @@ Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
           </div>
           <p className="text-slate-400">
             {t.footer.creditPrefix}{' '}
-            <span className="font-semibold text-white tracking-wide">
+            <a
+              href="https://studio.corebitsystems.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-white hover:text-emerald-300 underline decoration-white/30 underline-offset-2 tracking-wide transition-colors"
+            >
               {t.footer.creditStudio}
-            </span>
+            </a>
           </p>
         </div>
       </div>
