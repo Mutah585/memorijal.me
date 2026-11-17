@@ -63,7 +63,7 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
         : locale === 'mne'
         ? 'Gradska groblja i kapele'
         : 'Municipal Cemeteries & Chapels'
-      : route.category === 'service'
+      : route.category === 'service' || route.category === 'services_hub'
       ? locale === 'ru'
         ? 'Специализированные услуги'
         : locale === 'mne'

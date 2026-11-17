@@ -19,8 +19,9 @@ interface SitemapRouteConfig {
  * matching src/data/seo-routes.ts + Clusters A, B, C, D, E
  */
 const SITEMAP_ROUTES: SitemapRouteConfig[] = [
-  // 1. Root / Pillar Hubs (6 routes)
+  // 1. Root / Pillar Hubs (7 routes)
   { path: '/', priority: '1.0', changefreq: 'daily' },
+  { path: '/services/', priority: '0.95', changefreq: 'weekly' },
   { path: '/services/repatriation-air-cargo/', priority: '0.9', changefreq: 'weekly' },
   { path: '/services/repatriation-road/', priority: '0.9', changefreq: 'weekly' },
   { path: '/services/cremation-serbia/', priority: '0.95', changefreq: 'weekly' },

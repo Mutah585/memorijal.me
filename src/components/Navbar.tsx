@@ -321,8 +321,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             }
           >
             <a
-              href={`${homePath}#services`}
-              onClick={(e) => handleAnchorOrRoute(e, '#services')}
+              href={buildLocalizedPath(currentLocale, '/services/')}
+              onClick={(e) => handleRouteClick(e, '/services/')}
               className="hover:text-[#1E3A5F] transition-colors py-1 whitespace-nowrap"
             >
               {navLabels.services}
@@ -436,8 +436,8 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="xl:hidden bg-white border-t border-[#E5E7EB] px-4 pt-3 pb-6 shadow-elevated">
           <nav className="flex flex-col space-y-1.5 font-sans text-[15px] font-medium text-[#1A1D20]">
             <a
-              href={`${homePath}#services`}
-              onClick={(e) => handleAnchorOrRoute(e, '#services')}
+              href={buildLocalizedPath(currentLocale, '/services/')}
+              onClick={(e) => handleRouteClick(e, '/services/')}
               className="px-3 py-2.5 rounded-lg hover:bg-[#F9F9FB] transition-colors"
             >
               {navLabels.services}

@@ -1,7 +1,7 @@
 import React from 'react';
-import { MessageCircle, FileCheck, Shield, CheckCircle2 } from 'lucide-react';
+import { MessageCircle, FileCheck, Shield, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Language } from '../i18n/translations';
-import { langToLocaleSlug } from '../data/seo-routes';
+import { langToLocaleSlug, buildLocalizedPath } from '../data/seo-routes';
 import {
   STANDARD_PRICING_PACKAGES,
   PRICING_CLARIFICATION_NOTE,
@@ -11,9 +11,15 @@ import { LEGAL_CREDENTIALS, getCrpsPibDisplay } from '../config/legalCredentials
 
 interface PricingSectionProps {
   lang: Language;
+  compact?: boolean;
+  onNavigate?: (localizedPath: string) => void;
 }
 
-export const PricingSection: React.FC<PricingSectionProps> = ({ lang }) => {
+export const PricingSection: React.FC<PricingSectionProps> = ({
+  lang,
+  compact = false,
+  onNavigate,
+}) => {
   const locale = langToLocaleSlug(lang);
 
   const sectionCopy =
@@ -43,6 +49,84 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ lang }) => {
           startingLabel: 'Starting Package Rate',
           fiscalNote: `Memorijal d.o.o. (${LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT}) • ${getCrpsPibDisplay('en')}`,
         };
+
+  if (compact) {
+    const pricingPath = buildLocalizedPath(locale, '/pricing-breakdown/');
+    const compactCtaLabel =
+      locale === 'ru'
+        ? 'Подробная смета, калькулятор валют и тарифы'
+        : locale === 'mne'
+        ? 'Detaljan cjenovnik, kalkulator valuta i takse'
+        : 'Full Pricing Breakdown & Currency Calculator';
+
+    return (
+      <section
+        id="pricing-tiers"
+        className="py-10 sm:py-12 bg-alabaster border-b border-stoneBorder"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl border border-stoneBorder p-6 sm:p-8 shadow-card space-y-6">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+              <div>
+                <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-sapphire mb-1.5">
+                  <Shield className="w-4 h-4" />
+                  <span>{sectionCopy.eyebrow}</span>
+                </div>
+                <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-slateDeep">
+                  {sectionCopy.title}
+                </h2>
+              </div>
+
+              <a
+                href={pricingPath}
+                onClick={(e) => {
+                  if (onNavigate) {
+                    e.preventDefault();
+                    onNavigate(pricingPath);
+                  }
+                }}
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-sapphire hover:bg-sapphire-light text-white font-semibold text-xs sm:text-sm shadow-xs transition-colors shrink-0 group"
+              >
+                <span>{compactCtaLabel}</span>
+                <ArrowRight className="w-4 h-4 text-emerald-300 transition-transform group-hover:translate-x-0.5" />
+              </a>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+              {STANDARD_PRICING_PACKAGES.map((pkg) => {
+                const item = pkg.locales[locale];
+                return (
+                  <a
+                    key={pkg.id}
+                    href={pricingPath}
+                    onClick={(e) => {
+                      if (onNavigate) {
+                        e.preventDefault();
+                        onNavigate(pricingPath);
+                      }
+                    }}
+                    className="p-3.5 rounded-xl bg-porcelain hover:bg-sapphire-subtle border border-stoneBorder transition-colors flex flex-col justify-between gap-1.5"
+                  >
+                    <span className="text-[11px] font-medium text-slateMuted leading-snug line-clamp-2">
+                      {item.title}
+                    </span>
+                    <span className="font-serif text-xl sm:text-2xl font-bold text-slateDeep">
+                      {item.formattedPrice}
+                    </span>
+                  </a>
+                );
+              })}
+            </div>
+
+            <p className="text-[11px] text-slateMuted flex items-center gap-1.5">
+              <CheckCircle2 className="w-3.5 h-3.5 text-forest shrink-0" />
+              <span>{PRICING_CLARIFICATION_NOTE[locale]} • {sectionCopy.fiscalNote}</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section

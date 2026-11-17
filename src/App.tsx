@@ -31,6 +31,8 @@ import { sanitizeInternalPath } from './utils/security';
 import { CorridorPageTemplate } from './pages/templates/CorridorPageTemplate';
 import { LocationPageTemplate } from './pages/templates/LocationPageTemplate';
 import { LegalPageTemplate } from './pages/templates/LegalPageTemplate';
+import { ServicesHub } from './pages/ServicesHub';
+import { PricingBreakdown } from './pages/PricingBreakdown';
 import { DistressTriageView } from './components/DistressTriageView';
 import { OfflineCallFallback } from './components/OfflineCallFallback';
 
@@ -257,11 +259,17 @@ export function App() {
             {/* 3. Core Services (3 Pillars) */}
             <CoreServices
               t={t}
+              locale={currentLocale}
               onSelectServiceForEstimator={handleSelectServiceFromPillar}
+              onNavigate={handleNavigate}
             />
 
-            {/* 3b. Official Starting Package Tiers (5 Standard Service Packages) */}
-            <PricingSection lang={lang} />
+            {/* 3b. Concise Starting Benchmarks Strip (Full Breakdown on /{lang}/pricing-breakdown/) */}
+            <PricingSection
+              lang={lang}
+              compact
+              onNavigate={handleNavigate}
+            />
 
             {/* 4. Interactive Transparent Cost & Route Estimator */}
             <RouteEstimator
@@ -296,6 +304,26 @@ export function App() {
           <LegalPageTemplate
             locale={currentLocale}
             route={currentRoute}
+            onNavigate={handleNavigate}
+            onOpenModal={() => setModalOpen(true)}
+          />
+        ) : currentRoute.category === 'services_hub' ? (
+          <ServicesHub
+            locale={currentLocale}
+            route={currentRoute}
+            onNavigate={handleNavigate}
+            onOpenModal={() => setModalOpen(true)}
+          />
+        ) : currentRoute.id === 'resource-pricing' ? (
+          <PricingBreakdown
+            locale={currentLocale}
+            route={currentRoute}
+            selectedService={selectedService}
+            setSelectedService={setSelectedService}
+            selectedRegion={selectedRegion}
+            setSelectedRegion={setSelectedRegion}
+            selectedLocation={selectedLocation}
+            setSelectedLocation={setSelectedLocation}
             onNavigate={handleNavigate}
             onOpenModal={() => setModalOpen(true)}
           />

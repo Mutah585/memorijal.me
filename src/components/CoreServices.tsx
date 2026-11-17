@@ -8,15 +8,20 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import { ServiceType, TranslationContent } from '../i18n/translations';
+import { LocaleSlug, buildLocalizedPath } from '../data/seo-routes';
 
 interface CoreServicesProps {
   t: TranslationContent;
+  locale: LocaleSlug;
   onSelectServiceForEstimator: (service: ServiceType) => void;
+  onNavigate?: (localizedPath: string) => void;
 }
 
 export const CoreServices: React.FC<CoreServicesProps> = ({
   t,
+  locale,
   onSelectServiceForEstimator,
+  onNavigate,
 }) => {
   const getIconForCard = (id: ServiceType, index: number) => {
     if (index === 0 || id === 'cremation') {
@@ -114,6 +119,29 @@ export const CoreServices: React.FC<CoreServicesProps> = ({
               </div>
             </article>
           ))}
+        </div>
+
+        {/* Prominent CTA to Full 12-Service Agency Hub */}
+        <div className="mt-10 flex justify-center">
+          <a
+            href={buildLocalizedPath(locale, '/services/')}
+            onClick={(e) => {
+              if (onNavigate) {
+                e.preventDefault();
+                onNavigate(buildLocalizedPath(locale, '/services/'));
+              }
+            }}
+            className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-sapphire hover:bg-sapphire-light text-white font-semibold text-sm shadow-sm transition-all group"
+          >
+            <span>
+              {locale === 'ru'
+                ? 'Посмотреть все 12 услуг агентства'
+                : locale === 'mne'
+                ? 'Sve 12 usluga agencije'
+                : 'View All 12 Agency Services'}
+            </span>
+            <ArrowRight className="w-4 h-4 text-emerald-300 transition-transform group-hover:translate-x-0.5" />
+          </a>
         </div>
       </div>
     </section>

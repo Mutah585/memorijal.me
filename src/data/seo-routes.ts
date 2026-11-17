@@ -8,6 +8,7 @@ export type LocaleSlug = 'en' | 'ru' | 'mne';
 
 export type RouteCategory =
   | 'home'
+  | 'services_hub'
   | 'service'
   | 'corridor'
   | 'location'
@@ -498,8 +499,135 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
   },
 
   // ==========================================
-  // 2. SERVICE PILLAR HUBS (4 Pages)
+  // 2. SERVICES HUB & SERVICE PILLAR HUBS (6 Pages)
   // ==========================================
+  {
+    id: 'services-hub',
+    category: 'services_hub',
+    path: '/services/',
+    priority: 0.95,
+    changefreq: 'weekly',
+    lastmod: '2026-11-17',
+    locales: {
+      en: {
+        metaTitle: 'All 12 Agency Services (KD 82.99) | Memorijal d.o.o.',
+        metaDescription: 'Complete directory of 12 non-medical repatriation, cremation, municipal burial (Komunalno), consular, B2B GOP, and expat estate services in Montenegro. +382 68 934 904.',
+        keywords: ['Memorijal Montenegro services', 'Repatriation and expat estate services Montenegro', 'KD 82.99 agency services Tivat'],
+        breadcrumbLabel: 'All Agency Services (12)',
+        eyebrow: 'COMPLETE AGENCY ECOSYSTEM • KD 2010: 82.99 • TIVAT, MONTENEGRO',
+        h1: 'All 12 Administrative, Repatriation & Expat Concierge Services',
+        heroSubtitle: 'Memorijal d.o.o. operates under Activity Code KD 2010: 82.99 as an authorized client representative (Punomoćje) across 3 specialized tiers — from urgent repatriation and Komunalno burials to expat property handover and pre-need planning.',
+        whatsappPrefill: 'Hello Memorijal d.o.o., I would like to inquire about your agency services in Montenegro.',
+        emergencyBannerText: '24/7 Administrative & Case Coordination • KD 2010: 82.99 • +382 68 934 904',
+        explainerHeading: 'Three Tiers of Authorized Client Representation',
+        explainerIntro: 'Every service is executed under written Mandate Agreement (Ugovor o nalogu) without in-house fleet or retail store overhead.',
+        walkthroughSteps: [],
+        matrixHeading: 'Agency Scope & Regulatory Boundaries',
+        specs: {
+          transitTime: 'Immediate 24/7 Duty Response (< 60 min on-site)',
+          transportMode: 'Dispatched Licensed Partner Carriers & State Komunalno',
+          consularTimeframe: '24 – 72h Statutory & Consular Turnaround',
+          embassyJurisdiction: 'All Diplomatic Missions in Podgorica & Belgrade',
+          morgueCatchment: 'All Hospitals & Municipalities in Montenegro',
+          requiredDocuments: ['Deceased Passport', 'Notarized Power of Attorney (Punomoćje)', 'Applicant ID'],
+          receivingRequirements: ['Mandate Agreement (Ugovor o nalogu)'],
+          estimatedTotalRange: 'From €450 (Administrative Coordination)',
+        },
+        costHeading: 'Transparent Mandate Pricing',
+        costSubtitle: 'Agency coordination fees separated from third-party pass-through disbursements.',
+        costItems: [],
+        faqHeading: 'FAQ — Agency Service Ecosystem',
+        faqs: [
+          {
+            question: 'Can Memorijal d.o.o. handle both repatriation and expat apartment/vehicle matters together?',
+            answer: 'Yes. Under a comprehensive Power of Attorney (Punomoćje), our coordinator manages mortuary/consular clearance alongside apartment inventory, lease termination, vehicle custody, and pet return.',
+          },
+          {
+            question: 'Do we need to travel to Montenegro for any of these 12 services?',
+            answer: 'No. All 12 administrative, legal, and coordination services are executed 100% remotely on behalf of the family or insurance provider.',
+          },
+        ],
+      },
+      ru: {
+        metaTitle: 'Все 12 услуг агентства (KD 82.99) | Memorijal d.o.o.',
+        metaDescription: 'Полный каталог из 12 услуг агентства в Черногории: репатриация, кремация в Сербии, местные похороны Komunalno, В2В GOP, опись имущества экспатов. +382 68 934 904.',
+        keywords: ['Все услуги Memorijal Черногория', 'Репатриация и консьерж экспатов Черногория', 'KD 82.99 услуги агентства'],
+        breadcrumbLabel: 'Все 12 услуг агентства',
+        eyebrow: 'ПОЛНАЯ ЭКОСИСТЕМА АГЕНТСТВА • KD 2010: 82.99 • ТИВАТ',
+        h1: 'Все 12 услуг по репатриации, правовому сопровождению и консьержу экспатов',
+        heroSubtitle: 'Агентство Memorijal d.o.o. (KD 2010: 82.99) представляет интересы семьи и страховых компаний по доверенности (Punomoćje) в трех направлениях: от экстренной репатриации и похорон Komunalno до передачи апартаментов и перевозки питомцев.',
+        whatsappPrefill: 'Здравствуйте, Memorijal d.o.o.! Хочу уточнить условия по услугам агентства в Черногории.',
+        emergencyBannerText: 'Дежурная координация 24/7 • KD 2010: 82.99 • +382 68 934 904',
+        explainerHeading: 'Три уровня представительства интересов клиента',
+        explainerIntro: 'Все услуги оказываются по договору поручения (Ugovor o nalogu) с привлечением лицензированных перевозчиков и муниципальных служб.',
+        walkthroughSteps: [],
+        matrixHeading: 'Правовые рамки и охват агентства',
+        specs: {
+          transitTime: 'Выезд дежурного координатора за 30–60 минут 24/7',
+          transportMode: 'Лицензированные партнеры-перевозчики и муниципальные службы Komunalno',
+          consularTimeframe: '24 – 72 часа на государственное и консульское оформление',
+          embassyJurisdiction: 'Все посольства в Подгорице и Белграде',
+          morgueCatchment: 'Все госпитали и муниципалитеты Черногории',
+          requiredDocuments: ['Загранпаспорт усопшего', 'Доверенность (Punomoćje)', 'Паспорт заявителя'],
+          receivingRequirements: ['Договор поручения (Ugovor o nalogu)'],
+          estimatedTotalRange: 'От 450 € (административное сопровождение)',
+        },
+        costHeading: 'Прозрачное ценообразование',
+        costSubtitle: 'Вознаграждение агентства отделено от транзитных платежей третьим лицам.',
+        costItems: [],
+        faqHeading: 'Частые вопросы — Все услуги агентства',
+        faqs: [
+          {
+            question: 'Можно ли поручить агентству одновременно репатриацию и закрытие бытовых дел экспата?',
+            answer: 'Да. По единой доверенности координатор решает вопросы с моргом и консульством, а также проводит опись квартиры, расторжение аренды, размещение авто и подготовку питомцев к вылету.',
+          },
+          {
+            question: 'Нужно ли родственникам прилетать в Черногорию?',
+            answer: 'Нет, все 12 услуг выполняются полностью дистанционно без присутствия семьи в Черногории.',
+          },
+        ],
+      },
+      mne: {
+        metaTitle: 'Svih 12 usluga agencije (KD 82.99) | Memorijal d.o.o.',
+        metaDescription: 'Kompletan pregled 12 agencijskih usluga u Crnoj Gori: repatrijacija, kremacija, Komunalno sahrane, B2B GOP, briga o imovini stranaca. +382 68 934 904.',
+        keywords: ['Sve usluge Memorijal Crna Gora', 'Repatrijacija i konsijerž usluge Tivat', 'KD 82.99 agencija Crna Gora'],
+        breadcrumbLabel: 'Sve usluge agencije (12)',
+        eyebrow: 'KOMPLETAN EKOSISTEM USLUGA • KD 2010: 82.99 • TIVAT',
+        h1: 'Svih 12 administrativnih, repatrijacionih i konsijerž usluga agencije',
+        heroSubtitle: 'Memorijal d.o.o. (KD 2010: 82.99) zastupa interese porodica i osiguravajućih kuća po punomoćju u tri nivoa: od hitne repatrijacije i Komunalno sahrana do primopredaje imovine stranaca.',
+        whatsappPrefill: 'Poštovani Memorijal d.o.o., interesuju me usluge agencije u Crnoj Gori.',
+        emergencyBannerText: 'Dežurna koordinacija 24/7 • KD 2010: 82.99 • +382 68 934 904',
+        explainerHeading: 'Tri nivoa ovlašćenog zastupanja',
+        explainerIntro: 'Sve usluge se obavljaju po Ugovoru o nalogu uz angažovanje licenciranih prevoznika i opštinskih službi.',
+        walkthroughSteps: [],
+        matrixHeading: 'Pravni okvir i nadležnost',
+        specs: {
+          transitTime: 'Izlazak dežurnog koordinatora za 30–60 min 24/7',
+          transportMode: 'Licencirani partneri-prevoznici i opštinska Komunalna preduzeća',
+          consularTimeframe: '24 – 72 sata za državnu i konzularnu proceduru',
+          embassyJurisdiction: 'Sve ambasade u Podgorici i Beogradu',
+          morgueCatchment: 'Sve bolnice i opštine u Crnoj Gori',
+          requiredDocuments: ['Pasoš preminulog', 'Ovjereno punomoćje', 'Dokument podnosioca'],
+          receivingRequirements: ['Ugovor o nalogu'],
+          estimatedTotalRange: 'Od 450 € (agencijska koordinacija)',
+        },
+        costHeading: 'Transparentne tarife',
+        costSubtitle: 'Agencijska naknada je jasno odvojena od prolaznih troškova.',
+        costItems: [],
+        faqHeading: 'Česta pitanja — Usluge agencije',
+        faqs: [
+          {
+            question: 'Da li agencija može istovremeno voditi repatrijaciju i imovinska pitanja stranca?',
+            answer: 'Da. Na osnovu punomoćja koordinator vodi kapelu i konzulat, kao i popis stana, raskid zakupa, čuvanje vozila i pripremu kućnih ljubimaca.',
+          },
+          {
+            question: 'Da li je potreban dolazak porodice u Crnu Goru?',
+            answer: 'Ne, svih 12 usluga sprovodi se 100% na daljinu bez prisustva porodice.',
+          },
+        ],
+      },
+    },
+  },
   {
     id: 'service-air-cargo',
     category: 'service',
