@@ -9,6 +9,7 @@ import {
   Copy,
   Check,
   Download,
+  SlidersHorizontal,
 } from 'lucide-react';
 import {
   Language,
@@ -33,6 +34,7 @@ interface FooterProps {
   t: TranslationContent;
   onOpenModal: () => void;
   onNavigate?: (localizedPath: string) => void;
+  onOpenCookieSettings?: () => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({
@@ -40,6 +42,7 @@ export const Footer: React.FC<FooterProps> = ({
   t,
   onOpenModal,
   onNavigate,
+  onOpenCookieSettings,
 }) => {
   const [copied, setCopied] = useState(false);
   const [vcardToast, setVcardToast] = useState<string | null>(null);
@@ -387,12 +390,33 @@ Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
 
         {/* Bottom Copyright, Privacy & Studio Credit Bar */}
         <div className="pt-8 flex flex-col lg:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+          <div className="flex flex-col sm:flex-row flex-wrap items-center gap-2 sm:gap-4 text-center sm:text-left">
             <p>{t.footer.copyright}</p>
             <span className="hidden sm:inline text-white/20">•</span>
             <p>{t.footer.privacyNote}</p>
             <span className="hidden sm:inline text-white/20">•</span>
             <PrivacyDataWipe locale={locale} />
+            <span className="hidden sm:inline text-white/20">•</span>
+            <button
+              type="button"
+              onClick={() => {
+                if (onOpenCookieSettings) {
+                  onOpenCookieSettings();
+                } else {
+                  window.dispatchEvent(new CustomEvent('memorijal:open-cookie-settings'));
+                }
+              }}
+              className="inline-flex items-center gap-1.5 text-[11px] text-slate-400 hover:text-white transition-colors py-1 px-2 rounded-md hover:bg-slate-800 cursor-pointer"
+            >
+              <SlidersHorizontal className="w-3 h-3 text-slate-400" />
+              <span className="underline underline-offset-2 decoration-slate-500">
+                {lang === 'RU'
+                  ? 'Настройки cookies'
+                  : lang === 'MNE'
+                  ? 'Podešavanja kolačića'
+                  : 'Cookie Settings'}
+              </span>
+            </button>
           </div>
           <p className="text-slate-400">
             {t.footer.creditPrefix}{' '}

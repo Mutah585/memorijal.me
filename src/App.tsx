@@ -35,6 +35,7 @@ import { ServicesHub } from './pages/ServicesHub';
 import { PricingBreakdown } from './pages/PricingBreakdown';
 import { DistressTriageView } from './components/DistressTriageView';
 import { OfflineCallFallback } from './components/OfflineCallFallback';
+import { CookieConsentBanner } from './components/CookieConsentBanner';
 
 const LANG_STORAGE_KEY = 'memorijal_lang';
 const SUPPORTED_LOCALES: LocaleSlug[] = ['en', 'ru', 'mne'];
@@ -126,6 +127,7 @@ export function App() {
   const [selectedLocation, setSelectedLocation] = useState<LocationType>('boka');
   const [modalOpen, setModalOpen] = useState(false);
   const [isDistressMode, setIsDistressMode] = useState(false);
+  const [cookieModalSignal, setCookieModalSignal] = useState(0);
 
   const currentLocale = langToLocaleSlug(lang);
   const t = translations[lang];
@@ -355,11 +357,20 @@ export function App() {
           t={t}
           onOpenModal={() => setModalOpen(true)}
           onNavigate={handleNavigate}
+          onOpenCookieSettings={() => setCookieModalSignal((n) => n + 1)}
         />
       )}
 
       {/* Persistent Mobile 24/7 Emergency Bar (< 768px past hero) */}
       <MobileEmergencyBar lang={lang} />
+
+      {/* GDPR / ePrivacy / Google Consent Mode v2 Cookie Consent Banner & Preferences */}
+      <CookieConsentBanner
+        locale={currentLocale}
+        isDistressMode={isDistressMode}
+        onNavigate={handleNavigate}
+        externalOpenSignal={cookieModalSignal}
+      />
 
       {/* Interactive Coordinator Case Dispatch Modal */}
       <CoordinatorModal

@@ -49,19 +49,27 @@ export const PrivacyDataWipe: React.FC<PrivacyDataWipeProps> = ({
         window.sessionStorage.clear();
       }
 
-      // Clear case-related keys from localStorage (preserve language preference)
+      // Clear case-related keys from localStorage (preserve language & cookie consent state)
       if (typeof window !== 'undefined' && window.localStorage) {
         const langPref = window.localStorage.getItem('memorijal_lang');
+        const consentPref = window.localStorage.getItem('memorijal_cookie_consent_v1');
         const keysToRemove: string[] = [];
         for (let i = 0; i < window.localStorage.length; i++) {
           const key = window.localStorage.key(i);
-          if (key && key !== 'memorijal_lang') {
+          if (
+            key &&
+            key !== 'memorijal_lang' &&
+            key !== 'memorijal_cookie_consent_v1'
+          ) {
             keysToRemove.push(key);
           }
         }
         keysToRemove.forEach((k) => window.localStorage.removeItem(k));
         if (langPref) {
           window.localStorage.setItem('memorijal_lang', langPref);
+        }
+        if (consentPref) {
+          window.localStorage.setItem('memorijal_cookie_consent_v1', consentPref);
         }
       }
 

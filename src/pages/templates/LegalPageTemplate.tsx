@@ -337,7 +337,7 @@ export const LegalPageTemplate: React.FC<LegalPageTemplateProps> = ({
                         className="flex items-start gap-2.5 text-sm text-slateDeep bg-porcelain p-3.5 rounded-xl border border-stoneBorder/70 leading-relaxed"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-sapphire mt-2 shrink-0" />
-                        <span>{b}</span>
+                        <span className="min-w-0 break-words">{b}</span>
                       </li>
                     ))}
                   </ul>

@@ -176,9 +176,24 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
             ],
           },
           {
+            id: 'cookies-consent-mode',
+            pillarBadge: 'Раздел 4 • Файлы cookie и Google Consent Mode v2',
+            heading: '4. Категории cookie, локальное хранилище и управление согласием',
+            statutes: ['EU/UK GDPR Art. 6(1)(a), Art. 7(3)', 'ePrivacy Directive', 'ZZPL Crne Gore'],
+            paragraphs: [
+              'На сайте memorijal.me реализована архитектура предварительной блокировки (Google Consent Mode v2): по умолчанию все аналитические (analytics_storage) и рекламные (ad_storage, ad_user_data, ad_personalization) сигналы установлены в состояние «denied» до получения явного согласия пользователя.',
+              'При нажатии «Очистить мои конфиденциальные данные» (PrivacyDataWipe) удаляются все черновики форм и данные сессии, но сохраняются выбранный язык (memorijal_lang) и запись статуса согласия (memorijal_cookie_consent_v1). Вы можете изменить или отозвать согласие в любое время через кнопку «Настройки cookies» в подвале сайта.',
+            ],
+            bullets: [
+              '1. Строго необходимые (Всегда активны): выбор языка (localStorage["memorijal_lang"]), защита черновиков форм (sessionStorage), кеш курсов валют ЕЦБ и версионированная запись согласия (localStorage["memorijal_cookie_consent_v1"]).',
+              '2. Аналитика и производительность (Отключено по умолчанию): обезличенная диагностика производительности страниц и ошибок (Google Analytics 4 — analytics_storage), включается только при явном выборе.',
+              '3. Маркетинг и оценка конверсий (Отключено по умолчанию): атрибуция экстренных вызовов и обращений в WhatsApp в Google Ads (ad_storage, ad_user_data, ad_personalization), включается только при явном согласии.',
+            ],
+          },
+          {
             id: 'privacy-rights',
-            pillarBadge: 'Раздел 4 • Права субъектов и юрисдикция',
-            heading: '4. Права субъектов данных и надзорный орган',
+            pillarBadge: 'Раздел 5 • Права субъектов и юрисдикция',
+            heading: '5. Права субъектов данных и надзорный орган',
             statutes: ['GDPR Art. 15–22', 'ZZPL Crne Gore'],
             paragraphs: [
               'Живые заявители имеют право запрашивать доступ, исправление или удаление своих контактных данных, направив обращение на office@memorijal.me (срок рассмотрения — до 30 дней), за исключением сведений, подлежащих обязательному хранению по налоговому и санитарному законодательству Черногории.',
@@ -389,9 +404,24 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
             ],
           },
           {
+            id: 'cookies-consent-mode',
+            pillarBadge: 'Odjeljak 4 • Kolačići i Google Consent Mode v2',
+            heading: '4. Kategorije kolačića, lokalna memorija i upravljanje saglasnošću',
+            statutes: ['EU/UK GDPR čl. 6(1)(a), čl. 7(3)', 'ePrivacy Direktiva', 'ZZPL Crne Gore'],
+            paragraphs: [
+              'Sajt memorijal.me primjenjuje Google Consent Mode v2 protokol: podrazumijevano su svi analitički (analytics_storage) i marketinški (ad_storage, ad_user_data, ad_personalization) signali blokirani („denied“) dok korisnik ne da izričitu saglasnost.',
+              'Pokretanjem alata „Obriši moje podatke“ (PrivacyDataWipe) uklanjaju se svi nacrti zahtjeva, dok se izabrani jezik (memorijal_lang) i evidencija saglasnosti (memorijal_cookie_consent_v1) čuvaju. Saglasnost možete izmijeniti ili povući u svakom trenutku klikom na „Podešavanja kolačića“ u podnožju sajta.',
+            ],
+            bullets: [
+              '1. Strogo neophodni (Uvijek aktivni): izabrani jezik (localStorage["memorijal_lang"]), zaštita nacrta formi (sessionStorage), keš kursne liste ECB-a i zapis saglasnosti (localStorage["memorijal_cookie_consent_v1"]).',
+              '2. Analitika i performanse (Podrazumijevano isključeno): anonimizovana dijagnostika performansi i grešaka (Google Analytics 4 — analytics_storage), aktivira se isključivo uz saglasnost.',
+              '3. Marketing i mjerenje konverzija (Podrazumijevano isključeno): Google Ads atribucija hitnih poziva i WhatsApp upita (ad_storage, ad_user_data, ad_personalization), aktivira se isključivo uz saglasnost.',
+            ],
+          },
+          {
             id: 'privacy-rights',
-            pillarBadge: 'Odjeljak 4 • Prava i nadležnost',
-            heading: '4. Prava ispitanika i rješavanje sporova',
+            pillarBadge: 'Odjeljak 5 • Prava i nadležnost',
+            heading: '5. Prava ispitanika i rješavanje sporova',
             statutes: ['GDPR čl. 15–22', 'ZZPL Crne Gore'],
             paragraphs: [
               'Živi podnosioci zahtjeva mogu zatražiti uvid, ispravku ili brisanje svojih kontakt podataka putem office@memorijal.me (rok 30 dana), osim podataka čije čuvanje nalažu poreski i sanitarni propisi Crne Gore.',
@@ -601,9 +631,24 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
           ],
         },
         {
+          id: 'cookies-consent-mode',
+          pillarBadge: 'Section 4 • Cookies & Google Consent Mode v2',
+          heading: '4. Cookie Categories, Local Storage & Granular Consent Control',
+          statutes: ['EU/UK GDPR Art. 6(1)(a), Art. 7(3)', 'ePrivacy Directive', 'ZZPL Montenegro'],
+          paragraphs: [
+            'memorijal.me enforces Google Consent Mode v2 prior-blocking defaults: all analytics (analytics_storage) and advertising (ad_storage, ad_user_data, ad_personalization) signals remain "denied" until explicit user opt-in.',
+            'Triggering PrivacyDataWipe clears all form drafts and session data while preserving your language preference (memorijal_lang) and consent record (memorijal_cookie_consent_v1). You may withdraw or modify cookie preferences at any time via the "Cookie Settings" button in the footer.',
+          ],
+          bullets: [
+            '1. Strictly Necessary (Always Active): language preference (localStorage["memorijal_lang"]), form draft safety (sessionStorage), ECB exchange rate cache, and consent state record (localStorage["memorijal_cookie_consent_v1"]).',
+            '2. Analytics & Performance (Default OFF): anonymized page performance and error diagnostics (Google Analytics 4 — analytics_storage), activated strictly upon opt-in.',
+            '3. Marketing & Conversion Measurement (Default OFF): Google Ads crisis call/WhatsApp conversion attribution (ad_storage, ad_user_data, ad_personalization), activated strictly upon opt-in.',
+          ],
+        },
+        {
           id: 'privacy-rights',
-          pillarBadge: 'Section 4 • Data Subject Rights & Jurisdiction',
-          heading: '4. Data Subject Rights & Governing Jurisdiction',
+          pillarBadge: 'Section 5 • Data Subject Rights & Jurisdiction',
+          heading: '5. Data Subject Rights & Governing Jurisdiction',
           statutes: ['GDPR Art. 15–22', 'ZZPL Montenegro'],
           paragraphs: [
             'Living applicants may request access, rectification, or erasure of their contact records via office@memorijal.me (30-day response window), subject to mandatory Montenegrin tax and sanitary record retention laws.',
