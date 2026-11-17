@@ -1,5 +1,5 @@
-import { Language, WHATSAPP_NUMBER } from '../i18n/translations.ts';
-import { LocaleSlug } from './seo-routes.ts';
+import { type Language, WHATSAPP_NUMBER } from '../i18n/translations.ts';
+import type { LocaleSlug } from './seo-routes.ts';
 
 export type SupportedCurrency = 'EUR' | 'GBP' | 'USD';
 
