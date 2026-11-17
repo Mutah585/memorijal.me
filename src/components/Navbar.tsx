@@ -70,19 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   )}`;
 
   // Top Bar Localized Copy
-  const topBarLicense =
-    lang === 'RU'
-      ? 'Лицензированная служба репатриации и кремации • Черногория'
-      : lang === 'MNE'
-      ? 'Licencirana služba repatrijacije i kremacije • Crna Gora'
-      : 'Licensed Repatriation & Cremation Service • Montenegro';
-
-  const topBarCoordinatorLabel =
-    lang === 'RU'
-      ? 'Координатор 24/7 (Тиват • Вся ЧГ):'
-      : lang === 'MNE'
-      ? 'Koordinator 24/7 (Tivat • Crna Gora):'
-      : 'Coordinator 24/7 (Tivat • Montenegro):';
+  const topBarCoordinatorLabel = '24/7:';
 
   // Dynamic Dispatch Status (Local Podgorica / Tivat Time)
   const dispatchStatus = getDispatchStatus(lang);
@@ -127,30 +115,26 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* 1. Compact "Dežurna linija 24/7" Top Bar (Fixed 32px height on desktop, hidden on narrow mobile viewports) */}
       <div className="hidden md:block h-8 bg-[#162B49] text-white border-b border-white/10">
         <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-between text-[11px] leading-none">
-          {/* Left & Center-Left: Pulsing 24/7 Badge + Desaturated Silver-Blue Jurisdiction */}
-          <div className="flex items-center gap-3.5 min-w-0">
-            <span className="inline-flex items-center gap-2 font-medium tracking-wide text-white shrink-0">
-              <span className="relative flex h-2 w-2">
+          {/* Left: Pulsing 24/7 Status Badge */}
+          <div className="flex items-center gap-3.5 shrink-0 whitespace-nowrap">
+            <span className="inline-flex items-center gap-2 font-medium tracking-wide text-white shrink-0 whitespace-nowrap">
+              <span className="relative flex h-2 w-2 shrink-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-80"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
               <span>{dispatchStatus.statusText}</span>
             </span>
-            <span className="text-white/20 select-none">|</span>
-            <span className="text-[#B8C7D9] font-normal tracking-wide truncate">
-              {topBarLicense}
-            </span>
           </div>
 
-          {/* Center-Right & Far Right: Coordinator 24/7 Phone + Copy + WhatsApp 24/7 Pill */}
-          <div className="flex items-center gap-3 shrink-0 ml-4 relative">
-            <div className="flex items-center gap-1.5 relative">
+          {/* Center-Right & Far Right: 24/7 Phone + Copy + WhatsApp 24/7 Pill */}
+          <div className="flex items-center gap-3 shrink-0 ml-4 relative whitespace-nowrap">
+            <div className="flex items-center gap-1.5 relative shrink-0 whitespace-nowrap">
               <span className="hidden lg:inline text-[#B8C7D9] font-normal">
                 {topBarCoordinatorLabel}
               </span>
               <a
                 href={PHONE_HREF}
-                className="font-medium text-white hover:text-emerald-200 transition-colors tracking-wide"
+                className="font-medium text-white hover:text-emerald-200 transition-colors tracking-wide whitespace-nowrap"
                 aria-label={`${t.topBar.callCta} ${PHONE_DISPLAY}`}
               >
                 {PHONE_DISPLAY}
@@ -165,7 +149,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     ? 'Kopiraj broj telefona'
                     : 'Copy phone number'
                 }
-                className="p-0.5 rounded hover:bg-white/10 text-[#B8C7D9] hover:text-white transition-colors"
+                className="p-0.5 rounded hover:bg-white/10 text-[#B8C7D9] hover:text-white transition-colors shrink-0"
                 aria-label={
                   lang === 'RU'
                     ? 'Скопировать экстренный номер телефона'
@@ -201,7 +185,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-[#D8E6F5] hover:text-white font-medium px-2.5 py-1 rounded-full text-[11px] leading-none transition-colors border border-white/10"
+              className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-[#D8E6F5] hover:text-white font-medium px-2.5 py-1 rounded-full text-[11px] leading-none transition-colors border border-white/10 shrink-0 whitespace-nowrap"
             >
               <MessageCircle className="w-3 h-3 shrink-0" />
               <span>WhatsApp 24/7</span>
@@ -217,7 +201,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 })
               }
               title={getVCardButtonLabel(lang)}
-              className="hidden xl:inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-[#D8E6F5] hover:text-white font-medium px-2.5 py-1 rounded-full text-[11px] leading-none transition-colors border border-white/10 cursor-pointer"
+              className="hidden 2xl:inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-[#D8E6F5] hover:text-white font-medium px-2.5 py-1 rounded-full text-[11px] leading-none transition-colors border border-white/10 cursor-pointer shrink-0 whitespace-nowrap"
             >
               <Download className="w-3 h-3 shrink-0 text-emerald-300" />
               <span>{getVCardButtonLabel(lang)}</span>
@@ -228,7 +212,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <button
                 type="button"
                 onClick={onToggleDistressMode}
-                className={`inline-flex items-center gap-1.5 text-[11px] font-semibold px-2.5 py-1 rounded-full border transition-all cursor-pointer ${
+                className={`inline-flex items-center gap-1.5 text-[11px] font-semibold px-2.5 py-1 rounded-full border transition-all cursor-pointer shrink-0 whitespace-nowrap ${
                   isDistressMode
                     ? 'bg-amber-400 text-slate-950 border-amber-300 font-bold shadow-xs'
                     : 'bg-white/10 hover:bg-white/20 text-[#D8E6F5] hover:text-white border-white/20'

@@ -54,12 +54,13 @@ export const CoreServices: React.FC<CoreServicesProps> = ({
         </div>
 
         {/* 3 Pillars Grid */}
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-[auto_1fr_auto] gap-x-8 gap-y-8 items-stretch">
           {t.services.cards.map((card, index) => (
             <article
               key={card.id + index}
-              className="bg-white rounded-2xl border border-stoneBorder shadow-card hover:shadow-elevated transition-all duration-200 flex flex-col justify-between p-7 sm:p-8"
+              className="bg-white rounded-2xl border border-stoneBorder shadow-card hover:shadow-elevated transition-all duration-200 flex flex-col justify-between h-full min-w-0 lg:row-span-3 lg:grid lg:grid-rows-subgrid lg:gap-y-0 p-7 sm:p-8"
             >
+              {/* Row 1: Top Header & Narrative */}
               <div>
                 {/* Top Icon & Pillar Badge */}
                 <div className="flex items-center justify-between gap-3 mb-6">
@@ -83,28 +84,28 @@ export const CoreServices: React.FC<CoreServicesProps> = ({
                 <p className="mt-4 text-sm sm:text-[15px] text-slateMuted leading-[1.68]">
                   {card.description}
                 </p>
-
-                {/* Mandatory Procedures Checklist */}
-                <div className="mt-6 pt-6 border-t border-stoneBorder">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-slateDeep mb-3.5">
-                    {t.services.includedLabel}
-                  </p>
-                  <ul className="space-y-2.5">
-                    {card.highlights.map((item, idx) => (
-                      <li
-                        key={idx}
-                        className="flex items-start gap-2.5 text-xs sm:text-sm text-slateDeep/90 leading-relaxed"
-                      >
-                        <Check className="w-4 h-4 text-forest shrink-0 mt-0.5 stroke-[2.2]" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
 
-              {/* Footer Legal Reference & Action Button */}
-              <div className="mt-8 pt-5 border-t border-stoneBorder/80">
+              {/* Row 2: Divider + Mandatory Procedures Checklist */}
+              <div className="mt-6 pt-5 border-t border-stoneBorder flex-grow">
+                <p className="text-xs font-semibold uppercase tracking-wider text-slateDeep mb-3.5">
+                  {t.services.includedLabel}
+                </p>
+                <ul className="space-y-2.5">
+                  {card.highlights.map((item, idx) => (
+                    <li
+                      key={idx}
+                      className="flex items-start gap-2.5 text-xs sm:text-sm text-slateDeep/90 leading-relaxed"
+                    >
+                      <Check className="w-4 h-4 text-forest shrink-0 mt-0.5 stroke-[2.2]" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Row 3: Footer Legal Reference & Action Button */}
+              <div className="mt-8 pt-5 border-t border-stoneBorder/80 self-end">
                 <p className="text-[11px] text-slateMuted italic mb-4">
                   {card.legalReference}
                 </p>
