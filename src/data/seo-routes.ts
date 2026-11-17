@@ -1265,7 +1265,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Kotor General Hospital, KCCG Podgorica, Bar & Herceg Novi',
           requiredDocuments: ['Deceased Passport', 'Notarized Power of Attorney (Punomoćje)', 'Applicant ID'],
           receivingRequirements: ['Municipal cemetery plot concession or family tomb authorization'],
-          estimatedTotalRange: 'From €450 (Agency Coordination) + Komunalno pass-through fees',
+          estimatedTotalRange: 'From €950 (Agency Coordination) + Komunalno pass-through fees',
         },
         costHeading: 'Transparent Separation of Agency Fee & Komunalno Pass-Through Fees',
         costSubtitle: 'All municipal cemetery fees and licensed carrier charges are passed through at cost (prefakturisanje troškova).',
@@ -1274,11 +1274,15 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
         faqs: [
           {
             question: 'Who physically performs grave opening and interment in Montenegro?',
-            answer: 'By law (Zakon o komunalnim djelatnostima), cemetery management and interment are a statutory municipal utility function performed by local Komunalno enterprises (e.g., Komunalno Tivat, Pogrebne usluge Budva, Čepurci Podgorica). Memorijal d.o.o. acts as your bilingual legal and administrative coordinator (KD 82.99) under Power of Attorney.',
+            answer: 'By law (Zakon o komunalnim djelatnostima), cemetery management and interment are a statutory municipal utility function performed by local Komunalno enterprises (e.g., Komunalno Tivat, Pogrebne usluge Budva, Čepurci Podgorica). Memorijal d.o.o. acts as your bilingual legal and administrative coordinator (KD 82.99) under Power of Attorney (agency coordination fee From €950).',
+          },
+          {
+            question: 'How much does a municipal cemetery vault (grobnica) cost for foreigners in Tivat or Budva?',
+            answer: 'Under official coastal municipal price lists (DOO Komunalno Tivat, DOO Pogrebne usluge Budva), purchasing a permanent 2-space concrete grave vault (grobnica) costs €3,134–€3,480 for local ID holders (lična karta), whereas non-residents/foreign nationals are subject to a double municipal tariff ("za strance, cijena je duplo viša" — €6,300–€7,000 in Tivat and €6,000–€10,000 in Budva including headstone). The burial plot is billed directly by Komunalno with zero agency markup. Consequently, turnkey cremation in Belgrade (From €2,200) or a Boka Bay sea ash scattering ceremony (From €1,200) is typically 3×–4× more economical for expat families.',
           },
           {
             question: 'Can you coordinate religious rites (Orthodox, Catholic, Islamic) or sea ash scattering?',
-            answer: 'Yes. We coordinate Orthodox, Roman Catholic, Islamic (Janazah), or secular ceremonies, as well as chartered memorial vessel ceremonies for ash scattering in the Bay of Kotor with an official GPS Coordinates Certificate.',
+            answer: 'Yes. We coordinate Orthodox, Roman Catholic, Islamic (Janazah), or secular ceremonies, as well as chartered memorial vessel ceremonies for ash scattering in the Bay of Kotor (From €1,200) with an official GPS Coordinates Certificate.',
           },
         ],
       },
@@ -1304,7 +1308,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Госпитали Котора, KCCG Подгорицы, Бара и Херцег-Нови',
           requiredDocuments: ['Загранпаспорт усопшего', 'Доверенность (Punomoćje)', 'Паспорт заявителя'],
           receivingRequirements: ['Договор о месте захоронения или разрешение владельца семейного участка'],
-          estimatedTotalRange: 'От 450 € (координация) + транзитные тарифы Komunalno',
+          estimatedTotalRange: 'От 950 € (координация) + транзитные тарифы Komunalno',
         },
         costHeading: 'Прозрачное разделение агентского вознаграждения и тарифов Komunalno',
         costSubtitle: 'Муниципальные сборы кладбища и услуги лицензированного перевозчика оплачиваются по факту как транзитные расходы.',
@@ -1313,11 +1317,15 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
         faqs: [
           {
             question: 'Кто физически выполняет копку могилы и захоронение на кладбище в Черногории?',
-            answer: 'По закону (Zakon o komunalnim djelatnostima) управление кладбищами и само захоронение являются исключительной функцией муниципальных предприятий Komunalno. Memorijal d.o.o. (KD 82.99) выступает вашим русско- и англоязычным представителем по доверенности, оформляя все документы и координируя процесс.',
+            answer: 'По закону (Zakon o komunalnim djelatnostima) управление кладбищами и само захоронение являются исключительной функцией муниципальных предприятий Komunalno. Memorijal d.o.o. (KD 82.99) выступает вашим русско- и англоязычным представителем по доверенности (координация агентства От 950 €), оформляя все документы и координируя процесс.',
+          },
+          {
+            question: 'Сколько стоит покупка места на кладбище (grobnica) для иностранцев в Тивате и Будве?',
+            answer: 'По официальным прайс-листам муниципальных предприятий побережья (DOO Komunalno Tivat, DOO Pogrebne usluge Budva), покупка капитальной бетонной гробницы (grobnica) на 2 места обходится в 3 134 – 3 480 € для местных жителей с местным удостоверением личности (lična karta), но для нерезидентов и иностранцев действует двойной муниципальный тариф («za strance, cijena je duplo viša» — от 6 300 до 7 000 € в Тивате и 6 000 – 10 000 € в Будве с учётом надгробной плиты). Покупка участка оплачивается семьёй напрямую по официальной фактуре Komunalno без каких-либо наценок агентства. Поэтому для большинства семей экспатов организация кремации «под ключ» в Белграде (От 2 200 €) или морской церемонии развеивания праха в Боко-Которском заливе (От 1 200 €) является экономически более рациональным решением.',
           },
           {
             question: 'Можно ли организовать православное отпевание, католический/исламский обряд или развеивание праха в море?',
-            answer: 'Да, мы координируем религиозные обряды с местным духовенством, гражданские церемонии, а также фрахт катера для развеивания праха в Боко-Которском заливе с выдачей памятного сертификата с GPS-координатами.',
+            answer: 'Да, мы координируем религиозные обряды с местным духовенством, гражданские церемонии, а также фрахт катера для развеивания праха в Боко-Которском заливе (От 1 200 €) с выдачей памятного сертификата с GPS-координатами.',
           },
         ],
       },
@@ -1343,7 +1351,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
           morgueCatchment: 'Opšta bolnica Kotor, KCCG Podgorica, Bar i Herceg Novi',
           requiredDocuments: ['Pasoš preminulog', 'Ovjereno punomoćje', 'Dokument srodnika'],
           receivingRequirements: ['Rješenje o grobnom mjestu ili saglasnost nosioca porodične grobnice'],
-          estimatedTotalRange: 'Od 450 € (agencijska koordinacija) + prolazne takse Komunalnog',
+          estimatedTotalRange: 'Od 950 € (agencijska koordinacija) + prolazne takse Komunalnog',
         },
         costHeading: 'Transparentno razdvajanje agencijske naknade i taksi Komunalnog',
         costSubtitle: 'Sve komunalne takse i troškovi licenciranog prevoza prenose se bez skrivenih marži (prefakturisanje).',
@@ -1352,11 +1360,15 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
         faqs: [
           {
             question: 'Ko fizički obavlja kopanje i sahranjivanje na grobljima u Crnoj Gori?',
-            answer: 'Po Zakonu o komunalnim djelatnostima, upravljanje grobljima i sahranjivanje obavljaju isključivo opštinska komunalna preduzeća (Komunalno). Memorijal d.o.o. (KD 82.99) nastupa kao vaš ovlašćeni pravni i administrativni koordinator po punomoćju.',
+            answer: 'Po Zakonu o komunalnim djelatnostima, upravljanje grobljima i sahranjivanje obavljaju isključivo opštinska komunalna preduzeća (Komunalno). Memorijal d.o.o. (KD 82.99) nastupa kao vaš ovlašćeni pravni i administrativni koordinator po punomoćju (agencijska koordinacija Od 950 €).',
+          },
+          {
+            question: 'Koliko košta kupovina grobnice na primorju (Tivat, Budva) za strance i nerezidente?',
+            answer: 'Prema zvaničnim cjenovnicima primorskih komunalnih preduzeća (DOO Komunalno Tivat, DOO Pogrebne usluge Budva), kupovina grobnice sa dva ukopna mjesta iznosi 3.134 – 3.480 € za građane sa lokalnom ličnom kartom, dok je za strance i nerezidente cijena po zvaničnom cjenovniku duplo viša (6.300 – 7.000 € u Tivtu i 6.000 – 10.000 € u Budvi sa nadgrobnom pločom). Kupovina grobnice plaća se direktno po fakturi Komunalno bez provizije agencije, zbog čega se strane porodice najčešće odlučuju za kremaciju u Beogradu (Od 2.200 €) ili prosipanje pepela u Bokokotorskom zalivu (Od 1.200 €).',
           },
           {
             question: 'Da li organizujete vjerske obrede ili ceremonije prosipanja pepela na moru?',
-            answer: 'Da, koordiniramo pravoslavne, katoličke, islamske i građanske obrede, kao i najam plovila za ceremoniju u Bokokotorskom zalivu uz sertifikat sa GPS koordinatama.',
+            answer: 'Da, koordiniramo pravoslavne, katoličke, islamske i građanske obrede, kao i najam plovila za ceremoniju u Bokokotorskom zalivu (Od 1.200 €) uz sertifikat sa GPS koordinatama.',
           },
         ],
       },
