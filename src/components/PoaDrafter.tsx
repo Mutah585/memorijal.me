@@ -17,7 +17,18 @@ export interface PoaDrafterProps {
   className?: string;
 }
 
-type NotaryJurisdiction = 'de' | 'uk' | 'ru' | 'ua' | 'fr' | 'rs' | 'eu';
+type NotaryJurisdiction =
+  | 'de'
+  | 'uk'
+  | 'ch'
+  | 'nl'
+  | 'se'
+  | 'no'
+  | 'ru'
+  | 'ua'
+  | 'fr'
+  | 'rs'
+  | 'eu';
 
 export const PoaDrafter: React.FC<PoaDrafterProps> = ({
   locale,
@@ -138,7 +149,11 @@ U __________________, dana ____________ 2026. godine.
 Davalac punomoćja: __________________________`;
 
   // Generate translated text (Russian or English depending on selected jurisdiction)
-  const isRussian = jurisdiction === 'ru' || jurisdiction === 'ua' || (locale === 'ru' && jurisdiction !== 'de' && jurisdiction !== 'uk' && jurisdiction !== 'fr');
+  const isRussian =
+    jurisdiction === 'ru' ||
+    jurisdiction === 'ua' ||
+    (locale === 'ru' &&
+      !['de', 'uk', 'ch', 'nl', 'se', 'no', 'fr'].includes(jurisdiction));
 
   const transText = isRussian
     ? `Д О В Е Р Е Н Н О С Т Ь
@@ -278,13 +293,17 @@ Principal: __________________________`;
             onChange={(e) => setJurisdiction(e.target.value as NotaryJurisdiction)}
             className="w-full px-3 py-2 rounded-lg border border-stoneBorder bg-white text-slateDeep font-medium focus:outline-none focus:ring-1 focus:ring-sapphire cursor-pointer"
           >
-            <option value="de">Германия / Germany (DE Notar)</option>
-            <option value="uk">Великобритания / UK (Notary Public)</option>
+            <option value="de">Германия / Germany (DE Notar • Apostille)</option>
+            <option value="uk">Великобритания / UK (Notary Public • Apostille)</option>
+            <option value="ch">Швейцария / Switzerland (Notar • Hague Apostille)</option>
+            <option value="nl">Нидерланды / Netherlands (Notaris • Hague Apostille)</option>
+            <option value="se">Швеция / Sweden (Notarius Publicus • Hague Apostille)</option>
+            <option value="no">Норвегия / Norway (Notarius Publicus • Hague Apostille)</option>
             <option value="ru">Россия / РФ (Нотариус РФ)</option>
             <option value="ua">Украина / Ukraine (Нотаріус)</option>
             <option value="rs">Сербия / Serbia (Javni beležnik)</option>
-            <option value="fr">Франция / France (Notaire)</option>
-            <option value="eu">Другие страны ЕС / Other EU</option>
+            <option value="fr">Франция / France (Notaire • Apostille)</option>
+            <option value="eu">Другие страны ЕС / Other EU (Hague Apostille)</option>
           </select>
         </div>
       </div>

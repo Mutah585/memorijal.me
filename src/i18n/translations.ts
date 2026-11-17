@@ -3,7 +3,7 @@ import {
   PHONE_HREF as CRED_PHONE_HREF,
   WHATSAPP_RAW,
   OFFICIAL_EMAIL as CRED_OFFICIAL_EMAIL,
-} from '../config/legalCredentials';
+} from '../config/legalCredentials.ts';
 
 export type Language = 'EN' | 'RU' | 'MNE';
 
@@ -353,8 +353,8 @@ export const translations: Record<Language, TranslationContent> = {
           countries: 'Serbia (Belgrade/Novi Sad), Croatia, Bosnia & Herzegovina, Slovenia, Albania',
         },
         eu_uk: {
-          label: 'European Union / United Kingdom',
-          countries: 'Germany, UK, France, Italy, Austria, Switzerland, Scandinavia, Benelux, Poland',
+          label: 'European Union, UK, Switzerland & Nordics',
+          countries: 'Germany, UK, Switzerland, Netherlands, Sweden, Norway, France, Italy, Poland',
         },
         cis_east: {
           label: 'Eastern Europe / CIS & International',
@@ -845,8 +845,8 @@ export const translations: Record<Language, TranslationContent> = {
           countries: 'Сербия (Белград / Нови-Сад), Хорватия, Босния и Герцеговина, Словения, Албания',
         },
         eu_uk: {
-          label: 'Европейский Союз и Великобритания',
-          countries: 'Германия, Великобритания, Франция, Италия, Австрия, Швейцария, Польша, страны Балтии',
+          label: 'Евросоюз, Великобритания, Швейцария и Скандинавия',
+          countries: 'Германия, Великобритания, Швейцария, Нидерланды, Швеция, Норвегия, Франция, Италия, Польша',
         },
         cis_east: {
           label: 'Восточная Европа, СНГ и другие страны',
@@ -1337,8 +1337,8 @@ export const translations: Record<Language, TranslationContent> = {
           countries: 'Srbija (Beograd / Novi Sad), Hrvatska, Bosna i Hercegovina, Slovenija, Albanija',
         },
         eu_uk: {
-          label: 'Evropska unija i Velika Britanija',
-          countries: 'Njemačka, UK, Francuska, Italija, Austrija, Švajcarska, Skandinavija, Poljska',
+          label: 'Evropska unija, UK, Švajcarska i Skandinavija',
+          countries: 'Njemačka, UK, Švajcarska, Holandija, Švedska, Norveška, Francuska, Italija, Poljska',
         },
         cis_east: {
           label: 'Istočna Evropa, ZND i međunarodne rute',

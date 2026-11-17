@@ -324,9 +324,9 @@ const SERVICE_TIERS: ServiceTier[] = [
         num: '12',
         icon: Lock,
         title: {
-          en: 'Pre-Need Mandate, Zero-Knowledge Digital Safe & Time Capsules',
-          ru: 'Прижизненное планирование (Pre-Need), «Цифровой сейф» и Капсулы времени',
-          mne: 'Pre-Need punomoćje, Zero-Knowledge Digitalni sef i Vremenske kapsule',
+          en: 'Pre-Need Lifetime Mandate, Protected Legacy Instructions & Time Capsules',
+          ru: 'Прижизненное волеизъявление (Pre-Need), защищённый архив инструкций и Капсулы времени',
+          mne: 'Pre-Need doživotno punomoćje, zaštićena arhiva uputstava i Vremenske kapsule',
         },
         rate: {
           en: 'From\u00A0€190',
@@ -334,9 +334,9 @@ const SERVICE_TIERS: ServiceTier[] = [
           mne: 'Od\u00A0190\u00A0€',
         },
         desc: {
-          en: 'Lifetime legal directives (Ugovor o nalogu), client-side encrypted vault for transferring passwords, seed phrases, and banking instructions to heirs upon verified death certificate, plus scheduled video/letter legacy delivery.',
-          ru: 'Прижизненные юридические распоряжения (Ugovor o nalogu), защищённое клиентское шифрование (Zero-Knowledge) для передачи паролей, seed-фраз и банковских инструкций наследникам строго после предъявления свидетельства о смерти, а также отложенная доставка видео-наследия и писем близким.',
-          mne: 'Doživotne pravne instrukcije (Ugovor o nalogu), klijentski šifrovani trezor za prenos lozinki i bankarskih uputstava nasljednicima uz izvod iz matične knjige umrlih, kao i odložena isporuka video-poruka porodici.',
+          en: 'Lifetime legal directives held under a civil mandate (Ugovor o nalogu, čl. 821–843 ZOO CG), protected archive of sealed instructions and legacy records transmitted to designated heirs strictly upon presentation of an official death certificate, plus scheduled video/letter time capsules.',
+          ru: 'Прижизненные юридические распоряжения по договору поручения (Ugovor o nalogu, čl. 821–843 ZOO CG), защищённый архив запечатанных инструкций и памятных материалов для передачи назначенным наследникам строго после предъявления официального свидетельства о смерти, а также отложенная доставка видео-наследия и писем близким.',
+          mne: 'Doživotne pravne instrukcije po ugovoru o nalogu (Ugovor o nalogu, čl. 821–843 ZOO CG), zaštićena arhiva zapečaćenih uputstava koja se predaju imenovanim nasljednicima isključivo po podnošenju zvaničnog izvoda iz matične knjige umrlih, kao i odložena isporuka video-poruka porodici.',
         },
       },
     ],

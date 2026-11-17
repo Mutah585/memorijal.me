@@ -89,9 +89,9 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
     route.id.includes('opsta-bolnica') ||
     route.id.includes('kccg');
 
-  const orgTypes = ['FuneralService', 'EmergencyService'];
+  const orgTypes = ['FuneralService', 'ProfessionalService'];
 
-  // 1. Organization / FuneralService & EmergencyService Schema
+  // 1. Organization / FuneralService & ProfessionalService Schema
   const funeralServiceSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': orgTypes,
@@ -154,6 +154,18 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
       'Podgorica',
       'Bar',
       'Herceg Novi',
+      'United Kingdom',
+      'Germany',
+      'Switzerland',
+      'Netherlands',
+      'Sweden',
+      'Norway',
+      'Serbia',
+      'Poland',
+      'France',
+      'Italy',
+      'Turkey',
+      'Ukraine',
     ],
     openingHoursSpecification: [
       {

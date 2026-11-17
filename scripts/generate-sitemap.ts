@@ -28,9 +28,13 @@ const SITEMAP_ROUTES: SitemapRouteConfig[] = [
   { path: '/services/legal-consular/', priority: '0.9', changefreq: 'weekly' },
   { path: '/services/local-burial-coordination/', priority: '0.9', changefreq: 'weekly' },
 
-  // 2. Programmatic Destination & Corridor Hubs — The 9 Primary Corridors (9 routes)
+  // 2. Programmatic Destination & Corridor Hubs — The 13 Primary Corridors (13 routes)
   { path: '/repatriation/to-united-kingdom/', priority: '0.9', changefreq: 'weekly' },
   { path: '/repatriation/to-germany/', priority: '0.9', changefreq: 'weekly' },
+  { path: '/repatriation/to-switzerland/', priority: '0.9', changefreq: 'weekly' },
+  { path: '/repatriation/to-netherlands/', priority: '0.9', changefreq: 'weekly' },
+  { path: '/repatriation/to-sweden/', priority: '0.9', changefreq: 'weekly' },
+  { path: '/repatriation/to-norway/', priority: '0.9', changefreq: 'weekly' },
   { path: '/repatriation/to-russia/', priority: '0.9', changefreq: 'weekly' },
   { path: '/repatriation/to-ukraine/', priority: '0.9', changefreq: 'weekly' },
   { path: '/repatriation/to-serbia/', priority: '0.9', changefreq: 'weekly' },
@@ -139,6 +143,7 @@ function generateSitemapXml(): string {
     <priority>${route.priority}</priority>
     <xhtml:link rel="alternate" hreflang="en" href="${enHref}" />
     <xhtml:link rel="alternate" hreflang="ru" href="${ruHref}" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="${mneHref}" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="${mneHref}" />
     <xhtml:link rel="alternate" hreflang="x-default" href="${enHref}" />
   </url>`);

@@ -39,6 +39,10 @@ export const CorridorsDirectory: React.FC<CorridorsDirectoryProps> = ({
           'corridor-poland',
           'corridor-france',
           'corridor-italy',
+          'corridor-switzerland',
+          'corridor-netherlands',
+          'corridor-sweden',
+          'corridor-norway',
         ].includes(r.id)
       );
     }
@@ -77,9 +81,9 @@ export const CorridorsDirectory: React.FC<CorridorsDirectoryProps> = ({
           id: 'eu_uk' as CorridorFilterId,
           label:
             locale === 'ru'
-              ? 'Евросоюз и UK'
+              ? 'Евросоюз и Европа'
               : locale === 'mne'
-              ? 'Evropska unija i UK'
+              ? 'Evropa i UK'
               : 'EU & UK',
         },
         {
@@ -97,10 +101,10 @@ export const CorridorsDirectory: React.FC<CorridorsDirectoryProps> = ({
 
   const headerTitle =
     locale === 'ru'
-      ? '9 основных международных коридоров репатриации'
+      ? '13 основных международных коридоров репатриации'
       : locale === 'mne'
-      ? '9 primarnih međunarodnih koridora repatrijacije'
-      : '9 Primary International Repatriation Corridors';
+      ? '13 primarnih međunarodnih koridora repatrijacije'
+      : '13 Primary International Repatriation Corridors';
 
   return (
     <div className={`space-y-4 ${className}`}>

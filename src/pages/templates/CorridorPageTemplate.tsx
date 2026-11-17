@@ -509,6 +509,10 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           {(route.id === 'service-air-cargo' ||
             route.id === 'corridor-uk' ||
             route.id === 'corridor-germany' ||
+            route.id === 'corridor-switzerland' ||
+            route.id === 'corridor-netherlands' ||
+            route.id === 'corridor-sweden' ||
+            route.id === 'corridor-norway' ||
             route.id === 'transit-aerodrom-podgorica') && (
             <AirCargoHumEstimator locale={locale} className="mt-6" />
           )}
@@ -524,6 +528,43 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
             <>
               <GopRequestBuilder locale={locale} className="mt-6" />
               <HospitalSlaMatrix locale={locale} className="mt-6" />
+              {route.id === 'assistance-eurocross' && (
+                <div className="mt-6 p-5 rounded-xl bg-sapphire-subtle border border-sapphire/20 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="space-y-1">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-sapphire block">
+                      {locale === 'ru'
+                        ? 'Прямой коридор Бенилюкс • Нидерланды (AMS / RTM / EIN)'
+                        : locale === 'mne'
+                        ? 'Beneluks koridor • Kraljevina Holandija (AMS / RTM / EIN)'
+                        : 'Benelux & Dutch Repatriation Corridor (AMS / RTM / EIN)'}
+                    </span>
+                    <p className="text-xs sm:text-sm text-slateDeep font-medium">
+                      {locale === 'ru'
+                        ? 'Ознакомьтесь с полным регламентом репатриации в Нидерланды (Laissez-Passer voor lijken, Wet op de lijkbezorging и рейсы в Схипхол AMS).'
+                        : locale === 'mne'
+                        ? 'Pogledajte kompletan protokol repatrijacije u Holandiju (Laissez-Passer voor lijken, Wet op de lijkbezorging i letovi za Amsterdam AMS).'
+                        : 'View our dedicated Montenegro to Netherlands repatriation protocol (Laissez-Passer voor lijken, Wet op de lijkbezorging & Schiphol AMS air cargo).'}
+                    </p>
+                  </div>
+                  <a
+                    href={buildLocalizedPath(locale, '/repatriation/to-netherlands/')}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      onNavigate(buildLocalizedPath(locale, '/repatriation/to-netherlands/'));
+                    }}
+                    className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-sapphire hover:bg-sapphire-light text-white text-xs font-semibold shrink-0 transition-colors"
+                  >
+                    <span>
+                      {locale === 'ru'
+                        ? 'Коридор в Нидерланды'
+                        : locale === 'mne'
+                        ? 'Koridor za Holandiju'
+                        : 'Netherlands Corridor'}
+                    </span>
+                    <ChevronRight className="w-4 h-4" />
+                  </a>
+                </div>
+              )}
             </>
           )}
 
@@ -891,7 +932,15 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
         route.id === 'corridor-germany' ||
         route.id === 'corridor-serbia' ||
         route.id === 'corridor-ukraine' ||
-        route.id === 'corridor-russia') && (
+        route.id === 'corridor-russia' ||
+        route.id === 'corridor-poland' ||
+        route.id === 'corridor-france' ||
+        route.id === 'corridor-italy' ||
+        route.id === 'corridor-turkey' ||
+        route.id === 'corridor-switzerland' ||
+        route.id === 'corridor-netherlands' ||
+        route.id === 'corridor-sweden' ||
+        route.id === 'corridor-norway') && (
         <section className="py-6 sm:py-10 bg-porcelain">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ConsularDirectory
@@ -907,6 +956,22 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
                   ? 'ua'
                   : route.id === 'corridor-russia'
                   ? 'ru'
+                  : route.id === 'corridor-poland'
+                  ? 'pl'
+                  : route.id === 'corridor-france'
+                  ? 'fr'
+                  : route.id === 'corridor-italy'
+                  ? 'it'
+                  : route.id === 'corridor-turkey'
+                  ? 'tr'
+                  : route.id === 'corridor-switzerland'
+                  ? 'ch'
+                  : route.id === 'corridor-netherlands'
+                  ? 'nl'
+                  : route.id === 'corridor-sweden'
+                  ? 'se'
+                  : route.id === 'corridor-norway'
+                  ? 'no'
                   : 'all'
               }
             />
@@ -939,7 +1004,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
                 {uiLabels.eeatText}
               </p>
               <div className="pt-2 flex flex-wrap gap-2 text-[11px] font-mono text-emerald-200">
-                <span className="bg-white/10 px-3 py-1 rounded">KD 2010: 82.99</span>
+                <span className="bg-white/10 px-3 py-1 rounded">KD 82.99</span>
                 <span className="bg-white/10 px-3 py-1 rounded">Tivat, Montenegro</span>
                 <span className="bg-white/10 px-3 py-1 rounded">Non-VAT (Art. 42)</span>
                 <span className="bg-white/10 px-3 py-1 rounded">SWIFT / SEPA IBAN</span>

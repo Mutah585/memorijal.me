@@ -670,7 +670,7 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
                 {ui.eeatText}
               </p>
               <div className="pt-2 flex flex-wrap gap-2 text-[11px] font-mono text-emerald-200">
-                <span className="bg-white/10 px-3 py-1 rounded">KD 2010: 82.99</span>
+                <span className="bg-white/10 px-3 py-1 rounded">KD 82.99</span>
                 <span className="bg-white/10 px-3 py-1 rounded">Tivat, Montenegro</span>
                 <span className="bg-white/10 px-3 py-1 rounded">Non-VAT (Art. 42)</span>
                 <span className="bg-white/10 px-3 py-1 rounded">SWIFT / SEPA IBAN</span>

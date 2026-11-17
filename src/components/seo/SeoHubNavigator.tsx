@@ -38,7 +38,17 @@ export const SeoHubNavigator: React.FC<SeoHubNavigatorProps> = ({
     if (corridorFilter === 'all') return allCorridorRoutes;
     if (corridorFilter === 'eu_uk') {
       return allCorridorRoutes.filter((r) =>
-        ['corridor-uk', 'corridor-germany', 'corridor-poland', 'corridor-france', 'corridor-italy'].includes(r.id)
+        [
+          'corridor-uk',
+          'corridor-germany',
+          'corridor-poland',
+          'corridor-france',
+          'corridor-italy',
+          'corridor-switzerland',
+          'corridor-netherlands',
+          'corridor-sweden',
+          'corridor-norway',
+        ].includes(r.id)
       );
     }
     if (corridorFilter === 'balkans') {
@@ -66,7 +76,7 @@ export const SeoHubNavigator: React.FC<SeoHubNavigatorProps> = ({
           title: 'Полная база направлений репатриации, больничных моргов, погранпереходов и регламентов в Черногории',
           subtitle:
             'Каждая страница содержит точные сроки консульского оформления в Подгорице, тарифную сетку, требования к документам и ответы на частые вопросы по конкретной стране, больнице, страховой или муниципалитету.',
-          corridorsHeader: '9 основных международных коридоров репатриации',
+          corridorsHeader: '13 основных международных коридоров репатриации',
           locationsHeader: 'Муниципальные и больничные хабы в Черногории (выезд 30–60 мин)',
           mortuariesHeader: 'Кластер A: Региональные больничные морги и судмедэкспертиза (/mortuary/)',
           transitHeader: 'Кластер B: Пограничные КПП и грузовые авиатерминалы (/transit/)',
@@ -82,7 +92,7 @@ export const SeoHubNavigator: React.FC<SeoHubNavigatorProps> = ({
           title: 'Kompletan imenik međunarodnih koridora, bolničkih mrtvačnica, prelaza i procedura u Crnoj Gori',
           subtitle:
             'Svaka stranica sadrži detaljnu specifikaciju rokova, konzularnih procedura u Podgorici, bolničkih mrtvačnica i transparentnih troškova.',
-          corridorsHeader: '9 primarnih međunarodnih koridora repatrijacije',
+          corridorsHeader: '13 primarnih međunarodnih koridora repatrijacije',
           locationsHeader: 'Opštinski i bolnički centri u Crnoj Gori (izlazak 30–60 min)',
           mortuariesHeader: 'Klaster A: Bolničke mrtvačnice i sudska medicina (/mortuary/)',
           transitHeader: 'Klaster B: Granični prelazi i aerodromski kargo (/transit/)',
@@ -97,7 +107,7 @@ export const SeoHubNavigator: React.FC<SeoHubNavigatorProps> = ({
           title: 'Complete Montenegro Repatriation Directory: Corridors, Hospital Mortuaries, Border Hubs & Legal Guides',
           subtitle:
             'Select any destination country, Montenegrin hospital mortuary, border checkpoint, insurance assistance partner, municipal cemetery, or statutory guide to inspect exact timelines and itemized costs.',
-          corridorsHeader: '9 Primary International Repatriation Corridors',
+          corridorsHeader: '13 Primary International Repatriation Corridors',
           locationsHeader: 'Montenegro Municipal & Hospital Catchment Hubs (30–60 Min Response)',
           mortuariesHeader: 'Cluster A: Regional Hospital Mortuaries & Forensic Centers (/mortuary/)',
           transitHeader: 'Cluster B: Cross-Border Checkpoints & Airport Cargo Terminals (/transit/)',
@@ -162,9 +172,9 @@ export const SeoHubNavigator: React.FC<SeoHubNavigatorProps> = ({
                     id: 'eu_uk',
                     label:
                       locale === 'ru'
-                        ? 'Евросоюз и UK'
+                        ? 'Евросоюз и Европа'
                         : locale === 'mne'
-                        ? 'Evropska unija i UK'
+                        ? 'Evropa i UK'
                         : 'EU & UK',
                   },
                   {

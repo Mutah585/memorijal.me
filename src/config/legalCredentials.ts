@@ -1,4 +1,4 @@
-import type { LocaleSlug } from '../data/seo-routes';
+import type { LocaleSlug } from '../data/seo-routes.ts';
 
 export const PHONE_DISPLAY = '+382 68 934 904';
 export const PHONE_E164 = '+38268934904';
@@ -11,7 +11,7 @@ export const LEGAL_CREDENTIALS = {
   COMPANY_NAME: 'Memorijal d.o.o.',
   HEADQUARTERS: 'Tivat, Crna Gora (Montenegro)',
   ACTIVITY_CODES:
-    'KD 2010: 82.99 (Pretežna djelatnost — Ostale poslovne pomoćne uslužne djelatnosti)',
+    'Šifra djelatnosti: 82.99 (Pretežna djelatnost — Ostale poslovne pomoćne uslužne djelatnosti)',
   ACTIVITY_CODES_SHORT: 'KD 82.99',
   /**
    * Set to the issued PIB string once CRPS Podgorica registration is finalized,

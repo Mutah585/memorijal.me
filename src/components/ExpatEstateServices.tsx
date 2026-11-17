@@ -53,21 +53,21 @@ export const ExpatEstateServices: React.FC<ExpatEstateServicesProps> = ({
           id: 'pre-need-vault',
           icon: Lock,
           rate: 'From\u00A0€190',
-          title: 'Pre-Need Mandate, Zero-Knowledge Digital Safe & Time Capsules',
-          desc: 'Lifetime legal directives (Ugovor o nalogu), client-side encrypted vault for transferring passwords, seed phrases, and banking instructions to heirs upon verified death certificate, plus scheduled video/letter legacy delivery.',
+          title: 'Pre-Need Lifetime Mandate, Protected Legacy Instructions & Time Capsules',
+          desc: 'Lifetime legal directives held under a civil mandate (Ugovor o nalogu, čl. 821–843 ZOO CG), protected archive of sealed instructions and legacy records transmitted to designated heirs strictly upon presentation of an official death certificate, plus scheduled video/letter time capsules.',
         },
       ],
-      ctaLabel: 'Consult Coordinator on Estate & Pre-Need Vault (WhatsApp)',
+      ctaLabel: 'Consult Coordinator on Estate & Pre-Need Mandate (WhatsApp)',
       whatsappText:
-        'Hello Memorijal d.o.o., I need administrative assistance with expat estate handover, memorial coordination, or the Pre-Need Digital Safe in Montenegro.',
+        'Hello Memorijal d.o.o., I need administrative assistance with expat estate handover, memorial coordination, or the Pre-Need Lifetime Mandate in Montenegro.',
       legalNote:
-        'Performed strictly under Activity Code KD 2010: 82.99 as an authorized fiduciary representative acting on the family’s Power of Attorney (Punomoćje) or Civil Mandate (Ugovor o nalogu).',
+        'Performed strictly under Activity Code KD 82.99 as an authorized fiduciary representative acting on the family’s Power of Attorney (Punomoćje) or Civil Mandate (Ugovor o nalogu, čl. 821–843 ZOO CG).',
     },
     ru: {
-      badge: `Пост-сопровождение экспатов и Цифровой сейф • ${LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT}`,
-      title: 'Административный консьерж-сервис для семей экспатов и прижизненный сейф',
+      badge: `Пост-сопровождение экспатов и Прижизненный мандат • ${LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT}`,
+      title: 'Административный консьерж-сервис для семей экспатов и прижизненное поручение',
       subtitle:
-        'Помимо репатриации или организации местного захоронения, агентство Memorijal d.o.o. по нотариальной доверенности (Punomoćje) и договору поручения (Ugovor o nalogu) решает имущественные вопросы в Черногории без приезда наследников.',
+        'Помимо репатриации или организации местного захоронения, агентство Memorijal d.o.o. по нотариальной доверенности (Punomoćje) и договору поручения (Ugovor o nalogu, čl. 821–843 ZOO CG) решает имущественные вопросы в Черногории без приезда наследников.',
       cards: [
         {
           id: 'expat-estate-clearance',
@@ -94,21 +94,21 @@ export const ExpatEstateServices: React.FC<ExpatEstateServicesProps> = ({
           id: 'pre-need-vault',
           icon: Lock,
           rate: 'От\u00A0190\u00A0€',
-          title: 'Прижизненное планирование (Pre-Need), «Цифровой сейф» и Капсулы времени',
-          desc: 'Прижизненные юридические распоряжения (Ugovor o nalogu), защищённое клиентское шифрование (Zero-Knowledge) для передачи паролей, seed-фраз и банковских инструкций наследникам строго после предъявления свидетельства о смерти, а также отложенная доставка видео-наследия и писем близким.',
+          title: 'Прижизненное волеизъявление (Pre-Need), защищённый архив инструкций и Капсулы времени',
+          desc: 'Прижизненные юридические распоряжения по договору поручения (Ugovor o nalogu, čl. 821–843 ZOO CG), защищённый архив запечатанных инструкций и памятных материалов для передачи назначенным наследникам строго после предъявления официального свидетельства о смерти, а также отложенная доставка видео-наследия и писем близким.',
         },
       ],
-      ctaLabel: 'Обсудить консьерж или Цифровой сейф в WhatsApp',
+      ctaLabel: 'Обсудить консьерж или Прижизненный мандат в WhatsApp',
       whatsappText:
-        'Здравствуйте, Memorijal d.o.o.! Нужна консультация по имущественным вопросам экспата / Прижизненному договору и Цифровому сейфу в Черногории.',
+        'Здравствуйте, Memorijal d.o.o.! Нужна консультация по имущественным вопросам экспата / Прижизненному волеизъявлению и архиву инструкций в Черногории.',
       legalNote:
-        'Выполняется строго в рамках кода деятельности KD 2010: 82.99 по доверенности (Punomoćje) и договору поручения (Ugovor o nalogu).',
+        'Выполняется строго в рамках кода деятельности KD 82.99 по доверенности (Punomoćje) и договору поручения (Ugovor o nalogu, čl. 821–843 ZOO CG).',
     },
     mne: {
       badge: `Administrativna podrška za imovinu stranaca • ${LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT}`,
-      title: 'Postmortalni konsijerž, briga o imovini i Pre-Need Digitalni sef u Crnoj Gori',
+      title: 'Postmortalni konsijerž, briga o imovini i Pre-Need doživotno punomoćje u Crnoj Gori',
       subtitle:
-        'Pored repatrijacije ili lokalne sahrane, Memorijal d.o.o. po ovjerenom punomoćju (Punomoćje) i ugovoru o nalogu (Ugovor o nalogu) rješava imovinske i administrativne obaveze u Crnoj Gori bez potrebe dolaska nasljednika.',
+        'Pored repatrijacije ili lokalne sahrane, Memorijal d.o.o. po ovjerenom punomoćju (Punomoćje) i ugovoru o nalogu (Ugovor o nalogu, čl. 821–843 ZOO CG) rješava imovinske i administrativne obaveze u Crnoj Gori bez potrebe dolaska nasljednika.',
       cards: [
         {
           id: 'expat-estate-clearance',
@@ -135,15 +135,15 @@ export const ExpatEstateServices: React.FC<ExpatEstateServicesProps> = ({
           id: 'pre-need-vault',
           icon: Lock,
           rate: 'Od\u00A0190\u00A0€',
-          title: 'Pre-Need punomoćje, Zero-Knowledge Digitalni sef i Vremenske kapsule',
-          desc: 'Doživotne pravne instrukcije (Ugovor o nalogu), klijentski šifrovani trezor za prenos lozinki i bankarskih uputstava nasljednicima uz izvod iz matične knjige umrlih, kao i odložena isporuka video-poruka porodici.',
+          title: 'Pre-Need doživotno punomoćje, zaštićena arhiva uputstava i Vremenske kapsule',
+          desc: 'Doživotne pravne instrukcije po ugovoru o nalogu (Ugovor o nalogu, čl. 821–843 ZOO CG), zaštićena arhiva zapečaćenih uputstava koja se predaju imenovanim nasljednicima isključivo po podnošenju zvaničnog izvoda iz matične knjige umrlih, kao i odložena isporuka video-poruka porodici.',
         },
       ],
       ctaLabel: 'Kontaktirajte koordinatora putem WhatsApp-a',
       whatsappText:
-        'Poštovani Memorijal d.o.o., potrebna je administrativna podrška oko imovine stranaca ili Pre-Need Digitalnog sefa u Crnoj Gori.',
+        'Poštovani Memorijal d.o.o., potrebna je administrativna podrška oko imovine stranaca ili Pre-Need doživotnog punomoćja u Crnoj Gori.',
       legalNote:
-        'Obavlja se isključivo u okviru šifre djelatnosti KD 2010: 82.99 u svojstvu ovlašćenog punomoćnika po Ugovoru o nalogu.',
+        'Obavlja se isključivo u okviru šifre djelatnosti KD 82.99 u svojstvu ovlašćenog punomoćnika po Ugovoru o nalogu (čl. 821–843 ZOO CG).',
     },
   }[locale];
 

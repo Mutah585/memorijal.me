@@ -64,7 +64,7 @@ export const LEGAL_ROUTES: SeoRouteEntry[] = [
     locales: {
       en: makeLegalPageData(
         'Terms of Service & Mandate Agreement | Memorijal d.o.o.',
-        'Public Offer, Mandate Agreement (ZOO Art. 757–779), pricing disclaimer, liability cap, and Montenegro jurisdiction for Memorijal d.o.o.',
+        'Public Offer, Mandate Agreement (ZOO CG Art. 821–843), pricing disclaimer, liability cap, and Montenegro jurisdiction for Memorijal d.o.o.',
         ['Memorijal Terms of Service', 'Mandate Agreement Montenegro', 'Repatriation Legal Terms'],
         'Terms of Service & Mandate',
         'PUBLIC OFFER • MANDATE AGREEMENT • ZOO MONTENEGRO',
@@ -73,7 +73,7 @@ export const LEGAL_ROUTES: SeoRouteEntry[] = [
       ),
       ru: makeLegalPageData(
         'Публичная оферта и договор поручения | Memorijal d.o.o.',
-        'Публичная оферта, агентский договор поручения (ZOO ЧГ), порядок расчетов, ограничение ответственности и юрисдикция Черногории.',
+        'Публичная оферта, агентский договор поручения (ст. 821–843 ZOO ЧГ), порядок расчетов, ограничение ответственности и юрисдикция Черногории.',
         ['Публичная оферта Memorijal', 'Договор поручения Черногория', 'Условия оказания услуг'],
         'Публичная оферта и оговорки',
         'ПУБЛИЧНАЯ ОФЕРТА • ДОГОВОР ПОРУЧЕНИЯ • ПРАВО ЧЕРНОГОРИИ',
@@ -81,8 +81,8 @@ export const LEGAL_ROUTES: SeoRouteEntry[] = [
         'Регулирует агентское представительство по доверенности (Punomoćje), транзитные расходы, форс-мажор и отказ от 14-дневного отзыва при срочном выезде.'
       ),
       mne: makeLegalPageData(
-        'Opšti uslovi poslovanja i Ugovor o nalogu | Memorijal d.o.o.',
-        'Javna ponuda, Ugovor o nalogu (ZOO čl. 757–779), prefakturisanje troškova, ograničenje odgovornosti i nadležnost suda u Crnoj Gori.',
+        'Opšti uslovi i Ugovor o nalogu | Memorijal d.o.o.',
+        'Javna ponuda, Ugovor o nalogu (ZOO CG čl. 821–843), prefakturisanje troškova, ograničenje odgovornosti i nadležnost suda u Crnoj Gori.',
         ['Opšti uslovi poslovanja Memorijal', 'Ugovor o nalogu Crna Gora'],
         'Opšti uslovi i Ugovor o nalogu',
         'JAVNA PONUDA • UGOVOR O NALOGU • ZOO CRNA GORA',
@@ -109,7 +109,7 @@ export const LEGAL_ROUTES: SeoRouteEntry[] = [
         'Dual-regime compliance notice explaining GDPR Recital 27, Art. 6 lawful bases, Art. 49 cross-border transfers, and local browser-only draft storage.'
       ),
       ru: makeLegalPageData(
-        'Политика конфиденциальности (GDPR / ZZPL) | Memorijal d.o.o.',
+        'Политика конфиденциальности (GDPR/ZZPL) | Memorijal',
         'Защита персональных данных по закону Черногории ZZPL и EU/UK GDPR, трансграничная передача документов и локальная обработка в браузере.',
         ['Политика конфиденциальности Memorijal', 'GDPR Черногория', 'Защита данных ZZPL'],
         'Политика конфиденциальности (GDPR)',
@@ -137,7 +137,7 @@ export const LEGAL_ROUTES: SeoRouteEntry[] = [
     lastmod: '2026-11-17',
     locales: {
       en: makeLegalPageData(
-        'Statutory Agency Disclosure & Consumer Rights | Memorijal d.o.o.',
+        'Statutory Agency & Consumer Disclosure | Memorijal d.o.o.',
         'Agency coordination model (KD 82.99), non-carrier, non-retail & non-medical disclaimer, subcontractor liability, and consumer rights notice.',
         ['Memorijal Regulatory Disclosure', 'KD 82.99 Montenegro', 'Agency Model Disclosure'],
         'Regulatory & Agency Disclosure',
@@ -146,7 +146,7 @@ export const LEGAL_ROUTES: SeoRouteEntry[] = [
         'Pravno obavještenje o agencijskom modelu — Clarifying KD 82.99 agency status, non-VAT status (Art. 42), licensed partner execution, and consumer rights.'
       ),
       ru: makeLegalPageData(
-        'Раскрытие агентской модели и прав потребителей | Memorijal d.o.o.',
+        'Раскрытие агентской модели (KD 82.99) | Memorijal d.o.o.',
         'Официальное раскрытие агентской модели (KD 82.99), отсутствие автопарка, магазина и медлицензии, ответственность субподрядчиков.',
         ['Правовое раскрытие Memorijal', 'Агентская модель KD 82.99', 'Права потребителей Черногория'],
         'Агентская модель и оговорки',

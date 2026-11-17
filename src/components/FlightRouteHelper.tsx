@@ -14,7 +14,7 @@ export interface FlightRouteHelperProps {
 }
 
 type OriginAirport = 'TGD' | 'TIV';
-type DestinationHub = 'BEG' | 'IST' | 'VIE' | 'LON';
+type DestinationHub = 'BEG' | 'IST' | 'VIE' | 'LON' | 'ZRH_AMS' | 'ARN_OSL';
 
 interface HubInfo {
   id: DestinationHub;
@@ -151,6 +151,68 @@ const HUBS: HubInfo[] = [
       en: 'Passenger carriage in cabin permitted. Non-metallic urn required to pass UK airport security X-ray.',
       ru: 'Разрешен провоз в ручной клади. Неметаллическая урна для прохождения британского сканера.',
       mne: 'Dozvoljen unos u kabinu. Nemetalna urna za prolaz kroz britanske aerodromske skenere.',
+    },
+  },
+  {
+    id: 'ZRH_AMS',
+    city: {
+      en: 'Zurich (ZRH) / Geneva (GVA) & Amsterdam (AMS)',
+      ru: 'Цюрих (ZRH) / Женева (GVA) и Амстердам (AMS)',
+      mne: 'Cirih (ZRH) / Ženeva (GVA) i Amsterdam (AMS)',
+    },
+    airportName: 'Zurich (ZRH), Geneva (GVA) & Amsterdam Schiphol (AMS)',
+    airlines: 'Air Montenegro / SWISS / KLM / Air Serbia / Austrian',
+    dailyFrequency: {
+      en: 'Direct & 1-stop connections from TGD/TIV via BEG & VIE',
+      ru: 'Прямые и стыковочные рейсы из TGD/TIV через Белград и Вену',
+      mne: 'Direktni i vezani letovi iz TGD/TIV preko Beograda i Beča',
+    },
+    transitPurpose: {
+      en: 'Repatriation corridor to Switzerland (BAZG) & Netherlands (Benelux / Eurocross GOP)',
+      ru: 'Коридор репатриации в Швейцарию (BAZG) и Нидерланды (Eurocross / ANWB GOP)',
+      mne: 'Koridor repatrijacije za Švajcarsku (BAZG) i Holandiju (Eurocross GOP)',
+    },
+    cargoLeadTime: '24–48 ч / hrs',
+    cargoAwbGuidance: {
+      en: 'Priority IATA Cargo HUM booking to ZRH, GVA, BSL, AMS, EIN & RTM with Swiss Leichenpass or Dutch Laissez-Passer voor lijken.',
+      ru: 'Приоритетное бронирование IATA Cargo HUM в ZRH, GVA, BSL, AMS, EIN и RTM со швейцарским Leichenpass или нидерландским Laissez-Passer.',
+      mne: 'Prioritetna IATA Cargo HUM rezervacija za ZRH, GVA, BSL i AMS uz švajcarski Leichenpass ili holandski Laissez-Passer.',
+    },
+    cabinUrnGuidance: {
+      en: 'X-ray translucent sealed urn permitted in cabin baggage on SWISS, KLM, Air Montenegro & Air Serbia.',
+      ru: 'Рентгенопрозрачная опломбированная урна разрешена в ручной клади на рейсах SWISS, KLM, Air Montenegro и Air Serbia.',
+      mne: 'Rendgenski propusna zapečaćena urna dozvoljena u ručnom prtljagu na letovima SWISS, KLM i Air Serbia.',
+    },
+  },
+  {
+    id: 'ARN_OSL',
+    city: {
+      en: 'Stockholm (ARN) / Gothenburg & Oslo (OSL) / Bergen',
+      ru: 'Стокгольм (ARN) / Гётеборг и Осло (OSL) / Берген',
+      mne: 'Stokholm (ARN) / Geteborg i Oslo (OSL) / Bergen',
+    },
+    airportName: 'Stockholm Arlanda (ARN), Gothenburg (GOT), Oslo (OSL) & Bergen (BGO)',
+    airlines: 'SAS / Lufthansa Cargo / Austrian / Air Serbia / Turkish Cargo',
+    dailyFrequency: {
+      en: 'Daily hub connections from TGD/TIV via BEG, VIE, FRA & IST',
+      ru: 'Ежедневные стыковки из TGD/TIV через BEG, VIE, FRA и IST',
+      mne: 'Svakodnevne konekcije iz TGD/TIV preko BEG, VIE, FRA i IST',
+    },
+    transitPurpose: {
+      en: 'Nordic & Scandinavian repatriation to Sweden (Skatteverket) & Norway (Tolletaten EEA)',
+      ru: 'Скандинавский коридор в Швецию (Skatteverket) и Норвегию (Tolletaten ЕЭЗ / SOS International)',
+      mne: 'Skandinavski koridor za Švedsku (Skatteverket) i Norvešku (Tolletaten EEA / SOS International)',
+    },
+    cargoLeadTime: '36–48 ч / hrs',
+    cargoAwbGuidance: {
+      en: 'Full IATA HUM air waybill dispatch to ARN, GOT, MMX, OSL, BGO, SVG & TRD with Swedish Passersedel för lik or Norwegian Likpass.',
+      ru: 'Авиаотправка IATA HUM в ARN, GOT, MMX, OSL, BGO, SVG и TRD со шведским Passersedel för lik или норвежским Likpass.',
+      mne: 'IATA HUM otprema za ARN, GOT, MMX, OSL i BGO uz švedski Passersedel för lik ili norveški Likpass.',
+    },
+    cabinUrnGuidance: {
+      en: 'Sealed cinerary urn cleared for cabin transit with multilingual Cremation Certificate and Apostille.',
+      ru: 'Опломбированная урна допускается в салон при наличии международного сертификата о кремации и Апостиля.',
+      mne: 'Zapečaćena urna odobrena za unos u kabinu uz međunarodnu Potvrdu o kremaciji i Apostille.',
     },
   },
 ];

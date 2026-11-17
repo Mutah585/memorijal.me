@@ -17,7 +17,21 @@ import { LocaleSlug } from '../data/seo-routes';
 
 interface EmbassyItem {
   id: string;
-  countryKey: 'uk' | 'de' | 'rs' | 'ua' | 'ru' | 'us' | 'pl' | 'fr' | 'it' | 'tr';
+  countryKey:
+    | 'uk'
+    | 'de'
+    | 'rs'
+    | 'ua'
+    | 'ru'
+    | 'us'
+    | 'pl'
+    | 'fr'
+    | 'it'
+    | 'tr'
+    | 'ch'
+    | 'nl'
+    | 'se'
+    | 'no';
   name: {
     ru: string;
     en: string;
@@ -310,11 +324,134 @@ const EMBASSIES: EmbassyItem[] = [
       mne: 'Brzo izdavanje Cenaze Nakil Belgesi i direktna koordinacija sa svakodnevnim letovima Turkish Airlines Cargo HUM iz TGD i TIV.',
     },
   },
+  {
+    id: 'ch',
+    countryKey: 'ch',
+    name: {
+      ru: 'Посольство Швейцарии (Белград / Консульство в Подгорице)',
+      en: 'Embassy of Switzerland in Belgrade (Covering Montenegro) & Consulate in Podgorica',
+      mne: 'Ambasada Švajcarske u Beogradu (nadležna za CG) i Konzulat u Podgorici',
+    },
+    countryName: {
+      ru: 'Швейцарии',
+      en: 'Switzerland',
+      mne: 'Švajcarske',
+    },
+    address: 'Bulevar oslobođenja 4, 11000 Beograd | Podgorica Consular Liaison',
+    city: 'Belgrade / Podgorica',
+    phone: '+381 11 306 58 20',
+    sla: {
+      ru: 'Laissez-Passer pour corps / Leichenpass — 24–36 часов',
+      en: '24–36h Laissez-Passer pour corps / Leichenpass & BAZG clearance',
+      mne: 'Laissez-Passer / Leichenpass — 24–36 sati',
+    },
+    notes: {
+      ru: 'Оформление швейцарского Laissez-Passer pour corps / Leichenpass и таможенной декларации BAZG/OFDF для авиарейсов в Цюрих (ZRH), Женеву (GVA) и Базель (BSL) или автоперевозки.',
+      en: 'Bilateral Podgorica–Belgrade diplomatic processing of Swiss Laissez-Passer / Leichenpass and BAZG/OFDF customs transit to Zurich (ZRH), Geneva (GVA), and Basel (BSL).',
+      mne: 'Pribavljanje švajcarske sprovodnice (Leichenpass / Laissez-Passer) i BAZG/OFDF carinske dozvole za Cirih (ZRH), Ženevu (GVA) i Bazel (BSL).',
+    },
+  },
+  {
+    id: 'nl',
+    countryKey: 'nl',
+    name: {
+      ru: 'Посольство Королевства Нидерландов (Белград / Подгорица)',
+      en: 'Embassy of the Kingdom of the Netherlands in Belgrade (Covering Montenegro)',
+      mne: 'Ambasada Kraljevine Holandije u Beogradu (nadležna za CG)',
+    },
+    countryName: {
+      ru: 'Нидерландов',
+      en: 'Netherlands',
+      mne: 'Holandije',
+    },
+    address: 'Milentija Popovića 5b, 11070 Beograd | Podgorica Consular Desk',
+    city: 'Belgrade / Podgorica',
+    phone: '+381 11 202 39 00',
+    sla: {
+      ru: 'Laissez-Passer voor lijken и Eurocross GOP — 24–36 часов',
+      en: '24–36h Laissez-Passer voor lijken & Eurocross GOP coordination',
+      mne: 'Laissez-Passer voor lijken i Eurocross GOP — 24–36 sati',
+    },
+    notes: {
+      ru: 'Оформление Laissez-Passer voor lijken по закону Wet op de lijkbezorging, прямой расчет по GOP с Eurocross Assistance / ANWB и отправка в Амстердам Схипхол (AMS).',
+      en: 'Issuance of Dutch Laissez-Passer voor lijken under the Wet op de lijkbezorging and direct B2B GOP coordination with Eurocross Assistance, ANWB, and SOS International to Amsterdam (AMS).',
+      mne: 'Izdavanje Laissez-Passer voor lijken dozvole i direktna GOP saradnja sa Eurocross Assistance i ANWB za transport u Amsterdam Schiphol (AMS).',
+    },
+  },
+  {
+    id: 'se',
+    countryKey: 'se',
+    name: {
+      ru: 'Посольство Швеции (Белград — аккредитовано для Черногории)',
+      en: 'Embassy of Sweden in Belgrade (Accredited to Montenegro)',
+      mne: 'Ambasada Kraljevine Švedske u Beogradu (nadležna za CG)',
+    },
+    countryName: {
+      ru: 'Швеции',
+      en: 'Sweden',
+      mne: 'Švedske',
+    },
+    address: 'Ledi Pedžet 2, 11040 Beograd | Podgorica Consular Liaison',
+    city: 'Belgrade / Podgorica',
+    phone: '+381 11 206 92 00',
+    sla: {
+      ru: 'Passersedel för lik и досье Skatteverket — 24–48 часов',
+      en: '24–48h Passersedel för lik & Skatteverket clearance',
+      mne: 'Passersedel för lik i Skatteverket — 24–48 sati',
+    },
+    notes: {
+      ru: 'Получение консульского пропуска Passersedel för lik, подготовка документов для Skatteverket (gravsättningsintyg) и работа по GOP с SOS International / Falck до Стокгольма (ARN) и Гётеборга (GOT).',
+      en: 'Consular Passersedel för lik clearance, Swedish Tax Agency (Skatteverket — gravsättningsintyg) documentation, and SOS International GOP dispatch to Stockholm (ARN) and Gothenburg (GOT).',
+      mne: 'Pribavljanje Passersedel för lik sprovodnice, dokumentacija za Skatteverket i direktna GOP naplata sa SOS International za Stokholm (ARN) i Geteborg (GOT).',
+    },
+  },
+  {
+    id: 'no',
+    countryKey: 'no',
+    name: {
+      ru: 'Королевское Посольство Норвегии (Белград — курирует Черногорию)',
+      en: 'Royal Norwegian Embassy in Belgrade (Covering Montenegro)',
+      mne: 'Kraljevska ambasada Norveške u Beogradu (nadležna za CG)',
+    },
+    countryName: {
+      ru: 'Норвегии',
+      en: 'Norway',
+      mne: 'Norveške',
+    },
+    address: 'Milentija Popovića 5a, 11070 Beograd | Podgorica Consular Liaison',
+    city: 'Belgrade / Podgorica',
+    phone: '+381 11 320 80 00',
+    sla: {
+      ru: 'Laissez-Passer for lik (Likpass) и таможня ЕЭЗ — 24–48 часов',
+      en: '24–48h Likpass & Tolletaten EEA customs clearance',
+      mne: 'Likpass i Tolletaten EEA carina — 24–48 sati',
+    },
+    notes: {
+      ru: 'Оформление норвежского Likpass, таможенная очистка Tolletaten по закону Gravplassloven и прямой биллинг с SOS International / Gjensidige / If до Осло (OSL) и Бергена (BGO).',
+      en: 'Consular Likpass issuance, Norwegian Customs (Tolletaten) EEA entry compliance under Gravplassloven, and SOS International / Gjensidige GOP settlement to Oslo (OSL) and Bergen (BGO).',
+      mne: 'Izdavanje norveške sprovodnice (Likpass), Tolletaten EEA carinska procedura i direktna GOP naplata sa SOS International za Oslo (OSL) i Bergen (BGO).',
+    },
+  },
 ];
 
 interface ConsularDirectoryProps {
   locale: LocaleSlug;
-  initialFilter?: 'all' | 'uk' | 'de' | 'rs' | 'ua' | 'ru' | 'us' | 'pl' | 'fr' | 'it' | 'tr';
+  initialFilter?:
+    | 'all'
+    | 'uk'
+    | 'de'
+    | 'rs'
+    | 'ua'
+    | 'ru'
+    | 'us'
+    | 'pl'
+    | 'fr'
+    | 'it'
+    | 'tr'
+    | 'ch'
+    | 'nl'
+    | 'se'
+    | 'no';
 }
 
 export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale, initialFilter = 'all' }) => {
@@ -372,6 +509,22 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale, in
     {
       id: 'tr',
       labels: { ru: 'Турция 🇹🇷', en: 'Turkey 🇹🇷', mne: 'Turska 🇹🇷' },
+    },
+    {
+      id: 'ch',
+      labels: { ru: 'Швейцария 🇨🇭', en: 'Switzerland 🇨🇭', mne: 'Švajcarska 🇨🇭' },
+    },
+    {
+      id: 'nl',
+      labels: { ru: 'Нидерланды 🇳🇱', en: 'Netherlands 🇳🇱', mne: 'Holandija 🇳🇱' },
+    },
+    {
+      id: 'se',
+      labels: { ru: 'Швеция 🇸🇪', en: 'Sweden 🇸🇪', mne: 'Švedska 🇸🇪' },
+    },
+    {
+      id: 'no',
+      labels: { ru: 'Норвегия 🇳🇴', en: 'Norway 🇳🇴', mne: 'Norveška 🇳🇴' },
     },
   ];
 

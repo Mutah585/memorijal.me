@@ -8,6 +8,7 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/" />
   </url>
@@ -18,6 +19,7 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/" />
   </url>
@@ -28,6 +30,7 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/" />
   </url>
@@ -38,6 +41,7 @@
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/" />
   </url>
@@ -48,6 +52,7 @@
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/" />
   </url>
@@ -58,6 +63,7 @@
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/" />
   </url>
@@ -68,6 +74,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/repatriation-air-cargo/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/repatriation-air-cargo/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/repatriation-air-cargo/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/repatriation-air-cargo/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/repatriation-air-cargo/" />
   </url>
@@ -78,6 +85,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/repatriation-air-cargo/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/repatriation-air-cargo/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/repatriation-air-cargo/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/repatriation-air-cargo/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/repatriation-air-cargo/" />
   </url>
@@ -88,6 +96,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/repatriation-air-cargo/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/repatriation-air-cargo/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/repatriation-air-cargo/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/repatriation-air-cargo/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/repatriation-air-cargo/" />
   </url>
@@ -98,6 +107,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/repatriation-road/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/repatriation-road/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/repatriation-road/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/repatriation-road/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/repatriation-road/" />
   </url>
@@ -108,6 +118,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/repatriation-road/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/repatriation-road/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/repatriation-road/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/repatriation-road/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/repatriation-road/" />
   </url>
@@ -118,6 +129,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/repatriation-road/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/repatriation-road/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/repatriation-road/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/repatriation-road/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/repatriation-road/" />
   </url>
@@ -128,6 +140,7 @@
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/cremation-serbia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/cremation-serbia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/cremation-serbia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/cremation-serbia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/cremation-serbia/" />
   </url>
@@ -138,6 +151,7 @@
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/cremation-serbia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/cremation-serbia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/cremation-serbia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/cremation-serbia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/cremation-serbia/" />
   </url>
@@ -148,6 +162,7 @@
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/cremation-serbia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/cremation-serbia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/cremation-serbia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/cremation-serbia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/cremation-serbia/" />
   </url>
@@ -158,6 +173,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/legal-consular/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/legal-consular/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/legal-consular/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/legal-consular/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/legal-consular/" />
   </url>
@@ -168,6 +184,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/legal-consular/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/legal-consular/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/legal-consular/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/legal-consular/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/legal-consular/" />
   </url>
@@ -178,6 +195,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/legal-consular/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/legal-consular/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/legal-consular/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/legal-consular/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/legal-consular/" />
   </url>
@@ -188,6 +206,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/local-burial-coordination/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/local-burial-coordination/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/local-burial-coordination/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/local-burial-coordination/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/local-burial-coordination/" />
   </url>
@@ -198,6 +217,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/local-burial-coordination/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/local-burial-coordination/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/local-burial-coordination/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/local-burial-coordination/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/local-burial-coordination/" />
   </url>
@@ -208,6 +228,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/local-burial-coordination/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/local-burial-coordination/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/services/local-burial-coordination/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/local-burial-coordination/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/local-burial-coordination/" />
   </url>
@@ -218,6 +239,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-united-kingdom/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-united-kingdom/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-united-kingdom/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-united-kingdom/" />
   </url>
@@ -228,6 +250,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-united-kingdom/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-united-kingdom/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-united-kingdom/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-united-kingdom/" />
   </url>
@@ -238,6 +261,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-united-kingdom/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-united-kingdom/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-united-kingdom/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-united-kingdom/" />
   </url>
@@ -248,6 +272,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-germany/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-germany/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-germany/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-germany/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-germany/" />
   </url>
@@ -258,6 +283,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-germany/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-germany/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-germany/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-germany/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-germany/" />
   </url>
@@ -268,8 +294,141 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-germany/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-germany/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-germany/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-germany/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-germany/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/repatriation/to-switzerland/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-switzerland/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/repatriation/to-switzerland/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-switzerland/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/repatriation/to-switzerland/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-switzerland/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/repatriation/to-netherlands/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-netherlands/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-netherlands/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-netherlands/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-netherlands/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-netherlands/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/repatriation/to-netherlands/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-netherlands/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-netherlands/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-netherlands/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-netherlands/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-netherlands/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/repatriation/to-netherlands/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-netherlands/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-netherlands/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-netherlands/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-netherlands/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-netherlands/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/repatriation/to-sweden/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-sweden/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-sweden/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-sweden/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-sweden/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-sweden/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/repatriation/to-sweden/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-sweden/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-sweden/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-sweden/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-sweden/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-sweden/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/repatriation/to-sweden/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-sweden/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-sweden/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-sweden/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-sweden/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-sweden/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/en/repatriation/to-norway/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-norway/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-norway/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-norway/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-norway/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-norway/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/repatriation/to-norway/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-norway/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-norway/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-norway/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-norway/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-norway/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/repatriation/to-norway/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-norway/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-norway/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-norway/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-norway/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-norway/" />
   </url>
   <url>
     <loc>https://memorijal.me/en/repatriation/to-russia/</loc>
@@ -278,6 +437,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-russia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-russia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-russia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-russia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-russia/" />
   </url>
@@ -288,6 +448,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-russia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-russia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-russia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-russia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-russia/" />
   </url>
@@ -298,6 +459,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-russia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-russia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-russia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-russia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-russia/" />
   </url>
@@ -308,6 +470,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-ukraine/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-ukraine/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-ukraine/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-ukraine/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-ukraine/" />
   </url>
@@ -318,6 +481,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-ukraine/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-ukraine/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-ukraine/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-ukraine/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-ukraine/" />
   </url>
@@ -328,6 +492,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-ukraine/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-ukraine/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-ukraine/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-ukraine/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-ukraine/" />
   </url>
@@ -338,6 +503,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-serbia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-serbia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-serbia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-serbia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-serbia/" />
   </url>
@@ -348,6 +514,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-serbia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-serbia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-serbia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-serbia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-serbia/" />
   </url>
@@ -358,6 +525,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-serbia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-serbia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-serbia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-serbia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-serbia/" />
   </url>
@@ -368,6 +536,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-poland/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-poland/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-poland/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-poland/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-poland/" />
   </url>
@@ -378,6 +547,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-poland/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-poland/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-poland/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-poland/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-poland/" />
   </url>
@@ -388,6 +558,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-poland/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-poland/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-poland/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-poland/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-poland/" />
   </url>
@@ -398,6 +569,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-france/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-france/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-france/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-france/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-france/" />
   </url>
@@ -408,6 +580,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-france/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-france/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-france/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-france/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-france/" />
   </url>
@@ -418,6 +591,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-france/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-france/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-france/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-france/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-france/" />
   </url>
@@ -428,6 +602,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-turkey/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-turkey/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-turkey/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-turkey/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-turkey/" />
   </url>
@@ -438,6 +613,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-turkey/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-turkey/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-turkey/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-turkey/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-turkey/" />
   </url>
@@ -448,6 +624,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-turkey/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-turkey/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-turkey/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-turkey/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-turkey/" />
   </url>
@@ -458,6 +635,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-italy/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-italy/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-italy/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-italy/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-italy/" />
   </url>
@@ -468,6 +646,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-italy/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-italy/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-italy/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-italy/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-italy/" />
   </url>
@@ -478,6 +657,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/repatriation/to-italy/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/repatriation/to-italy/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/repatriation/to-italy/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/repatriation/to-italy/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/repatriation/to-italy/" />
   </url>
@@ -488,6 +668,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/tivat/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/tivat/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/tivat/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/tivat/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/tivat/" />
   </url>
@@ -498,6 +679,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/tivat/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/tivat/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/tivat/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/tivat/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/tivat/" />
   </url>
@@ -508,6 +690,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/tivat/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/tivat/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/tivat/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/tivat/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/tivat/" />
   </url>
@@ -518,6 +701,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/kotor/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/kotor/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/kotor/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/kotor/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/kotor/" />
   </url>
@@ -528,6 +712,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/kotor/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/kotor/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/kotor/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/kotor/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/kotor/" />
   </url>
@@ -538,6 +723,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/kotor/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/kotor/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/kotor/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/kotor/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/kotor/" />
   </url>
@@ -548,6 +734,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/budva/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/budva/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/budva/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/budva/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/budva/" />
   </url>
@@ -558,6 +745,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/budva/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/budva/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/budva/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/budva/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/budva/" />
   </url>
@@ -568,6 +756,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/budva/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/budva/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/budva/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/budva/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/budva/" />
   </url>
@@ -578,6 +767,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/podgorica/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/podgorica/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/podgorica/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/podgorica/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/podgorica/" />
   </url>
@@ -588,6 +778,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/podgorica/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/podgorica/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/podgorica/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/podgorica/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/podgorica/" />
   </url>
@@ -598,6 +789,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/podgorica/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/podgorica/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/podgorica/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/podgorica/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/podgorica/" />
   </url>
@@ -608,6 +800,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/herceg-novi/" />
   </url>
@@ -618,6 +811,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/herceg-novi/" />
   </url>
@@ -628,6 +822,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/herceg-novi/" />
   </url>
@@ -638,6 +833,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/bar/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/bar/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/bar/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/bar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/bar/" />
   </url>
@@ -648,6 +844,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/bar/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/bar/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/bar/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/bar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/bar/" />
   </url>
@@ -658,6 +855,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/location/bar/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/location/bar/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/location/bar/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/location/bar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/location/bar/" />
   </url>
@@ -668,6 +866,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/pricing-breakdown/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/pricing-breakdown/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/pricing-breakdown/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/pricing-breakdown/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/pricing-breakdown/" />
   </url>
@@ -678,6 +877,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/pricing-breakdown/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/pricing-breakdown/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/pricing-breakdown/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/pricing-breakdown/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/pricing-breakdown/" />
   </url>
@@ -688,6 +888,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/pricing-breakdown/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/pricing-breakdown/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/pricing-breakdown/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/pricing-breakdown/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/pricing-breakdown/" />
   </url>
@@ -698,6 +899,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/step-by-step-guide/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/step-by-step-guide/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/step-by-step-guide/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/step-by-step-guide/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/step-by-step-guide/" />
   </url>
@@ -708,6 +910,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/step-by-step-guide/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/step-by-step-guide/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/step-by-step-guide/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/step-by-step-guide/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/step-by-step-guide/" />
   </url>
@@ -718,6 +921,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/step-by-step-guide/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/step-by-step-guide/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/step-by-step-guide/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/step-by-step-guide/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/step-by-step-guide/" />
   </url>
@@ -728,6 +932,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/about/director/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/about/director/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/about/director/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/about/director/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/about/director/" />
   </url>
@@ -738,6 +943,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/about/director/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/about/director/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/about/director/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/about/director/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/about/director/" />
   </url>
@@ -748,6 +954,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/about/director/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/about/director/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/about/director/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/about/director/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/about/director/" />
   </url>
@@ -758,6 +965,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/contact/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/contact/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/contact/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/contact/" />
   </url>
@@ -768,6 +976,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/contact/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/contact/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/contact/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/contact/" />
   </url>
@@ -778,6 +987,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/contact/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/contact/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/contact/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/contact/" />
   </url>
@@ -788,6 +998,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/opsta-bolnica-kotor/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/opsta-bolnica-kotor/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/opsta-bolnica-kotor/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/opsta-bolnica-kotor/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/opsta-bolnica-kotor/" />
   </url>
@@ -798,6 +1009,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/opsta-bolnica-kotor/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/opsta-bolnica-kotor/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/opsta-bolnica-kotor/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/opsta-bolnica-kotor/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/opsta-bolnica-kotor/" />
   </url>
@@ -808,6 +1020,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/opsta-bolnica-kotor/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/opsta-bolnica-kotor/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/opsta-bolnica-kotor/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/opsta-bolnica-kotor/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/opsta-bolnica-kotor/" />
   </url>
@@ -818,6 +1031,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/kccg-podgorica/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/kccg-podgorica/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/kccg-podgorica/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/kccg-podgorica/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/kccg-podgorica/" />
   </url>
@@ -828,6 +1042,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/kccg-podgorica/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/kccg-podgorica/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/kccg-podgorica/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/kccg-podgorica/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/kccg-podgorica/" />
   </url>
@@ -838,6 +1053,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/kccg-podgorica/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/kccg-podgorica/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/kccg-podgorica/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/kccg-podgorica/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/kccg-podgorica/" />
   </url>
@@ -848,6 +1064,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/opsta-bolnica-bar/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/opsta-bolnica-bar/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/opsta-bolnica-bar/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/opsta-bolnica-bar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/opsta-bolnica-bar/" />
   </url>
@@ -858,6 +1075,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/opsta-bolnica-bar/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/opsta-bolnica-bar/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/opsta-bolnica-bar/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/opsta-bolnica-bar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/opsta-bolnica-bar/" />
   </url>
@@ -868,6 +1086,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/opsta-bolnica-bar/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/opsta-bolnica-bar/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/opsta-bolnica-bar/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/opsta-bolnica-bar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/opsta-bolnica-bar/" />
   </url>
@@ -878,6 +1097,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/bolnica-meljine-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/bolnica-meljine-herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/bolnica-meljine-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/bolnica-meljine-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/bolnica-meljine-herceg-novi/" />
   </url>
@@ -888,6 +1108,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/bolnica-meljine-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/bolnica-meljine-herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/bolnica-meljine-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/bolnica-meljine-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/bolnica-meljine-herceg-novi/" />
   </url>
@@ -898,6 +1119,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/bolnica-meljine-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/bolnica-meljine-herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/bolnica-meljine-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/bolnica-meljine-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/bolnica-meljine-herceg-novi/" />
   </url>
@@ -908,6 +1130,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/bolnica-niksic/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/bolnica-niksic/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/bolnica-niksic/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/bolnica-niksic/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/bolnica-niksic/" />
   </url>
@@ -918,6 +1141,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/bolnica-niksic/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/bolnica-niksic/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/bolnica-niksic/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/bolnica-niksic/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/bolnica-niksic/" />
   </url>
@@ -928,6 +1152,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/bolnica-niksic/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/bolnica-niksic/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/bolnica-niksic/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/bolnica-niksic/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/bolnica-niksic/" />
   </url>
@@ -938,6 +1163,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/bolnica-berane/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/bolnica-berane/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/bolnica-berane/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/bolnica-berane/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/bolnica-berane/" />
   </url>
@@ -948,6 +1174,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/bolnica-berane/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/bolnica-berane/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/bolnica-berane/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/bolnica-berane/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/bolnica-berane/" />
   </url>
@@ -958,6 +1185,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/bolnica-berane/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/bolnica-berane/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/bolnica-berane/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/bolnica-berane/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/bolnica-berane/" />
   </url>
@@ -968,6 +1196,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/bolnica-cetinje/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/bolnica-cetinje/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/bolnica-cetinje/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/bolnica-cetinje/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/bolnica-cetinje/" />
   </url>
@@ -978,6 +1207,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/bolnica-cetinje/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/bolnica-cetinje/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/bolnica-cetinje/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/bolnica-cetinje/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/bolnica-cetinje/" />
   </url>
@@ -988,6 +1218,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/bolnica-cetinje/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/bolnica-cetinje/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/bolnica-cetinje/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/bolnica-cetinje/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/bolnica-cetinje/" />
   </url>
@@ -998,6 +1229,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/specijalna-bolnica-risan/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/specijalna-bolnica-risan/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/specijalna-bolnica-risan/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/specijalna-bolnica-risan/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/specijalna-bolnica-risan/" />
   </url>
@@ -1008,6 +1240,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/specijalna-bolnica-risan/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/specijalna-bolnica-risan/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/specijalna-bolnica-risan/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/specijalna-bolnica-risan/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/specijalna-bolnica-risan/" />
   </url>
@@ -1018,6 +1251,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/mortuary/specijalna-bolnica-risan/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/mortuary/specijalna-bolnica-risan/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/mortuary/specijalna-bolnica-risan/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/mortuary/specijalna-bolnica-risan/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/mortuary/specijalna-bolnica-risan/" />
   </url>
@@ -1028,6 +1262,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/dobrakovo-serbia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/dobrakovo-serbia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/dobrakovo-serbia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/dobrakovo-serbia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/dobrakovo-serbia/" />
   </url>
@@ -1038,6 +1273,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/dobrakovo-serbia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/dobrakovo-serbia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/dobrakovo-serbia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/dobrakovo-serbia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/dobrakovo-serbia/" />
   </url>
@@ -1048,6 +1284,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/dobrakovo-serbia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/dobrakovo-serbia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/dobrakovo-serbia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/dobrakovo-serbia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/dobrakovo-serbia/" />
   </url>
@@ -1058,6 +1295,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/ranche-serbia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/ranche-serbia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/ranche-serbia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/ranche-serbia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/ranche-serbia/" />
   </url>
@@ -1068,6 +1306,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/ranche-serbia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/ranche-serbia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/ranche-serbia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/ranche-serbia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/ranche-serbia/" />
   </url>
@@ -1078,6 +1317,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/ranche-serbia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/ranche-serbia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/ranche-serbia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/ranche-serbia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/ranche-serbia/" />
   </url>
@@ -1088,6 +1328,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/debeli-brijeg-croatia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/debeli-brijeg-croatia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/debeli-brijeg-croatia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/debeli-brijeg-croatia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/debeli-brijeg-croatia/" />
   </url>
@@ -1098,6 +1339,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/debeli-brijeg-croatia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/debeli-brijeg-croatia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/debeli-brijeg-croatia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/debeli-brijeg-croatia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/debeli-brijeg-croatia/" />
   </url>
@@ -1108,6 +1350,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/debeli-brijeg-croatia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/debeli-brijeg-croatia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/debeli-brijeg-croatia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/debeli-brijeg-croatia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/debeli-brijeg-croatia/" />
   </url>
@@ -1118,6 +1361,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/ilino-brdo-bosnia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/ilino-brdo-bosnia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/ilino-brdo-bosnia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/ilino-brdo-bosnia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/ilino-brdo-bosnia/" />
   </url>
@@ -1128,6 +1372,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/ilino-brdo-bosnia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/ilino-brdo-bosnia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/ilino-brdo-bosnia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/ilino-brdo-bosnia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/ilino-brdo-bosnia/" />
   </url>
@@ -1138,6 +1383,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/ilino-brdo-bosnia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/ilino-brdo-bosnia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/ilino-brdo-bosnia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/ilino-brdo-bosnia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/ilino-brdo-bosnia/" />
   </url>
@@ -1148,6 +1394,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/bozaj-albania/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/bozaj-albania/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/bozaj-albania/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/bozaj-albania/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/bozaj-albania/" />
   </url>
@@ -1158,6 +1405,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/bozaj-albania/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/bozaj-albania/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/bozaj-albania/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/bozaj-albania/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/bozaj-albania/" />
   </url>
@@ -1168,6 +1416,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/bozaj-albania/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/bozaj-albania/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/bozaj-albania/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/bozaj-albania/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/bozaj-albania/" />
   </url>
@@ -1178,6 +1427,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/aerodrom-podgorica-cargo/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/aerodrom-podgorica-cargo/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/aerodrom-podgorica-cargo/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/aerodrom-podgorica-cargo/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/aerodrom-podgorica-cargo/" />
   </url>
@@ -1188,6 +1438,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/aerodrom-podgorica-cargo/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/aerodrom-podgorica-cargo/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/aerodrom-podgorica-cargo/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/aerodrom-podgorica-cargo/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/aerodrom-podgorica-cargo/" />
   </url>
@@ -1198,6 +1449,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/aerodrom-podgorica-cargo/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/aerodrom-podgorica-cargo/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/aerodrom-podgorica-cargo/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/aerodrom-podgorica-cargo/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/aerodrom-podgorica-cargo/" />
   </url>
@@ -1208,6 +1460,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/aerodrom-tivat-transit/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/aerodrom-tivat-transit/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/aerodrom-tivat-transit/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/aerodrom-tivat-transit/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/aerodrom-tivat-transit/" />
   </url>
@@ -1218,6 +1471,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/aerodrom-tivat-transit/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/aerodrom-tivat-transit/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/aerodrom-tivat-transit/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/aerodrom-tivat-transit/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/aerodrom-tivat-transit/" />
   </url>
@@ -1228,6 +1482,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/aerodrom-tivat-transit/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/aerodrom-tivat-transit/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/aerodrom-tivat-transit/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/aerodrom-tivat-transit/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/aerodrom-tivat-transit/" />
   </url>
@@ -1238,6 +1493,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/sitnica-bosnia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/sitnica-bosnia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/sitnica-bosnia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/sitnica-bosnia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/sitnica-bosnia/" />
   </url>
@@ -1248,6 +1504,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/sitnica-bosnia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/sitnica-bosnia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/sitnica-bosnia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/sitnica-bosnia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/sitnica-bosnia/" />
   </url>
@@ -1258,6 +1515,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/transit/sitnica-bosnia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/transit/sitnica-bosnia/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/transit/sitnica-bosnia/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/transit/sitnica-bosnia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/transit/sitnica-bosnia/" />
   </url>
@@ -1268,6 +1526,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/allianz-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/allianz-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/allianz-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/allianz-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/allianz-assistance/" />
   </url>
@@ -1278,6 +1537,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/allianz-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/allianz-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/allianz-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/allianz-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/allianz-assistance/" />
   </url>
@@ -1288,6 +1548,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/allianz-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/allianz-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/allianz-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/allianz-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/allianz-assistance/" />
   </url>
@@ -1298,6 +1559,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/axa-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/axa-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/axa-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/axa-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/axa-assistance/" />
   </url>
@@ -1308,6 +1570,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/axa-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/axa-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/axa-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/axa-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/axa-assistance/" />
   </url>
@@ -1318,6 +1581,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/axa-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/axa-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/axa-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/axa-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/axa-assistance/" />
   </url>
@@ -1328,6 +1592,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/europ-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/europ-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/europ-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/europ-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/europ-assistance/" />
   </url>
@@ -1338,6 +1603,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/europ-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/europ-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/europ-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/europ-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/europ-assistance/" />
   </url>
@@ -1348,6 +1614,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/europ-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/europ-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/europ-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/europ-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/europ-assistance/" />
   </url>
@@ -1358,6 +1625,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/balt-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/balt-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/balt-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/balt-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/balt-assistance/" />
   </url>
@@ -1368,6 +1636,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/balt-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/balt-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/balt-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/balt-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/balt-assistance/" />
   </url>
@@ -1378,6 +1647,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/balt-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/balt-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/balt-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/balt-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/balt-assistance/" />
   </url>
@@ -1388,6 +1658,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/savat-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/savat-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/savat-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/savat-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/savat-assistance/" />
   </url>
@@ -1398,6 +1669,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/savat-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/savat-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/savat-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/savat-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/savat-assistance/" />
   </url>
@@ -1408,6 +1680,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/savat-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/savat-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/savat-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/savat-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/savat-assistance/" />
   </url>
@@ -1418,6 +1691,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/direct-insurer-invoice/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/direct-insurer-invoice/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/direct-insurer-invoice/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/direct-insurer-invoice/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/direct-insurer-invoice/" />
   </url>
@@ -1428,6 +1702,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/direct-insurer-invoice/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/direct-insurer-invoice/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/direct-insurer-invoice/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/direct-insurer-invoice/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/direct-insurer-invoice/" />
   </url>
@@ -1438,6 +1713,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/direct-insurer-invoice/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/direct-insurer-invoice/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/direct-insurer-invoice/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/direct-insurer-invoice/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/direct-insurer-invoice/" />
   </url>
@@ -1448,6 +1724,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/eurocross-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/eurocross-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/eurocross-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/eurocross-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/eurocross-assistance/" />
   </url>
@@ -1458,6 +1735,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/eurocross-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/eurocross-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/eurocross-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/eurocross-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/eurocross-assistance/" />
   </url>
@@ -1468,6 +1746,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/eurocross-assistance/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/eurocross-assistance/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/eurocross-assistance/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/eurocross-assistance/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/eurocross-assistance/" />
   </url>
@@ -1478,6 +1757,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/coris-international/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/coris-international/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/coris-international/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/coris-international/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/coris-international/" />
   </url>
@@ -1488,6 +1768,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/coris-international/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/coris-international/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/coris-international/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/coris-international/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/coris-international/" />
   </url>
@@ -1498,6 +1779,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/assistance/coris-international/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/assistance/coris-international/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/assistance/coris-international/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/assistance/coris-international/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/assistance/coris-international/" />
   </url>
@@ -1508,6 +1790,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-brdista-tivat/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-brdista-tivat/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-brdista-tivat/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-brdista-tivat/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-brdista-tivat/" />
   </url>
@@ -1518,6 +1801,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-brdista-tivat/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-brdista-tivat/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-brdista-tivat/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-brdista-tivat/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-brdista-tivat/" />
   </url>
@@ -1528,6 +1812,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-brdista-tivat/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-brdista-tivat/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-brdista-tivat/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-brdista-tivat/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-brdista-tivat/" />
   </url>
@@ -1538,6 +1823,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-vrbice-kotor/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-vrbice-kotor/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-vrbice-kotor/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-vrbice-kotor/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-vrbice-kotor/" />
   </url>
@@ -1548,6 +1834,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-vrbice-kotor/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-vrbice-kotor/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-vrbice-kotor/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-vrbice-kotor/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-vrbice-kotor/" />
   </url>
@@ -1558,6 +1845,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-vrbice-kotor/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-vrbice-kotor/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-vrbice-kotor/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-vrbice-kotor/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-vrbice-kotor/" />
   </url>
@@ -1568,6 +1856,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/gradsko-groblje-budva/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/gradsko-groblje-budva/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/gradsko-groblje-budva/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/gradsko-groblje-budva/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/gradsko-groblje-budva/" />
   </url>
@@ -1578,6 +1867,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/gradsko-groblje-budva/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/gradsko-groblje-budva/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/gradsko-groblje-budva/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/gradsko-groblje-budva/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/gradsko-groblje-budva/" />
   </url>
@@ -1588,6 +1878,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/gradsko-groblje-budva/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/gradsko-groblje-budva/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/gradsko-groblje-budva/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/gradsko-groblje-budva/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/gradsko-groblje-budva/" />
   </url>
@@ -1598,6 +1889,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-cepurci-podgorica/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-cepurci-podgorica/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-cepurci-podgorica/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-cepurci-podgorica/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-cepurci-podgorica/" />
   </url>
@@ -1608,6 +1900,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-cepurci-podgorica/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-cepurci-podgorica/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-cepurci-podgorica/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-cepurci-podgorica/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-cepurci-podgorica/" />
   </url>
@@ -1618,6 +1911,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-cepurci-podgorica/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-cepurci-podgorica/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-cepurci-podgorica/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-cepurci-podgorica/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-cepurci-podgorica/" />
   </url>
@@ -1628,6 +1922,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-zagoric-podgorica/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-zagoric-podgorica/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-zagoric-podgorica/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-zagoric-podgorica/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-zagoric-podgorica/" />
   </url>
@@ -1638,6 +1933,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-zagoric-podgorica/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-zagoric-podgorica/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-zagoric-podgorica/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-zagoric-podgorica/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-zagoric-podgorica/" />
   </url>
@@ -1648,6 +1944,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-zagoric-podgorica/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-zagoric-podgorica/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-zagoric-podgorica/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-zagoric-podgorica/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-zagoric-podgorica/" />
   </url>
@@ -1658,6 +1955,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-svetog-stefana/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-svetog-stefana/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-svetog-stefana/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-svetog-stefana/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-svetog-stefana/" />
   </url>
@@ -1668,6 +1966,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-svetog-stefana/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-svetog-stefana/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-svetog-stefana/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-svetog-stefana/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-svetog-stefana/" />
   </url>
@@ -1678,6 +1977,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-svetog-stefana/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-svetog-stefana/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-svetog-stefana/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-svetog-stefana/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-svetog-stefana/" />
   </url>
@@ -1688,6 +1988,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-lustica-krtole/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-lustica-krtole/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-lustica-krtole/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-lustica-krtole/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-lustica-krtole/" />
   </url>
@@ -1698,6 +1999,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-lustica-krtole/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-lustica-krtole/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-lustica-krtole/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-lustica-krtole/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-lustica-krtole/" />
   </url>
@@ -1708,6 +2010,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-lustica-krtole/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-lustica-krtole/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-lustica-krtole/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-lustica-krtole/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-lustica-krtole/" />
   </url>
@@ -1718,6 +2021,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-savina-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-savina-herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-savina-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-savina-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-savina-herceg-novi/" />
   </url>
@@ -1728,6 +2032,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-savina-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-savina-herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-savina-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-savina-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-savina-herceg-novi/" />
   </url>
@@ -1738,6 +2043,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-savina-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-savina-herceg-novi/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-savina-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-savina-herceg-novi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-savina-herceg-novi/" />
   </url>
@@ -1748,6 +2054,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-gvozden-brijeg-bar/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-gvozden-brijeg-bar/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-gvozden-brijeg-bar/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-gvozden-brijeg-bar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-gvozden-brijeg-bar/" />
   </url>
@@ -1758,6 +2065,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-gvozden-brijeg-bar/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-gvozden-brijeg-bar/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-gvozden-brijeg-bar/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-gvozden-brijeg-bar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-gvozden-brijeg-bar/" />
   </url>
@@ -1768,6 +2076,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/cemetery/groblje-gvozden-brijeg-bar/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/cemetery/groblje-gvozden-brijeg-bar/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/cemetery/groblje-gvozden-brijeg-bar/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/cemetery/groblje-gvozden-brijeg-bar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/cemetery/groblje-gvozden-brijeg-bar/" />
   </url>
@@ -1778,6 +2087,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/hotel-resort-death-protocol/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/hotel-resort-death-protocol/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/hotel-resort-death-protocol/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/hotel-resort-death-protocol/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/hotel-resort-death-protocol/" />
   </url>
@@ -1788,6 +2098,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/hotel-resort-death-protocol/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/hotel-resort-death-protocol/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/hotel-resort-death-protocol/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/hotel-resort-death-protocol/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/hotel-resort-death-protocol/" />
   </url>
@@ -1798,6 +2109,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/hotel-resort-death-protocol/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/hotel-resort-death-protocol/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/hotel-resort-death-protocol/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/hotel-resort-death-protocol/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/hotel-resort-death-protocol/" />
   </url>
@@ -1808,6 +2120,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/cremation-costs-belgrade-montenegro/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/cremation-costs-belgrade-montenegro/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/cremation-costs-belgrade-montenegro/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/cremation-costs-belgrade-montenegro/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/cremation-costs-belgrade-montenegro/" />
   </url>
@@ -1818,6 +2131,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/cremation-costs-belgrade-montenegro/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/cremation-costs-belgrade-montenegro/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/cremation-costs-belgrade-montenegro/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/cremation-costs-belgrade-montenegro/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/cremation-costs-belgrade-montenegro/" />
   </url>
@@ -1828,6 +2142,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/cremation-costs-belgrade-montenegro/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/cremation-costs-belgrade-montenegro/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/cremation-costs-belgrade-montenegro/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/cremation-costs-belgrade-montenegro/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/cremation-costs-belgrade-montenegro/" />
   </url>
@@ -1838,6 +2153,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/zinc-coffin-soldering-rules/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/zinc-coffin-soldering-rules/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/zinc-coffin-soldering-rules/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/zinc-coffin-soldering-rules/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/zinc-coffin-soldering-rules/" />
   </url>
@@ -1848,6 +2164,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/zinc-coffin-soldering-rules/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/zinc-coffin-soldering-rules/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/zinc-coffin-soldering-rules/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/zinc-coffin-soldering-rules/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/zinc-coffin-soldering-rules/" />
   </url>
@@ -1858,6 +2175,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/zinc-coffin-soldering-rules/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/zinc-coffin-soldering-rules/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/zinc-coffin-soldering-rules/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/zinc-coffin-soldering-rules/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/zinc-coffin-soldering-rules/" />
   </url>
@@ -1868,6 +2186,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/sprovodnica-sanitary-permit-guide/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/sprovodnica-sanitary-permit-guide/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/sprovodnica-sanitary-permit-guide/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/sprovodnica-sanitary-permit-guide/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/sprovodnica-sanitary-permit-guide/" />
   </url>
@@ -1878,6 +2197,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/sprovodnica-sanitary-permit-guide/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/sprovodnica-sanitary-permit-guide/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/sprovodnica-sanitary-permit-guide/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/sprovodnica-sanitary-permit-guide/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/sprovodnica-sanitary-permit-guide/" />
   </url>
@@ -1888,6 +2208,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/sprovodnica-sanitary-permit-guide/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/sprovodnica-sanitary-permit-guide/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/sprovodnica-sanitary-permit-guide/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/sprovodnica-sanitary-permit-guide/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/sprovodnica-sanitary-permit-guide/" />
   </url>
@@ -1898,6 +2219,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/power-of-attorney-repatriation/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/power-of-attorney-repatriation/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/power-of-attorney-repatriation/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/power-of-attorney-repatriation/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/power-of-attorney-repatriation/" />
   </url>
@@ -1908,6 +2230,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/power-of-attorney-repatriation/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/power-of-attorney-repatriation/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/power-of-attorney-repatriation/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/power-of-attorney-repatriation/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/power-of-attorney-repatriation/" />
   </url>
@@ -1918,6 +2241,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/power-of-attorney-repatriation/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/power-of-attorney-repatriation/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/power-of-attorney-repatriation/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/power-of-attorney-repatriation/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/power-of-attorney-repatriation/" />
   </url>
@@ -1928,6 +2252,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/autopsy-obdukcija-montenegro/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/autopsy-obdukcija-montenegro/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/autopsy-obdukcija-montenegro/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/autopsy-obdukcija-montenegro/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/autopsy-obdukcija-montenegro/" />
   </url>
@@ -1938,6 +2263,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/autopsy-obdukcija-montenegro/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/autopsy-obdukcija-montenegro/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/autopsy-obdukcija-montenegro/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/autopsy-obdukcija-montenegro/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/autopsy-obdukcija-montenegro/" />
   </url>
@@ -1948,6 +2274,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/autopsy-obdukcija-montenegro/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/autopsy-obdukcija-montenegro/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/autopsy-obdukcija-montenegro/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/autopsy-obdukcija-montenegro/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/autopsy-obdukcija-montenegro/" />
   </url>
@@ -1958,6 +2285,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/urn-air-cabin-transport-rules/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/urn-air-cabin-transport-rules/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/urn-air-cabin-transport-rules/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/urn-air-cabin-transport-rules/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/urn-air-cabin-transport-rules/" />
   </url>
@@ -1968,6 +2296,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/urn-air-cabin-transport-rules/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/urn-air-cabin-transport-rules/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/urn-air-cabin-transport-rules/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/urn-air-cabin-transport-rules/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/urn-air-cabin-transport-rules/" />
   </url>
@@ -1978,6 +2307,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/guides/urn-air-cabin-transport-rules/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/guides/urn-air-cabin-transport-rules/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/guides/urn-air-cabin-transport-rules/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/guides/urn-air-cabin-transport-rules/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/guides/urn-air-cabin-transport-rules/" />
   </url>
@@ -1988,6 +2318,7 @@
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/legal/terms-of-service/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/legal/terms-of-service/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/legal/terms-of-service/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/legal/terms-of-service/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/legal/terms-of-service/" />
   </url>
@@ -1998,6 +2329,7 @@
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/legal/terms-of-service/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/legal/terms-of-service/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/legal/terms-of-service/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/legal/terms-of-service/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/legal/terms-of-service/" />
   </url>
@@ -2008,6 +2340,7 @@
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/legal/terms-of-service/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/legal/terms-of-service/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/legal/terms-of-service/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/legal/terms-of-service/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/legal/terms-of-service/" />
   </url>
@@ -2018,6 +2351,7 @@
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/legal/privacy-gdpr/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/legal/privacy-gdpr/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/legal/privacy-gdpr/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/legal/privacy-gdpr/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/legal/privacy-gdpr/" />
   </url>
@@ -2028,6 +2362,7 @@
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/legal/privacy-gdpr/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/legal/privacy-gdpr/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/legal/privacy-gdpr/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/legal/privacy-gdpr/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/legal/privacy-gdpr/" />
   </url>
@@ -2038,6 +2373,7 @@
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/legal/privacy-gdpr/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/legal/privacy-gdpr/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/legal/privacy-gdpr/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/legal/privacy-gdpr/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/legal/privacy-gdpr/" />
   </url>
@@ -2048,6 +2384,7 @@
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/legal/regulatory-disclosure/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/legal/regulatory-disclosure/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/legal/regulatory-disclosure/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/legal/regulatory-disclosure/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/legal/regulatory-disclosure/" />
   </url>
@@ -2058,6 +2395,7 @@
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/legal/regulatory-disclosure/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/legal/regulatory-disclosure/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/legal/regulatory-disclosure/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/legal/regulatory-disclosure/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/legal/regulatory-disclosure/" />
   </url>
@@ -2068,6 +2406,7 @@
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/legal/regulatory-disclosure/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/legal/regulatory-disclosure/" />
+    <xhtml:link rel="alternate" hreflang="cnr-ME" href="https://memorijal.me/mne/legal/regulatory-disclosure/" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/legal/regulatory-disclosure/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/legal/regulatory-disclosure/" />
   </url>

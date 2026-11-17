@@ -1,5 +1,5 @@
-import { Language, WHATSAPP_NUMBER } from '../i18n/translations';
-import { LocaleSlug } from './seo-routes';
+import { Language, WHATSAPP_NUMBER } from '../i18n/translations.ts';
+import { LocaleSlug } from './seo-routes.ts';
 
 export type SupportedCurrency = 'EUR' | 'GBP' | 'USD';
 
@@ -11,11 +11,11 @@ export const CURRENCY_RATES: Record<SupportedCurrency, { rate: number; symbol: s
 
 export interface PricingPackageItem {
   id:
-    | 'cremation_belgrade'
-    | 'regional_road'
-    | 'eu_ground'
-    | 'air_cargo'
-    | 'consular_clearance';
+  | 'cremation_belgrade'
+  | 'regional_road'
+  | 'eu_ground'
+  | 'air_cargo'
+  | 'consular_clearance';
   basePriceEur: number;
   schemaName: string;
   schemaDescription: string;
@@ -375,9 +375,9 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
       mne: 'Međunarodna repatrijacija, kremacija u Srbiji i lokalne ceremonije',
     },
     subtitle: {
-      en: 'Open-ended starting rates under KD 2010: 82.99. Physical hearse transport, zinc soldering, and municipal Komunalno cemetery works are itemized as pass-through disbursements (prolazne stavke).',
-      ru: 'Открытые стартовые тарифы по коду KD 2010: 82.99. Услуги лицензированного спецтранспорта, опайки цинка и муниципальных предприятий Komunalno выделяются в смете как транзитные расходы (prolazne stavke).',
-      mne: 'Početne cijene u okviru šifre KD 2010: 82.99. Fizički prevoz, lemljenje cinka i usluge JKP Komunalno iskazuju se kao prolazne stavke (prefakturisanje).',
+      en: 'Open-ended starting rates under KD 82.99. Physical hearse transport, zinc soldering, and municipal Komunalno cemetery works are itemized as pass-through disbursements (prolazne stavke).',
+      ru: 'Открытые стартовые тарифы по коду KD 82.99. Услуги лицензированного спецтранспорта, опайки цинка и муниципальных предприятий Komunalno выделяются в смете как транзитные расходы (prolazne stavke).',
+      mne: 'Početne cijene u okviru šifre KD 82.99. Fizički prevoz, lemljenje cinka i usluge JKP Komunalno iskazuju se kao prolazne stavke (prefakturisanje).',
     },
     items: [
       {
@@ -826,9 +826,9 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
       mne: 'Primopredaja nekretnina, čuvanje vozila, ljubimci i Digitalni sef',
     },
     subtitle: {
-      en: 'Specialized non-medical administrative & legal services under KD 2010: 82.99 protecting expat assets and heirs in Montenegro.',
-      ru: 'Специализированные не-медицинские административные и юридические услуги по коду KD 2010: 82.99 для защиты активов и наследников резидентов в Черногории.',
-      mne: 'Specijalizovane administrativne i pravne usluge pod šifrom KD 2010: 82.99 za zaštitu imovine i nasljednika stranih državljana u Crnoj Gori.',
+      en: 'Specialized non-medical administrative & legal services under KD 82.99 protecting expat assets and heirs in Montenegro.',
+      ru: 'Специализированные не-медицинские административные и юридические услуги по коду KD 82.99 для защиты активов и наследников резидентов в Черногории.',
+      mne: 'Specijalizovane administrativne i pravne usluge pod šifrom KD 82.99 za zaštitu imovine i nasljednika stranih državljana u Crnoj Gori.',
     },
     items: [
       {
@@ -960,39 +960,39 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
         basePriceEur: 190,
         targetPath: '/services/',
         anchorId: 'pre-need-vault',
-        schemaName: 'Pre-Need Mandate, Zero-Knowledge Digital Safe & Time Capsules',
+        schemaName: 'Pre-Need Lifetime Mandate, Protected Legacy Instructions & Time Capsules',
         schemaDescription:
-          'Starting price for lifetime legal directives (Ugovor o nalogu), client-side encrypted Zero-Knowledge digital vault for heirs, and scheduled time capsules',
+          'Starting price for lifetime legal directives (Ugovor o nalogu, čl. 821–843 ZOO CG), protected archive of sealed instructions for designated heirs, and scheduled time capsules',
         locales: {
           en: {
-            title: 'Pre-Need Mandate, Zero-Knowledge Digital Safe & Time Capsules',
-            badge: 'Lifetime Mandate • Zero-Knowledge Vault',
+            title: 'Pre-Need Lifetime Mandate, Protected Legacy Instructions & Time Capsules',
+            badge: 'Lifetime Mandate • Protected Archive',
             formattedPrice: `From${NBSP}€190`,
             scope:
-              'Lifetime legal directives (Ugovor o nalogu), client-side encrypted vault for transferring passwords, seed phrases, and banking instructions to heirs upon verified death certificate, plus scheduled video/letter legacy delivery.',
+              'Lifetime legal directives held under a civil mandate (Ugovor o nalogu, čl. 821–843 ZOO CG), protected archive of sealed instructions and legacy records transmitted to designated heirs strictly upon presentation of an official death certificate, plus scheduled video/letter time capsules.',
             disbursementNote: 'One-time setup or annual fiduciary custody mandate',
             whatsappMessage:
-              'Hello Memorijal d.o.o., I would like information and a quote for the Pre-Need Mandate, Zero-Knowledge Digital Safe & Time Capsules (From €190).',
+              'Hello Memorijal d.o.o., I would like information and a quote for the Pre-Need Lifetime Mandate, Protected Legacy Instructions & Time Capsules (From €190).',
           },
           ru: {
-            title: 'Прижизненное планирование (Pre-Need), «Цифровой сейф» и Капсулы времени',
-            badge: 'Прижизненный мандат • Zero-Knowledge шифрование',
+            title: 'Прижизненное волеизъявление (Pre-Need), защищённый архив инструкций и Капсулы времени',
+            badge: 'Прижизненный мандат • Защищённый архив',
             formattedPrice: `От${NBSP}190${NBSP}€`,
             scope:
-              'Прижизненные юридические распоряжения (Ugovor o nalogu), защищённое клиентское шифрование (Zero-Knowledge) для передачи паролей, seed-фраз и банковских инструкций наследникам строго после предъявления свидетельства о смерти, а также отложенная доставка видео-наследия и писем близким.',
-            disbursementNote: 'Единоразовая регистрация поручения и защищенной ячейки',
+              'Прижизненные юридические распоряжения по договору поручения (Ugovor o nalogu, čl. 821–843 ZOO CG), защищённый архив запечатанных инструкций и памятных материалов для передачи назначенным наследникам строго после предъявления официального свидетельства о смерти, а также отложенная доставка видео-наследия и писем близким.',
+            disbursementNote: 'Единоразовая регистрация поручения и защищенного архива инструкций',
             whatsappMessage:
-              'Здравствуйте, Memorijal d.o.o.! Интересует оформление прижизненного распоряжения (Pre-Need), «Цифрового сейфа» и Капсул времени (От 190 €).',
+              'Здравствуйте, Memorijal d.o.o.! Интересует Прижизненное волеизъявление (Pre-Need), защищённый архив инструкций и Капсулы времени (От 190 €).',
           },
           mne: {
-            title: 'Pre-Need punomoćje, Zero-Knowledge Digitalni sef i Vremenske kapsule',
-            badge: 'Doživotni nalog • Šifrovani trezor',
+            title: 'Pre-Need doživotno punomoćje, zaštićena arhiva uputstava i Vremenske kapsule',
+            badge: 'Doživotni nalog • Zaštićena arhiva',
             formattedPrice: `Od${NBSP}190${NBSP}€`,
             scope:
-              'Doživotne pravne instrukcije (Ugovor o nalogu), klijentski šifrovani trezor za prenos lozinki i bankarskih uputstava nasljednicima uz izvod iz matične knjige umrlih, kao i odložena isporuka video-poruka porodici.',
-            disbursementNote: 'Jednokratna uspostava ugovora o nalogu i digitalnog trezora',
+              'Doživotne pravne instrukcije po ugovoru o nalogu (Ugovor o nalogu, čl. 821–843 ZOO CG), zaštićena arhiva zapečaćenih uputstava koja se predaju imenovanim nasljednicima isključivo po podnošenju zvaničnog izvoda iz matične knjige umrlih, kao i odložena isporuka video-poruka porodici.',
+            disbursementNote: 'Jednokratna uspostava ugovora o nalogu i zaštićene arhive uputstava',
             whatsappMessage:
-              'Poštovani Memorijal d.o.o., interesuje me Pre-Need punomoćje, Zero-Knowledge Digitalni sef i Vremenske kapsule (Od 190 €).',
+              'Poštovani Memorijal d.o.o., interesuje me Pre-Need doživotno punomoćje, zaštićena arhiva uputstava i Vremenske kapsule (Od 190 €).',
           },
         },
       },
