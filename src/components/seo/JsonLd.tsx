@@ -5,7 +5,7 @@ import {
   SITE_ORIGIN,
   buildFullCanonicalUrl,
 } from '../../data/seo-routes';
-import { STANDARD_PRICING_PACKAGES } from '../../data/pricing';
+import { ALL_SERVICE_TARIFF_ITEMS } from '../../data/pricing';
 import { safeJsonLdSerialize } from '../../utils/security';
 import {
   LEGAL_CREDENTIALS,
@@ -103,7 +103,7 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
     image: 'https://memorijal.me/assets/branding/emblem-crest.png',
     telephone: PHONE_E164,
     email: OFFICIAL_EMAIL,
-    priceRange: 'from €450',
+    priceRange: 'from €190',
     ...(LEGAL_CREDENTIALS.ISSUED_PIB ? { taxID: LEGAL_CREDENTIALS.ISSUED_PIB } : {}),
     description:
       'Authorized international repatriation coordination agency in Montenegro dispatching accredited licensed carriers, hermetic zinc soldering, consular clearances, and IATA Cargo HUM air bookings.',
@@ -123,22 +123,22 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
           'Consular Laissez-Passer Mortuaire',
           'IATA Cargo HUM Air Freight',
         ],
-    makesOffer: STANDARD_PRICING_PACKAGES.map((pkg) => ({
+    makesOffer: ALL_SERVICE_TARIFF_ITEMS.map((item) => ({
       '@type': 'Offer',
       itemOffered: {
         '@type': 'Service',
-        name: pkg.schemaName,
+        name: item.schemaName,
       },
-      price: String(pkg.basePriceEur),
+      price: String(item.basePriceEur),
       priceCurrency: 'EUR',
       priceSpecification: {
         '@type': 'PriceSpecification',
-        minPrice: String(pkg.basePriceEur),
+        minPrice: String(item.basePriceEur),
         priceCurrency: 'EUR',
       },
       availability: 'https://schema.org/InStock',
       validFrom: '2026-01-01',
-      description: pkg.schemaDescription,
+      description: item.schemaDescription,
     })),
     address: {
       '@type': 'PostalAddress',

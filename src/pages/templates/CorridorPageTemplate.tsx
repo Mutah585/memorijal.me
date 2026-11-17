@@ -50,6 +50,7 @@ import { CaseProgressStepper } from '../../components/CaseProgressStepper';
 import { HospitalSlaMatrix } from '../../components/HospitalSlaMatrix';
 import { ExpatEstateServices } from '../../components/ExpatEstateServices';
 import { GuideReadingProgress } from '../../components/GuideReadingProgress';
+import { AirCargoHumEstimator } from '../../components/AirCargoHumEstimator';
 
 interface CorridorPageTemplateProps {
   locale: LocaleSlug;
@@ -381,7 +382,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
       </header>
 
       {/* 4. CORRIDOR / SERVICE DATA MATRIX (SPEC GRID) */}
-      <section className="py-12 sm:py-16 bg-white border-b border-stoneBorder">
+      <section id="section-legal-basis" className="py-12 sm:py-16 bg-white border-b border-stoneBorder scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-sapphire mb-3">
             <Plane className="w-4 h-4" />
@@ -463,7 +464,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           </div>
 
           {/* Required Family Documents & Receiving Requirements */}
-          <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div id="section-family-steps" className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6 scroll-mt-24">
             <div className="p-6 rounded-xl bg-alabaster border border-stoneBorder">
               <h3 className="text-xs font-bold uppercase tracking-wider text-sapphire mb-3">
                 {uiLabels.reqDocsTitle}
@@ -503,6 +504,14 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           <div id="section-documents" className="mt-6 scroll-mt-24">
             <DocumentChecklist locale={locale} />
           </div>
+
+          {/* IATA Cargo HUM Volumetric & Coffin Weight Estimator on Air Corridors */}
+          {(route.id === 'service-air-cargo' ||
+            route.id === 'corridor-uk' ||
+            route.id === 'corridor-germany' ||
+            route.id === 'transit-aerodrom-podgorica') && (
+            <AirCargoHumEstimator locale={locale} className="mt-6" />
+          )}
 
           {/* IATA Airport Cabin Urn Security Compliance Card */}
           <IataCabinUrnNotice locale={locale} className="mt-6" />
@@ -596,7 +605,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
       </section>
 
       {/* 5. STRUCTURED EXPLAINER SECTION (H2 — 5-Step Statutory Walkthrough) */}
-      <section id="section-steps" className="py-14 sm:py-20 bg-porcelain border-b border-stoneBorder scroll-mt-24">
+      <section id="section-statutory-sla" className="py-14 sm:py-20 bg-porcelain border-b border-stoneBorder scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Crisis Reassurance Callout on Step-by-Step Guide */}
           {route.id === 'resource-guide' && (
@@ -777,7 +786,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
       </section>
 
       {/* 6. COST TRANSPARENCY & WHAT IS INCLUDED (H2) */}
-      <section id="section-costs" className="py-14 sm:py-20 bg-alabaster border-b border-stoneBorder scroll-mt-24">
+      <section id="section-official-fees" className="py-14 sm:py-20 bg-alabaster border-b border-stoneBorder scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-slateDeep">

@@ -136,6 +136,45 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
   const hasDraft = Boolean(name.trim() || contact.trim() || notes.trim() || clergy !== 'none');
   const isLocalNumberWithoutCode = contact.trim().startsWith('0');
 
+  // Timezone Detection (Europe/Podgorica, 22:00 to 07:00)
+  const podgoricaStatus = (() => {
+    try {
+      const now = new Date();
+      const hourStr = new Intl.DateTimeFormat('en-GB', {
+        timeZone: 'Europe/Podgorica',
+        hour: '2-digit',
+        hour12: false,
+      }).format(now);
+      const timeStr = new Intl.DateTimeFormat('en-GB', {
+        timeZone: 'Europe/Podgorica',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false,
+      }).format(now);
+      const hour = parseInt(hourStr, 10);
+      return {
+        isNight: hour >= 22 || hour < 7,
+        timeStr,
+      };
+    } catch {
+      return { isNight: false, timeStr: '24/7' };
+    }
+  })();
+
+  const nightBannerText =
+    lang === 'RU'
+      ? 'Ночное дежурство активно (22:00–07:00). Телефон координатора находится на громкой ночной связи. Ваша заявка принимается дежурным немедленно. Если ситуация экстренная — рекомендуем нажать кнопку прямого вызова.'
+      : lang === 'MNE'
+      ? 'Noćno dežurstvo aktivno (22:00–07:00). Koordinator je dostupan za hitne intervencije. Za hitne slučajeve preporučujemo direktan poziv.'
+      : 'Night dispatch active (22:00–07:00 Europe/Podgorica). Priority call alerts are live. If immediate crisis assistance is required, tap Direct Emergency Call below.';
+
+  const nightDialLabel =
+    lang === 'RU'
+      ? `Прямой экстренный вызов (${PHONE_DISPLAY})`
+      : lang === 'MNE'
+      ? `Direktan hitni poziv (${PHONE_DISPLAY})`
+      : `Direct Emergency Call (${PHONE_DISPLAY})`;
+
   const contactHelperNote =
     lang === 'RU'
       ? 'Пожалуйста, укажите код страны (например, +44, +49, +382, +7)'
@@ -367,6 +406,31 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
             </div>
           ) : (
             <form onSubmit={validateAndSubmit} className="space-y-4" noValidate>
+              {/* Night-Time Operational Reassurance Banner (Europe/Podgorica 22:00–07:00) */}
+              <div
+                data-night-active={podgoricaStatus.isNight ? 'true' : 'false'}
+                className="p-4 rounded-xl bg-amber-50/90 border border-amber-200/90 text-slateDeep space-y-2.5"
+              >
+                <div className="flex items-center justify-between gap-2 text-[11px] font-mono font-bold uppercase tracking-wider text-amber-900">
+                  <span className="inline-flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
+                    <span>Europe/Podgorica ({podgoricaStatus.timeStr}) • 22:00–07:00</span>
+                  </span>
+                </div>
+                <p className="text-xs sm:text-sm text-slate-800 leading-relaxed font-medium">
+                  {nightBannerText}
+                </p>
+                <div className="pt-0.5">
+                  <a
+                    href={PHONE_HREF}
+                    className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-sapphire hover:bg-sapphire-light text-white text-xs font-bold shadow-2xs transition-colors"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-emerald-300 shrink-0" />
+                    <span>{nightDialLabel}</span>
+                  </a>
+                </div>
+              </div>
+
               <p className="text-xs sm:text-sm text-slateMuted leading-relaxed mb-2">
                 {t.modal.subtitle}
               </p>

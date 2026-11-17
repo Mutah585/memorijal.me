@@ -95,22 +95,26 @@ Therefore, whenever a family or insurance policy requests cremation for a death 
 
 ---
 
-## 4. 2026 EUR REFERENCE PRICING (STARTING BASE TIERS)
+## 4. 2026 EUR REFERENCE PRICING (ALL 14 OPEN-ENDED "STARTING FROM" TARIFFS)
 
-- **Turnkey Belgrade Cremation**: **from €1,850**
-- **Balkan Road Repatriation**: **from €2,400**
-- **EU Ground Repatriation**: **from €3,800**
-- **Worldwide Air Cargo HUM**: **from €4,500**
-- **Administrative & Consular Clearance Only (`Sprovodnica` & Permits)**: **from €450**
+All tariffs are open-ended starting rates (`From €...` / `От ... €` / `Od ... €`) under Activity Code `KD 2010: 82.99`, invoiced in EUR (€) via Montenegro Tax Administration EFI QR fiscal invoices with strict separation between Memorijal d.o.o. coordination fees and third-party pass-through disbursements (`prolazne stavke`):
 
-| Service / Statutory Component | Starting Base Rate (EUR) | Notes & Compliance |
-| :--- | :--- | :--- |
-| **Administrative & Consular Clearance Only (`Sprovodnica`, Form C, Apostille & Sworn Translations)** | **from €450** | Includes MUP Civil Registry Form C extract, Basic Court Apostille stamps, certified translation (`Sudski tumač`), and Republic Sanitary Inspector on-site sealing. |
-| **Clinical Mortuary Care, Forensic Embalming & Hermetic Zinc Coffin (`Lemljenje`)** | **from €750** | Includes clinical refrigeration, formal embalming certificate, 0.6–0.8mm galvanized zinc liner, wooden casket, tin soldering, and outer air-cargo crate. |
-| **Turnkey Belgrade Cremation (`Beograd / Novi Sad` + Sealed Urn Return)** | **from €1,850** | **All-inclusive**: Montenegro + Serbia permits (`Sprovodnica`), coffin, Belgrade dispatched carrier transport, state crematorium slot, and X-ray translucent cabin urn. |
-| **Balkan Road Repatriation (Serbia, BiH, North Macedonia, Croatia, Albania)** | **from €2,400** | **All-inclusive**: Fixed base rate + per-km route calculation, hermetic soldering, consular transit permits, and dispatched partner carrier delivery. |
-| **EU Ground Repatriation (Germany, Austria, Poland, Hungary, Italy)** | **from €3,800** | **All-inclusive**: Dispatched certified partner carrier, EUR-6 customs transit compliance, hermetic zinc coffin, and multilingual dossier. |
-| **Worldwide Air Cargo HUM (`IATA Cargo HUM` — UK, EU, Russia, CIS, Worldwide)** | **from €4,500** | **All-inclusive**: IATA HUM cargo booking, air coffin zinc liner, forensic embalming, and consular clearance at Podgorica / Belgrade. |
+| # | Service / Statutory Component | Starting Base Rate (EUR) | Scope & Pass-Through Compliance |
+| :--- | :--- | :--- | :--- |
+| **01** | **Consular & Sanitary Clearance Only (`Sprovodnica` & `Punomoćje`)** | **From €450** | Remote PoA (`Punomoćje`), Vienna Form C death extract, Republic Sanitary Inspector sealing, and `Sprovodnica` transit pass. |
+| **02** | **Local Municipal Burial Coordination in Montenegro (`DOO Komunalno`)** | **From €850** | Full representation with municipal `DOO Komunalno` (Tivat, Kotor, Budva, Podgorica, Bar), Matičar registry, and religious/civil rites. |
+| **03** | **Boka Bay Sea Ash Scattering Ceremony (Yacht Charter & Eco-Floristry)** | **From €950** | Private vessel charter in the Bay of Kotor, biodegradable urn/eco-floristry, and official GPS Coordinates Memorial Certificate. |
+| **04** | **Turnkey Cremation in Serbia (Belgrade / Novi Sad) with Urn Return** | **From €1,850** | Montenegro + Serbia `Sprovodnica` permits, coffin, licensed partner hearse to Belgrade/Novi Sad State Crematorium, and sealed cabin urn return in 3–5 days. |
+| **05** | **Regional Overland Repatriation (Serbia, BiH, Croatia, Albania)** | **From €2,400** | Sanitary preparation, hermetic zinc soldering (`lemljenje`), consular permits, and direct partner hearse delivery. |
+| **06** | **EU & Ukraine Cross-Border Ground Repatriation** | **From €3,800** | Dispatched EUR-6 two-driver partner carrier, Schengen/EU customs transit compliance, hermetic zinc coffin, and multilingual dossier. |
+| **07** | **International Air Cargo Repatriation (`IATA Cargo HUM` / Груз 200)** | **From €4,500** | Forensic embalming, IATA casket with 0.6–0.8 mm zinc liner & pressure valve, customs clearance, and priority MAWB air booking from TGD / BEG. |
+| **08** | **Apostille, Court-Certified Translations (`Sudski tumač`) & Embassy Dossier** | **From €250** | Duplicate Form C death certificates, Basic Court Hague Apostille stamps, sworn translations, and DHL dispatch for probate/banking. |
+| **09** | **Insurer Guarantee of Payment (`GOP`) Direct Case Management** | **From €0 for family (Direct GOP Billing)** | Direct B2B SEPA/SWIFT EFI QR settlement with Allianz, AXA, Europ Assistance, Balt & Savitar with zero upfront cost to the family. |
+| **10** | **Family Travel Concierge, Live Farewell Stream & Memorial Catering** | **From €350** | Airport transfers, hotel booking, private chapel viewing, encrypted HD live video farewell stream, and reception catering. |
+| **11** | **Expat Estate Clearance, Inventory & DHL Personal Effects Dispatch** | **From €490** | Video-documented apartment inventory (Tivat, Kotor, Budva, Podgorica), utility/lease termination, and insured DHL dispatch to heirs. |
+| **12** | **Vehicle / Yacht Custody Storage, EU Driver Transfer or Brokerage** | **From €390** | 24/7 guarded parking or marina custody, customs regime protection, and licensed driver return to the EU or brokerage support. |
+| **13** | **International Pet Relocation & Veterinary Passport Clearance** | **From €650** | Emergency pet boarding, veterinary examination, microchip & rabies titer clearance, and accompanied flight/road return to family abroad. |
+| **14** | **Pre-Need Mandate, Zero-Knowledge Digital Safe & Time Capsules** | **From €190** | Lifetime legal directives (`Ugovor o nalogu`), client-side encrypted Zero-Knowledge vault for transferring passwords, seed phrases, and banking instructions to heirs upon verified death certificate, plus scheduled video/letter legacy delivery. |
 
 ---
 
@@ -143,12 +147,13 @@ Therefore, whenever a family or insurance policy requests cremation for a death 
 
 ---
 
-## 6. COMPLETE SITEMAP OF ALL 68 CANONICAL ROUTES (204 LOCALIZED URLS ACROSS `/en/`, `/ru/`, `/mne/`)
+## 6. COMPLETE SITEMAP OF ALL 69 CANONICAL ROUTES (207 LOCALIZED URLS ACROSS `/en/`, `/ru/`, `/mne/`)
 
 Every route listed below is available in English (`/en/...`), Russian (`/ru/...`), and Montenegrin/Serbian (`/mne/...`):
 
-### Pillar & Service Hubs (6 Routes)
+### Pillar & Service Hubs (7 Routes)
 - `https://memorijal.me/en/` | `https://memorijal.me/ru/` | `https://memorijal.me/mne/`
+- `https://memorijal.me/en/services/` (Full 12-Service Ecosystem Hub across 3 tiers, including Pre-Need Mandate, Zero-Knowledge Digital Safe & Time Capsules `#pre-need-vault`)
 - `https://memorijal.me/en/services/repatriation-air-cargo/`
 - `https://memorijal.me/en/services/repatriation-road/`
 - `https://memorijal.me/en/services/cremation-serbia/`
