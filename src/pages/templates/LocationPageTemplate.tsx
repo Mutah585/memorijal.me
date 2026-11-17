@@ -35,6 +35,8 @@ import { MortuaryTimeTracker } from '../../components/MortuaryTimeTracker';
 import { BelongingsCustodyProtocol } from '../../components/BelongingsCustodyProtocol';
 import { HomeDeathProtocol } from '../../components/HomeDeathProtocol';
 import { HotelIncidentProtocol } from '../../components/HotelIncidentProtocol';
+import { HospitalSlaMatrix } from '../../components/HospitalSlaMatrix';
+import { ExpatEstateServices } from '../../components/ExpatEstateServices';
 
 interface LocationPageTemplateProps {
   locale: LocaleSlug;
@@ -530,6 +532,24 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
           <div className="mt-8">
             <HotelIncidentProtocol locale={locale} />
           </div>
+
+          {/* Hospital Mortuary SLA Matrix on /mortuary/... pages */}
+          {route.category === 'mortuary' && (
+            <div className="mt-8">
+              <HospitalSlaMatrix locale={locale} />
+            </div>
+          )}
+
+          {/* Expat Estate & Post-Loss Concierge on cemeteries & key municipal hubs */}
+          {(route.category === 'cemetery' ||
+            route.id === 'location-tivat' ||
+            route.id === 'location-kotor' ||
+            route.id === 'location-budva' ||
+            route.id === 'location-herceg-novi') && (
+            <div className="mt-8">
+              <ExpatEstateServices locale={locale} />
+            </div>
+          )}
         </div>
       </section>
 

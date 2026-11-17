@@ -152,6 +152,36 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/legal-consular/" />
   </url>
   <url>
+    <loc>https://memorijal.me/en/services/local-burial-coordination/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/local-burial-coordination/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/local-burial-coordination/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/local-burial-coordination/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/local-burial-coordination/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/ru/services/local-burial-coordination/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/local-burial-coordination/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/local-burial-coordination/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/local-burial-coordination/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/local-burial-coordination/" />
+  </url>
+  <url>
+    <loc>https://memorijal.me/mne/services/local-burial-coordination/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memorijal.me/en/services/local-burial-coordination/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://memorijal.me/ru/services/local-burial-coordination/" />
+    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://memorijal.me/mne/services/local-burial-coordination/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memorijal.me/en/services/local-burial-coordination/" />
+  </url>
+  <url>
     <loc>https://memorijal.me/en/repatriation/to-united-kingdom/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>

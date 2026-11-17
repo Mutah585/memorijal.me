@@ -17,7 +17,7 @@ import { LocaleSlug } from '../data/seo-routes';
 
 interface EmbassyItem {
   id: string;
-  countryKey: 'uk' | 'de' | 'rs' | 'ua' | 'ru';
+  countryKey: 'uk' | 'de' | 'rs' | 'ua' | 'ru' | 'us' | 'pl' | 'fr' | 'it' | 'tr';
   name: {
     ru: string;
     en: string;
@@ -175,11 +175,146 @@ const EMBASSIES: EmbassyItem[] = [
       mne: 'Izdavanje sprovodnice, konzularno pečaćenje cinkovog sanduka/urne i poništavanje pasoša.',
     },
   },
+  {
+    id: 'us',
+    countryKey: 'us',
+    name: {
+      ru: 'Посольство США в Подгорице (U.S. Embassy Podgorica)',
+      en: 'Embassy of the United States in Podgorica',
+      mne: 'Ambasada SAD u Podgorici',
+    },
+    countryName: {
+      ru: 'США',
+      en: 'United States',
+      mne: 'SAD',
+    },
+    address: 'Džona Džeksona 2',
+    city: '81000 Podgorica',
+    phone: '+382 20 410 500',
+    sla: {
+      ru: 'Consular Report of Death Abroad (CRODA) — 48–72 часа',
+      en: 'Consular Mortuary Certificate & CRODA — 48–72h',
+      mne: 'Consular Mortuary Certificate — 48–72 sata',
+    },
+    notes: {
+      ru: 'Протокол Consular Mortuary Certificate, заверение перевода Potvrda o smrti и аннулирование паспорта США для авиаотправки Cargo HUM.',
+      en: 'Consular Mortuary Certificate protocol, official CRODA issuance, and CDC/TSA compliance coordination for US air repatriation.',
+      mne: 'Protokol za Consular Mortuary Certificate, CRODA dokumentacija i koordinacija za vazdušni transport u SAD.',
+    },
+  },
+  {
+    id: 'pl',
+    countryKey: 'pl',
+    name: {
+      ru: 'Посольство Республики Польша в Подгорице',
+      en: 'Embassy of the Republic of Poland in Podgorica',
+      mne: 'Ambasada Republike Poljske u Podgorici',
+    },
+    countryName: {
+      ru: 'Польши',
+      en: 'Poland',
+      mne: 'Poljske',
+    },
+    address: 'Kozaračka 79',
+    city: '81000 Podgorica',
+    phone: '+382 20 608 320',
+    sla: {
+      ru: 'Консульское разрешение (Zaświadczenie) — 24–48 часов',
+      en: '24–48h after municipal Starosta permit',
+      mne: 'Konzularna dozvola — 24–48 sati',
+    },
+    notes: {
+      ru: 'Согласование разрешения польского старосты (Starosta), выдача Zaświadczenie na przewóz zwłok/prochów и координация рейсов LOT.',
+      en: 'Coordination of Polish Starosta import authorization, consular Zaświadczenie issuance, and LOT Cargo HUM routing.',
+      mne: 'Koordinacija dozvole Staroste u Poljskoj i izdavanje konzularne potvrde za prenos posmrtnih ostataka ili urne.',
+    },
+  },
+  {
+    id: 'fr',
+    countryKey: 'fr',
+    name: {
+      ru: 'Посольство Франции в Подгорице (Ambassade de France)',
+      en: 'Embassy of France in Podgorica',
+      mne: 'Ambasada Francuske u Podgorici',
+    },
+    countryName: {
+      ru: 'Франции',
+      en: 'France',
+      mne: 'Francuske',
+    },
+    address: 'Bulevar Džordža Vašingtona 98',
+    city: '81000 Podgorica',
+    phone: '+382 20 406 800',
+    sla: {
+      ru: 'Laissez-Passer Mortuaire — 24–48 часов',
+      en: '24–48h Laissez-Passer Mortuaire clearance',
+      mne: 'Laissez-Passer Mortuaire — 24–48 sati',
+    },
+    notes: {
+      ru: 'Оформление французского Laissez-Passer Mortuaire и согласование прибытия в аэропорты Париж CDG / Ницца / Лион.',
+      en: 'Issuance of French Laissez-Passer Mortuaire, judicial translation review, and coordination with Paris CDG / Nice / Lyon.',
+      mne: 'Izdavanje francuskog Laissez-Passer Mortuaire i prijem na aerodromima Pariz CDG, Nica ili Lion.',
+    },
+  },
+  {
+    id: 'it',
+    countryKey: 'it',
+    name: {
+      ru: 'Посольство Италии в Подгорице (Ambasciata d’Italia)',
+      en: 'Embassy of Italy in Podgorica',
+      mne: 'Ambasada Italije u Podgorici',
+    },
+    countryName: {
+      ru: 'Италии',
+      en: 'Italy',
+      mne: 'Italije',
+    },
+    address: 'Bulevar Džordža Vašingtona 26',
+    city: '81000 Podgorica',
+    phone: '+382 20 234 661',
+    sla: {
+      ru: 'Passaporto Mortuario — 24–48 часов',
+      en: '24–48h Passaporto Mortuario clearance',
+      mne: 'Passaporto Mortuario — 24–48 sati',
+    },
+    notes: {
+      ru: 'Оформление Passaporto Mortuario и согласование с итальянским муниципалитетом (Comune) для авиа- или автодоставки.',
+      en: 'Coordination of Italian Comune Nulla Osta and Passaporto Mortuario for air freight or Adriatic road transit.',
+      mne: 'Pribavljanje Passaporto Mortuario i saglasnosti italijanske opštine (Comune) za vazdušni ili drumski prenos.',
+    },
+  },
+  {
+    id: 'tr',
+    countryKey: 'tr',
+    name: {
+      ru: 'Посольство Турции в Подгорице (T.C. Podgoritsa Büyükelçiliği)',
+      en: 'Embassy of Turkey in Podgorica',
+      mne: 'Ambasada Republike Turske u Podgorici',
+    },
+    countryName: {
+      ru: 'Турции',
+      en: 'Turkey',
+      mne: 'Turske',
+    },
+    address: 'Radosava Burića bb',
+    city: '81000 Podgorica',
+    phone: '+382 20 445 700',
+    sla: {
+      ru: 'Cenaze Nakil Belgesi — 24 часа (прямой вылет TK)',
+      en: '24h Cenaze Nakil Belgesi + Turkish Airlines HUM',
+      mne: 'Cenaze Nakil Belgesi — 24 sata (Turkish Airlines)',
+    },
+    notes: {
+      ru: 'Оперативное оформление Cenaze Nakil Belgesi и прямая стыковка с ежедневными рейсами Turkish Airlines Cargo HUM из Подгорицы (TGD) и Тивата (TIV).',
+      en: 'Expedited Cenaze Nakil Belgesi issuance with direct Turkish Airlines Cargo HUM coordination out of Podgorica (TGD) and Tivat (TIV).',
+      mne: 'Brzo izdavanje Cenaze Nakil Belgesi i direktna koordinacija sa svakodnevnim letovima Turkish Airlines Cargo HUM iz TGD i TIV.',
+    },
+  },
 ];
 
 interface ConsularDirectoryProps {
   locale: LocaleSlug;
-  initialFilter?: 'all' | 'uk' | 'de' | 'rs' | 'ua' | 'ru';
+  initialFilter?: 'all' | 'uk' | 'de' | 'rs' | 'ua' | 'ru' | 'us' | 'pl' | 'fr' | 'it' | 'tr';
 }
 
 export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale, initialFilter = 'all' }) => {
@@ -217,6 +352,26 @@ export const ConsularDirectory: React.FC<ConsularDirectoryProps> = ({ locale, in
     {
       id: 'ru',
       labels: { ru: 'РФ 🇷🇺', en: 'Russia 🇷🇺', mne: 'Rusija 🇷🇺' },
+    },
+    {
+      id: 'us',
+      labels: { ru: 'США 🇺🇸', en: 'USA 🇺🇸', mne: 'SAD 🇺🇸' },
+    },
+    {
+      id: 'pl',
+      labels: { ru: 'Польша 🇵🇱', en: 'Poland 🇵🇱', mne: 'Poljska 🇵🇱' },
+    },
+    {
+      id: 'fr',
+      labels: { ru: 'Франция 🇫🇷', en: 'France 🇫🇷', mne: 'Francuska 🇫🇷' },
+    },
+    {
+      id: 'it',
+      labels: { ru: 'Италия 🇮🇹', en: 'Italy 🇮🇹', mne: 'Italija 🇮🇹' },
+    },
+    {
+      id: 'tr',
+      labels: { ru: 'Турция 🇹🇷', en: 'Turkey 🇹🇷', mne: 'Turska 🇹🇷' },
     },
   ];
 

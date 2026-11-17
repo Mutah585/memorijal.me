@@ -90,6 +90,12 @@ export const Navbar: React.FC<NavbarProps> = ({
   // Navigation Labels (Quiet Luxury / Swiss minimal alignment)
   const navLabels = {
     services: lang === 'RU' ? 'Услуги' : lang === 'MNE' ? 'Usluge' : 'Services',
+    localBurial:
+      lang === 'RU'
+        ? 'Местные похороны (Komunalno)'
+        : lang === 'MNE'
+        ? 'Lokalne sahrane (Komunalno)'
+        : 'Local Burials (Komunalno)',
     calculator:
       lang === 'RU'
         ? 'Калькулятор маршрута'
@@ -435,6 +441,13 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="px-3 py-2.5 rounded-lg hover:bg-[#F9F9FB] transition-colors"
             >
               {navLabels.services}
+            </a>
+            <a
+              href={buildLocalizedPath(currentLocale, '/services/local-burial-coordination/')}
+              onClick={(e) => handleRouteClick(e, '/services/local-burial-coordination/')}
+              className="px-3 py-2.5 rounded-lg hover:bg-[#F9F9FB] transition-colors text-slate-600 text-sm"
+            >
+              ↳ {navLabels.localBurial}
             </a>
             <a
               href={`${homePath}#estimator`}

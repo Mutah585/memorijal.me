@@ -143,16 +143,17 @@ Therefore, whenever a family or insurance policy requests cremation for a death 
 
 ---
 
-## 6. COMPLETE SITEMAP OF ALL 64 CANONICAL ROUTES (192 LOCALIZED URLS ACROSS `/en/`, `/ru/`, `/mne/`)
+## 6. COMPLETE SITEMAP OF ALL 68 CANONICAL ROUTES (204 LOCALIZED URLS ACROSS `/en/`, `/ru/`, `/mne/`)
 
 Every route listed below is available in English (`/en/...`), Russian (`/ru/...`), and Montenegrin/Serbian (`/mne/...`):
 
-### Pillar & Service Hubs (5 Routes)
+### Pillar & Service Hubs (6 Routes)
 - `https://memorijal.me/en/` | `https://memorijal.me/ru/` | `https://memorijal.me/mne/`
 - `https://memorijal.me/en/services/repatriation-air-cargo/`
 - `https://memorijal.me/en/services/repatriation-road/`
 - `https://memorijal.me/en/services/cremation-serbia/`
 - `https://memorijal.me/en/services/legal-consular/`
+- `https://memorijal.me/en/services/local-burial-coordination/` (Municipal Komunalno burial coordination, Expat Estate Clearance, vehicle custody, Boka Bay Sea Memorials & Pet Return under KD 82.99)
 
 ### International Destination Corridors (9 Routes)
 - `https://memorijal.me/en/repatriation/to-united-kingdom/`
@@ -226,4 +227,9 @@ Every route listed below is available in English (`/en/...`), Russian (`/ru/...`
 - `https://memorijal.me/en/step-by-step-guide/`
 - `https://memorijal.me/en/about/director/`
 - `https://memorijal.me/en/contact/`
+
+### Legal & Regulatory Compliance Hub (3 Routes)
+- `https://memorijal.me/en/legal/terms-of-service/`
+- `https://memorijal.me/en/legal/privacy-gdpr/`
+- `https://memorijal.me/en/legal/regulatory-disclosure/`
 

@@ -19,12 +19,13 @@ interface SitemapRouteConfig {
  * matching src/data/seo-routes.ts + Clusters A, B, C, D, E
  */
 const SITEMAP_ROUTES: SitemapRouteConfig[] = [
-  // 1. Root / Pillar Hubs (5 routes)
+  // 1. Root / Pillar Hubs (6 routes)
   { path: '/', priority: '1.0', changefreq: 'daily' },
   { path: '/services/repatriation-air-cargo/', priority: '0.9', changefreq: 'weekly' },
   { path: '/services/repatriation-road/', priority: '0.9', changefreq: 'weekly' },
   { path: '/services/cremation-serbia/', priority: '0.95', changefreq: 'weekly' },
   { path: '/services/legal-consular/', priority: '0.9', changefreq: 'weekly' },
+  { path: '/services/local-burial-coordination/', priority: '0.9', changefreq: 'weekly' },
 
   // 2. Programmatic Destination & Corridor Hubs — The 9 Primary Corridors (9 routes)
   { path: '/repatriation/to-united-kingdom/', priority: '0.9', changefreq: 'weekly' },

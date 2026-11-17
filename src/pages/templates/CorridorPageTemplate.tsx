@@ -47,6 +47,9 @@ import { BelongingsCustodyProtocol } from '../../components/BelongingsCustodyPro
 import { HomeDeathProtocol } from '../../components/HomeDeathProtocol';
 import { HotelIncidentProtocol } from '../../components/HotelIncidentProtocol';
 import { CaseProgressStepper } from '../../components/CaseProgressStepper';
+import { HospitalSlaMatrix } from '../../components/HospitalSlaMatrix';
+import { ExpatEstateServices } from '../../components/ExpatEstateServices';
+import { GuideReadingProgress } from '../../components/GuideReadingProgress';
 
 interface CorridorPageTemplateProps {
   locale: LocaleSlug;
@@ -274,6 +277,11 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
         </div>
       </div>
 
+      {/* Guide Reading Progress Bar & Jump-to-Section TOC */}
+      {(route.category === 'guide' || route.id === 'resource-guide') && (
+        <GuideReadingProgress locale={locale} />
+      )}
+
       {/* 2. EMERGENCY ACTION BAR (60-Minute Morgue Response Guarantee) */}
       <div className="bg-sapphire-subtle border-b border-sapphire/15">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm">
@@ -492,7 +500,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           </div>
 
           {/* Interactive Crisis Document Checklist */}
-          <div className="mt-6">
+          <div id="section-documents" className="mt-6 scroll-mt-24">
             <DocumentChecklist locale={locale} />
           </div>
 
@@ -502,9 +510,17 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           {/* Interactive IATA Direct Flight Hub Selector */}
           <FlightRouteHelper locale={locale} className="mt-6" />
 
-          {/* B2B Guarantee of Payment (GOP) Request Form Generator for Insurers & Assistances */}
+          {/* B2B Guarantee of Payment (GOP) Request Form Generator & Hospital SLA Matrix for Insurers & Assistances */}
           {route.category === 'assistance' && (
-            <GopRequestBuilder locale={locale} className="mt-6" />
+            <>
+              <GopRequestBuilder locale={locale} className="mt-6" />
+              <HospitalSlaMatrix locale={locale} className="mt-6" />
+            </>
+          )}
+
+          {/* Expat Estate & Post-Loss Concierge on Local Burial Coordination */}
+          {route.id === 'service-local-burial' && (
+            <ExpatEstateServices locale={locale} className="mt-6" />
           )}
 
           {/* Interactive SVG Sanitary Transit Map on transit checkpoints & road corridors */}
@@ -580,7 +596,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
       </section>
 
       {/* 5. STRUCTURED EXPLAINER SECTION (H2 — 5-Step Statutory Walkthrough) */}
-      <section className="py-14 sm:py-20 bg-porcelain border-b border-stoneBorder">
+      <section id="section-steps" className="py-14 sm:py-20 bg-porcelain border-b border-stoneBorder scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Crisis Reassurance Callout on Step-by-Step Guide */}
           {route.id === 'resource-guide' && (
@@ -761,7 +777,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
       </section>
 
       {/* 6. COST TRANSPARENCY & WHAT IS INCLUDED (H2) */}
-      <section className="py-14 sm:py-20 bg-alabaster border-b border-stoneBorder">
+      <section id="section-costs" className="py-14 sm:py-20 bg-alabaster border-b border-stoneBorder scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-slateDeep">
@@ -890,11 +906,13 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
       )}
 
       {/* 7. DYNAMIC FAQ SECTION (H2 + Accordion UI + Real-Time Filter) */}
-      <FaqSection
-        heading={page.faqHeading}
-        faqs={page.faqs}
-        locale={locale}
-      />
+      <div id="section-faq" className="scroll-mt-24">
+        <FaqSection
+          heading={page.faqHeading}
+          faqs={page.faqs}
+          locale={locale}
+        />
+      </div>
 
       {/* 8. E-E-A-T DIRECTOR ASSURANCE & TRUST BADGE */}
       <section className="py-14 sm:py-16 bg-white border-b border-stoneBorder">
