@@ -7,7 +7,11 @@ import {
 } from '../../data/seo-routes';
 import { STANDARD_PRICING_PACKAGES } from '../../data/pricing';
 import { safeJsonLdSerialize } from '../../utils/security';
-import { LEGAL_CREDENTIALS } from '../../config/legalCredentials';
+import {
+  LEGAL_CREDENTIALS,
+  PHONE_E164,
+  OFFICIAL_EMAIL,
+} from '../../config/legalCredentials';
 
 interface JsonLdProps {
   locale: LocaleSlug;
@@ -97,8 +101,8 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
     url: canonicalUrl,
     logo: 'https://memorijal.me/assets/branding/emblem-crest.png',
     image: 'https://memorijal.me/assets/branding/emblem-crest.png',
-    telephone: '+38268914816',
-    email: 'dispatch@memorijal.me',
+    telephone: PHONE_E164,
+    email: OFFICIAL_EMAIL,
     priceRange: 'from €450',
     ...(LEGAL_CREDENTIALS.ISSUED_PIB ? { taxID: LEGAL_CREDENTIALS.ISSUED_PIB } : {}),
     description:

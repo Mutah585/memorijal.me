@@ -143,7 +143,7 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
               'EU / UK GDPR (Regulation 2016/679)',
             ],
             paragraphs: [
-              `Оператором данных выступает ${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${crpsDisplay}; контакт по вопросам данных: dispatch@memorijal.me).`,
+              `Оператором данных выступает ${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${crpsDisplay}; контакт по вопросам данных: office@memorijal.me).`,
               'Данные умерших лиц: согласно Пункту 27 Преамбулы (Recital 27) GDPR, европейские правила защиты персональных данных не распространяются на данные умерших лиц; тем не менее Memorijal d.o.o. обеспечивает строгую профессиональную и медицинскую конфиденциальность всех документов умершего (Potvrda o smrti, причина смерти, копии паспорта).',
             ],
             bullets: [
@@ -181,7 +181,7 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
             heading: '4. Права субъектов данных и надзорный орган',
             statutes: ['GDPR Art. 15–22', 'ZZPL Crne Gore'],
             paragraphs: [
-              'Живые заявители имеют право запрашивать доступ, исправление или удаление своих контактных данных, направив обращение на dispatch@memorijal.me (срок рассмотрения — до 30 дней), за исключением сведений, подлежащих обязательному хранению по налоговому и санитарному законодательству Черногории.',
+              'Живые заявители имеют право запрашивать доступ, исправление или удаление своих контактных данных, направив обращение на office@memorijal.me (срок рассмотрения — до 30 дней), за исключением сведений, подлежащих обязательному хранению по налоговому и санитарному законодательству Черногории.',
               'Все споры по вопросам защиты данных регулируются материальным правом Черногории и подлежат исключительной подсудности компетентного суда в Черногории (Osnovni sud u Kotoru / Privredni sud Crne Gore u Podgorici) после 30-дневной письменной претензии.',
             ],
           },
@@ -357,7 +357,7 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
               'EU / UK GDPR (Regulation 2016/679)',
             ],
             paragraphs: [
-              `Rukovalac podacima je ${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${crpsDisplay}; kontakt: dispatch@memorijal.me).`,
+              `Rukovalac podacima je ${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${crpsDisplay}; kontakt: office@memorijal.me).`,
               'Podaci preminulih lica: shodno tački 27 Preambule (Recital 27) GDPR-a, evropska pravila zaštite podataka se ne primjenjuju na podatke o ličnosti preminulih lica; uprkos tome, Memorijal d.o.o. čuva svu dokumentaciju preminulog (Potvrda o smrti, uzrok smrti, kopije pasoša) pod strogom profesionalnom povjerljivošću.',
             ],
             bullets: [
@@ -394,7 +394,7 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
             heading: '4. Prava ispitanika i rješavanje sporova',
             statutes: ['GDPR čl. 15–22', 'ZZPL Crne Gore'],
             paragraphs: [
-              'Živi podnosioci zahtjeva mogu zatražiti uvid, ispravku ili brisanje svojih kontakt podataka putem dispatch@memorijal.me (rok 30 dana), osim podataka čije čuvanje nalažu poreski i sanitarni propisi Crne Gore.',
+              'Živi podnosioci zahtjeva mogu zatražiti uvid, ispravku ili brisanje svojih kontakt podataka putem office@memorijal.me (rok 30 dana), osim podataka čije čuvanje nalažu poreski i sanitarni propisi Crne Gore.',
               'Svi sporovi podliježu pravu Crne Gore i isključivoj nadležnosti suda u Crnoj Gori (Osnovni sud u Kotoru / Privredni sud Crne Gore u Podgorici) nakon 30-dnevnog pisanog zahtjeva.',
             ],
           },
@@ -569,7 +569,7 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
             'EU / UK GDPR (Regulation 2016/679, Recital 27 & Art. 6)',
           ],
           paragraphs: [
-            `The data controller is ${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${crpsDisplay}; privacy contact: dispatch@memorijal.me).`,
+            `The data controller is ${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${crpsDisplay}; privacy contact: office@memorijal.me).`,
             'Data of the Deceased: Pursuant to Recital 27 of the GDPR, European data protection rules do not apply to the personal data of deceased persons; however, Memorijal d.o.o. protects all deceased records (Potvrda o smrti, medical cause of death, passport copies) under strict professional and institutional confidentiality.',
           ],
           bullets: [
@@ -606,7 +606,7 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
           heading: '4. Data Subject Rights & Governing Jurisdiction',
           statutes: ['GDPR Art. 15–22', 'ZZPL Montenegro'],
           paragraphs: [
-            'Living applicants may request access, rectification, or erasure of their contact records via dispatch@memorijal.me (30-day response window), subject to mandatory Montenegrin tax and sanitary record retention laws.',
+            'Living applicants may request access, rectification, or erasure of their contact records via office@memorijal.me (30-day response window), subject to mandatory Montenegrin tax and sanitary record retention laws.',
             'All privacy disputes are governed by the laws of Montenegro and subject to the exclusive jurisdiction of the competent court in Montenegro (Osnovni sud u Kotoru / Privredni sud Crne Gore u Podgorici) following a 30-day written notice.',
           ],
         },

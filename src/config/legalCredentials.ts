@@ -1,5 +1,12 @@
 import type { LocaleSlug } from '../data/seo-routes';
 
+export const PHONE_DISPLAY = '+382 68 934 904';
+export const PHONE_E164 = '+38268934904';
+export const PHONE_HREF = 'tel:+38268934904';
+export const WHATSAPP_RAW = '38268934904';
+export const OFFICIAL_EMAIL = 'office@memorijal.me';
+export const EMAIL_HREF = 'mailto:office@memorijal.me';
+
 export const LEGAL_CREDENTIALS = {
   COMPANY_NAME: 'Memorijal d.o.o.',
   HEADQUARTERS: 'Tivat, Crna Gora (Montenegro)',

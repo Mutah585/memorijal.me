@@ -340,7 +340,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
     locales: {
       en: {
         metaTitle: 'International Repatriation & Cremation Montenegro 24/7',
-        metaDescription: 'Licensed 24/7 repatriation of remains & cremation from Montenegro (Tivat, Kotor, Budva, Podgorica) to UK, EU, CIS. Call +382 68 914 816.',
+        metaDescription: 'Licensed 24/7 repatriation of remains & cremation from Montenegro (Tivat, Kotor, Budva, Podgorica) to UK, EU, CIS. Call +382 68 934 904.',
         keywords: [
           'Repatriation of human remains Montenegro',
           'Cremation services Montenegro Belgrade transfer',
@@ -392,7 +392,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
       },
       ru: {
         metaTitle: 'Репатриация умерших и кремация в Черногории 24/7 | Груз 200',
-        metaDescription: 'Официальная репатриация (Груз 200) и кремация из Черногории (Тиват, Будва, Котор, Подгорица) в РФ, Украину, ЕС. Сроки 24–72ч. +382 68 914 816.',
+        metaDescription: 'Официальная репатриация (Груз 200) и кремация из Черногории (Тиват, Будва, Котор, Подгорица) в РФ, Украину, ЕС. Сроки 24–72ч. +382 68 934 904.',
         keywords: [
           'Репатриация умерших из Черногории',
           'Груз 200 Черногория Россия самолетом',
@@ -444,7 +444,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
       },
       mne: {
         metaTitle: 'Međunarodna repatrijacija i kremacija Crna Gora 24/7',
-        metaDescription: 'Licencirani prevoz pokojnika u inostranstvo, Sprovodnica, lemljenje cinka i kremacija u Beogradu. Tivat, Kotor, Budva, Podgorica. +382 68 914 816.',
+        metaDescription: 'Licencirani prevoz pokojnika u inostranstvo, Sprovodnica, lemljenje cinka i kremacija u Beogradu. Tivat, Kotor, Budva, Podgorica. +382 68 934 904.',
         keywords: [
           'Prevoz pokojnika u inostranstvo Crna Gora',
           'Kremacija u Beogradu prevoz iz Crne Gore',
@@ -510,7 +510,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
     locales: {
       en: {
         metaTitle: 'Air Cargo HUM Repatriation Montenegro | TGD & TIV 24/7',
-        metaDescription: 'IATA Cargo HUM air repatriation from Podgorica (TGD) & Tivat (TIV). Hermetic zinc sealing, Sprovodnica & AWB booking in 36–72h. +382 68 914 816.',
+        metaDescription: 'IATA Cargo HUM air repatriation from Podgorica (TGD) & Tivat (TIV). Hermetic zinc sealing, Sprovodnica & AWB booking in 36–72h. +382 68 934 904.',
         keywords: ['Air cargo repatriation Montenegro', 'IATA Cargo HUM Podgorica airport', 'Repatriation of remains from Montenegro by air', 'Zinc coffin sealing Montenegro'],
         breadcrumbLabel: 'Air Cargo Repatriation (Cargo HUM)',
         eyebrow: 'IATA CARGO HUM CERTIFIED AIR PROTOCOL',
@@ -557,7 +557,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
       },
       ru: {
         metaTitle: 'Авиарепатриация (Груз 200 / Cargo HUM) из Черногории 24/7',
-        metaDescription: 'Отправка Груза 200 самолетом из Подгорицы (TGD) и Тивата (TIV) в РФ, СНГ, ЕС. Опайка цинка, Спроводница и бронь AWB за 36–72ч. +382 68 914 816.',
+        metaDescription: 'Отправка Груза 200 самолетом из Подгорицы (TGD) и Тивата (TIV) в РФ, СНГ, ЕС. Опайка цинка, Спроводница и бронь AWB за 36–72ч. +382 68 934 904.',
         keywords: ['Груз 200 Черногория самолетом', 'Авиарепатриация из Черногории', 'Отправка тела самолетом Подгорица Тиват', 'Оцинковка гроба Черногория'],
         breadcrumbLabel: 'Авиарепатриация (Cargo HUM / Груз 200)',
         eyebrow: 'МЕЖДУНАРОДНЫЙ АВИАПРОТОКОЛ IATA CARGO HUM',
@@ -604,7 +604,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
       },
       mne: {
         metaTitle: 'Avio repatrijacija (Cargo HUM) Crna Gora | Aerodrom TGD',
-        metaDescription: 'IATA Cargo HUM vazdušni transport preminulih sa aerodroma Podgorica (TGD) i Tivat (TIV). Lemljenje cinka, Sprovodnica i AWB za 36–72h. +382 68 914 816.',
+        metaDescription: 'IATA Cargo HUM vazdušni transport preminulih sa aerodroma Podgorica (TGD) i Tivat (TIV). Lemljenje cinka, Sprovodnica i AWB za 36–72h. +382 68 934 904.',
         keywords: ['Avio prevoz pokojnika Crna Gora', 'IATA Cargo HUM Podgorica', 'Lemljenje cinka za avion Crna Gora', 'Sprovodnica aerodrom Podgorica'],
         breadcrumbLabel: 'Avio repatrijacija (Cargo HUM)',
         eyebrow: 'SERTIFIKOVANI IATA CARGO HUM PROTOKOL',
@@ -662,7 +662,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
     locales: {
       en: {
         metaTitle: 'European & Balkan Road Repatriation Montenegro 24/7',
-        metaDescription: 'Door-to-door international hearse transport from Montenegro to Serbia, Bosnia, Croatia, Germany, Italy, Poland & Ukraine. Call +382 68 914 816.',
+        metaDescription: 'Door-to-door international hearse transport from Montenegro to Serbia, Bosnia, Croatia, Germany, Italy, Poland & Ukraine. Call +382 68 934 904.',
         keywords: ['Road repatriation Montenegro', 'International hearse transport Montenegro to Europe', 'Cross border funeral transport Balkans', 'Repatriation by road Montenegro'],
         breadcrumbLabel: 'Road Repatriation (Balkans & EU)',
         eyebrow: 'DOOR-TO-DOOR SPECIALIZED HEARSE LOGISTICS',
@@ -709,7 +709,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
       },
       ru: {
         metaTitle: 'Авторепатриация из Черногории в Европу, Сербию и СНГ 24/7',
-        metaDescription: 'Перевозка умерших спецкатафалком «от двери до двери» из Черногории в Сербию, ЕС, Украину и страны Балтии. Без перегрузок. +382 68 914 816.',
+        metaDescription: 'Перевозка умерших спецкатафалком «от двери до двери» из Черногории в Сербию, ЕС, Украину и страны Балтии. Без перегрузок. +382 68 934 904.',
         keywords: ['Авторепатриация из Черногории', 'Перевозка тела катафалком Черногория Европа', 'Груз 200 автотранспортом Черногория', 'Доставка умершего из Черногории в Украину ЕС'],
         breadcrumbLabel: 'Авторепатриация (Балканы, ЕС, СНГ)',
         eyebrow: 'СПЕЦИАЛИЗИРОВАННЫЙ РЕФРИЖЕРАТОРНЫЙ ТРАНСПОРТ «ОТ ДВЕРИ ДО ДВЕРИ»',
@@ -756,7 +756,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
       },
       mne: {
         metaTitle: 'Međunarodni drumski prevoz pokojnika iz Crne Gore 24/7',
-        metaDescription: 'Prevoz preminulih specijalnim pogrebnim vozilom iz Crne Gore za Srbiju, BiH, Hrvatsku, Njemačku, Austriju, Italiju i EU. +382 68 914 816.',
+        metaDescription: 'Prevoz preminulih specijalnim pogrebnim vozilom iz Crne Gore za Srbiju, BiH, Hrvatsku, Njemačku, Austriju, Italiju i EU. +382 68 934 904.',
         keywords: ['Prevoz pokojnika u inostranstvo Crna Gora', 'Međunarodni pogrebni prevoz Kotor Podgorica', 'Prevoz umrlih za Srbiju i EU', 'Sprovodnica za drumski prevoz'],
         breadcrumbLabel: 'Drumska repatrijacija (Balkan & EU)',
         eyebrow: 'SPECIJALIZOVANI PREVOZ „OD VRATA DO VRATA“',
@@ -814,7 +814,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
     locales: {
       en: {
         metaTitle: 'Cremation Services Montenegro | Belgrade Transfer & Urn',
-        metaDescription: 'Official cremation for Montenegro via Belgrade/Novi Sad state crematorium. Full transport, permits & sealed urn return in 48–72h. +382 68 914 816.',
+        metaDescription: 'Official cremation for Montenegro via Belgrade/Novi Sad state crematorium. Full transport, permits & sealed urn return in 48–72h. +382 68 934 904.',
         keywords: ['Cremation services Montenegro Belgrade transfer', 'Cremation in Montenegro', 'Belgrade crematorium transfer from Montenegro', 'Urn repatriation Montenegro'],
         breadcrumbLabel: 'Cremation in Serbia (Belgrade / Novi Sad)',
         eyebrow: 'OFFICIAL BILATERAL MONTENEGRO–SERBIA CREMATION PROTOCOL',
@@ -861,7 +861,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
       },
       ru: {
         metaTitle: 'Кремация в Сербии (Белград) из Черногории 24/7',
-        metaDescription: 'Официальная кремация для умерших в Черногории через гос. крематорий Белграда. Все разрешения, перевозка и возврат урны за 48–72ч. +382 68 914 816.',
+        metaDescription: 'Официальная кремация для умерших в Черногории через гос. крематорий Белграда. Все разрешения, перевозка и возврат урны за 48–72ч. +382 68 934 904.',
         keywords: ['Кремация в Сербии для граждан Черногории и РФ', 'Кремация в Черногории цена', 'Перевозка на кремацию в Белград из Черногории', 'Отправка урны с прахом из Черногории'],
         breadcrumbLabel: 'Кремация в Сербии (Белград / Нови-Сад)',
         eyebrow: 'ОФИЦИАЛЬНЫЙ МЕЖГОСУДАРСТВЕННЫЙ ПРОТОКОЛ ЧЕРНОГОРИЯ — СЕРБИЯ',
@@ -908,7 +908,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
       },
       mne: {
         metaTitle: 'Kremacija u Srbiji (Beograd / Novi Sad) iz Crne Gore 24/7',
-        metaDescription: 'Zvanična organizacija kremacije u Beogradu i Novom Sadu sa prevozom iz Crne Gore, Sprovodnicom i povratom urne za 48–72h. +382 68 914 816.',
+        metaDescription: 'Zvanična organizacija kremacije u Beogradu i Novom Sadu sa prevozom iz Crne Gore, Sprovodnicom i povratom urne za 48–72h. +382 68 934 904.',
         keywords: ['Kremacija u Beogradu prevoz iz Crne Gore', 'Kremacija Crna Gora cijena', 'Prevoz pokojnika na kremaciju Beograd', 'Dozvola za prenos urne Crna Gora'],
         breadcrumbLabel: 'Kremacija u Srbiji (Beograd / Novi Sad)',
         eyebrow: 'ZVANIČNI MEĐUDRŽAVNI PROTOKOL CRNA GORA — SRBIJA',
@@ -966,7 +966,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
     locales: {
       en: {
         metaTitle: 'Sanitary Sprovodnica, Zinc Sealing & Consular Permits MNE',
-        metaDescription: 'Montenegro Sanitary Pass (Sprovodnica), hermetic zinc soldering (lemljenje), Apostille & Embassy clearances in Podgorica via remote PoA. +382 68 914 816.',
+        metaDescription: 'Montenegro Sanitary Pass (Sprovodnica), hermetic zinc soldering (lemljenje), Apostille & Embassy clearances in Podgorica via remote PoA. +382 68 934 904.',
         keywords: ['Zinc lined coffin sealing Montenegro sprovodnica', 'Sprovodnica Montenegro sanitary permit', 'Consular mortuary passport Podgorica', 'Death certificate apostille Montenegro'],
         breadcrumbLabel: 'Sanitary Sprovodnica & Consular Legalization',
         eyebrow: 'STATUTORY LEGAL, SANITARY & DIPLOMATIC CLEARANCE',
@@ -1013,7 +1013,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
       },
       ru: {
         metaTitle: 'Спроводница (Sprovodnica), опайка цинка и консульства в ЧГ',
-        metaDescription: 'Оформление санитарной Спроводницы, свидетельства о смерти с Апостилем, опайки цинка (lemljenje) и разрешений посольств в Подгорице. +382 68 914 816.',
+        metaDescription: 'Оформление санитарной Спроводницы, свидетельства о смерти с Апостилем, опайки цинка (lemljenje) и разрешений посольств в Подгорице. +382 68 934 904.',
         keywords: ['Справка о смерти и спровдница в Санитарной инспекции Черногории', 'Оцинковка гроба и пайка Черногория', 'Консульское разрешение на вывоз тела Черногория', 'Апостиль свидетельства о смерти Черногория'],
         breadcrumbLabel: 'Санитарная Sprovodnica и консульства',
         eyebrow: 'ЮРИДИЧЕСКОЕ, САНИТАРНОЕ И КОНСУЛЬСКОЕ ОФОРМЛЕНИЕ ПО ДОВЕРЕННОСТИ',
@@ -1060,7 +1060,7 @@ export const SEO_ROUTES: SeoRouteEntry[] = [
       },
       mne: {
         metaTitle: 'Sanitarna Sprovodnica i lemljenje cinka Crna Gora 24/7',
-        metaDescription: 'Pribavljanje sanitarne Sprovodnice, hermetičko lemljenje limenog sanduka, Apostille i konzularne dozvole u Podgorici po punomoćju. +382 68 914 816.',
+        metaDescription: 'Pribavljanje sanitarne Sprovodnice, hermetičko lemljenje limenog sanduka, Apostille i konzularne dozvole u Podgorici po punomoćju. +382 68 934 904.',
         keywords: ['Sprovodnica za prenos umrlog lica zdravstvena inspekcija', 'Limeni uložak lemljenje Kotor Podgorica', 'Međunarodni izvod iz matične knjige umrlih Crna Gora', 'Konzularna sprovodnica Podgorica'],
         breadcrumbLabel: 'Sanitarna Sprovodnica i konzulati',
         eyebrow: 'ZAKONSKA, SANITARNA I KONZULARNA PROCEDURA PO PUNOMOĆJU',

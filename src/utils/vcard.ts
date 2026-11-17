@@ -1,12 +1,13 @@
 import { Language } from '../i18n/translations';
+import { PHONE_E164, OFFICIAL_EMAIL } from '../config/legalCredentials';
 
 const VCARD_CONTENT = `BEGIN:VCARD
 VERSION:3.0
 N:Repatrijacija 24/7;Memorijal;;;
 FN:Memorijal Repatrijacija 24/7
 ORG:Memorijal d.o.o. Crna Gora
-TEL;TYPE=CELL,VOICE,PREF:+38268914816
-EMAIL;TYPE=WORK:office@memorijal.me
+TEL;TYPE=CELL,VOICE,PREF:${PHONE_E164}
+EMAIL;TYPE=WORK:${OFFICIAL_EMAIL}
 URL:https://memorijal.me
 NOTE:Dežurna služba međunarodne repatrijacije i kremacije. Tivat / Podgorica 24/7.
 END:VCARD`;

@@ -41,7 +41,7 @@ self.addEventListener('fetch', (event) => {
       fetch(event.request).catch(async () => {
         const cache = await caches.open(CACHE_NAME);
         const cachedResponse = await cache.match(OFFLINE_URL);
-        return cachedResponse || new Response('Offline emergency line: +382 68 914 816', {
+        return cachedResponse || new Response('Offline emergency line: +382 68 934 904', {
           headers: { 'Content-Type': 'text/plain; charset=utf-8' },
         });
       })

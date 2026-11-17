@@ -38,7 +38,7 @@ export const HotelIncidentProtocol: React.FC<HotelIncidentProtocolProps> = ({
       step3Num: 'Шаг 3',
       step3Title: 'Деликатная эвакуация и защита репутации объекта',
       step3Desc:
-        'Связаться с дежурным координатором Memorijal d.o.o. (+382 68 914 816). Специализированная бригада прибывает на автомобиле без опознавательных знаков через служебный подъезд, исключая панику среди гостей.',
+        'Связаться с дежурным координатором Memorijal d.o.o. (+382 68 934 904). Специализированная бригада прибывает на автомобиле без опознавательных знаков через служебный подъезд, исключая панику среди гостей.',
       btnPrint: 'Скачать памятку для персонала (PDF)',
       callHitna: 'Скорая помощь 124',
       callPolicija: 'Полиция 122',
@@ -64,7 +64,7 @@ export const HotelIncidentProtocol: React.FC<HotelIncidentProtocolProps> = ({
       step3Num: 'Step 3',
       step3Title: 'Discreet Hearse Dispatch & Reputation Protection',
       step3Desc:
-        'Liaise directly with Memorijal d.o.o. (+382 68 914 816). Our team arrives discreetly via service access in unmarked vehicles, preserving guest privacy and hotel ambiance.',
+        'Liaise directly with Memorijal d.o.o. (+382 68 934 904). Our team arrives discreetly via service access in unmarked vehicles, preserving guest privacy and hotel ambiance.',
       btnPrint: 'Download Staff Incident Protocol (PDF)',
       callHitna: 'Ambulance 124',
       callPolicija: 'Police 122',
@@ -90,7 +90,7 @@ export const HotelIncidentProtocol: React.FC<HotelIncidentProtocolProps> = ({
       step3Num: 'Korak 3',
       step3Title: 'Diskretan prevoz i zaštita ugleda objekta',
       step3Desc:
-        'Kontaktirati Memorijal d.o.o. (+382 68 914 816). Tim obavlja prevoz kroz servisni ulaz bez uznemiravanja ostalih gostiju.',
+        'Kontaktirati Memorijal d.o.o. (+382 68 934 904). Tim obavlja prevoz kroz servisni ulaz bez uznemiravanja ostalih gostiju.',
       btnPrint: 'Preuzmi protokol za osoblje (PDF)',
       callHitna: 'Hitna pomoć 124',
       callPolicija: 'Policija 122',
@@ -276,7 +276,7 @@ export const HotelIncidentProtocol: React.FC<HotelIncidentProtocolProps> = ({
 
               <div className="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200">
                 <strong className="block font-bold text-emerald-950 mb-1">
-                  3. ОПОВЕЩЕНИЕ МЕЖДУНАРОДНОГО КООРДИНАТОРА MEMORIJAL (+382 68 914 816)
+                  3. ОПОВЕЩЕНИЕ МЕЖДУНАРОДНОГО КООРДИНАТОРА MEMORIJAL (+382 68 934 904)
                 </strong>
                 <p className="text-emerald-900 leading-relaxed text-[11px]">
                   Координатор немедленно выезжает на объект, перенимает взаимодействие с полицией и судебно-медицинской службой, защищает приватность гостей и берет на себя коммуникацию со страховой компанией.

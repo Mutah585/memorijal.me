@@ -599,10 +599,10 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
                   </div>
                   <p className="text-sm sm:text-base font-medium text-amber-950 leading-relaxed">
                     {locale === 'ru'
-                      ? 'Если утрата произошла прямо сейчас — не тратьте время на чтение регламентов. Позвоните дежурному координатору +382 68 914 816 или напишите в WhatsApp. Мы немедленно подключимся к моргу и полиции.'
+                      ? 'Если утрата произошла прямо сейчас — не тратьте время на чтение регламентов. Позвоните дежурному координатору +382 68 934 904 или напишите в WhatsApp. Мы немедленно подключимся к моргу и полиции.'
                       : locale === 'mne'
-                      ? 'Ako se smrtni slučaj dogodio upravo sada — nemojte gubiti vrijeme na čitanje procedura. Pozovite dežurnog koordinatora na +382 68 914 816 ili pišite na WhatsApp. Odmah ćemo preuzeti komunikaciju sa kapelom i policijom.'
-                      : 'If a bereavement has occurred right now — do not spend time reading through regulations. Call our 24/7 duty coordinator at +382 68 914 816 or message on WhatsApp. We will immediately liaise with the mortuary and police on your behalf.'}
+                      ? 'Ako se smrtni slučaj dogodio upravo sada — nemojte gubiti vrijeme na čitanje procedura. Pozovite dežurnog koordinatora na +382 68 934 904 ili pišite na WhatsApp. Odmah ćemo preuzeti komunikaciju sa kapelom i policijom.'
+                      : 'If a bereavement has occurred right now — do not spend time reading through regulations. Call our 24/7 duty coordinator at +382 68 934 904 or message on WhatsApp. We will immediately liaise with the mortuary and police on your behalf.'}
                   </p>
                 </div>
                 <div className="flex flex-wrap sm:flex-nowrap items-center gap-3 shrink-0 no-print">
@@ -748,10 +748,10 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
                   </span>
                   <p className="text-slateMuted leading-relaxed">
                     {locale === 'ru'
-                      ? 'Свяжитесь с Memorijal d.o.o. (+382 68 914 816). Мы берем на себя взаимодействие с полицией, консульством и семьей, деликатно защищая приватность и репутацию вашего объекта.'
+                      ? 'Свяжитесь с Memorijal d.o.o. (+382 68 934 904). Мы берем на себя взаимодействие с полицией, консульством и семьей, деликатно защищая приватность и репутацию вашего объекта.'
                       : locale === 'mne'
-                      ? 'Kontaktirajte Memorijal d.o.o. (+382 68 914 816). Preuzimamo vezu sa policijom, kapelom, ambasadom i porodicom uz punu zaštitu reputacije objekta.'
-                      : 'Liaise directly with Memorijal d.o.o. (+382 68 914 816). We manage police, consular, and family communication, safeguarding guest privacy and your establishment’s standing.'}
+                      ? 'Kontaktirajte Memorijal d.o.o. (+382 68 934 904). Preuzimamo vezu sa policijom, kapelom, ambasadom i porodicom uz punu zaštitu reputacije objekta.'
+                      : 'Liaise directly with Memorijal d.o.o. (+382 68 934 904). We manage police, consular, and family communication, safeguarding guest privacy and your establishment’s standing.'}
                   </p>
                 </div>
               </div>

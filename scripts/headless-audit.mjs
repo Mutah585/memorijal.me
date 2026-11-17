@@ -47,7 +47,7 @@ async function runAudit() {
   // Top Bar Hotline Check
   const topBarInfo = await page.evaluate(() => {
     const text = document.body.innerText;
-    const hasPhone = text.includes('+382 68 914 816');
+    const hasPhone = text.includes('+382 68 934 904');
     const waLink = document.querySelector('header a[href*="wa.me"]');
     return {
       hasPhone,

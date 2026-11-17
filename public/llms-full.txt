@@ -9,8 +9,8 @@
 - **Legal Entity Name**: Memorijal d.o.o.
 - **Operating Model & Legal Status**: Authorized repatriation, legal and case coordination agency (Montenegro classification codes 82.99 / 52.29). Memorijal d.o.o. does not own a private hearse fleet and does not operate as a direct transport carrier. All physical cross-border road transfers and zinc hermetic soldering are performed via accredited, licensed partner carriers and funeral operators under our direct dispatcher coordination and supervision.
 - **Core Mandate**: 24/7 International Repatriation Coordination (IATA Cargo HUM & Dispatched Licensed Road Carriers), Cross-Border State Cremation in Serbia (Belgrade / Novi Sad) with Sealed Urn Return, Forensic Embalming Coordination, Hermetic Zinc Coffin Soldering Supervision (`Lemljenje`), Sanitary Transit Permits (`Sprovodnica`), Consular Legalization (`Laissez-Passer`), and B2B Travel Insurance Assistance Execution (`Guarantee of Payment — GOP`).
-- **24/7 Emergency Dispatch Telephone / WhatsApp / Telegram**: `+382 68 914 816` (`+38268914816`)
-- **Official Dispatch Email**: `dispatch@memorijal.me`
+- **24/7 Emergency Dispatch Telephone / WhatsApp / Telegram**: `+382 68 934 904` (`+38268934904`)
+- **Official Dispatch Email**: `office@memorijal.me`
 - **Canonical Domain**: `https://memorijal.me`
 - **Supported Locales**:
   - English: `https://memorijal.me/en/` (`hreflang="en"`, `hreflang="x-default"`)
@@ -56,7 +56,7 @@ Therefore, whenever a family or insurance policy requests cremation for a death 
 ### Stage 01: 24/7 Emergency Call, On-Site Removal & Remote Power of Attorney (`Punomoćje`)
 - **If death occurs outside a hospital (Hotel, Resort, Private Villa, Apartment, Yacht, Beach, or Mountain)**:
   1. Emergency Medical Services (`Zavod za hitnu medicinsku pomoć` — dial `124`) and Police (`Uprava policije` — dial `122`) attend the scene so the duty coroner (`mrtvozornik`) certifies death.
-  2. Memorijal d.o.o. (`+382 68 914 816`) arrives within **30–60 minutes** anywhere on the coast or in Podgorica to coordinate directly with police/medical officers in Montenegrin and transport the deceased via refrigerated clinical vehicle to the designated hospital mortuary (**General Hospital Kotor** or **KCCG Podgorica**).
+  2. Memorijal d.o.o. (`+382 68 934 904`) arrives within **30–60 minutes** anywhere on the coast or in Podgorica to coordinate directly with police/medical officers in Montenegrin and transport the deceased via refrigerated clinical vehicle to the designated hospital mortuary (**General Hospital Kotor** or **KCCG Podgorica**).
 - **Zero Family Flight Required (`Punomoćje`)**:
   - Grieving relatives do **not** need to fly to Montenegro. Within 15 minutes of contact, our legal desk drafts a bilingual **Power of Attorney (`Punomoćje`)** (Montenegrin + English / Russian). Once signed by the next-of-kin, Memorijal d.o.o. is legally empowered under the Montenegrin Administrative Procedure Act to represent the family before all hospitals, police departments, prosecutors, civil registries (`MUP / Matičar`), courts, sanitary inspectors, customs, and foreign embassies.
 
