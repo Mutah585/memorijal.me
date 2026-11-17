@@ -27,6 +27,7 @@ import {
 import { GlossaryTerm } from './common/GlossaryTerm';
 import { downloadVCard, getVCardButtonLabel } from '../utils/vcard';
 import { PrivacyDataWipe } from './PrivacyDataWipe';
+import { LEGAL_CREDENTIALS, getCrpsPibDisplay } from '../config/legalCredentials';
 
 interface FooterProps {
   lang: Language;
@@ -47,9 +48,11 @@ export const Footer: React.FC<FooterProps> = ({
   const locale = langToLocaleSlug(lang);
 
   const handleCopyCredentials = async () => {
-    const textToCopy = `Entity: Memorijal d.o.o.
-Country: Montenegro (Tivat / Podgorica)
-PIB: 03489217 | PDV: 30/31-20948-4
+    const textToCopy = `Entity: ${LEGAL_CREDENTIALS.COMPANY_NAME}
+Country: ${LEGAL_CREDENTIALS.HEADQUARTERS}
+Activity Codes: ${LEGAL_CREDENTIALS.ACTIVITY_CODES}
+Registration Status: ${getCrpsPibDisplay(locale)}
+VAT Status: ${LEGAL_CREDENTIALS.VAT_STATUS[locale]}
 Dispatch Line 24/7: ${PHONE_DISPLAY}
 Official Email: ${OFFICIAL_EMAIL}
 Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
@@ -78,6 +81,7 @@ Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
   const resourceLinks = ALL_SEO_ROUTES.filter((r) => r.category === 'resource');
   const corridorLinks = ALL_SEO_ROUTES.filter((r) => r.category === 'corridor');
   const locationLinks = ALL_SEO_ROUTES.filter((r) => r.category === 'location');
+  const legalLinks = ALL_SEO_ROUTES.filter((r) => r.category === 'legal');
 
   const handleLink = (e: React.MouseEvent, path: string) => {
     if (onNavigate) {
@@ -130,8 +134,9 @@ Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
               {t.footer.description}
             </p>
-            <div className="text-[11px] text-slate-400 font-mono tracking-wide">
-              Memorijal d.o.o. • PIB 03489217 • PDV 30/31-20948-4
+            <div className="text-[11px] text-slate-400 font-mono tracking-wide space-y-0.5">
+              <div>{LEGAL_CREDENTIALS.COMPANY_NAME} • {LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT}</div>
+              <div>{getCrpsPibDisplay(locale)}</div>
             </div>
             <div className="pt-1 flex items-center gap-2 text-xs text-emerald-300 font-medium">
               <FileCheck className="w-4 h-4 shrink-0" />
@@ -361,6 +366,39 @@ Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
               );
             })}
           </div>
+
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 pt-1">
+            <span className="font-semibold text-slate-200 inline-flex items-center gap-1">
+              <FileCheck className="w-3.5 h-3.5 text-emerald-400" />
+              {lang === 'RU'
+                ? 'Правовая информация:'
+                : lang === 'MNE'
+                ? 'Pravne informacije:'
+                : 'Legal & Compliance:'}
+            </span>
+            {legalLinks.map((leg) => {
+              const path = buildLocalizedPath(locale, leg.path);
+              return (
+                <a
+                  key={leg.id}
+                  href={path}
+                  onClick={(e) => handleLink(e, path)}
+                  className="hover:text-white transition-colors underline decoration-white/20 underline-offset-2"
+                >
+                  {leg.locales[locale].breadcrumbLabel}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Concise 2-line Statutory Agency Disclaimer */}
+        <div className="pt-6 text-[11px] text-slate-400 leading-relaxed max-w-5xl">
+          {lang === 'RU'
+            ? 'Memorijal d.o.o. (Тиват, Черногория • KD 82.99 / 52.29) действует исключительно как агентство административно-правовой и логистической координации и не располагает собственным автопарком или розничным магазином. Физическая перевозка тел, герметичная пайка цинка и авиафрахт выполняются аккредитованными лицензированными партнерами-перевозчиками.'
+            : lang === 'MNE'
+            ? 'Memorijal d.o.o. (Tivat, Crna Gora • KD 82.99 / 52.29) posluje isključivo kao agencija za administrativnu, pravnu i logističku koordinaciju i ne posjeduje sopstveni vozni park niti maloprodajni objekat. Fizički transport, lemljenje cinka i avio-kargo prevoz obavljaju akreditovani licencirani prevoznici i operateri.'
+            : 'Memorijal d.o.o. (Tivat, Montenegro • KD 82.99 / 52.29) operates strictly as an administrative, legal, and forwarding coordination agency and does not own a vehicle fleet or retail store. Physical transport, hermetic zinc soldering, and air freight are executed by accredited licensed partner carriers.'}
         </div>
 
         {/* Bottom Copyright, Privacy & Studio Credit Bar */}

@@ -18,6 +18,7 @@ import {
   OFFICIAL_EMAIL,
 } from '../i18n/translations';
 import { DocumentSpecimenViewer } from './DocumentSpecimenViewer';
+import { LegalConsentNotice } from './common/LegalConsentNotice';
 
 interface DocumentChecklistProps {
   locale: LocaleSlug;
@@ -212,6 +213,8 @@ export const DocumentChecklist: React.FC<DocumentChecklistProps> = ({ locale }) 
           <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
           <span className="font-medium">{counterText}</span>
         </div>
+
+        <LegalConsentNotice locale={locale} />
 
         {/* 2 Conversion Actions */}
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">

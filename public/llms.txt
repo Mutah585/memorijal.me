@@ -7,7 +7,7 @@
 - **Email**: dispatch@memorijal.me
 - **Headquarters**: Tivat (Boka Bay Coastal Hub) & Podgorica (Consular & Airport Hub), Montenegro
 - **Executive Coordinator**: Maksym Kovalenko
-- **Registration & Tax ID (PIB)**: 03489217 | **VAT / PDV**: 30/31-20948-4 | **License**: 04-UP-891/24
+- **Activity Codes & Status**: KD 2010: 82.99 & 52.29 | Tivat, Crna Gora | CRPS registration in progress (Not a VAT/PDV payer pursuant to Art. 42 of the Law on VAT of Montenegro)
 - **Response Time**: Under 60 minutes to any hospital mortuary, hotel, or residence in Montenegro.
 - **Full Technical & Statutory Documentation for AI Agents**: [https://memorijal.me/llms-full.txt](https://memorijal.me/llms-full.txt)
 

@@ -177,7 +177,7 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
             <span>Međunarodna repatrijacija i koordinacija • Crna Gora</span>
           </div>
           <div className="text-right text-[11px]">
-            <span className="block font-semibold">PIB: 03489217 | Tel: {PHONE_DISPLAY} (24/7)</span>
+            <span className="block font-semibold">KD 82.99 / 52.29 | Tel: {PHONE_DISPLAY} (24/7)</span>
             <span>{OFFICIAL_EMAIL} | memorijal.me</span>
           </div>
         </div>
@@ -650,15 +650,9 @@ export const LocationPageTemplate: React.FC<LocationPageTemplateProps> = ({
                 {ui.eeatText}
               </p>
               <div className="pt-2 flex flex-wrap gap-2 text-[11px] font-mono text-emerald-200">
-                <span className="bg-white/10 px-3 py-1 rounded">PIB: 03489217</span>
-                <span className="bg-white/10 px-3 py-1 rounded">PDV: 30/31-20948-4</span>
-                <span className="bg-white/10 px-3 py-1 rounded">
-                  {locale === 'ru'
-                    ? 'Фискализация EFI QR'
-                    : locale === 'mne'
-                    ? 'EFI QR Fiskalizacija'
-                    : 'EFI QR Fiscalization'}
-                </span>
+                <span className="bg-white/10 px-3 py-1 rounded">KD 2010: 82.99 / 52.29</span>
+                <span className="bg-white/10 px-3 py-1 rounded">Tivat, Montenegro</span>
+                <span className="bg-white/10 px-3 py-1 rounded">Non-VAT (Art. 42)</span>
                 <span className="bg-white/10 px-3 py-1 rounded">SWIFT / SEPA IBAN</span>
               </div>
             </div>

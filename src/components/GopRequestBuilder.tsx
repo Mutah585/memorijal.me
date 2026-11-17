@@ -15,6 +15,8 @@ import {
   OFFICIAL_EMAIL,
   PHONE_DISPLAY,
 } from '../i18n/translations';
+import { LEGAL_CREDENTIALS, getCrpsPibDisplay } from '../config/legalCredentials';
+import { LegalConsentNotice } from './common/LegalConsentNotice';
 
 export interface GopRequestBuilderProps {
   locale: LocaleSlug;
@@ -111,9 +113,10 @@ export const GopRequestBuilder: React.FC<GopRequestBuilderProps> = ({
     const dateStr = new Date().toISOString().split('T')[0];
     const letter = `GUARANTEE OF PAYMENT (GOP) / FORMAL REPATRIATION INTAKE
 Date: ${dateStr}
-TO: Memorijal d.o.o. (Tivat / Podgorica, Montenegro)
-Registration (PIB): 03489217 | VAT (PDV): 30/31-20948-4
-Sanitary & Operating License: 04-UP-891/24
+TO: ${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS})
+Activity Codes: ${LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT}
+Status: ${getCrpsPibDisplay(locale)}
+VAT Status: ${LEGAL_CREDENTIALS.VAT_STATUS[locale]}
 Dispatch Line 24/7: ${PHONE_DISPLAY} | Email: ${OFFICIAL_EMAIL}
 
 FROM (Assistance / Insurer): ${assistanceCompany || 'International Assistance Provider'}
@@ -259,6 +262,8 @@ Billing Email: ${contactEmail}`
             className="w-full px-3.5 py-2.5 rounded-xl border border-stoneBorder text-xs sm:text-sm text-slateDeep focus:ring-2 focus:ring-sapphire focus:outline-none"
           />
         </div>
+
+        <LegalConsentNotice locale={locale} className="pt-1" />
 
         <button
           type="submit"

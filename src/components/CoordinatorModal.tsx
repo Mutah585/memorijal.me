@@ -21,6 +21,8 @@ import {
 } from '../i18n/translations';
 import { sanitizeUserText } from '../utils/security';
 import { PrivacyDataWipe } from './PrivacyDataWipe';
+import { LegalConsentNotice } from './common/LegalConsentNotice';
+import { langToLocaleSlug } from '../data/seo-routes';
 
 interface CoordinatorModalProps {
   isOpen: boolean;
@@ -69,6 +71,7 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
   const [notes, setNotes] = useState('');
   const [error, setError] = useState('');
   const [submittedRef, setSubmittedRef] = useState<string | null>(null);
+  const [legalAccepted, setLegalAccepted] = useState(true);
 
   // Keyboard accessibility: Escape key handling
   useEffect(() => {
@@ -605,6 +608,16 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
                     ? 'Tekst možete pregledati i izmijeniti u WhatsApp-u prije slanja.'
                     : 'You will be able to review or edit this text directly in WhatsApp before sending.'}
                 </p>
+              </div>
+
+              {/* Mandatory Legal Consent Checkbox */}
+              <div className="p-3.5 rounded-xl bg-porcelain border border-stoneBorder">
+                <LegalConsentNotice
+                  locale={langToLocaleSlug(lang)}
+                  requireCheckbox
+                  checked={legalAccepted}
+                  onChange={setLegalAccepted}
+                />
               </div>
 
               <div className="pt-2 flex flex-col sm:flex-row items-center gap-3">

@@ -129,7 +129,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           eeatName: 'Maksym Kovalenko',
           eeatRole: 'Izvršni koordinator • Memorijal d.o.o. Crna Gora',
           eeatText:
-            'Svaki međunarodni slučaj nadzire se lično od prijema u Opštu bolnicu Kotor ili KCCG Podgorica do konačnog dolaska u zemlju odredišta. Poslujemo kao registrovani DOO u Crnoj Gori (PIB: 03489217) uz zvaničnu EFI fiskalizaciju i SEPA/SWIFT IBAN plaćanja.',
+            'Svaki međunarodni slučaj nadzire se lično od prijema u Opštu bolnicu Kotor ili KCCG Podgorica do konačnog dolaska u zemlju odredišta. Memorijal d.o.o. posluje kao agencija za pravnu i logističku koordinaciju (KD 82.99 / 52.29) uz SEPA/SWIFT IBAN plaćanja i GOP pokriće.',
           specBadge: 'ZVANIČNA LOGISTIČKA I KONZULARNA SPECIFIKACIJA',
           efiBadge: 'EFI QR Fiskalizacija',
           relatedCorridors: 'Drugi međunarodni koridori repatrijacije',
@@ -161,7 +161,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
           eeatName: 'Maksym Kovalenko',
           eeatRole: 'Executive Coordinator • Memorijal d.o.o. Montenegro',
           eeatText:
-            'Every cross-border repatriation and Belgrade cremation case is personally supervised from hospital mortuary release in Kotor or KCCG Podgorica through final handover. Memorijal d.o.o. is a licensed Montenegrin corporate entity (PIB: 03489217) issuing official EFI QR fiscal invoices for insurance and SEPA/SWIFT settlement.',
+            'Every cross-border repatriation and Belgrade cremation case is personally supervised from hospital mortuary release in Kotor or KCCG Podgorica through final handover. Memorijal d.o.o. operates as a Montenegrin case coordination agency (Activity Codes 82.99 / 52.29) supporting SEPA/SWIFT IBAN and insurance GOP settlement.',
           specBadge: 'OFFICIAL LOGISTICS & CONSULAR SPECIFICATION',
           efiBadge: 'EFI QR Fiscalization',
           relatedCorridors: 'Other International Repatriation Corridors',
@@ -202,7 +202,7 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
             <span>Međunarodna repatrijacija i koordinacija • Crna Gora</span>
           </div>
           <div className="text-right text-[11px]">
-            <span className="block font-semibold">PIB: 03489217 | Tel: {PHONE_DISPLAY} (24/7)</span>
+            <span className="block font-semibold">KD 82.99 / 52.29 | Tel: {PHONE_DISPLAY} (24/7)</span>
             <span>{OFFICIAL_EMAIL} | memorijal.me</span>
           </div>
         </div>
@@ -912,9 +912,9 @@ export const CorridorPageTemplate: React.FC<CorridorPageTemplateProps> = ({
                 {uiLabels.eeatText}
               </p>
               <div className="pt-2 flex flex-wrap gap-2 text-[11px] font-mono text-emerald-200">
-                <span className="bg-white/10 px-3 py-1 rounded">PIB: 03489217</span>
-                <span className="bg-white/10 px-3 py-1 rounded">PDV: 30/31-20948-4</span>
-                <span className="bg-white/10 px-3 py-1 rounded">{uiLabels.efiBadge}</span>
+                <span className="bg-white/10 px-3 py-1 rounded">KD 2010: 82.99 / 52.29</span>
+                <span className="bg-white/10 px-3 py-1 rounded">Tivat, Montenegro</span>
+                <span className="bg-white/10 px-3 py-1 rounded">Non-VAT (Art. 42)</span>
                 <span className="bg-white/10 px-3 py-1 rounded">SWIFT / SEPA IBAN</span>
               </div>
             </div>

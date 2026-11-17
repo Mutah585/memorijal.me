@@ -30,6 +30,7 @@ import { NotFound } from './pages/NotFound';
 import { sanitizeInternalPath } from './utils/security';
 import { CorridorPageTemplate } from './pages/templates/CorridorPageTemplate';
 import { LocationPageTemplate } from './pages/templates/LocationPageTemplate';
+import { LegalPageTemplate } from './pages/templates/LegalPageTemplate';
 import { DistressTriageView } from './components/DistressTriageView';
 import { OfflineCallFallback } from './components/OfflineCallFallback';
 
@@ -291,6 +292,13 @@ export function App() {
               onOpenModal={() => setModalOpen(true)}
             />
           </>
+        ) : currentRoute.category === 'legal' ? (
+          <LegalPageTemplate
+            locale={currentLocale}
+            route={currentRoute}
+            onNavigate={handleNavigate}
+            onOpenModal={() => setModalOpen(true)}
+          />
         ) : (
           currentRoute.category === 'location' ||
           currentRoute.category === 'mortuary' ||

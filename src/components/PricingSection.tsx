@@ -7,6 +7,7 @@ import {
   PRICING_CLARIFICATION_NOTE,
   buildPackageWhatsAppHref,
 } from '../data/pricing';
+import { LEGAL_CREDENTIALS, getCrpsPibDisplay } from '../config/legalCredentials';
 
 interface PricingSectionProps {
   lang: Language;
@@ -23,8 +24,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ lang }) => {
           subtitle:
             'Каждая процедура оформляется официальным фискальным счетом Черногории (EFI QR) с прямой оплатой SEPA/SWIFT или по гарантийному письму страховой компании (GOP).',
           startingLabel: 'Базовый тариф пакета',
-          fiscalNote:
-            'Официальная регистрация DOO • PIB 03489217 • Прямой договор и фискальный чек EFI QR',
+          fiscalNote: `Memorijal d.o.o. (${LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT}) • ${getCrpsPibDisplay('ru')}`,
         }
       : locale === 'mne'
       ? {
@@ -33,8 +33,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ lang }) => {
           subtitle:
             'Svaka procedura se fakturiše uz zvanični crnogorski EFI QR fiskalni račun, SEPA/SWIFT IBAN uplatu ili direktno pokriće međunarodnog osiguranja (GOP).',
           startingLabel: 'Početna cijena paketa',
-          fiscalNote:
-            'Registrovani DOO • PIB 03489217 • Zvanični ugovor i EFI QR fiskalni račun',
+          fiscalNote: `Memorijal d.o.o. (${LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT}) • ${getCrpsPibDisplay('mne')}`,
         }
       : {
           eyebrow: 'FISCAL TRANSPARENCY & OFFICIAL TARIFF TIERS (2026)',
@@ -42,8 +41,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ lang }) => {
           subtitle:
             'Every case is itemized on an official Montenegrin EFI QR fiscal invoice, settled via corporate SEPA/SWIFT IBAN transfer or direct insurance Guarantee of Payment (GOP).',
           startingLabel: 'Starting Package Rate',
-          fiscalNote:
-            'Licensed Montenegrin DOO • PIB 03489217 • Official EFI QR Fiscal Invoice',
+          fiscalNote: `Memorijal d.o.o. (${LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT}) • ${getCrpsPibDisplay('en')}`,
         };
 
   return (

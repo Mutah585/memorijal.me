@@ -2,6 +2,7 @@ import type { Language } from '../i18n/translations.ts';
 import { CORRIDOR_ROUTES } from './seo-corridors.ts';
 import { LOCATION_ROUTES, RESOURCE_ROUTES } from './seo-locations-resources.ts';
 import { CLUSTER_ROUTES } from './seo-clusters-d.ts';
+import { LEGAL_ROUTES } from './seo-legal.ts';
 
 export type LocaleSlug = 'en' | 'ru' | 'mne';
 
@@ -15,7 +16,8 @@ export type RouteCategory =
   | 'transit'
   | 'assistance'
   | 'cemetery'
-  | 'guide';
+  | 'guide'
+  | 'legal';
 
 export interface FAQItem {
   question: string;
@@ -1113,6 +1115,7 @@ export const ALL_SEO_ROUTES: SeoRouteEntry[] = [
   ...LOCATION_ROUTES,
   ...RESOURCE_ROUTES,
   ...CLUSTER_ROUTES,
+  ...LEGAL_ROUTES,
 ];
 
 export function buildLocalizedPath(locale: LocaleSlug, routePath: string): string {

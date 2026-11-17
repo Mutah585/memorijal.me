@@ -100,6 +100,11 @@ const SITEMAP_ROUTES: SitemapRouteConfig[] = [
   { path: '/guides/power-of-attorney-repatriation/', priority: '0.9', changefreq: 'weekly' },
   { path: '/guides/autopsy-obdukcija-montenegro/', priority: '0.85', changefreq: 'weekly' },
   { path: '/guides/urn-air-cabin-transport-rules/', priority: '0.85', changefreq: 'weekly' },
+
+  // 10. Legal & Regulatory Compliance Hub (/legal/) (3 routes)
+  { path: '/legal/terms-of-service/', priority: '0.4', changefreq: 'monthly' },
+  { path: '/legal/privacy-gdpr/', priority: '0.4', changefreq: 'monthly' },
+  { path: '/legal/regulatory-disclosure/', priority: '0.4', changefreq: 'monthly' },
 ];
 
 const LOCALES: Array<{ slug: 'en' | 'ru' | 'mne'; hreflang: string }> = [

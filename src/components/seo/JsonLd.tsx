@@ -7,6 +7,7 @@ import {
 } from '../../data/seo-routes';
 import { STANDARD_PRICING_PACKAGES } from '../../data/pricing';
 import { safeJsonLdSerialize } from '../../utils/security';
+import { LEGAL_CREDENTIALS } from '../../config/legalCredentials';
 
 interface JsonLdProps {
   locale: LocaleSlug;
@@ -64,6 +65,12 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
         : locale === 'mne'
         ? 'Specijalizovane usluge'
         : 'Core Repatriation & Cremation Services'
+      : route.category === 'legal'
+      ? locale === 'ru'
+        ? 'Правовая информация и комплаенс'
+        : locale === 'mne'
+        ? 'Pravne informacije i usklađenost'
+        : 'Legal & Regulatory Compliance'
       : locale === 'ru'
       ? 'Информация и регламент'
       : locale === 'mne'
@@ -78,9 +85,7 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
     route.id.includes('opsta-bolnica') ||
     route.id.includes('kccg');
 
-  const orgTypes = isMortuaryRoute
-    ? ['FuneralService', 'EmergencyService', 'MedicalBusiness']
-    : ['FuneralService', 'EmergencyService'];
+  const orgTypes = ['FuneralService', 'EmergencyService'];
 
   // 1. Organization / FuneralService & EmergencyService Schema
   const funeralServiceSchema: Record<string, unknown> = {
@@ -88,15 +93,14 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
     '@type': orgTypes,
     '@id': `${SITE_ORIGIN}/#organization`,
     name: 'Memorijal d.o.o. — International Repatriation & Cremation Montenegro',
-    legalName: 'Memorijal d.o.o.',
+    legalName: LEGAL_CREDENTIALS.COMPANY_NAME,
     url: canonicalUrl,
     logo: 'https://memorijal.me/assets/branding/emblem-crest.png',
     image: 'https://memorijal.me/assets/branding/emblem-crest.png',
     telephone: '+38268914816',
     email: 'dispatch@memorijal.me',
     priceRange: 'from €450',
-    taxID: '03489217',
-    vatID: '30/31-20948-4',
+    ...(LEGAL_CREDENTIALS.ISSUED_PIB ? { taxID: LEGAL_CREDENTIALS.ISSUED_PIB } : {}),
     description:
       'Authorized international repatriation coordination agency in Montenegro dispatching accredited licensed carriers, hermetic zinc soldering, consular clearances, and IATA Cargo HUM air bookings.',
     knowsAbout: isMortuaryRoute
@@ -261,12 +265,14 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
           __html: safeJsonLdSerialize(faqSchema),
         }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: safeJsonLdSerialize(howToSchema),
-        }}
-      />
+      {pageData.walkthroughSteps.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: safeJsonLdSerialize(howToSchema),
+          }}
+        />
+      )}
     </>
   );
 };
