@@ -15,7 +15,6 @@ import {
   TranslationContent,
   PHONE_DISPLAY,
   PHONE_HREF,
-  SECONDARY_PHONE_DISPLAY,
   WHATSAPP_NUMBER,
   OFFICIAL_EMAIL,
 } from '../i18n/translations';
@@ -141,8 +140,8 @@ Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
             <div className="pt-1 flex items-center gap-2 text-xs text-emerald-300 font-medium">
               <FileCheck className="w-4 h-4 shrink-0" />
               <span>
-                <GlossaryTerm termKey="Cargo HUM" locale={locale}>IATA Cargo HUM</GlossaryTerm> •{' '}
-                <GlossaryTerm termKey="Sprovodnica" locale={locale}>Sprovodnica</GlossaryTerm> •{' '}
+                <GlossaryTerm termKey="Cargo HUM" locale={locale} variant="dark">IATA Cargo HUM</GlossaryTerm> •{' '}
+                <GlossaryTerm termKey="Sprovodnica" locale={locale} variant="dark">Sprovodnica</GlossaryTerm> •{' '}
                 {lang === 'RU'
                   ? 'По доверенности'
                   : lang === 'MNE'
@@ -209,17 +208,6 @@ Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
                     : '(24/7 Duty)'}
                 </span>
               </a>
-              <div className="flex items-center gap-2.5 text-slate-300">
-                <Phone className="w-4 h-4 text-slate-400 shrink-0" />
-                <span>
-                  {SECONDARY_PHONE_DISPLAY}{' '}
-                  {lang === 'RU'
-                    ? '(Офис Подгорица)'
-                    : lang === 'MNE'
-                    ? '(Kancelarija Podgorica)'
-                    : '(Podgorica Desk)'}
-                </span>
-              </div>
               <a
                 href={whatsappUrl}
                 target="_blank"
@@ -279,10 +267,6 @@ Bank & GOP Settlements: SEPA / SWIFT IBAN Transfer`;
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                 <span>{t.footer.officeTivat}</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                <span>{t.footer.officePodgorica}</span>
               </div>
               <div className="p-3 rounded-lg bg-white/5 border border-white/10 text-[11px] text-slate-300 font-mono space-y-2">
                 <div>{t.footer.fiscalNotice}</div>

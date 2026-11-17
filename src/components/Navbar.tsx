@@ -79,10 +79,10 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const topBarCoordinatorLabel =
     lang === 'RU'
-      ? 'Координатор 24/7 (Тиват и Подгорица):'
+      ? 'Координатор 24/7 (Тиват • Вся ЧГ):'
       : lang === 'MNE'
-      ? 'Koordinator 24/7 (Tivat i Podgorica):'
-      : 'Coordinator 24/7 (Tivat & Podgorica):';
+      ? 'Koordinator 24/7 (Tivat • Crna Gora):'
+      : 'Coordinator 24/7 (Tivat • Montenegro):';
 
   // Dynamic Dispatch Status (Local Podgorica / Tivat Time)
   const dispatchStatus = getDispatchStatus(lang);

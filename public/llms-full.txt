@@ -23,9 +23,8 @@
   - **CRPS / PIB Status**: Registration with CRPS Podgorica in progress / PIB & EFI fiscalization assigned upon issuance
   - **VAT / PDV Status**: Not a VAT (PDV) payer pursuant to Art. 42 of the Law on Value Added Tax of Montenegro (*Zakon o porezu na dodatu vrijednost*)
   - **Settlements**: IBAN/SWIFT international wire compliance and direct B2B Guarantee of Payment (`GOP`) settlement.
-- **Operational Hubs**:
-  1. **Coastal Boka Bay Dispatch Center (Tivat / Kotor)**: Jadranska Magistrala bb, Tivat 85320, Montenegro (10 minutes from Tivat Airport `TIV` and Regional Hospital Kotor Mortuary).
-  2. **Capital Consular, Forensic & Cargo Hub (Podgorica)**: Bulevar Svetog Petra Cetinjskog, Podgorica 81000, Montenegro (5 minutes from KCCG Forensic Pathology and Foreign Embassies; 15 minutes from Podgorica Airport `TGD` Cargo Terminal).
+- **Headquarters & Nationwide Coverage**:
+  - **Primary Headquarters**: Tivat, Montenegro (10 minutes from Tivat Airport `TIV` and Regional Hospital Kotor Mortuary), with rapid 24/7 mobile dispatch across all municipalities including Podgorica (KCCG Forensic Pathology, foreign embassies, and Podgorica Airport `TGD` Cargo Terminal), Budva, Bar, Herceg Novi, and Berane.
 
 ---
 

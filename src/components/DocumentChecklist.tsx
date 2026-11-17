@@ -270,7 +270,7 @@ export const DocumentChecklist: React.FC<DocumentChecklistProps> = ({ locale }) 
                     : 'Case Handover & Mortuary Clothing Dossier'}
                 </h3>
                 <p className="text-xs text-slateMuted mt-1">
-                  Tivat & Podgorica • Email: {OFFICIAL_EMAIL}
+                  Tivat, Montenegro • Email: {OFFICIAL_EMAIL}
                 </p>
               </div>
               <button

@@ -60,12 +60,14 @@ const GLOSSARY_DEFINITIONS: Record<GlossaryKey, GlossaryDefinition> = {
 interface GlossaryTermProps {
   termKey: GlossaryKey;
   locale?: LocaleSlug;
+  variant?: 'light' | 'dark';
   children?: React.ReactNode;
 }
 
 export const GlossaryTerm: React.FC<GlossaryTermProps> = ({
   termKey,
   locale = 'en',
+  variant = 'light',
   children,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -104,10 +106,20 @@ export const GlossaryTerm: React.FC<GlossaryTermProps> = ({
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
-      <span className="border-b border-dotted border-sapphire text-slateDeep font-medium">
+      <span
+        className={
+          variant === 'dark'
+            ? 'text-slate-200 border-b border-dotted border-slate-400 hover:text-white font-medium transition-colors'
+            : 'text-slate-900 border-b border-dotted border-slate-400 hover:text-sapphire font-medium transition-colors'
+        }
+      >
         {children || termKey}
       </span>
-      <HelpCircle className="w-3.5 h-3.5 text-sapphire/70 inline-block shrink-0 -translate-y-0.5" />
+      <HelpCircle
+        className={`w-3.5 h-3.5 inline-block shrink-0 -translate-y-0.5 ${
+          variant === 'dark' ? 'text-emerald-300/80' : 'text-sapphire/70'
+        }`}
+      />
 
       {isOpen && (
         <span

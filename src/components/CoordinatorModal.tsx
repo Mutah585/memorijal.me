@@ -298,8 +298,8 @@ export const CoordinatorModal: React.FC<CoordinatorModalProps> = ({
               <Shield className="w-4 h-4" />
               <span>
                 {lang === 'RU'
-                  ? 'MEMORIJAL d.o.o. • Тиват / Подгорица'
-                  : 'MEMORIJAL d.o.o. • Tivat / Podgorica'}
+                  ? 'MEMORIJAL d.o.o. • Тиват • Вся Черногория'
+                  : 'MEMORIJAL d.o.o. • Tivat • Montenegro'}
               </span>
             </div>
             <h2 id="modal-title" className="font-serif text-2xl sm:text-3xl font-semibold text-white">

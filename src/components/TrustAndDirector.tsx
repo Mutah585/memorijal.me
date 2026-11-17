@@ -390,7 +390,7 @@ export const TrustAndDirector: React.FC<TrustAndDirectorProps> = ({
                         Maksym Kovalenko
                       </span>
                       <span className="block text-[11px] uppercase tracking-widest text-warmStone">
-                        MEMORIJAL d.o.o. • Tivat / Podgorica
+                        MEMORIJAL d.o.o. • Tivat, Montenegro
                       </span>
                     </div>
 

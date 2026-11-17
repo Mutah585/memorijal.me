@@ -68,10 +68,10 @@ export const NotFound: React.FC<NotFoundProps> = ({
         </div>
         <p className="text-xs text-slateMuted mb-3">
           {lang === 'RU'
-            ? 'Лицензированная служба репатриации (Тиват / Подгорица). Круглосуточный приём звонков и WhatsApp.'
+            ? 'Агентство международной репатриации (Тиват • Вся Черногория). Круглосуточный приём звонков и WhatsApp.'
             : lang === 'MNE'
-            ? 'Licencirana služba repatrijacije (Tivat / Podgorica). Prijem poziva i WhatsApp 24/7.'
-            : 'Licensed international repatriation service (Tivat / Podgorica). Direct dispatch 24/7.'}
+            ? 'Agencija za međunarodnu repatrijaciju (Tivat • Cijela Crna Gora). Prijem poziva i WhatsApp 24/7.'
+            : 'International repatriation coordination agency (Tivat • All Montenegro). Direct dispatch 24/7.'}
         </p>
         <div className="flex items-center justify-between pt-3 border-t border-stoneBorder">
           <span className="font-mono text-sm font-semibold text-slateDeep">

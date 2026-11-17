@@ -194,7 +194,6 @@ export interface TranslationContent {
     emergencyDispatchTitle: string;
     legalEntityTitle: string;
     officeTivat: string;
-    officePodgorica: string;
     fiscalNotice: string;
     copyright: string;
     privacyNote: string;
@@ -205,7 +204,6 @@ export interface TranslationContent {
 
 export const PHONE_DISPLAY = CRED_PHONE_DISPLAY;
 export const PHONE_HREF = CRED_PHONE_HREF;
-export const SECONDARY_PHONE_DISPLAY = '+382 20 664 112';
 export const WHATSAPP_NUMBER = WHATSAPP_RAW;
 export const OFFICIAL_EMAIL = CRED_OFFICIAL_EMAIL;
 
@@ -217,7 +215,7 @@ export const translations: Record<Language, TranslationContent> = {
     },
     topBar: {
       badge247: '24/7 Support Available',
-      emergencyLine: '24/7 Duty Coordinator (Tivat & Podgorica):',
+      emergencyLine: '24/7 Duty Coordinator (Tivat • Montenegro):',
       jurisdiction: 'Licensed International Repatriation Agency • Montenegro',
       whatsappCta: 'WhatsApp 24/7',
       callCta: 'Direct Call',
@@ -251,7 +249,7 @@ export const translations: Record<Language, TranslationContent> = {
       captionSubtitle: 'Dignified cross-border coordination across all Montenegrin municipalities',
       protocolCard: {
         header: 'Live Operations & Legal Protocol',
-        status: 'Duty Desk Active • Tivat / Podgorica',
+        status: 'Duty Desk Active • Tivat • All Montenegro',
         items: [
           {
             label: 'Hospital & Morgue Clearance',
@@ -693,8 +691,8 @@ export const translations: Record<Language, TranslationContent> = {
       quickLinksTitle: 'Procedures & Navigation',
       emergencyDispatchTitle: '24/7 Duty Operations',
       legalEntityTitle: 'Registered Legal Entity',
-      officeTivat: 'Coastal Operations: Tivat & Kotor (Boka Kotorska), Montenegro',
-      officePodgorica: 'Consular & Clinical Hub: Podgorica (near KCCG & Embassies), Montenegro',
+      officeTivat:
+        'Headquarters: Tivat, Montenegro (nationwide dispatch across KCCG Podgorica, Kotor, Bar & Berane hospitals)',
       fiscalNotice: 'MEMORIJAL d.o.o. (Tivat, Montenegro) • KD 82.99 / 52.29 • CRPS registration in progress • SWIFT/SEPA IBAN',
       copyright: '© 2026 Memorijal d.o.o. Montenegro. All rights reserved.',
       privacyNote: 'Strict confidentiality & GDPR / Montenegrin Personal Data Protection compliance.',
@@ -709,7 +707,7 @@ export const translations: Record<Language, TranslationContent> = {
     },
     topBar: {
       badge247: 'Дежурная линия 24/7',
-      emergencyLine: 'Координатор 24/7 (Тиват и Подгорица):',
+      emergencyLine: 'Координатор 24/7 (Тиват • Вся Черногория):',
       jurisdiction: 'Лицензированная служба репатриации и кремации • Черногория',
       whatsappCta: 'WhatsApp 24/7',
       callCta: 'Позвонить',
@@ -743,7 +741,7 @@ export const translations: Record<Language, TranslationContent> = {
       captionSubtitle: 'Официальная координация во всех муниципалитетах Черногории',
       protocolCard: {
         header: 'Оперативный и правовой протокол',
-        status: 'Дежурная служба активна • Тиват / Подгорица',
+        status: 'Дежурная служба активна • Тиват • Вся Черногория',
         items: [
           {
             label: 'Взаимодействие с больницами и моргами',
@@ -1185,8 +1183,8 @@ export const translations: Record<Language, TranslationContent> = {
       quickLinksTitle: 'Навигация и процедуры',
       emergencyDispatchTitle: 'Дежурная служба 24/7',
       legalEntityTitle: 'Юридические реквизиты',
-      officeTivat: 'Оперативный центр на побережье: Тиват и Котор (Бока-Которский залив), Черногория',
-      officePodgorica: 'Консульский и клинический отдел: Подгорица (рядом с KCCG и посольствами), Черногория',
+      officeTivat:
+        'Головной офис: Тиват, Черногория (оперативный выезд по всей стране: KCCG Подгорица, больницы Котора, Бара, Беране)',
       fiscalNotice: 'MEMORIJAL d.o.o. (Тиват, Черногория) • KD 82.99 / 52.29 • Регистрация CRPS в процессе • SWIFT/SEPA IBAN',
       copyright: '© 2026 Memorijal d.o.o. Черногория. Все права защищены.',
       privacyNote: 'Строгая конфиденциальность и соблюдение законодательства о защите персональных данных.',
@@ -1201,7 +1199,7 @@ export const translations: Record<Language, TranslationContent> = {
     },
     topBar: {
       badge247: 'Dežurna služba 24/7',
-      emergencyLine: 'Dežurni koordinator 24/7 (Tivat i Podgorica):',
+      emergencyLine: 'Dežurni koordinator 24/7 (Tivat • Crna Gora):',
       jurisdiction: 'Licencirana agencija za međunarodnu repatrijaciju i kremaciju • Crna Gora',
       whatsappCta: 'WhatsApp 24/7',
       callCta: 'Pozovite odmah',
@@ -1235,7 +1233,7 @@ export const translations: Record<Language, TranslationContent> = {
       captionSubtitle: 'Dostojanstvena prekogranična koordinacija u svim opštinama Crne Gore',
       protocolCard: {
         header: 'Operativni i zakonski protokol',
-        status: 'Dežurni centar aktivan • Tivat / Podgorica',
+        status: 'Dežurni centar aktivan • Tivat • Cijela Crna Gora',
         items: [
           {
             label: 'Bolnice i kliničke mrtvačnice',
@@ -1678,8 +1676,8 @@ export const translations: Record<Language, TranslationContent> = {
       quickLinksTitle: 'Procedure i navigacija',
       emergencyDispatchTitle: 'Dežurni centar 24/7',
       legalEntityTitle: 'Registrovano pravno lice',
-      officeTivat: 'Primorski operativni centar: Tivat i Kotor (Boka Kotorska), Crna Gora',
-      officePodgorica: 'Konzularni i klinički centar: Podgorica (uz KCCG i ambasade), Crna Gora',
+      officeTivat:
+        'Sjedište agencije: Tivat, Crna Gora (operativni izlazak na teren širom zemlje: KCCG Podgorica, bolnice Kotor, Bar, Berane)',
       fiscalNotice: 'MEMORIJAL d.o.o. (Tivat, Crna Gora) • KD 82.99 / 52.29 • Registracija CRPS u toku • SWIFT/SEPA IBAN',
       copyright: '© 2026 Memorijal d.o.o. Crna Gora. Sva prava zadržana.',
       privacyNote: 'Stroga povjerljivost i usklađenost sa Zakonom o zaštiti podataka o ličnosti i GDPR-om.',

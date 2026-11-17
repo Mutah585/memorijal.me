@@ -9,7 +9,7 @@ ORG:Memorijal d.o.o. Crna Gora
 TEL;TYPE=CELL,VOICE,PREF:${PHONE_E164}
 EMAIL;TYPE=WORK:${OFFICIAL_EMAIL}
 URL:https://memorijal.me
-NOTE:Dežurna služba međunarodne repatrijacije i kremacije. Tivat / Podgorica 24/7.
+NOTE:Dežurna služba međunarodne repatrijacije i kremacije. Tivat • Cijela Crna Gora 24/7.
 END:VCARD`;
 
 export function downloadVCard(

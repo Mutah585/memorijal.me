@@ -24,15 +24,15 @@ export function getDispatchStatus(lang: Language): DispatchStatus {
 
   const statusText = isNight
     ? lang === 'RU'
-      ? 'Ночная экстренная линия активна • Тиват / Подгорица'
+      ? 'Ночная экстренная линия активна • Тиват • Вся Черногория'
       : lang === 'MNE'
-      ? 'Noćna dežurna linija aktivna • Tivat / Podgorica'
-      : 'Night emergency dispatch active • Tivat / Podgorica'
+      ? 'Noćna dežurna linija aktivna • Tivat • Cijela Crna Gora'
+      : 'Night emergency dispatch active • Tivat • All Montenegro'
     : lang === 'RU'
-    ? 'Дежурная служба на связи 24/7 • Тиват / Подгорица'
+    ? 'Дежурная служба на связи 24/7 • Тиват • Вся Черногория'
     : lang === 'MNE'
-    ? 'Dežurna služba aktivna 24/7 • Tivat / Podgorica'
-    : 'Emergency dispatch online 24/7 • Tivat / Podgorica';
+    ? 'Dežurna služba aktivna 24/7 • Tivat • Cijela Crna Gora'
+    : 'Emergency dispatch online 24/7 • Tivat • All Montenegro';
 
   return { isNight, statusText };
 }
