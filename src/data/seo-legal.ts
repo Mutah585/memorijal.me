@@ -64,7 +64,7 @@ export const LEGAL_ROUTES: SeoRouteEntry[] = [
     locales: {
       en: makeLegalPageData(
         'Terms of Service & Mandate Agreement | Memorijal d.o.o.',
-        'Public Offer, Mandate Agreement (ZOO CG Art. 821–843), pricing disclaimer, liability cap, and Montenegro jurisdiction for Memorijal d.o.o.',
+        'Public Offer, Mandate Agreement (ZOO CG Art. 842–863), pricing disclaimer, liability cap, and Montenegro jurisdiction for Memorijal d.o.o.',
         ['Memorijal Terms of Service', 'Mandate Agreement Montenegro', 'Repatriation Legal Terms'],
         'Terms of Service & Mandate',
         'PUBLIC OFFER • MANDATE AGREEMENT • ZOO MONTENEGRO',
@@ -73,7 +73,7 @@ export const LEGAL_ROUTES: SeoRouteEntry[] = [
       ),
       ru: makeLegalPageData(
         'Публичная оферта и договор поручения | Memorijal d.o.o.',
-        'Публичная оферта, агентский договор поручения (ст. 821–843 ZOO ЧГ), порядок расчетов, ограничение ответственности и юрисдикция Черногории.',
+        'Публичная оферта, агентский договор поручения (ст. 842–863 ZOO ЧГ), порядок расчетов, ограничение ответственности и юрисдикция Черногории.',
         ['Публичная оферта Memorijal', 'Договор поручения Черногория', 'Условия оказания услуг'],
         'Публичная оферта и оговорки',
         'ПУБЛИЧНАЯ ОФЕРТА • ДОГОВОР ПОРУЧЕНИЯ • ПРАВО ЧЕРНОГОРИИ',
@@ -82,7 +82,7 @@ export const LEGAL_ROUTES: SeoRouteEntry[] = [
       ),
       mne: makeLegalPageData(
         'Opšti uslovi i Ugovor o nalogu | Memorijal d.o.o.',
-        'Javna ponuda, Ugovor o nalogu (ZOO CG čl. 821–843), prefakturisanje troškova, ograničenje odgovornosti i nadležnost suda u Crnoj Gori.',
+        'Javna ponuda, Ugovor o nalogu (ZOO CG čl. 842–863), prefakturisanje troškova, ograničenje odgovornosti i nadležnost suda u Crnoj Gori.',
         ['Opšti uslovi poslovanja Memorijal', 'Ugovor o nalogu Crna Gora'],
         'Opšti uslovi i Ugovor o nalogu',
         'JAVNA PONUDA • UGOVOR O NALOGU • ZOO CRNA GORA',

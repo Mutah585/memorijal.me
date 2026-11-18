@@ -143,7 +143,6 @@ function generateSitemapXml(): string {
     <priority>${route.priority}</priority>
     <xhtml:link rel="alternate" hreflang="en" href="${enHref}" />
     <xhtml:link rel="alternate" hreflang="ru" href="${ruHref}" />
-    <xhtml:link rel="alternate" hreflang="cnr-ME" href="${mneHref}" />
     <xhtml:link rel="alternate" hreflang="sr-ME" href="${mneHref}" />
     <xhtml:link rel="alternate" hreflang="x-default" href="${enHref}" />
   </url>`);

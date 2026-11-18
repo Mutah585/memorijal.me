@@ -89,10 +89,29 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
     route.id.includes('opsta-bolnica') ||
     route.id.includes('kccg');
 
-  const orgTypes = ['FuneralService', 'ProfessionalService'];
+  const orgTypes = ['LocalBusiness', 'Organization'];
 
-  // 1. Organization / FuneralService & ProfessionalService Schema
-  const funeralServiceSchema: Record<string, unknown> = {
+  const offerItems = ALL_SERVICE_TARIFF_ITEMS.map((item) => ({
+    '@type': 'Offer',
+    itemOffered: {
+      '@type': 'Service',
+      name: item.schemaName,
+      description: item.schemaDescription,
+    },
+    price: String(item.basePriceEur),
+    priceCurrency: 'EUR',
+    priceSpecification: {
+      '@type': 'PriceSpecification',
+      minPrice: String(item.basePriceEur),
+      priceCurrency: 'EUR',
+    },
+    availability: 'https://schema.org/InStock',
+    validFrom: '2026-01-01',
+    description: item.schemaDescription,
+  }));
+
+  // 1. LocalBusiness & Organization Schema
+  const localBusinessSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': orgTypes,
     '@id': `${SITE_ORIGIN}/#organization`,
@@ -123,23 +142,12 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
           'Consular Laissez-Passer Mortuaire',
           'IATA Cargo HUM Air Freight',
         ],
-    makesOffer: ALL_SERVICE_TARIFF_ITEMS.map((item) => ({
-      '@type': 'Offer',
-      itemOffered: {
-        '@type': 'Service',
-        name: item.schemaName,
-      },
-      price: String(item.basePriceEur),
-      priceCurrency: 'EUR',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        minPrice: String(item.basePriceEur),
-        priceCurrency: 'EUR',
-      },
-      availability: 'https://schema.org/InStock',
-      validFrom: '2026-01-01',
-      description: item.schemaDescription,
-    })),
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Memorijal d.o.o. Agency Services (KD 82.99)',
+      itemListElement: offerItems,
+    },
+    makesOffer: offerItems,
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Tivat',
@@ -266,7 +274,7 @@ export const JsonLd: React.FC<JsonLdProps> = ({ locale, route }) => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: safeJsonLdSerialize(funeralServiceSchema),
+          __html: safeJsonLdSerialize(localBusinessSchema),
         }}
       />
       <script

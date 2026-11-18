@@ -83,11 +83,10 @@ export const MetaManager: React.FC<MetaManagerProps> = ({ locale, route }) => {
     }
     canonicalLink.setAttribute('href', canonicalUrl);
 
-    // 7. Bidirectional hreflang Alternate Links (en, ru, cnr-ME, sr-ME, x-default)
+    // 7. Bidirectional hreflang Alternate Links (en, ru, sr-ME, x-default)
     const hreflangMap: { hreflang: string; href: string }[] = [
       { hreflang: 'en', href: enUrl },
       { hreflang: 'ru', href: ruUrl },
-      { hreflang: 'cnr-ME', href: mneUrl },
       { hreflang: 'sr-ME', href: mneUrl },
       { hreflang: 'x-default', href: enUrl },
     ];

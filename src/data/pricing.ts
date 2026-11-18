@@ -962,14 +962,14 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
         anchorId: 'pre-need-vault',
         schemaName: 'Pre-Need Lifetime Mandate, Protected Legacy Instructions & Time Capsules',
         schemaDescription:
-          'Starting price for lifetime legal directives (Ugovor o nalogu, čl. 821–843 ZOO CG), protected archive of sealed instructions for designated heirs, and scheduled time capsules',
+          'Starting price for lifetime legal directives (Ugovor o nalogu, čl. 842–863 ZOO CG), protected archive of sealed instructions for designated heirs, and scheduled time capsules',
         locales: {
           en: {
             title: 'Pre-Need Lifetime Mandate, Protected Legacy Instructions & Time Capsules',
             badge: 'Lifetime Mandate • Protected Archive',
             formattedPrice: `From${NBSP}€190`,
             scope:
-              'Lifetime legal directives held under a civil mandate (Ugovor o nalogu, čl. 821–843 ZOO CG), protected archive of sealed instructions and legacy records transmitted to designated heirs strictly upon presentation of an official death certificate, plus scheduled video/letter time capsules.',
+              'Lifetime legal directives held under a civil mandate (Ugovor o nalogu, čl. 842–863 ZOO CG), protected archive of sealed instructions and legacy records transmitted to designated heirs strictly upon presentation of an official death certificate, plus scheduled video/letter time capsules.',
             disbursementNote: 'One-time setup or annual fiduciary custody mandate',
             whatsappMessage:
               'Hello Memorijal d.o.o., I would like information and a quote for the Pre-Need Lifetime Mandate, Protected Legacy Instructions & Time Capsules (From €190).',
@@ -979,7 +979,7 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
             badge: 'Прижизненный мандат • Защищённый архив',
             formattedPrice: `От${NBSP}190${NBSP}€`,
             scope:
-              'Прижизненные юридические распоряжения по договору поручения (Ugovor o nalogu, čl. 821–843 ZOO CG), защищённый архив запечатанных инструкций и памятных материалов для передачи назначенным наследникам строго после предъявления официального свидетельства о смерти, а также отложенная доставка видео-наследия и писем близким.',
+              'Прижизненные юридические распоряжения по договору поручения (Ugovor o nalogu, čl. 842–863 ZOO CG), защищённый архив запечатанных инструкций и памятных материалов для передачи назначенным наследникам строго после предъявления официального свидетельства о смерти, а также отложенная доставка видео-наследия и писем близким.',
             disbursementNote: 'Единоразовая регистрация поручения и защищенного архива инструкций',
             whatsappMessage:
               'Здравствуйте, Memorijal d.o.o.! Интересует Прижизненное волеизъявление (Pre-Need), защищённый архив инструкций и Капсулы времени (От 190 €).',
@@ -989,7 +989,7 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
             badge: 'Doživotni nalog • Zaštićena arhiva',
             formattedPrice: `Od${NBSP}190${NBSP}€`,
             scope:
-              'Doživotne pravne instrukcije po ugovoru o nalogu (Ugovor o nalogu, čl. 821–843 ZOO CG), zaštićena arhiva zapečaćenih uputstava koja se predaju imenovanim nasljednicima isključivo po podnošenju zvaničnog izvoda iz matične knjige umrlih, kao i odložena isporuka video-poruka porodici.',
+              'Doživotne pravne instrukcije po ugovoru o nalogu (Ugovor o nalogu, čl. 842–863 ZOO CG), zaštićena arhiva zapečaćenih uputstava koja se predaju imenovanim nasljednicima isključivo po podnošenju zvaničnog izvoda iz matične knjige umrlih, kao i odložena isporuka video-poruka porodici.',
             disbursementNote: 'Jednokratna uspostava ugovora o nalogu i zaštićene arhive uputstava',
             whatsappMessage:
               'Poštovani Memorijal d.o.o., interesuje me Pre-Need doživotno punomoćje, zaštićena arhiva uputstava i Vremenske kapsule (Od 190 €).',

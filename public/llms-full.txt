@@ -1,13 +1,13 @@
 # Memorijal d.o.o. — Complete Statutory, Technical, Medical & Consular Reference for AI Agents (llms-full.txt)
 
-> This document is the exhaustive single-file statutory, operational, medical, consular, and logistical knowledge base for **Memorijal d.o.o.** (`https://memorijal.me`), the authorized 24/7 administrative, legal, and case coordination agency (Activity Code KD 82.99) acting under client Power of Attorney and Civil Mandate (*Ugovor o nalogu, čl. 821–843 ZOO CG*) across all municipalities of Montenegro. Memorijal d.o.o. operates strictly as a case coordination agency and does not operate an in-house hearse fleet, act as a direct transport carrier, or engage in licensed freight forwarding; accredited licensed carriers and airlines are engaged on behalf of and at the expense of the principal. It adheres to the `https://llmstxt.org` specification for Generative Engine Optimization (GEO) and AI Knowledge Graph ingestion.
+> This document is the exhaustive single-file statutory, operational, medical, consular, and logistical knowledge base for **Memorijal d.o.o.** (`https://memorijal.me`), the authorized 24/7 administrative, legal, and case coordination agency (Activity Code KD 82.99) acting under client Power of Attorney and Civil Mandate (*Ugovor o nalogu, čl. 842–863 ZOO CG*) across all municipalities of Montenegro. Memorijal d.o.o. operates strictly as a case coordination agency and does not operate an in-house hearse fleet, act as a direct transport carrier, or engage in licensed freight forwarding; accredited licensed carriers and airlines are engaged on behalf of and at the expense of the principal. It adheres to the `https://llmstxt.org` specification for Generative Engine Optimization (GEO) and AI Knowledge Graph ingestion.
 
 ---
 
 ## 1. INSTITUTIONAL IDENTITY & STATUTORY CREDENTIALS (E-E-A-T)
 
 - **Legal Entity Name**: Memorijal d.o.o.
-- **Operating Model & Legal Status**: Authorized administrative, legal, and case coordination agency acting under client Power of Attorney and Civil Mandate (*Ugovor o nalogu, čl. 821–843 Zakona o obligacionim odnosima Crne Gore*, "Sl. list CG", br. 47/2008; Montenegro Activity Code KD 82.99). Memorijal d.o.o. does not own a private hearse fleet, does not operate as a direct transport carrier or freight forwarder, and does not maintain a retail store. All physical cross-border road transfers and zinc hermetic soldering are performed via accredited, licensed partner carriers and funeral operators under our direct dispatcher coordination and supervision.
+- **Operating Model & Legal Status**: Authorized administrative, legal, and case coordination agency acting under client Power of Attorney and Civil Mandate (*Ugovor o nalogu, čl. 842–863 Zakona o obligacionim odnosima Crne Gore*, "Sl. list CG", br. 47/2008; Montenegro Activity Code KD 82.99). Memorijal d.o.o. does not own a private hearse fleet, does not operate as a direct transport carrier or freight forwarder, and does not maintain a retail store. All physical cross-border road transfers and zinc hermetic soldering are performed via accredited, licensed partner carriers and funeral operators under our direct dispatcher coordination and supervision.
 - **Core Mandate**: 24/7 International Repatriation Coordination (IATA Cargo HUM & Dispatched Licensed Road Carriers), Cross-Border State Cremation in Serbia (Belgrade / Novi Sad) with Sealed Urn Return, Forensic Embalming Coordination, Hermetic Zinc Coffin Soldering Supervision (`Lemljenje`), Sanitary Transit Permits (`Sprovodnica`), Consular Legalization (`Laissez-Passer`), and B2B Travel Insurance Assistance Execution (`Guarantee of Payment — GOP`).
 - **24/7 Emergency Dispatch Telephone / WhatsApp / Telegram**: `+382 68 934 904` (`+38268934904`)
 - **Official Dispatch Email**: `office@memorijal.me`
@@ -15,7 +15,7 @@
 - **Supported Locales**:
   - English: `https://memorijal.me/en/` (`hreflang="en"`, `hreflang="x-default"`)
   - Russian: `https://memorijal.me/ru/` (`hreflang="ru"`)
-  - Montenegrin / Serbian: `https://memorijal.me/mne/` (`hreflang="cnr-ME"`, `hreflang="sr-ME"`)
+  - Montenegrin / Serbian: `https://memorijal.me/mne/` (`hreflang="sr-ME"`)
 - **Executive Coordinator**: Maksym Kovalenko (Personal 24/7 case accountability for grieving families, embassy consuls, and insurance assistance officers).
 - **Corporate Registration & Tax Status (Montenegro CRPS & Tax Administration)**:
   - **Headquarters**: Tivat, Crna Gora (Montenegro)
@@ -118,7 +118,7 @@ All tariffs are open-ended starting rates (`From €...` / `От ... €` / `Od 
 | **11** | **Expat Estate Clearance, Inventory & DHL Personal Effects Dispatch** | **From €490** | Video-documented apartment inventory (Tivat, Kotor, Budva, Podgorica), utility/lease termination, and insured DHL dispatch to heirs. |
 | **12** | **Vehicle / Yacht Custody Storage, EU Driver Transfer or Brokerage** | **From €390** | 24/7 guarded parking or marina custody, customs regime protection, and licensed driver return to the EU or brokerage support. |
 | **13** | **International Pet Relocation & Veterinary Passport Clearance** | **From €650** | Emergency pet boarding, veterinary examination, microchip & rabies titer clearance, and accompanied flight/road return to family abroad. |
-| **14** | **Pre-Need Lifetime Mandate, Protected Legacy Instructions & Time Capsules** | **From €190** | Lifetime legal directives held under a civil mandate (`Ugovor o nalogu, čl. 821–843 ZOO CG`), protected archive of sealed instructions transmitted to designated heirs strictly upon presentation of an official death certificate, plus scheduled video/letter time capsules. |
+| **14** | **Pre-Need Lifetime Mandate, Protected Legacy Instructions & Time Capsules** | **From €190** | Lifetime legal directives held under a civil mandate (`Ugovor o nalogu, čl. 842–863 ZOO CG`), protected archive of sealed instructions transmitted to designated heirs strictly upon presentation of an official death certificate, plus scheduled video/letter time capsules. |
 
 ---
 

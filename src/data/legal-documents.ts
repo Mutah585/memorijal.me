@@ -44,12 +44,12 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
             pillarBadge: 'Раздел 1 • Правовая природа поручения',
             heading: '1. Агентский характер деятельности (Ugovor o nalogu)',
             statutes: [
-              'Zakon o obligacionim odnosima Crne Gore ("Sl. list CG", br. 47/2008, ст. 821–843 — Договор поручения)',
+              'Zakon o obligacionim odnosima Crne Gore ("Sl. list CG", br. 47/2008, ст. 842–863 — Договор поручения)',
               'KD 82.99 (Ostale poslovne pomoćne uslužne djelatnosti)',
             ],
             paragraphs: [
               `${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${LEGAL_CREDENTIALS.ACTIVITY_CODES}; ${crpsDisplay}; ${vatNotice}) действует исключительно как независимое агентство по административному, юридическому и организационному сопровождению по поручению семьи (Punomoćnik / Nalogoprimac). Компания не осуществляет коммерческих автомобильных перевозок и не выступает лицензированным экспедитором (špedicija) или транспортным брокером.`,
-              'Все действия в больницах, моргах, муниципальных органах ЗАГС (Matični registar), Санитарной инспекции (Uprava za inspekcijske poslove), дипломатических представительствах и таможенных органах совершаются строго в качестве уполномоченного представителя от имени и за счет Заказчика на основании нотариальной доверенности (Punomoćje) и гражданско-правового договора поручения (Ugovor o nalogu, ст. 821–843 ZOO CG). Договоры физической перевозки и бронирования авиагруза AWB заключаются с лицензированными сторонними перевозчиками/авиакомпаниями от имени и за счет доверителя (prolazne stavke / prefakturisanje troškova).',
+              'Все действия в больницах, моргах, муниципальных органах ЗАГС (Matični registar), Санитарной инспекции (Uprava za inspekcijske poslove), дипломатических представительствах и таможенных органах совершаются строго в качестве уполномоченного представителя от имени и за счет Заказчика на основании нотариальной доверенности (Punomoćje) и гражданско-правового договора поручения (Ugovor o nalogu, ст. 842–863 ZOO CG). Договоры физической перевозки и бронирования авиагруза AWB заключаются с лицензированными сторонними перевозчиками/авиакомпаниями от имени и за счет доверителя (prolazne stavke / prefakturisanje troškova).',
             ],
           },
           {
@@ -57,7 +57,7 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
             pillarBadge: 'Раздел 2 • Тарифы и транзитные расходы',
             heading: '2. Индикативный характер цен и транзитные расходы (Prefakturisanje)',
             statutes: [
-              'Zakon o obligacionim odnosima CG (ст. 821–843 — Возмещение расходов поверенного)',
+              'Zakon o obligacionim odnosima CG (ст. 842–863 — Возмещение расходов поверенного)',
             ],
             paragraphs: [
               'Все цены, калькуляторы (RouteEstimator, RemoteSavingsEstimator, MortuaryTimeTracker) и таблицы тарифов на сайте memorijal.me носят исключительно справочно-индикативный характер (формат «От ...») и не являются публичной офертой с фиксированной ценой (Ponuda).',
@@ -236,7 +236,7 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
             id: 'subcontractor-liability',
             pillarBadge: 'Раздел 2 • Ответственность субподрядчиков',
             heading: '2. Разграничение ответственности с лицензированными подрядчиками',
-            statutes: ['Zakon o obligacionim odnosima CG (ст. 821–843)'],
+            statutes: ['Zakon o obligacionim odnosima CG (ст. 842–863)'],
             paragraphs: [
               'Привлекая аккредитованных лицензированных перевозчиков, авиакомпании, таможенных брокеров и государственные крематории Сербии в интересах Заказчика, Memorijal d.o.o. несет ответственность за добросовестный выбор (culpa in eligendo) и координацию документооборота.',
               'Memorijal d.o.o. не несет ответственности за задержки рейсов, снятие груза Cargo HUM, пограничные проверки, решения прокуратуры об обдукции или изменения графика крематория, а общая финансовая ответственность агентства ограничена фактически уплаченным Заказчиком чистым агентским вознаграждением.',
@@ -277,19 +277,19 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
             pillarBadge: 'Odjeljak 1 • Pravna priroda naloga',
             heading: '1. Agencijski karakter poslovanja (Ugovor o nalogu i posredovanju)',
             statutes: [
-              'Zakon o obligacionim odnosima Crne Gore ("Sl. list CG", br. 47/2008, čl. 821–843)',
+              'Zakon o obligacionim odnosima Crne Gore ("Sl. list CG", br. 47/2008, čl. 842–863)',
               'KD 82.99 (Ostale poslovne pomoćne uslužne djelatnosti)',
             ],
             paragraphs: [
               `${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${LEGAL_CREDENTIALS.ACTIVITY_CODES}; ${crpsDisplay}; ${vatNotice}) posluje isključivo kao agencija za administrativnu, pravnu i organizacionu podršku i zastupanje po punomoćju (Punomoćnik / Nalogoprimac). Društvo ne obavlja komercijalni drumski prevoz niti posluje kao licencirana špedicija ili transportni posrednik.`,
-              'Sve radnje pred bolnicama, kapelama, matičnim službama, Sanitarnom inspekcijom (Uprava za inspekcijske poslove), ambasadama i carinskim organima preduzimaju se isključivo u svojstvu ovlašćenog punomoćnika u ime i za račun Nalogodavca na osnovu ovjerenog Punomoćja i Ugovora o nalogu (čl. 821–843 ZOO CG). Ugovori o fizičkom prevozu i AWB avio-rezervacije zaključuju se sa licenciranim trećim prevoznicima/avio-kompanijama u ime i o trošku nalogodavca (prolazne stavke / prefakturisanje troškova).',
+              'Sve radnje pred bolnicama, kapelama, matičnim službama, Sanitarnom inspekcijom (Uprava za inspekcijske poslove), ambasadama i carinskim organima preduzimaju se isključivo u svojstvu ovlašćenog punomoćnika u ime i za račun Nalogodavca na osnovu ovjerenog Punomoćja i Ugovora o nalogu (čl. 842–863 ZOO CG). Ugovori o fizičkom prevozu i AWB avio-rezervacije zaključuju se sa licenciranim trećim prevoznicima/avio-kompanijama u ime i o trošku nalogodavca (prolazne stavke / prefakturisanje troškova).',
             ],
           },
           {
             id: 'pricing-disbursements',
             pillarBadge: 'Odjeljak 2 • Cijene i prolazne stavke',
             heading: '2. Indikativni karakter cijena i prefakturisanje troškova',
-            statutes: ['Zakon o obligacionim odnosima CG (čl. 821–843)'],
+            statutes: ['Zakon o obligacionim odnosima CG (čl. 842–863)'],
             paragraphs: [
               'Sve cijene, kalkulatori (RouteEstimator, RemoteSavingsEstimator, MortuaryTimeTracker) i cjenovnici na sajtu memorijal.me predstavljaju isključivo informativne orijentacione procjene („Od ...“) i ne čine obavezujuću javnu ponudu sa fiksnom cijenom.',
               'Obavezujući finansijski odnos nastaje isključivo izdavanjem individualnog pisanog Proračuna / Specifikacije i potvrdom Ugovora o nalogu od strane Nalogodavca ili prijemom GOP-a osiguranja.',
@@ -464,7 +464,7 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
             id: 'subcontractor-liability',
             pillarBadge: 'Odjeljak 2 • Odgovornost podizvođača',
             heading: '2. Razgraničenje odgovornosti za rad licenciranih partnera',
-            statutes: ['Zakon o obligacionim odnosima CG (čl. 821–843)'],
+            statutes: ['Zakon o obligacionim odnosima CG (čl. 842–863)'],
             paragraphs: [
               'Pri angažovanju licenciranih prevoznika, avio-kompanija, špeditera i državnih krematorijuma u Srbiji u ime Nalogodavca, Memorijal d.o.o. odgovara za savjestan izbor partnera i koordinaciju dokumentacije, dok je ukupna finansijska odgovornost agencije ograničena na stvarno plaćenu neto agencijsku naknadu za koordinaciju.',
             ],
@@ -504,19 +504,19 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
           pillarBadge: 'Section 1 • Agency Mandate Nature',
           heading: '1. Nature of Business & Agency Mandate (Ugovor o nalogu i posredovanju)',
           statutes: [
-            'Law on Obligations of Montenegro (Zakon o obligacionim odnosima, "Sl. list CG", br. 47/2008, Art. 821–843)',
+            'Law on Obligations of Montenegro (Zakon o obligacionim odnosima, "Sl. list CG", br. 47/2008, Art. 842–863)',
             'Activity Code KD 82.99 (Ostale poslovne pomoćne uslužne djelatnosti)',
           ],
           paragraphs: [
             `${LEGAL_CREDENTIALS.COMPANY_NAME} (${LEGAL_CREDENTIALS.HEADQUARTERS}; ${LEGAL_CREDENTIALS.ACTIVITY_CODES}; ${crpsDisplay}; ${vatNotice}) operates exclusively as an administrative, legal, and case coordination agency acting under client Power of Attorney (Punomoćnik / Nalogoprimac). The company does NOT engage in commercial road transport or licensed freight forwarding (špedicija) and does not act as a carrier or transport broker.`,
-            'All actions before hospitals, mortuaries, municipal civil registries (Matični registar), the Sanitary Inspection (Uprava za inspekcijske poslove), embassies, and customs authorities are executed strictly as an authorized representative acting on behalf of the Client/family under a notarized Power of Attorney (Punomoćje) and Civil Mandate (Ugovor o nalogu, Art. 821–843 ZOO CG). Physical transport contracts and AWB air cargo bookings are concluded with licensed third-party carriers/airlines on behalf of and at the expense of the principal (prolazne stavke / prefakturisanje troškova).',
+            'All actions before hospitals, mortuaries, municipal civil registries (Matični registar), the Sanitary Inspection (Uprava za inspekcijske poslove), embassies, and customs authorities are executed strictly as an authorized representative acting on behalf of the Client/family under a notarized Power of Attorney (Punomoćje) and Civil Mandate (Ugovor o nalogu, Art. 842–863 ZOO CG). Physical transport contracts and AWB air cargo bookings are concluded with licensed third-party carriers/airlines on behalf of and at the expense of the principal (prolazne stavke / prefakturisanje troškova).',
           ],
         },
         {
           id: 'pricing-disbursements',
           pillarBadge: 'Section 2 • Indicative Pricing & Disbursements',
           heading: '2. Non-Binding Pricing Disclaimer & Pass-Through Disbursements (Prefakturisanje)',
-          statutes: ['Law on Obligations of Montenegro (Art. 821–843 — Reimbursement of Mandate Expenses)'],
+          statutes: ['Law on Obligations of Montenegro (Art. 842–863 — Reimbursement of Mandate Expenses)'],
           paragraphs: [
             'All prices, interactive calculators (RouteEstimator, RemoteSavingsEstimator, MortuaryTimeTracker), and tariff tables displayed on memorijal.me are non-binding indicative reference estimates ("Starting From") and do NOT constitute a binding fixed-price public offer (Ponuda).',
             'A binding financial commitment arises solely upon issuance of an individual written Estimate/Specification and a Formal Mandate Agreement signed or confirmed by the Client or Assistance Insurer (GOP).',
@@ -690,7 +690,7 @@ export function getLegalDocuments(locale: LocaleSlug): LegalDocumentContent[] {
           id: 'subcontractor-liability',
           pillarBadge: 'Section 2 • Subcontractor Boundary',
           heading: '2. Subcontractor Execution & Liability Boundary',
-          statutes: ['Law on Obligations of Montenegro (Art. 821–843)'],
+          statutes: ['Law on Obligations of Montenegro (Art. 842–863)'],
           paragraphs: [
             'When engaging licensed carriers, airlines, customs brokers, or state crematoriums in Serbia on the Client’s behalf, Memorijal d.o.o. is responsible for diligent partner selection and documentary coordination. Aggregate financial liability is strictly capped at the net agency coordination fee actually paid to Memorijal d.o.o.',
           ],

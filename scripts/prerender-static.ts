@@ -111,9 +111,28 @@ function buildRouteJsonLdScripts(locale: LocaleSlug, route: SeoRouteEntry): stri
     route.id.includes('opsta-bolnica') ||
     route.id.includes('kccg');
 
-  const funeralServiceSchema: Record<string, unknown> = {
+  const offerItems = ALL_SERVICE_TARIFF_ITEMS.map((item) => ({
+    '@type': 'Offer',
+    itemOffered: {
+      '@type': 'Service',
+      name: item.schemaName,
+      description: item.schemaDescription,
+    },
+    price: String(item.basePriceEur),
+    priceCurrency: 'EUR',
+    priceSpecification: {
+      '@type': 'PriceSpecification',
+      minPrice: String(item.basePriceEur),
+      priceCurrency: 'EUR',
+    },
+    availability: 'https://schema.org/InStock',
+    validFrom: '2026-01-01',
+    description: item.schemaDescription,
+  }));
+
+  const localBusinessSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
-    '@type': ['FuneralService', 'ProfessionalService'],
+    '@type': ['LocalBusiness', 'Organization'],
     '@id': `${SITE_ORIGIN}/#organization`,
     name: 'Memorijal d.o.o. — International Repatriation & Cremation Montenegro',
     legalName: LEGAL_CREDENTIALS.COMPANY_NAME,
@@ -142,23 +161,12 @@ function buildRouteJsonLdScripts(locale: LocaleSlug, route: SeoRouteEntry): stri
           'Consular Laissez-Passer Mortuaire',
           'IATA Cargo HUM Air Freight',
         ],
-    makesOffer: ALL_SERVICE_TARIFF_ITEMS.map((item) => ({
-      '@type': 'Offer',
-      itemOffered: {
-        '@type': 'Service',
-        name: item.schemaName,
-      },
-      price: String(item.basePriceEur),
-      priceCurrency: 'EUR',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        minPrice: String(item.basePriceEur),
-        priceCurrency: 'EUR',
-      },
-      availability: 'https://schema.org/InStock',
-      validFrom: '2026-01-01',
-      description: item.schemaDescription,
-    })),
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Memorijal d.o.o. Agency Services (KD 82.99)',
+      itemListElement: offerItems,
+    },
+    makesOffer: offerItems,
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Tivat',
@@ -259,7 +267,7 @@ function buildRouteJsonLdScripts(locale: LocaleSlug, route: SeoRouteEntry): stri
   };
 
   const scripts: string[] = [
-    `<script type="application/ld+json" data-prerender-jsonld="true">${safeJsonLdSerialize(funeralServiceSchema)}</script>`,
+    `<script type="application/ld+json" data-prerender-jsonld="true">${safeJsonLdSerialize(localBusinessSchema)}</script>`,
     `<script type="application/ld+json" data-prerender-jsonld="true">${safeJsonLdSerialize(breadcrumbSchema)}</script>`,
     `<script type="application/ld+json" data-prerender-jsonld="true">${safeJsonLdSerialize(faqSchema)}</script>`,
   ];
@@ -392,7 +400,6 @@ function renderStaticRouteHtml(
     <link rel="canonical" href="${canonicalUrl}" />
     <link rel="alternate" hreflang="en" href="${enUrl}" />
     <link rel="alternate" hreflang="ru" href="${ruUrl}" />
-    <link rel="alternate" hreflang="cnr-ME" href="${mneUrl}" />
     <link rel="alternate" hreflang="sr-ME" href="${mneUrl}" />
     <link rel="alternate" hreflang="x-default" href="${enUrl}" />
     <meta property="og:title" content="${escapeHtml(pageData.metaTitle)}" />
