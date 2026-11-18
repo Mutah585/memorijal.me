@@ -306,76 +306,160 @@ function buildSemanticPrehydrationShell(locale: LocaleSlug, route: SeoRouteEntry
   const pricingPath = buildLocalizedPath(locale, '/pricing-breakdown/');
   const contactPath = buildLocalizedPath(locale, '/contact/');
 
+  const specLabels =
+    locale === 'ru'
+      ? {
+          transit: 'Сроки выполнения',
+          mode: 'Формат координации',
+          consular: 'Консульский и санитарный SLA',
+          jurisdiction: 'Юрисдикция и ведомства',
+          catchment: 'Охват моргов и муниципалитетов',
+          estimate: 'Стартовый ориентир',
+          detailsSummary: 'Подробный регламент, тарифы и ответы на частые вопросы',
+          navHome: 'Главная',
+          navServices: 'Услуги',
+          navPricing: 'Тарифы',
+          navContact: 'Контакты 24/7',
+        }
+      : locale === 'mne'
+      ? {
+          transit: 'Rok realizacije',
+          mode: 'Režim koordinacije',
+          consular: 'Konzularni i sanitarni rok',
+          jurisdiction: 'Nadležnost i institucije',
+          catchment: 'Mrtvačnice i opštine',
+          estimate: 'Početna procjena',
+          detailsSummary: 'Detaljna procedura, cjenovnik i česta pitanja',
+          navHome: 'Početna',
+          navServices: 'Usluge',
+          navPricing: 'Cjenovnik',
+          navContact: 'Kontakt 24/7',
+        }
+      : {
+          transit: 'Transit / Turnaround',
+          mode: 'Transport / Execution Mode',
+          consular: 'Consular & Sanitary Timeframe',
+          jurisdiction: 'Jurisdiction & Authority',
+          catchment: 'Morgue & Municipal Catchment',
+          estimate: 'Starting Estimate',
+          detailsSummary: 'Detailed Statutory Protocol, Tariffs & Frequently Asked Questions',
+          navHome: 'Home',
+          navServices: 'Services',
+          navPricing: 'Pricing',
+          navContact: '24/7 Contact',
+        };
+
   const specsHtml = `
-      <dl>
-        <dt>Transit / Turnaround</dt><dd>${escapeHtml(pageData.specs.transitTime)}</dd>
-        <dt>Transport / Execution Mode</dt><dd>${escapeHtml(pageData.specs.transportMode)}</dd>
-        <dt>Consular &amp; Sanitary Timeframe</dt><dd>${escapeHtml(pageData.specs.consularTimeframe)}</dd>
-        <dt>Jurisdiction &amp; Authority</dt><dd>${escapeHtml(pageData.specs.embassyJurisdiction)}</dd>
-        <dt>Morgue &amp; Municipal Catchment</dt><dd>${escapeHtml(pageData.specs.morgueCatchment)}</dd>
-        <dt>Starting Estimate</dt><dd>${escapeHtml(pageData.specs.estimatedTotalRange)}</dd>
-      </dl>`;
+          <dl style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:0;padding:0;">
+            <div style="padding:12px 14px;background-color:#F9F9FB;border:1px solid #E5E7EB;border-radius:12px;">
+              <dt style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#5A626A;margin:0 0 4px 0;">${escapeHtml(specLabels.transit)}</dt>
+              <dd style="font-size:13px;font-weight:600;color:#1A1D20;margin:0;line-height:1.45;">${escapeHtml(pageData.specs.transitTime)}</dd>
+            </div>
+            <div style="padding:12px 14px;background-color:#F9F9FB;border:1px solid #E5E7EB;border-radius:12px;">
+              <dt style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#5A626A;margin:0 0 4px 0;">${escapeHtml(specLabels.mode)}</dt>
+              <dd style="font-size:13px;font-weight:600;color:#1A1D20;margin:0;line-height:1.45;">${escapeHtml(pageData.specs.transportMode)}</dd>
+            </div>
+            <div style="padding:12px 14px;background-color:#F9F9FB;border:1px solid #E5E7EB;border-radius:12px;">
+              <dt style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#5A626A;margin:0 0 4px 0;">${escapeHtml(specLabels.consular)}</dt>
+              <dd style="font-size:13px;font-weight:600;color:#1A1D20;margin:0;line-height:1.45;">${escapeHtml(pageData.specs.consularTimeframe)}</dd>
+            </div>
+            <div style="padding:12px 14px;background-color:#F9F9FB;border:1px solid #E5E7EB;border-radius:12px;">
+              <dt style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#5A626A;margin:0 0 4px 0;">${escapeHtml(specLabels.jurisdiction)}</dt>
+              <dd style="font-size:13px;font-weight:600;color:#1A1D20;margin:0;line-height:1.45;">${escapeHtml(pageData.specs.embassyJurisdiction)}</dd>
+            </div>
+            <div style="padding:12px 14px;background-color:#F9F9FB;border:1px solid #E5E7EB;border-radius:12px;">
+              <dt style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#5A626A;margin:0 0 4px 0;">${escapeHtml(specLabels.catchment)}</dt>
+              <dd style="font-size:13px;font-weight:600;color:#1A1D20;margin:0;line-height:1.45;">${escapeHtml(pageData.specs.morgueCatchment)}</dd>
+            </div>
+            <div style="padding:12px 14px;background-color:#EFF4F9;border:1px solid #D8E4F0;border-radius:12px;">
+              <dt style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#1E3A5F;margin:0 0 4px 0;">${escapeHtml(specLabels.estimate)}</dt>
+              <dd style="font-size:14px;font-weight:700;color:#1E3A5F;margin:0;line-height:1.45;">${escapeHtml(pageData.specs.estimatedTotalRange)}</dd>
+            </div>
+          </dl>`;
 
   const stepsHtml =
     pageData.walkthroughSteps.length > 0
-      ? `<section>
-        <h2>${escapeHtml(pageData.explainerHeading)}</h2>
-        <p>${escapeHtml(pageData.explainerIntro)}</p>
-        <ol>
-          ${pageData.walkthroughSteps
-            .map(
-              (s) =>
-                `<li><strong>${escapeHtml(s.stepNumber)}. ${escapeHtml(s.title)}</strong>: ${escapeHtml(s.description)} (${escapeHtml(s.authority)} — ${escapeHtml(s.timeframe)})</li>`
-            )
-            .join('\n          ')}
-        </ol>
-      </section>`
+      ? `<section style="margin-top:20px;">
+            <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;font-weight:600;color:#1A1D20;margin:0 0 8px 0;">${escapeHtml(pageData.explainerHeading)}</h2>
+            <p style="font-size:14px;color:#5A626A;line-height:1.6;margin:0 0 12px 0;">${escapeHtml(pageData.explainerIntro)}</p>
+            <ol style="margin:0;padding-left:20px;font-size:14px;color:#1A1D20;line-height:1.6;">
+              ${pageData.walkthroughSteps
+                .map(
+                  (s) =>
+                    `<li style="margin-bottom:8px;"><strong>${escapeHtml(s.stepNumber)}. ${escapeHtml(s.title)}</strong>: ${escapeHtml(s.description)} (${escapeHtml(s.authority)} — ${escapeHtml(s.timeframe)})</li>`
+                )
+                .join('\n              ')}
+            </ol>
+          </section>`
       : '';
 
   const pricingHtml =
     route.path === '/pricing-breakdown/' || route.path === '/services/' || route.path === '/'
-      ? `<section>
-        <h2>${escapeHtml(pageData.costHeading)}</h2>
-        <ul>
-          ${ALL_SERVICE_TARIFF_ITEMS.map((item) => {
-            const loc = item.locales[locale];
-            return `<li><strong>${escapeHtml(loc.title)}</strong>: ${escapeHtml(loc.formattedPrice)} — ${escapeHtml(loc.scope)}</li>`;
-          }).join('\n          ')}
-        </ul>
-      </section>`
+      ? `<section style="margin-top:20px;">
+            <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;font-weight:600;color:#1A1D20;margin:0 0 12px 0;">${escapeHtml(pageData.costHeading)}</h2>
+            <ul style="margin:0;padding-left:20px;font-size:14px;color:#1A1D20;line-height:1.6;">
+              ${ALL_SERVICE_TARIFF_ITEMS.map((item) => {
+                const loc = item.locales[locale];
+                return `<li style="margin-bottom:8px;"><strong>${escapeHtml(loc.title)}</strong>: ${escapeHtml(loc.formattedPrice)} — ${escapeHtml(loc.scope)}</li>`;
+              }).join('\n              ')}
+            </ul>
+          </section>`
       : '';
 
   const faqsHtml =
     pageData.faqs.length > 0
-      ? `<section>
-        <h2>${escapeHtml(pageData.faqHeading)}</h2>
-        ${pageData.faqs
-          .map(
-            (f) =>
-              `<article><h3>${escapeHtml(f.question)}</h3><p>${escapeHtml(f.answer)}</p></article>`
-          )
-          .join('\n        ')}
-      </section>`
+      ? `<section style="margin-top:20px;">
+            <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;font-weight:600;color:#1A1D20;margin:0 0 12px 0;">${escapeHtml(pageData.faqHeading)}</h2>
+            ${pageData.faqs
+              .map(
+                (f) =>
+                  `<article style="margin-bottom:12px;"><h3 style="font-size:15px;font-weight:600;color:#1A1D20;margin:0 0 4px 0;">${escapeHtml(f.question)}</h3><p style="font-size:14px;color:#5A626A;line-height:1.6;margin:0;">${escapeHtml(f.answer)}</p></article>`
+              )
+              .join('\n            ')}
+          </section>`
       : '';
 
-  return `<main class="sr-only" data-prerender-shell="true">
-      <article>
-        <p>${escapeHtml(pageData.eyebrow)}</p>
-        <h1>${escapeHtml(pageData.h1)}</h1>
-        <p>${escapeHtml(pageData.heroSubtitle)}</p>
-        <p>${escapeHtml(LEGAL_CREDENTIALS.COMPANY_NAME)} • ${escapeHtml(LEGAL_CREDENTIALS.HEADQUARTERS)} • ${escapeHtml(LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT)} • 24/7: <a href="tel:${PHONE_E164}">${escapeHtml(PHONE_DISPLAY)}</a> • <a href="mailto:${OFFICIAL_EMAIL}">${escapeHtml(OFFICIAL_EMAIL)}</a></p>
-        ${specsHtml}
-        ${stepsHtml}
-        ${pricingHtml}
-        ${faqsHtml}
-        <nav aria-label="Primary Static Links">
-          <a href="${homePath}">Home</a> |
-          <a href="${servicesPath}">Services (${escapeHtml(LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT)})</a> |
-          <a href="${pricingPath}">Pricing Breakdown</a> |
-          <a href="${contactPath}">24/7 Contact</a>
-        </nav>
-      </article>
-    </main>`;
+  return `<div data-prerender-shell="true" style="min-height:100vh;background-color:#F9F9FB;color:#1A1D20;font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;margin:0;padding:0;">
+      <header style="position:sticky;top:0;z-index:40;background-color:#FFFFFF;border-bottom:1px solid #E5E7EB;">
+        <div style="height:32px;background-color:#162B49;color:#F8FAFC;font-size:12px;">
+          <div style="max-width:1280px;height:100%;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-weight:600;letter-spacing:0.03em;">${escapeHtml(LEGAL_CREDENTIALS.COMPANY_NAME)} • ${escapeHtml(LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT)} • Tivat, Montenegro</span>
+            <a href="tel:${PHONE_E164}" style="color:#6EE7B7;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:700;text-decoration:none;">24/7: ${escapeHtml(PHONE_DISPLAY)}</a>
+          </div>
+        </div>
+        <div style="height:72px;max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;">
+          <a href="${homePath}" style="display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:#1A1D20;">
+            <img src="/assets/branding/emblem-crest.svg" alt="Memorijal d.o.o." width="38" height="38" style="width:38px;height:38px;object-fit:contain;display:block;" />
+            <div>
+              <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;font-weight:700;letter-spacing:0.15em;color:#1A1D20;line-height:1;">MEMORIJAL</div>
+              <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.12em;color:#5A626A;margin-top:3px;">Montenegro • Repatriation 24/7</div>
+            </div>
+          </a>
+          <nav aria-label="Primary Static Links" style="display:flex;align-items:center;gap:20px;font-size:13px;font-weight:600;">
+            <a href="${homePath}" style="color:#1A1D20;text-decoration:none;">${escapeHtml(specLabels.navHome)}</a>
+            <a href="${servicesPath}" style="color:#1A1D20;text-decoration:none;">${escapeHtml(specLabels.navServices)} (${escapeHtml(LEGAL_CREDENTIALS.ACTIVITY_CODES_SHORT)})</a>
+            <a href="${pricingPath}" style="color:#1A1D20;text-decoration:none;">${escapeHtml(specLabels.navPricing)}</a>
+            <a href="${contactPath}" style="color:#1E7B54;text-decoration:none;">${escapeHtml(specLabels.navContact)}</a>
+          </nav>
+        </div>
+      </header>
+      <main style="max-width:1200px;margin:0 auto;padding:48px 24px;">
+        <article>
+          <p style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1E3A5F;background-color:#EFF4F9;border:1px solid #D8E4F0;border-radius:9999px;padding:6px 14px;margin:0 0 18px 0;">${escapeHtml(pageData.eyebrow)}</p>
+          <h1 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(28px,3.8vw,44px);font-weight:600;line-height:1.18;color:#1A1D20;margin:0 0 16px 0;max-width:920px;">${escapeHtml(pageData.h1)}</h1>
+          <p style="font-size:16px;line-height:1.65;color:#5A626A;max-width:820px;margin:0 0 32px 0;">${escapeHtml(pageData.heroSubtitle)}</p>
+          <div style="background-color:#FFFFFF;border:1px solid #E5E7EB;border-radius:16px;padding:24px;box-shadow:0 1px 3px rgba(26,29,32,0.05);">
+            ${specsHtml}
+            <details style="margin-top:20px;border-top:1px solid #E5E7EB;padding-top:16px;">
+              <summary style="cursor:pointer;font-size:13px;font-weight:600;color:#1E3A5F;user-select:none;">${escapeHtml(specLabels.detailsSummary)}</summary>
+              ${stepsHtml}
+              ${pricingHtml}
+              ${faqsHtml}
+            </details>
+          </div>
+        </article>
+      </main>
+    </div>`;
 }
 
 function renderStaticRouteHtml(

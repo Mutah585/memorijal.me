@@ -433,7 +433,7 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
           en: {
             title: 'Local Municipal Burial Coordination in Montenegro (DOO Komunalno)',
             badge: 'Municipal Cemetery Partner Model',
-            formattedPrice: `From${NBSP}€1,200`,
+            formattedPrice: `From${NBSP}€950`,
             scope:
               'Full representation with municipal DOO Komunalno (Tivat, Kotor, Budva, Podgorica, Bar), Matičar registry, coffin selection, and Orthodox, Catholic, Islamic, or civil rites.',
             disbursementNote: 'Municipal grave plot concession & Komunalno tariffs passed through at cost',
@@ -443,7 +443,7 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
           ru: {
             title: 'Координация местных похорон в Черногории (DOO Komunalno)',
             badge: 'Муниципальные кладбища Черногории',
-            formattedPrice: `От${NBSP}1${NBSP}200${NBSP}€`,
+            formattedPrice: `От${NBSP}950${NBSP}€`,
             scope:
               'Полное сопровождение в муниципальных службах DOO Komunalno (Тиват, Котор, Будва, Подгорица, Бар), ЗАГСе, подбор атрибутики и проведение религиозного или гражданского обряда.',
             disbursementNote: 'Тарифы кладбища Komunalno оплачиваются по официальному прейскуранту',
@@ -453,7 +453,7 @@ export const FULL_SERVICE_PRICING_TIERS: FullServiceTariffTier[] = [
           mne: {
             title: 'Koordinacija lokalne sahrane u Crnoj Gori (DOO Komunalno)',
             badge: 'Opštinska groblja • Komunalno',
-            formattedPrice: `Od${NBSP}1.200${NBSP}€`,
+            formattedPrice: `Od${NBSP}950${NBSP}€`,
             scope:
               'Kompletna koordinacija sa opštinskim DOO Komunalno (Tivat, Kotor, Budva, Podgorica, Bar), Matičarem, pogrebnom opremom i vjerskim ili građanskim obredom.',
             disbursementNote: 'Grobne takse Komunalnog preduzeća prenose se po zvaničnom cjenovniku',
